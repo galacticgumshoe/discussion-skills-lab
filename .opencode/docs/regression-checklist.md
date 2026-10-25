@@ -80,6 +80,211 @@ for normal production-file serving, but does not implement test replay routes.
 
 ## Automated coverage
 
+### Milestone 4 checkpoint 4.1
+
+`tests/unit/progress-adapters.test.mjs` exercises every sealed lesson progress
+fixture, all fixed maps/options, zero, drafts, unknown properties/UI versions,
+permanent completion, malformed containers, safe salvage, read denial and quota
+retry. Runtime progress boundary checks agree with the deliberately open progress
+schema. No content baseline or production entry is changed.
+
+`tests/browser/storage-boundaries.spec.mjs` uses the isolated
+`/__fixtures/harness/storage.html` page: actual localStorage, write-free hydration,
+immediate synthetic draft/credit saves, DOM reorder/decoy fields, reload,
+read-only unsafe records, denied/quota warnings and adapter → pinned original
+replay on both replay mounts. It uses all four configured browser projects.
+
+```sh
+npm run test:unit
+env CFFIXED_USER_HOME="$(mktemp -d)" npm run test:browser -- tests/browser/storage-boundaries.spec.mjs
+env CFFIXED_USER_HOME="$(mktemp -d)" npm run test:browser
+```
+
+The final command includes the full existing production/pilot/replay baseline,
+not just the new harness. Check the latest handoff/evidence for actual outcomes;
+listed commands are not themselves passing evidence. Manual denied-storage/AT
+checks remain distinct from scripted Storage exceptions/live-region assertions.
+
+### Milestone 4 checkpoint 4.2
+
+`tests/unit/completion.test.mjs` compares the stable-ID access rule against the
+actual pinned legacy core for every completion subset in all three lessons. It
+covers one-missing inputs, current-correct versus correct-ever policies, pure
+monotonic union, no-op/UI-only updates, stored credit without detailed history,
+and completion → store → legacy-index serialization. Harness excerpts and labels
+are compared exactly against the pinned Opening source, not screenshots.
+
+`tests/browser/navigation.spec.mjs` mounts explicit existing section elements in
+`/__fixtures/harness/navigation.html`, using small test-only gates and the verified
+store/Opening adapter. It covers rail/mobile selection, collapse, exact access
+with zero/non-contiguous progress, h1/h2/h3 focus, successful-only scroll reset,
+bottom controls/reference access, progress maximum/counts, meaningful-only
+completion, no hydration/no-op writes, permanent credit, refresh-to-first,
+DOM reorder/decoys, cleanup/remount, and corrupt/quota in-memory unlocking.
+No production lesson policy, shared shell, component, or bootstrap is introduced.
+
+```sh
+npm run test:unit
+env CFFIXED_USER_HOME="$(mktemp -d)" npm run test:browser -- tests/browser/navigation.spec.mjs tests/browser/storage-boundaries.spec.mjs
+npm run validate:content
+env CFFIXED_USER_HOME="$(mktemp -d)" npm run test:browser
+```
+
+Use all established projects, including Firefox with command-scoped application
+data isolation. The full command must include the existing production/pilot/replay
+baseline. Percentage width assertions allow CSSOM numeric serialization precision,
+not incorrect counts or overflow. WebKit button pointer clicks do not imply focus;
+keyboard focus retention is tested with explicit focus/Enter. Real AT/mobile-device
+navigation and actual zoom remain pending unless separately recorded; no manual
+check is inferred from automated focus/scroll/live-region assertions.
+
+### Milestone 4 checkpoint 4.3
+
+`tests/unit/components.test.mjs` checks all five sequence profiles, all 46 reused
+sequence questions/options/keys/feedback against sealed banks, codec-compatible
+identities for every option, the current-answer exception, and no live imports.
+`tests/browser/components.spec.mjs` directly mounts attributed baseline excerpts
+on `components.html?lesson=opening|middle|final` (optional `&reorder`). No legacy
+writer or general renderer is loaded. Checks include:
+
+- Native click/Enter/Space, one callback per activation, visible explored credit
+  independent of front/back/open state, inactive-face ARIA/active description.
+- Zero hydration/update writes/events, native queued detail-toggle suppression,
+  old-handler teardown, duplicate-mount rejection and repeated remounts.
+- Every required question profile, shared/per-option source feedback, enabled
+  alternatives after credit, independent latest choice/earned score, Opening's
+  current-correct gate and first-unearned retry focus/reset.
+- Stable same-question option focus/live-region nodes, immediate represented
+  cursor saves, adapter save/reload including reordered hosts/items/options,
+  Middle global card indexes and Final global openness/local exploration.
+- White fronts/navy backs/teal cues, intrinsic long-card geometry at 320px with
+  enlarged text, longest existing baseline face, horizontal 3D transform,
+  reduced-motion zero transition and stylesheet-on/off legacy-decoy comparison.
+
+```sh
+npm run test:unit
+env CFFIXED_USER_HOME="$(mktemp -d)" npm run test:browser -- tests/browser/components.spec.mjs
+npm run validate:content
+env CFFIXED_USER_HOME="$(mktemp -d)" npm run test:browser
+```
+
+Use all four projects, not Chromium alone. The full command includes existing
+navigation/storage/production/pilot/replay tests. The component screenshots and
+geometry checks are automated evidence, **not actual 200% browser zoom**, real
+animation/AT or physical mobile testing. Manually check normal and reduced-motion
+flips, all long faces at actual 200% zoom, native details/Opening timeline expanded
+states, screen-reader face descriptions and stable feedback announcements on each
+target browser/device; record browser/version/actions separately. Those checks
+remain pending unless explicitly recorded in the latest handoff/evidence.
+
+Native details change their DOM `open` attribute before dispatching the queued
+`toggle` event; persistence assertions await the exact store value, not only the
+attribute. For baseline Middle application choices, the real pointer helper also
+observes actual post-scroll target/viewport stability before clicking. This bounded
+readiness check follows trace evidence of smooth scrolling continuing across a
+Firefox input; it does not disable motion, force activation, add automatic retries,
+or relax content/feedback assertions. Evidence: `evidence/milestone-4-3/production-scroll-observation.json`.
+
+### Milestone 4 checkpoint 4.4
+
+`tests/unit/formatters.test.mjs` compares all three algorithms/templates against
+actual pinned handler snippets. Synthetic cases include terminal punctuation,
+first-character-only lowercasing, zero, Unicode/multiline drafts, missing inputs,
+plain-text HTML/expression-looking values and disallowed template names/expressions.
+It also asserts no live imports/storage/field discovery/grading/evaluation.
+
+`tests/browser/writing-reference.spec.mjs` uses only direct mounts on
+`/__fixtures/harness/writing-reference.html?lesson=opening|middle|final`:
+
+- All three completed fixtures hydrate/update/remount with zero events/writes;
+  labels/placeholders/rows/modes, fields, checks and model contents retain identities.
+- Immediate drafts, editable Opening/Final output, readonly Middle output;
+  explicit-only assembly, edited-output/caret preservation, reload/reordered hosts.
+- Opening 34/35/self-check boundary and optional session-only toggle model;
+  optional Middle show-only models use only the existing v1 extension; Final's
+  required show-only model flags remain external gate inputs. Clearing/unchecking
+  never revokes section credit.
+- Secure clipboard success, scripted denial/unavailability, exact existing-field
+  selection, one scoped no-ID/name fallback, Escape/focus restoration, no fallback
+  progress fields, lifecycle cleanup and late-response suppression. Scripted API
+  stubs are not manual permission-dialog evidence.
+- Independent reference startup while writing content fails; zero-credit access,
+  loading/error/retry, unchanged raw saved draft, one Print handler after remount,
+  exact reference semantic equivalence and native-print media isolation. Includes
+  root and repository-prefix content URLs; Chromium emits Letter PDFs from an
+  ordinary failed-activity view. Uses the existing renderer/schema, not a second
+  reference implementation or a production print cleanup.
+- 320px/enlarged-text no-overflow checks; these are not actual browser zoom/AT.
+
+```sh
+npm run test:unit
+env CFFIXED_USER_HOME="$(mktemp -d)" npm run test:browser -- tests/browser/writing-reference.spec.mjs
+npm run validate:content
+env CFFIXED_USER_HOME="$(mktemp -d)" npm run test:browser
+```
+
+Use every configured project. The full suite rechecks affected earlier components,
+navigation/storage and the unchanged production/pilot/replay baseline. Manually
+check field editing/selection/clipboard permission dialogs, model/checklist keyboard
+and screen-reader behavior, actual zoom, and Chrome/Firefox/Safari Print-button and
+Cmd/Ctrl+P previews from ordinary/reference views (Letter/backgrounds/scaling/no
+clipping/controls/leading blank). Record only actions actually performed; these
+remain pending unless the handoff/evidence supplies dated results.
+
+### Milestone 4 checkpoint 4.5
+
+`tests/unit/lesson-validation.test.mjs` adds full draft-07 config/manifest/activity
+schemas plus lightweight runtime/semantic parity over shared invalid fixtures:
+versions, unknown keys/types/profiles, IDs/duplicates/options/feedback, sources,
+layout/tone/depth, gates, writing templates/fields/modes/bindings. Development graph
+validation checks missing files, declared/file-ID equality, order/adapter identity
+and realpath/symlink containment. Byte-exact reference copies and all reused
+question keys/options/feedback remain independent content assertions.
+
+`tests/browser/lesson-harness.spec.mjs` runs the real `mountLesson` bootstrap,
+not a test-only alternate orchestrator, on both
+`/__fixtures/harness/lesson.html` and
+`/discussion-skills-lab/__fixtures/harness/lesson.html` in every configured project:
+
+- Validated config -> manifest -> activities, then one progress read/decode,
+  silent component hydration, real interaction/unlocking, fixed-adapter saves,
+  refresh-to-first and unchanged hydration. No legacy engine/second writer.
+- All six standard types, bounded groups and sanitized Markdown; independent
+  sealed extraction compares faces/panels/questions/options/keys/feedback/writing/
+  checklist data and all ten headings, not screenshot pixels.
+- Every shared invalid fixture in actual browser runtime; invalid metadata fails
+  before storage read and offers retry. Missing/invalid activity retries preserve
+  drafts/credit and do not block reference access or print preparation.
+- Ordinary Markdown failure prevents new section credit. Loading/retry cannot
+  fabricate completion; the next meaningful activity change evaluates readiness.
+- References preload even while activity validation is pending, using the existing
+  renderer/loader. Body failure/retry is independent from activity gates. One Print
+  handler and reference-only native print-media/PDF output from an ordinary view.
+- Separate corrupt/denied/quota persistence warnings with session-only credit;
+  no destructive fallback writes, including bootstrap/reload/remount.
+- Destroy during pending load, late-response suppression, repeated remount,
+  old-node cleanup, one callback/Print handler and a single writer reservation.
+- Bounded static registry rejects arbitrary types/module strings; an intentionally
+  unavailable standard renderer fails only its block. DOM reorder/decoy fields
+  do not affect the fixed legacy serialization map.
+
+```sh
+npm run validate:content
+npm run test:unit
+env CFFIXED_USER_HOME="$(mktemp -d)" npm run test:browser -- tests/browser/lesson-harness.spec.mjs
+env CFFIXED_USER_HOME="$(mktemp -d)" npm run test:browser
+```
+
+The **entire** final suite is required, including all earlier checkpoint harnesses,
+production lesson journeys/security/pilot and original-engine replay. Do not
+substitute the final happy path or a Chromium-only run. Check actual results in
+`evidence/milestone-4-5-verification.md`/the latest handoff; commands listed here are
+not evidence of execution. New bootstrap/shell fixture manual print previews,
+screen readers, actual zoom and device checks remain distinct follow-ups; prior
+owner 4.4 acceptance is retained without inventing new 4.5 manual results.
+
+### Existing baseline and reference pipeline
+
 Milestone 3 adds `validate:content` (Ajv 8.20.0, development-only) plus runtime/schema
 parity for shared invalid reference fixtures, realpath/existence checks, checked
 root/prefix include URLs, vendor SHA-256 pins, sanitized Markdown/security fixtures,
@@ -178,3 +383,55 @@ no corresponding manual/device checks have been reported. They are explicit foll
 checks, not fabricated approvals. Essential automated browser captures are required
 before calling milestone 1 complete. Follow `.opencode/docs/refactor-status.md` for executed
 commands/counts, remaining blockers and whether the next milestone is ready.
+
+### Owner manual report — 2026-10-25, checkpoint 4.4 follow-up
+
+- **Owner-reported pass, Chrome and Mac Safari:** print, writing, checklists,
+  persistence, clipboard and zooming. Versions and individual print-preview
+  permutations unspecified; this is not a fabricated exhaustive matrix.
+- **Owner-reported pass, Chrome:** Tab/Shift+Tab across lesson controls, Enter
+  activation, and left/right arrows within Opening's task-analysis tabs after focus.
+- **Unresolved, Mac Safari:** Tab/Shift+Tab do not traverse live `opening.html`
+  controls. Check System Settings → Keyboard → Keyboard navigation and Safari →
+  Settings → Advanced → “Press Tab to highlight each item on a webpage”, then
+  retest. See the official Apple link and source triage in 4.4 evidence. Neither
+  an application defect nor a preferences-based fix is established yet.
+- **Not tested:** screen readers, actual iPad/hardware-keyboard use; owner's iPhone
+  has no keyboard. Mobile Safari is primarily touch-driven for this owner, and
+  Safari/iPads are the priority for student interaction testing.
+- **Manual Firefox:** owner explicitly declines functional testing; do not request
+  it as a prerequisite. Keep the required automated four-project suite unchanged.
+
+This dated report qualifies the general pending table above; it does not claim
+unspecified browser versions/actions, assistive-technology success or mobile-device
+coverage. Record the Safari settings retest outcome before calling its keyboard
+workflow manually accepted. Do not bypass native navigation with a global Tab trap.
+
+### Owner retest and acceptance — 2026-10-25
+
+Owner confirms enabling **System Settings → Keyboard → Keyboard navigation**
+restored the keyboard functionality in Mac Safari. The preceding unresolved
+Safari keyboard item is now **resolved / owner-reported pass**, with no site-code
+change. Combined with the earlier Chrome/Safari functional results, the owner
+explicitly accepts **checkpoint 4.4 as fully validated**. No outstanding manual
+checkpoint blocker remains. General unperformed device/AT/physical-print checks
+remain honestly unverified, not inferred from this acceptance or reinstated as
+4.4 blockers. Checkpoint 4.5 remains next and has not been started.
+
+### Checkpoint 4.5 automated closure — 2026-10-25
+
+The final entire suite passed **588/588** (147 per configured project), including
+all earlier harnesses, original-engine compatibility and unchanged production
+lessons/pilot on root/repository/replay mounts. Fresh content validation and
+136/136 unit tests passed. Both generated root/prefix new-harness reference PDFs
+were read as rendered pages/parsed text: full five groups, one readable Letter
+page, no clipping/questions/drafts/controls/leading blank. This is file-based
+review, not interactive browser preview. Full commands/report/PDF hashes and
+ordered checkpoint index: `evidence/milestone-4-5-verification.md`.
+
+Checkpoint 4.5 and milestone 4 are **complete**; no blocking verification gap
+remains. Actual new-composition AT/real devices/iPad hardware keyboard/200% zoom/
+animation/permission dialogs/interactive print permutations/physical printing
+remain nonblocking manual follow-ups for later whole-lesson cutovers. Earlier owner
+Chrome/Mac Safari 4.4 acceptance is preserved, not transformed into fabricated 4.5
+manual results. Milestone 5 requires a separate implementation request.

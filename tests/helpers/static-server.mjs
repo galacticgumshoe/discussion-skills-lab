@@ -21,9 +21,9 @@ export async function startServer(port = 0) {
       if (!path.startsWith('/') || /[\\\0%]/.test(path) || path.split('/').some(s => s === '..' || s === '.')) return finish(400);
     } catch { return finish(400); }
     const isReplay = path.startsWith('/__original/');
-    const isFixture = path.startsWith('/__fixtures/');
     if (isReplay) path = path.slice('/__original'.length);
     if (path.startsWith('/discussion-skills-lab/')) path = path.slice('/discussion-skills-lab'.length);
+    const isFixture = !isReplay && path.startsWith('/__fixtures/');
     if (path === '/') path = '/index.html';
     const relative = isFixture ? `tests/fixtures/${path.slice('/__fixtures/'.length)}` : path.slice(1);
     try {

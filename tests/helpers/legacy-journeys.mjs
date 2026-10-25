@@ -62,7 +62,26 @@ export async function runLesson(page, id, checkpoint = async () => {}) {
     // Explore every alternative; correct-ever and latest selection are independent.
     for (const option of [...options.keys()].filter(n => n !== answer).concat(answer)) {
       actions.push(`answer ${identity} option ${option}`);
-      await page.locator(selector).nth(option).click();
+      const button = page.locator(selector).nth(option);
+      if (id === 'middle' && identity.startsWith('application-')) {
+        // Firefox trace: smooth scrolling continued between mouse events after
+        // Playwright's pre-scroll stability check, leaving application feedback
+        // empty. Settle the actual target/scroll after scrolling it into view.
+        // Keep real pointer activation, animations and all content assertions.
+        await button.scrollIntoViewIfNeeded();
+        await button.evaluate(element => new Promise(resolve => {
+          let previous, stable = 0;
+          function frame() {
+            const rect = element.getBoundingClientRect();
+            const position = JSON.stringify([scrollX, scrollY, rect.top, rect.left]);
+            stable = position === previous ? stable + 1 : 0;
+            previous = position;
+            if (stable === 4) resolve(); else requestAnimationFrame(frame);
+          }
+          requestAnimationFrame(frame);
+        }));
+      }
+      await button.click();
       if (feedbackSelector) {
         await expect(page.locator(feedbackSelector)).toBeVisible();
         feedback.push({ option, text: await page.locator(feedbackSelector).textContent() });

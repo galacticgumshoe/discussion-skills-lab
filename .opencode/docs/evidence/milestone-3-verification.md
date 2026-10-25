@@ -170,3 +170,14 @@ For commit packaging, `npm run validate:content` and `npm run test:unit` were
 rerun successfully (47/47 unit tests, no failures/skips). The application and tests
 are unchanged from the recorded 236-pass browser run; that suite was not rerun
 for packaging. Only this confirmation and the append-only handoff were added.
+
+## Owner clarification authorizing milestone 4 — 2026-10-25
+
+After the milestone-4 prerequisite check paused on the incomplete handoff, the
+owner reaffirmed that they had already performed full milestone-3 browser
+verification and explicitly confirmed proceeding with milestone 4. This resolves
+the earlier prerequisite pause by direct owner acceptance; the previous
+interpretation of unspecified named-preview details must not continue blocking
+the requested implementation. Browser versions/individual preview actions are
+still not enumerated here, and no new agent-performed manual checks or release
+approval are claimed. Historical results and handoffs above remain unchanged.

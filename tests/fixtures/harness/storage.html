@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Isolated progress boundary harness</title>
+<main>
+  <h1>Progress boundary harness</h1>
+  <p>Development-only controls. No live lesson engine runs on this page.</p>
+  <p id="storage-warning" role="status" aria-live="polite"></p>
+  <label>Synthetic draft <textarea id="draft"></textarea></label>
+  <button id="credit" type="button">Record synthetic first-section credit</button>
+  <button id="save-unchanged" type="button">Save unchanged state</button>
+  <pre id="state"></pre>
+</main>
+<script type="module" src="storage.mjs"></script>
+</html>

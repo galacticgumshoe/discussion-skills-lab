@@ -142,3 +142,157 @@ Historical screenshots/PDFs are in `tests/fixtures/visual/`; see
 mandatory independently of those captures. No production layout change is made in
 milestone 1. Source capture scripts use exclusive creation; test runs do not rewrite
 any canonical evidence.
+
+## Milestone 4 checkpoint 4.1 — no instructional extraction
+
+New `lessons/{opening,middle,final}/progress-adapter.js` tables mechanically encode
+the authored stable IDs/initialized legacy indexes from
+`tests/fixtures/legacy-maps/{opening,middle,final}.json`. They do not copy coaching
+text, questions, feedback, models or answer keys (except Opening's exact existing
+quiz-earned fallback correctness indexes). `assets/js/app/{legacy-progress,
+progress-store}.js` and `schemas/progress.schema.json` contain runtime/boundary
+implementation, not instructional content. Test-only labeled storage controls in
+`tests/fixtures/harness/storage.{html,mjs}` use synthetic drafts and sealed progress
+records. No production lesson/content is moved or switched; existing extraction
+inventories and CC BY 4.0 attribution remain authoritative. These paths are MIT
+code/config/test controls; sealed educational fixtures retain their notices.
+
+## Milestone 4 checkpoint 4.2 — navigation-only baseline excerpts
+
+`assets/js/app/{completion,lesson-core}.js` contains MIT runtime calculations and
+navigation, not extracted lesson activities or production completion policies.
+The classic `assets/js/lesson-core.js` and all production entries remain unchanged.
+
+`tests/fixtures/harness/navigation.html` directly reuses these plain-text excerpts
+from pinned `0b5d229` `opening.html`, each identified by `data-baseline` matching
+the original `data-template-id`: `section-{1,2,3,4,5,6}-title` and matching
+`section-{1,2,3,4,5,6}-intro`, `quiz-title`, `quiz-instructions`, `reference-title`.
+The harness module copies the eight ordered labels from the extracted
+`assets/js/opening.js` original `labels` array. `tests/unit/completion.test.mjs`
+checks all 15 excerpts and eight labels exactly against the pinned source.
+Excerpts retain © Rhys Jones / CC BY 4.0 attribution in the HTML and harness README.
+
+This is a development-only navigation composition, not a second writable content
+source or a production lesson. The first/third headings intentionally use h1/h3
+to exercise intended-heading focus; remaining headings use h2. Synthetic labeled
+fields and exploration/credit test buttons exercise small **test-only** gates,
+not replacement questions, activity components, production gates or a renderer.
+Only excerpts are displayed; full lesson/reference content remains at its existing
+production and sealed locations. No production layout/content is changed and no
+canonical screenshot/content/map fixture is rewritten. The fixture loads existing
+shell CSS without modifying it; its few input/test-control styles are root-scoped.
+
+## Milestone 4 checkpoint 4.3 — directly mounted baseline activities
+
+No production instructional content is moved. `tests/fixtures/harness/components.{html,mjs}`
+and `component-data.mjs` read the immutable sealed fixtures, pinned to
+`0b5d2297e7cbc19bd59cde750492dd28e3983ca0`; there is no second writable content bank.
+Instructional excerpts retain © Rhys Jones / CC BY 4.0 attribution; helper,
+component and test code is MIT. No invented questions are published.
+
+| Sealed source | Direct component data in test harness |
+| --- | --- |
+| `content/banks.json` Opening `classification`, `quiz` | All five statements/options/answer associations/explanations; all five knowledge-check questions/options/keys/explanations |
+| `content/source/opening.html` `.timeline-toggle`/controlled bodies and `#sequence-check` | Six exact timeline headings/bodies, standalone checkpoint prompt/three options; its two complete feedback messages match pinned Opening script |
+| `content/banks.json` Middle `group`, `speaking`, `questions` | Three group scenarios, three speaking scenarios, five quiz questions; titles/order/shared and option-specific explanations preserved |
+| `content/source/middle.html` research `models` cards | Weak/stronger example fronts/backs, with source `strong` titles preserved separately as semantic titles |
+| `content/banks.json` Final `questions` | All 25 questions across eight question sets, all contexts/options/answer keys/option-specific explanations |
+| `content/source/final.html` `.flip` and page-2 panels | All eight cards, four Listen/Connect/Credit/Advance headings/bodies; no instructional HTML strings supplied to components |
+| `legacy-maps/{opening,middle,final}.json` | Frozen stable activity/item/question/option associations for test data, never codec maps recalculated from new DOM |
+
+Paths in the table are relative to `tests/fixtures/`. Unit tests independently
+compare all 46 sequence questions, option order, correct associations and feedback
+to the sealed banks, and every option round-trips through its real adapter.
+The Opening standalone checkpoint brings the directly mounted total to 47 questions.
+Browser tests compare profile feedback, restoration and policy inputs/results,
+independently of screenshot equality. Whitespace is normalized only for ordinary
+inert prose extraction; meaningful source titles and punctuation are preserved.
+
+New component CSS is opt-in, not imported by any production page. Permitted fixture
+layout differences: cards use intrinsic two-face grid sizing instead of fixed-height
+clipping (short fronts may be taller), explored marks stay visible outside the flip
+or in closed summaries, native button semantics replace custom card key handlers,
+and all-at-once questions keep stable controls/live regions. Harness activities
+are grouped together in its first test view to exercise components independently;
+that grouping and small gates are **not** a lesson composition/policy proposal.
+These differences preserve content, navy/white/teal identity, horizontal flip and
+readability; the 320px/enlarged-text and reduced-motion checks guard the relevant
+standards without rewriting sealed visual baselines.
+
+## Milestone 4 checkpoint 4.4 — isolated writing/checklist/reference excerpts
+
+No production instructional content moved or changed. Five directly mounted tools
+are sourced by `tests/fixtures/harness/writing-data.mjs` from immutable baseline
+`0b5d2297e7cbc19bd59cde750492dd28e3983ca0`. Paths below are fixture-relative.
+
+| Sealed source | Test-only supplied data / stable IDs |
+| --- | --- |
+| `content/source/opening.html` `#question-builder`, `#draft-input`, `#model-answer`, `#question-selfcheck` | Consensus field labels/placeholders/editable output, exact template, model and toggle labels, self-check label; existing `consensus-*` fields and `question-selfcheck` map |
+| `content/source/middle.html` research/source/finding/why/assembled/model and integrated-practice writing/model | Both original tools, labels/placeholders/rows, readonly evidence output, model text, copy/assembly/show controls; existing `evidence-*`/`integrated-draft` identities |
+| `content/source/assets/js/middle.js` `addChecks('research-checks',…)` / `addChecks('application-checks',…)` | All four research and five integrated checklist labels, unchanged order, paired to frozen map IDs |
+| `content/source/final.html` synthesis builder/output/model and closing draft/model | All labels/rows, editable output, model titles and paragraphs, assembly/copy/show controls; existing `synthesis-*`/`closing-*` fields/flags |
+| `content/banks.json` Final `checkLabels[2]`, `[7]` | All five synthesis and six closing labels/order, paired to frozen map IDs |
+| All three original handler snippets (pinned Git bytes) | Three content-supplied templates checked against actual legacy assembly behavior using synthetic punctuation/case/Unicode/multiline/missing fields |
+| Production `content/final/reference/` (milestone 3) | Reused unchanged through existing loader/schema/Markdown/`renderReferenceItems`; no second reference renderer or new production reference extraction |
+
+Original instructional text remains © Rhys Jones / CC BY 4.0; code/styles/tests MIT.
+Source model `strong` titles/paragraphs stay semantic. Ordinary whitespace wrapping
+is normalized only during inert source extraction; punctuation/case/wording/order
+and sentence-template operations are independently asserted. Student text is never
+inserted as HTML or treated as instructional Markdown. No invented questions,
+grading, grammar repair or writable alternate content source.
+
+Permitted fixture-only presentation differences: all writing tools share a first
+test view, fields use opt-in fluid component styles rather than per-lesson wrappers,
+models keep their original semantic titles/paragraphs, and checklist labels use
+native labeled controls. Reference grouping/number identities/semantic accent classes
+and Markdown renderer remain the existing implementation; a scoped fixture sheet/Letter print style replaces no
+production CSS. These are harness compositions, not lesson cutover designs or full
+policies. Actual zoom/AT/interactive print checks remain separate manual follow-ups.
+
+File-based full-run PDF review confirms the harness's five stacked groups/text/
+emphasis fit one readable Letter page without controls/clipping/leading blank.
+Its test-only sheet uses uniform light-blue/teal groups and Arial rather than
+production per-group accent colors/font pairing. This documented fixture-only
+simplification retains semantic accent classes and original composition/content;
+production reference styling/pilot is unchanged. Evidence and limits:
+`evidence/milestone-4-4-verification.md` (final result/review section).
+
+## Milestone 4 checkpoint 4.5 — read-only bootstrap fixtures
+
+No production instructional content or entry moves. The isolated
+`tests/fixtures/harness/content/final/` graph is an attributed test copy of:
+
+| Fixture | Canonical source / preservation assertion |
+| --- | --- |
+| `activities/welcome-cards.json` | All three pinned Final page-0 cards; independent inert-HTML extraction compares every face/ID |
+| `activities/connect-viewpoints-panels.json` | All four pinned Final page-2 panels; full titles/body text/order and frozen IDs |
+| `activities/summary-synthesis-questions.json` | All five pinned page-1 questions, every option/key/feedback; exact bank comparison |
+| `activities/connect-viewpoints-questions.json` | Pinned page-2 standalone question, all alternatives/explanations/key |
+| `activities/synthesis-writing.json` | Pinned Final synthesis fields/rows/modes, exact template, control messages and model title/paragraphs; extraction/formatter-oracle comparisons |
+| `activities/synthesis-checklist.json` | All five pinned page-2 check labels/order and stable map IDs |
+| `reference/` (six files) | Byte-exact copies of the existing milestone-3 Final reference JSON/Markdown; unit comparison prevents independent drift |
+| `lesson.json` section headings | All ten headings match pinned Final inert HTML; original `view-N`/heading semantics retained |
+
+`lessons/final/config.json` under that **fixture** directory is mechanical MIT
+configuration, not a new production config. `lesson.json` uses explicitly labeled
+test-only requirements/gates and a partial set of activities. Navigation labels
+are fixture metadata, not a claimed whole-lesson extraction. Other sections reuse
+the attributed reference excerpts rather than inventing questions. Code/schemas/
+fixture shell and test-only controls are MIT; instructional material remains
+© Rhys Jones / CC BY 4.0. Source revision is the immutable
+`0b5d2297e7cbc19bd59cde750492dd28e3983ca0` baseline.
+
+Permitted fixture-only presentation: a stack/two-column callout composition tests
+the bounded layouts; shared intrinsically sized components retain prior repairs.
+The scoped fixture reference sheet retains 4.4's uniform blue/teal/Arial print
+presentation rather than production accents/fonts. These are not designs for a
+Final cutover, screenshot-pixel equivalence, altered coaching or changed production
+completion policies. All production CSS/engines/entries and sealed baselines stay
+unchanged. Tests run the exact same bootstrap API intended for later entries.
+
+Final 4.5 full-run root/prefix PDF file-based review confirms complete, unclipped
+five-group reference-only Letter sheets with no questions/drafts/controls/leading
+blank. The uniform fixture palette/font differences above are permitted and
+unchanged; production semantics/styles pass their existing independent checks.
+Results/hashes and manual-check limits: `evidence/milestone-4-5-verification.md`.

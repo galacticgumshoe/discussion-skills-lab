@@ -1,0 +1,33 @@
+<!doctype html>
+<!-- Test code MIT; instructional excerpts © Rhys Jones, CC BY 4.0. -->
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Writing and reference — checkpoint 4.4</title>
+  <link rel="stylesheet" href="../../../assets/css/shared.css">
+  <link rel="stylesheet" href="../../../assets/css/components.css">
+  <link rel="stylesheet" href="writing-reference.css">
+</head>
+<body>
+<div id="writing-reference-harness">
+  <p class="fixture-ui">Checkpoint 4.4 — direct baseline writing mounts; gates are test-only, not whole-lesson policies.</p>
+  <div id="layout" class="dsl-layout">
+    <nav class="rail fixture-ui" aria-label="Lesson sections">
+      <button id="rail-toggle" type="button" aria-expanded="true">⇤</button>
+      <p id="progress-text" aria-live="polite"></p>
+      <div id="progress-track" role="progressbar" aria-label="Completed lesson pages"><div id="progress-fill"></div></div>
+      <div id="rail-links"></div>
+    </nav>
+    <main class="dsl-content">
+      <div class="mobile-nav fixture-ui"><label for="section-select">Go to a section</label><select id="section-select"></select></div>
+      <button class="fixture-ui" id="quick-reference-link" type="button">Quick reference</button>
+      <p id="nav-status" class="fixture-ui" role="status"></p><p id="storage-warning" class="fixture-ui" role="status"></p>
+      <div id="views"></div>
+      <div class="bottom-controls fixture-ui"><button id="previous-section" type="button">Previous section</button><button id="next-section" type="button">Next section</button></div>
+      <p class="fixture-ui">Instructional excerpts © Rhys Jones, CC BY 4.0; baseline 0b5d229. Harness code MIT.</p>
+    </main>
+  </div>
+</div>
+<script type="module" src="writing-reference.mjs"></script>
+</body>
+</html>

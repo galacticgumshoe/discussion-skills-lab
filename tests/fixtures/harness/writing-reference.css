@@ -1,0 +1,22 @@
+/* MIT. Fixture-only shell/print isolation, NOT milestone 8 production cleanup. */
+#writing-reference-harness { font-family:Arial,sans-serif; line-height:1.6; overflow-wrap:anywhere; }
+#writing-reference-harness, #writing-reference-harness * { box-sizing:border-box; }
+#writing-reference-harness .dsl-content { min-width:0; }
+#writing-reference-harness .fixture-activity { margin:32px 0; }
+#writing-reference-harness [data-clipboard-fallback] { display:block; max-width:100%; width:100%; }
+#writing-reference-harness .final-reference-item { border:1px solid #d5e5ed; background:#eaf5fb; border-radius:18px; padding:20px; margin:14px 0; }
+#writing-reference-harness .final-reference-item h3 { display:flex; gap:14px; align-items:center; }
+#writing-reference-harness .final-reference-number { border-radius:999px; background:#087f83; color:white; padding:4px 12px; }
+@media print {
+  @page { size:letter portrait; margin:.5in; }
+  #writing-reference-harness .fixture-ui,
+  #writing-reference-harness .lesson-view:not([data-reference-view]),
+  #writing-reference-harness [data-reference-view] button,
+  #writing-reference-harness [data-clipboard-fallback] { display:none !important; }
+  #writing-reference-harness [data-reference-view],
+  #writing-reference-harness [data-reference-view][hidden] { display:block !important; margin:0 !important; padding:0 !important; }
+  #writing-reference-harness .final-reference-item { break-inside:avoid; padding:8px 12px; margin:6px 0; font-size:9pt; line-height:1.25; }
+  #writing-reference-harness .final-reference-item h3 { font-size:10pt; margin:0 0 5px; }
+  #writing-reference-harness .final-reference-item p { margin:3px 0; }
+  #writing-reference-harness [data-reference-view] h1 { font-size:17pt; margin:0 0 10px; }
+}

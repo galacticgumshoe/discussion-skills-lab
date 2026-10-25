@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "final",
+  "title": "Final Stage",
+  "activities": [
+    { "id": "welcome-cards", "source": "activities/welcome-cards.json" },
+    { "id": "summary-synthesis-questions", "source": "activities/summary-synthesis-questions.json" },
+    { "id": "connect-viewpoints-panels", "source": "activities/connect-viewpoints-panels.json" },
+    { "id": "connect-viewpoints-questions", "source": "activities/connect-viewpoints-questions.json" },
+    { "id": "synthesis-writing", "source": "activities/synthesis-writing.json" },
+    { "id": "synthesis-checklist", "source": "activities/synthesis-checklist.json" }
+  ],
+  "sections": [
+    { "id": "welcome", "label": "Welcome", "heading": "Closing with Purpose", "headingLevel": 1, "requirement": "Explore the mounted cards (test-only gate).", "reference": false, "gateActivityIds": ["welcome-cards"], "blocks": [
+      { "type": "group", "layout": "stack", "tone": "plain", "blocks": [
+        { "type": "markdown", "source": "reference/summary-synthesis.md" },
+        { "type": "activity", "activityId": "welcome-cards" }
+      ] }
+    ] },
+    { "id": "summary-synthesis", "label": "Summary & Synthesis", "heading": "Two Ways to Bring Ideas Together", "headingLevel": 2, "requirement": "Complete the mounted questions (test-only gate).", "reference": false, "gateActivityIds": ["summary-synthesis-questions"], "blocks": [{ "type": "activity", "activityId": "summary-synthesis-questions" }] },
+    { "id": "connect-viewpoints", "label": "Connect Viewpoints", "heading": "From Multiple Ideas to One New Insight", "headingLevel": 2, "requirement": "Explore, answer, write, compare and self-check (test-only gate).", "reference": false, "gateActivityIds": ["connect-viewpoints-panels", "connect-viewpoints-questions", "synthesis-writing", "synthesis-checklist"], "blocks": [
+      { "type": "group", "layout": "two-column", "tone": "callout", "blocks": [
+        { "type": "activity", "activityId": "connect-viewpoints-panels" },
+        { "type": "activity", "activityId": "connect-viewpoints-questions" }
+      ] },
+      { "type": "activity", "activityId": "synthesis-writing" }, { "type": "activity", "activityId": "synthesis-checklist" }
+    ] },
+    { "id": "organize-findings", "label": "Organize Findings", "heading": "Summarize the Work, Not the Conversation's Timeline", "headingLevel": 2, "requirement": "Excerpt only; no production policy mounted.", "reference": false, "gateActivityIds": [], "blocks": [{ "type": "markdown", "source": "reference/effective-summaries.md" }] },
+    { "id": "consensus", "label": "Consensus", "heading": "Agreement Is More Than a Vote", "headingLevel": 2, "requirement": "Excerpt only; no production policy mounted.", "reference": false, "gateActivityIds": [], "blocks": [{ "type": "markdown", "source": "reference/consensus-task.md" }] },
+    { "id": "task-audit", "label": "Task Audit", "heading": "Did We Actually Solve the Task?", "headingLevel": 2, "requirement": "Excerpt only; no production policy mounted.", "reference": false, "gateActivityIds": [], "blocks": [{ "type": "markdown", "source": "reference/consensus-task.md" }] },
+    { "id": "professionalism", "label": "Professionalism", "heading": "Your Professionalism Continues After the Round", "headingLevel": 2, "requirement": "Excerpt only; no production policy mounted.", "reference": false, "gateActivityIds": [], "blocks": [{ "type": "markdown", "source": "reference/after-round.md" }] },
+    { "id": "closing-practice", "label": "Closing Practice", "heading": "A Discussion in Its Final Minutes", "headingLevel": 2, "requirement": "Excerpt only; no production policy mounted.", "reference": false, "gateActivityIds": [], "blocks": [{ "type": "markdown", "source": "reference/synthesis-framework.md" }] },
+    { "id": "knowledge-check", "label": "Knowledge Check", "heading": "Are You Ready to Close with Purpose?", "headingLevel": 2, "requirement": "Excerpt only; no production policy mounted.", "reference": false, "gateActivityIds": [], "blocks": [{ "type": "markdown", "source": "reference/summary-synthesis.md" }] },
+    { "id": "quick-reference", "label": "Quick Reference", "heading": "Final Stage Quick Reference", "headingLevel": 1, "requirement": "Quick Reference is always available.", "reference": true, "gateActivityIds": [], "blocks": [{ "type": "reference", "source": "reference/reference.json" }] }
+  ]
+}

@@ -1,0 +1,88 @@
+<!doctype html>
+<!-- Harness code MIT. Attributed Opening excerpts © Rhys Jones, CC BY 4.0.
+     Source: pinned 0b5d229 opening.html; see README.md. Not a production lesson. -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Isolated navigation harness — checkpoint 4.2</title>
+  <link rel="stylesheet" href="../../../assets/css/shared.css">
+  <style>
+    #navigation-harness input { display:block; box-sizing:border-box; max-width:100%; margin:8px 0 16px; padding:10px; }
+    #navigation-harness .test-controls { border:1px dashed #506176; padding:16px; margin-top:24px; }
+    #navigation-harness .test-controls button { padding:10px; margin:4px; }
+  </style>
+</head>
+<body>
+<div id="navigation-harness">
+  <header class="topbar"><p>Checkpoint 4.2 — isolated navigation; test gates are NOT lesson policies</p></header>
+  <div id="layout" class="dsl-layout">
+    <nav class="rail" aria-label="Lesson sections">
+      <button id="rail-toggle" class="rail-toggle" type="button" aria-expanded="true" aria-label="Collapse navigation">⇤</button>
+      <div class="rail-progress">
+        <p id="progress-text" aria-live="polite"></p>
+        <div id="progress-track" class="top-progress" role="progressbar" aria-label="Completed lesson pages"><div id="progress-fill"></div></div>
+      </div>
+      <div id="rail-links"></div>
+    </nav>
+    <main class="dsl-content">
+      <div class="mobile-nav"><label for="section-select">Go to a section</label><select id="section-select"></select></div>
+      <button id="quick-reference-link" class="reference-button" type="button">Quick reference</button>
+      <p id="nav-status" role="status" aria-live="polite"></p>
+      <p id="storage-warning" role="status" aria-live="polite"></p>
+      <div id="views">
+        <section id="view-0" class="lesson-view" aria-labelledby="heading-contributions">
+          <h1 id="heading-contributions" data-baseline="section-1-title">How a Discussion Round Works</h1>
+          <p data-baseline="section-1-intro">Every 60-minute Discussion round includes two kinds of contributions. Strong participants know when the group needs structure—and when it needs ideas and evidence.</p>
+          <div class="test-controls">
+            <p>Test-only gate: both synthetic fields must be nonempty. This is not the Contributions activity.</p>
+            <label for="test-problem">Synthetic problem field</label><input id="test-problem" type="text">
+            <label for="test-accomplishment">Synthetic accomplishment field</label><input id="test-accomplishment" type="text">
+          </div>
+        </section>
+        <section id="view-1" class="lesson-view" aria-labelledby="heading-sequence" hidden>
+          <h2 id="heading-sequence" data-baseline="section-2-title">What Happens at the Start of a Round?</h2>
+          <p data-baseline="section-2-intro">A Discussion round lasts 60 minutes. Its opening gives the group a shared understanding of the task and a direction for working together. Open each step to learn more.</p>
+          <div class="test-controls">
+            <p>Test-only gate: record two explored IDs and checkpoint credit; no activity component is mounted.</p>
+            <button id="test-explore" type="button">Record test exploration</button>
+            <button id="test-checkpoint" type="button">Record test checkpoint credit</button>
+          </div>
+        </section>
+        <section id="view-2" class="lesson-view" aria-labelledby="heading-analysis" hidden>
+          <h3 id="heading-analysis" data-baseline="section-3-title">Decoding a Complex Task</h3>
+          <p data-baseline="section-3-intro">Five questions turn a dense task into a practical plan.</p>
+        </section>
+        <section id="view-3" class="lesson-view" aria-labelledby="heading-clarifications" hidden>
+          <h2 id="heading-clarifications" data-baseline="section-4-title">Make Sure Everyone Understands the Task</h2>
+          <p data-baseline="section-4-intro">Clarifications happen after reading the task and before discussing solutions. The goal is shared understanding—not an early argument about which solution wins.</p>
+        </section>
+        <section id="view-4" class="lesson-view" aria-labelledby="heading-direction" hidden>
+          <h2 id="heading-direction" data-baseline="section-5-title">Give the Discussion Direction</h2>
+          <p data-baseline="section-5-intro">Once the task is clear, the group can choose a roadmap, a destination, or both.</p>
+        </section>
+        <section id="view-5" class="lesson-view" aria-labelledby="heading-research" hidden>
+          <h2 id="heading-research" data-baseline="section-6-title">From Structure to Substance</h2>
+          <p data-baseline="section-6-intro">Research and background sharing move the group from organizing its work to developing useful ideas.</p>
+        </section>
+        <section id="view-6" class="lesson-view" aria-labelledby="heading-quiz" hidden>
+          <h2 id="heading-quiz" data-baseline="quiz-title">Put the Opening Together</h2>
+          <p data-baseline="quiz-instructions">Answer each question for immediate feedback. You can retry missed questions after completing all five.</p>
+          <div class="test-controls"><p>Test-only gate: record one earned question ID.</p><button id="test-quiz" type="button">Record test quiz credit</button></div>
+        </section>
+        <section id="view-7" class="lesson-view" aria-labelledby="heading-reference" hidden>
+          <h2 id="heading-reference" data-baseline="reference-title">Opening Stage Quick Reference</h2>
+          <p>Navigation-only excerpt; reference loading and printing integration belong to checkpoint 4.4.</p>
+        </section>
+      </div>
+      <div class="bottom-controls"><button id="previous-section" type="button">← Previous section</button><button id="next-section" type="button">Next section →</button></div>
+      <pre id="state" hidden></pre>
+      <footer><p>Opening excerpts © Rhys Jones, CC BY 4.0. Test code MIT.</p></footer>
+    </main>
+  </div>
+</div>
+<!-- Decoy is deliberately outside the mounted root. -->
+<section id="outside-view" class="lesson-view" hidden><h2>Unrelated test view</h2></section>
+<script type="module" src="navigation.mjs"></script>
+</body>
+</html>

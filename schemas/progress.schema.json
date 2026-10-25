@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://discussion-skills-lab.invalid/schemas/progress.schema.json",
+  "title": "Legacy progress outer boundary (forward-compatible)",
+  "type": "object",
+  "required": ["completed", "data"],
+  "properties": {
+    "completed": { "type": "array", "items": { "type": "integer", "minimum": 0 } },
+    "data": { "type": "object" }
+  },
+  "additionalProperties": true,
+  "$defs": {
+    "normalized": {
+      "type": "object",
+      "required": ["completedSections", "activities", "fields", "flags", "ui"],
+      "properties": {
+        "completedSections": { "type": "array", "uniqueItems": true, "items": { "type": "string" } },
+        "activities": { "type": "object", "additionalProperties": { "type": "object" } },
+        "fields": { "type": "object", "additionalProperties": { "type": "string" } },
+        "flags": { "type": "object", "additionalProperties": { "type": "boolean" } },
+        "ui": { "type": "object" }
+      },
+      "additionalProperties": true
+    }
+  }
+}
