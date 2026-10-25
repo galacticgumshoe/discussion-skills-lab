@@ -1,0 +1,2164 @@
+[
+  {
+    "identity": "html/0/2/0",
+    "type": "text",
+    "value": "Making an Impact · The Middle Stage",
+    "markup": "Making an Impact · The Middle Stage",
+    "status": "initial-markup",
+    "section": "shell"
+  },
+  {
+    "identity": "html/1/0/0/0/0/0/0",
+    "type": "text",
+    "value": "DISCUSSION SKILLS LAB · MSHSL SPEECH",
+    "markup": "DISCUSSION SKILLS LAB · MSHSL SPEECH",
+    "status": "initial-markup",
+    "section": "shell"
+  },
+  {
+    "identity": "html/1/0/0/0/0/1/0",
+    "type": "text",
+    "value": "Making an Impact · The Middle Stage",
+    "markup": "Making an Impact · The Middle Stage",
+    "status": "initial-markup",
+    "section": "shell"
+  },
+  {
+    "identity": "html/1/0/0/0/1/0",
+    "type": "text",
+    "value": "SELF-PACED · 20–25 MINUTES",
+    "markup": "SELF-PACED · 20–25 MINUTES",
+    "status": "initial-markup",
+    "section": "shell"
+  },
+  {
+    "identity": "html/1/0/1/0@aria-label",
+    "type": "aria-label",
+    "value": "Lesson sections",
+    "status": "attribute",
+    "section": "shell"
+  },
+  {
+    "identity": "html/1/0/1/0/0@aria-label",
+    "type": "aria-label",
+    "value": "Collapse navigation",
+    "status": "attribute",
+    "section": "shell"
+  },
+  {
+    "identity": "html/1/0/1/0/0/0",
+    "type": "text",
+    "value": "⇤",
+    "markup": "⇤",
+    "status": "initial-markup",
+    "section": "shell"
+  },
+  {
+    "identity": "html/1/0/1/0/1/0/0",
+    "type": "text",
+    "value": "YOUR PROGRESS",
+    "markup": "YOUR PROGRESS",
+    "status": "initial-markup",
+    "section": "shell"
+  },
+  {
+    "identity": "html/1/0/1/0/1/1/0",
+    "type": "text",
+    "value": "0 of 8 pages completed",
+    "markup": "0 of 8 pages completed",
+    "status": "initial-markup",
+    "section": "shell"
+  },
+  {
+    "identity": "html/1/0/1/0/1/2@aria-label",
+    "type": "aria-label",
+    "value": "Completed lesson pages",
+    "status": "attribute",
+    "section": "shell"
+  },
+  {
+    "identity": "html/1/0/1/0/1/3/0",
+    "type": "text",
+    "value": "Finish each activity to unlock the next page. Quick reference is always available.",
+    "markup": "Finish each activity to unlock the next page. Quick reference is always available.",
+    "status": "initial-markup",
+    "section": "shell"
+  },
+  {
+    "identity": "html/1/0/1/1/0/0/0",
+    "type": "text",
+    "value": "Go to a section",
+    "markup": "Go to a section",
+    "status": "initial-markup",
+    "section": "shell"
+  },
+  {
+    "identity": "html/1/0/1/1/2/1/0",
+    "type": "text",
+    "value": "Making an Impact",
+    "markup": "Making an Impact",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/3/0",
+    "type": "text",
+    "value": "The middle stage is where your research, listening, and collaboration turn into solutions.",
+    "markup": "The middle stage is where your research, listening, and collaboration turn into solutions.",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/5/1/0",
+    "type": "text",
+    "value": "In the opening stage, your group figures out ",
+    "markup": "In the opening stage, your group figures out <strong>WHAT</strong> it needs to solve and <strong>HOW</strong> it will approach the task. In the middle stage, you put that plan into action. Contribute ideas that help the group make progress.",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/5/1/1/0",
+    "type": "text",
+    "value": "WHAT",
+    "markup": "WHAT",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/5/1/2",
+    "type": "text",
+    "value": " it needs to solve and ",
+    "markup": "In the opening stage, your group figures out <strong>WHAT</strong> it needs to solve and <strong>HOW</strong> it will approach the task. In the middle stage, you put that plan into action. Contribute ideas that help the group make progress.",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/5/1/3/0",
+    "type": "text",
+    "value": "HOW",
+    "markup": "HOW",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/5/1/4",
+    "type": "text",
+    "value": " it will approach the task. In the middle stage, you put that plan into action. Contribute ideas that help the group make progress.",
+    "markup": "In the opening stage, your group figures out <strong>WHAT</strong> it needs to solve and <strong>HOW</strong> it will approach the task. In the middle stage, you put that plan into action. Contribute ideas that help the group make progress.",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/5/3@aria-label",
+    "type": "aria-label",
+    "value": "Discussion round progression",
+    "status": "attribute",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/5/3/1/0",
+    "type": "text",
+    "value": "OPENING",
+    "markup": "OPENING",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/5/3/2/0",
+    "type": "text",
+    "value": "→",
+    "markup": "→",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/5/3/3/0",
+    "type": "text",
+    "value": "RESEARCH",
+    "markup": "RESEARCH",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/5/3/4/0",
+    "type": "text",
+    "value": "→",
+    "markup": "→",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/5/3/5/0",
+    "type": "text",
+    "value": "MIDDLE",
+    "markup": "MIDDLE",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/5/3/6/0",
+    "type": "text",
+    "value": "→",
+    "markup": "→",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/5/3/7/0",
+    "type": "text",
+    "value": "FINAL",
+    "markup": "FINAL",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/7/0",
+    "type": "text",
+    "value": "Flip over each card to see what happens mid-round.",
+    "markup": "Flip over each card to see what happens mid-round.",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/9/1@aria-label",
+    "type": "aria-label",
+    "value": "Flip Bring evidence card",
+    "status": "attribute",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/9/1/1/1/1/0",
+    "type": "text",
+    "value": "Bring evidence",
+    "markup": "Bring evidence",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/9/1/1/1/3/0",
+    "type": "text",
+    "value": "↻ Flip card",
+    "markup": "↻ Flip card",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/9/1/1/3/1/1/0",
+    "type": "text",
+    "value": "Support ideas with research.",
+    "markup": "Support ideas with research.",
+    "status": "hidden-or-alternative",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/9/1/1/3/1/3/0",
+    "type": "text",
+    "value": "Orally cite your sources.",
+    "markup": "Orally cite your sources.",
+    "status": "hidden-or-alternative",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/9/1/1/3/3/0",
+    "type": "text",
+    "value": "✓ Explored",
+    "markup": "✓ Explored",
+    "status": "hidden-or-alternative",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/9/3@aria-label",
+    "type": "aria-label",
+    "value": "Flip Build collaboration card",
+    "status": "attribute",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/9/3/1/1/1/0",
+    "type": "text",
+    "value": "Build collaboration",
+    "markup": "Build collaboration",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/9/3/1/1/3/0",
+    "type": "text",
+    "value": "↻ Flip card",
+    "markup": "↻ Flip card",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/9/3/1/3/1/1/0",
+    "type": "text",
+    "value": "Listen attentively.",
+    "markup": "Listen attentively.",
+    "status": "hidden-or-alternative",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/9/3/1/3/1/3/0",
+    "type": "text",
+    "value": "Include others.",
+    "markup": "Include others.",
+    "status": "hidden-or-alternative",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/9/3/1/3/1/5/0",
+    "type": "text",
+    "value": "Keep the group focused.",
+    "markup": "Keep the group focused.",
+    "status": "hidden-or-alternative",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/9/3/1/3/3/0",
+    "type": "text",
+    "value": "✓ Explored",
+    "markup": "✓ Explored",
+    "status": "hidden-or-alternative",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/9/5@aria-label",
+    "type": "aria-label",
+    "value": "Flip Manage the floor card",
+    "status": "attribute",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/9/5/1/1/1/0",
+    "type": "text",
+    "value": "Manage the floor",
+    "markup": "Manage the floor",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/9/5/1/1/3/0",
+    "type": "text",
+    "value": "↻ Flip card",
+    "markup": "↻ Flip card",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/9/5/1/3/1/1/0",
+    "type": "text",
+    "value": "Speak professionally.",
+    "markup": "Speak professionally.",
+    "status": "hidden-or-alternative",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/9/5/1/3/1/3/0",
+    "type": "text",
+    "value": "Avoid fillers and slang.",
+    "markup": "Avoid fillers and slang.",
+    "status": "hidden-or-alternative",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/9/5/1/3/1/5/0",
+    "type": "text",
+    "value": "Stay in role.",
+    "markup": "Stay in role.",
+    "status": "hidden-or-alternative",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/9/5/1/3/1/7/0",
+    "type": "text",
+    "value": "Navigate interruptions.",
+    "markup": "Navigate interruptions.",
+    "status": "hidden-or-alternative",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/9/5/1/3/3/0",
+    "type": "text",
+    "value": "✓ Explored",
+    "markup": "✓ Explored",
+    "status": "hidden-or-alternative",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/4/1/1/0",
+    "type": "text",
+    "value": "01 / 07 · About 3 minutes",
+    "markup": "01 / 07 · About 3 minutes",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/1/0/1/1/4/1/3/0",
+    "type": "text",
+    "value": "Two Ways to Help a Discussion",
+    "markup": "Two Ways to Help a Discussion",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/1/0/1/1/4/1/5/0",
+    "type": "text",
+    "value": "Procedural contributions support the discussion. Substantive contributions move the solution forward. The middle stage calls for both, especially relevant research and insight.",
+    "markup": "Procedural contributions support the discussion. Substantive contributions move the solution forward. The middle stage calls for both, especially relevant research and insight.",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/1/0/1/1/4/3/1@aria-label",
+    "type": "aria-label",
+    "value": "Flip procedural contributions card",
+    "status": "attribute",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/1/0/1/1/4/3/1/1/1/1/0",
+    "type": "text",
+    "value": "PROCEDURAL",
+    "markup": "PROCEDURAL",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/1/0/1/1/4/3/1/1/1/3/0",
+    "type": "text",
+    "value": "Organize, structure, or focus the group's work without directly developing the solution.",
+    "markup": "Organize, structure, or focus the group's work without directly developing the solution.",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/1/0/1/1/4/3/1/1/1/5/0",
+    "type": "text",
+    "value": "↻ Flip card",
+    "markup": "↻ Flip card",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/1/0/1/1/4/3/1/1/3/1/0",
+    "type": "text",
+    "value": "PROCEDURAL",
+    "markup": "PROCEDURAL",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/1/0/1/1/4/3/1/1/3/3/1/0",
+    "type": "text",
+    "value": "Manage remaining time.",
+    "markup": "Manage remaining time.",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/1/0/1/1/4/3/1/1/3/3/3/0",
+    "type": "text",
+    "value": "Refocus on the task.",
+    "markup": "Refocus on the task.",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/1/0/1/1/4/3/1/1/3/3/5/0",
+    "type": "text",
+    "value": "Organize turns and transitions.",
+    "markup": "Organize turns and transitions.",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/1/0/1/1/4/3/1/1/3/5/0",
+    "type": "text",
+    "value": "✓ Explored",
+    "markup": "✓ Explored",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/1/0/1/1/4/3/3@aria-label",
+    "type": "aria-label",
+    "value": "Flip substantive contributions card",
+    "status": "attribute",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/1/0/1/1/4/3/3/1/1/1/0",
+    "type": "text",
+    "value": "SUBSTANTIVE",
+    "markup": "SUBSTANTIVE",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/1/0/1/1/4/3/3/1/1/3/0",
+    "type": "text",
+    "value": "Introduce ideas, evidence, analysis, or insights that help solve the task.",
+    "markup": "Introduce ideas, evidence, analysis, or insights that help solve the task.",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/1/0/1/1/4/3/3/1/1/5/0",
+    "type": "text",
+    "value": "↻ Flip card",
+    "markup": "↻ Flip card",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/1/0/1/1/4/3/3/1/3/1/0",
+    "type": "text",
+    "value": "SUBSTANTIVE",
+    "markup": "SUBSTANTIVE",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/1/0/1/1/4/3/3/1/3/3/1/0",
+    "type": "text",
+    "value": "Share relevant research.",
+    "markup": "Share relevant research.",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/1/0/1/1/4/3/3/1/3/3/3/0",
+    "type": "text",
+    "value": "Evaluate solutions.",
+    "markup": "Evaluate solutions.",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/1/0/1/1/4/3/3/1/3/3/5/0",
+    "type": "text",
+    "value": "Connect viewpoints.",
+    "markup": "Connect viewpoints.",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/1/0/1/1/4/3/3/1/3/5/0",
+    "type": "text",
+    "value": "✓ Explored",
+    "markup": "✓ Explored",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/1/0/1/1/4/5/0",
+    "type": "text",
+    "value": "Flip both cards to reveal the activity.",
+    "markup": "Flip both cards to reveal the activity.",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/1/0/1/1/4/7/1/0",
+    "type": "text",
+    "value": "Activity 1 · Classify the contribution",
+    "markup": "Activity 1 · Classify the contribution",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/1/0/1/1/4/7/3/0",
+    "type": "text",
+    "value": "Choose procedural or substantive. Retry until you have classified all five.",
+    "markup": "Choose procedural or substantive. Retry until you have classified all five.",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/1/0/1/1/4/7/11/1/0",
+    "type": "text",
+    "value": "Next statement →",
+    "markup": "Next statement →",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/1/0/1/1/6/1/1/0",
+    "type": "text",
+    "value": "02 / 07 · About 4 minutes",
+    "markup": "02 / 07 · About 4 minutes",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/1/3/0",
+    "type": "text",
+    "value": "Evidence Is Your Strongest Contribution",
+    "markup": "Evidence Is Your Strongest Contribution",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/1/5/1/0",
+    "type": "text",
+    "value": "RELEVANCE",
+    "markup": "RELEVANCE",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/1/5/2/0",
+    "type": "text",
+    "value": "→",
+    "markup": "→",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/1/5/3/0",
+    "type": "text",
+    "value": "EVIDENCE",
+    "markup": "EVIDENCE",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/1/5/4/0",
+    "type": "text",
+    "value": "→",
+    "markup": "→",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/1/5/5/0",
+    "type": "text",
+    "value": "EXPLANATION",
+    "markup": "EXPLANATION",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/1/5/6/0",
+    "type": "text",
+    "value": "→",
+    "markup": "→",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/1/5/7/0",
+    "type": "text",
+    "value": "CONNECTION",
+    "markup": "CONNECTION",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/3/0",
+    "type": "text",
+    "value": "Expand all four sections to examine the parts of a strong contribution.",
+    "markup": "Expand all four sections to examine the parts of a strong contribution.",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/5/1/1/0",
+    "type": "text",
+    "value": "Relevance",
+    "markup": "Relevance",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/5/1/3/0",
+    "type": "text",
+    "value": "Follow the current conversation. Address the group's task rather than repeating or abruptly changing the subject.",
+    "markup": "Follow the current conversation. Address the group's task rather than repeating or abruptly changing the subject.",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/5/1/5/0",
+    "type": "text",
+    "value": "\n                            Save a finding for a later agenda item if it does not fit the present discussion.\n                        ",
+    "markup": "\n                            Save a finding for a later agenda item if it does not fit the present discussion.\n                        ",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/5/3/1/0",
+    "type": "text",
+    "value": "Evidence",
+    "markup": "Evidence",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/5/3/3/0",
+    "type": "text",
+    "value": "Cite at least the publication or publisher and publication date. Add the author or article title when available.",
+    "markup": "Cite at least the publication or publisher and publication date. Add the author or article title when available.",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/5/3/5/0",
+    "type": "text",
+    "value": "\n                            “According to [publication], in [month/year], [finding]. This matters because [connection].” This is a template, not a real citation.\n                        ",
+    "markup": "\n                            “According to [publication], in [month/year], [finding]. This matters because [connection].” This is a template, not a real citation.\n                        ",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/5/5/1/0",
+    "type": "text",
+    "value": "Explanation",
+    "markup": "Explanation",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/5/5/3/0",
+    "type": "text",
+    "value": "Go beyond stating a fact or statistic.",
+    "markup": "Go beyond stating a fact or statistic.",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/5/5/5/0",
+    "type": "text",
+    "value": "\n                            Explain why the finding matters and how it could influence the group's decision.\n                        ",
+    "markup": "\n                            Explain why the finding matters and how it could influence the group's decision.\n                        ",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/5/7/1/0",
+    "type": "text",
+    "value": "Connection",
+    "markup": "Connection",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/5/7/3/0",
+    "type": "text",
+    "value": "Link your point to another speaker, the agenda, or a developing solution.",
+    "markup": "Link your point to another speaker, the agenda, or a developing solution.",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/5/7/5/0",
+    "type": "text",
+    "value": "\n                            Make explicit how your evidence advances the group's task.\n                        ",
+    "markup": "\n                            Make explicit how your evidence advances the group's task.\n                        ",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/7/1/0",
+    "type": "text",
+    "value": "Research and anecdotes have different jobs",
+    "markup": "Research and anecdotes have different jobs",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/7/3/1/0",
+    "type": "text",
+    "value": "Research supplies externally supported evidence. Personal stories can make an issue concrete, but one anecdote does not prove a universal experience. Use relevant, credible evidence to support factual claims.",
+    "markup": "Research supplies externally supported evidence. Personal stories can make an issue concrete, but one anecdote does not prove a universal experience. Use relevant, credible evidence to support factual claims.",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/7/5/0",
+    "type": "text",
+    "value": "Flip both practice examples to compare them.",
+    "markup": "Flip both practice examples to compare them.",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/7/7/1@aria-label",
+    "type": "aria-label",
+    "value": "Flip weak practice example",
+    "status": "attribute",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/7/7/1/1/1/1/0",
+    "type": "text",
+    "value": "WEAK · FICTIONAL EXAMPLE",
+    "markup": "WEAK · FICTIONAL EXAMPLE",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/7/7/1/1/1/3/0",
+    "type": "text",
+    "value": "“Transportation matters because I know people who can't get rides.”",
+    "markup": "“Transportation matters because I know people who can't get rides.”",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/7/7/1/1/1/5/0",
+    "type": "text",
+    "value": "↻ Flip card",
+    "markup": "↻ Flip card",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/7/7/1/1/3/1/0",
+    "type": "text",
+    "value": "WHY IT IS WEAK",
+    "markup": "WHY IT IS WEAK",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/7/7/1/1/3/3/0",
+    "type": "text",
+    "value": "A personal observation illustrates the issue but provides no source or task connection.",
+    "markup": "A personal observation illustrates the issue but provides no source or task connection.",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/7/7/1/1/3/5/0",
+    "type": "text",
+    "value": "✓ Explored",
+    "markup": "✓ Explored",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/7/7/3@aria-label",
+    "type": "aria-label",
+    "value": "Flip stronger practice example",
+    "status": "attribute",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/7/7/3/1/1/1/0",
+    "type": "text",
+    "value": "STRONGER",
+    "markup": "STRONGER",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/7/7/3/1/1/3/0",
+    "type": "text",
+    "value": "“Let's examine whether a transportation-access report applies to our community before deciding on support.”",
+    "markup": "“Let's examine whether a transportation-access report applies to our community before deciding on support.”",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/7/7/3/1/1/5/0",
+    "type": "text",
+    "value": "↻ Flip card",
+    "markup": "↻ Flip card",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/7/7/3/1/3/1/0",
+    "type": "text",
+    "value": "WHY IT IS STRONGER",
+    "markup": "WHY IT IS STRONGER",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/7/7/3/1/3/3/0",
+    "type": "text",
+    "value": "Identifies needed evidence and connects it to a decision without inventing findings.",
+    "markup": "Identifies needed evidence and connects it to a decision without inventing findings.",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/7/7/3/1/3/5/0",
+    "type": "text",
+    "value": "✓ Explored",
+    "markup": "✓ Explored",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/7/9/1/0",
+    "type": "text",
+    "value": "Activity 2 · Build a stronger contribution",
+    "markup": "Activity 2 · Build a stronger contribution",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/7/9/3/0/0",
+    "type": "text",
+    "value": "Fictional practice data:",
+    "markup": "Fictional practice data:",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/7/9/3/1",
+    "type": "text",
+    "value": " Community Access Survey, May 2025: In a hypothetical survey of 200 students, 38% reported that transportation difficulties prevented them from attending at least one after-school activity.",
+    "markup": "<strong>Fictional practice data:</strong> Community Access Survey, May 2025: In a hypothetical survey of 200 students, 38% reported that transportation difficulties prevented them from attending at least one after-school activity.",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/7/9/5/0",
+    "type": "text",
+    "value": "Which contribution uses this research most effectively?",
+    "markup": "Which contribution uses this research most effectively?",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/7/9/11/1/0",
+    "type": "text",
+    "value": "Construct your own · No automated grading",
+    "markup": "Construct your own · No automated grading",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/7/9/11/2/0",
+    "type": "text",
+    "value": "Source and date",
+    "markup": "Source and date",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/7/9/11/3@placeholder",
+    "type": "placeholder",
+    "value": "e.g., fictional Community Access Survey, May 2025",
+    "status": "attribute",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/7/9/11/5/0",
+    "type": "text",
+    "value": "Relevant finding",
+    "markup": "Relevant finding",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/7/9/11/8/0",
+    "type": "text",
+    "value": "Why it matters to the group's task",
+    "markup": "Why it matters to the group's task",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/7/9/11/11/1/0",
+    "type": "text",
+    "value": "Assemble My Contribution",
+    "markup": "Assemble My Contribution",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/7/9/11/11/2/0",
+    "type": "text",
+    "value": "Copy My Contribution",
+    "markup": "Copy My Contribution",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/7/9/11/11/3/0",
+    "type": "text",
+    "value": "Compare with Model",
+    "markup": "Compare with Model",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/7/9/11/12/0",
+    "type": "text",
+    "value": "Your assembled contribution",
+    "markup": "Your assembled contribution",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/7/9/11/17/0",
+    "type": "text",
+    "value": "\n                                “According to the fictional Community Access Survey published in May 2025, 38% of surveyed students reported missing at least one after-school activity because of transportation difficulties. This suggests we should evaluate transportation assistance as one possible part of our plan.”\n                            ",
+    "markup": "\n                                “According to the fictional Community Access Survey published in May 2025, 38% of surveyed students reported missing at least one after-school activity because of transportation difficulties. This suggests we should evaluate transportation assistance as one possible part of our plan.”\n                            ",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/7/9/11/19/0",
+    "type": "text",
+    "value": "Self-assess your assembled contribution:",
+    "markup": "Self-assess your assembled contribution:",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/8/1/1/0",
+    "type": "text",
+    "value": "03 / 07 · About 4 minutes",
+    "markup": "03 / 07 · About 4 minutes",
+    "status": "hidden-or-alternative",
+    "section": "view-3"
+  },
+  {
+    "identity": "html/1/0/1/1/8/1/3/0",
+    "type": "text",
+    "value": "Strong Discussants Do More Than Talk",
+    "markup": "Strong Discussants Do More Than Talk",
+    "status": "hidden-or-alternative",
+    "section": "view-3"
+  },
+  {
+    "identity": "html/1/0/1/1/8/1/5/0",
+    "type": "text",
+    "value": "Expand all four strategies, then work through the group decisions.",
+    "markup": "Expand all four strategies, then work through the group decisions.",
+    "status": "hidden-or-alternative",
+    "section": "view-3"
+  },
+  {
+    "identity": "html/1/0/1/1/8/3/1/1/0",
+    "type": "text",
+    "value": "Take notes",
+    "markup": "Take notes",
+    "status": "hidden-or-alternative",
+    "section": "view-3"
+  },
+  {
+    "identity": "html/1/0/1/1/8/3/1/3/0",
+    "type": "text",
+    "value": "Record major topics, evidence, sources, proposals, agreements, and unresolved questions. Credit others' ideas and look up regularly to remain engaged.",
+    "markup": "Record major topics, evidence, sources, proposals, agreements, and unresolved questions. Credit others' ideas and look up regularly to remain engaged.",
+    "status": "hidden-or-alternative",
+    "section": "view-3"
+  },
+  {
+    "identity": "html/1/0/1/1/8/3/1/5/0",
+    "type": "text",
+    "value": "\n                            Topic: Transportation barriers",
+    "markup": "\n                            Topic: Transportation barriers<br>\n                            Maya: bus routes<br>\n                            Jordan: cost concerns<br>\n                            Open question: Which option is realistic?\n                        ",
+    "status": "hidden-or-alternative",
+    "section": "view-3"
+  },
+  {
+    "identity": "html/1/0/1/1/8/3/1/5/2",
+    "type": "text",
+    "value": "\n                            Maya: bus routes",
+    "markup": "\n                            Topic: Transportation barriers<br>\n                            Maya: bus routes<br>\n                            Jordan: cost concerns<br>\n                            Open question: Which option is realistic?\n                        ",
+    "status": "hidden-or-alternative",
+    "section": "view-3"
+  },
+  {
+    "identity": "html/1/0/1/1/8/3/1/5/4",
+    "type": "text",
+    "value": "\n                            Jordan: cost concerns",
+    "markup": "\n                            Topic: Transportation barriers<br>\n                            Maya: bus routes<br>\n                            Jordan: cost concerns<br>\n                            Open question: Which option is realistic?\n                        ",
+    "status": "hidden-or-alternative",
+    "section": "view-3"
+  },
+  {
+    "identity": "html/1/0/1/1/8/3/1/5/6",
+    "type": "text",
+    "value": "\n                            Open question: Which option is realistic?\n                        ",
+    "markup": "\n                            Topic: Transportation barriers<br>\n                            Maya: bus routes<br>\n                            Jordan: cost concerns<br>\n                            Open question: Which option is realistic?\n                        ",
+    "status": "hidden-or-alternative",
+    "section": "view-3"
+  },
+  {
+    "identity": "html/1/0/1/1/8/3/3/1/0",
+    "type": "text",
+    "value": "Manage time",
+    "markup": "Manage time",
+    "status": "hidden-or-alternative",
+    "section": "view-3"
+  },
+  {
+    "identity": "html/1/0/1/1/8/3/3/3/0",
+    "type": "text",
+    "value": "Track the round and agreed agenda periods. Timing protects the opportunity to finish the deliverable, but cannot replace substantive participation.",
+    "markup": "Track the round and agreed agenda periods. Timing protects the opportunity to finish the deliverable, but cannot replace substantive participation.",
+    "status": "hidden-or-alternative",
+    "section": "view-3"
+  },
+  {
+    "identity": "html/1/0/1/1/8/3/5/1/0",
+    "type": "text",
+    "value": "Include others",
+    "markup": "Include others",
+    "status": "hidden-or-alternative",
+    "section": "view-3"
+  },
+  {
+    "identity": "html/1/0/1/1/8/3/5/3/0",
+    "type": "text",
+    "value": "At a transition, ask: “Before we move on, are there any other perspectives we should consider?” Broad invitations avoid repeatedly singling out quieter participants.",
+    "markup": "At a transition, ask: “Before we move on, are there any other perspectives we should consider?” Broad invitations avoid repeatedly singling out quieter participants.",
+    "status": "hidden-or-alternative",
+    "section": "view-3"
+  },
+  {
+    "identity": "html/1/0/1/1/8/3/7/1/0",
+    "type": "text",
+    "value": "Focus the group",
+    "markup": "Focus the group",
+    "status": "hidden-or-alternative",
+    "section": "view-3"
+  },
+  {
+    "identity": "html/1/0/1/1/8/3/7/3/0",
+    "type": "text",
+    "value": "Respectfully refer to the task or agenda: “Could we return to the barriers our plan needs to address?” Propose a constructive next step.",
+    "markup": "Respectfully refer to the task or agenda: “Could we return to the barriers our plan needs to address?” Propose a constructive next step.",
+    "status": "hidden-or-alternative",
+    "section": "view-3"
+  },
+  {
+    "identity": "html/1/0/1/1/8/5/1/0",
+    "type": "text",
+    "value": "Activity 3 · The group decision simulator",
+    "markup": "Activity 3 · The group decision simulator",
+    "status": "hidden-or-alternative",
+    "section": "view-3"
+  },
+  {
+    "identity": "html/1/0/1/1/8/5/3/1/0",
+    "type": "text",
+    "value": "Fictional round table",
+    "markup": "Fictional round table",
+    "status": "hidden-or-alternative",
+    "section": "view-3"
+  },
+  {
+    "identity": "html/1/0/1/1/8/5/3/3/0",
+    "type": "text",
+    "value": "Agenda: Identify barriers → evaluate solutions → agree on recommendations.",
+    "markup": "Agenda: Identify barriers → evaluate solutions → agree on recommendations.",
+    "status": "hidden-or-alternative",
+    "section": "view-3"
+  },
+  {
+    "identity": "html/1/0/1/1/8/5/11/1/0",
+    "type": "text",
+    "value": "Next scenario →",
+    "markup": "Next scenario →",
+    "status": "hidden-or-alternative",
+    "section": "view-3"
+  },
+  {
+    "identity": "html/1/0/1/1/10/1/1/0",
+    "type": "text",
+    "value": "04 / 07 · About 4 minutes",
+    "markup": "04 / 07 · About 4 minutes",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/1/0/1/1/10/1/3/0",
+    "type": "text",
+    "value": "How You Say It Matters",
+    "markup": "How You Say It Matters",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/1/0/1/1/10/3/0",
+    "type": "text",
+    "value": "Expand all three sections to review the communication strategies.",
+    "markup": "Expand all three sections to review the communication strategies.",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/1/0/1/1/10/5/1/1/0",
+    "type": "text",
+    "value": "Body language",
+    "markup": "Body language",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/1/0/1/1/10/5/1/3/0",
+    "type": "text",
+    "value": "Maintain attentive posture, nod naturally, and look up from notes. Avoid eye rolling, exaggerated sighs, or distracting habits. Direct attention to fellow discussants rather than the judge.",
+    "markup": "Maintain attentive posture, nod naturally, and look up from notes. Avoid eye rolling, exaggerated sighs, or distracting habits. Direct attention to fellow discussants rather than the judge.",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/1/0/1/1/10/5/1/5/0",
+    "type": "text",
+    "value": "These are practical coaching suggestions, not individual official rules.",
+    "markup": "These are practical coaching suggestions, not individual official rules.",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/1/0/1/1/10/5/3/1/0",
+    "type": "text",
+    "value": "Professional language",
+    "markup": "Professional language",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/1/0/1/1/10/5/3/3/0",
+    "type": "text",
+    "value": "Speak concisely, precisely, and respectfully within your assigned role. Reduce fillers, excessive slang, and unrelated references.",
+    "markup": "Speak concisely, precisely, and respectfully within your assigned role. Reduce fillers, excessive slang, and unrelated references.",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/1/0/1/1/10/5/3/5/1/0/0",
+    "type": "text",
+    "value": "Too casual:",
+    "markup": "Too casual:",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/1/0/1/1/10/5/3/5/1/1",
+    "type": "text",
+    "value": " “Guys, this idea is kinda bad.”",
+    "markup": "<strong>Too casual:</strong> “Guys, this idea is kinda bad.”",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/1/0/1/1/10/5/3/5/3/0/0",
+    "type": "text",
+    "value": "Professional:",
+    "markup": "Professional:",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/1/0/1/1/10/5/3/5/3/1",
+    "type": "text",
+    "value": " “I have a concern about whether this proposal is realistic.”",
+    "markup": "<strong>Professional:</strong> “I have a concern about whether this proposal is realistic.”",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/1/0/1/1/10/5/5/1/0",
+    "type": "text",
+    "value": "Voice and volume",
+    "markup": "Voice and volume",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/1/0/1/1/10/5/5/3/0",
+    "type": "text",
+    "value": "Speak clearly enough for a noisy room and finish sentences audibly. A fading ending can be mistaken for an invitation to take a turn. Steady volume does not mean shouting.",
+    "markup": "Speak clearly enough for a noisy room and finish sentences audibly. A fading ending can be mistaken for an invitation to take a turn. Steady volume does not mean shouting.",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/1/0/1/1/10/7/1/0",
+    "type": "text",
+    "value": "Activity 4 · Communication diagnosis",
+    "markup": "Activity 4 · Communication diagnosis",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/1/0/1/1/10/7/9/1/0",
+    "type": "text",
+    "value": "Next situation →",
+    "markup": "Next situation →",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/1/0/1/1/12/1/1/0",
+    "type": "text",
+    "value": "05 / 07 · About 5 minutes",
+    "markup": "05 / 07 · About 5 minutes",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/1/3/0",
+    "type": "text",
+    "value": "When Everyone Wants to Speak",
+    "markup": "When Everyone Wants to Speak",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/1/5/0",
+    "type": "text",
+    "value": "Balance your opportunity to contribute with respect for the group.",
+    "markup": "Balance your opportunity to contribute with respect for the group.",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/3/1/0",
+    "type": "text",
+    "value": "Interactive strategy spectrum",
+    "markup": "Interactive strategy spectrum",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/3/3/0",
+    "type": "text",
+    "value": "Expand all four strategies. None is an automatic default.",
+    "markup": "Expand all four strategies. None is an automatic default.",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/3/5/1/1/0",
+    "type": "text",
+    "value": "Continue assertively",
+    "markup": "Continue assertively",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/3/5/1/3/0/0",
+    "type": "text",
+    "value": "What it means:",
+    "markup": "What it means:",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/3/5/1/3/1",
+    "type": "text",
+    "value": " Continue a brief point when voices overlap.",
+    "markup": "<strong>What it means:</strong> Continue a brief point when voices overlap.",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/3/5/1/5/0/0",
+    "type": "text",
+    "value": "Potential advantage:",
+    "markup": "Potential advantage:",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/3/5/1/5/1",
+    "type": "text",
+    "value": " May preserve a timely point.",
+    "markup": "<strong>Potential advantage:</strong> May preserve a timely point.",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/3/5/1/7/0/0",
+    "type": "text",
+    "value": "Main risk:",
+    "markup": "Main risk:",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/3/5/1/7/1",
+    "type": "text",
+    "value": " Repeatedly talking over others can appear domineering.",
+    "markup": "<strong>Main risk:</strong> Repeatedly talking over others can appear domineering.",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/3/5/1/9/0",
+    "type": "text",
+    "value": "\n                                “Let me finish this connection briefly, and then I’d like to hear other perspectives.”\n                            ",
+    "markup": "\n                                “Let me finish this connection briefly, and then I’d like to hear other perspectives.”\n                            ",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/3/5/3/1/0",
+    "type": "text",
+    "value": "Request to go first",
+    "markup": "Request to go first",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/3/5/3/3/0/0",
+    "type": "text",
+    "value": "What it means:",
+    "markup": "What it means:",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/3/5/3/3/1",
+    "type": "text",
+    "value": " Acknowledge the other speaker and ask to make your point first.",
+    "markup": "<strong>What it means:</strong> Acknowledge the other speaker and ask to make your point first.",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/3/5/3/5/0/0",
+    "type": "text",
+    "value": "Potential advantage:",
+    "markup": "Potential advantage:",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/3/5/3/5/1",
+    "type": "text",
+    "value": " Preserves an opportunity while recognizing another person.",
+    "markup": "<strong>Potential advantage:</strong> Preserves an opportunity while recognizing another person.",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/3/5/3/7/0/0",
+    "type": "text",
+    "value": "Main risk:",
+    "markup": "Main risk:",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/3/5/3/7/1",
+    "type": "text",
+    "value": " Repeated requests can control the floor. Honor the promised next turn.",
+    "markup": "<strong>Main risk:</strong> Repeated requests can control the floor. Honor the promised next turn.",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/3/5/3/9/0",
+    "type": "text",
+    "value": "\n                                “Would you mind if I finish this point first? I’d like to hear you afterward.”\n                            ",
+    "markup": "\n                                “Would you mind if I finish this point first? I’d like to hear you afterward.”\n                            ",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/3/5/5/1/0",
+    "type": "text",
+    "value": "Yield and request the next turn",
+    "markup": "Yield and request the next turn",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/3/5/5/3/0/0",
+    "type": "text",
+    "value": "What it means:",
+    "markup": "What it means:",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/3/5/5/3/1",
+    "type": "text",
+    "value": " Let the other person go first, then ask to contribute.",
+    "markup": "<strong>What it means:</strong> Let the other person go first, then ask to contribute.",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/3/5/5/5/0/0",
+    "type": "text",
+    "value": "Potential advantage:",
+    "markup": "Potential advantage:",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/3/5/5/5/1",
+    "type": "text",
+    "value": " Builds trust and balances participation.",
+    "markup": "<strong>Potential advantage:</strong> Builds trust and balances participation.",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/3/5/5/7/0/0",
+    "type": "text",
+    "value": "Main risk:",
+    "markup": "Main risk:",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/3/5/5/7/1",
+    "type": "text",
+    "value": " The discussion may move on before your point fits.",
+    "markup": "<strong>Main risk:</strong> The discussion may move on before your point fits.",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/3/5/5/9/0",
+    "type": "text",
+    "value": "\n                                “Go ahead. I’d like to build on that afterward.”\n                            ",
+    "markup": "\n                                “Go ahead. I’d like to build on that afterward.”\n                            ",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/3/5/7/1/0",
+    "type": "text",
+    "value": "Claim a direct connection",
+    "markup": "Claim a direct connection",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/3/5/7/3/0/0",
+    "type": "text",
+    "value": "What it means:",
+    "markup": "What it means:",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/3/5/7/3/1",
+    "type": "text",
+    "value": " Explain why your point responds immediately to the previous speaker.",
+    "markup": "<strong>What it means:</strong> Explain why your point responds immediately to the previous speaker.",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/3/5/7/5/0/0",
+    "type": "text",
+    "value": "Potential advantage:",
+    "markup": "Potential advantage:",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/3/5/7/5/1",
+    "type": "text",
+    "value": " Preserves continuity.",
+    "markup": "<strong>Potential advantage:</strong> Preserves continuity.",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/3/5/7/7/0/0",
+    "type": "text",
+    "value": "Main risk:",
+    "markup": "Main risk:",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/3/5/7/7/1",
+    "type": "text",
+    "value": " Repeated urgency claims can dominate the floor.",
+    "markup": "<strong>Main risk:</strong> Repeated urgency claims can dominate the floor.",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/3/5/7/9/0",
+    "type": "text",
+    "value": "\n                                “Could I respond briefly to that concern before we change topics?”\n                            ",
+    "markup": "\n                                “Could I respond briefly to that concern before we change topics?”\n                            ",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/5/1@aria-label",
+    "type": "aria-label",
+    "value": "Flip Prevent an interruption card",
+    "status": "attribute",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/5/1/1/1/1/0",
+    "type": "text",
+    "value": "Prevent an interruption",
+    "markup": "Prevent an interruption",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/5/1/1/1/3/0",
+    "type": "text",
+    "value": "↻ Flip card",
+    "markup": "↻ Flip card",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/5/1/1/3/1/0",
+    "type": "text",
+    "value": "Maintain steady volume through your sentence so others know your thought is not complete.",
+    "markup": "Maintain steady volume through your sentence so others know your thought is not complete.",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/5/1/1/3/3/0",
+    "type": "text",
+    "value": "✓ Explored",
+    "markup": "✓ Explored",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/5/3@aria-label",
+    "type": "aria-label",
+    "value": "Flip Respond constructively card",
+    "status": "attribute",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/5/3/1/1/1/0",
+    "type": "text",
+    "value": "Respond constructively",
+    "markup": "Respond constructively",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/5/3/1/1/3/0",
+    "type": "text",
+    "value": "↻ Flip card",
+    "markup": "↻ Flip card",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/5/3/1/3/1/0",
+    "type": "text",
+    "value": "If interrupted, politely indicate that you are finishing. Offer the other speaker the next turn, then follow through.",
+    "markup": "If interrupted, politely indicate that you are finishing. Offer the other speaker the next turn, then follow through.<br><br>\n                                    “I'd like to finish this final point, and then I want to hear what you were going to add.”",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/5/3/1/3/1/3",
+    "type": "text",
+    "value": "\n                                    “I'd like to finish this final point, and then I want to hear what you were going to add.”",
+    "markup": "If interrupted, politely indicate that you are finishing. Offer the other speaker the next turn, then follow through.<br><br>\n                                    “I'd like to finish this final point, and then I want to hear what you were going to add.”",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/5/3/1/3/3/0",
+    "type": "text",
+    "value": "✓ Explored",
+    "markup": "✓ Explored",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/7/1/0",
+    "type": "text",
+    "value": "Activity 5 · Branching speaking simulator",
+    "markup": "Activity 5 · Branching speaking simulator",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/7/3/0",
+    "type": "text",
+    "value": "Explore consequences; these choices do not predict official judge rankings.",
+    "markup": "Explore consequences; these choices do not predict official judge rankings.",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/7/11/1/0",
+    "type": "text",
+    "value": "Try Another Strategy",
+    "markup": "Try Another Strategy",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/7/11/2/0",
+    "type": "text",
+    "value": "Next episode →",
+    "markup": "Next episode →",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/14/1/1/0",
+    "type": "text",
+    "value": "06 / 07 · About 3 minutes",
+    "markup": "06 / 07 · About 3 minutes",
+    "status": "hidden-or-alternative",
+    "section": "view-6"
+  },
+  {
+    "identity": "html/1/0/1/1/14/1/3/0",
+    "type": "text",
+    "value": "A Discussion in Motion",
+    "markup": "A Discussion in Motion",
+    "status": "hidden-or-alternative",
+    "section": "view-6"
+  },
+  {
+    "identity": "html/1/0/1/1/14/1/5/0/0",
+    "type": "text",
+    "value": "Fictional practice task:",
+    "markup": "Fictional practice task:",
+    "status": "hidden-or-alternative",
+    "section": "view-6"
+  },
+  {
+    "identity": "html/1/0/1/1/14/1/5/1",
+    "type": "text",
+    "value": " A city advisory committee is developing a proposal to improve teen participation in community programs. It is evaluating transportation, communication, and scheduling solutions.",
+    "markup": "<strong>Fictional practice task:</strong> A city advisory committee is developing a proposal to improve teen participation in community programs. It is evaluating transportation, communication, and scheduling solutions.",
+    "status": "hidden-or-alternative",
+    "section": "view-6"
+  },
+  {
+    "identity": "html/1/0/1/1/14/3/1/1/0",
+    "type": "text",
+    "value": "MAYA",
+    "markup": "MAYA",
+    "status": "hidden-or-alternative",
+    "section": "view-6"
+  },
+  {
+    "identity": "html/1/0/1/1/14/3/1/2",
+    "type": "text",
+    "value": "“We could partner with transportation providers.”\n                    ",
+    "markup": "\n<strong>MAYA</strong>“We could partner with transportation providers.”\n                    ",
+    "status": "hidden-or-alternative",
+    "section": "view-6"
+  },
+  {
+    "identity": "html/1/0/1/1/14/3/3/1/0",
+    "type": "text",
+    "value": "JORDAN",
+    "markup": "JORDAN",
+    "status": "hidden-or-alternative",
+    "section": "view-6"
+  },
+  {
+    "identity": "html/1/0/1/1/14/3/3/2",
+    "type": "text",
+    "value": "“That might be expensive. Could the city support it?”\n                    ",
+    "markup": "\n<strong>JORDAN</strong>“That might be expensive. Could the city support it?”\n                    ",
+    "status": "hidden-or-alternative",
+    "section": "view-6"
+  },
+  {
+    "identity": "html/1/0/1/1/14/3/5/1/0",
+    "type": "text",
+    "value": "AVERY",
+    "markup": "AVERY",
+    "status": "hidden-or-alternative",
+    "section": "view-6"
+  },
+  {
+    "identity": "html/1/0/1/1/14/3/5/2",
+    "type": "text",
+    "value": "“How do students learn these programs exist?”\n                    ",
+    "markup": "\n<strong>AVERY</strong>“How do students learn these programs exist?”\n                    ",
+    "status": "hidden-or-alternative",
+    "section": "view-6"
+  },
+  {
+    "identity": "html/1/0/1/1/14/3/7/1/0",
+    "type": "text",
+    "value": "SAM",
+    "markup": "SAM",
+    "status": "hidden-or-alternative",
+    "section": "view-6"
+  },
+  {
+    "identity": "html/1/0/1/1/14/3/7/2",
+    "type": "text",
+    "value": "“We have twelve minutes left to narrow our recommendations.”\n                    ",
+    "markup": "\n<strong>SAM</strong>“We have twelve minutes left to narrow our recommendations.”\n                    ",
+    "status": "hidden-or-alternative",
+    "section": "view-6"
+  },
+  {
+    "identity": "html/1/0/1/1/14/5/1/0",
+    "type": "text",
+    "value": "Task A · Select the strongest substantive contribution",
+    "markup": "Task A · Select the strongest substantive contribution",
+    "status": "hidden-or-alternative",
+    "section": "view-6"
+  },
+  {
+    "identity": "html/1/0/1/1/14/7/1/0",
+    "type": "text",
+    "value": "Task B · Select the best collaborative move",
+    "markup": "Task B · Select the best collaborative move",
+    "status": "hidden-or-alternative",
+    "section": "view-6"
+  },
+  {
+    "identity": "html/1/0/1/1/14/9/1/0",
+    "type": "text",
+    "value": "Task C · Write your own contribution",
+    "markup": "Task C · Write your own contribution",
+    "status": "hidden-or-alternative",
+    "section": "view-6"
+  },
+  {
+    "identity": "html/1/0/1/1/14/9/2/0",
+    "type": "text",
+    "value": "Write two or three sentences that build on at least two participants' ideas, add an insight or solution, and use a professional tone.",
+    "markup": "Write two or three sentences that build on at least two participants' ideas, add an insight or solution, and use a professional tone.",
+    "status": "hidden-or-alternative",
+    "section": "view-6"
+  },
+  {
+    "identity": "html/1/0/1/1/14/9/5/1/0",
+    "type": "text",
+    "value": "Show Model Response",
+    "markup": "Show Model Response",
+    "status": "hidden-or-alternative",
+    "section": "view-6"
+  },
+  {
+    "identity": "html/1/0/1/1/14/9/5/2/0",
+    "type": "text",
+    "value": "Copy My Response",
+    "markup": "Copy My Response",
+    "status": "hidden-or-alternative",
+    "section": "view-6"
+  },
+  {
+    "identity": "html/1/0/1/1/14/9/9/0",
+    "type": "text",
+    "value": "\n                        “Building on Maya's transportation idea and Jordan's cost concern, perhaps we could recommend a limited pilot before a larger investment. Avery's point about communication matters too, so the pilot could include outreach.”\n                    ",
+    "markup": "\n                        “Building on Maya's transportation idea and Jordan's cost concern, perhaps we could recommend a limited pilot before a larger investment. Avery's point about communication matters too, so the pilot could include outreach.”\n                    ",
+    "status": "hidden-or-alternative",
+    "section": "view-6"
+  },
+  {
+    "identity": "html/1/0/1/1/14/9/11/0",
+    "type": "text",
+    "value": "Self-assess; your writing is not automatically graded:",
+    "markup": "Self-assess; your writing is not automatically graded:",
+    "status": "hidden-or-alternative",
+    "section": "view-6"
+  },
+  {
+    "identity": "html/1/0/1/1/16/1/1/0",
+    "type": "text",
+    "value": "07 / 07 · Knowledge check",
+    "markup": "07 / 07 · Knowledge check",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/1/0/1/1/16/1/3/0",
+    "type": "text",
+    "value": "Are You Ready to Make an Impact?",
+    "markup": "Are You Ready to Make an Impact?",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/1/0/1/1/16/1/5/0",
+    "type": "text",
+    "value": "Five questions, one point each. Retry missed questions. This is practice, not an official MSHSL assessment.",
+    "markup": "Five questions, one point each. Retry missed questions. This is practice, not an official MSHSL assessment.",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/1/0/1/1/16/5/7/1/0",
+    "type": "text",
+    "value": "Check Answer",
+    "markup": "Check Answer",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/1/0/1/1/16/5/7/2/0",
+    "type": "text",
+    "value": "Next question →",
+    "markup": "Next question →",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/1/0/1/1/18/1/0/0/0/0",
+    "type": "text",
+    "value": "Print quick reference",
+    "markup": "Print quick reference",
+    "status": "hidden-or-alternative",
+    "section": "view-8"
+  },
+  {
+    "identity": "html/1/0/1/1/18/1/0/1/0",
+    "type": "text",
+    "value": "Middle Stage Quick Reference",
+    "markup": "Middle Stage Quick Reference",
+    "status": "hidden-or-alternative",
+    "section": "view-8"
+  },
+  {
+    "identity": "html/1/0/1/1/18/1/2/1/0/0",
+    "type": "text",
+    "value": "01",
+    "markup": "01",
+    "status": "hidden-or-alternative",
+    "section": "view-8"
+  },
+  {
+    "identity": "html/1/0/1/1/18/1/2/1/1/0",
+    "type": "text",
+    "value": "Contribute substance",
+    "markup": "Contribute substance",
+    "status": "hidden-or-alternative",
+    "section": "view-8"
+  },
+  {
+    "identity": "html/1/0/1/1/18/1/2/3/1/0",
+    "type": "text",
+    "value": "Share relevant research and insights frequently.",
+    "markup": "Share relevant research and insights frequently.",
+    "status": "hidden-or-alternative",
+    "section": "view-8"
+  },
+  {
+    "identity": "html/1/0/1/1/18/1/2/3/3/0",
+    "type": "text",
+    "value": "Verbally cite publication and date; explain why evidence matters.",
+    "markup": "Verbally cite publication and date; explain why evidence matters.",
+    "status": "hidden-or-alternative",
+    "section": "view-8"
+  },
+  {
+    "identity": "html/1/0/1/1/18/1/2/3/5/0",
+    "type": "text",
+    "value": "Use anecdotes to illustrate, not replace, evidence.",
+    "markup": "Use anecdotes to illustrate, not replace, evidence.",
+    "status": "hidden-or-alternative",
+    "section": "view-8"
+  },
+  {
+    "identity": "html/1/0/1/1/18/1/2/3/7/0",
+    "type": "text",
+    "value": "Avoid repetition and unrelated detours.",
+    "markup": "Avoid repetition and unrelated detours.",
+    "status": "hidden-or-alternative",
+    "section": "view-8"
+  },
+  {
+    "identity": "html/1/0/1/1/18/1/4/1/0/0",
+    "type": "text",
+    "value": "02",
+    "markup": "02",
+    "status": "hidden-or-alternative",
+    "section": "view-8"
+  },
+  {
+    "identity": "html/1/0/1/1/18/1/4/1/1/0",
+    "type": "text",
+    "value": "Support the group",
+    "markup": "Support the group",
+    "status": "hidden-or-alternative",
+    "section": "view-8"
+  },
+  {
+    "identity": "html/1/0/1/1/18/1/4/3/1/0",
+    "type": "text",
+    "value": "Take notes on ideas, evidence, and their contributors; look up regularly.",
+    "markup": "Take notes on ideas, evidence, and their contributors; look up regularly.",
+    "status": "hidden-or-alternative",
+    "section": "view-8"
+  },
+  {
+    "identity": "html/1/0/1/1/18/1/4/3/3/0",
+    "type": "text",
+    "value": "Help track the round and agreed agenda periods.",
+    "markup": "Help track the round and agreed agenda periods.",
+    "status": "hidden-or-alternative",
+    "section": "view-8"
+  },
+  {
+    "identity": "html/1/0/1/1/18/1/4/3/5/0",
+    "type": "text",
+    "value": "Invite perspectives without repeatedly singling people out.",
+    "markup": "Invite perspectives without repeatedly singling people out.",
+    "status": "hidden-or-alternative",
+    "section": "view-8"
+  },
+  {
+    "identity": "html/1/0/1/1/18/1/4/3/7/0",
+    "type": "text",
+    "value": "Redirect respectfully toward the WHAT and HOW of the task.",
+    "markup": "Redirect respectfully toward the WHAT and HOW of the task.",
+    "status": "hidden-or-alternative",
+    "section": "view-8"
+  },
+  {
+    "identity": "html/1/0/1/1/18/1/6/1/0/0",
+    "type": "text",
+    "value": "03",
+    "markup": "03",
+    "status": "hidden-or-alternative",
+    "section": "view-8"
+  },
+  {
+    "identity": "html/1/0/1/1/18/1/6/1/1/0",
+    "type": "text",
+    "value": "Communicate professionally",
+    "markup": "Communicate professionally",
+    "status": "hidden-or-alternative",
+    "section": "view-8"
+  },
+  {
+    "identity": "html/1/0/1/1/18/1/6/3/1/0",
+    "type": "text",
+    "value": "Listen actively; avoid visible frustration and distracting habits.",
+    "markup": "Listen actively; avoid visible frustration and distracting habits.",
+    "status": "hidden-or-alternative",
+    "section": "view-8"
+  },
+  {
+    "identity": "html/1/0/1/1/18/1/6/3/3/0",
+    "type": "text",
+    "value": "Address fellow discussants, not the judge.",
+    "markup": "Address fellow discussants, not the judge.",
+    "status": "hidden-or-alternative",
+    "section": "view-8"
+  },
+  {
+    "identity": "html/1/0/1/1/18/1/6/3/5/0",
+    "type": "text",
+    "value": "Use concise language suited to your assigned role.",
+    "markup": "Use concise language suited to your assigned role.",
+    "status": "hidden-or-alternative",
+    "section": "view-8"
+  },
+  {
+    "identity": "html/1/0/1/1/18/1/6/3/7/0",
+    "type": "text",
+    "value": "Speak clearly and maintain volume through sentence endings.",
+    "markup": "Speak clearly and maintain volume through sentence endings.",
+    "status": "hidden-or-alternative",
+    "section": "view-8"
+  },
+  {
+    "identity": "html/1/0/1/1/18/1/8/1/0/0",
+    "type": "text",
+    "value": "04",
+    "markup": "04",
+    "status": "hidden-or-alternative",
+    "section": "view-8"
+  },
+  {
+    "identity": "html/1/0/1/1/18/1/8/1/1/0",
+    "type": "text",
+    "value": "Manage speaking conflicts",
+    "markup": "Manage speaking conflicts",
+    "status": "hidden-or-alternative",
+    "section": "view-8"
+  },
+  {
+    "identity": "html/1/0/1/1/18/1/8/3/1/0",
+    "type": "text",
+    "value": "Continue assertively only with care; it risks dominance.",
+    "markup": "Continue assertively only with care; it risks dominance.",
+    "status": "hidden-or-alternative",
+    "section": "view-8"
+  },
+  {
+    "identity": "html/1/0/1/1/18/1/8/3/3/0",
+    "type": "text",
+    "value": "Request first turn and honor your promise to yield.",
+    "markup": "Request first turn and honor your promise to yield.",
+    "status": "hidden-or-alternative",
+    "section": "view-8"
+  },
+  {
+    "identity": "html/1/0/1/1/18/1/8/3/5/0",
+    "type": "text",
+    "value": "Yield and request the next turn when appropriate.",
+    "markup": "Yield and request the next turn when appropriate.",
+    "status": "hidden-or-alternative",
+    "section": "view-8"
+  },
+  {
+    "identity": "html/1/0/1/1/18/1/8/3/7/0",
+    "type": "text",
+    "value": "Explain a timely, direct connection when requesting a turn.",
+    "markup": "Explain a timely, direct connection when requesting a turn.",
+    "status": "hidden-or-alternative",
+    "section": "view-8"
+  },
+  {
+    "identity": "html/1/0/1/1/18/1/8/3/9/0",
+    "type": "text",
+    "value": "If interrupted, politely finish and give the promised speaker a turn.",
+    "markup": "If interrupted, politely finish and give the promised speaker a turn.",
+    "status": "hidden-or-alternative",
+    "section": "view-8"
+  },
+  {
+    "identity": "html/1/0/1/1/18/1/10/1/0/0",
+    "type": "text",
+    "value": "05",
+    "markup": "05",
+    "status": "hidden-or-alternative",
+    "section": "view-8"
+  },
+  {
+    "identity": "html/1/0/1/1/18/1/10/1/1/0",
+    "type": "text",
+    "value": "Your goal",
+    "markup": "Your goal",
+    "status": "hidden-or-alternative",
+    "section": "view-8"
+  },
+  {
+    "identity": "html/1/0/1/1/18/1/10/3/1/0/0",
+    "type": "text",
+    "value": "Contribute evidence. Build on others. Keep the group moving toward a solution.",
+    "markup": "Contribute evidence. Build on others. Keep the group moving toward a solution.",
+    "status": "hidden-or-alternative",
+    "section": "view-8"
+  },
+  {
+    "identity": "html/1/0/1/1/19/0/0",
+    "type": "text",
+    "value": "← Back",
+    "markup": "← Back",
+    "status": "initial-markup",
+    "section": "shell"
+  },
+  {
+    "identity": "html/1/0/1/1/19/1/0",
+    "type": "text",
+    "value": "Next section →",
+    "markup": "Next section →",
+    "status": "initial-markup",
+    "section": "shell"
+  }
+]

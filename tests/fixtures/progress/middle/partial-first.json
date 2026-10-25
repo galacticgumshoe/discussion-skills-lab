@@ -1,0 +1,13 @@
+{
+  "provenance": "UI-observed",
+  "revision": "0b5d2297e7cbc19bd59cde750492dd28e3983ca0",
+  "origin": "http://127.0.0.1:60496",
+  "mount": "/",
+  "browser": "149.0.7827.55",
+  "raw": "{\"completed\":[],\"data\":{\"middleState\":{\"sets\":{\"flipped\":{\"welcome\":[0],\"s1\":[],\"models\":[],\"speaking\":[]},\"evidenceOpened\":[],\"communicationOpened\":[],\"strategyOpened\":[],\"openedDetails\":[],\"solved\":{\"classify\":[],\"group\":[],\"communication\":[],\"speaking\":[],\"application\":[]},\"correctQuiz\":[]},\"fields\":{\"0\":\"\",\"1\":\"\",\"2\":\"\",\"3\":\"\",\"4\":false,\"5\":false,\"6\":false,\"7\":false,\"8\":\"\",\"9\":false,\"10\":false,\"11\":false,\"12\":false,\"13\":false},\"positions\":{\"classify\":0,\"group\":0,\"communication\":0,\"speaking\":0},\"researchCorrect\":false,\"assembled\":false,\"quizIndex\":0,\"selections\":{}}}}",
+  "actions": [
+    "activate #view-0 .flip-card index 0"
+  ],
+  "questions": [],
+  "url": "http://127.0.0.1:60496/middle.html"
+}

@@ -1,0 +1,7 @@
+{
+  "provenance": "synthetic",
+  "revision": "0b5d2297e7cbc19bd59cde750492dd28e3983ca0",
+  "safety": "safe",
+  "purpose": "Empty/unanswered, Unicode drafts and numeric zero are distinct",
+  "raw": "{\"completed\":[],\"data\":{\"classificationAnswers\":[null,null,null,null,null],\"quizAnswers\":[0,null,null,null,null],\"what-how-options\":0,\"draft-input\":\"\"}}"
+}

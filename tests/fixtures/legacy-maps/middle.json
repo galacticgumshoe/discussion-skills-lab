@@ -1,0 +1,51 @@
+{
+  "lesson": "middle",
+  "revision": "0b5d2297e7cbc19bd59cde750492dd28e3983ca0",
+  "storageKey": "dsl:middle:v1",
+  "countedPages": 8,
+  "sections": ["welcome", "structure-substance", "evidence", "support-group", "communication", "speaking-conflicts", "integrated-practice", "knowledge-check", "quick-reference"],
+  "dataPath": "data.middleState",
+  "ownedProperties": ["sets", "fields", "positions", "researchCorrect", "assembled", "quizIndex", "selections"],
+  "sets": {
+    "flipped": {
+      "welcome": { "0": "bring-evidence", "1": "build-collaboration", "2": "manage-floor" },
+      "s1": { "3": "procedural", "4": "substantive" },
+      "models": { "5": "weak-example", "6": "stronger-example" },
+      "speaking": { "7": "prevent-interruption", "8": "respond-constructively" }
+    },
+    "evidenceOpened": ["relevance", "evidence", "explanation", "connection"],
+    "communicationOpened": ["body-language", "professional-language", "voice-volume"],
+    "strategyOpened": ["continue", "request-first", "yield-next", "direct-connection"],
+    "openedDetails": ["take-notes", "manage-time", "include-others", "focus-group"],
+    "solved": {
+      "classify": ["time", "transportation-report", "invite-perspective", "combine-proposals", "redirect"],
+      "group": ["quiet-tablemate", "detour", "clock"],
+      "communication": ["disagreement", "noisy-gym", "committee-role", "note-taking"],
+      "speaking": ["simultaneous-start", "direct-response", "cut-off"],
+      "application": { "a": "substantive-contribution", "b": "collaborative-move" }
+    },
+    "correctQuiz": ["substantive", "useful-research", "invite-perspective", "sentence-endings", "frequent-speaker"]
+  },
+  "fields": ["source", "finding", "why", "assembled", "research-check-0", "research-check-1", "research-check-2", "research-check-3", "application-draft", "application-check-0", "application-check-1", "application-check-2", "application-check-3", "application-check-4"],
+  "fieldIds": { "source": "evidence-source", "finding": "evidence-finding", "why": "evidence-connection", "assembled": "evidence-output", "application-draft": "integrated-draft" },
+  "checks": {
+    "research": ["source-date", "accurate-finding", "task-connection", "avoid-overstatement"],
+    "application": ["connect-two-ideas", "add-insight", "task-focus", "professional-tone", "supported-evidence"]
+  },
+  "positions": { "classify": "classification", "group": "group-decisions", "communication": "communication-diagnosis", "speaking": "speaking-simulator" },
+  "selections": {
+    "classify-options-N": { "questionsFrom": "sets.solved.classify", "options": ["procedural", "substantive"] },
+    "group-options-N": { "questionsFrom": "sets.solved.group", "options": [["call-jordan", "broad-invitation", "heard-enough"], ["dismiss", "continue-detour", "return-transportation"], ["prioritize-review", "take-over", "ignore-time"]] },
+    "communication-options-N": { "questionsFrom": "sets.solved.communication", "options": [["eye-roll", "respectful-concern"], ["audible-ending", "fade"], ["competitor-role", "committee-role"], ["keep-typing", "look-up"]] },
+    "speaking-options-N": { "questionsFrom": "sets.solved.speaking", "options": [["talk-louder", "yield-avery", "more-important"], ["brief-relevant-finding", "speak-at-length", "never-speak"], ["withdraw", "argue", "finish-yield"]] },
+    "research-options": { "question": "effective-research", "options": ["personal-story", "source-finding-connection", "derail", "only-barrier"] },
+    "application-a-options": { "question": "substantive-contribution", "options": ["change-topic", "synthesize-pilot", "time-left"] },
+    "application-b-options": { "question": "collaborative-move", "options": ["stop-others", "evaluate-recommendations", "take-over"] },
+    "quiz-N": { "questionsFrom": "sets.correctQuiz", "options": [["next-item", "time-left", "combine-proposals", "hear-others"], ["every-statistic", "cite-explain-connect", "stories", "repeat"], ["call-by-name", "ignore", "broad-invitation", "criticize"], ["no-interruption", "complete-thought", "leadership", "avoid-listening"], ["talk-over", "more-important", "yield-next", "withdraw"]] },
+    "transientKeys": ["classify-options", "group-options", "communication-options", "speaking-options", "quiz-options"],
+    "transientPolicy": "Preserve these last-rendered numeric choices too, although per-question keys are authoritative."
+  },
+  "flags": { "researchCorrect": "research-correct-ever", "assembled": "evidence-assembled" },
+  "quizIndex": "knowledge-check current question; Next does not immediately save",
+  "indexConvention": "Arrays freeze numeric indexes including zero; card indexes are GLOBAL, not group-local."
+}

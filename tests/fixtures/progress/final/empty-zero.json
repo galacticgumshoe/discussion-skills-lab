@@ -1,0 +1,7 @@
+{
+  "provenance": "synthetic",
+  "revision": "0b5d2297e7cbc19bd59cde750492dd28e3983ca0",
+  "safety": "safe",
+  "purpose": "Empty/unanswered, Unicode drafts and numeric zero are distinct",
+  "raw": "{\"completed\":[],\"data\":{\"finalState\":{\"fields\":{\"build-1\":\"\",\"closing-text\":\"Synthetic only — “quotes”, café & <not markup>.\\nSecond line: ✓\"},\"selections\":{\"1:0\":0,\"8:0\":0},\"goals\":[0]}}}"
+}

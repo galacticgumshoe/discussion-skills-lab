@@ -1,0 +1,7 @@
+{
+  "provenance": "synthetic",
+  "revision": "0b5d2297e7cbc19bd59cde750492dd28e3983ca0",
+  "safety": "safe",
+  "purpose": "Empty/unanswered, Unicode drafts and numeric zero are distinct",
+  "raw": "{\"completed\":[],\"data\":{\"middleState\":{\"fields\":{\"0\":\"\",\"1\":\"Synthetic only — “quotes”, café & <not markup>.\\nSecond line: ✓\",\"8\":\"\"},\"selections\":{\"classify-options-0\":0,\"quiz-0\":0},\"positions\":{\"classify\":0}}}}"
+}

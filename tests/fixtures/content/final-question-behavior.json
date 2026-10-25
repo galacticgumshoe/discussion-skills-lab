@@ -1,0 +1,602 @@
+[
+  {
+    "identity": "1:0",
+    "options": [
+      "A. Summary",
+      "B. Synthesis",
+      "C. Neither / primarily procedural"
+    ],
+    "answer": 0,
+    "feedback": [
+      {
+        "option": 1,
+        "text": "Not quite. This lists existing ideas but does not connect them into a new direction. Try another option."
+      },
+      {
+        "option": 2,
+        "text": "Not quite. This is substantive: it restates proposals, rather than managing the process. Try another option."
+      },
+      {
+        "option": 0,
+        "text": "Correct. This summarizes proposals already discussed without developing a new recommendation."
+      }
+    ]
+  },
+  {
+    "identity": "1:1",
+    "options": [
+      "A. Summary",
+      "B. Synthesis",
+      "C. Neither / primarily procedural"
+    ],
+    "answer": 1,
+    "feedback": [
+      {
+        "option": 0,
+        "text": "Not quite. It goes beyond restating ideas by proposing a combined test. Try another option."
+      },
+      {
+        "option": 2,
+        "text": "Not quite. This develops the group's thinking, rather than managing procedure. Try another option."
+      },
+      {
+        "option": 1,
+        "text": "Correct. This credits two ideas and develops a combined approach."
+      }
+    ]
+  },
+  {
+    "identity": "1:2",
+    "options": [
+      "A. Summary",
+      "B. Synthesis",
+      "C. Neither / primarily procedural"
+    ],
+    "answer": 2,
+    "feedback": [
+      {
+        "option": 0,
+        "text": "Not quite. It doesn't recap any findings. Try another option."
+      },
+      {
+        "option": 1,
+        "text": "Not quite. It doesn't develop a new substantive insight. Try another option."
+      },
+      {
+        "option": 2,
+        "text": "Correct. This manages the group's process and time."
+      }
+    ]
+  },
+  {
+    "identity": "1:3",
+    "options": [
+      "A. Summary",
+      "B. Synthesis",
+      "C. Neither / primarily procedural"
+    ],
+    "answer": 0,
+    "feedback": [
+      {
+        "option": 1,
+        "text": "Not quite. It reports a decision rather than forming a new connection. Try another option."
+      },
+      {
+        "option": 2,
+        "text": "Not quite. It describes substantive findings rather than procedure. Try another option."
+      },
+      {
+        "option": 0,
+        "text": "Correct. This restates the group's concern and agreed recommendation."
+      }
+    ]
+  },
+  {
+    "identity": "1:4",
+    "options": [
+      "A. Summary",
+      "B. Synthesis",
+      "C. Neither / primarily procedural"
+    ],
+    "answer": 1,
+    "feedback": [
+      {
+        "option": 0,
+        "text": "Not quite. The speaker adds a new requirement, not just a recap. Try another option."
+      },
+      {
+        "option": 2,
+        "text": "Not quite. This is substantive reasoning, not process management. Try another option."
+      },
+      {
+        "option": 1,
+        "text": "Correct. It credits existing ideas and combines them into a developed recommendation."
+      }
+    ]
+  },
+  {
+    "identity": "2:0",
+    "options": [
+      "A. Repeat Maya's transportation idea without addressing the others.",
+      "B. Combine transportation access, cost controls, communication, and a pilot into a coordinated recommendation.",
+      "C. Select whichever idea was mentioned most often."
+    ],
+    "answer": 1,
+    "feedback": [
+      {
+        "option": 0,
+        "text": "Not quite. Repeating one idea overlooks the other viewpoints. Try another option."
+      },
+      {
+        "option": 2,
+        "text": "Not quite. Frequency alone does not establish the best solution. Try another option."
+      },
+      {
+        "option": 1,
+        "text": "Correct. This combines proposals and concerns into a possible implementation strategy."
+      }
+    ]
+  },
+  {
+    "identity": "3:0",
+    "options": [
+      "A. Everyone contributed good ideas, and I think we solved the task.",
+      "B. Our group identified transportation, affordability, and communication barriers. We agreed to recommend a limited pilot combining transportation assistance and outreach, with evaluation before expansion. We still need to clarify the funding source.",
+      "C. Maya said one thing, Jordan said another, Avery added something, and Sam had another idea."
+    ],
+    "answer": 1,
+    "feedback": [
+      {
+        "option": 0,
+        "text": "Not quite. This is too vague and claims success without identifying findings. Try another option."
+      },
+      {
+        "option": 2,
+        "text": "Not quite. This repeats the speaking order without organizing findings. Try another option."
+      },
+      {
+        "option": 1,
+        "text": "Correct. This states major issues, the agreed recommendation, and an unresolved question."
+      }
+    ]
+  },
+  {
+    "identity": "4:0",
+    "options": [
+      "A. Declare that five votes are enough.",
+      "B. Ask the concerned participants what changes would make the proposal acceptable.",
+      "C. Ignore objections and move to the summary."
+    ],
+    "answer": 1,
+    "feedback": [
+      {
+        "option": 0,
+        "text": "Not quite. A majority does not resolve objections when seeking unanimity. Try another option."
+      },
+      {
+        "option": 2,
+        "text": "Not quite. Ignoring concerns prevents meaningful consensus. Try another option."
+      },
+      {
+        "option": 1,
+        "text": "Correct. Understanding concerns opens a path to negotiation."
+      }
+    ]
+  },
+  {
+    "identity": "4:1",
+    "options": [
+      "A. Propose a limited pilot with a spending cap and evaluation before expansion.",
+      "B. Your concerns are holding everyone back.",
+      "C. Abandon transportation without discussing alternatives."
+    ],
+    "answer": 0,
+    "feedback": [
+      {
+        "option": 1,
+        "text": "Not quite. Criticism makes negotiation harder. Try another option."
+      },
+      {
+        "option": 2,
+        "text": "Not quite. A workable compromise deserves consideration first. Try another option."
+      },
+      {
+        "option": 0,
+        "text": "Correct. This addresses the concern while retaining the proposal."
+      }
+    ]
+  },
+  {
+    "identity": "4:2",
+    "options": [
+      "A. Begin an extended debate on unrelated alternatives.",
+      "B. State the revised recommendation and ask whether substantial concerns remain.",
+      "C. Assume silence means everyone agrees."
+    ],
+    "answer": 1,
+    "feedback": [
+      {
+        "option": 0,
+        "text": "Not quite. This distracts from a timely decision. Try another option."
+      },
+      {
+        "option": 2,
+        "text": "Not quite. Silence alone does not establish support. Try another option."
+      },
+      {
+        "option": 1,
+        "text": "Correct. A focused check tests whether the compromise is supported."
+      }
+    ]
+  },
+  {
+    "identity": "5:0",
+    "options": [
+      "A. Transportation access.",
+      "B. Communication.",
+      "C. Affordability."
+    ],
+    "answer": 2,
+    "feedback": [
+      {
+        "option": 0,
+        "text": "Not quite. The transportation pilot addresses access. Try another option."
+      },
+      {
+        "option": 1,
+        "text": "Not quite. The social media campaign addresses communication. Try another option."
+      },
+      {
+        "option": 2,
+        "text": "Correct. The proposal does not explain how it remains affordable."
+      }
+    ]
+  },
+  {
+    "identity": "5:1",
+    "options": [
+      "A. Add a spending cap, identify potential funding, and evaluate costs before expansion.",
+      "B. Repeat the proposal more confidently.",
+      "C. Ask whether everyone thinks the task is solved."
+    ],
+    "answer": 0,
+    "feedback": [
+      {
+        "option": 1,
+        "text": "Not quite. Confidence does not fill a missing requirement. Try another option."
+      },
+      {
+        "option": 2,
+        "text": "Not quite. A vague question does not repair the proposal. Try another option."
+      },
+      {
+        "option": 0,
+        "text": "Correct. These add concrete affordability considerations."
+      }
+    ]
+  },
+  {
+    "identity": "5:2",
+    "options": [
+      "A. Does everyone think we did a good job?",
+      "B. Does our revised proposal address access, communication, and affordability realistically, and can we all support it?",
+      "C. Can we finish now?"
+    ],
+    "answer": 1,
+    "feedback": [
+      {
+        "option": 0,
+        "text": "Not quite. This asks for an impression, not a task audit. Try another option."
+      },
+      {
+        "option": 2,
+        "text": "Not quite. This asks about timing rather than the deliverable. Try another option."
+      },
+      {
+        "option": 1,
+        "text": "Correct. This checks requirements and invites meaningful confirmation."
+      }
+    ]
+  },
+  {
+    "identity": "6:0",
+    "options": [
+      "A. Stay to discuss your performance.",
+      "B. Gather belongings and leave promptly.",
+      "C. Ask how you ranked."
+    ],
+    "answer": 1,
+    "feedback": [
+      {
+        "option": 0,
+        "text": "Not quite. Lingering interferes with the judge's responsibilities. Try another option."
+      },
+      {
+        "option": 2,
+        "text": "Not quite. The judge should not be pressed for rankings. Try another option."
+      },
+      {
+        "option": 1,
+        "text": "Correct. Leaving promptly respects the judge and schedule."
+      }
+    ]
+  },
+  {
+    "identity": "6:1",
+    "options": [
+      "A. Politely conclude, leave, and consult your coach.",
+      "B. Argue about the rules.",
+      "C. Encourage a critique of everyone."
+    ],
+    "answer": 0,
+    "feedback": [
+      {
+        "option": 1,
+        "text": "Not quite. Students should not confront judges. Try another option."
+      },
+      {
+        "option": 2,
+        "text": "Not quite. A prolonged critique at the table is inappropriate. Try another option."
+      },
+      {
+        "option": 0,
+        "text": "Correct. Your coach can determine whether follow-up is appropriate."
+      }
+    ]
+  },
+  {
+    "identity": "6:2",
+    "options": [
+      "A. You made a thoughtful point about costs. I appreciated that perspective.",
+      "B. Our group would have been better without some ideas.",
+      "C. The judge clearly preferred my contributions."
+    ],
+    "answer": 0,
+    "feedback": [
+      {
+        "option": 1,
+        "text": "Not quite. Criticizing others undermines professionalism. Try another option."
+      },
+      {
+        "option": 2,
+        "text": "Not quite. Claiming a judge's preference is inappropriate. Try another option."
+      },
+      {
+        "option": 0,
+        "text": "Correct. Specific, sincere recognition builds relationships."
+      }
+    ]
+  },
+  {
+    "identity": "7:0",
+    "options": [
+      "A. Maya had the best idea, so let's use that.",
+      "B. Building on Maya's transportation proposal, Jordan's cost concern, and Avery's communication idea, we could recommend a limited pilot paired with outreach and a cost review.",
+      "C. Everyone has made good points."
+    ],
+    "answer": 1,
+    "feedback": [
+      {
+        "option": 0,
+        "text": "Not quite. This discards other perspectives. Try another option."
+      },
+      {
+        "option": 2,
+        "text": "Not quite. It does not develop a recommendation. Try another option."
+      },
+      {
+        "option": 1,
+        "text": "Correct. It credits multiple contributors and coordinates their ideas."
+      }
+    ]
+  },
+  {
+    "identity": "7:1",
+    "options": [
+      "A. We discussed possibilities and the problem matters.",
+      "B. Our proposed plan combines transportation assistance and improved outreach, with an initial pilot and cost evaluation before expansion.",
+      "C. We solved every problem affecting teen participation."
+    ],
+    "answer": 1,
+    "feedback": [
+      {
+        "option": 0,
+        "text": "Not quite. This omits the actual proposed outcome. Try another option."
+      },
+      {
+        "option": 2,
+        "text": "Not quite. This claims more than the proposal establishes. Try another option."
+      },
+      {
+        "option": 1,
+        "text": "Correct. This identifies components without exaggeration."
+      }
+    ]
+  },
+  {
+    "identity": "7:2",
+    "options": [
+      "A. Add a spending cap and check whether it addresses the concern.",
+      "B. Ignore Jordan because the others agree.",
+      "C. End without confirming support."
+    ],
+    "answer": 0,
+    "feedback": [
+      {
+        "option": 1,
+        "text": "Not quite. A majority does not erase a meaningful concern. Try another option."
+      },
+      {
+        "option": 2,
+        "text": "Not quite. Support remains unconfirmed. Try another option."
+      },
+      {
+        "option": 0,
+        "text": "Correct. This addresses the remaining objection and supports consensus."
+      }
+    ]
+  },
+  {
+    "identity": "7:3",
+    "options": [
+      "A. Was that a good discussion?",
+      "B. Does our revised proposal address access, communication, and affordability, and can everyone support it?",
+      "C. Did we all speak enough?"
+    ],
+    "answer": 1,
+    "feedback": [
+      {
+        "option": 0,
+        "text": "Not quite. This asks for a general impression. Try another option."
+      },
+      {
+        "option": 2,
+        "text": "Not quite. Speaking time is not the final task audit. Try another option."
+      },
+      {
+        "option": 1,
+        "text": "Correct. This checks requirements and group support."
+      }
+    ]
+  },
+  {
+    "identity": "8:0",
+    "options": [
+      "A. Repeat comments in speaking order.",
+      "B. Combine viewpoints into a new insight or recommendation.",
+      "C. Ask how much time remains.",
+      "D. Select the most popular proposal."
+    ],
+    "answer": 1,
+    "feedback": [
+      {
+        "option": 0,
+        "text": "Not quite. That is a chronological recap. Try another option."
+      },
+      {
+        "option": 2,
+        "text": "Not quite. That is procedural. Try another option."
+      },
+      {
+        "option": 3,
+        "text": "Not quite. Popularity alone is not synthesis. Try another option."
+      },
+      {
+        "option": 1,
+        "text": "Correct. Synthesis uses connections to advance thinking."
+      }
+    ]
+  },
+  {
+    "identity": "8:1",
+    "options": [
+      "A. Include every sentence spoken.",
+      "B. Focus only on your own ideas.",
+      "C. Organize findings, accurately identify agreements, and credit contributors.",
+      "D. Declare success without review."
+    ],
+    "answer": 2,
+    "feedback": [
+      {
+        "option": 0,
+        "text": "Not quite. A summary should be concise. Try another option."
+      },
+      {
+        "option": 1,
+        "text": "Not quite. It represents the group's work. Try another option."
+      },
+      {
+        "option": 3,
+        "text": "Not quite. Review is needed before claiming completion. Try another option."
+      },
+      {
+        "option": 2,
+        "text": "Correct. It also distinguishes agreements from unresolved concerns."
+      }
+    ]
+  },
+  {
+    "identity": "8:2",
+    "options": [
+      "A. Declare victory by majority.",
+      "B. Explore concerns and negotiate revisions.",
+      "C. Ignore objections.",
+      "D. End immediately."
+    ],
+    "answer": 1,
+    "feedback": [
+      {
+        "option": 0,
+        "text": "Not quite. A majority is not unanimity. Try another option."
+      },
+      {
+        "option": 2,
+        "text": "Not quite. Their objections still matter. Try another option."
+      },
+      {
+        "option": 3,
+        "text": "Not quite. This leaves the disagreement unresolved. Try another option."
+      },
+      {
+        "option": 1,
+        "text": "Correct. Consensus requires addressing concerns."
+      }
+    ]
+  },
+  {
+    "identity": "8:3",
+    "options": [
+      "A. Ask if everyone enjoyed it.",
+      "B. Assume the final minutes mean success.",
+      "C. Compare the proposal against the required problem and deliverable components.",
+      "D. Recap every comment chronologically."
+    ],
+    "answer": 2,
+    "feedback": [
+      {
+        "option": 0,
+        "text": "Not quite. Enjoyment is not a task criterion. Try another option."
+      },
+      {
+        "option": 1,
+        "text": "Not quite. Time elapsed does not establish completion. Try another option."
+      },
+      {
+        "option": 3,
+        "text": "Not quite. Speaking order does not evaluate the deliverable. Try another option."
+      },
+      {
+        "option": 2,
+        "text": "Correct. A task-focused review reveals missing requirements."
+      }
+    ]
+  },
+  {
+    "identity": "8:4",
+    "options": [
+      "A. Challenge the judge publicly.",
+      "B. Ask for your ranking.",
+      "C. Respond politely, leave, and consult your coach.",
+      "D. Encourage a lengthy critique."
+    ],
+    "answer": 2,
+    "feedback": [
+      {
+        "option": 0,
+        "text": "Not quite. Do not confront judges. Try another option."
+      },
+      {
+        "option": 1,
+        "text": "Not quite. Do not solicit rankings. Try another option."
+      },
+      {
+        "option": 3,
+        "text": "Not quite. Avoid extending the interaction at the table. Try another option."
+      },
+      {
+        "option": 2,
+        "text": "Correct. A coach can determine appropriate follow-up."
+      }
+    ]
+  }
+]

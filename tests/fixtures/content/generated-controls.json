@@ -1,0 +1,559 @@
+{
+  "revision": "0b5d2297e7cbc19bd59cde750492dd28e3983ca0",
+  "origin": "http://127.0.0.1:61502",
+  "mount": "/__original/",
+  "lessons": {
+    "opening": {
+      "#quiz-list h3": [
+        {
+          "index": 0,
+          "text": "1. Which contribution is substantive?",
+          "markup": "1. Which contribution is substantive?",
+          "value": null
+        },
+        {
+          "index": 1,
+          "text": "2. Which opening sequence is in the right order?",
+          "markup": "2. Which opening sequence is in the right order?",
+          "value": null
+        },
+        {
+          "index": 2,
+          "text": "3. In task analysis, what is the difference between WHAT and HOW?",
+          "markup": "3. In task analysis, what is the difference between WHAT and HOW?",
+          "value": null
+        },
+        {
+          "index": 3,
+          "text": "4. What is the purpose of clarifications?",
+          "markup": "4. What is the purpose of clarifications?",
+          "value": null
+        },
+        {
+          "index": 4,
+          "text": "5. How do an agenda and a consensus question differ?",
+          "markup": "5. How do an agenda and a consensus question differ?",
+          "value": null
+        }
+      ],
+      "#quiz-list button": [
+        {
+          "index": 0,
+          "text": "Asking the group to clarify the task",
+          "markup": "Asking the group to clarify the task",
+          "value": null
+        },
+        {
+          "index": 1,
+          "text": "Introducing research about an issue's effects",
+          "markup": "Introducing research about an issue's effects",
+          "value": null
+        },
+        {
+          "index": 2,
+          "text": "Suggesting a time limit",
+          "markup": "Suggesting a time limit",
+          "value": null
+        },
+        {
+          "index": 3,
+          "text": "Read → Analyze → Clarify → Establish direction → Research",
+          "markup": "Read → Analyze → Clarify → Establish direction → Research",
+          "value": null
+        },
+        {
+          "index": 4,
+          "text": "Read → Set agenda → Clarify → Research",
+          "markup": "Read → Set agenda → Clarify → Research",
+          "value": null
+        },
+        {
+          "index": 5,
+          "text": "Research → Establish direction → Read → Clarify",
+          "markup": "Research → Establish direction → Read → Clarify",
+          "value": null
+        },
+        {
+          "index": 6,
+          "text": "WHAT is a source; HOW is a citation.",
+          "markup": "WHAT is a source; HOW is a citation.",
+          "value": null
+        },
+        {
+          "index": 7,
+          "text": "WHAT is the central problem; HOW is the required action or deliverable.",
+          "markup": "WHAT is the central problem; HOW is the required action or deliverable.",
+          "value": null
+        },
+        {
+          "index": 8,
+          "text": "WHAT is the setting; HOW is the assigned role.",
+          "markup": "WHAT is the setting; HOW is the assigned role.",
+          "value": null
+        },
+        {
+          "index": 9,
+          "text": "To debate solutions before reading",
+          "markup": "To debate solutions before reading",
+          "value": null
+        },
+        {
+          "index": 10,
+          "text": "To choose a permanent leader",
+          "markup": "To choose a permanent leader",
+          "value": null
+        },
+        {
+          "index": 11,
+          "text": "To agree on the role, problem, required actions, and deliverable",
+          "markup": "To agree on the role, problem, required actions, and deliverable",
+          "value": null
+        },
+        {
+          "index": 12,
+          "text": "An agenda is a roadmap; a consensus question defines the destination.",
+          "markup": "An agenda is a roadmap; a consensus question defines the destination.",
+          "value": null
+        },
+        {
+          "index": 13,
+          "text": "An agenda states the problem; a consensus question sets speaking order.",
+          "markup": "An agenda states the problem; a consensus question sets speaking order.",
+          "value": null
+        },
+        {
+          "index": 14,
+          "text": "They are identical and both require fixed time limits.",
+          "markup": "They are identical and both require fixed time limits.",
+          "value": null
+        }
+      ],
+      "#what-how-options button": [
+        {
+          "index": 0,
+          "text": "The negative effects of mental health stigma on K-12 students.",
+          "markup": "The negative effects of mental health stigma on K-12 students.",
+          "value": null
+        },
+        {
+          "index": 1,
+          "text": "Craft a plan counselors can implement in their schools.",
+          "markup": "Craft a plan counselors can implement in their schools.",
+          "value": null
+        }
+      ],
+      "#clarification-options button": [
+        {
+          "index": 0,
+          "text": "A. Begin brainstorming programs immediately.",
+          "markup": "A. Begin brainstorming programs immediately.",
+          "value": null
+        },
+        {
+          "index": 1,
+          "text": "B. Clarify the problem and the task's required deliverable.",
+          "markup": "B. Clarify the problem and the task's required deliverable.",
+          "value": null
+        },
+        {
+          "index": 2,
+          "text": "C. Vote on who should lead the discussion.",
+          "markup": "C. Vote on who should lead the discussion.",
+          "value": null
+        }
+      ],
+      "#research-options button": [
+        {
+          "index": 0,
+          "text": "A. Restart all clarifications.",
+          "markup": "A. Restart all clarifications.",
+          "value": null
+        },
+        {
+          "index": 1,
+          "text": "B. Ignore the student's concern without discussion.",
+          "markup": "B. Ignore the student's concern without discussion.",
+          "value": null
+        },
+        {
+          "index": 2,
+          "text": "C. Ask whether a specific misunderstanding needs resolving, then share relevant research.",
+          "markup": "C. Ask whether a specific misunderstanding needs resolving, then share relevant research.",
+          "value": null
+        }
+      ]
+    },
+    "middle": {
+      "#research-checks label": [
+        {
+          "index": 0,
+          "text": "I identified a source and date.",
+          "markup": "<input type=\"checkbox\" id=\"research-check-0\">I identified a source and date.",
+          "value": null
+        },
+        {
+          "index": 1,
+          "text": "I explained the finding accurately.",
+          "markup": "<input type=\"checkbox\" id=\"research-check-1\">I explained the finding accurately.",
+          "value": null
+        },
+        {
+          "index": 2,
+          "text": "I connected the finding to the task.",
+          "markup": "<input type=\"checkbox\" id=\"research-check-2\">I connected the finding to the task.",
+          "value": null
+        },
+        {
+          "index": 3,
+          "text": "I avoided overstating what it proves.",
+          "markup": "<input type=\"checkbox\" id=\"research-check-3\">I avoided overstating what it proves.",
+          "value": null
+        }
+      ],
+      "#application-checks label": [
+        {
+          "index": 0,
+          "text": "I connected at least two existing ideas.",
+          "markup": "<input type=\"checkbox\" id=\"application-check-0\">I connected at least two existing ideas.",
+          "value": null
+        },
+        {
+          "index": 1,
+          "text": "I added an insight or solution.",
+          "markup": "<input type=\"checkbox\" id=\"application-check-1\">I added an insight or solution.",
+          "value": null
+        },
+        {
+          "index": 2,
+          "text": "I stayed focused on the task.",
+          "markup": "<input type=\"checkbox\" id=\"application-check-2\">I stayed focused on the task.",
+          "value": null
+        },
+        {
+          "index": 3,
+          "text": "I used a professional tone.",
+          "markup": "<input type=\"checkbox\" id=\"application-check-3\">I used a professional tone.",
+          "value": null
+        },
+        {
+          "index": 4,
+          "text": "I did not claim unsupported evidence.",
+          "markup": "<input type=\"checkbox\" id=\"application-check-4\">I did not claim unsupported evidence.",
+          "value": null
+        }
+      ]
+    },
+    "final": {
+      "#checklist-2 label": [
+        {
+          "index": 0,
+          "text": "I connected at least two viewpoints.",
+          "markup": "<input type=\"checkbox\">I connected at least two viewpoints.",
+          "value": null
+        },
+        {
+          "index": 1,
+          "text": "I credited the people whose ideas I used.",
+          "markup": "<input type=\"checkbox\">I credited the people whose ideas I used.",
+          "value": null
+        },
+        {
+          "index": 2,
+          "text": "I added a new insight or recommendation.",
+          "markup": "<input type=\"checkbox\">I added a new insight or recommendation.",
+          "value": null
+        },
+        {
+          "index": 3,
+          "text": "My contribution addresses the task.",
+          "markup": "<input type=\"checkbox\">My contribution addresses the task.",
+          "value": null
+        },
+        {
+          "index": 4,
+          "text": "My language is collaborative and professional.",
+          "markup": "<input type=\"checkbox\">My language is collaborative and professional.",
+          "value": null
+        }
+      ],
+      "#checklist-7 label": [
+        {
+          "index": 0,
+          "text": "I accurately described the proposal.",
+          "markup": "<input type=\"checkbox\">I accurately described the proposal.",
+          "value": null
+        },
+        {
+          "index": 1,
+          "text": "I credited at least two participants.",
+          "markup": "<input type=\"checkbox\">I credited at least two participants.",
+          "value": null
+        },
+        {
+          "index": 2,
+          "text": "I connected ideas rather than just listing them.",
+          "markup": "<input type=\"checkbox\">I connected ideas rather than just listing them.",
+          "value": null
+        },
+        {
+          "index": 3,
+          "text": "I addressed access, communication, and affordability.",
+          "markup": "<input type=\"checkbox\">I addressed access, communication, and affordability.",
+          "value": null
+        },
+        {
+          "index": 4,
+          "text": "I invited confirmation or identified an unresolved concern.",
+          "markup": "<input type=\"checkbox\">I invited confirmation or identified an unresolved concern.",
+          "value": null
+        },
+        {
+          "index": 5,
+          "text": "My language was concise, respectful, and professional.",
+          "markup": "<input type=\"checkbox\">My language was concise, respectful, and professional.",
+          "value": null
+        }
+      ],
+      "#goals label": [
+        {
+          "index": 0,
+          "text": "I will credit and connect multiple viewpoints.",
+          "markup": "<input type=\"checkbox\">I will credit and connect multiple viewpoints.",
+          "value": null
+        },
+        {
+          "index": 1,
+          "text": "I will help the group reach genuine consensus.",
+          "markup": "<input type=\"checkbox\">I will help the group reach genuine consensus.",
+          "value": null
+        },
+        {
+          "index": 2,
+          "text": "I will check the final recommendation against the task.",
+          "markup": "<input type=\"checkbox\">I will check the final recommendation against the task.",
+          "value": null
+        }
+      ],
+      "#note-list label": [
+        {
+          "index": 0,
+          "text": "1. Maya: Transportation barriers prevent some students from attending.",
+          "markup": "1. Maya: Transportation barriers prevent some students from attending.",
+          "value": null
+        },
+        {
+          "index": 1,
+          "text": "2. Jordan: The group should consider program costs.",
+          "markup": "2. Jordan: The group should consider program costs.",
+          "value": null
+        },
+        {
+          "index": 2,
+          "text": "3. Avery: Students need clearer information about opportunities.",
+          "markup": "3. Avery: Students need clearer information about opportunities.",
+          "value": null
+        },
+        {
+          "index": 3,
+          "text": "4. Sam: A pilot could test the proposal before expansion.",
+          "markup": "4. Sam: A pilot could test the proposal before expansion.",
+          "value": null
+        },
+        {
+          "index": 4,
+          "text": "5. All: Recommend a limited pilot combining transportation assistance and outreach.",
+          "markup": "5. All: Recommend a limited pilot combining transportation assistance and outreach.",
+          "value": null
+        },
+        {
+          "index": 5,
+          "text": "6. All: What funding source would support the pilot?",
+          "markup": "6. All: What funding source would support the pilot?",
+          "value": null
+        }
+      ],
+      "#note-list select:first-of-type option": [
+        {
+          "index": 0,
+          "text": "Choose category",
+          "markup": "Choose category",
+          "value": ""
+        },
+        {
+          "index": 1,
+          "text": "A · Problem / barriers",
+          "markup": "A · Problem / barriers",
+          "value": "0"
+        },
+        {
+          "index": 2,
+          "text": "B · Proposed approach",
+          "markup": "B · Proposed approach",
+          "value": "1"
+        },
+        {
+          "index": 3,
+          "text": "C · Group agreement",
+          "markup": "C · Group agreement",
+          "value": "2"
+        },
+        {
+          "index": 4,
+          "text": "D · Unresolved issue",
+          "markup": "D · Unresolved issue",
+          "value": "3"
+        },
+        {
+          "index": 5,
+          "text": "Choose category",
+          "markup": "Choose category",
+          "value": ""
+        },
+        {
+          "index": 6,
+          "text": "A · Problem / barriers",
+          "markup": "A · Problem / barriers",
+          "value": "0"
+        },
+        {
+          "index": 7,
+          "text": "B · Proposed approach",
+          "markup": "B · Proposed approach",
+          "value": "1"
+        },
+        {
+          "index": 8,
+          "text": "C · Group agreement",
+          "markup": "C · Group agreement",
+          "value": "2"
+        },
+        {
+          "index": 9,
+          "text": "D · Unresolved issue",
+          "markup": "D · Unresolved issue",
+          "value": "3"
+        },
+        {
+          "index": 10,
+          "text": "Choose category",
+          "markup": "Choose category",
+          "value": ""
+        },
+        {
+          "index": 11,
+          "text": "A · Problem / barriers",
+          "markup": "A · Problem / barriers",
+          "value": "0"
+        },
+        {
+          "index": 12,
+          "text": "B · Proposed approach",
+          "markup": "B · Proposed approach",
+          "value": "1"
+        },
+        {
+          "index": 13,
+          "text": "C · Group agreement",
+          "markup": "C · Group agreement",
+          "value": "2"
+        },
+        {
+          "index": 14,
+          "text": "D · Unresolved issue",
+          "markup": "D · Unresolved issue",
+          "value": "3"
+        },
+        {
+          "index": 15,
+          "text": "Choose category",
+          "markup": "Choose category",
+          "value": ""
+        },
+        {
+          "index": 16,
+          "text": "A · Problem / barriers",
+          "markup": "A · Problem / barriers",
+          "value": "0"
+        },
+        {
+          "index": 17,
+          "text": "B · Proposed approach",
+          "markup": "B · Proposed approach",
+          "value": "1"
+        },
+        {
+          "index": 18,
+          "text": "C · Group agreement",
+          "markup": "C · Group agreement",
+          "value": "2"
+        },
+        {
+          "index": 19,
+          "text": "D · Unresolved issue",
+          "markup": "D · Unresolved issue",
+          "value": "3"
+        },
+        {
+          "index": 20,
+          "text": "Choose category",
+          "markup": "Choose category",
+          "value": ""
+        },
+        {
+          "index": 21,
+          "text": "A · Problem / barriers",
+          "markup": "A · Problem / barriers",
+          "value": "0"
+        },
+        {
+          "index": 22,
+          "text": "B · Proposed approach",
+          "markup": "B · Proposed approach",
+          "value": "1"
+        },
+        {
+          "index": 23,
+          "text": "C · Group agreement",
+          "markup": "C · Group agreement",
+          "value": "2"
+        },
+        {
+          "index": 24,
+          "text": "D · Unresolved issue",
+          "markup": "D · Unresolved issue",
+          "value": "3"
+        },
+        {
+          "index": 25,
+          "text": "Choose category",
+          "markup": "Choose category",
+          "value": ""
+        },
+        {
+          "index": 26,
+          "text": "A · Problem / barriers",
+          "markup": "A · Problem / barriers",
+          "value": "0"
+        },
+        {
+          "index": 27,
+          "text": "B · Proposed approach",
+          "markup": "B · Proposed approach",
+          "value": "1"
+        },
+        {
+          "index": 28,
+          "text": "C · Group agreement",
+          "markup": "C · Group agreement",
+          "value": "2"
+        },
+        {
+          "index": 29,
+          "text": "D · Unresolved issue",
+          "markup": "D · Unresolved issue",
+          "value": "3"
+        }
+      ]
+    }
+  }
+}

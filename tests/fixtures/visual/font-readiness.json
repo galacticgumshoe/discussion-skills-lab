@@ -1,0 +1,371 @@
+{
+  "revision": "0b5d2297e7cbc19bd59cde750492dd28e3983ca0",
+  "browser": "149.0.7827.55",
+  "origin": "http://127.0.0.1:60773",
+  "pages": {
+    "index": {
+      "status": "loaded",
+      "dmSans400": true,
+      "fraunces700": true,
+      "faces": [
+        {
+          "family": "DM Sans",
+          "weight": "400",
+          "status": "unloaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "500",
+          "status": "unloaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "500",
+          "status": "unloaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "600",
+          "status": "unloaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "600",
+          "status": "unloaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "700",
+          "status": "unloaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "800",
+          "status": "unloaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "800",
+          "status": "loaded"
+        },
+        {
+          "family": "Fraunces",
+          "weight": "600",
+          "status": "unloaded"
+        },
+        {
+          "family": "Fraunces",
+          "weight": "600",
+          "status": "unloaded"
+        },
+        {
+          "family": "Fraunces",
+          "weight": "600",
+          "status": "unloaded"
+        },
+        {
+          "family": "Fraunces",
+          "weight": "700",
+          "status": "unloaded"
+        },
+        {
+          "family": "Fraunces",
+          "weight": "700",
+          "status": "unloaded"
+        },
+        {
+          "family": "Fraunces",
+          "weight": "700",
+          "status": "loaded"
+        }
+      ],
+      "heading": {
+        "family": "Fraunces, Georgia, serif",
+        "weight": "700"
+      }
+    },
+    "opening": {
+      "status": "loaded",
+      "dmSans400": true,
+      "fraunces700": true,
+      "faces": [
+        {
+          "family": "DM Sans",
+          "weight": "400",
+          "status": "unloaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "500",
+          "status": "unloaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "500",
+          "status": "unloaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "600",
+          "status": "unloaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "600",
+          "status": "loaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "700",
+          "status": "unloaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "800",
+          "status": "unloaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "800",
+          "status": "loaded"
+        },
+        {
+          "family": "Fraunces",
+          "weight": "600",
+          "status": "unloaded"
+        },
+        {
+          "family": "Fraunces",
+          "weight": "600",
+          "status": "unloaded"
+        },
+        {
+          "family": "Fraunces",
+          "weight": "600",
+          "status": "unloaded"
+        },
+        {
+          "family": "Fraunces",
+          "weight": "700",
+          "status": "unloaded"
+        },
+        {
+          "family": "Fraunces",
+          "weight": "700",
+          "status": "unloaded"
+        },
+        {
+          "family": "Fraunces",
+          "weight": "700",
+          "status": "loaded"
+        }
+      ],
+      "heading": {
+        "family": "Fraunces, serif",
+        "weight": "700"
+      }
+    },
+    "middle": {
+      "status": "loaded",
+      "dmSans400": true,
+      "fraunces700": true,
+      "faces": [
+        {
+          "family": "DM Sans",
+          "weight": "400",
+          "status": "unloaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "500",
+          "status": "unloaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "500",
+          "status": "unloaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "600",
+          "status": "unloaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "600",
+          "status": "loaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "700",
+          "status": "unloaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "800",
+          "status": "unloaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "800",
+          "status": "unloaded"
+        },
+        {
+          "family": "Fraunces",
+          "weight": "600",
+          "status": "unloaded"
+        },
+        {
+          "family": "Fraunces",
+          "weight": "600",
+          "status": "unloaded"
+        },
+        {
+          "family": "Fraunces",
+          "weight": "600",
+          "status": "unloaded"
+        },
+        {
+          "family": "Fraunces",
+          "weight": "700",
+          "status": "unloaded"
+        },
+        {
+          "family": "Fraunces",
+          "weight": "700",
+          "status": "unloaded"
+        },
+        {
+          "family": "Fraunces",
+          "weight": "700",
+          "status": "loaded"
+        }
+      ],
+      "heading": {
+        "family": "Fraunces, serif",
+        "weight": "700"
+      }
+    },
+    "final": {
+      "status": "loaded",
+      "dmSans400": true,
+      "fraunces700": false,
+      "faces": [
+        {
+          "family": "DM Sans",
+          "weight": "400",
+          "status": "unloaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "500",
+          "status": "unloaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "500",
+          "status": "unloaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "600",
+          "status": "unloaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "600",
+          "status": "loaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "700",
+          "status": "unloaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "800",
+          "status": "unloaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "800",
+          "status": "unloaded"
+        },
+        {
+          "family": "Fraunces",
+          "weight": "600",
+          "status": "unloaded"
+        },
+        {
+          "family": "Fraunces",
+          "weight": "600",
+          "status": "unloaded"
+        },
+        {
+          "family": "Fraunces",
+          "weight": "600",
+          "status": "loaded"
+        },
+        {
+          "family": "Fraunces",
+          "weight": "700",
+          "status": "unloaded"
+        },
+        {
+          "family": "Fraunces",
+          "weight": "700",
+          "status": "unloaded"
+        },
+        {
+          "family": "Fraunces",
+          "weight": "700",
+          "status": "unloaded"
+        }
+      ],
+      "heading": {
+        "family": "Fraunces, serif",
+        "weight": "400"
+      }
+    }
+  }
+}

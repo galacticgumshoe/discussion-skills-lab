@@ -1,0 +1,7 @@
+{
+  "provenance": "synthetic",
+  "revision": "0b5d2297e7cbc19bd59cde750492dd28e3983ca0",
+  "safety": "safe",
+  "purpose": "Whitespace-only draft is not nonempty; no character minimum beyond trimmed nonempty",
+  "raw": "{\"completed\":[],\"data\":{\"finalState\":{\"fields\":{\"closing-text\":\" \"}}}}"
+}

@@ -1,0 +1,410 @@
+{
+  "fields": [
+    {
+      "id": "build-1",
+      "tag": "textarea",
+      "type": "textarea",
+      "page": "view-2",
+      "group": null,
+      "flip": null,
+      "label": ""
+    },
+    {
+      "id": "build-2",
+      "tag": "textarea",
+      "type": "textarea",
+      "page": "view-2",
+      "group": null,
+      "flip": null,
+      "label": ""
+    },
+    {
+      "id": "build-3",
+      "tag": "textarea",
+      "type": "textarea",
+      "page": "view-2",
+      "group": null,
+      "flip": null,
+      "label": ""
+    },
+    {
+      "id": "assembled",
+      "tag": "textarea",
+      "type": "textarea",
+      "page": "view-2",
+      "group": null,
+      "flip": null,
+      "label": ""
+    },
+    {
+      "id": null,
+      "tag": "input",
+      "type": "checkbox",
+      "page": "view-2",
+      "group": null,
+      "flip": null,
+      "label": ""
+    },
+    {
+      "id": null,
+      "tag": "input",
+      "type": "checkbox",
+      "page": "view-2",
+      "group": null,
+      "flip": null,
+      "label": ""
+    },
+    {
+      "id": null,
+      "tag": "input",
+      "type": "checkbox",
+      "page": "view-2",
+      "group": null,
+      "flip": null,
+      "label": ""
+    },
+    {
+      "id": null,
+      "tag": "input",
+      "type": "checkbox",
+      "page": "view-2",
+      "group": null,
+      "flip": null,
+      "label": ""
+    },
+    {
+      "id": null,
+      "tag": "input",
+      "type": "checkbox",
+      "page": "view-2",
+      "group": null,
+      "flip": null,
+      "label": ""
+    },
+    {
+      "id": "closing-text",
+      "tag": "textarea",
+      "type": "textarea",
+      "page": "view-7",
+      "group": null,
+      "flip": null,
+      "label": ""
+    },
+    {
+      "id": null,
+      "tag": "input",
+      "type": "checkbox",
+      "page": "view-7",
+      "group": null,
+      "flip": null,
+      "label": ""
+    },
+    {
+      "id": null,
+      "tag": "input",
+      "type": "checkbox",
+      "page": "view-7",
+      "group": null,
+      "flip": null,
+      "label": ""
+    },
+    {
+      "id": null,
+      "tag": "input",
+      "type": "checkbox",
+      "page": "view-7",
+      "group": null,
+      "flip": null,
+      "label": ""
+    },
+    {
+      "id": null,
+      "tag": "input",
+      "type": "checkbox",
+      "page": "view-7",
+      "group": null,
+      "flip": null,
+      "label": ""
+    },
+    {
+      "id": null,
+      "tag": "input",
+      "type": "checkbox",
+      "page": "view-7",
+      "group": null,
+      "flip": null,
+      "label": ""
+    },
+    {
+      "id": null,
+      "tag": "input",
+      "type": "checkbox",
+      "page": "view-7",
+      "group": null,
+      "flip": null,
+      "label": ""
+    },
+    {
+      "id": null,
+      "tag": "input",
+      "type": "checkbox",
+      "page": "view-8",
+      "group": null,
+      "flip": null,
+      "label": ""
+    },
+    {
+      "id": null,
+      "tag": "input",
+      "type": "checkbox",
+      "page": "view-8",
+      "group": null,
+      "flip": null,
+      "label": ""
+    },
+    {
+      "id": null,
+      "tag": "input",
+      "type": "checkbox",
+      "page": "view-8",
+      "group": null,
+      "flip": null,
+      "label": ""
+    }
+  ],
+  "cards": [
+    {
+      "id": null,
+      "tag": "button",
+      "type": "button",
+      "page": "view-0",
+      "group": null,
+      "flip": "0",
+      "label": "Connect Ideas↻ Flip cardSynthesis brings multiple viewpoints together and uses them to create a new insight or recommendation."
+    },
+    {
+      "id": null,
+      "tag": "button",
+      "type": "button",
+      "page": "view-0",
+      "group": null,
+      "flip": "1",
+      "label": "Capture the Findings↻ Flip cardAn effective summary organizes important conclusions, recognizes contributors, and identifies final recommendations."
+    },
+    {
+      "id": null,
+      "tag": "button",
+      "type": "button",
+      "page": "view-0",
+      "group": null,
+      "flip": "2",
+      "label": "Confirm the Outcome↻ Flip cardThe group checks whether its final product addresses the assigned task and whether participants can support the result."
+    },
+    {
+      "id": null,
+      "tag": "button",
+      "type": "button",
+      "page": "view-1",
+      "group": null,
+      "flip": "0",
+      "label": "What does it mean to summarize?↻ Flip cardA summary organizes and accurately restates important ideas, evidence, decisions, and unresolved questions. Example: “We identified transportation, scheduling, and communication as three barriers. Our recommendations address each.”"
+    },
+    {
+      "id": null,
+      "tag": "button",
+      "type": "button",
+      "page": "view-1",
+      "group": null,
+      "flip": "1",
+      "label": "What does it mean to synthesize?↻ Flip cardSynthesis connects viewpoints to develop a new insight. Example: “Building on Maya's transportation proposal and Jordan's cost concern, perhaps we could test a limited pilot before recommending a larger program.”"
+    },
+    {
+      "id": null,
+      "tag": "button",
+      "type": "button",
+      "page": "view-4",
+      "group": null,
+      "flip": "0",
+      "label": "What is a round robin?↻ Flip cardA round robin gives participants turns to express positions. It can reveal concerns, but a yes/no round robin does not resolve disagreement by itself."
+    },
+    {
+      "id": null,
+      "tag": "button",
+      "type": "button",
+      "page": "view-4",
+      "group": null,
+      "flip": "1",
+      "label": "Does a majority vote create consensus?↻ Flip cardNot necessarily. Others may still have unresolved objections. A majority alone does not meet a task requiring consensus or unanimity."
+    },
+    {
+      "id": null,
+      "tag": "button",
+      "type": "button",
+      "page": "view-4",
+      "group": null,
+      "flip": "2",
+      "label": "What helps a divided group move forward?↻ Flip cardIdentify concerns, revise the proposal, explore compromises, then check whether participants can support the revised outcome."
+    }
+  ],
+  "panels": [
+    {
+      "id": null,
+      "tag": "details",
+      "type": null,
+      "page": "view-2",
+      "group": null,
+      "flip": null,
+      "label": "1 · Listen\n\n                                Listen for proposals, concerns, evidence, and agreement. Middle-stage notes make closing easier: record a participant's name, main idea, reasoning, connections, and unresolved concerns."
+    },
+    {
+      "id": null,
+      "tag": "details",
+      "type": null,
+      "page": "view-2",
+      "group": null,
+      "flip": null,
+      "label": "2 · Connect\n\n                                Look for complementary ideas, a proposal that addresses another's weakness, concerns that suggest a shared solution, or recommendations that could form a coordinated strategy."
+    },
+    {
+      "id": null,
+      "tag": "details",
+      "type": null,
+      "page": "view-2",
+      "group": null,
+      "flip": null,
+      "label": "3 · Credit\n\n                                Identify whose contributions you use: “Building on Maya's suggestion and Jordan's concern…” Credit demonstrates listening. Never claim another participant's idea as your own."
+    },
+    {
+      "id": null,
+      "tag": "details",
+      "type": null,
+      "page": "view-2",
+      "group": null,
+      "flip": null,
+      "label": "4 · Advance\n\n                                Add something new: a combined proposal, resolved tension, implementation condition, priority, compromise, or next decision. Merely naming two speakers is not enough."
+    },
+    {
+      "id": null,
+      "tag": "details",
+      "type": null,
+      "page": "view-3",
+      "group": null,
+      "flip": null,
+      "label": "Example A · Chronological recap\n\n“First Maya discussed transportation. Then Jordan discussed cost. Avery mentioned communication. Later Sam suggested testing the proposals.”\nThis recalls speaking order, not findings or decisions."
+    },
+    {
+      "id": null,
+      "tag": "details",
+      "type": null,
+      "page": "view-3",
+      "group": null,
+      "flip": null,
+      "label": "Example B · Thematic summary\n\n“Our group identified three main considerations: access, affordability, and communication. We developed a pilot proposal to improve transportation and outreach while evaluating costs before expansion.”\nThis groups ideas by theme and identifies the proposed outcome."
+    },
+    {
+      "id": null,
+      "tag": "details",
+      "type": null,
+      "page": "view-5",
+      "group": null,
+      "flip": null,
+      "label": "Revisit the consensus question\n\n                                An opening-stage question can define success. For example: “Can we recommend an affordable, realistic strategy that improves teen access to community programs?” Checking the recommendation against a focused question is often more useful than vaguely asking for agreement."
+    },
+    {
+      "id": null,
+      "tag": "details",
+      "type": null,
+      "page": "view-5",
+      "group": null,
+      "flip": null,
+      "label": "Revisit the task\n\n                                Rereading the full task can help when requirements are unclear, but it takes time. Reviewing the central problem and required deliverable may be more efficient. If the group prefers a full rereading, avoid turning a small procedural difference into conflict."
+    },
+    {
+      "id": null,
+      "tag": "details",
+      "type": null,
+      "page": "view-5",
+      "group": null,
+      "flip": null,
+      "label": "Check the WHAT and HOW\n\nWHAT: What central problem must the group address? HOW: What actions or components must the final product include? Identify missing elements instead of declaring success. This is a coaching tool; always follow the actual tournament task wording."
+    },
+    {
+      "id": null,
+      "tag": "details",
+      "type": null,
+      "page": "view-6",
+      "group": null,
+      "flip": null,
+      "label": "Exit promptly\n\n                                Gather belongings, leave the competition area promptly, give the judge space to complete their responsibilities, and avoid lingering at the table."
+    },
+    {
+      "id": null,
+      "tag": "details",
+      "type": null,
+      "page": "view-6",
+      "group": null,
+      "flip": null,
+      "label": "Thank the judge briefly\n\n                                A brief, courteous thank-you is appropriate. Do not prolong the interaction or initiate unnecessary physical contact."
+    },
+    {
+      "id": null,
+      "tag": "details",
+      "type": null,
+      "page": "view-6",
+      "group": null,
+      "flip": null,
+      "label": "Handle unexpected judge interactions\n\n                                The judge observes and evaluates rather than joining the discussion. If an unexpected procedural issue occurs, respond politely and consult your coach afterward. Do not confront the judge; your coach can determine appropriate follow-up."
+    },
+    {
+      "id": null,
+      "tag": "details",
+      "type": null,
+      "page": "view-6",
+      "group": null,
+      "flip": null,
+      "label": "Build positive relationships\n\n                                Away from the judge, speak respectfully with competitors, offer sincere compliments, discuss the task constructively, and avoid criticizing participants or judges."
+    }
+  ],
+  "navigation": [
+    {
+      "index": 0,
+      "label": "Welcome — Why the Final Stage Matters"
+    },
+    {
+      "index": 1,
+      "label": "01 — Summary or Synthesis?"
+    },
+    {
+      "index": 2,
+      "label": "02 — Connect the Viewpoints"
+    },
+    {
+      "index": 3,
+      "label": "03 — Organize the Findings"
+    },
+    {
+      "index": 4,
+      "label": "04 — Build Genuine Consensus"
+    },
+    {
+      "index": 5,
+      "label": "05 — Check the Task"
+    },
+    {
+      "index": 6,
+      "label": "06 — Finish Professionally"
+    },
+    {
+      "index": 7,
+      "label": "07 — Practice Your Closing"
+    },
+    {
+      "index": 8,
+      "label": "08 — Knowledge Check"
+    },
+    {
+      "index": 9,
+      "label": "Quick Reference"
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "provenance": "UI-observed",
+  "revision": "0b5d2297e7cbc19bd59cde750492dd28e3983ca0",
+  "origin": "http://127.0.0.1:60496",
+  "mount": "/",
+  "browser": "149.0.7827.55",
+  "raw": "{\"completed\":[0,1,2,3,4],\"data\":{\"classificationAnswers\":[\"procedural\",\"substantive\",\"procedural\",\"substantive\",\"procedural\"],\"classificationSeen\":[0,1,2,3,4],\"sequenceCorrect\":true,\"timelineSeen\":[\"stage-1\",\"stage-2\",\"stage-3\",\"stage-4\",\"stage-5\",\"stage-6\"],\"analysisSeen\":[\"who\",\"what\",\"how\",\"where\",\"terms\"],\"what-how-options\":0,\"clarification-options\":1,\"problem-input\":\"mental health stigma?!\",\"accomplishment-input\":\"crafted a counselor plan.\",\"draft-input\":\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\",\"questionSelfcheck\":true}}",
+  "actions": [
+    "answer classification-0 option 1",
+    "answer classification-0 option 0",
+    "click #classify-next",
+    "answer classification-1 option 0",
+    "answer classification-1 option 1",
+    "click #classify-next",
+    "answer classification-2 option 1",
+    "answer classification-2 option 0",
+    "click #classify-next",
+    "answer classification-3 option 0",
+    "answer classification-3 option 1",
+    "click #classify-next",
+    "answer classification-4 option 1",
+    "answer classification-4 option 0",
+    "click #next-section",
+    "click .sequence-choices button[data-correct=\"true\"]",
+    "click [aria-controls=\"stage-1\"]",
+    "click [aria-controls=\"stage-1\"]",
+    "click [aria-controls=\"stage-1\"]",
+    "click [aria-controls=\"stage-2\"]",
+    "click [aria-controls=\"stage-3\"]",
+    "click [aria-controls=\"stage-4\"]",
+    "click [aria-controls=\"stage-5\"]",
+    "click [aria-controls=\"stage-6\"]",
+    "click #next-section",
+    "click .analysis-tab[data-kind=\"who\"]",
+    "click .analysis-tab[data-kind=\"what\"]",
+    "click .analysis-tab[data-kind=\"how\"]",
+    "click .analysis-tab[data-kind=\"where\"]",
+    "click .analysis-tab[data-kind=\"terms\"]",
+    "answer whatHow option 1",
+    "answer whatHow option 0",
+    "click #next-section",
+    "answer clarification option 0",
+    "answer clarification option 2",
+    "answer clarification option 1",
+    "click #next-section",
+    "fill #problem-input \"mental health stigma?!\"",
+    "fill #accomplishment-input \"crafted a counselor plan.\"",
+    "click #question-builder button[type=\"submit\"]",
+    "fill #draft-input \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\"",
+    "check #question-selfcheck",
+    "fill #draft-input \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\""
+  ],
+  "questions": [
+    {
+      "identity": "classification-0",
+      "options": [
+        "Procedural",
+        "Substantive"
+      ],
+      "answer": 0,
+      "feedback": [
+        {
+          "option": 1,
+          "text": "Not quite. This is procedural. This clarifies the task so the group shares a starting point."
+        },
+        {
+          "option": 0,
+          "text": "Correct. This clarifies the task so the group shares a starting point."
+        }
+      ]
+    },
+    {
+      "identity": "classification-1",
+      "options": [
+        "Procedural",
+        "Substantive"
+      ],
+      "answer": 1,
+      "feedback": [
+        {
+          "option": 0,
+          "text": "Not quite. This is substantive. This introduces evidence relevant to the issue."
+        },
+        {
+          "option": 1,
+          "text": "Correct. This introduces evidence relevant to the issue."
+        }
+      ]
+    },
+    {
+      "identity": "classification-2",
+      "options": [
+        "Procedural",
+        "Substantive"
+      ],
+      "answer": 0,
+      "feedback": [
+        {
+          "option": 1,
+          "text": "Not quite. This is procedural. This manages time and focuses the group."
+        },
+        {
+          "option": 0,
+          "text": "Correct. This manages time and focuses the group."
+        }
+      ]
+    },
+    {
+      "identity": "classification-3",
+      "options": [
+        "Procedural",
+        "Substantive"
+      ],
+      "answer": 1,
+      "feedback": [
+        {
+          "option": 0,
+          "text": "Not quite. This is substantive. This synthesizes ideas into a potential solution."
+        },
+        {
+          "option": 1,
+          "text": "Correct. This synthesizes ideas into a potential solution."
+        }
+      ]
+    },
+    {
+      "identity": "classification-4",
+      "options": [
+        "Procedural",
+        "Substantive"
+      ],
+      "answer": 0,
+      "feedback": [
+        {
+          "option": 1,
+          "text": "Not quite. This is procedural. This redirects the group toward its assigned task."
+        },
+        {
+          "option": 0,
+          "text": "Correct. This redirects the group toward its assigned task."
+        }
+      ]
+    },
+    {
+      "identity": "whatHow",
+      "options": [
+        "The negative effects of mental health stigma on K-12 students.",
+        "Craft a plan counselors can implement in their schools."
+      ],
+      "answer": 0,
+      "feedback": [
+        {
+          "option": 1,
+          "text": "Not quite. WHAT names the central problem. Crafting a plan is HOW: the action and deliverable."
+        },
+        {
+          "option": 0,
+          "text": "Correct. WHAT names the central problem. Crafting a plan is HOW: the action and deliverable."
+        }
+      ]
+    },
+    {
+      "identity": "clarification",
+      "options": [
+        "A. Begin brainstorming programs immediately.",
+        "B. Clarify the problem and the task's required deliverable.",
+        "C. Vote on who should lead the discussion."
+      ],
+      "answer": 1,
+      "feedback": [
+        {
+          "option": 0,
+          "text": "Not quite. The group should agree on what the task requires before deciding how to organize its time."
+        },
+        {
+          "option": 2,
+          "text": "Not quite. The group should agree on what the task requires before deciding how to organize its time."
+        },
+        {
+          "option": 1,
+          "text": "Correct. The group should agree on what the task requires before deciding how to organize its time."
+        }
+      ]
+    }
+  ],
+  "url": "http://127.0.0.1:60496/opening.html"
+}

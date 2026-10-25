@@ -1,0 +1,39 @@
+{
+  "lesson": "final",
+  "revision": "0b5d2297e7cbc19bd59cde750492dd28e3983ca0",
+  "storageKey": "dsl:final:v1",
+  "countedPages": 9,
+  "sections": ["welcome", "summary-synthesis", "connect-viewpoints", "organize-findings", "consensus", "task-audit", "professionalism", "closing-practice", "knowledge-check", "quick-reference"],
+  "dataPath": "data.finalState",
+  "ownedProperties": ["flips", "panels", "answers", "checks", "notes", "goals", "selections", "quizIndex", "assembled", "builderModel", "closingModel", "fields", "panelsOpen"],
+  "flips": { "0": ["connect-ideas", "capture-findings", "confirm-outcome"], "1": ["summary", "synthesis"], "4": ["round-robin", "majority", "negotiate"] },
+  "panels": { "2": ["listen", "connect", "credit", "advance"], "3": ["chronological", "thematic"], "5": ["consensus-question", "task", "what-how"], "6": ["exit", "thank-judge", "unexpected-interactions", "relationships"] },
+  "panelsOpen": ["listen", "connect", "credit", "advance", "chronological", "thematic", "consensus-question", "task", "what-how", "exit", "thank-judge", "unexpected-interactions", "relationships"],
+  "questions": {
+    "1": ["three-solutions", "combined-test", "remaining-time", "agreed-pilot", "phased-cost-review"],
+    "2": ["clearest-direction"], "3": ["strongest-summary"],
+    "4": ["unanimity-objection", "limited-costs", "confirm-compromise"],
+    "5": ["missing-element", "repair-gap", "closing-audit"],
+    "6": ["leave-table", "judge-feedback", "positive-relationship"],
+    "7": ["connect-viewpoints", "accurate-summary", "spending-limit", "evaluate-proposal"],
+    "8": ["synthesis", "effective-summary", "unanimity", "task-completion", "judge-comments"]
+  },
+  "options": {
+    "1": [["summary", "synthesis", "procedural"], ["summary", "synthesis", "procedural"], ["summary", "synthesis", "procedural"], ["summary", "synthesis", "procedural"], ["summary", "synthesis", "procedural"]],
+    "2": [["repeat", "coordinate", "most-frequent"]],
+    "3": [["vague-success", "organized-findings", "speaking-order"]],
+    "4": [["majority", "explore-concerns", "ignore"], ["cap-evaluate", "criticize", "abandon"], ["unrelated-debate", "check-support", "assume-silence"]],
+    "5": [["access", "communication", "affordability"], ["funding-cap-review", "confidence", "vague-success"], ["impression", "requirements-support", "finish-now"]],
+    "6": [["linger", "leave", "ranking"], ["coach-follow-up", "argue", "critique"], ["sincere-recognition", "criticize", "judge-preference"]],
+    "7": [["maya-only", "credit-coordinate", "generic-praise"], ["vague", "pilot-outreach-review", "overclaim"], ["spending-cap", "ignore-jordan", "end"], ["impression", "requirements-support", "speaking-time"]],
+    "8": [["chronological", "connect-new", "time", "popularity"], ["every-sentence", "own-ideas", "organized-credit", "declare-success"], ["majority", "negotiate", "ignore", "end"], ["enjoyment", "elapsed-time", "required-components", "chronological"], ["challenge", "ranking", "polite-coach", "critique"]]
+  },
+  "selections": "Numeric option by page:index; answers[page] is independent correct-ever question indexes",
+  "checks": { "2": ["connect-two", "credit-contributors", "new-insight", "task-focus", "professional"], "7": ["accurate-proposal", "credit-two", "connect-not-list", "access-communication-affordability", "confirmation-or-concern", "concise-professional"] },
+  "notes": ["maya-access", "jordan-cost", "avery-communication", "sam-pilot", "group-agreement", "funding-unresolved"],
+  "goals": ["credit-connect", "genuine-consensus", "task-review"],
+  "fields": { "build-1": "synthesis-contributors", "build-2": "synthesis-relationship", "build-3": "synthesis-recommendation", "assembled": "synthesis-output", "closing-text": "closing-draft" },
+  "flags": { "assembled": "synthesis-assembled", "builderModel": "synthesis-model-viewed", "closingModel": "closing-model-viewed" },
+  "quizIndex": "current numeric question by page",
+  "indexConvention": "Arrays freeze zero-inclusive indexes. Flips/panels exploration is PAGE-LOCAL; panelsOpen is GLOBAL. Checks have no DOM IDs and are not serialized via fields."
+}

@@ -1,0 +1,654 @@
+{
+  "provenance": "UI-observed",
+  "revision": "0b5d2297e7cbc19bd59cde750492dd28e3983ca0",
+  "origin": "http://127.0.0.1:60547",
+  "mount": "/",
+  "browser": "149.0.7827.55",
+  "raw": "{\"completed\":[0,1,2,3,4,5,6,7],\"data\":{\"middleState\":{\"sets\":{\"flipped\":{\"welcome\":[0,1,2],\"s1\":[3,4],\"models\":[5,6],\"speaking\":[7,8]},\"evidenceOpened\":[0,1,2,3],\"communicationOpened\":[0,1,2],\"strategyOpened\":[0,1,2,3],\"openedDetails\":[0,1,2,3],\"solved\":{\"classify\":[0,1,2,3,4],\"group\":[0,1,2],\"communication\":[0,1,2,3],\"speaking\":[0,1,2],\"application\":[\"a\",\"b\"]},\"correctQuiz\":[0,1,2,3,4]},\"fields\":{\"0\":\"fictional Survey, May 2025\",\"1\":\"A finding...\",\"2\":\"access..\",\"3\":\"According to fictional Survey, May 2025, A finding. This matters to our task because access.\",\"4\":true,\"5\":true,\"6\":true,\"7\":true,\"8\":\"Synthetic practice — “cost & access.”\\nConnect Maya’s idea; café ✓\",\"9\":true,\"10\":true,\"11\":true,\"12\":true,\"13\":true},\"positions\":{\"classify\":4,\"group\":2,\"communication\":3,\"speaking\":2},\"researchCorrect\":true,\"assembled\":true,\"quizIndex\":4,\"selections\":{\"classify-options\":0,\"classify-options-0\":0,\"classify-options-1\":1,\"classify-options-2\":0,\"classify-options-3\":1,\"classify-options-4\":0,\"research-options\":1,\"group-options\":0,\"group-options-0\":1,\"group-options-1\":2,\"group-options-2\":0,\"communication-options\":1,\"communication-options-0\":1,\"communication-options-1\":0,\"communication-options-2\":1,\"communication-options-3\":1,\"speaking-options\":2,\"speaking-options-0\":1,\"speaking-options-1\":0,\"speaking-options-2\":2,\"application-a-options\":1,\"application-b-options\":1,\"quiz-0\":2,\"quiz-options\":0,\"quiz-1\":1,\"quiz-2\":2,\"quiz-3\":1,\"quiz-4\":0}}}}",
+  "actions": [
+    "activate #view-0 .flip-card index 0",
+    "activate #view-0 .flip-card index 1",
+    "activate #view-0 .flip-card index 2",
+    "click #next-section",
+    "activate #view-1 .flip-card index 0",
+    "activate #view-1 .flip-card index 1",
+    "answer classify-0 option 1",
+    "answer classify-0 option 0",
+    "click #classify-next",
+    "answer classify-1 option 0",
+    "answer classify-1 option 1",
+    "click #classify-next",
+    "answer classify-2 option 1",
+    "answer classify-2 option 0",
+    "click #classify-next",
+    "answer classify-3 option 0",
+    "answer classify-3 option 1",
+    "click #classify-next",
+    "answer classify-4 option 1",
+    "answer classify-4 option 0",
+    "click #next-section",
+    "open #evidence-details details index 0",
+    "open #evidence-details details index 1",
+    "open #evidence-details details index 2",
+    "open #evidence-details details index 3",
+    "activate #view-2 .flip-card index 0",
+    "activate #view-2 .flip-card index 1",
+    "answer research option 0",
+    "answer research option 2",
+    "answer research option 3",
+    "answer research option 1",
+    "fill #source \"fictional Survey, May 2025\"",
+    "fill #finding \"A finding...\"",
+    "fill #why \"access..\"",
+    "click #assemble-button",
+    "check #research-check-0",
+    "check #research-check-1",
+    "check #research-check-2",
+    "check #research-check-3",
+    "click #next-section",
+    "open #collaboration-details details index 0",
+    "open #collaboration-details details index 1",
+    "open #collaboration-details details index 2",
+    "open #collaboration-details details index 3",
+    "answer group-0 option 0",
+    "answer group-0 option 2",
+    "answer group-0 option 1",
+    "click #group-next",
+    "answer group-1 option 0",
+    "answer group-1 option 1",
+    "answer group-1 option 2",
+    "click #group-next",
+    "answer group-2 option 1",
+    "answer group-2 option 2",
+    "answer group-2 option 0",
+    "click #next-section",
+    "open #communication-details details index 0",
+    "open #communication-details details index 1",
+    "open #communication-details details index 2",
+    "answer communication-0 option 0",
+    "answer communication-0 option 1",
+    "click #communication-next",
+    "answer communication-1 option 1",
+    "answer communication-1 option 0",
+    "click #communication-next",
+    "answer communication-2 option 0",
+    "answer communication-2 option 1",
+    "click #communication-next",
+    "answer communication-3 option 0",
+    "answer communication-3 option 1",
+    "click #next-section",
+    "open #strategy-details details index 0",
+    "open #strategy-details details index 1",
+    "open #strategy-details details index 2",
+    "open #strategy-details details index 3",
+    "activate #view-5 .flip-card index 0",
+    "activate #view-5 .flip-card index 1",
+    "answer speaking-0 option 0",
+    "answer speaking-0 option 2",
+    "answer speaking-0 option 1",
+    "click #speaking-next",
+    "answer speaking-1 option 1",
+    "answer speaking-1 option 2",
+    "answer speaking-1 option 0",
+    "click #speaking-next",
+    "answer speaking-2 option 0",
+    "answer speaking-2 option 1",
+    "answer speaking-2 option 2",
+    "click #next-section",
+    "answer application-a option 0",
+    "answer application-a option 2",
+    "answer application-a option 1",
+    "answer application-b option 0",
+    "answer application-b option 2",
+    "answer application-b option 1",
+    "fill #application-draft \"Synthetic practice — “cost & access.”\\nConnect Maya’s idea; café ✓\"",
+    "check #application-check-0",
+    "check #application-check-1",
+    "check #application-check-2",
+    "check #application-check-3",
+    "check #application-check-4",
+    "click #next-section",
+    "answer quiz-0 option 0",
+    "answer quiz-0 option 1",
+    "answer quiz-0 option 3",
+    "answer quiz-0 option 2",
+    "click #quiz-next",
+    "answer quiz-1 option 0",
+    "answer quiz-1 option 2",
+    "answer quiz-1 option 3",
+    "answer quiz-1 option 1",
+    "click #quiz-next",
+    "answer quiz-2 option 0",
+    "answer quiz-2 option 1",
+    "answer quiz-2 option 3",
+    "answer quiz-2 option 2",
+    "click #quiz-next",
+    "answer quiz-3 option 0",
+    "answer quiz-3 option 2",
+    "answer quiz-3 option 3",
+    "answer quiz-3 option 1",
+    "click #quiz-next",
+    "answer quiz-4 option 0",
+    "answer quiz-4 option 1",
+    "answer quiz-4 option 3",
+    "answer quiz-4 option 2",
+    "click #quiz-options button:first-child"
+  ],
+  "questions": [
+    {
+      "identity": "classify-0",
+      "options": [
+        "Procedural",
+        "Substantive"
+      ],
+      "answer": 0,
+      "feedback": [
+        {
+          "option": 1,
+          "text": "Not quite. This manages time and discussion structure."
+        },
+        {
+          "option": 0,
+          "text": "Good choice. This manages time and discussion structure."
+        }
+      ]
+    },
+    {
+      "identity": "classify-1",
+      "options": [
+        "Procedural",
+        "Substantive"
+      ],
+      "answer": 1,
+      "feedback": [
+        {
+          "option": 0,
+          "text": "Not quite. This introduces research relevant to the problem. An actual contribution should cite its publication and date."
+        },
+        {
+          "option": 1,
+          "text": "Good choice. This introduces research relevant to the problem. An actual contribution should cite its publication and date."
+        }
+      ]
+    },
+    {
+      "identity": "classify-2",
+      "options": [
+        "Procedural",
+        "Substantive"
+      ],
+      "answer": 0,
+      "feedback": [
+        {
+          "option": 1,
+          "text": "Not quite. This organizes participation."
+        },
+        {
+          "option": 0,
+          "text": "Good choice. This organizes participation."
+        }
+      ]
+    },
+    {
+      "identity": "classify-3",
+      "options": [
+        "Procedural",
+        "Substantive"
+      ],
+      "answer": 1,
+      "feedback": [
+        {
+          "option": 0,
+          "text": "Not quite. This develops a solution by connecting proposals."
+        },
+        {
+          "option": 1,
+          "text": "Good choice. This develops a solution by connecting proposals."
+        }
+      ]
+    },
+    {
+      "identity": "classify-4",
+      "options": [
+        "Procedural",
+        "Substantive"
+      ],
+      "answer": 0,
+      "feedback": [
+        {
+          "option": 1,
+          "text": "Not quite. This redirects the group."
+        },
+        {
+          "option": 0,
+          "text": "Good choice. This redirects the group."
+        }
+      ]
+    },
+    {
+      "identity": "research",
+      "options": [
+        "“Transportation matters. I have seen that myself.”",
+        "“According to the fictional Community Access Survey from May 2025, 38% of surveyed students reported missing at least one after-school activity because of transportation difficulties. We should consider whether transportation support could improve participation.”",
+        "“I found a transportation statistic, but we should discuss a different issue.”",
+        "“The survey proves transportation is the only barrier.”"
+      ],
+      "answer": 1,
+      "feedback": [
+        {
+          "option": 0,
+          "text": "Not quite. A personal observation does not use the available research."
+        },
+        {
+          "option": 2,
+          "text": "Not quite. Research is less useful when it derails the conversation."
+        },
+        {
+          "option": 3,
+          "text": "Not quite. The survey does not establish that transportation is the only barrier."
+        },
+        {
+          "option": 1,
+          "text": "Good choice. This identifies the source and date, describes the fictional finding, and connects it to a possible solution."
+        }
+      ]
+    },
+    {
+      "identity": "group-0",
+      "options": [
+        "“Jordan, you need to talk more.”",
+        "“Before we move on, are there any additional perspectives?”",
+        "“We have heard enough.”"
+      ],
+      "answer": 1,
+      "feedback": [
+        {
+          "option": 0,
+          "text": "Not quite. A broad invitation encourages participation without putting one person on the spot."
+        },
+        {
+          "option": 2,
+          "text": "Not quite. A broad invitation encourages participation without putting one person on the spot."
+        },
+        {
+          "option": 1,
+          "text": "Good choice. A broad invitation encourages participation without putting one person on the spot."
+        }
+      ]
+    },
+    {
+      "identity": "group-1",
+      "options": [
+        "“That has nothing to do with anything.”",
+        "“Let’s keep discussing lunch.”",
+        "“Could we return to the transportation barriers our plan needs to address?”"
+      ],
+      "answer": 2,
+      "feedback": [
+        {
+          "option": 0,
+          "text": "Not quite. Respectfully return to the task and offer a way forward."
+        },
+        {
+          "option": 1,
+          "text": "Not quite. Respectfully return to the task and offer a way forward."
+        },
+        {
+          "option": 2,
+          "text": "Good choice. Respectfully return to the task and offer a way forward."
+        }
+      ]
+    },
+    {
+      "identity": "group-2",
+      "options": [
+        "“Could we prioritize recommendations and reserve time to review the plan?”",
+        "“I will decide the plan.”",
+        "“Time does not matter.”"
+      ],
+      "answer": 0,
+      "feedback": [
+        {
+          "option": 1,
+          "text": "Not quite. Time management helps the group finish without taking over its decisions."
+        },
+        {
+          "option": 2,
+          "text": "Not quite. Time management helps the group finish without taking over its decisions."
+        },
+        {
+          "option": 0,
+          "text": "Good choice. Time management helps the group finish without taking over its decisions."
+        }
+      ]
+    },
+    {
+      "identity": "communication-0",
+      "options": [
+        "Roll your eyes while taking notes.",
+        "Keep a neutral expression and explain your concern respectfully."
+      ],
+      "answer": 1,
+      "feedback": [
+        {
+          "option": 0,
+          "text": "Not quite. Body language affects collaboration."
+        },
+        {
+          "option": 1,
+          "text": "Good choice. Body language affects collaboration."
+        }
+      ]
+    },
+    {
+      "identity": "communication-1",
+      "options": [
+        "Maintain clear volume through the final words.",
+        "Let your voice fade before finishing."
+      ],
+      "answer": 0,
+      "feedback": [
+        {
+          "option": 1,
+          "text": "Not quite. An audible ending helps others hear your complete thought."
+        },
+        {
+          "option": 0,
+          "text": "Good choice. An audible ending helps others hear your complete thought."
+        }
+      ]
+    },
+    {
+      "identity": "communication-2",
+      "options": [
+        "“As speech competitors, we should...”",
+        "“As an advisory committee, we should consider...”"
+      ],
+      "answer": 1,
+      "feedback": [
+        {
+          "option": 0,
+          "text": "Not quite. Stay within your assigned role."
+        },
+        {
+          "option": 1,
+          "text": "Good choice. Stay within your assigned role."
+        }
+      ]
+    },
+    {
+      "identity": "communication-3",
+      "options": [
+        "Keep typing without looking up.",
+        "Write briefly and look up frequently."
+      ],
+      "answer": 1,
+      "feedback": [
+        {
+          "option": 0,
+          "text": "Not quite. Note-taking and visible listening work together."
+        },
+        {
+          "option": 1,
+          "text": "Good choice. Note-taking and visible listening work together."
+        }
+      ]
+    },
+    {
+      "identity": "speaking-0",
+      "options": [
+        "Talk louder without acknowledging Avery.",
+        "“Go ahead, Avery. I have a related point to share afterward.”",
+        "Say your idea is more important."
+      ],
+      "answer": 1,
+      "feedback": [
+        {
+          "option": 0,
+          "text": "Not quite. This risks dominating someone with fewer turns."
+        },
+        {
+          "option": 2,
+          "text": "Not quite. This creates unnecessary conflict."
+        },
+        {
+          "option": 1,
+          "text": "Good choice. This supports participation while preserving your opportunity."
+        }
+      ]
+    },
+    {
+      "identity": "speaking-1",
+      "options": [
+        "“Could I respond briefly with a relevant finding, then hear the next perspective?”",
+        "Ignore them and speak at length.",
+        "Never speak if anyone else wants a turn."
+      ],
+      "answer": 0,
+      "feedback": [
+        {
+          "option": 1,
+          "text": "Not quite. Relevant research still needs collaborative delivery."
+        },
+        {
+          "option": 2,
+          "text": "Not quite. Withholding useful evidence can hinder the group."
+        },
+        {
+          "option": 0,
+          "text": "Good choice. This explains the connection and acknowledges others."
+        }
+      ]
+    },
+    {
+      "identity": "speaking-2",
+      "options": [
+        "Stop participating.",
+        "Argue over them.",
+        "“I’d like to finish this thought, then hear your point.” Finish briefly and yield."
+      ],
+      "answer": 2,
+      "feedback": [
+        {
+          "option": 0,
+          "text": "Not quite. Withdrawing prevents contribution."
+        },
+        {
+          "option": 1,
+          "text": "Not quite. Escalation does not resolve the speaking order."
+        },
+        {
+          "option": 2,
+          "text": "Good choice. This preserves your turn while respecting the other speaker."
+        }
+      ]
+    },
+    {
+      "identity": "application-a",
+      "options": [
+        "“Let’s talk about something else.”",
+        "“Building on Maya and Jordan, we could evaluate a small transportation pilot before a larger investment, examining cost and access together.”",
+        "“We are almost out of time.”"
+      ],
+      "answer": 1,
+      "feedback": [
+        {
+          "option": 0,
+          "text": "Not quite. This synthesizes ideas into a possible solution."
+        },
+        {
+          "option": 2,
+          "text": "Not quite. This synthesizes ideas into a possible solution."
+        },
+        {
+          "option": 1,
+          "text": "Good choice. This synthesizes ideas into a possible solution."
+        }
+      ]
+    },
+    {
+      "identity": "application-b",
+      "options": [
+        "“Sam has spoken, so no one else should.”",
+        "“Could we evaluate transportation and communication proposals, then choose final recommendations with our remaining time?”",
+        "“I will make the final decision.”"
+      ],
+      "answer": 1,
+      "feedback": [
+        {
+          "option": 0,
+          "text": "Not quite. This supports the deliverable without taking control from the group."
+        },
+        {
+          "option": 2,
+          "text": "Not quite. This supports the deliverable without taking control from the group."
+        },
+        {
+          "option": 1,
+          "text": "Good choice. This supports the deliverable without taking control from the group."
+        }
+      ]
+    },
+    {
+      "identity": "quiz-0",
+      "options": [
+        "“Begin the next item.”",
+        "“Five minutes remain.”",
+        "“Combining the proposals could address cost and accessibility.”",
+        "“Could we hear someone else?”"
+      ],
+      "answer": 2,
+      "feedback": [
+        {
+          "option": 0,
+          "text": "Not quite. Connecting ideas develops a possible solution. Try another option."
+        },
+        {
+          "option": 1,
+          "text": "Not quite. Connecting ideas develops a possible solution. Try another option."
+        },
+        {
+          "option": 3,
+          "text": "Not quite. Connecting ideas develops a possible solution. Try another option."
+        },
+        {
+          "option": 2,
+          "text": "Good choice. Connecting ideas develops a possible solution."
+        }
+      ]
+    },
+    {
+      "identity": "quiz-1",
+      "options": [
+        "Share every statistic regardless of topic.",
+        "Cite publication and date, explain the finding, and connect it to the discussion.",
+        "Replace evidence with stories.",
+        "Repeat a point for the judge."
+      ],
+      "answer": 1,
+      "feedback": [
+        {
+          "option": 0,
+          "text": "Not quite. Relevant, cited, explained evidence supports problem-solving. Try another option."
+        },
+        {
+          "option": 2,
+          "text": "Not quite. Relevant, cited, explained evidence supports problem-solving. Try another option."
+        },
+        {
+          "option": 3,
+          "text": "Not quite. Relevant, cited, explained evidence supports problem-solving. Try another option."
+        },
+        {
+          "option": 1,
+          "text": "Good choice. Relevant, cited, explained evidence supports problem-solving."
+        }
+      ]
+    },
+    {
+      "identity": "quiz-2",
+      "options": [
+        "Repeatedly call on them by name.",
+        "Ignore participation.",
+        "At a transition, invite any additional perspectives.",
+        "Criticize quiet participants."
+      ],
+      "answer": 2,
+      "feedback": [
+        {
+          "option": 0,
+          "text": "Not quite. A broad invitation avoids putting one person on the spot. Try another option."
+        },
+        {
+          "option": 1,
+          "text": "Not quite. A broad invitation avoids putting one person on the spot. Try another option."
+        },
+        {
+          "option": 3,
+          "text": "Not quite. A broad invitation avoids putting one person on the spot. Try another option."
+        },
+        {
+          "option": 2,
+          "text": "Good choice. A broad invitation avoids putting one person on the spot."
+        }
+      ]
+    },
+    {
+      "identity": "quiz-3",
+      "options": [
+        "It guarantees no interruption.",
+        "It helps others hear the complete thought and recognize the turn is not over.",
+        "It establishes leadership.",
+        "It avoids listening."
+      ],
+      "answer": 1,
+      "feedback": [
+        {
+          "option": 0,
+          "text": "Not quite. Clear endings help turn-taking, particularly in noisy rooms. Try another option."
+        },
+        {
+          "option": 2,
+          "text": "Not quite. Clear endings help turn-taking, particularly in noisy rooms. Try another option."
+        },
+        {
+          "option": 3,
+          "text": "Not quite. Clear endings help turn-taking, particularly in noisy rooms. Try another option."
+        },
+        {
+          "option": 1,
+          "text": "Good choice. Clear endings help turn-taking, particularly in noisy rooms."
+        }
+      ]
+    },
+    {
+      "identity": "quiz-4",
+      "options": [
+        "Talk over them.",
+        "Declare your idea more important.",
+        "Yield and ask to share your point afterward.",
+        "Stop participating entirely."
+      ],
+      "answer": 2,
+      "feedback": [
+        {
+          "option": 0,
+          "text": "Not quite. Yielding balances participation while keeping a future opportunity. Try another option."
+        },
+        {
+          "option": 1,
+          "text": "Not quite. Yielding balances participation while keeping a future opportunity. Try another option."
+        },
+        {
+          "option": 3,
+          "text": "Not quite. Yielding balances participation while keeping a future opportunity. Try another option."
+        },
+        {
+          "option": 2,
+          "text": "Good choice. Yielding balances participation while keeping a future opportunity."
+        }
+      ]
+    }
+  ],
+  "url": "http://127.0.0.1:60547/middle.html"
+}

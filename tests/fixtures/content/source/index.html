@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#142B49">
+  <meta name="description" content="Discussion Skills Lab: self-paced interactive lessons for high school Discussion students.">
+  <title>Discussion Skills Lab | Interactive Lessons</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&amp;family=Fraunces:wght@600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    :root{color-scheme:light;--navy:#142b49;--teal:#087f83;--pale:#eaf5fb;--line:#d8e5ec;--muted:#4d6476}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f6fafc;color:var(--navy);font:16px/1.6 'DM Sans',system-ui,sans-serif}
+    a{color:inherit}a:focus-visible{outline:3px solid var(--teal);outline-offset:4px;border-radius:4px}
+    .skip{position:absolute;top:-100px;left:15px;padding:10px;background:white;z-index:10}.skip:focus{top:12px}
+    .topbar{background:var(--navy);color:white}.topbar-inner{max-width:1080px;margin:auto;padding:18px 26px;display:flex;gap:12px;align-items:center}
+    .mark{width:35px;height:35px;display:grid;place-items:center;border:1px solid #ffffff55;border-radius:10px;font-size:19px;font-weight:800;color:#a9e5e4}
+    .brand{font-weight:800;letter-spacing:.015em}.series{font-size:.76rem;color:#c8dbe6}
+    main{max-width:1080px;margin:0 auto;padding:64px 26px 84px}
+    .eyebrow{color:var(--teal);font-size:.8rem;font-weight:800;text-transform:uppercase;letter-spacing:.12em;margin:0 0 13px}
+    h1,h2{font-family:'Fraunces',Georgia,serif;line-height:1.15}h1{font-size:clamp(2.4rem,6vw,4rem);max-width:780px;margin:0 0 22px}h2{font-size:1.65rem}
+    .intro{max-width:720px;color:#415d70;font-size:1.12rem;margin:0 0 44px}
+    .lessons{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:19px}
+    .lesson{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:19px;padding:28px;box-shadow:0 8px 25px #142b4908;min-height:320px}
+    .lesson:focus-within,.lesson:hover{border-color:#86b9be;box-shadow:0 12px 30px #142b4914}
+    .number{display:inline-flex;align-items:center;justify-content:center;width:45px;height:45px;border-radius:13px;background:var(--pale);color:var(--teal);font-weight:800;margin-bottom:20px}
+    .lesson h2{margin:0 0 12px}.lesson p{margin:0 0 24px;color:var(--muted);flex:1}
+    .lesson a{display:inline-flex;align-items:center;gap:8px;align-self:flex-start;text-decoration:none;background:var(--teal);color:white;font-weight:800;padding:11px 17px;border-radius:10px}
+    .lesson a:hover{background:#076d72}
+    .note{margin-top:38px;padding:20px 23px;border:1px solid #cde2eb;border-radius:14px;background:var(--pale);color:#314d60}
+    .note strong{color:var(--navy)}footer{max-width:1080px;margin:auto;padding:24px 26px 42px;border-top:1px solid var(--line);color:var(--muted);font-size:.88rem}
+    footer a{color:var(--teal)}
+    @media(max-width:760px){main{padding:43px 18px 55px}.topbar-inner{padding:16px 18px}.lessons{grid-template-columns:1fr}.lesson{min-height:0;padding:24px}.intro{font-size:1.04rem}.note{margin-top:25px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to lessons</a>
+  <header class="topbar"><div class="topbar-inner"><div class="mark" aria-hidden="true">D</div><div><div class="brand">Discussion Skills Lab</div><div class="series">Interactive learning series</div></div></div></header>
+  <main id="main">
+    <p class="eyebrow">Independent student learning</p>
+    <h1>Build the skills for a stronger Discussion round.</h1>
+    <p class="intro">Three interactive lessons guide you through opening a round, contributing during the discussion, and bringing the group's work to a purposeful conclusion. Practice at your own pace, revisit activities, and use each lesson's Quick Reference when you need it.</p>
+    <section class="lessons" aria-label="Available lessons">
+      <article class="lesson"><span class="number" aria-hidden="true">01</span><h2>Opening Stage</h2><p>Start with a clear structure, establish the task, ask productive questions, and help the group get underway.</p><a href="opening.html">Open lesson <span aria-hidden="true">→</span></a></article>
+      <article class="lesson"><span class="number" aria-hidden="true">02</span><h2>Middle Stage</h2><p>Make substantive contributions using relevant ideas, evidence, explanation, and connections.</p><a href="middle.html">Open lesson <span aria-hidden="true">→</span></a></article>
+      <article class="lesson"><span class="number" aria-hidden="true">03</span><h2>Final Stage</h2><p>Summarize and synthesize viewpoints, check the task, build consensus, and close professionally.</p><a href="final.html">Open lesson <span aria-hidden="true">→</span></a></article>
+    </section>
+    <aside class="note"><strong>About your progress:</strong> Each lesson saves progress in this browser on this device. It does not automatically sync to another device or to your coach. The Quick Reference in each lesson is available at any time.</aside>
+  </main>
+  <footer>© 2026 Rhys Jones · Discussion Skills Lab · <a href="LICENSE">Code: MIT License</a> · <a href="CONTENT_LICENSE.md">Instructional content: CC BY 4.0</a>. Educational coaching materials are not a substitute for official tournament rules.</footer>
+</body>
+</html>

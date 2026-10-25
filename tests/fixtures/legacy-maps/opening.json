@@ -1,0 +1,32 @@
+{
+  "lesson": "opening",
+  "revision": "0b5d2297e7cbc19bd59cde750492dd28e3983ca0",
+  "storageKey": "dsl:opening-stage:v1",
+  "countedPages": 7,
+  "sections": ["contributions", "opening-sequence", "task-analysis", "clarifications", "give-direction", "research-transition", "knowledge-check", "quick-reference"],
+  "dataPath": "data",
+  "activities": {
+    "classification": {
+      "answersKey": "classificationAnswers", "exploredKey": "classificationSeen",
+      "questions": ["clarify-accomplishment", "counseling-attendance", "remaining-time", "combine-proposals", "redirect-task"],
+      "options": { "procedural": "procedural", "substantive": "substantive" },
+      "unanswered": null, "gate": "all five CURRENT answers correct and all five seen"
+    },
+    "timeline": { "key": "timelineSeen", "panels": { "stage-1": "receive", "stage-2": "read-analyze", "stage-3": "clarify", "stage-4": "establish-direction", "stage-5": "research", "stage-6": "transition" } },
+    "sequence-checkpoint": { "creditKey": "sequenceCorrect", "options": ["propose-solutions", "clarify-task", "vote-leader"], "selectionKey": null },
+    "task-analysis": { "key": "analysisSeen", "panels": { "who": "role", "what": "problem", "how": "deliverable", "where": "setting", "terms": "search-terms" } },
+    "what-how": { "selectionKey": "what-how-options", "question": "identify-what", "options": ["stigma-effects", "counselor-plan"] },
+    "clarification": { "selectionKey": "clarification-options", "question": "before-accepting-agenda", "options": ["brainstorm", "clarify-deliverable", "vote-leader"] },
+    "research": { "selectionKey": "research-options", "question": "after-research-period", "options": ["restart", "ignore", "specific-misunderstanding"] },
+    "knowledge-check": {
+      "selectionKey": "quizAnswers", "earnedKey": "quizEarned",
+      "questions": ["substantive", "opening-order", "what-versus-how", "clarification-purpose", "roadmap-destination"],
+      "options": [["clarify", "research", "time-limit"], ["clarify-before-direction", "agenda-before-clarify", "research-first"], ["source-citation", "problem-deliverable", "setting-role"], ["debate-before-reading", "permanent-leader", "shared-understanding"], ["roadmap-destination", "problem-speaking-order", "identical"]],
+      "fallback": "If quizEarned is absent, infer correct-ever indexes from currently correct quizAnswers; numeric zero is a selection."
+    }
+  },
+  "fields": { "problem-input": "consensus-problem", "accomplishment-input": "consensus-accomplishment", "draft-input": "consensus-draft" },
+  "checks": { "questionSelfcheck": "connects-what-how" },
+  "boundaries": { "draftTrimmedMinimum": 35 },
+  "indexConvention": "Every JSON array position is the explicit frozen legacy index, including zero. IDs are authored and scoped to their activity."
+}

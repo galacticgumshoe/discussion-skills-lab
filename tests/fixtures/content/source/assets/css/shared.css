@@ -1,0 +1,120 @@
+/* Discussion Skills Lab shared shell — Middle Stage navigation pattern */
+:root{--dsl-navy:#142b49;--dsl-teal:#087f83;--dsl-pale:#eaf5fb;--dsl-line:#dce6eb}
+body{background:#f5f8fa;color:var(--dsl-navy);font-family:'DM Sans',sans-serif}
+button:focus-visible,select:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #e9a43c;outline-offset:3px}
+button:disabled{cursor:not-allowed;opacity:.56}
+.topbar{background:var(--dsl-navy);color:#fff}.brand{font-weight:700;letter-spacing:.09em;text-transform:uppercase;font-size:.78rem}
+.dsl-layout{width:100%;max-width:1320px;margin:auto;display:grid;grid-template-columns:250px minmax(0,1fr);gap:32px;padding:30px 28px 70px}
+.dsl-layout.sidebar-collapsed{grid-template-columns:62px minmax(0,1fr)}
+.rail{align-self:start;position:sticky;top:20px;background:#fff;border:1px solid var(--dsl-line);border-radius:18px;padding:14px;box-shadow:0 8px 28px #142b490a}
+.rail-toggle{display:flex;align-items:center;justify-content:center;width:100%;border:1px solid #c7d9dc;background:var(--dsl-pale);border-radius:10px;padding:9px;margin-bottom:12px;color:var(--dsl-navy);font-size:1.15rem}
+.dsl-layout.sidebar-collapsed .rail{padding:10px}.dsl-layout.sidebar-collapsed .rail-progress,.dsl-layout.sidebar-collapsed #rail-links{display:none}
+.rail-link{display:block;width:100%;text-align:left;border:0;background:transparent;color:var(--dsl-navy);border-radius:10px;padding:11px 12px;margin:2px 0;font-size:.9rem}
+.rail-link:not(:disabled):hover,.rail-link.active{background:var(--dsl-pale);font-weight:700}.rail-link:disabled{background:#f4f6f7;color:#687788}.rail-link .mark{float:right;color:var(--dsl-teal);font-weight:700}
+.top-progress{height:7px;background:#d2e2e8}.top-progress>div{height:100%;background:#42b9b2;transition:width .25s}
+.dsl-content{min-width:0;max-width:920px;width:100%;margin:auto}.mobile-nav{display:none;margin-bottom:20px}.mobile-nav label{display:block;font-weight:700;margin-bottom:7px}.mobile-nav select{width:100%;padding:12px;border:1.5px solid #a9bcc8;border-radius:9px;background:white;color:var(--dsl-navy)}
+#nav-status{color:#506176;font-size:.9rem;min-height:1.5em;margin-bottom:18px}
+.lesson-view h2{font-family:Fraunces,serif;color:var(--dsl-navy)}.bottom-controls{display:flex;justify-content:space-between;gap:12px;border-top:1px solid var(--dsl-line);margin-top:35px;padding-top:20px}
+#next-section:disabled{opacity:.48}.lesson-view[hidden]{display:none!important}
+@media(max-width:850px){.dsl-layout,.dsl-layout.sidebar-collapsed{display:block;padding:20px 16px 60px}.rail{display:none}.mobile-nav{display:block}.dsl-content{max-width:760px}}
+@media(max-width:600px){.bottom-controls button{flex:1}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+/* Print the reference as a compact handout; browser print settings may still override colors. */
+@page { size: letter portrait; margin: .35in; }
+@media print {
+  html,body { margin:0!important; padding:0!important; background:white!important; color:#142B49!important; }
+  html,body,#quick-reference,#quick-reference * { -webkit-print-color-adjust:exact!important; print-color-adjust:exact!important; }
+  .topbar,.rail,.mobile-nav,.bottom-controls,#nav-status,.lesson-view,.print-hide { display:none!important; }
+  .dsl-layout,.dsl-layout.sidebar-collapsed { display:block!important; padding:0!important; margin:0!important; min-height:0!important; }
+  .dsl-content { max-width:none!important; width:100%!important; margin:0!important; padding:0!important; }
+  #view-7 { display:block!important; margin:0!important; padding:0!important; }
+  #quick-reference { box-shadow:none!important; border:0!important; border-radius:0!important; margin:0!important; padding:0!important; font-size:9pt!important; line-height:1.2!important; }
+  #quick-reference h2 { font-size:17pt!important; margin:0!important; }
+  #quick-reference h4 { font-size:10pt!important; }
+  #quick-reference p { margin-top:3px!important; margin-bottom:3px!important; }
+  #quick-reference .mb-6 { margin-bottom:9px!important; }
+  #quick-reference .mb-4 { margin-bottom:6px!important; }
+  #quick-reference .mb-3 { margin-bottom:5px!important; }
+  #quick-reference .mt-4 { margin-top:6px!important; }
+  #quick-reference .gap-4 { gap:7px!important; }
+  #quick-reference .gap-3 { gap:5px!important; }
+  #quick-reference .gap-2 { gap:4px!important; }
+  #quick-reference .p-3,#quick-reference .\!p-5 { padding:7px!important; }
+  #reference-content { display:grid!important; grid-template-columns:repeat(2,minmax(0,1fr))!important; gap:7px!important; }
+  #reference-content > :first-child,#reference-content > :last-child { grid-column:1/-1!important; }
+  #quick-reference section,#quick-reference .card { break-inside:avoid!important; page-break-inside:avoid!important; }
+  #quick-reference .sm\:grid-cols-3 { display:grid!important; grid-template-columns:repeat(6,minmax(0,1fr))!important; }
+  #quick-reference .sm\:grid-cols-2 { display:grid!important; grid-template-columns:repeat(4,minmax(0,1fr))!important; }
+}
+
+/* Quick reference is an always-accessible resource, independent of lesson gating. */
+.reference-shortcut{margin-bottom:16px}.reference-button{display:block;width:100%;padding:11px 14px;text-align:left;border:1px solid #a6d7d7;border-radius:10px;background:#eaf5fb;color:#142b49;font-weight:700}.reference-button:hover{background:#d8efef}.reference-button span{font-weight:400;font-size:.84em;color:#425b69}.reference-button:focus-visible{outline:3px solid #e9a43c;outline-offset:3px}
+@media print{.reference-shortcut{display:none!important}}
+
+/* Shared multiple-choice review: only the latest choice is highlighted. */
+.choice.selected-answer,.option.selected-answer{border-width:2px!important;font-weight:700;box-shadow:inset 4px 0 0 currentColor}
+.choice.selected-correct,.option.selected-correct{background:#e8f7ee!important;border-color:#17804e!important;color:#135e3c!important}
+.choice.selected-incorrect,.option.selected-incorrect{background:#fff0ed!important;border-color:#b13f39!important;color:#84312d!important}
+.choice:focus-visible,.option:focus-visible{outline:3px solid #087f83;outline-offset:2px}
+
+
+/* Shared expandable-row design: Middle Stage section 02 is the visual reference.
+   Scoped to instructional accordions; does not affect navigation or print references. */
+.dsl-content details.dsl-expandable {
+  display:block;
+  background:#ffffff;
+  border:1px solid #dce7ec;
+  border-radius:14px;
+  padding:16px 20px;
+  margin:10px 0 0;
+  overflow:visible;
+  color:#142b49;
+  font-family:"DM Sans",sans-serif;
+  font-size:1rem;
+  line-height:1.65;
+  box-shadow:none;
+}
+.dsl-content details.dsl-expandable > summary {
+  display:list-item;
+  padding:0;
+  margin:0;
+  cursor:pointer;
+  color:#142b49;
+  font-family:"DM Sans",sans-serif;
+  font-size:1.08rem;
+  font-weight:700;
+  line-height:1.45;
+  letter-spacing:normal;
+  list-style-position:outside;
+}
+.dsl-content details.dsl-expandable > summary::marker { color:#087f83; }
+.dsl-content details.dsl-expandable[open] > summary { margin-bottom:12px; }
+.dsl-content details.dsl-expandable > .inner {
+  padding:0;
+  font-size:1rem;
+  line-height:1.65;
+  color:#142b49;
+}
+.dsl-content details.dsl-expandable p {
+  font-size:1rem;
+  line-height:1.65;
+}
+.dsl-content details.dsl-expandable .example {
+  border-left:4px solid #087f83;
+  background:#f5fafb;
+  border-radius:6px;
+  padding:10px 16px;
+  margin-top:12px;
+  font-size:1rem;
+  line-height:1.6;
+}
+.dsl-content details.dsl-expandable.visited > summary::after {
+  content:" ✓ Explored";
+  color:#087f83;
+  font-size:.85rem;
+  font-weight:600;
+}
+@media(max-width:600px) {
+  .dsl-content details.dsl-expandable { padding:16px 18px; }
+  .dsl-content details.dsl-expandable > summary { font-size:1.08rem; }
+}

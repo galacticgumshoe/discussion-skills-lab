@@ -1,0 +1,7 @@
+{
+  "provenance": "synthetic",
+  "revision": "0b5d2297e7cbc19bd59cde750492dd28e3983ca0",
+  "safety": "unsafe",
+  "purpose": "Invalid activity indexes; no new credit should be inferred by a future adapter",
+  "raw": "{\"completed\":[-1,0,99],\"data\":{\"finalState\":{\"quizIndex\":{\"1\":99},\"selections\":{\"1:0\":99},\"goals\":[99]}}}"
+}

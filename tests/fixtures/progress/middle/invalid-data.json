@@ -1,0 +1,7 @@
+{
+  "provenance": "synthetic",
+  "revision": "0b5d2297e7cbc19bd59cde750492dd28e3983ca0",
+  "safety": "unsafe",
+  "purpose": "Valid completed array with invalid primitive data; legacy writer crashes",
+  "raw": "{\"completed\":[0],\"data\":\"invalid\"}"
+}

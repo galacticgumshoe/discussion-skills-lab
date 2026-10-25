@@ -1,0 +1,7 @@
+{
+  "provenance": "synthetic",
+  "revision": "0b5d2297e7cbc19bd59cde750492dd28e3983ca0",
+  "safety": "safe",
+  "purpose": "Absent quizEarned falls back to current correct selections; initialization earns page 6",
+  "raw": "{\"completed\":[],\"data\":{\"quizAnswers\":[1,0,1,2,0]}}"
+}
