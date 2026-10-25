@@ -102,3 +102,93 @@ Working branch: `refactor/shared-components`.
 - Prerequisites satisfied: Planning instructions/specs are committed separately from milestone-1 implementation/evidence. The preservation baseline remains complete per the preceding handoff; the next separately requested task is milestone 2, beginning with its prerequisite checks and required regression runs. Stop after the two authorized commits.
 - Outstanding blockers: None for committing this work. Manual/device/AT/interactive-preview follow-ups remain pending; no release/publication approval is implied.
 - Decisions requiring approval: None for the two local commits explicitly requested by the owner. Further milestone implementation, merging, pushing or publication requires separate authorization.
+
+## Milestone handoff
+
+Milestone: 2 — Mechanically externalize Opening's script and styles — **complete**, 2026-10-25; manual/device/AT/interactive-print follow-ups remain explicitly pending.
+Starting commit: `5fb48363d73562b2341768d38f10087528c964d0` (actual HEAD before this session's edits).
+Working branch: `refactor/shared-components` (clean at entry; no inherited changes).
+
+### Implementation
+- Files created: `assets/css/opening.css`, `assets/js/opening.js`; development-only `tests/helpers/opening-extraction.mjs`, `tests/browser/opening-extraction.spec.mjs`; `.opencode/docs/evidence/milestone-2-verification.md`.
+- Files modified: `opening.html` only replaces its main style/activity script with relative local references, preserving cascade/execution order and inline print handler. `tests/unit/baseline.test.mjs` adds exact extraction/unchanged-other-production assertions and adjusts current-mount server expectations without changing replay; `tests/helpers/content-baseline.mjs` accepts the extracted JS path while retaining original inline support; `tests/browser/baseline.spec.mjs` accounts for changed inert head-node indexes while independently checking exact content against sealed evidence. `.opencode/docs/content-inventory.md` records new locations/line mapping; this handoff appended. No Middle/Final/shared files, licenses, public URLs, dependencies, deployment, Tailwind/fonts or canonical fixtures changed. No layout adjustments, scoped standards repairs, commits or publication.
+- Interfaces introduced: Development-only `openingExtraction(source)` → `{html,css,js}` defines the exact allowed transformation; browser-only presentation/init observation has no shipped interface. No new production globals, wrappers, module API or loader.
+- Content moved: Baseline `opening.html` main style → `assets/css/opening.css`, preserving every payload character and adding exactly one final LF after original closing-tag indentation; final inline activity script → `assets/js/opening.js` with every payload character, initial/final LF, data array, feedback, template, gate and final navigation call unchanged. Original JS line N maps to new JS line N − 393. Full source relationships: `.opencode/docs/content-inventory.md`, milestone-2 mapping. No instructional content separation, rewriting, removals or canonical baseline updates.
+- Storage changes: None; `dsl:opening-stage:v1`, `dsl:middle:v1`, `dsl:final:v1`, outer/inner shapes, drafts, credit and known original defects unchanged. No v1 extension/adapter/new writer.
+
+### Verification
+- Unit tests: **Passed** before edits, `npm run test:unit` — 6/6; after extraction — 7/7, repeated, no failures/skips. Exact transformed HTML/payloads, all other 14 production paths, all 110 sealed fixtures, banks/answers, maps/policy and both current/original server mounts verified. Node v22.23.4 via `eval "$(fnm env --shell zsh)"` / `fnm use 22`.
+- Browser tests: **Passed** before edits, `env CFFIXED_USER_HOME="$(mktemp -d)" npm run test:browser` — 188/188. Focused `npm run test:browser -- tests/browser/opening-extraction.spec.mjs --project=chromium --project=mobile-chromium --max-failures=1` — 4/4. Final isolated full command — **196/196**, 49 each Chromium/Firefox/WebKit/mobile Chromium, zero failed/skipped/flaky, 280.800216 seconds. Root/repository mounts, both pinned replay mounts, exact restores, all lesson journeys/gates/answers, keyboard/builder, persistence and reference print checks pass. Report SHA-256 and durable scope/results: `.opencode/docs/evidence/milestone-2-verification.md`.
+- Content validation: **Passed** exact source/content/bank/answer/inert-HTML assertions above. Before edits `npm run audit:production` passed 15/15; retained as the historical milestone-1 boundary command, not relaxed after authorized extraction. New unit assertions are the milestone-2 boundary check. `git diff --check` passed for tracked edits; separate new-CSS check reports original whitespace on lines 46–47/blank EOF, intentionally preserved rather than reformatted. Separate `validate:content` not applicable until later schema tooling.
+- Manual tests: Agent file-based review of desktop/mobile card/choice/timeline captures and original/extracted/canonical Chromium reference PDF text/rendered page: recognizable grouping, readable/unclipped reviewed content, one Letter reference page with no controls/questions/leading blank. All 20 live replay/extracted PNG pairs byte-identical; computed styles match all projects. This is file-based visual review, not interactive lesson/device/print-preview verification. Evidence: `.opencode/docs/evidence/milestone-2-verification.md`.
+- Tests not performed: Interactive Chrome/Firefox/Safari print previews/physical printing, real Safari/iOS/Android, AT, exhaustive 200% zoom/320px and denied-storage manual checks — no corresponding interactive/device/AT environment used. Remain explicit follow-ups in `.opencode/docs/regression-checklist.md`; do not block this mechanically exact extraction with passing source, execution/cascade, behavior, screenshot and automated print evidence. No automated suite skipped. No schema validator yet.
+
+### Compatibility
+- Legacy progress verified: Opening fresh/partial/mid/completed/changed-answer fixtures match pinned engine raw serialization, displayed selections/fields/progress exactly in four projects on both mounts; broader observed/synthetic fixture, reload, draft, earned fallback, non-contiguous credit and always-available reference checks pass. Middle/Final smoke/full journeys/persistence remain green with their source untouched; all three keys and counted totals 7/8/9 retained.
+- Original-engine replay verified: Fixed `0b5d2297e7cbc19bd59cde750492dd28e3983ca0`, unchanged allowlist and sealed evidence; unit/server and all four browser projects pass both original mounts. New direct comparison uses the same pinned engine on both mounts; no live origin/history fetch/baseline rewriting.
+- Known regressions: None observed in listed checks; no layout changes. KI-01…KI-10 remain in `.opencode/docs/known-issues.md` without silent repairs. This macOS host still needs fresh command-scoped Firefox application-data isolation. Pending manual checks are not claimed verified.
+
+### Next milestone
+- Prerequisites satisfied: Milestones 1 and 2 preservation/extraction evidence established; extracted CSS/JS, source-location mapping and focused comparisons are ready for separately requested milestone 3. Read its specification/contracts and verify actual prerequisites before implementation. Stop here; no milestone 3 work performed.
+- Outstanding blockers: None for milestone 2 automated acceptance/readiness. Manual/device/AT/interactive-print follow-ups remain pending; release/publication not approved.
+- Decisions requiring approval: None for this milestone. Later milestone work, commits, merging/pushing or publication require separate authorization.
+
+## Milestone handoff
+
+Milestone: 2 — **complete**; owner Safari testing and requested developer-documentation follow-up, 2026-10-25. No later milestone implemented.
+Starting commit: `5fb48363d73562b2341768d38f10087528c964d0`.
+Working branch: `refactor/shared-components`.
+
+### Implementation
+- Files created: None in this follow-up.
+- Files modified: `README.md` adds targeted local test-progress reset instructions, data-loss/origin/cache cautions and optional-icon/health-poll 404 guidance. `tests/unit/baseline.test.mjs` permits this explicitly requested current README documentation change while preserving original replay and all runtime/license assertions. `.opencode/docs/evidence/milestone-2-verification.md` records owner-reported Mac Safari Opening success and limitations; this log appended. All preceding milestone-2 uncommitted edits were inherited and retained; no runtime changes in this follow-up.
+- Interfaces introduced: None.
+- Content moved: None; no instructional content or sealed evidence rewritten.
+- Storage changes: None. README recommends removing only the selected lesson's key, not clearing the entire origin; no reset code executed against user/student storage.
+
+### Verification
+- Unit tests: **Passed**, `npm run test:unit` — 7/7, no failures/skips, Node v22.23.4 via fnm; includes exact extraction, fixture seals and current/original server checks.
+- Browser tests: Not rerun for documentation-only follow-up; preceding 196-pass automated run remains recorded above. Owner reports Mac Safari functional testing of `opening.html`: everything appeared to work; browser version and specific actions unspecified.
+- Content validation: `git diff --check` **passed**; unit source/content assertions passed. Repository search found no `/health`, Apple touch-icon or `sessionStorage` usage. Schema validation not applicable yet.
+- Manual tests: Owner-reported Mac Safari Opening functional success only, recorded in evidence. Owner's storage clear and subsequent icon-request disappearance do not establish storage as the cause of those requests.
+- Tests not performed: No new automated browser run, Middle/Final manual checks, interactive print-preview, real-device or AT checks. No runtime changes warrant a new full browser run here; prior manual gaps remain pending.
+
+### Compatibility
+- Legacy progress verified: Unit fixture/seal/policy checks passed; no new runtime or storage changes. Prior four-project preservation evidence remains applicable.
+- Original-engine replay verified: Unit server checks pass against pinned `0b5d2297e7cbc19bd59cde750492dd28e3983ca0`, including canonical README bytes on both replay mounts. Current README is the separately authorized documentation exception only.
+- Known regressions: None introduced in this follow-up. `/health` polling caller remains unidentified; static site has no such endpoint. Optional Safari icon 404s are not lesson-progress failures.
+
+### Next milestone
+- Prerequisites satisfied: Milestone 3 readiness remains as above, with additional limited owner Safari evidence and documented fresh-progress testing. Stop after this follow-up.
+- Outstanding blockers: None for this documentation update; manual/device/AT/interactive-print follow-ups remain pending.
+- Decisions requiring approval: None for requested README guidance. No commits, later implementation or publication authorized.
+
+## Milestone handoff
+
+Milestone: 2 — **complete**; owner-authorized local commit packaging, 2026-10-25.
+Starting commit: `5fb48363d73562b2341768d38f10087528c964d0`.
+Working branch: `refactor/shared-components`.
+
+### Implementation
+- Files created: None newly authored during packaging; existing milestone-2 new files included in the commit.
+- Files modified: Only this appended handoff during packaging. Commit includes the preceding extraction, focused tests, content inventory/evidence/handoffs and owner-requested README guidance. All candidate changes were inspected; no unrelated files included.
+- Interfaces introduced: None beyond preceding milestone-2 entries.
+- Content moved: No additional moves; verbatim Opening CSS/JS extraction remains as recorded above.
+- Storage changes: None.
+
+### Verification
+- Unit tests: **Passed**, `npm run test:unit` — 7/7, no failures/skips, Node v22.23.4 via fnm, rerun during packaging.
+- Browser tests: Not rerun for commit packaging; prior 196/196 automated passes and owner Safari Opening result remain recorded above.
+- Content validation: Exact extraction/sealed-fixture assertions included in the unit run. Staged whitespace review retains only the documented verbatim CSS whitespace exception.
+- Manual tests: None newly performed during packaging.
+- Tests not performed: New browser/device/AT/interactive-print checks not performed for packaging; prior documented manual follow-ups remain pending.
+
+### Compatibility
+- Legacy progress verified: No additional runtime changes; prior three-key/four-project preservation evidence remains applicable.
+- Original-engine replay verified: Pinned baseline and sealed fixtures unchanged; unit server/replay checks rerun before commit.
+- Known regressions: None newly observed; existing known defects and manual gaps unchanged.
+
+### Next milestone
+- Prerequisites satisfied: Milestone 2 ready for review as a local commit; milestone 3 remains a separate task.
+- Outstanding blockers: None for local commit packaging.
+- Decisions requiring approval: Local commit explicitly authorized by owner. No push, merge, publication or later milestone work authorized.

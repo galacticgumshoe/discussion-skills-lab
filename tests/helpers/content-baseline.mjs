@@ -6,7 +6,7 @@ export function extractBanks(sources) {
   const run = (source, names) => JSON.parse(vm.runInNewContext(`${source}\nJSON.stringify({${names.join(',')}})`, {}, { timeout: 1000 }));
   const middle = sources['assets/js/middle.js'];
   const final = sources['assets/js/final.js'];
-  const opening = sources['opening.html'];
+  const opening = sources['assets/js/opening.js'] ?? sources['opening.html'];
   const declaration = (name, end) => {
     const start = opening.indexOf(`const ${name} =`);
     if (start < 0) throw Error(`Missing declaration ${name}`);

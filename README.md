@@ -31,6 +31,27 @@ python3 -m http.server 8000
 
 Open `http://localhost:8000/`. A local web server is preferable to opening HTML files directly from disk because browser storage behavior can vary with `file://` URLs.
 
+### Test with fresh progress
+
+Progress and drafts survive reloads in `localStorage`. To test a first-time visit, use a fresh private browsing session, or reset only the lesson you are testing. **Resetting deletes that lesson's saved progress and drafts**; do this only with disposable local test data, not student work.
+
+On the locally served lesson page, open the browser's developer console (Safari: **Web Inspector → Console**) and run:
+
+```js
+localStorage.removeItem('dsl:opening-stage:v1');
+location.reload();
+```
+
+For Middle or Final, use `dsl:middle:v1` or `dsl:final:v1` instead. To reset all three local lessons, remove each of those three keys before reloading. Avoid `localStorage.clear()`: it also deletes unrelated data on the same origin. The lessons do not use `sessionStorage`, so clearing it is unnecessary.
+
+Storage belongs to the origin (scheme, hostname and port), not the page path. Run the reset on the same origin you are testing; `localhost` and `127.0.0.1`, or different ports, have separate storage. Test both fresh progress and saved-progress restoration—do not reset between the save and reload steps of a persistence test. Clearing progress is separate from clearing the browser's HTTP cache.
+
+### Local server 404s
+
+Safari may automatically request `/apple-touch-icon.png` and `/apple-touch-icon-precomposed.png`. These optional home-screen icons are not supplied; their 404s do not indicate a lesson or saved-progress failure.
+
+There is no `/health` endpoint or health polling in this static site. A plain `python3 -m http.server` returns 404 for that path. Repeated requests likely come from a separate monitoring tool, browser extension or development environment; inspect the browser's Network initiator or the requesting tool to identify them. Clearing lesson storage will not fix that polling. Requests for actual lesson HTML, CSS or JavaScript should succeed and warrant investigation if they return 404.
+
 ## Add a lesson
 
 1. Create a new standalone lesson HTML page in the repository root.

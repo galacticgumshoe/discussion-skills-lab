@@ -1,0 +1,47 @@
+
+        :root { --navy:#142b49; --teal:#087f83; --ink:#18334a; --muted:#526b7d; --line:#d6e5ed; --pale:#eaf5fb; }
+        * { box-sizing:border-box; }
+        body { margin:0; font-family:"DM Sans",sans-serif; color:var(--ink); }
+        h1,h2 { font-family:"Fraunces",serif; }
+        button,textarea,input { font:inherit; }
+        button { cursor:pointer; }
+        :focus-visible { outline:3px solid #ef9b39; outline-offset:3px; }
+        .shell { width:100%; min-height:100%; }
+        .card { border:1px solid var(--line); background:#fff; border-radius:20px; padding:clamp(18px,3vw,30px); box-shadow:0 12px 34px rgba(16,40,62,.055); }
+        .soft { background:var(--pale); }
+        .lesson-view[hidden], [hidden] { display:none !important; }
+        .nav-btn { text-align:left; width:100%; padding:11px 14px; border-radius:11px; color:#d7e9f0; border:1px solid transparent; }
+        .nav-btn:hover,.nav-btn.active { background:#25516a; color:#fff; }
+        .nav-btn.active { border-color:#71d2d0; }
+        .pill { border:1px solid var(--line); border-radius:999px; padding:9px 15px; background:#fff; font-weight:700; }
+        .pill:hover,.pill.selected { border-color:var(--teal); background:#dcf4f1; color:#075d62; }
+        .action { background:var(--teal); color:#fff; border-radius:11px; padding:11px 18px; font-weight:700; }
+        .action:hover { background:#086b70; }
+        .secondary { border:1px solid #a8c5d0; background:#fff; border-radius:11px; padding:10px 17px; font-weight:700; }
+        .secondary:hover { background:#edf7f9; }
+        .choice { display:block; text-align:left; width:100%; border:1px solid #c6dbe5; background:#fff; padding:12px 15px; border-radius:12px; margin-top:9px; }
+        .choice:hover:not(:disabled) { border-color:var(--teal); background:#eef9f8; }
+        .choice:disabled { cursor:default; opacity:.82; }
+        .choice.correct { border-color:#138464; background:#e1f6ec; opacity:1; }
+        .choice.incorrect { border-color:#b14b3c; background:#fff0eb; opacity:1; }
+        .feedback { border-left:4px solid var(--teal); background:#eaf7f5; padding:12px 16px; border-radius:0 9px 9px 0; margin-top:15px; }
+        .feedback.error { border-color:#b14b3c; background:#fff0eb; }
+        .timeline-item { position:relative; padding-left:30px; border-left:2px solid #a9d9de; margin-left:11px; padding-bottom:13px; }
+        .timeline-item::before { content:""; width:13px; height:13px; background:var(--teal); border:3px solid #fff; box-shadow:0 0 0 2px var(--teal); position:absolute; left:-8px; top:16px; border-radius:50%; }
+        .timeline-item:last-child { border-left-color:transparent; }
+        .timeline-item button { width:100%; text-align:left; display:flex; justify-content:space-between; align-items:center; gap:12px; background:#fff; border:1px solid var(--line); border-radius:12px; padding:14px 17px; font-weight:700; }
+        .timeline-item button[aria-expanded="true"] { border-color:var(--teal); background:#eef9f8; }
+        .timeline-detail { padding:12px 16px; color:var(--muted); }
+        .task-mark { border-radius:4px; padding:1px 3px; transition:background .15s; }
+        .task-mark.on { background:#b6ecea; box-shadow:0 0 0 2px #b6ecea; }
+        .task-mark.on[data-kind="what"] { background:#ffdbaf; box-shadow:0 0 0 2px #ffdbaf; }
+        .task-mark.on[data-kind="how"] { background:#bcebcf; box-shadow:0 0 0 2px #bcebcf; }
+        .task-mark.on[data-kind="where"] { background:#e3d2fb; box-shadow:0 0 0 2px #e3d2fb; }
+        .task-mark.on[data-kind="terms"] { background:#fbd3e7; box-shadow:0 0 0 2px #fbd3e7; }
+        .analysis-tab[aria-selected="true"] { background:var(--navy); color:#fff; border-color:var(--navy); }
+        .field { width:100%; border:1px solid #adc6d1; border-radius:11px; padding:12px 14px; background:#fff; }
+        .eyebrow { text-transform:uppercase; letter-spacing:.13em; font-weight:800; font-size:.75rem; }
+        .question-card + .question-card { margin-top:16px; }
+        @media (prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto !important; transition:none !important; animation:none !important; } }
+        
+    

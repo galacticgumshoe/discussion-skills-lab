@@ -2,6 +2,7 @@ import { test, expect } from '@playwright/test';
 import { readFileSync } from 'node:fs';
 import { lessons, maps, runLesson, navigate, ready, rawProgress } from '../helpers/legacy-journeys.mjs';
 import { inventoryHTML, initializedDOM, generatedCopy } from '../helpers/content-baseline.mjs';
+import { original } from '../helpers/baseline-source.mjs';
 const fixture = path => JSON.parse(readFileSync(new URL(`../fixtures/${path}`, import.meta.url)));
 
 for (const mount of ['/', '/discussion-skills-lab/']) {
@@ -11,7 +12,16 @@ for (const mount of ['/', '/discussion-skills-lab/']) {
     for (const id of ['index', ...lessons]) {
       await page.goto(`${mount}${id}.html`);
       const source = await (await request.get(`${mount}${id}.html`)).text();
-      expect(await page.evaluate(inventoryHTML, source)).toEqual(fixture(`content/${id}-html.json`));
+      // Extraction changes head child-node positions, not instructional markup.
+      // The unit test checks the entire transformed HTML byte-for-byte; compare
+      // inert content against the pinned HTML without mutable node-path indexes.
+      const inventory = await page.evaluate(inventoryHTML, source);
+      if (id === 'opening') {
+        const withoutIdentity = entries => entries.map(({ identity, ...entry }) => entry);
+        const baseline = await page.evaluate(inventoryHTML, original('opening.html').toString());
+        expect(baseline).toEqual(fixture('content/opening-html.json'));
+        expect(withoutIdentity(inventory)).toEqual(withoutIdentity(baseline));
+      } else expect(inventory).toEqual(fixture(`content/${id}-html.json`));
       const urls = await page.locator('[src],a[href],link[href]').evaluateAll(nodes => nodes.map(n => n.src || n.href).filter(Boolean));
       for (const href of new Set(urls)) {
         const url = new URL(href);

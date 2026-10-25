@@ -5,6 +5,32 @@ All 15 allowlisted production/document files matched the pinned Git bytes before
 Hashes and allowlist: [`tests/fixtures/production.json`](../../tests/fixtures/production.json).
 Nothing has been moved into production content files.
 
+## Milestone 2 source-location mapping
+
+Opening's stylesheet and classic activity script are now external; this is **not**
+content separation. The immutable source identities/tables below still refer to
+the original baseline. Current locations are:
+
+- `opening.html` baseline `<style>` payload (lines 11–57) →
+  `assets/css/opening.css`. Every character between the tags is retained, including
+  the initial LF and closing-tag indentation; exactly one final LF is appended.
+  The link remains before `shared.css` and the unchanged Tailwind CDN script.
+- `opening.html` baseline activity `<script>` payload (lines 394–664) →
+  `assets/js/opening.js`. Every character between the tags is retained, including
+  its initial/final LF; no newline is added or removed. Original source line N in
+  this payload maps to JS line N − 393 (line 1 is the initial empty line).
+  The classic script remains immediately after `lesson-core.js`.
+- All `opening.classification`, `analysisAnswers`, `practice`, `quiz`, navigation,
+  requirements, feedback, builder and status expressions listed below now live in
+  `assets/js/opening.js`, with original declaration names and ordering intact.
+  Static instructional HTML remains in `opening.html`; only the two tags/payloads
+  are replaced. The reference's inline print handler remains unchanged.
+
+`tests/helpers/opening-extraction.mjs` defines the exact transformation;
+`tests/unit/baseline.test.mjs` checks both payloads, the entire transformed HTML,
+all other production bytes and extracted banks against pinned/sealed evidence.
+Canonical fixtures, line identities, content/answer keys and seals are not rewritten.
+
 ## Attribution and interpretation
 
 *Discussion Skills Lab*, created by Rhys Jones. Original instructional text © 2026

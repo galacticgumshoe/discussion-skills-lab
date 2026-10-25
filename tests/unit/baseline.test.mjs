@@ -6,8 +6,23 @@ import vm from 'node:vm';
 import { original, revision, productionPaths, sha256, root } from '../helpers/baseline-source.mjs';
 import { extractBanks } from '../helpers/content-baseline.mjs';
 import { startServer } from '../helpers/static-server.mjs';
+import { openingExtraction } from '../helpers/opening-extraction.mjs';
 
 const json = path => JSON.parse(readFileSync(`${root}tests/fixtures/${path}`));
+test('Opening extraction is exact; all other runtime/license bytes remain pinned', () => {
+  const extracted = openingExtraction(original('opening.html').toString());
+  assert.equal(readFileSync(`${root}opening.html`, 'utf8'), extracted.html);
+  assert.equal(readFileSync(`${root}assets/css/opening.css`, 'utf8'), extracted.css);
+  assert.equal(readFileSync(`${root}assets/js/opening.js`, 'utf8'), extracted.js);
+  // README developer-testing guidance was separately authorized after extraction.
+  // Keep canonical README/replay evidence pinned, but allow current documentation.
+  for (const path of productionPaths.filter(path => !['opening.html', 'README.md'].includes(path))) {
+    assert.deepEqual(readFileSync(`${root}${path}`), original(path), path);
+  }
+  const source = Object.fromEntries(productionPaths.map(path => [path, readFileSync(`${root}${path}`, 'utf8')]));
+  source['assets/js/opening.js'] = extracted.js;
+  assert.deepEqual(extractBanks(source), json('content/banks.json'));
+});
 test('canonical content/maps/progress/visual evidence has not been silently rewritten', () => {
   const manifest = json('manifest.json');
   assert.equal(manifest.revision, revision);
@@ -106,8 +121,24 @@ test('server mounts, MIME, isolated pinned replay, allowlist, traversal and life
       for (const path of productionPaths) {
         const result = await request(mount + path);
         assert.equal(result.status, 200, mount + path);
-        assert.deepEqual(result.body, original(path));
+        const current = !mount.startsWith('/__original/');
+        const expected = current && path === 'opening.html'
+          ? Buffer.from(openingExtraction(original(path).toString()).html)
+          : current && path === 'README.md' ? readFileSync(`${root}${path}`) : original(path);
+        assert.deepEqual(result.body, expected);
         if (path.endsWith('.js')) assert.match(result.headers['content-type'], /^text\/javascript/);
+      }
+    }
+    const extracted = openingExtraction(original('opening.html').toString());
+    for (const mount of ['/', '/discussion-skills-lab/']) {
+      for (const [path, payload, mime] of [
+        ['assets/css/opening.css', extracted.css, 'text/css'],
+        ['assets/js/opening.js', extracted.js, 'text/javascript']
+      ]) {
+        const result = await request(mount + path);
+        assert.equal(result.status, 200);
+        assert.equal(result.body.toString(), payload);
+        assert.ok(result.headers['content-type'].startsWith(mime));
       }
     }
     assert.equal((await request('/__fixtures/legacy-maps/opening.json')).status, 200);
