@@ -21,6 +21,13 @@ for (const mount of ['/', '/discussion-skills-lab/']) {
         const baseline = await page.evaluate(inventoryHTML, original('opening.html').toString());
         expect(baseline).toEqual(fixture('content/opening-html.json'));
         expect(withoutIdentity(inventory)).toEqual(withoutIdentity(baseline));
+      } else if (id === 'final') {
+        // Reference prose now has a separate exact semantic comparison against
+        // the same sealed source; all non-reference static content stays exact.
+        const baseline = await page.evaluate(inventoryHTML, original('final.html').toString());
+        expect(baseline).toEqual(fixture('content/final-html.json'));
+        const activity = entries => entries.filter(entry => entry.section !== 'view-9');
+        expect(activity(inventory)).toEqual(activity(baseline));
       } else expect(inventory).toEqual(fixture(`content/${id}-html.json`));
       const urls = await page.locator('[src],a[href],link[href]').evaluateAll(nodes => nodes.map(n => n.src || n.href).filter(Boolean));
       for (const href of new Set(urls)) {

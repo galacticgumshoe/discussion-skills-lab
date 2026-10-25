@@ -1,0 +1,219 @@
+{
+  "browser": "149.0.7827.55",
+  "widths": [
+    {
+      "width": 1440,
+      "variants": [
+        {
+          "name": "original",
+          "file": ".opencode/docs/evidence/milestone-3/original-1440.png",
+          "sha256": "6679595e98f0a50251e40b1e03aef04f89a0af35f3c6e4475809bfed91f55049",
+          "dimensions": {
+            "width": 920,
+            "height": 1346.609375,
+            "overflow": false,
+            "items": [
+              {
+                "width": 856,
+                "scrollWidth": 856
+              },
+              {
+                "width": 856,
+                "scrollWidth": 856
+              },
+              {
+                "width": 856,
+                "scrollWidth": 856
+              },
+              {
+                "width": 856,
+                "scrollWidth": 856
+              },
+              {
+                "width": 856,
+                "scrollWidth": 856
+              }
+            ]
+          }
+        },
+        {
+          "name": "pilot",
+          "file": ".opencode/docs/evidence/milestone-3/pilot-1440.png",
+          "sha256": "49bd68a59868089a03cf0cd682924ed4d2454e98b8c54eba244750daca221a29",
+          "dimensions": {
+            "width": 920,
+            "height": 1346.609375,
+            "overflow": false,
+            "items": [
+              {
+                "width": 856,
+                "scrollWidth": 856
+              },
+              {
+                "width": 856,
+                "scrollWidth": 856
+              },
+              {
+                "width": 856,
+                "scrollWidth": 856
+              },
+              {
+                "width": 856,
+                "scrollWidth": 856
+              },
+              {
+                "width": 856,
+                "scrollWidth": 856
+              }
+            ]
+          }
+        }
+      ],
+      "byteIdentical": false
+    },
+    {
+      "width": 390,
+      "variants": [
+        {
+          "name": "original",
+          "file": ".opencode/docs/evidence/milestone-3/original-390.png",
+          "sha256": "659c8c7e55543102a5a0d68b6b86b53dc348abc06ce7df5b341ecaabc2a9090d",
+          "dimensions": {
+            "width": 358,
+            "height": 2044.71875,
+            "overflow": false,
+            "items": [
+              {
+                "width": 322,
+                "scrollWidth": 322
+              },
+              {
+                "width": 322,
+                "scrollWidth": 322
+              },
+              {
+                "width": 322,
+                "scrollWidth": 322
+              },
+              {
+                "width": 322,
+                "scrollWidth": 322
+              },
+              {
+                "width": 322,
+                "scrollWidth": 322
+              }
+            ]
+          }
+        },
+        {
+          "name": "pilot",
+          "file": ".opencode/docs/evidence/milestone-3/pilot-390.png",
+          "sha256": "659c8c7e55543102a5a0d68b6b86b53dc348abc06ce7df5b341ecaabc2a9090d",
+          "dimensions": {
+            "width": 358,
+            "height": 2044.71875,
+            "overflow": false,
+            "items": [
+              {
+                "width": 322,
+                "scrollWidth": 322
+              },
+              {
+                "width": 322,
+                "scrollWidth": 322
+              },
+              {
+                "width": 322,
+                "scrollWidth": 322
+              },
+              {
+                "width": 322,
+                "scrollWidth": 322
+              },
+              {
+                "width": 322,
+                "scrollWidth": 322
+              }
+            ]
+          }
+        }
+      ],
+      "byteIdentical": true
+    },
+    {
+      "width": 320,
+      "variants": [
+        {
+          "name": "original",
+          "file": ".opencode/docs/evidence/milestone-3/original-320.png",
+          "sha256": "6add1be3f15e6795f141b53ee443bde36285bbff59881021717b76671f5b89d9",
+          "dimensions": {
+            "width": 288,
+            "height": 2494.109375,
+            "overflow": false,
+            "items": [
+              {
+                "width": 252,
+                "scrollWidth": 252
+              },
+              {
+                "width": 252,
+                "scrollWidth": 252
+              },
+              {
+                "width": 252,
+                "scrollWidth": 252
+              },
+              {
+                "width": 252,
+                "scrollWidth": 252
+              },
+              {
+                "width": 252,
+                "scrollWidth": 252
+              }
+            ]
+          }
+        },
+        {
+          "name": "pilot",
+          "file": ".opencode/docs/evidence/milestone-3/pilot-320.png",
+          "sha256": "6add1be3f15e6795f141b53ee443bde36285bbff59881021717b76671f5b89d9",
+          "dimensions": {
+            "width": 288,
+            "height": 2494.109375,
+            "overflow": false,
+            "items": [
+              {
+                "width": 252,
+                "scrollWidth": 252
+              },
+              {
+                "width": 252,
+                "scrollWidth": 252
+              },
+              {
+                "width": 252,
+                "scrollWidth": 252
+              },
+              {
+                "width": 252,
+                "scrollWidth": 252
+              },
+              {
+                "width": 252,
+                "scrollWidth": 252
+              }
+            ]
+          }
+        }
+      ],
+      "byteIdentical": true
+    }
+  ],
+  "pdfs": [
+    ".opencode/docs/evidence/milestone-3/final-from-view-9.pdf",
+    ".opencode/docs/evidence/milestone-3/final-from-view-0.pdf"
+  ]
+}

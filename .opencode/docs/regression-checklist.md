@@ -4,13 +4,14 @@
 
 Node **22 or newer**, npm and Git with pinned objects for
 `0b5d2297e7cbc19bd59cde750492dd28e3983ca0` are required for tests only. No package
-installation or build is needed to publish/serve the site. Existing production
-README and deployment configuration are unchanged.
+installation or build is needed to publish/serve the site. Deployment configuration
+is unchanged; the package manifest remains development-only.
 
 ```sh
 npm ci
 npx playwright install chromium firefox webkit
 npm run test:unit
+npm run validate:content
 npm run test:browser
 npm run audit:production
 ```
@@ -58,7 +59,7 @@ env CFFIXED_USER_HOME="$(mktemp -d)" npm run test:browser
 ```
 
 The Firefox-only command passed in the owner's Terminal; the isolated full default
-command is documented for future runs, not claimed executed. The override changes
+command also passed during milestones 2–3 (see the append-only handoffs). The override changes
 Firefox's application-data home, not student storage keys, policies or assertions.
 No sudo, Full Disk Access, security disabling, personal browser profile, browser
 patching or dependency upgrade is required. It is a host workaround, not a universal
@@ -78,6 +79,16 @@ against the published site or a personal browser profile: localStorage is
 for normal production-file serving, but does not implement test replay routes.
 
 ## Automated coverage
+
+Milestone 3 adds `validate:content` (Ajv 8.20.0, development-only) plus runtime/schema
+parity for shared invalid reference fixtures, realpath/existence checks, checked
+root/prefix include URLs, vendor SHA-256 pins, sanitized Markdown/security fixtures,
+exact reference text/emphasis/order/accent comparison, startup preload, slow/error
+print notices, retry, unchanged progress/write counts and local-only dependencies.
+Final's success readiness is awaited before existing print assertions; failure
+paths are asserted separately, never hidden by a generic readiness wait. Both
+ordinary/reference-view Chromium PDFs are captured. Interactive browser previews
+are still separate manual checks; see `evidence/milestone-3-verification.md`.
 
 - Unit: frozen source hashes, exhaustive archived lines and data banks/answers;
   authored map/initialized field and card ordering; actual original core policy;

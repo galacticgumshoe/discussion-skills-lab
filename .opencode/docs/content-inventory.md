@@ -3,7 +3,35 @@
 Baseline: `0b5d2297e7cbc19bd59cde750492dd28e3983ca0` (also starting HEAD).
 All 15 allowlisted production/document files matched the pinned Git bytes before capture.
 Hashes and allowlist: [`tests/fixtures/production.json`](../../tests/fixtures/production.json).
-Nothing has been moved into production content files.
+The inventory below remains the immutable baseline; milestone-specific current
+locations are mapped here without rewriting sealed fixtures.
+
+## Milestone 3 source-location mapping
+
+Only Final's `#ref-content` payload moves to production content. The structural
+reference title and existing Print control remain in `final.html`; all activities,
+`assets/js/final.js`, legacy core and CSS stay unchanged.
+
+| Baseline `final.html` source | Current source under `content/final/reference/` | Preserved composition |
+| --- | --- | --- |
+| lines 270–274, item 01 | `reference.json` item `summary-synthesis`, `summary-synthesis.md` | Summary vs. synthesis; teal; three paragraphs; Summary/Synthesis/Remember emphasis |
+| lines 274–277, item 02 | `reference.json` item `synthesis-framework`, `synthesis-framework.md` | The synthesis framework; green; two paragraphs; LISTEN/CONNECT/CREDIT/ADVANCE emphasis and all example phrases |
+| lines 277–280, item 03 | `reference.json` item `effective-summaries`, `effective-summaries.md` | Effective summaries; orange; two paragraphs and all example phrases |
+| lines 280–284, item 04 | `reference.json` item `consensus-task`, `consensus-task.md` | Consensus and task completion; purple; three paragraphs; WHAT/HOW emphasis and all example phrases |
+| lines 284–286, item 05 | `reference.json` item `after-round`, `after-round.md` | After the round; blue; one paragraph |
+
+Reference JSON metadata and Markdown remain © 2026 Rhys Jones / CC BY 4.0;
+`content/README.md` documents attribution/exclusions. Software/schema are MIT;
+vendor grants are recorded separately in `THIRD_PARTY_NOTICES.md`.
+
+Before removing the inline prose, a Chromium off-DOM render compared extracted
+content to the still-present inline copy: five headings/numbers/accents, 11
+paragraphs, exact normalized text and inline emphasis token sequences all matched.
+`tests/browser/reference-loading.spec.mjs` repeats this semantic comparison against
+the sealed baseline on both mounts in every configured browser project. It does
+not substitute screenshots for content assertions. Captured semantic inventory,
+paired reference images and print PDFs: `evidence/milestone-3/`; interpretation and
+pending preview checks: `evidence/milestone-3-verification.md`.
 
 ## Milestone 2 source-location mapping
 
