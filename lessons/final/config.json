@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "final",
+  "storageKey": "dsl:final:v1",
+  "content": "../../content/final/lesson.json",
+  "sectionOrder": [
+    "welcome",
+    "summary-synthesis",
+    "connect-viewpoints",
+    "organize-findings",
+    "consensus",
+    "task-audit",
+    "professionalism",
+    "closing-practice",
+    "knowledge-check",
+    "quick-reference"
+  ],
+  "referenceId": "quick-reference",
+  "presentation": "legacy-shell"
+}

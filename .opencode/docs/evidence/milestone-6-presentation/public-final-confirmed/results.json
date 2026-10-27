@@ -1,0 +1,2216 @@
+{
+  "config": {
+    "argv": [
+      "/Users/rhys/.local/share/fnm/node-versions/v22.23.4/installation/bin/node",
+      "/Users/rhys/git/discussion-skills-lab/node_modules/.bin/playwright",
+      "test",
+      "tests/browser/final-heading-cues.spec.mjs",
+      "tests/browser/final-lesson.spec.mjs",
+      "tests/browser/reference-loading.spec.mjs",
+      "--grep",
+      "Final approved|Final public entry|Final exact original|Final all valid|Final edited synthesis|immediate navigation, failed",
+      "--workers=1",
+      "--max-failures=1",
+      "--output=test-results/final-public-confirmed"
+    ],
+    "configFile": "/Users/rhys/git/discussion-skills-lab/playwright.config.mjs",
+    "rootDir": "/Users/rhys/git/discussion-skills-lab/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 1,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/rhys/git/discussion-skills-lab/test-results/final-public-confirmed",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/rhys/git/discussion-skills-lab/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/rhys/git/discussion-skills-lab/test-results/final-public-confirmed",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/Users/rhys/git/discussion-skills-lab/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/rhys/git/discussion-skills-lab/test-results/final-public-confirmed",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/Users/rhys/git/discussion-skills-lab/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/rhys/git/discussion-skills-lab/test-results/final-public-confirmed",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "mobile-chromium",
+        "name": "mobile-chromium",
+        "testDir": "/Users/rhys/git/discussion-skills-lab/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.61.1",
+    "workers": 1,
+    "webServer": {
+      "command": "node tests/helpers/static-server.mjs",
+      "env": {
+        "PORT": "55681"
+      },
+      "url": "http://127.0.0.1:55681",
+      "reuseExistingServer": false
+    }
+  },
+  "suites": [
+    {
+      "title": "final-heading-cues.spec.mjs",
+      "file": "final-heading-cues.spec.mjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "/ Final approved Middle heading profiles on all nine lesson pages; narrow/enlarged wrapping and reference print isolation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4603,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:55:33.053Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "final-numbered-title-320",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/final-public-confirmed/final-heading-cues--Final--a5df7-d-reference-print-isolation-chromium/attachments/final-numbered-title-320-ad2ad64e2b432a43ac5f56333ef4edc618cf3c07.png"
+                    },
+                    {
+                      "name": "final-heading-change-reference",
+                      "contentType": "application/pdf",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/final-public-confirmed/final-heading-cues--Final--a5df7-d-reference-print-isolation-chromium/attachments/final-heading-change-reference-def829687a1386c1b5e83a941bec2ccf838810e7.pdf"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6dc15d8f3046dbb19841-732478bfaf0f8fff8f4e",
+          "file": "final-heading-cues.spec.mjs",
+          "line": 27,
+          "column": 3
+        },
+        {
+          "title": "/ Final approved front-face explored cue on all eight cards; keyboard flip-back, reload and unclipped labels",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10285,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:55:38.021Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "final-front-explored-320",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/final-public-confirmed/final-heading-cues--Final--31558-reload-and-unclipped-labels-chromium/attachments/final-front-explored-320-422df4807bc088bb6277ad34bfb54dc721c309f0.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6dc15d8f3046dbb19841-778e9fc7e68f58fd79b8",
+          "file": "final-heading-cues.spec.mjs",
+          "line": 67,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final approved Middle heading profiles on all nine lesson pages; narrow/enlarged wrapping and reference print isolation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3968,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:55:48.313Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "final-numbered-title-320",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/final-public-confirmed/final-heading-cues--discus-33290-d-reference-print-isolation-chromium/attachments/final-numbered-title-320-9b71b561001ee89fbc483bd036d0072e29d8a02e.png"
+                    },
+                    {
+                      "name": "final-heading-change-reference",
+                      "contentType": "application/pdf",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/final-public-confirmed/final-heading-cues--discus-33290-d-reference-print-isolation-chromium/attachments/final-heading-change-reference-d74da5c0fb59879417f3eed0832a2b42beeef9ab.pdf"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6dc15d8f3046dbb19841-72dfdbdf0471b25ad103",
+          "file": "final-heading-cues.spec.mjs",
+          "line": 27,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final approved front-face explored cue on all eight cards; keyboard flip-back, reload and unclipped labels",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10530,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:55:52.291Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "final-front-explored-320",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/final-public-confirmed/final-heading-cues--discus-7dec1-reload-and-unclipped-labels-chromium/attachments/final-front-explored-320-8d93ff6a5aa64b896163cc78e074269c22a98511.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6dc15d8f3046dbb19841-f234ce631019f08372d1",
+          "file": "final-heading-cues.spec.mjs",
+          "line": 67,
+          "column": 3
+        },
+        {
+          "title": "/ Final approved Middle heading profiles on all nine lesson pages; narrow/enlarged wrapping and reference print isolation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6255,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:56:41.369Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "final-numbered-title-320",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/final-public-confirmed/final-heading-cues--Final--a5df7-d-reference-print-isolation-firefox/attachments/final-numbered-title-320-36b8d3766f87a96e683a7f541e6f522d3cc6e0c8.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6dc15d8f3046dbb19841-d314403e5fcca7e45940",
+          "file": "final-heading-cues.spec.mjs",
+          "line": 27,
+          "column": 3
+        },
+        {
+          "title": "/ Final approved front-face explored cue on all eight cards; keyboard flip-back, reload and unclipped labels",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12042,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:56:49.295Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "final-front-explored-320",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/final-public-confirmed/final-heading-cues--Final--31558-reload-and-unclipped-labels-firefox/attachments/final-front-explored-320-2ae498272f696244594adebbae887e94976b77c3.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6dc15d8f3046dbb19841-adade0b68548e8e4b295",
+          "file": "final-heading-cues.spec.mjs",
+          "line": 67,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final approved Middle heading profiles on all nine lesson pages; narrow/enlarged wrapping and reference print isolation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4942,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:57:01.345Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "final-numbered-title-320",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/final-public-confirmed/final-heading-cues--discus-33290-d-reference-print-isolation-firefox/attachments/final-numbered-title-320-286ed14a1164d504db4ecbb1391866e4c8134579.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6dc15d8f3046dbb19841-882a766f49115a47dc71",
+          "file": "final-heading-cues.spec.mjs",
+          "line": 27,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final approved front-face explored cue on all eight cards; keyboard flip-back, reload and unclipped labels",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11463,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:57:06.294Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "final-front-explored-320",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/final-public-confirmed/final-heading-cues--discus-7dec1-reload-and-unclipped-labels-firefox/attachments/final-front-explored-320-2c448022492b5ce0517abe612626c4118ce1d990.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6dc15d8f3046dbb19841-9b6c65e8f04719732903",
+          "file": "final-heading-cues.spec.mjs",
+          "line": 67,
+          "column": 3
+        },
+        {
+          "title": "/ Final approved Middle heading profiles on all nine lesson pages; narrow/enlarged wrapping and reference print isolation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6208,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:58:19.169Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "final-numbered-title-320",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/final-public-confirmed/final-heading-cues--Final--a5df7-d-reference-print-isolation-webkit/attachments/final-numbered-title-320-4c8a9ab85e87c9484d13055f232d6eaa8b3b8b13.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6dc15d8f3046dbb19841-4c9d20cb52dfc9c0c094",
+          "file": "final-heading-cues.spec.mjs",
+          "line": 27,
+          "column": 3
+        },
+        {
+          "title": "/ Final approved front-face explored cue on all eight cards; keyboard flip-back, reload and unclipped labels",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10995,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:58:26.456Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "final-front-explored-320",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/final-public-confirmed/final-heading-cues--Final--31558-reload-and-unclipped-labels-webkit/attachments/final-front-explored-320-8a212e8bdbe04bd7ee5a2736a0a6a379d0661302.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6dc15d8f3046dbb19841-d0da8f389c743e050906",
+          "file": "final-heading-cues.spec.mjs",
+          "line": 67,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final approved Middle heading profiles on all nine lesson pages; narrow/enlarged wrapping and reference print isolation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4512,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:58:37.461Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "final-numbered-title-320",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/final-public-confirmed/final-heading-cues--discus-33290-d-reference-print-isolation-webkit/attachments/final-numbered-title-320-02355fcc8f23bb9fb2dbfdd3a4ddb8f01f468aa6.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6dc15d8f3046dbb19841-8f16cc15e62f7daefd00",
+          "file": "final-heading-cues.spec.mjs",
+          "line": 27,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final approved front-face explored cue on all eight cards; keyboard flip-back, reload and unclipped labels",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11111,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:58:41.980Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "final-front-explored-320",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/final-public-confirmed/final-heading-cues--discus-7dec1-reload-and-unclipped-labels-webkit/attachments/final-front-explored-320-cbecb9edbafd628a98325b16b06e94f98785f300.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6dc15d8f3046dbb19841-3c4873fc835069d2a7f1",
+          "file": "final-heading-cues.spec.mjs",
+          "line": 67,
+          "column": 3
+        },
+        {
+          "title": "/ Final approved Middle heading profiles on all nine lesson pages; narrow/enlarged wrapping and reference print isolation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4044,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:59:44.463Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "final-numbered-title-320",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/final-public-confirmed/final-heading-cues--Final--a5df7-d-reference-print-isolation-mobile-chromium/attachments/final-numbered-title-320-56966b097183e96b1a1ed4c54c6912f77ffa5956.png"
+                    },
+                    {
+                      "name": "final-heading-change-reference",
+                      "contentType": "application/pdf",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/final-public-confirmed/final-heading-cues--Final--a5df7-d-reference-print-isolation-mobile-chromium/attachments/final-heading-change-reference-3e219c59eb1bca46e0a91979a455b1a42595b775.pdf"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6dc15d8f3046dbb19841-147d0d8d45256ac469f1",
+          "file": "final-heading-cues.spec.mjs",
+          "line": 27,
+          "column": 3
+        },
+        {
+          "title": "/ Final approved front-face explored cue on all eight cards; keyboard flip-back, reload and unclipped labels",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10540,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:59:49.062Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "final-front-explored-320",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/final-public-confirmed/final-heading-cues--Final--31558-reload-and-unclipped-labels-mobile-chromium/attachments/final-front-explored-320-f95cbf0fe7d2c94f9b7d244df5e011b19aace7cf.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6dc15d8f3046dbb19841-6708deaf14cb527a7b27",
+          "file": "final-heading-cues.spec.mjs",
+          "line": 67,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final approved Middle heading profiles on all nine lesson pages; narrow/enlarged wrapping and reference print isolation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3576,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:59:59.609Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "final-numbered-title-320",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/final-public-confirmed/final-heading-cues--discus-33290-d-reference-print-isolation-mobile-chromium/attachments/final-numbered-title-320-1c80aa8fd1da52bfd0a71cc6b043baaac2a88310.png"
+                    },
+                    {
+                      "name": "final-heading-change-reference",
+                      "contentType": "application/pdf",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/final-public-confirmed/final-heading-cues--discus-33290-d-reference-print-isolation-mobile-chromium/attachments/final-heading-change-reference-ab226d260dfeb9f3d0661a32934f7fa0eb7b3f5c.pdf"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6dc15d8f3046dbb19841-0ac0c7e03cf5501acfd3",
+          "file": "final-heading-cues.spec.mjs",
+          "line": 27,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final approved front-face explored cue on all eight cards; keyboard flip-back, reload and unclipped labels",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10326,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T22:00:03.191Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "final-front-explored-320",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/final-public-confirmed/final-heading-cues--discus-7dec1-reload-and-unclipped-labels-mobile-chromium/attachments/final-front-explored-320-b85284be9ddb8f52253dc7a45aeca503385657ec.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6dc15d8f3046dbb19841-2168af4203276b3ea1c9",
+          "file": "final-heading-cues.spec.mjs",
+          "line": 67,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "final-lesson.spec.mjs",
+      "file": "final-lesson.spec.mjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "/ Final public entry uses production assets, one writer and one Print handler",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1257,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:56:02.841Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-d6c9a5141f40d6b41e34",
+          "file": "final-lesson.spec.mjs",
+          "line": 22,
+          "column": 3
+        },
+        {
+          "title": "/ Final exact original prose/emphasis/card/panel/model/labels and single reference source",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1127,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [
+                    {
+                      "buffer": ""
+                    }
+                  ],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:56:04.103Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-829f62323e7f7cb0aeed",
+          "file": "final-lesson.spec.mjs",
+          "line": 53,
+          "column": 3
+        },
+        {
+          "title": "/ Final all valid v1 fixtures silently hydrate fields/checks/models/notes/panels/selections/goals",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13433,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:56:05.235Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-4ba98d65474cd6535009",
+          "file": "final-lesson.spec.mjs",
+          "line": 72,
+          "column": 3
+        },
+        {
+          "title": "/ Final edited synthesis, goal caption, wrong-after-credit and cursors save immediately; new payload replays",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2354,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:56:18.676Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-8b11a44413284ed170a9",
+          "file": "final-lesson.spec.mjs",
+          "line": 145,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final public entry uses production assets, one writer and one Print handler",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1360,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:56:21.036Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-5c72878fce7b9ab2511b",
+          "file": "final-lesson.spec.mjs",
+          "line": 22,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final exact original prose/emphasis/card/panel/model/labels and single reference source",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1142,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [
+                    {
+                      "buffer": ""
+                    }
+                  ],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:56:22.405Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-2b9267401962231b5b2a",
+          "file": "final-lesson.spec.mjs",
+          "line": 53,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final all valid v1 fixtures silently hydrate fields/checks/models/notes/panels/selections/goals",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12937,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:56:23.553Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-c6b367bd376b3b5a8b7f",
+          "file": "final-lesson.spec.mjs",
+          "line": 72,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final edited synthesis, goal caption, wrong-after-credit and cursors save immediately; new payload replays",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2475,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:56:36.500Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-eb4cefb6471b373013be",
+          "file": "final-lesson.spec.mjs",
+          "line": 145,
+          "column": 3
+        },
+        {
+          "title": "/ Final public entry uses production assets, one writer and one Print handler",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1876,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:57:17.787Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-a6dbc781b0ef4eaecab0",
+          "file": "final-lesson.spec.mjs",
+          "line": 22,
+          "column": 3
+        },
+        {
+          "title": "/ Final exact original prose/emphasis/card/panel/model/labels and single reference source",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1384,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [
+                    {
+                      "buffer": ""
+                    }
+                  ],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:57:19.671Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-2be628a5b9d64b2721ad",
+          "file": "final-lesson.spec.mjs",
+          "line": 53,
+          "column": 3
+        },
+        {
+          "title": "/ Final all valid v1 fixtures silently hydrate fields/checks/models/notes/panels/selections/goals",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 21123,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:57:21.062Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-bc462b2909b5e54b202a",
+          "file": "final-lesson.spec.mjs",
+          "line": 72,
+          "column": 3
+        },
+        {
+          "title": "/ Final edited synthesis, goal caption, wrong-after-credit and cursors save immediately; new payload replays",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4429,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:57:42.193Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-310649fd0ebeb858fbba",
+          "file": "final-lesson.spec.mjs",
+          "line": 145,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final public entry uses production assets, one writer and one Print handler",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1835,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:57:46.630Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-4f4931803d6336aafbc4",
+          "file": "final-lesson.spec.mjs",
+          "line": 22,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final exact original prose/emphasis/card/panel/model/labels and single reference source",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1976,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [
+                    {
+                      "buffer": ""
+                    }
+                  ],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:57:48.471Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-ea324b11d8697a2c20a5",
+          "file": "final-lesson.spec.mjs",
+          "line": 53,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final all valid v1 fixtures silently hydrate fields/checks/models/notes/panels/selections/goals",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 20904,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:57:50.454Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-7a11088e329640441a83",
+          "file": "final-lesson.spec.mjs",
+          "line": 72,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final edited synthesis, goal caption, wrong-after-credit and cursors save immediately; new payload replays",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4687,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:58:11.365Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-797083c44d66b1e31a15",
+          "file": "final-lesson.spec.mjs",
+          "line": 145,
+          "column": 3
+        },
+        {
+          "title": "/ Final public entry uses production assets, one writer and one Print handler",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1509,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:58:53.125Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-3470a69d99c7285d63aa",
+          "file": "final-lesson.spec.mjs",
+          "line": 22,
+          "column": 3
+        },
+        {
+          "title": "/ Final exact original prose/emphasis/card/panel/model/labels and single reference source",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1121,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [
+                    {
+                      "buffer": ""
+                    }
+                  ],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:58:54.642Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-d5ccba45773a2b203e51",
+          "file": "final-lesson.spec.mjs",
+          "line": 53,
+          "column": 3
+        },
+        {
+          "title": "/ Final all valid v1 fixtures silently hydrate fields/checks/models/notes/panels/selections/goals",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 18071,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:58:55.772Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-02e8ee4b272d7cefce32",
+          "file": "final-lesson.spec.mjs",
+          "line": 72,
+          "column": 3
+        },
+        {
+          "title": "/ Final edited synthesis, goal caption, wrong-after-credit and cursors save immediately; new payload replays",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3389,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:59:13.850Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-9a972b59083d65e6b70c",
+          "file": "final-lesson.spec.mjs",
+          "line": 145,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final public entry uses production assets, one writer and one Print handler",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1582,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:59:17.250Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-bc136e1b907c9c6ba226",
+          "file": "final-lesson.spec.mjs",
+          "line": 22,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final exact original prose/emphasis/card/panel/model/labels and single reference source",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1143,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [
+                    {
+                      "buffer": ""
+                    }
+                  ],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:59:18.841Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-dc68c948198265dc459c",
+          "file": "final-lesson.spec.mjs",
+          "line": 53,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final all valid v1 fixtures silently hydrate fields/checks/models/notes/panels/selections/goals",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 17586,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:59:19.991Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-2d3c24bb271da91ceb61",
+          "file": "final-lesson.spec.mjs",
+          "line": 72,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final edited synthesis, goal caption, wrong-after-credit and cursors save immediately; new payload replays",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3808,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:59:37.583Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-6fc156bc1b4fcbc84722",
+          "file": "final-lesson.spec.mjs",
+          "line": 145,
+          "column": 3
+        },
+        {
+          "title": "/ Final public entry uses production assets, one writer and one Print handler",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1164,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T22:00:13.538Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-f78be50f1289cfed7622",
+          "file": "final-lesson.spec.mjs",
+          "line": 22,
+          "column": 3
+        },
+        {
+          "title": "/ Final exact original prose/emphasis/card/panel/model/labels and single reference source",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1073,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [
+                    {
+                      "buffer": ""
+                    }
+                  ],
+                  "retry": 0,
+                  "startTime": "2026-10-27T22:00:14.710Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-22fe09e4bf09e6fed47c",
+          "file": "final-lesson.spec.mjs",
+          "line": 53,
+          "column": 3
+        },
+        {
+          "title": "/ Final all valid v1 fixtures silently hydrate fields/checks/models/notes/panels/selections/goals",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13031,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T22:00:15.789Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-83ca747c4840a8812a17",
+          "file": "final-lesson.spec.mjs",
+          "line": 72,
+          "column": 3
+        },
+        {
+          "title": "/ Final edited synthesis, goal caption, wrong-after-credit and cursors save immediately; new payload replays",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2442,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T22:00:28.827Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-f9f5f095c10ad2b9b5eb",
+          "file": "final-lesson.spec.mjs",
+          "line": 145,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final public entry uses production assets, one writer and one Print handler",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1258,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T22:00:31.275Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-0692e94835ce979e9387",
+          "file": "final-lesson.spec.mjs",
+          "line": 22,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final exact original prose/emphasis/card/panel/model/labels and single reference source",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1095,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [
+                    {
+                      "buffer": ""
+                    }
+                  ],
+                  "retry": 0,
+                  "startTime": "2026-10-27T22:00:32.539Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-05d3e068adf91e07d05a",
+          "file": "final-lesson.spec.mjs",
+          "line": 53,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final all valid v1 fixtures silently hydrate fields/checks/models/notes/panels/selections/goals",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13280,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T22:00:33.639Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-875bd2d26e888a62109e",
+          "file": "final-lesson.spec.mjs",
+          "line": 72,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final edited synthesis, goal caption, wrong-after-credit and cursors save immediately; new payload replays",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2091,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T22:00:46.926Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-aed71f8dc8b13a19cf95",
+          "file": "final-lesson.spec.mjs",
+          "line": 145,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "reference-loading.spec.mjs",
+      "file": "reference-loading.spec.mjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "/ immediate navigation, failed body, retry, print notice and no loader storage writes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 928,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:56:39.002Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f6b9d67f49002bdd808b-2a639993db2351b48bbf",
+          "file": "reference-loading.spec.mjs",
+          "line": 36,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ immediate navigation, failed body, retry, print notice and no loader storage writes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 895,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:56:39.935Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f6b9d67f49002bdd808b-214277fc418b17498d44",
+          "file": "reference-loading.spec.mjs",
+          "line": 36,
+          "column": 3
+        },
+        {
+          "title": "/ immediate navigation, failed body, retry, print notice and no loader storage writes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1189,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:58:16.075Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f6b9d67f49002bdd808b-4062d09842bd10a49aeb",
+          "file": "reference-loading.spec.mjs",
+          "line": 36,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ immediate navigation, failed body, retry, print notice and no loader storage writes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1129,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:58:17.271Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f6b9d67f49002bdd808b-970a24e98a4691866722",
+          "file": "reference-loading.spec.mjs",
+          "line": 36,
+          "column": 3
+        },
+        {
+          "title": "/ immediate navigation, failed body, retry, print notice and no loader storage writes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1228,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:59:41.415Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f6b9d67f49002bdd808b-48d3dd15e6216dc8f975",
+          "file": "reference-loading.spec.mjs",
+          "line": 36,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ immediate navigation, failed body, retry, print notice and no loader storage writes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1328,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:59:42.648Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f6b9d67f49002bdd808b-3b9703d734e3d182464b",
+          "file": "reference-loading.spec.mjs",
+          "line": 36,
+          "column": 3
+        },
+        {
+          "title": "/ immediate navigation, failed body, retry, print notice and no loader storage writes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 865,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T22:00:49.035Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f6b9d67f49002bdd808b-bd791170311512735978",
+          "file": "reference-loading.spec.mjs",
+          "line": 36,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ immediate navigation, failed body, retry, print notice and no loader storage writes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 812,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T22:00:49.905Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f6b9d67f49002bdd808b-0edc40380945cbc2d6a8",
+          "file": "reference-loading.spec.mjs",
+          "line": 36,
+          "column": 3
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-27T21:55:32.298Z",
+    "duration": 318558.99199999997,
+    "expected": 56,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

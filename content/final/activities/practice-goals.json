@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "practice-goals",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "id": "credit-connect",
+        "text": "I will credit and connect multiple viewpoints."
+      },
+      {
+        "id": "genuine-consensus",
+        "text": "I will help the group reach genuine consensus."
+      },
+      {
+        "id": "task-review",
+        "text": "I will check the final recommendation against the task."
+      }
+    ],
+    "caption": {
+      "prefix": "My practice goals: ",
+      "empty": "Select a goal above to make your practice plan."
+    }
+  }
+}

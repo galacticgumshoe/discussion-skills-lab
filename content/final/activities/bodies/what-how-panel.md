@@ -1,0 +1,1 @@
+**WHAT:** What central problem must the group address? **HOW:** What actions or components must the final product include? Identify missing elements instead of declaring success. This is a coaching tool; always follow the actual tournament task wording.

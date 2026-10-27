@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "id": "professionalism-questions",
+  "type": "question-sequence",
+  "profile": "final-questions",
+  "data": {
+    "heading": "Practice activity",
+    "questions": [
+      {
+        "id": "leave-table",
+        "prompt": "The round ends as the judge prepares the ballot. What should you do?",
+        "correctOptionId": "leave",
+        "options": [
+          {
+            "id": "linger",
+            "text": "Stay to discuss your performance.",
+            "feedback": "Not quite. Lingering interferes with the judge's responsibilities."
+          },
+          {
+            "id": "leave",
+            "text": "Gather belongings and leave promptly.",
+            "feedback": "Correct. Leaving promptly respects the judge and schedule."
+          },
+          {
+            "id": "ranking",
+            "text": "Ask how you ranked.",
+            "feedback": "Not quite. The judge should not be pressed for rankings."
+          }
+        ]
+      },
+      {
+        "id": "judge-feedback",
+        "prompt": "The judge offers unsolicited verbal feedback. What is best?",
+        "correctOptionId": "coach-follow-up",
+        "options": [
+          {
+            "id": "coach-follow-up",
+            "text": "Politely conclude, leave, and consult your coach.",
+            "feedback": "Correct. Your coach can determine whether follow-up is appropriate."
+          },
+          {
+            "id": "argue",
+            "text": "Argue about the rules.",
+            "feedback": "Not quite. Students should not confront judges."
+          },
+          {
+            "id": "critique",
+            "text": "Encourage a critique of everyone.",
+            "feedback": "Not quite. A prolonged critique at the table is inappropriate."
+          }
+        ]
+      },
+      {
+        "id": "positive-relationship",
+        "prompt": "Which response supports professional relationships?",
+        "correctOptionId": "sincere-recognition",
+        "options": [
+          {
+            "id": "sincere-recognition",
+            "text": "You made a thoughtful point about costs. I appreciated that perspective.",
+            "feedback": "Correct. Specific, sincere recognition builds relationships."
+          },
+          {
+            "id": "criticize",
+            "text": "Our group would have been better without some ideas.",
+            "feedback": "Not quite. Criticizing others undermines professionalism."
+          },
+          {
+            "id": "judge-preference",
+            "text": "The judge clearly preferred my contributions.",
+            "feedback": "Not quite. Claiming a judge's preference is inappropriate."
+          }
+        ]
+      }
+    ]
+  }
+}

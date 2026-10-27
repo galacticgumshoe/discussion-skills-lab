@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "organize-findings-panels",
+  "type": "expandables",
+  "profile": "standard",
+  "data": {
+    "items": [
+      {
+        "id": "chronological",
+        "title": "Example A · Chronological recap",
+        "bodySource": "bodies/chronological-panel.md"
+      },
+      {
+        "id": "thematic",
+        "title": "Example B · Thematic summary",
+        "bodySource": "bodies/thematic-panel.md"
+      }
+    ]
+  }
+}

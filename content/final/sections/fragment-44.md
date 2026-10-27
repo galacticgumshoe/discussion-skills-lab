@@ -1,0 +1,1 @@
+A city committee has about five minutes left. Its proposal must address **access, communication, and affordability**. The group has discussed a transportation pilot, outreach, cost controls, evaluation, and a possible funding partnership.

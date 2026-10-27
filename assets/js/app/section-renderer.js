@@ -9,13 +9,14 @@ import { mountMultipleChoice } from '../components/multiple-choice.js';
 import { mountQuestionSequence } from '../components/question-sequence.js';
 import { mountWritingActivity } from '../components/writing-activity.js';
 import { mountChecklist } from '../components/checklist.js';
+import { mountNoteClassification } from '../activities/note-classification.js';
 
 const copy = value => JSON.parse(JSON.stringify(value));
 const activityEntry = mount => Object.freeze({ mount,
   read: (activity, state) => {
     const own = state.activities[activity.id];
     if (!own) throw new Error('Activity has no statically imported progress binding');
-    const arrays = { flashcards: ['exploredIds', 'backIds'], expandables: ['exploredIds', 'openIds'], checklist: ['checkedIds'], 'multiple-choice': ['earnedQuestionIds'], 'question-sequence': ['earnedQuestionIds'] }[activity.type];
+    const arrays = { flashcards: ['exploredIds', 'backIds'], expandables: ['exploredIds', 'openIds'], checklist: ['checkedIds'], 'note-classification': ['earnedNoteIds'], 'multiple-choice': ['earnedQuestionIds'], 'question-sequence': ['earnedQuestionIds'] }[activity.type];
     if (arrays.some(key => !Array.isArray(own[key])) || (activity.type.includes('choice') || activity.type === 'question-sequence') && (!own.selections || typeof own.selections !== 'object')) throw new Error('Activity progress binding has the wrong state type');
     return copy(own);
   },
@@ -39,7 +40,7 @@ const writingEntry = Object.freeze({ mount: mountWritingActivity,
 export const standardActivityRegistry = Object.freeze({
   flashcards: activityEntry(mountFlashcards), expandables: activityEntry(mountExpandables),
   'multiple-choice': activityEntry(mountMultipleChoice), 'question-sequence': activityEntry(mountQuestionSequence),
-  writing: writingEntry, checklist: activityEntry(mountChecklist)
+  writing: writingEntry, checklist: activityEntry(mountChecklist), 'note-classification': activityEntry(mountNoteClassification)
 });
 export function validateRegistry(registry) {
   if (!registry || Object.keys(registry).some(type => !activityTypes.includes(type)) || Object.values(registry).some(entry =>
@@ -47,13 +48,13 @@ export function validateRegistry(registry) {
 }
 
 // Manifest is already validated. The caller owns shell hooks, state, gates and saves.
-export function renderSections(root, { manifest, manifestUrl, allowedRootUrl, registry, getState, onChange, revealPolicy = () => ({}) }) {
+export function renderSections(root, { manifest, manifestUrl, allowedRootUrl, registry, getState, onChange, onNavigate = () => {}, revealPolicy = () => ({}) }) {
   validateRegistry(registry);
   validateLessonManifest(manifest, { declaringUrl: manifestUrl, allowedRootUrl });
   const document = root.ownerDocument, container = root.querySelector('#views');
   if (!container) throw new TypeError('Missing section container');
   const node = (tag, text) => { const element = document.createElement(tag); if (text !== undefined) element.textContent = text; return element; };
-  const abort = new AbortController(), references = [], jobs = [], preparations = [], controllers = new Map(), reveals = [];
+  const abort = new AbortController(), references = [], jobs = [], preparations = [], controllers = new Map(), reveals = [], summaries = [];
   let releaseHydration;
   const hydrated = new Promise(resolve => { releaseHydration = resolve; });
   const sources = new Map(manifest.activities.map(activity => [activity.id, activity.source]));
@@ -103,8 +104,26 @@ export function renderSections(root, { manifest, manifestUrl, allowedRootUrl, re
         const reference = node('div'), content = node('div'), status = node('p'), retry = node('button', 'Retry Quick Reference'), print = node('button', block.printLabel || 'Print Quick Reference');
         content.dataset.referenceContent = ''; status.dataset.referenceStatus = ''; status.setAttribute('role', 'status');
         retry.dataset.referenceRetry = ''; print.dataset.referencePrint = ''; retry.type = print.type = 'button'; retry.hidden = true; print.disabled = true;
-        reference.append(print, status, retry, content); parent.append(reference);
-         references.push(mountReference(reference, { source: block.source, declaringUrl: manifestUrl, allowedRootUrl }));
+        if (manifest.id === 'final') {
+          reference.className = 'final-reference-sheet'; reference.id = 'quick-reference';
+          const header = node('div'), printWrap = node('div'); header.className = 'final-reference-header'; printWrap.className = 'print-hide';
+          print.id = 'ref-print'; print.className = 'btn secondary final-print-button'; printWrap.append(print);
+          header.append(printWrap, section.heading); reference.append(header, status, retry, content);
+          content.id = 'ref-content'; content.className = 'final-reference-content'; status.id = 'reference-status'; retry.id = 'reference-retry';
+        } else reference.append(print, status, retry, content);
+        parent.append(reference);
+        references.push(mountReference(reference, { source: block.source, declaringUrl: manifestUrl, allowedRootUrl }));
+      } else if (block.type === 'progress') {
+        const summary = node('div'), score = node('p'), progress = node('p');
+        summary.className = 'dsl-progress-summary'; score.className = 'dsl-summary-score';
+        summary.append(score, progress); parent.append(summary); summaries.push({ block, score, progress });
+      } else if (block.type === 'navigation') {
+        const actions = node('div'); actions.className = 'dsl-summary-actions';
+        block.actions.forEach(action => {
+          const button = node('button', action.label); button.type = 'button'; button.dataset.sectionTarget = action.sectionId;
+          button.addEventListener('click', () => onNavigate(action.sectionId), { signal: abort.signal }); actions.append(button);
+        });
+        parent.append(actions);
       } else if (block.type === 'markdown') {
         loadable(parent, section, async content => {
           if (block.textStyle) content.classList.add(`dsl-prose-${block.textStyle}`);
@@ -162,5 +181,10 @@ export function renderSections(root, { manifest, manifestUrl, allowedRootUrl, re
   function updateReveals(state) {
     const visible = revealPolicy(state);
     reveals.forEach(({ group, id }) => { group.hidden = visible[id] !== true; });
+    summaries.forEach(({ block, score, progress }) => {
+      const earned = state.activities[block.activityId]?.earnedQuestionIds || [];
+      score.textContent = block.scorePrefix + block.questionIds.filter(id => earned.includes(id)).length + block.scoreSeparator + block.questionIds.length;
+      progress.textContent = sections.filter(section => !section.reference && state.completedSections.includes(section.id)).length + block.progressSuffix;
+    });
   }
 }

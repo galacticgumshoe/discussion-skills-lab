@@ -3,7 +3,7 @@
 import { resolveContentUrl } from './content-loader.js';
 import { formatWriting } from '../utilities/writing-formatters.js';
 
-export const activityTypes = ['flashcards', 'expandables', 'multiple-choice', 'question-sequence', 'writing', 'checklist'];
+export const activityTypes = ['flashcards', 'expandables', 'multiple-choice', 'question-sequence', 'writing', 'checklist', 'note-classification'];
 export const sequenceProfiles = ['opening-classification', 'opening-knowledge-check', 'middle-scenarios', 'middle-quiz', 'middle-application', 'final-questions'];
 export const maxGroupDepth = 3;
 export function activityBodySources(activity) {
@@ -79,6 +79,20 @@ export function validateLessonManifest(data, context = {}) {
         if (!b.object(block, ['type', 'activityId'], [], p)) return;
         b.check(declared.has(block.activityId), `${p}/activityId`, 'undeclared activity');
         b.check(!used.has(block.activityId), `${p}/activityId`, 'activity mounted more than once'); used.add(block.activityId); sectionActivities.add(block.activityId);
+      } else if (block.type === 'progress') {
+        if (!b.object(block, ['type', 'activityId', 'questionIds', 'scorePrefix', 'scoreSeparator', 'progressSuffix'], [], p)) return;
+        b.check(declared.has(block.activityId), `${p}/activityId`);
+        b.list(block.questionIds, `${p}/questionIds`, (id, path) => b.check(identity(id), path));
+        if (Array.isArray(block.questionIds)) b.ids(block.questionIds, `${p}/questionIds`);
+        ['scorePrefix', 'scoreSeparator', 'progressSuffix'].forEach(key => b.check(text(block[key]), `${p}/${key}`));
+      } else if (block.type === 'navigation') {
+        if (!b.object(block, ['type', 'actions'], [], p)) return;
+        b.list(block.actions, `${p}/actions`, (action, path) => {
+          if (b.object(action, ['sectionId', 'label'], [], path)) {
+            b.check(Array.isArray(data.sections) && data.sections.some(section => section?.id === action.sectionId), `${path}/sectionId`);
+            b.check(text(action.label), `${path}/label`);
+          }
+        });
       } else if (['markdown', 'reference'].includes(block.type)) {
         if (b.object(block, ['type', 'source'], block.type === 'reference' ? ['printLabel'] : ['textStyle'], p)) b.source(block.source, `${p}/source`, block.type === 'markdown' ? '.md' : '.json', context);
         if (block.textStyle !== undefined) b.check(['lead', 'note', 'instruction', 'label'].includes(block.textStyle), `${p}/textStyle`);
@@ -132,7 +146,8 @@ export function validateActivity(data, context = {}) {
     }
   };
   if (['flashcards', 'expandables', 'checklist'].includes(data.type)) {
-    if (b.object(d, ['items'], [], p)) {
+    if (b.object(d, ['items'], data.type === 'checklist' ? ['caption'] : [], p)) {
+      if (d.caption !== undefined && b.object(d.caption, ['prefix', 'empty'], [], `${p}/caption`)) Object.values(d.caption).forEach(value => b.check(text(value), `${p}/caption`));
       b.list(d.items, `${p}/items`, (item, path) => {
         const keys = data.type === 'flashcards' ? ['id'] : data.type === 'expandables' ? ['id', 'title'] : ['id', 'text'];
         const optional = data.type === 'flashcards' ? ['front', 'back', 'frontSource', 'backSource', 'frontTitle', 'backTitle'] : data.type === 'expandables' ? ['body', 'bodySource', 'calloutTones'] : [];
@@ -148,15 +163,34 @@ export function validateActivity(data, context = {}) {
       });
       if (Array.isArray(d.items)) b.ids(d.items, `${p}/items`);
     }
+  } else if (data.type === 'note-classification') {
+    if (b.object(d, ['categories', 'notes', 'chooseLabel', 'correctPrefix', 'wrongPrefix'], [], p)) {
+      ['chooseLabel', 'correctPrefix', 'wrongPrefix'].forEach(key => b.check(text(d[key]), `${p}/${key}`));
+      b.list(d.categories, `${p}/categories`, (category, path) => {
+        if (b.object(category, ['id', 'label'], [], path)) { b.check(identity(category.id), `${path}/id`); b.check(text(category.label), `${path}/label`); }
+      });
+      if (Array.isArray(d.categories)) b.ids(d.categories, `${p}/categories`);
+      b.list(d.notes, `${p}/notes`, (note, path) => {
+        if (b.object(note, ['id', 'text', 'correctCategoryId', 'feedback'], [], path)) {
+          b.check(identity(note.id), `${path}/id`); b.check(text(note.text) && text(note.feedback), path);
+          b.check(identity(note.correctCategoryId) && Array.isArray(d.categories) && d.categories.some(category => category?.id === note.correctCategoryId), `${path}/correctCategoryId`, 'unknown category ID');
+        }
+      });
+      if (Array.isArray(d.notes)) b.ids(d.notes, `${p}/notes`);
+    }
   } else if (data.type === 'multiple-choice') question(d, p);
   else if (data.type === 'question-sequence') {
-    if (b.object(d, ['questions'], ['retryLabel', 'compareLabel', 'compareMessage'], p)) {
+    if (b.object(d, ['questions'], ['retryLabel', 'compareLabel', 'compareMessage', 'heading', 'counterScoreLabel'], p)) {
+      ['heading', 'counterScoreLabel'].forEach(key => { if (d[key] !== undefined) b.check(text(d[key]), `${p}/${key}`); });
       b.list(d.questions, `${p}/questions`, question); if (Array.isArray(d.questions)) b.ids(d.questions, `${p}/questions`);
       if (Object.hasOwn(d, 'retryLabel')) b.check(text(d.retryLabel), `${p}/retryLabel`);
       if (d.compareLabel !== undefined || d.compareMessage !== undefined) b.check(text(d.compareLabel) && text(d.compareMessage), `${p}/compareLabel`);
     }
   } else if (data.type === 'writing') {
-    if (b.object(d, ['fields', 'copyLabel'], ['output', 'assembly', 'copyFieldId', 'copyMessages', 'model'], p)) {
+    if (b.object(d, ['fields', 'copyLabel'], ['output', 'assembly', 'copyFieldId', 'copyMessages', 'model', 'edit', 'actionOrder', 'outputReveal'], p)) {
+      if (d.edit !== undefined && b.object(d.edit, ['label'], ['message'], `${p}/edit`)) Object.values(d.edit).forEach(value => b.check(text(value), `${p}/edit`));
+      if (d.actionOrder !== undefined) b.check(['edit-copy-model', 'model-copy-edit'].includes(d.actionOrder) && !!d.edit && !!d.model, `${p}/actionOrder`);
+      if (d.outputReveal !== undefined) b.check(d.outputReveal === 'assembled' && !!d.output && !!d.assembly, `${p}/outputReveal`);
       const field = (value, path) => {
         if (!b.object(value, ['id', 'label', 'multiline', 'readonly'], ['formatKey', 'placeholder', 'rows', 'maxLength'], path)) return;
         b.check(identity(value.id), `${path}/id`); b.check(text(value.label), `${path}/label`);

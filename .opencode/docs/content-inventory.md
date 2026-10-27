@@ -1,5 +1,41 @@
 # Canonical content inventory — milestone 1
 
+## Milestone 6 — Final content-driven public entry
+
+Owner clarification (2026-10-27): match Middle's actual separate title profiles,
+superseding the earlier uniform 48px approximation. Welcome uses
+`clamp(2.25rem,5vw,3.6rem)`; pages 01–08 use `clamp(1.85rem,3.4vw,2.6rem)`;
+both use bold Fraunces, 1.17 leading and `-.035em` tracking. Card fronts use
+Middle's normal weight and common white/navy faces. Reference/activity/model/
+completion headings are unchanged. Existing shared
+front/back explored cues are verified on all eight cards, including flip-back and
+reload. No content/answer/gate/storage changes. See the appended heading/cue review
+in `evidence/milestone-6-presentation.md` and milestone-7's carry-forward instructions.
+
+The owner explicitly requested applying the corrected version to `final.html`,
+not a separate preview. The real entry now mounts this graph through the thin
+`assets/js/final.js` module, with no classic writer or reference pilot. The separate
+Final harness route/entry is removed; tests exercise root/repository `final.html`.
+Original instructional content © Rhys Jones / CC BY 4.0; implementation
+MIT. No sealed source/evidence or third-party notice changed.
+
+| Pinned source | New destination / reconciliation |
+| --- | --- |
+| `final.html` all ten sections, labels, eyebrows, prose, examples, stage/speaker/task statements | `content/final/lesson.json`, `sections/fragment-{1..57}.md`; exact per-fragment source/text map: `evidence/milestone-6-source-map.json` |
+| Page-local 8 cards (3/2/3) and 13 panels (4/2/3/4) | Three `activities/*-cards.json`, four `*-panels.json`, 29 named `activities/bodies/*.md`; **86 Markdown mappings** total |
+| `final.js questions` eight banks (5/1/1/3/3/3/4/5) | Seven `*-questions.json` plus `knowledge-check.json`: **25 exact questions**, all ordered options/keys/contexts/alternative feedback |
+| `notes` / generated categories | `activities/note-classification.json`: six texts/feedback; original four A–D meanings/order with stable category references |
+| Synthesis/closing fields, controls, template, models | `activities/{synthesis,closing}-writing.json`: all five legacy field bindings, rows/modes/labels, template/statuses, both full model titles/paragraphs |
+| `checkLabels`, `goalTexts`, caption wording | Two checklists with five/six checks; `practice-goals.json` with three exact goals and caption order |
+| Displayed reference | **Unchanged** milestone-3 six-file `reference/`, sole source |
+| Unused `referenceText()` prefix | `legacy-variants.json`, nonpublished pinned-provenance uppercase prefix; DOM-derived body is already the displayed reference |
+
+There are **21 activities**. Config is mechanical; pure gates/reveals live in
+`lessons/final/completion.js`. All-section presentation inventory, comparisons,
+permitted differences and approval/gaps: `evidence/milestone-6-presentation.md`.
+The owner's explicit local-entry cutover direction and remaining manual review
+gaps are recorded there; no deployment or milestone-7 implementation is implied.
+
 Baseline: `0b5d2297e7cbc19bd59cde750492dd28e3983ca0` (also starting HEAD).
 All 15 allowlisted production/document files matched the pinned Git bytes before capture.
 Hashes and allowlist: [`tests/fixtures/production.json`](../../tests/fixtures/production.json).

@@ -30,6 +30,29 @@ Mechanical configuration lives separately in `lessons/middle/config.json`;
 completion/reveal policies are trusted code, not expressions in content.
 Unknown properties/types/layouts/accents are rejected.
 
+Final's milestone-6 graph (`final/lesson.json`, `sections/`, `activities/`) now
+loads directly from **`final.html`**, as explicitly requested by the owner.
+The separate `/final-harness.html` route is retired. Root and repository-subdirectory
+URLs work on ordinary static hosting. `final/reference/` is the sole reference source;
+`final/legacy-variants.json` preserves the unused reference-copy prefix without
+publishing it. Do not edit sealed fixtures or run both engines together.
+
+`note-classification` declares ordered categories (`id`/`label`), notes
+(`id`/`text`/`correctCategoryId`/`feedback`), and exact placeholder/feedback
+prefixes. Correctness references IDs, never category order. Wrong choices stay
+session-local; correct notes restore disabled without events.
+
+Existing writing data optionally accepts `edit: {label, message?}`, `actionOrder`
+(`edit-copy-model` or `model-copy-edit`) and `outputReveal: "assembled"` for original
+control/reveal composition. Explicit assembly alone regenerates output; typed
+output saves immediately. Question sequences optionally declare `heading` and
+`counterScoreLabel`; Final uses `final-questions`, not Middle's overview/wraparound.
+Checklists may declare `caption: {prefix, empty}`, derived in declared item order
+without a persistence field. Bounded `progress` blocks display a declared
+question-ID score and counted completion; `navigation` blocks contain only
+existing section IDs and text labels. Neither is an activity or gate. These use
+the same closed boundaries, not HTML/classes, expressions or executable includes.
+
 Markdown blocks may use the closed `textStyle` values `lead`, `note`,
 `instruction`, or `label` to retain the original paragraph hierarchy without
 embedding styling in prose. Omit it for ordinary text. These are presentation

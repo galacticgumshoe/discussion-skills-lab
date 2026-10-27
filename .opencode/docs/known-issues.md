@@ -2,6 +2,38 @@
 
 Refactor documentation lives in `.opencode/docs/`; repository paths below are root-relative.
 
+## Milestone 6 current checkpoint
+
+Latest owner direction (2026-10-27): “I do not want that. I want these changes to
+final.html.” Applied the already verified migrated version to the **real
+`final.html` entry**; removed the separate Final harness route/entry and reference
+pilot. This authorizes local cutover, not a claim of manual presentation acceptance
+or permission to publish. Middle's exact separate heading profiles and normal
+card fronts now load at the normal Final URL, including durable front cues.
+KI-04 synthesis saves/goal captions, KI-05 stable question feedback, safe storage,
+unknown-data preservation and reference-only printing now belong to that entry.
+
+Latest targeted browser run: **56/56 passed** across all four projects/both mounts;
+14/14 targeted units also passed. Additional Chromium public journeys/navigation/
+restoration/policy/clipboard/print checks passed before the reference-loading check
+found a print-status gap. A delayed/failed reference's status was hidden in print;
+Final-only CSS now prints that notice while suppressing the general lesson loader.
+The old reference test also incorrectly awaited whole-lesson readiness while
+holding reference IO; it now checks early navigation independently. All eight
+Chromium reference checks and delayed/failed print checks in all four projects
+pass after correction. No Opening/Middle browser or full-suite reruns. Details and
+immutable reports: latest public-entry section of `evidence/milestone-6-presentation.md`.
+Owner review of actual `final.html` remains pending; no Opening migration/deployment.
+
+Prerequisite full run: 839/840 passed; unchanged Opening Firefox repository builder
+output was empty. The exact identity passed three unchanged reruns; cause remains
+unproven. A lost background shell and interrupted/timed-out attempt are not passes.
+Final preflight corrected hidden-group CSS, print ancestry, actual heading/cascade
+and selected-hover color. New-test defects (changing filtered locator, hidden
+status vs prose selector, WebKit pointer-focus assumption) were corrected without
+changing production behavior or weakening keyboard focus/content/policy assertions.
+Actual outcomes and manual/approval gaps: `evidence/milestone-6-presentation.md`.
+
 Source: `0b5d2297e7cbc19bd59cde750492dd28e3983ca0`. These distinguish inherited
 behavior from refactor regressions. They do not authorize fixes outside the
 contracts' named standards repairs. No unexplained failing or skipped journeys

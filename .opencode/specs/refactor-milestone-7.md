@@ -42,6 +42,35 @@ do not introduce them or Middle's sequential quiz layout. Reuse controllers with
 Opening-scoped styling rather than Middle's theme or generic defaults. Narrow
 Opening CSS additions needed for parity are in scope; global consolidation is not.
 
+### Carry forward the owner's approved presentation differences
+
+The owner explicitly approved these Middle differences and requested them in Final
+and Opening (2026-10-27). Do not undo them to match the smaller/less informative
+original main screenshots:
+
+- **Larger numbered-page titles:** every counted Opening section, including the
+  Knowledge Check, must match Middle's numbered-page profile:
+  `clamp(1.85rem,3.4vw,2.6rem)`, bold Fraunces, 1.17 leading, `-.035em` tracking,
+  not a small Tailwind-reset h2. Middle's separate Welcome/display profile is
+  `clamp(2.25rem,5vw,3.6rem)`; do not substitute one approximate size for both
+  levels or invent a Welcome page for Opening. Keep responsive wrapping and
+  Opening-scoped styles. Reference,
+  activity, model and other subordinate headings retain their own hierarchy.
+- **Durable explored cues:** shared flashcards show `✓ Explored` on their original
+  front after flip-back as well as their back; the cue survives reload independently
+  of the current face and must not overlap the Flip card hint. **Opening has no
+  flashcards: this is not permission to add any.** Preserve Opening's existing
+  timeline/category explored/selected distinctions using its own controls, without
+  awarding credit on hydration or inventing new instructional controls/criteria.
+
+Read the milestone-6 heading/cue follow-up in
+`.opencode/docs/evidence/milestone-6-presentation.md`. Record these approved
+differences explicitly in Opening's presentation inventory/comparison assertions;
+keep original captures immutable. Select reruns by actual impact: Opening-only
+styles/content need affected Opening checks, not automatic whole-site or unrelated
+Middle/Final suites. Shared controller/style changes require the affected consumers'
+checks; explain the chosen scope and retain manual approval before cutover.
+
 ## Exact gates and interaction exceptions
 
 | Page / section | Required for initial completion |

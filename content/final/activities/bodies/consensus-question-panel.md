@@ -1,0 +1,1 @@
+An opening-stage question can define success. For example: “Can we recommend an affordable, realistic strategy that improves teen access to community programs?” Checking the recommendation against a focused question is often more useful than vaguely asking for agreement.

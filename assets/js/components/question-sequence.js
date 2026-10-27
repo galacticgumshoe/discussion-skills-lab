@@ -17,6 +17,7 @@ export function mountQuestionSequence(root, { data, state, onChange, profile }) 
   const dom = componentRoot(root, 'dsl-question-sequence'), questions = new Map(), jumps = new Map();
   const profileClass = `dsl-sequence-${profile}`; root.classList.add(profileClass);
   let current = snapshot(state), displayed;
+  if (data.heading) dom.append(dom.node('h3', 'dsl-sequence-heading', data.heading));
   const counter = dom.node('p', 'dsl-question-counter');
   const host = dom.node('div', 'dsl-question-host');
   const controls = dom.node('div', 'dsl-question-controls');
@@ -58,7 +59,7 @@ export function mountQuestionSequence(root, { data, state, onChange, profile }) 
     }
     questions.forEach(({ controller }) => controller.update(current));
     compare.hidden = !data.compareLabel || !Object.hasOwn(current.selections, question.id);
-    setText(counter, settings.all ? '' : profile === 'opening-classification' ? `STATEMENT ${index + 1} OF ${data.questions.length}` : `Question ${index + 1} of ${data.questions.length}`);
+    setText(counter, settings.all ? '' : profile === 'opening-classification' ? `STATEMENT ${index + 1} OF ${data.questions.length}` : `Question ${index + 1} of ${data.questions.length}${data.counterScoreLabel ? `${data.counterScoreLabel}${earned}/${data.questions.length}` : ''}`);
     previous.hidden = !settings.previous || index === 0;
     next.hidden = Boolean(settings.all || (!settings.wrap && index === data.questions.length - 1));
     next.disabled = settings.any ? !Object.hasOwn(current.selections, question.id) : !current.earnedQuestionIds.includes(question.id);
@@ -75,6 +76,7 @@ export function mountQuestionSequence(root, { data, state, onChange, profile }) 
     setText(hint, complete ? 'Excellent work. You can still explore other answers without losing completion credit.'
       : `Review the feedback and select the correct option for ${data.questions.length - earned} remaining ${data.questions.length - earned === 1 ? 'question' : 'questions'}.`);
     if (settings.separate) { score.hidden = hint.hidden = retry.hidden = true; }
+    if (profile === 'final-questions') score.hidden = true;
     if (settings.jump) for (const [id, button] of jumps) {
       setText(button, `${current.earnedQuestionIds.includes(id) ? '✓ Correct' : '○ Not yet correct'} · Q${data.questions.findIndex(question => question.id === id) + 1}`);
       if (id === question.id) button.setAttribute('aria-current', 'step'); else button.removeAttribute('aria-current');

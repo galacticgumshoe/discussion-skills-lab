@@ -1,5 +1,33 @@
 # Preservation regression checklist
 
+## Final milestone-6 owner checkpoint
+
+The owner explicitly requested putting the changes in **`final.html`**, not a
+separate harness. Local entry cutover is implemented; `/final-harness.html` is
+retired. Review **http://127.0.0.1:55159/final.html**, or serve the checkout with
+`npm run test:serve` / ordinary static hosting and open `final.html` (repository
+subdirectory also supported). No fixture server route is needed for Final.
+
+Welcome matches Middle's Welcome profile and pages **01–08** its numbered profile:
+57.6px/41.6px at wide desktop, responsive on smaller screens. Card fronts use
+normal weight; explore, flip back and refresh to verify `✓ Explored` remains beside
+the hint. Reference/activity/model headings remain independent. Print reference
+from an ordinary page and while reference content is loading/failed: incomplete
+references must print a status notice, never a silently blank sheet. Latest main
+targeted run **56/56 passed**, all four projects/both mounts; no whole-site or
+Opening/Middle browser rerun. Additional outcomes/diagnostics are in the evidence.
+Use synthetic text on a local test origin; do not clear student/personal progress.
+Refresh starts at Welcome; reference always open; no duplicate writer/Print handler.
+
+Owner must review every page/activity/callout/model and relevant states against
+the original, including narrow/mobile wrapping, keyboard, editable synthesis,
+category retries/disabled correct rows, model/check reveals, goal captions and
+reference-only printing. Record actual browser/version/actions and any AT/device/
+zoom limits. The owner's explicit local-cutover instruction is recorded in
+`evidence/milestone-6-presentation.md`; it supersedes the harness-only review plan,
+but is not invented browser/AT/print acceptance or authorization to publish.
+Current automatic checks do not imply manual approval; owner browser review remains pending.
+
 ## Middle milestone-5 owner acceptance (2026-10-27)
 
 The owner reviewed all Middle pages, accepted the final corrections, and reported

@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "id": "closing-practice-questions",
+  "type": "question-sequence",
+  "profile": "final-questions",
+  "data": {
+    "heading": "Final-minutes decision",
+    "questions": [
+      {
+        "id": "connect-viewpoints",
+        "prompt": "Which contribution best connects the viewpoints?",
+        "correctOptionId": "credit-coordinate",
+        "options": [
+          {
+            "id": "maya-only",
+            "text": "Maya had the best idea, so let's use that.",
+            "feedback": "Not quite. This discards other perspectives."
+          },
+          {
+            "id": "credit-coordinate",
+            "text": "Building on Maya's transportation proposal, Jordan's cost concern, and Avery's communication idea, we could recommend a limited pilot paired with outreach and a cost review.",
+            "feedback": "Correct. It credits multiple contributors and coordinates their ideas."
+          },
+          {
+            "id": "generic-praise",
+            "text": "Everyone has made good points.",
+            "feedback": "Not quite. It does not develop a recommendation."
+          }
+        ]
+      },
+      {
+        "id": "accurate-summary",
+        "prompt": "Which summary accurately represents the proposed direction?",
+        "correctOptionId": "pilot-outreach-review",
+        "options": [
+          {
+            "id": "vague",
+            "text": "We discussed possibilities and the problem matters.",
+            "feedback": "Not quite. This omits the actual proposed outcome."
+          },
+          {
+            "id": "pilot-outreach-review",
+            "text": "Our proposed plan combines transportation assistance and improved outreach, with an initial pilot and cost evaluation before expansion.",
+            "feedback": "Correct. This identifies components without exaggeration."
+          },
+          {
+            "id": "overclaim",
+            "text": "We solved every problem affecting teen participation.",
+            "feedback": "Not quite. This claims more than the proposal establishes."
+          }
+        ]
+      },
+      {
+        "id": "spending-limit",
+        "prompt": "Jordan still wants a clear spending limit. What should the group do?",
+        "correctOptionId": "spending-cap",
+        "options": [
+          {
+            "id": "spending-cap",
+            "text": "Add a spending cap and check whether it addresses the concern.",
+            "feedback": "Correct. This addresses the remaining objection and supports consensus."
+          },
+          {
+            "id": "ignore-jordan",
+            "text": "Ignore Jordan because the others agree.",
+            "feedback": "Not quite. A majority does not erase a meaningful concern."
+          },
+          {
+            "id": "end",
+            "text": "End without confirming support.",
+            "feedback": "Not quite. Support remains unconfirmed."
+          }
+        ]
+      },
+      {
+        "id": "evaluate-proposal",
+        "prompt": "Which closing question best evaluates the proposal?",
+        "correctOptionId": "requirements-support",
+        "options": [
+          {
+            "id": "impression",
+            "text": "Was that a good discussion?",
+            "feedback": "Not quite. This asks for a general impression."
+          },
+          {
+            "id": "requirements-support",
+            "text": "Does our revised proposal address access, communication, and affordability, and can everyone support it?",
+            "feedback": "Correct. This checks requirements and group support."
+          },
+          {
+            "id": "speaking-time",
+            "text": "Did we all speak enough?",
+            "feedback": "Not quite. Speaking time is not the final task audit."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -7,24 +7,30 @@ import { original, revision, productionPaths, sha256, root } from '../helpers/ba
 import { extractBanks } from '../helpers/content-baseline.mjs';
 import { startServer } from '../helpers/static-server.mjs';
 import { openingExtraction } from '../helpers/opening-extraction.mjs';
-import { finalReferencePilot } from '../helpers/final-reference.mjs';
+import { finalCutover } from '../helpers/final-cutover.mjs';
 import { middleCutover } from '../helpers/middle-cutover.mjs';
 
 const json = path => JSON.parse(readFileSync(`${root}tests/fixtures/${path}`));
-test('Opening extraction and Final pilot are bounded; other runtime/license bytes remain pinned', () => {
+test('Opening extraction and lesson cutovers are bounded; other runtime/license bytes remain pinned', () => {
   const extracted = openingExtraction(original('opening.html').toString());
   assert.equal(readFileSync(`${root}opening.html`, 'utf8'), extracted.html);
   assert.equal(readFileSync(`${root}assets/css/opening.css`, 'utf8'), extracted.css);
   assert.equal(readFileSync(`${root}assets/js/opening.js`, 'utf8'), extracted.js);
   // README developer-testing guidance was separately authorized after extraction.
   // Keep canonical README/replay evidence pinned, but allow current documentation.
-  assert.equal(readFileSync(`${root}final.html`, 'utf8'), finalReferencePilot(original('final.html').toString()));
+  assert.equal(readFileSync(`${root}final.html`, 'utf8'), finalCutover(original('final.html').toString()));
   assert.equal(readFileSync(`${root}middle.html`, 'utf8'), middleCutover(original('middle.html').toString()));
   const middleEntry = readFileSync(`${root}assets/js/middle.js`, 'utf8');
   assert.match(middleEntry, /mountLesson/);
   assert.doesNotMatch(middleEntry, /localStorage|DSL\.createLesson|const (classification|research|strategies|applications|questions)|According to/);
+  const finalEntry = readFileSync(`${root}assets/js/final.js`, 'utf8');
+  assert.match(finalEntry, /mountLesson/);
+  assert.doesNotMatch(finalEntry, /localStorage|DSL\.createLesson|const (questions|notes|checkLabels|goalTexts)|__fixtures/);
   assert.ok(readFileSync(`${root}assets/css/middle.css`, 'utf8').startsWith(original('assets/css/middle.css').toString()));
-  for (const path of productionPaths.filter(path => !['opening.html', 'middle.html', 'assets/js/middle.js', 'final.html', 'assets/css/middle.css', 'README.md'].includes(path))) {
+  assert.ok(readFileSync(`${root}assets/css/final.css`, 'utf8').startsWith(original('assets/css/final.css').toString()));
+  const finalStyles = readFileSync(`${root}assets/css/final.css`, 'utf8').slice(original('assets/css/final.css').length);
+  assert.match(finalStyles, /Milestone 6: opt-in Final presentation/);
+  for (const path of productionPaths.filter(path => !['opening.html', 'middle.html', 'assets/js/middle.js', 'assets/js/final.js', 'final.html', 'assets/css/middle.css', 'assets/css/final.css', 'README.md'].includes(path))) {
     assert.deepEqual(readFileSync(`${root}${path}`), original(path), path);
   }
   const source = Object.fromEntries(productionPaths.map(path => [path, readFileSync(`${root}${path}`, 'utf8')]));
@@ -32,6 +38,7 @@ test('Opening extraction and Final pilot are bounded; other runtime/license byte
   // Middle banks now have independent exact content tests. Retain the original
   // bank extractor here for the unmigrated engines and immutable source seal.
   source['assets/js/middle.js'] = original('assets/js/middle.js').toString();
+  source['assets/js/final.js'] = original('assets/js/final.js').toString();
   assert.deepEqual(extractBanks(source), json('content/banks.json'));
 });
 test('canonical content/maps/progress/visual evidence has not been silently rewritten', () => {
@@ -135,9 +142,9 @@ test('server mounts, MIME, isolated pinned replay, allowlist, traversal and life
         const current = !mount.startsWith('/__original/');
         const expected = current && path === 'opening.html'
           ? Buffer.from(openingExtraction(original(path).toString()).html)
-           : current && path === 'final.html' ? Buffer.from(finalReferencePilot(original(path).toString()))
+           : current && path === 'final.html' ? Buffer.from(finalCutover(original(path).toString()))
             : current && path === 'middle.html' ? Buffer.from(middleCutover(original(path).toString()))
-            : current && ['README.md', 'assets/css/middle.css', 'assets/js/middle.js'].includes(path) ? readFileSync(`${root}${path}`) : original(path);
+              : current && ['README.md', 'assets/css/middle.css', 'assets/css/final.css', 'assets/js/middle.js', 'assets/js/final.js'].includes(path) ? readFileSync(`${root}${path}`) : original(path);
         assert.deepEqual(result.body, expected);
         if (path.endsWith('.js')) assert.match(result.headers['content-type'], /^text\/javascript/);
       }
@@ -155,6 +162,8 @@ test('server mounts, MIME, isolated pinned replay, allowlist, traversal and life
       }
     }
     assert.equal((await request('/__fixtures/legacy-maps/opening.json')).status, 200);
+    assert.equal((await request('/final-harness.html')).status, 404);
+    assert.equal((await request('/discussion-skills-lab/final-harness.html')).status, 404);
     for (const path of ['/../LICENSE', '/%2e%2e/LICENSE', '/__original/%2e%2e/LICENSE', '/assets%5c..%5cLICENSE', '/%252e%252e/LICENSE', '/%00', '/%zz']) {
       // Supply raw request path; URL parsers otherwise normalize traversal before send.
       const status = await new Promise(resolve => http.get({ hostname: '127.0.0.1', port: new URL(server.url).port, path }, res => { res.resume(); resolve(res.statusCode); }));

@@ -1,0 +1,12 @@
+{
+  "reportSha256": "b8b74d338e5579c199d15dfdc25fc6bc4be81cbb6f6f093c88f46a6b4e8ab2a3",
+  "stats": {
+    "startTime": "2026-10-27T21:54:07.985Z",
+    "duration": 13159.646,
+    "expected": 1,
+    "skipped": 6,
+    "unexpected": 1,
+    "flaky": 0
+  },
+  "captures": []
+}

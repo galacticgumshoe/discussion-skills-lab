@@ -1,5 +1,5 @@
 // MIT. Reversible checks; completion belongs exclusively to the caller.
-import { componentRoot, snapshot } from './component-dom.js';
+import { componentRoot, snapshot, setText } from './component-dom.js';
 
 export function mountChecklist(root, { data, state, onChange }) {
   const dom = componentRoot(root, 'dsl-checklist'), inputs = new Map();
@@ -16,10 +16,16 @@ export function mountChecklist(root, { data, state, onChange }) {
       onChange(snapshot(current));
     });
   });
+  const caption = data.caption ? dom.node('p', 'dsl-checklist-caption') : null;
+  if (caption) { caption.setAttribute('aria-live', 'polite'); dom.append(caption); }
   function update(next) {
     if (dom.destroyed) return;
     current = snapshot(next);
     inputs.forEach((input, id) => { input.checked = current.checkedIds.includes(id); });
+    if (caption) {
+      const selected = data.items.filter(item => current.checkedIds.includes(item.id));
+      setText(caption, selected.length ? data.caption.prefix + selected.map(item => item.text).join(' ') : data.caption.empty);
+    }
   }
   update(state);
   return { update, destroy: () => dom.destroy() };

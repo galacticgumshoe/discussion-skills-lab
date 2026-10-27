@@ -22,12 +22,12 @@ for (const mount of ['/', '/discussion-skills-lab/']) {
         expect(baseline).toEqual(fixture('content/opening-html.json'));
         expect(withoutIdentity(inventory)).toEqual(withoutIdentity(baseline));
       } else if (id === 'final') {
-        // Reference prose now has a separate exact semantic comparison against
-        // the same sealed source; all non-reference static content stays exact.
+        // Final prose/emphasis/questions are independently compared in
+        // final-lesson/final-migration, not the removed inert activity shell.
         const baseline = await page.evaluate(inventoryHTML, original('final.html').toString());
         expect(baseline).toEqual(fixture('content/final-html.json'));
-        const activity = entries => entries.filter(entry => entry.section !== 'view-9');
-        expect(activity(inventory)).toEqual(activity(baseline));
+        await expect(page.locator('#lesson-status')).toBeHidden();
+        await expect(page.locator('[data-activity-id]')).toHaveCount(21);
       } else if (id === 'middle') {
         // Exact migrated prose/emphasis/questions are independently compared in
         // middle-lesson/middle-migration, not the removed inert activity shell.
@@ -56,13 +56,18 @@ for (const mount of ['/', '/discussion-skills-lab/']) {
         await expect(page.locator('#welcome-heading')).toHaveText('Making an Impact');
         await expect(page.locator('#s1-title')).toHaveText('Two Ways to Help a Discussion');
         await expect(page.locator('#reference-title')).toHaveText('Middle Stage Quick Reference');
+      } else if (id === 'final') {
+        await expect(page.locator('.lesson-view')).toHaveCount(10);
+        await expect(page.locator('#title-0')).toHaveText('Closing with Purpose');
+        await expect(page.locator('#title-1')).toHaveText('Two Ways to Bring Ideas Together');
+        await expect(page.locator('#reference-title')).toHaveText('Final Stage Quick Reference');
       } else {
         expect(await page.evaluate(initializedDOM)).toEqual(fixture(`legacy-maps/${id}-initialized-dom.json`));
         expect(await page.evaluate(generatedCopy, id)).toEqual(fixture('content/generated-controls.json').lessons[id]);
       }
       for (let i = 0; i <= maps[id].countedPages; i++) {
         const allowed = i === 0 || i === maps[id].countedPages;
-        const value = id === 'middle' ? maps.middle.sections[i] : String(i);
+        const value = id === 'middle' || id === 'final' ? maps[id].sections[i] : String(i);
         if (allowed) await expect(page.locator(`[data-go="${value}"]`)).toBeEnabled();
         else await expect(page.locator(`[data-go="${value}"]`)).toBeDisabled();
         expect(await page.locator(`#section-select option[value="${value}"]`).isDisabled()).toBe(!allowed);

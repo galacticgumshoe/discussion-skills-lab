@@ -7,7 +7,7 @@ export function mountMultipleChoice(root, { data, state, onChange, profile = 'st
   }
   const dom = componentRoot(root, 'dsl-multiple-choice'), buttons = new Map();
   let current = snapshot(state);
-  const heading = dom.node('h3', 'dsl-question-prompt', data.prompt); heading.id = `${dom.prefix}-prompt`;
+  const heading = dom.node(profile === 'final-questions' ? 'p' : 'h3', 'dsl-question-prompt', data.prompt); heading.id = `${dom.prefix}-prompt`;
   const context = dom.node('p', 'dsl-question-context', data.context || ''); context.hidden = !data.context;
   const choices = dom.node('div', 'dsl-choices'); choices.setAttribute('role', 'group'); choices.setAttribute('aria-labelledby', heading.id);
   const feedback = dom.node('p', 'dsl-feedback'); feedback.setAttribute('role', 'status');

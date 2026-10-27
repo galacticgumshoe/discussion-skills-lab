@@ -1,0 +1,577 @@
+{
+  "config": {
+    "argv": [
+      "/Users/rhys/.local/share/fnm/node-versions/v22.23.4/installation/bin/node",
+      "/Users/rhys/git/discussion-skills-lab/node_modules/.bin/playwright",
+      "test",
+      "tests/browser/final-heading-cues.spec.mjs",
+      "tests/browser/final-presentation.spec.mjs",
+      "--project=webkit",
+      "--project=mobile-chromium",
+      "--grep",
+      "Final approved|(?:^| )/ Final section 1 .* at 780px",
+      "--workers=1",
+      "--max-failures=1",
+      "--output=test-results/final-middle-parity-confirmed"
+    ],
+    "configFile": "/Users/rhys/git/discussion-skills-lab/playwright.config.mjs",
+    "rootDir": "/Users/rhys/git/discussion-skills-lab/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 1,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/rhys/git/discussion-skills-lab/test-results/final-middle-parity-confirmed",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/rhys/git/discussion-skills-lab/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/rhys/git/discussion-skills-lab/test-results/final-middle-parity-confirmed",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/Users/rhys/git/discussion-skills-lab/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/rhys/git/discussion-skills-lab/test-results/final-middle-parity-confirmed",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/Users/rhys/git/discussion-skills-lab/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/rhys/git/discussion-skills-lab/test-results/final-middle-parity-confirmed",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "mobile-chromium",
+        "name": "mobile-chromium",
+        "testDir": "/Users/rhys/git/discussion-skills-lab/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.61.1",
+    "workers": 1,
+    "webServer": {
+      "command": "node tests/helpers/static-server.mjs",
+      "env": {
+        "PORT": "54981"
+      },
+      "url": "http://127.0.0.1:54981",
+      "reuseExistingServer": false
+    }
+  },
+  "suites": [
+    {
+      "title": "final-heading-cues.spec.mjs",
+      "file": "final-heading-cues.spec.mjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "/ Final approved Middle heading profiles on all nine lesson pages; narrow/enlarged wrapping and reference print isolation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5511,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:34:48.344Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "final-numbered-title-320",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/final-middle-parity-confirmed/final-heading-cues--Final--a5df7-d-reference-print-isolation-webkit/attachments/final-numbered-title-320-cda191087380d1a2e2655a497bd2d9ccd7dc580a.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6dc15d8f3046dbb19841-4c9d20cb52dfc9c0c094",
+          "file": "final-heading-cues.spec.mjs",
+          "line": 27,
+          "column": 3
+        },
+        {
+          "title": "/ Final approved front-face explored cue on all eight cards; keyboard flip-back, reload and unclipped labels",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11391,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:34:55.139Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "final-front-explored-320",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/final-middle-parity-confirmed/final-heading-cues--Final--31558-reload-and-unclipped-labels-webkit/attachments/final-front-explored-320-66e3eda4028bb91d22348ffe001315dd84e6890e.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6dc15d8f3046dbb19841-d0da8f389c743e050906",
+          "file": "final-heading-cues.spec.mjs",
+          "line": 67,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final approved Middle heading profiles on all nine lesson pages; narrow/enlarged wrapping and reference print isolation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4940,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:35:06.539Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "final-numbered-title-320",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/final-middle-parity-confirmed/final-heading-cues--discus-33290-d-reference-print-isolation-webkit/attachments/final-numbered-title-320-fce15f6617236d0c2bea740dab8f3abd4a69d84b.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6dc15d8f3046dbb19841-8f16cc15e62f7daefd00",
+          "file": "final-heading-cues.spec.mjs",
+          "line": 27,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final approved front-face explored cue on all eight cards; keyboard flip-back, reload and unclipped labels",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12031,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:35:11.487Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "final-front-explored-320",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/final-middle-parity-confirmed/final-heading-cues--discus-7dec1-reload-and-unclipped-labels-webkit/attachments/final-front-explored-320-358a72d07ce8aef521fbfd77c86aa61df0e986d9.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6dc15d8f3046dbb19841-3c4873fc835069d2a7f1",
+          "file": "final-heading-cues.spec.mjs",
+          "line": 67,
+          "column": 3
+        },
+        {
+          "title": "/ Final approved Middle heading profiles on all nine lesson pages; narrow/enlarged wrapping and reference print isolation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5022,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:35:33.473Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "final-numbered-title-320",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/final-middle-parity-confirmed/final-heading-cues--Final--a5df7-d-reference-print-isolation-mobile-chromium/attachments/final-numbered-title-320-52efa30101bd9d99870d4a6d7ed147f548a75a73.png"
+                    },
+                    {
+                      "name": "final-heading-change-reference",
+                      "contentType": "application/pdf",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/final-middle-parity-confirmed/final-heading-cues--Final--a5df7-d-reference-print-isolation-mobile-chromium/attachments/final-heading-change-reference-103795f8a240e9631e1af24db9332ff04ec55c49.pdf"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6dc15d8f3046dbb19841-147d0d8d45256ac469f1",
+          "file": "final-heading-cues.spec.mjs",
+          "line": 27,
+          "column": 3
+        },
+        {
+          "title": "/ Final approved front-face explored cue on all eight cards; keyboard flip-back, reload and unclipped labels",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11756,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:35:40.721Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "final-front-explored-320",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/final-middle-parity-confirmed/final-heading-cues--Final--31558-reload-and-unclipped-labels-mobile-chromium/attachments/final-front-explored-320-25eedfc78bcdca810dd03d59ad0a37a6aedaea63.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6dc15d8f3046dbb19841-6708deaf14cb527a7b27",
+          "file": "final-heading-cues.spec.mjs",
+          "line": 67,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final approved Middle heading profiles on all nine lesson pages; narrow/enlarged wrapping and reference print isolation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4434,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:35:52.486Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "final-numbered-title-320",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/final-middle-parity-confirmed/final-heading-cues--discus-33290-d-reference-print-isolation-mobile-chromium/attachments/final-numbered-title-320-9e5cc010690ca4bda03c456fe9d913962436a0b1.png"
+                    },
+                    {
+                      "name": "final-heading-change-reference",
+                      "contentType": "application/pdf",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/final-middle-parity-confirmed/final-heading-cues--discus-33290-d-reference-print-isolation-mobile-chromium/attachments/final-heading-change-reference-e35dcb85131a86ccf9a40c1e788d00cbc9a26cb5.pdf"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6dc15d8f3046dbb19841-0ac0c7e03cf5501acfd3",
+          "file": "final-heading-cues.spec.mjs",
+          "line": 27,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final approved front-face explored cue on all eight cards; keyboard flip-back, reload and unclipped labels",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10564,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:35:56.932Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "final-front-explored-320",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/final-middle-parity-confirmed/final-heading-cues--discus-7dec1-reload-and-unclipped-labels-mobile-chromium/attachments/final-front-explored-320-f2814842deaf55d7207b18be462c16d87dbbe8e5.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6dc15d8f3046dbb19841-2168af4203276b3ea1c9",
+          "file": "final-heading-cues.spec.mjs",
+          "line": 67,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "final-presentation.spec.mjs",
+      "file": "final-presentation.spec.mjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "/ Final section 1 all presentation roles/states at 780px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9045,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:35:23.586Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/final-middle-parity-confirmed/final-presentation--Final--f1b72-ation-roles-states-at-780px-webkit/attachments/current-e1c57a0e5a532cbeb0bef4539f32232877822971.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/final-middle-parity-confirmed/final-presentation--Final--f1b72-ation-roles-states-at-780px-webkit/attachments/original-866dc230e32979204dcdbddce4c6a42dca5b21df.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-734715e352adb21a8131",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/ Final section 1 all presentation roles/states at 780px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5606,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T21:36:07.517Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/final-middle-parity-confirmed/final-presentation--Final--f1b72-ation-roles-states-at-780px-mobile-chromium/attachments/current-143dac99e084ff83dd2a55971ea461536f135e62.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/final-middle-parity-confirmed/final-presentation--Final--f1b72-ation-roles-states-at-780px-mobile-chromium/attachments/original-d94093c62e9e7ca02b5cd00c07d99c2bf1f08262.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-7b312f3e89ed883d80cb",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-27T21:34:47.272Z",
+    "duration": 85991.25899999999,
+    "expected": 10,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

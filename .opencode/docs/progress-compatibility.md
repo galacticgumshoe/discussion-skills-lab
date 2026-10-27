@@ -1,5 +1,36 @@
 # Legacy progress baseline
 
+## Milestone 6 Final public-entry ownership
+
+The existing Final adapter/frozen maps are unchanged. At the owner's explicit
+request (2026-10-27), config/content now mounts through the common app directly
+from `final.html` and the thin module `assets/js/final.js`. The legacy writer and
+temporary reference-pilot entry are no longer loaded; the pilot file and separate
+Final harness route/entry are removed. There is one writer and one Print handler.
+
+The public entry retains `dsl:final:v1`, page-local cards/exploration vs the distinct
+13-entry global `panelsOpen`, `page:index` selections (including zero), cursors,
+correct-ever answers/notes, reversible checks/goals, model/assembled flags and
+ID-keyed fields through the existing adapter. Unknown outer/data/nested values
+survive writes. No new key/UI extension; hydration never emits changes, credit or
+writes. Sparse completed sections remain authoritative without fabricated flags.
+
+Note state is `{earnedNoteIds: string[]}`. Only correct selections call
+`onChange`; wrong retries stay in existing selects/status nodes, not persistence.
+Correct notes hydrate category/feedback/disabled state directly. Pure Final gates
+and reveals are compared to executed pinned source, all 70 individually missing
+prerequisites and valid fixtures. Unlike Middle, initial synthesis needs all three
+**current trimmed inputs**, assembly, model and five checks. Closing needs a
+nonempty-only draft, model and six checks. Goals remain optional; credit permanent.
+
+Synthesis output saves on input without regeneration until explicit assembly.
+Goal captions derive from existing numeric IDs in original order, with no caption
+field. Questions preserve the active subtree/live node on selection, previous and
+correct-ever Next without wraparound. Optional writing/checklist metadata and
+bounded score/navigation presentation neither change gates nor add writers. New
+payload replay uses pinned `0b5d229` on both replay mounts. Actual checks/gaps:
+`evidence/milestone-6-presentation.md` and latest handoff.
+
 Refactor documentation lives in `.opencode/docs/`; repository paths below are root-relative.
 
 Pinned engine: `0b5d2297e7cbc19bd59cde750492dd28e3983ca0`.

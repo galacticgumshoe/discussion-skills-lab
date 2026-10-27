@@ -1,0 +1,1105 @@
+{
+  "reportSha256": "164bcf7ce86f56f48178f6b701bcab8babac0802a8984e2cd36213f182b7e618",
+  "stats": {
+    "startTime": "2026-10-27T18:00:56.812Z",
+    "duration": 1841165.013,
+    "expected": 1159,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  },
+  "captures": [
+    {
+      "test": "/ Final content failure/retry and independent reference; reference-only print and single Print handler",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-0-final-reference.pdf",
+      "sha256": "ab4b8ace72137cbf3a46d5306072b91981a1e16000e86f91bdc4ef60e0cab806"
+    },
+    {
+      "test": "/discussion-skills-lab/ Final content failure/retry and independent reference; reference-only print and single Print handler",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-1-final-reference.pdf",
+      "sha256": "7e2d16d88077ab77b0ab22484627f4eb12de310819aa5937d9d282a7718adff6"
+    },
+    {
+      "test": "/ Final content failure/retry and independent reference; reference-only print and single Print handler",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-2-final-reference.pdf",
+      "sha256": "e26d8cd1d0b66c503a4fbfe94208a439a1051a4f724b943d7dfc538f48c790d2"
+    },
+    {
+      "test": "/discussion-skills-lab/ Final content failure/retry and independent reference; reference-only print and single Print handler",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-3-final-reference.pdf",
+      "sha256": "4a9e9d8c5c539ad3437da52e74e7ed8c4d25d5543bad2f18f86d52bc684a4717"
+    },
+    {
+      "test": "/ Final section 0 all presentation roles/states at 1440px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-0-1440-current.png",
+      "sha256": "31c3390f9e22e4e69b4348521774b1d0014a8d854fbe4a0ddcbc63bfd7381a8f"
+    },
+    {
+      "test": "/ Final section 0 all presentation roles/states at 1440px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-0-1440-original.png",
+      "sha256": "a500b8c316c40541408ea4f274d7d2f32b2b08bbfa7297bb0150aa4a8c5492d5"
+    },
+    {
+      "test": "/ Final section 1 all presentation roles/states at 1440px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-1-1440-current.png",
+      "sha256": "f6092f4bbb47334daceb06f4c019fd6cd0ff3006b79f3837c64a6e7a2357fc80"
+    },
+    {
+      "test": "/ Final section 1 all presentation roles/states at 1440px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-1-1440-original.png",
+      "sha256": "7919354f71e8a12fb964140e99751da1192fc7adc55976620411b9de5fbb7227"
+    },
+    {
+      "test": "/ Final section 2 all presentation roles/states at 1440px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-2-1440-current.png",
+      "sha256": "9265d42874f75c82b707e07ec018ebc8a3429c9b856c9dc5edbf5b4be21713db"
+    },
+    {
+      "test": "/ Final section 2 all presentation roles/states at 1440px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-2-1440-original.png",
+      "sha256": "85cd2786060293eb8b8444994104ace62d20729020b8779e24e505f7d11cbb07"
+    },
+    {
+      "test": "/ Final section 3 all presentation roles/states at 1440px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-3-1440-current.png",
+      "sha256": "5b7ba9874e73f3819ff342dc1500cffba94cbd08b936d7cf60e3a8feb8c868fc"
+    },
+    {
+      "test": "/ Final section 3 all presentation roles/states at 1440px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-3-1440-original.png",
+      "sha256": "8100213846193ba751e8424e55f5fb29118dc59d7c8ac2396c0cfeec8aab2bf6"
+    },
+    {
+      "test": "/ Final section 4 all presentation roles/states at 1440px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-4-1440-current.png",
+      "sha256": "2cbe481938516fb823a2d4f834c53c7b08753cd25a1b76d85257a1af41c4dbe8"
+    },
+    {
+      "test": "/ Final section 4 all presentation roles/states at 1440px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-4-1440-original.png",
+      "sha256": "8248fef95d74f4da816e4abfaac1487b29bf28e6e54f5fd82c7b6148ff318165"
+    },
+    {
+      "test": "/ Final section 5 all presentation roles/states at 1440px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-5-1440-current.png",
+      "sha256": "255feefb4e9ca5a11a5847bbd87909909a6f08a6f0f4a213e2cac76b16d9823b"
+    },
+    {
+      "test": "/ Final section 5 all presentation roles/states at 1440px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-5-1440-original.png",
+      "sha256": "76d0f16a350510b380de9bc0a1a2032116aa193cd2184d33e1282cecd8cda566"
+    },
+    {
+      "test": "/ Final section 6 all presentation roles/states at 1440px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-6-1440-current.png",
+      "sha256": "7f1b52491df971b75e00b0912d60708f6f3a0e777fe10bd698fe5513fae4b6f8"
+    },
+    {
+      "test": "/ Final section 6 all presentation roles/states at 1440px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-6-1440-original.png",
+      "sha256": "336ca6922a463266963b1f6c8f0076dc159911d702f625df379f5f0f353bff08"
+    },
+    {
+      "test": "/ Final section 7 all presentation roles/states at 1440px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-7-1440-current.png",
+      "sha256": "9f485bbe07a631d9a9c96d01ca1a931f3a36ee9d32a24a24446e5eee19e01e85"
+    },
+    {
+      "test": "/ Final section 7 all presentation roles/states at 1440px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-7-1440-original.png",
+      "sha256": "49a1569dc5240c41d8b31c6961f6d10299593d5065e600e6deddea74e2db57f7"
+    },
+    {
+      "test": "/ Final section 8 all presentation roles/states at 1440px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-8-1440-current.png",
+      "sha256": "687113910662390553083a7352bcb6fa8ced4fceb93721bec3100736b89b5b7c"
+    },
+    {
+      "test": "/ Final section 8 all presentation roles/states at 1440px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-8-1440-original.png",
+      "sha256": "64a6a64b5fa43164433af6b0f517a8b7913f9a5a9f59836d106d16e545297a6a"
+    },
+    {
+      "test": "/ Final section 9 all presentation roles/states at 1440px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-9-1440-current.png",
+      "sha256": "1decb6ebe0be527ec23de3a4a84bd0ed10df14cc4480f92cd97aaf5b9f6af960"
+    },
+    {
+      "test": "/ Final section 9 all presentation roles/states at 1440px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-9-1440-original.png",
+      "sha256": "1decb6ebe0be527ec23de3a4a84bd0ed10df14cc4480f92cd97aaf5b9f6af960"
+    },
+    {
+      "test": "/ Final section 0 all presentation roles/states at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-0-780-current.png",
+      "sha256": "f2a404a0127fa5cf215f9d9b631d48f9413b1e9b083678c38a8627d0efde91f1"
+    },
+    {
+      "test": "/ Final section 0 all presentation roles/states at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-0-780-original.png",
+      "sha256": "c4aa4cb7e1a8ba3006c3556e4f9f920a7142cd3562973b5d873a31d92e50d9dc"
+    },
+    {
+      "test": "/ Final section 1 all presentation roles/states at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-1-780-current.png",
+      "sha256": "71e1ec2f3f3896a64a77ea0550ac75ed15d10824373085bc34e058b1de0230f6"
+    },
+    {
+      "test": "/ Final section 1 all presentation roles/states at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-1-780-original.png",
+      "sha256": "f78807aef992e7955fc91fa0a39fa7e7f3b0a79007232344f1beba9088d95277"
+    },
+    {
+      "test": "/ Final section 2 all presentation roles/states at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-2-780-current.png",
+      "sha256": "6cd1dceaeed0d4f5276ef54aaca801d048d0d2ffeda88097a6f553e1f8109920"
+    },
+    {
+      "test": "/ Final section 2 all presentation roles/states at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-2-780-original.png",
+      "sha256": "3cc5ce80f7cbde8ac9cbac4c4edfa88200ce52764c8217da6bb6abd7d0554744"
+    },
+    {
+      "test": "/ Final section 3 all presentation roles/states at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-3-780-current.png",
+      "sha256": "a6b918d01341697b5237a0ecdc6e37df68f6761af2662ac30b89a2e467b4c063"
+    },
+    {
+      "test": "/ Final section 3 all presentation roles/states at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-3-780-original.png",
+      "sha256": "00858745eaa7192f3910d0b877df4fb630b10d6437855026d98ea9a2ec959329"
+    },
+    {
+      "test": "/ Final section 4 all presentation roles/states at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-4-780-current.png",
+      "sha256": "23e21327a6eef7fcde6c70cb96844bae7c8d3bc17e1e4c55122e1e55e396d0e9"
+    },
+    {
+      "test": "/ Final section 4 all presentation roles/states at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-4-780-original.png",
+      "sha256": "e0758f8cc6194cbe88feee0a9f730107282c89c2032671cfe1b6b05dd5dc8826"
+    },
+    {
+      "test": "/ Final section 5 all presentation roles/states at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-5-780-current.png",
+      "sha256": "c714ab56c6bc5ca570d2c17553c503d535488263a6506cf6f965a5cfb5bc72b2"
+    },
+    {
+      "test": "/ Final section 5 all presentation roles/states at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-5-780-original.png",
+      "sha256": "6885d73c3261d189c79a95e567ed3b0f1d58bcff9f65adce6e0fd6338f1ff0ad"
+    },
+    {
+      "test": "/ Final section 6 all presentation roles/states at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-6-780-current.png",
+      "sha256": "3de2cc87796defbdc322b0c11de2619b696f95dee4406bd17ace8276c70986b0"
+    },
+    {
+      "test": "/ Final section 6 all presentation roles/states at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-6-780-original.png",
+      "sha256": "457ad4827cf26dbf756930033bc7175d2f579045c57c4499dee4f8e7315912df"
+    },
+    {
+      "test": "/ Final section 7 all presentation roles/states at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-7-780-current.png",
+      "sha256": "99fc34987b1c559336f28ef06c7a8308fad4562e3499089f7bfab278f2fab4f9"
+    },
+    {
+      "test": "/ Final section 7 all presentation roles/states at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-7-780-original.png",
+      "sha256": "621efef8a2763c38f191bc1b14c848cb9716ed33359d2c0ebadf2a19948e2eb2"
+    },
+    {
+      "test": "/ Final section 8 all presentation roles/states at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-8-780-current.png",
+      "sha256": "a593c4d4f4954ac6119a81b293db01b9e87fbc36c2a7bd28d2df29e5bd313439"
+    },
+    {
+      "test": "/ Final section 8 all presentation roles/states at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-8-780-original.png",
+      "sha256": "fb397b2d723f526f9ba5610cce69132222cb76934a82248cc0c3e2ee6b74d750"
+    },
+    {
+      "test": "/ Final section 9 all presentation roles/states at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-9-780-current.png",
+      "sha256": "d4d6f833918010c101adcc07bbf64bd3a7e1d8d4d71f3a97a158aec720f1dd05"
+    },
+    {
+      "test": "/ Final section 9 all presentation roles/states at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-9-780-original.png",
+      "sha256": "d4d6f833918010c101adcc07bbf64bd3a7e1d8d4d71f3a97a158aec720f1dd05"
+    },
+    {
+      "test": "/ Final section 0 all presentation roles/states at 390px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-0-390-current.png",
+      "sha256": "17a99303f8faece901217335ff404ce5f165d35c37c3a2015c7c0fb5a4f41c79"
+    },
+    {
+      "test": "/ Final section 0 all presentation roles/states at 390px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-0-390-original.png",
+      "sha256": "03afe58f159e0ba6d8c95afcce53bcb26d54c01a16f54e0c407f7d9f2677737d"
+    },
+    {
+      "test": "/ Final section 1 all presentation roles/states at 390px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-1-390-current.png",
+      "sha256": "b736b6e0c6ba53baea698f5f8b68db645a464c1dd6a3e96da82bde7f80097603"
+    },
+    {
+      "test": "/ Final section 1 all presentation roles/states at 390px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-1-390-original.png",
+      "sha256": "95ee2b74ad99edbe63a50386059e5a56298b483d26ec3687e817d65d7c6333cb"
+    },
+    {
+      "test": "/ Final section 2 all presentation roles/states at 390px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-2-390-current.png",
+      "sha256": "75ea9f10a1243cfbd99acfce45b72f12ed4043c36528c4aeb857475c62a6513e"
+    },
+    {
+      "test": "/ Final section 2 all presentation roles/states at 390px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-2-390-original.png",
+      "sha256": "9583031c579a6180cedd9668b113cbe4692d317a43523582614537b6b67bcaa2"
+    },
+    {
+      "test": "/ Final section 3 all presentation roles/states at 390px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-3-390-current.png",
+      "sha256": "9b141d62f1d8c286245cbd742940b3e4671adec41b2165fad7f5e2b1cc8301da"
+    },
+    {
+      "test": "/ Final section 3 all presentation roles/states at 390px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-3-390-original.png",
+      "sha256": "f831d31486332b5ac0f3da5903534f4051404e708934407c5e8c882bbaae7504"
+    },
+    {
+      "test": "/ Final section 4 all presentation roles/states at 390px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-4-390-current.png",
+      "sha256": "7e12b8d53603c71c0d4cf228c9dd06bc7675e14f76e51aa779ff64edf653704a"
+    },
+    {
+      "test": "/ Final section 4 all presentation roles/states at 390px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-4-390-original.png",
+      "sha256": "6c02e91581b2c1079f227bd3d3793cfcef3c87963921898373c6aa09ee38beb6"
+    },
+    {
+      "test": "/ Final section 5 all presentation roles/states at 390px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-5-390-current.png",
+      "sha256": "8e65865a4cf078ea306dfc7a302baf1975ba07bfd54a9be04f0c7994458a67f0"
+    },
+    {
+      "test": "/ Final section 5 all presentation roles/states at 390px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-5-390-original.png",
+      "sha256": "9b2a644fbb0963e39d423030b9945b3cd572e26ca4db0c51588fc5956df87776"
+    },
+    {
+      "test": "/ Final section 6 all presentation roles/states at 390px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-6-390-current.png",
+      "sha256": "bb7d9971d8ffd9a1657eeb926ee8cf2b72628fe070c4b7500d7492fd61e539af"
+    },
+    {
+      "test": "/ Final section 6 all presentation roles/states at 390px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-6-390-original.png",
+      "sha256": "9287bccf254d70525d296b088348aff9da28b1b27f92746ca1852567abd2cc78"
+    },
+    {
+      "test": "/ Final section 7 all presentation roles/states at 390px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-7-390-current.png",
+      "sha256": "c7dedb965a737691beb936ec9b58925433461ed7e7431a80cd123b373a48f0e7"
+    },
+    {
+      "test": "/ Final section 7 all presentation roles/states at 390px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-7-390-original.png",
+      "sha256": "11e7e6d4fb256dd2897b0dcc11da6103a9a69cee7f1e50de15a780f940c9a0bb"
+    },
+    {
+      "test": "/ Final section 8 all presentation roles/states at 390px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-8-390-current.png",
+      "sha256": "99cbbd5173b44ed0076780a94f652f47727d6874642d080b0282f1d0aa7f7726"
+    },
+    {
+      "test": "/ Final section 8 all presentation roles/states at 390px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-8-390-original.png",
+      "sha256": "18ac523499fcea3b2ca10a0fd7e085d3b411af4321c5ff8149c1866346cd971a"
+    },
+    {
+      "test": "/ Final section 9 all presentation roles/states at 390px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-9-390-current.png",
+      "sha256": "8c11b7f4ebd91c592a44fd0ab5f5976848477a9e712da48c6d39e2091f2658b5"
+    },
+    {
+      "test": "/ Final section 9 all presentation roles/states at 390px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-section-9-390-original.png",
+      "sha256": "8c11b7f4ebd91c592a44fd0ab5f5976848477a9e712da48c6d39e2091f2658b5"
+    },
+    {
+      "test": "/ Final section 0 all presentation roles/states at 1440px",
+      "project": "firefox",
+      "status": "passed",
+      "path": "firefox-root-section-0-1440-current.png",
+      "sha256": "4a7c03ae5203dab81a2e90a7b72e5d364482c15bf6701dd055047f52b351acfd"
+    },
+    {
+      "test": "/ Final section 0 all presentation roles/states at 1440px",
+      "project": "firefox",
+      "status": "passed",
+      "path": "firefox-root-section-0-1440-original.png",
+      "sha256": "a4320b1f47367e697c24145bd4fbd44db0e6b63fc9612973e9249a1b9f006fda"
+    },
+    {
+      "test": "/ Final section 1 all presentation roles/states at 1440px",
+      "project": "firefox",
+      "status": "passed",
+      "path": "firefox-root-section-1-1440-current.png",
+      "sha256": "c31be3fe7049d1cbcdfa6a49223ae6bb4edef8bc590017e827ef2764f0f073c8"
+    },
+    {
+      "test": "/ Final section 1 all presentation roles/states at 1440px",
+      "project": "firefox",
+      "status": "passed",
+      "path": "firefox-root-section-1-1440-original.png",
+      "sha256": "ffe06a038049831a18d5a02ac6f7790962842841562bdf9d97f19e7f32999c57"
+    },
+    {
+      "test": "/ Final section 2 all presentation roles/states at 1440px",
+      "project": "firefox",
+      "status": "passed",
+      "path": "firefox-root-section-2-1440-current.png",
+      "sha256": "fb8b57a195cea87c4905dd91ca6170e3b506e14e15b0141c3b5aa08c9fb41b31"
+    },
+    {
+      "test": "/ Final section 2 all presentation roles/states at 1440px",
+      "project": "firefox",
+      "status": "passed",
+      "path": "firefox-root-section-2-1440-original.png",
+      "sha256": "d40f8204a1c685b276e9d019de4e3c082d5bcc97518c07e2a193a4ea0b6fa263"
+    },
+    {
+      "test": "/ Final section 3 all presentation roles/states at 1440px",
+      "project": "firefox",
+      "status": "passed",
+      "path": "firefox-root-section-3-1440-current.png",
+      "sha256": "77520b64752ad16faf0787bffb00971f137c570823427a7c6d6adc878f9c4491"
+    },
+    {
+      "test": "/ Final section 3 all presentation roles/states at 1440px",
+      "project": "firefox",
+      "status": "passed",
+      "path": "firefox-root-section-3-1440-original.png",
+      "sha256": "f6c6fd0fb18ccec6bc38d89e5c3b72db4858ab4792325b7d7b8f42138e8a923b"
+    },
+    {
+      "test": "/ Final section 4 all presentation roles/states at 1440px",
+      "project": "firefox",
+      "status": "passed",
+      "path": "firefox-root-section-4-1440-current.png",
+      "sha256": "fbbd5e4c140b880459a57770712b23a729eedec89c14a65e1ba24e8623072361"
+    },
+    {
+      "test": "/ Final section 4 all presentation roles/states at 1440px",
+      "project": "firefox",
+      "status": "passed",
+      "path": "firefox-root-section-4-1440-original.png",
+      "sha256": "a1eb509ea87e85680dc1bd01bd984222efca221aa4f19a07cc469bbb5448a1a8"
+    },
+    {
+      "test": "/ Final section 5 all presentation roles/states at 1440px",
+      "project": "firefox",
+      "status": "passed",
+      "path": "firefox-root-section-5-1440-current.png",
+      "sha256": "f6c7d727ae08e5294d7065612bc4fcd15be99da1e1bb60c2a062ef455147726e"
+    },
+    {
+      "test": "/ Final section 5 all presentation roles/states at 1440px",
+      "project": "firefox",
+      "status": "passed",
+      "path": "firefox-root-section-5-1440-original.png",
+      "sha256": "c65320ca12db7487a8b8b692397d738fe771e5d7188133626195a65b5f0d6506"
+    },
+    {
+      "test": "/ Final section 6 all presentation roles/states at 1440px",
+      "project": "firefox",
+      "status": "passed",
+      "path": "firefox-root-section-6-1440-current.png",
+      "sha256": "860f0d6673ac8675488e5403ebd29076bacb7fb0b52f04233ed19354bed2c94d"
+    },
+    {
+      "test": "/ Final section 6 all presentation roles/states at 1440px",
+      "project": "firefox",
+      "status": "passed",
+      "path": "firefox-root-section-6-1440-original.png",
+      "sha256": "5fd047d5317ddac0415d374b5c6414e155095abb1c3fa87c4bb04d0d3d72c2ed"
+    },
+    {
+      "test": "/ Final section 7 all presentation roles/states at 1440px",
+      "project": "firefox",
+      "status": "passed",
+      "path": "firefox-root-section-7-1440-current.png",
+      "sha256": "5b1360c9408001d2183eff529791fd321715b8f78b5d05720b719abb2bfacb97"
+    },
+    {
+      "test": "/ Final section 7 all presentation roles/states at 1440px",
+      "project": "firefox",
+      "status": "passed",
+      "path": "firefox-root-section-7-1440-original.png",
+      "sha256": "3fb5241d0243591ba24b3161c0a0500c47815f8d15f103b9af73320dbeeee3cc"
+    },
+    {
+      "test": "/ Final section 8 all presentation roles/states at 1440px",
+      "project": "firefox",
+      "status": "passed",
+      "path": "firefox-root-section-8-1440-current.png",
+      "sha256": "d06a97c13d677898cacaf0da62357bee9a9ccf54296c0b48607246e38b8cbf5f"
+    },
+    {
+      "test": "/ Final section 8 all presentation roles/states at 1440px",
+      "project": "firefox",
+      "status": "passed",
+      "path": "firefox-root-section-8-1440-original.png",
+      "sha256": "d59985ab3f9ad6172715ea5c6443078976a7583815b6295f4f646d3e18544052"
+    },
+    {
+      "test": "/ Final section 9 all presentation roles/states at 1440px",
+      "project": "firefox",
+      "status": "passed",
+      "path": "firefox-root-section-9-1440-current.png",
+      "sha256": "2d1efb150eeeb82a2a5945d5c6c8bf0d7a33416a11743e87eb0e49a6f7459818"
+    },
+    {
+      "test": "/ Final section 9 all presentation roles/states at 1440px",
+      "project": "firefox",
+      "status": "passed",
+      "path": "firefox-root-section-9-1440-original.png",
+      "sha256": "2d1efb150eeeb82a2a5945d5c6c8bf0d7a33416a11743e87eb0e49a6f7459818"
+    },
+    {
+      "test": "/discussion-skills-lab/ Final section 0 all presentation roles/states at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-section-0-780-current.png",
+      "sha256": "ab9f4532bc7445de9adc157e9dc4d1f5e98a987ead1553ddcb0ddbd9d22a3afd"
+    },
+    {
+      "test": "/discussion-skills-lab/ Final section 0 all presentation roles/states at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-section-0-780-original.png",
+      "sha256": "b55ba61771711942d5199e59f8279b899a01c49ed52ce17ac71a9aedc3d1b3c3"
+    },
+    {
+      "test": "/discussion-skills-lab/ Final section 1 all presentation roles/states at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-section-1-780-current.png",
+      "sha256": "691480bfe66c60a4f4c89da8c70420dc461546ed1a307efb80004bab8cc23089"
+    },
+    {
+      "test": "/discussion-skills-lab/ Final section 1 all presentation roles/states at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-section-1-780-original.png",
+      "sha256": "24734fbbe2953ae60882cb7c6479a7c269b62576252be7d64c5185b6bd91d67f"
+    },
+    {
+      "test": "/discussion-skills-lab/ Final section 2 all presentation roles/states at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-section-2-780-current.png",
+      "sha256": "0ec2ba994cdb970774ca4dbee83927faf40eff15409a21d3636a8246ba789bb0"
+    },
+    {
+      "test": "/discussion-skills-lab/ Final section 2 all presentation roles/states at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-section-2-780-original.png",
+      "sha256": "767b37ea489653f4fa2adae32d26df21746023c6e9db8dc0d0286b9e9290f096"
+    },
+    {
+      "test": "/discussion-skills-lab/ Final section 3 all presentation roles/states at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-section-3-780-current.png",
+      "sha256": "26bfb6415ef370986f40757ea29c62c7ac70632d88bb355c77eb29d4391baf40"
+    },
+    {
+      "test": "/discussion-skills-lab/ Final section 3 all presentation roles/states at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-section-3-780-original.png",
+      "sha256": "cdc23463f6f2c78e8a0a97cc755e3aedc000c488a126fba61e68590687d9daa4"
+    },
+    {
+      "test": "/discussion-skills-lab/ Final section 4 all presentation roles/states at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-section-4-780-current.png",
+      "sha256": "7f54dba0fa26ce7befab99c3ad40f0d5915a27e4e1e04d8233236d9535995dac"
+    },
+    {
+      "test": "/discussion-skills-lab/ Final section 4 all presentation roles/states at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-section-4-780-original.png",
+      "sha256": "328b5b971c9b075cb91496aabb124f9ce420977ca4288d32e19b66eea3cb29b8"
+    },
+    {
+      "test": "/discussion-skills-lab/ Final section 5 all presentation roles/states at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-section-5-780-current.png",
+      "sha256": "3fc220c7d0d0d1d0c0cc0bb0683ff4fce31cf3fac8b2a6b1218e5ad86a28a386"
+    },
+    {
+      "test": "/discussion-skills-lab/ Final section 5 all presentation roles/states at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-section-5-780-original.png",
+      "sha256": "38c8f49582ce2d5fa929b921f085b8cac7310c074363f7b9a0a1664a449c2ca9"
+    },
+    {
+      "test": "/discussion-skills-lab/ Final section 6 all presentation roles/states at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-section-6-780-current.png",
+      "sha256": "c54405941d5bec332703d2a737f45b351f35942a8bcb0b313acb4db17e48dae5"
+    },
+    {
+      "test": "/discussion-skills-lab/ Final section 6 all presentation roles/states at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-section-6-780-original.png",
+      "sha256": "db90702e6d43293dae2559b92fa8e1932c220b37dbfb848154ddce60bb88ce36"
+    },
+    {
+      "test": "/discussion-skills-lab/ Final section 7 all presentation roles/states at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-section-7-780-current.png",
+      "sha256": "218bc0fd09076ee911896e43ac49e8a0427d8ff0ed644cdc9f9b92ae4a1ca04b"
+    },
+    {
+      "test": "/discussion-skills-lab/ Final section 7 all presentation roles/states at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-section-7-780-original.png",
+      "sha256": "5448a1b85551e4147da087e1daffbfbc5cfcdaa8314898455826a68366b184c7"
+    },
+    {
+      "test": "/discussion-skills-lab/ Final section 8 all presentation roles/states at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-section-8-780-current.png",
+      "sha256": "911187ae2f2b4c2374af847e77459630239d1966d44f2fe6bc82416ff0b118c2"
+    },
+    {
+      "test": "/discussion-skills-lab/ Final section 8 all presentation roles/states at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-section-8-780-original.png",
+      "sha256": "6d73990399c8a0a130928efe96f015650bd9b17e304085a41b6f45b8541b9a17"
+    },
+    {
+      "test": "/discussion-skills-lab/ Final section 9 all presentation roles/states at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-section-9-780-current.png",
+      "sha256": "32146940fd5f60537cbf0db18865309cf26b26c826a24de812f29269ab3f46ca"
+    },
+    {
+      "test": "/discussion-skills-lab/ Final section 9 all presentation roles/states at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-section-9-780-original.png",
+      "sha256": "32146940fd5f60537cbf0db18865309cf26b26c826a24de812f29269ab3f46ca"
+    },
+    {
+      "test": "/ Final section 0 all presentation roles/states at 390px",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-root-section-0-390-current.png",
+      "sha256": "d3c587391d877c51cb790e20a938bcfcad1ecb54554532e600ee0c2f5537b684"
+    },
+    {
+      "test": "/ Final section 0 all presentation roles/states at 390px",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-root-section-0-390-original.png",
+      "sha256": "84efcea3f851a8e558a1a689df29cfcfef4aab3ebe01c0f5e7ffcc647e1328dc"
+    },
+    {
+      "test": "/ Final section 1 all presentation roles/states at 390px",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-root-section-1-390-current.png",
+      "sha256": "b736b6e0c6ba53baea698f5f8b68db645a464c1dd6a3e96da82bde7f80097603"
+    },
+    {
+      "test": "/ Final section 1 all presentation roles/states at 390px",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-root-section-1-390-original.png",
+      "sha256": "d18989aa7bbbb11a5f61da165ff007c789646dcc7a00c5cf717c3ab57fbbbe0b"
+    },
+    {
+      "test": "/ Final section 2 all presentation roles/states at 390px",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-root-section-2-390-current.png",
+      "sha256": "9b446e5cc00baca01a54aadafe415cb6bd36ea05813ed2e32ef9ba06b881228d"
+    },
+    {
+      "test": "/ Final section 2 all presentation roles/states at 390px",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-root-section-2-390-original.png",
+      "sha256": "c99433a476dd1940876a58253cb0acdb67d76cfddeb4542039c87b1780a6c0ee"
+    },
+    {
+      "test": "/ Final section 3 all presentation roles/states at 390px",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-root-section-3-390-current.png",
+      "sha256": "2a01db40f221b15fa69bc83d32e32fa45eebc4929aedfaa72571f0fe99e48a79"
+    },
+    {
+      "test": "/ Final section 3 all presentation roles/states at 390px",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-root-section-3-390-original.png",
+      "sha256": "b94b8f2edb845f405c72b2ad4cdff3b49776be894883db592d74621c31d69c0d"
+    },
+    {
+      "test": "/ Final section 4 all presentation roles/states at 390px",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-root-section-4-390-current.png",
+      "sha256": "7e12b8d53603c71c0d4cf228c9dd06bc7675e14f76e51aa779ff64edf653704a"
+    },
+    {
+      "test": "/ Final section 4 all presentation roles/states at 390px",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-root-section-4-390-original.png",
+      "sha256": "d8da6e6bbc7f6fcdca4c451ce44b7df6797ce7517ad0af58da77b6e51cd28cb8"
+    },
+    {
+      "test": "/ Final section 5 all presentation roles/states at 390px",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-root-section-5-390-current.png",
+      "sha256": "8e65865a4cf078ea306dfc7a302baf1975ba07bfd54a9be04f0c7994458a67f0"
+    },
+    {
+      "test": "/ Final section 5 all presentation roles/states at 390px",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-root-section-5-390-original.png",
+      "sha256": "093d8f7bed81197b32b71ea63c7346d61fa1ac396da8df6d4cfb501a24087de7"
+    },
+    {
+      "test": "/ Final section 6 all presentation roles/states at 390px",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-root-section-6-390-current.png",
+      "sha256": "e4d668983cce162d261d3adfe96edfdc2bef98b3e67e7a1a7d227632043ae23c"
+    },
+    {
+      "test": "/ Final section 6 all presentation roles/states at 390px",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-root-section-6-390-original.png",
+      "sha256": "2edab5581a00ffe34a3202a36a3691a2b8ab87eace57372fddd593b55d3305d0"
+    },
+    {
+      "test": "/ Final section 7 all presentation roles/states at 390px",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-root-section-7-390-current.png",
+      "sha256": "7891893e56080e03624d67e488fc866b494d44f0cab393d4f0110b9efeb8a6a1"
+    },
+    {
+      "test": "/ Final section 7 all presentation roles/states at 390px",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-root-section-7-390-original.png",
+      "sha256": "4560a70ae4a85f78a08edd68c9efcae4f79073807698f2e26c4df7b24fa01797"
+    },
+    {
+      "test": "/ Final section 8 all presentation roles/states at 390px",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-root-section-8-390-current.png",
+      "sha256": "009419b35c720ff26451d5e0261cdeb14821dd7121897d01c92aac56e31a5c10"
+    },
+    {
+      "test": "/ Final section 8 all presentation roles/states at 390px",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-root-section-8-390-original.png",
+      "sha256": "68dc427f5140f09e9dfb199a5077eaeac08690d856d1e529816dd1d1dabcfe9b"
+    },
+    {
+      "test": "/ Final section 9 all presentation roles/states at 390px",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-root-section-9-390-current.png",
+      "sha256": "8ba6331fcdd6e1d7ebe6affca80a63f776163c3cd586f697840acafa86d536d7"
+    },
+    {
+      "test": "/ Final section 9 all presentation roles/states at 390px",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-root-section-9-390-original.png",
+      "sha256": "8ba6331fcdd6e1d7ebe6affca80a63f776163c3cd586f697840acafa86d536d7"
+    },
+    {
+      "test": "root: Middle reference alone prints from ordinary/fresh and reference views",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-124-Middle ordinary reference PDF.pdf",
+      "sha256": "379dd8a89a32af63b1c712b4d7ec55bf58f7b9dfbe90761ca3c24287a0b6d9f2"
+    },
+    {
+      "test": "root: Middle reference alone prints from ordinary/fresh and reference views",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-125-Middle reference reference PDF.pdf",
+      "sha256": "f08e56f18ae3038d9d081ab0134c853d095a7b5c48bca24b3f80d5976aa563d6"
+    },
+    {
+      "test": "/discussion-skills-lab: Middle reference alone prints from ordinary/fresh and reference views",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-126-Middle ordinary reference PDF.pdf",
+      "sha256": "2aa97d2be982116d9e756d63f3375063c2dc92428ed855c612210dd1a755b6f3"
+    },
+    {
+      "test": "/discussion-skills-lab: Middle reference alone prints from ordinary/fresh and reference views",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-127-Middle reference reference PDF.pdf",
+      "sha256": "3597e4f0d971519aaa59e443df7889fea43f960898920083ac4a407146248dd1"
+    },
+    {
+      "test": "root: Middle reference alone prints from ordinary/fresh and reference views",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-128-Middle ordinary reference PDF.pdf",
+      "sha256": "10158349af9a5bac246fd398b4dc0eec0be229ce0102aa7d00dc619df84a4bbd"
+    },
+    {
+      "test": "root: Middle reference alone prints from ordinary/fresh and reference views",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-129-Middle reference reference PDF.pdf",
+      "sha256": "5e7868f9a4e4b35872b0f7a3130f5cf7cfd3eaffdbe5d69dee082f644a52abcf"
+    },
+    {
+      "test": "/discussion-skills-lab: Middle reference alone prints from ordinary/fresh and reference views",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-130-Middle ordinary reference PDF.pdf",
+      "sha256": "18b868f3304acc55315ae5b00471c65247e76e2e3aae3073328ec7a23ebd1f85"
+    },
+    {
+      "test": "/discussion-skills-lab: Middle reference alone prints from ordinary/fresh and reference views",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-131-Middle reference reference PDF.pdf",
+      "sha256": "9bac4f8804f841d0f1fe128d8cde18a7bf156423ad45cfd0807df914a9f3233b"
+    },
+    {
+      "test": "/ Opening extracted scope/order, exact restored state and replay presentation",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-132-original PDF.pdf",
+      "sha256": "06c93e92b919cc377a6e29be9314cb31512e2597f86340168b9391563aa7822e"
+    },
+    {
+      "test": "/ Opening extracted scope/order, exact restored state and replay presentation",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-133-extracted PDF.pdf",
+      "sha256": "0a82284fdd293e8c7346f385b9aaffb6fa0d480a4d69bb9b2edc42d9fd97273d"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening extracted scope/order, exact restored state and replay presentation",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-134-original PDF.pdf",
+      "sha256": "4507d1d865d68dd8eaa9318b7233ad1a3fc6b9f4e45496423b86c9113c074525"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening extracted scope/order, exact restored state and replay presentation",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-135-extracted PDF.pdf",
+      "sha256": "aad076400736b5c247b0fd69520b97a607066e39db40c9f4121c0d636388de1e"
+    },
+    {
+      "test": "/ Opening extracted scope/order, exact restored state and replay presentation",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-136-original PDF.pdf",
+      "sha256": "62854131b1860ecd4b3fde409202c2c2f6b63e8f425df318c248b697d7ce4495"
+    },
+    {
+      "test": "/ Opening extracted scope/order, exact restored state and replay presentation",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-137-extracted PDF.pdf",
+      "sha256": "f815488fa51436acd5a78fae2e6f815914b57bcc3518f8d38fb38b683d843e96"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening extracted scope/order, exact restored state and replay presentation",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-138-original PDF.pdf",
+      "sha256": "f815488fa51436acd5a78fae2e6f815914b57bcc3518f8d38fb38b683d843e96"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening extracted scope/order, exact restored state and replay presentation",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-139-extracted PDF.pdf",
+      "sha256": "a1767804390fef8360ce915b94f3cfe86aea96a51381dc00d902287dce472d53"
+    },
+    {
+      "test": "/opening prints reference only even from ordinary lesson page",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-140-reference PDF.pdf",
+      "sha256": "e96dd08160837c8592c72eb59c627112e85b97959c3b2268f444e563bcffd8c8"
+    },
+    {
+      "test": "/middle prints reference only even from ordinary lesson page",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-141-reference PDF.pdf",
+      "sha256": "8cb99b32f4123425848713f33ac8e6fba48de7a858c53d1c5c370b0760616587"
+    },
+    {
+      "test": "/final prints reference only even from ordinary lesson page",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-142-reference PDF.pdf",
+      "sha256": "bf0e184dcfaafff85701448080d5a50c816e74566718111800e34b9e844a4503"
+    },
+    {
+      "test": "/final prints reference only even from ordinary lesson page",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-143-Final PDF from reference view.pdf",
+      "sha256": "bf0e184dcfaafff85701448080d5a50c816e74566718111800e34b9e844a4503"
+    },
+    {
+      "test": "/discussion-skills-lab/opening prints reference only even from ordinary lesson page",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-144-reference PDF.pdf",
+      "sha256": "be4fffa09c1f076a279459b55cf250069f31b05ddd133387eeeed4b04644b842"
+    },
+    {
+      "test": "/discussion-skills-lab/middle prints reference only even from ordinary lesson page",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-145-reference PDF.pdf",
+      "sha256": "cea783e2802188b2d0b233498ffee111782ac3fc43377cd714017533b586d02d"
+    },
+    {
+      "test": "/discussion-skills-lab/final prints reference only even from ordinary lesson page",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-146-reference PDF.pdf",
+      "sha256": "2a2c72f6decd8519ff252af4f0e26f39d70eafcb1214894ac0966451ee7e17be"
+    },
+    {
+      "test": "/discussion-skills-lab/final prints reference only even from ordinary lesson page",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-147-Final PDF from reference view.pdf",
+      "sha256": "2a2c72f6decd8519ff252af4f0e26f39d70eafcb1214894ac0966451ee7e17be"
+    },
+    {
+      "test": "/opening prints reference only even from ordinary lesson page",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-148-reference PDF.pdf",
+      "sha256": "5cf23c9ebef1dba46bc5b17eb59ebe886a195e5dedfddec53e8eff044015c59f"
+    },
+    {
+      "test": "/middle prints reference only even from ordinary lesson page",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-149-reference PDF.pdf",
+      "sha256": "117071e6477dd6f5759e18e429ab07a6fe04fe0a5747b64554910370f73e8e60"
+    },
+    {
+      "test": "/final prints reference only even from ordinary lesson page",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-150-reference PDF.pdf",
+      "sha256": "2cd15d348c65abeb3a7e6abf050f5c4cc13f300e4c0c24fc6db78cc02dab790a"
+    },
+    {
+      "test": "/final prints reference only even from ordinary lesson page",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-151-Final PDF from reference view.pdf",
+      "sha256": "8b223a55f245a6bd36d0a30112de063d0732e32569de61a699b698f9d0b87b25"
+    },
+    {
+      "test": "/discussion-skills-lab/opening prints reference only even from ordinary lesson page",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-152-reference PDF.pdf",
+      "sha256": "9b151f439c63ae6aae39e149c90efd50699c5191d7c431ebd4e1e645025a7c41"
+    },
+    {
+      "test": "/discussion-skills-lab/middle prints reference only even from ordinary lesson page",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-153-reference PDF.pdf",
+      "sha256": "35a29026fbdc00401cf530556dee484d26620166ce3774208d82b8cbcd2867d5"
+    },
+    {
+      "test": "/discussion-skills-lab/final prints reference only even from ordinary lesson page",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-154-reference PDF.pdf",
+      "sha256": "2089cb747da01cf46e7f03649a9711294b890a5f8d58f072100af80088b1cb2c"
+    },
+    {
+      "test": "/discussion-skills-lab/final prints reference only even from ordinary lesson page",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-155-Final PDF from reference view.pdf",
+      "sha256": "1b79156c04b76b6c778a5901031950e831ba8138e6ca8fa5579fad8590e2cf59"
+    }
+  ]
+}

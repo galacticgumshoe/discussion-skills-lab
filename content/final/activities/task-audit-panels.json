@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "task-audit-panels",
+  "type": "expandables",
+  "profile": "standard",
+  "data": {
+    "items": [
+      {
+        "id": "consensus-question",
+        "title": "Revisit the consensus question",
+        "bodySource": "bodies/consensus-question-panel.md"
+      },
+      {
+        "id": "task",
+        "title": "Revisit the task",
+        "bodySource": "bodies/task-panel.md"
+      },
+      {
+        "id": "what-how",
+        "title": "Check the WHAT and HOW",
+        "bodySource": "bodies/what-how-panel.md"
+      }
+    ]
+  }
+}

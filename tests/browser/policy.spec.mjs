@@ -79,7 +79,7 @@ test('Repeated exploration is not unique credit, including generated detail reve
   await navigate(page, 2);
   for (let i = 0; i < 5; i++) {
     await page.locator('#view-2 summary').first().click();
-    await expect(page.locator('#s2-reveal')).toBeHidden();
+    await expect(page.locator('[data-reveal-id="s2-reveal"]')).toBeHidden();
   }
 });
 
@@ -101,16 +101,16 @@ test('Middle question navigation wraps/directly reviews and now saves every curs
 test('Final previous/next does not wrap, checks/models restore, edits cannot revoke completion', async ({ page }) => {
   await load(page, 'final', observed('final', 'completed'));
   await navigate(page, 2);
-  await expect(page.locator('#builder-model')).toBeVisible();
-  for (const input of await page.locator('#checklist-2 input').all()) await expect(input).toBeChecked();
-  await page.locator('#checklist-2 input').first().uncheck();
-  await page.locator('#build-1').fill('');
+  await expect(page.locator('[data-activity-id="synthesis-writing"] .dsl-writing-model')).toBeVisible();
+  for (const input of await page.locator('[data-activity-id="synthesis-checklist"] input').all()) await expect(input).toBeChecked();
+  await page.locator('[data-activity-id="synthesis-checklist"] input').first().uncheck();
+  await page.locator('[data-field-id="synthesis-contributors"]').fill('');
   await expect(page.locator('#next-section')).toBeEnabled();
   await page.reload(); await ready(page); await navigate(page, 2);
   await expect(page.locator('#next-section')).toBeEnabled();
-  await expect(page.locator('#build-1')).toHaveValue('');
+  await expect(page.locator('[data-field-id="synthesis-contributors"]')).toHaveValue('');
   await navigate(page, 8);
-  await expect(page.locator('#quiz-8 button.btn.primary')).toHaveCount(0);
+  await expect(page.locator('[data-activity-id="knowledge-check"] .dsl-question-next')).toBeHidden();
   await page.getByRole('button', { name: '← Previous question', exact: true }).click();
-  await expect(page.locator('#quiz-8 .eyebrow')).toContainText('Question 4 of 5');
+  await expect(page.locator('[data-activity-id="knowledge-check"] .dsl-question-counter')).toContainText('Question 4 of 5');
 });

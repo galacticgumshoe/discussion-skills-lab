@@ -31,7 +31,9 @@ export function mountWritingActivity(root, { data, state, onChange, profile = 'd
     assemble = dom.node('button', 'dsl-assemble', data.assembly.label); assemble.type = 'submit'; form.append(assemble);
   }
   dom.append(form);
-  const output = data.output ? addField(data.output, form) : inputs.get(data.copyFieldId);
+  const outputArea = data.outputReveal ? dom.node('div', 'dsl-writing-output') : form;
+  if (data.outputReveal) form.append(outputArea);
+  const output = data.output ? addField(data.output, outputArea) : inputs.get(data.copyFieldId);
   dom.append(status);
   dom.listen(form, 'submit', event => {
     event.preventDefault();
@@ -40,7 +42,7 @@ export function mountWritingActivity(root, { data, state, onChange, profile = 'd
     const assembled = formatWriting(profile, fields, data.assembly.template);
     if (assembled === null) { setText(status, data.assembly.missingMessage || ''); return; }
     current.fields[data.output.id] = assembled; current.assembled = true;
-    output.value = assembled; setText(status, data.assembly.successMessage || ''); publish();
+    output.value = assembled; setText(status, data.assembly.successMessage || ''); render(); publish();
     if (data.assembly.focusOutput) output.focus({ preventScroll: true });
   });
   const actions = dom.node('div', 'dsl-writing-actions'), copy = dom.node('button', 'dsl-copy', data.copyLabel);
@@ -63,6 +65,17 @@ export function mountWritingActivity(root, { data, state, onChange, profile = 'd
       current.modelVisible = visible; render(); publish();
     });
   }
+  let edit;
+  if (data.edit) {
+    edit = dom.node('button', 'dsl-edit', data.edit.label); edit.type = 'button'; actions.append(edit);
+    dom.listen(edit, 'click', () => {
+      inputs.get(data.fields[0].id).focus();
+      if (data.edit.message) setText(status, data.edit.message);
+    });
+  }
+  if (data.actionOrder === 'edit-copy-model') actions.append(edit, copy, modelButton);
+  if (data.actionOrder === 'model-copy-edit') actions.append(modelButton, copy, edit);
+  if (data.outputReveal) outputArea.append(actions);
   // Middle's original reading and keyboard order groups all actions before the
   // readonly output. Move the real controls, not only their visual CSS order.
   if (profile === 'middle-evidence' && data.output) {
@@ -74,6 +87,7 @@ export function mountWritingActivity(root, { data, state, onChange, profile = 'd
       // Preserve caret/selection on unchanged parent updates and student-edited output.
       if (input.value !== current.fields[id]) input.value = current.fields[id];
     });
+    if (data.outputReveal) outputArea.hidden = !current.assembled;
     if (model) {
       model.hidden = !current.modelVisible;
       modelButton.setAttribute('aria-expanded', String(current.modelVisible));

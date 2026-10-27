@@ -1,0 +1,3474 @@
+{
+  "config": {
+    "argv": [
+      "/Users/rhys/.local/share/fnm/node-versions/v22.23.4/installation/bin/node",
+      "/Users/rhys/git/discussion-skills-lab/node_modules/.bin/playwright",
+      "test",
+      "tests/browser/final-lesson.spec.mjs",
+      "tests/browser/final-presentation.spec.mjs",
+      "--project=webkit",
+      "--workers=1",
+      "--max-failures=1",
+      "--output=test-results/milestone-6-webkit"
+    ],
+    "configFile": "/Users/rhys/git/discussion-skills-lab/playwright.config.mjs",
+    "rootDir": "/Users/rhys/git/discussion-skills-lab/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 1,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/rhys/git/discussion-skills-lab/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/Users/rhys/git/discussion-skills-lab/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/Users/rhys/git/discussion-skills-lab/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "mobile-chromium",
+        "name": "mobile-chromium",
+        "testDir": "/Users/rhys/git/discussion-skills-lab/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.61.1",
+    "workers": 1,
+    "webServer": {
+      "command": "node tests/helpers/static-server.mjs",
+      "env": {
+        "PORT": "57059"
+      },
+      "url": "http://127.0.0.1:57059",
+      "reuseExistingServer": false
+    }
+  },
+  "suites": [
+    {
+      "title": "final-lesson.spec.mjs",
+      "file": "final-lesson.spec.mjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Final note runtime rejects the exact shared development-invalid fixtures before attaching controls",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1670,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:49:55.403Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-61a6d5063a8936efd871",
+          "file": "final-lesson.spec.mjs",
+          "line": 12,
+          "column": 1
+        },
+        {
+          "title": "/ Final harness nine-page fresh journey, all alternatives and per-section missing gates",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9438,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:49:57.466Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-14a62aa9fbb2db212eed",
+          "file": "final-lesson.spec.mjs",
+          "line": 22,
+          "column": 3
+        },
+        {
+          "title": "/ Final exact original prose/emphasis/card/panel/model/labels and single reference source",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1120,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [
+                    {
+                      "buffer": ""
+                    }
+                  ],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:50:06.913Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-d5ccba45773a2b203e51",
+          "file": "final-lesson.spec.mjs",
+          "line": 27,
+          "column": 3
+        },
+        {
+          "title": "/ Final all valid v1 fixtures silently hydrate fields/checks/models/notes/panels/selections/goals",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 16394,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:50:08.040Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-02e8ee4b272d7cefce32",
+          "file": "final-lesson.spec.mjs",
+          "line": 46,
+          "column": 3
+        },
+        {
+          "title": "/ Final note wrong/right/disabled/reload, session-only retries and no hydration credit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1834,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:50:24.441Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-1f6fef2e77d110f5fb33",
+          "file": "final-lesson.spec.mjs",
+          "line": 70,
+          "column": 3
+        },
+        {
+          "title": "/ Final explicit writing/model/edit/copy actions and enlarged narrow cards remain accessible",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6442,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:50:26.282Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-d9ccae24ae4b9fb3023f",
+          "file": "final-lesson.spec.mjs",
+          "line": 84,
+          "column": 3
+        },
+        {
+          "title": "/ Final edited synthesis, goal caption, wrong-after-credit and cursors save immediately; new payload replays",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3150,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:50:32.732Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-9a972b59083d65e6b70c",
+          "file": "final-lesson.spec.mjs",
+          "line": 119,
+          "column": 3
+        },
+        {
+          "title": "/ Final content failure/retry and independent reference; reference-only print and single Print handler",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2453,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:50:35.888Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-61b98a9ed09cfa0b635e",
+          "file": "final-lesson.spec.mjs",
+          "line": 141,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final harness nine-page fresh journey, all alternatives and per-section missing gates",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9149,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:50:38.348Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-5652db43634775b612cd",
+          "file": "final-lesson.spec.mjs",
+          "line": 22,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final exact original prose/emphasis/card/panel/model/labels and single reference source",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1103,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [
+                    {
+                      "buffer": ""
+                    }
+                  ],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:50:47.506Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-dc68c948198265dc459c",
+          "file": "final-lesson.spec.mjs",
+          "line": 27,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final all valid v1 fixtures silently hydrate fields/checks/models/notes/panels/selections/goals",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 16784,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:50:48.616Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-2d3c24bb271da91ceb61",
+          "file": "final-lesson.spec.mjs",
+          "line": 46,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final note wrong/right/disabled/reload, session-only retries and no hydration credit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2811,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:51:05.411Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-a1cd6a08801055f77c22",
+          "file": "final-lesson.spec.mjs",
+          "line": 70,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final explicit writing/model/edit/copy actions and enlarged narrow cards remain accessible",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7017,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:51:08.231Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-2cb77566f487689dea84",
+          "file": "final-lesson.spec.mjs",
+          "line": 84,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final edited synthesis, goal caption, wrong-after-credit and cursors save immediately; new payload replays",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3657,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:51:15.258Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-6fc156bc1b4fcbc84722",
+          "file": "final-lesson.spec.mjs",
+          "line": 119,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final content failure/retry and independent reference; reference-only print and single Print handler",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2443,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:51:18.925Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-684217529d497d765cc0",
+          "file": "final-lesson.spec.mjs",
+          "line": 141,
+          "column": 3
+        },
+        {
+          "title": "Final harness corrupt storage preserves progress in memory and warns nondestructively",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1100,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:51:21.374Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-ddd4262ec5f9a9e849d9",
+          "file": "final-lesson.spec.mjs",
+          "line": 158,
+          "column": 55
+        },
+        {
+          "title": "Final harness denied storage preserves progress in memory and warns nondestructively",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 984,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:51:22.480Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-9cb5608c917c65713681",
+          "file": "final-lesson.spec.mjs",
+          "line": 158,
+          "column": 55
+        },
+        {
+          "title": "Final harness quota storage preserves progress in memory and warns nondestructively",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 990,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:51:23.470Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2496afb4d59525abf859-6e397c97e16f3af90092",
+          "file": "final-lesson.spec.mjs",
+          "line": 158,
+          "column": 55
+        }
+      ]
+    },
+    {
+      "title": "final-presentation.spec.mjs",
+      "file": "final-presentation.spec.mjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "/ Final section 0 all presentation roles/states at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4959,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:51:24.476Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--cb2b1-tion-roles-states-at-1440px-webkit/attachments/current-76fc8cf7400c317f92951dba329f5144a05081cc.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--cb2b1-tion-roles-states-at-1440px-webkit/attachments/original-f8b74a4a6d358eda78d9d9e8b18fe49281a340e8.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-689d24341fa05e5d356a",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/ Final section 1 all presentation roles/states at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8693,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:51:29.442Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--65b93-tion-roles-states-at-1440px-webkit/attachments/current-12367819f617abb656449086bfc97d0079548d0c.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--65b93-tion-roles-states-at-1440px-webkit/attachments/original-4ee442bc40e0975426d62506853e2757c576f140.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-1cc9d2af638d91cde842",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/ Final section 2 all presentation roles/states at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4830,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:51:38.143Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--3c584-tion-roles-states-at-1440px-webkit/attachments/current-b5f33b9c033c764fb6cc6cfc9d1e960cd2c295e3.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--3c584-tion-roles-states-at-1440px-webkit/attachments/original-ec646b3eb2f2c26d01cc532a355bcfad4ad47e86.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-9637902ead19d248dff2",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/ Final section 3 all presentation roles/states at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5538,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:51:42.980Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--889d6-tion-roles-states-at-1440px-webkit/attachments/current-1370edb7ad78a1a79f4cdebd5326894a7f2b3b30.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--889d6-tion-roles-states-at-1440px-webkit/attachments/original-9cfae8690014ec87927e09184ef0edd963d57c16.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-c79b8da988f59390b708",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/ Final section 4 all presentation roles/states at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7723,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:51:48.525Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--e9c5c-tion-roles-states-at-1440px-webkit/attachments/current-f79a87e6a5d2472edefdb9ed0799a116aa4587cc.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--e9c5c-tion-roles-states-at-1440px-webkit/attachments/original-137675862afaff01f7dba439be5769c0920eb933.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-f0d3ed01a975d9aba613",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/ Final section 5 all presentation roles/states at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5801,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:51:56.255Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--ea76a-tion-roles-states-at-1440px-webkit/attachments/current-903f40e9689991f851bcdcd1ec8ac228bf7c81ec.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--ea76a-tion-roles-states-at-1440px-webkit/attachments/original-67911fa7ca16b4221ebe871e084e3e6e55594b8e.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-d9e0e17d553275d50765",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/ Final section 6 all presentation roles/states at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6053,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:52:02.063Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--c4d4c-tion-roles-states-at-1440px-webkit/attachments/current-7648ddf3c42fa2f16b406d66a4ae7de9dd957667.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--c4d4c-tion-roles-states-at-1440px-webkit/attachments/original-98f50a923b0a1b04c98668d5f995b714d1f7fead.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-b7eb5a86ba0bb96e3eb7",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/ Final section 7 all presentation roles/states at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6339,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:52:08.122Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--f2ef9-tion-roles-states-at-1440px-webkit/attachments/current-267df0ee9e7b8d5b797a2e735b498a9bfd7a9611.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--f2ef9-tion-roles-states-at-1440px-webkit/attachments/original-d10f1844d02c53e3483e3dc89ed9cce87b77baee.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-cd04489db7d3c7bfd302",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/ Final section 8 all presentation roles/states at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6625,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:52:14.471Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--8737a-tion-roles-states-at-1440px-webkit/attachments/current-7e7bbc08ab4181cc88a9b83d7379bf0f34c431e5.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--8737a-tion-roles-states-at-1440px-webkit/attachments/original-26ad0d4603868d675ed8cbfa862db57bb0de958d.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-268c25148d2e46198042",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/ Final section 9 all presentation roles/states at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1905,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:52:21.105Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--c97e4-tion-roles-states-at-1440px-webkit/attachments/current-19fddb588d96068761347c27cde063ef8f3df145.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--c97e4-tion-roles-states-at-1440px-webkit/attachments/original-dbb9f40ffed80793f644ff1904ba8f3dff51348f.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-2368170cb82253da744d",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/ Final section 0 all presentation roles/states at 780px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4539,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:52:23.016Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--a5b33-ation-roles-states-at-780px-webkit/attachments/current-f24581ad6934a7065dc8ee5fffd20995578a0c1e.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--a5b33-ation-roles-states-at-780px-webkit/attachments/original-24d715da676261403996ef6e33d01f38d7449d19.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-64ee31e55a3fddf16e3a",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/ Final section 1 all presentation roles/states at 780px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6797,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:52:27.562Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--f1b72-ation-roles-states-at-780px-webkit/attachments/current-adf6d3deb588329af9325bd59a811d687e6a01d4.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--f1b72-ation-roles-states-at-780px-webkit/attachments/original-7c732bcbdfb01cb32d431b29261f88748b701482.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-734715e352adb21a8131",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/ Final section 2 all presentation roles/states at 780px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3863,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:52:34.365Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--c052b-ation-roles-states-at-780px-webkit/attachments/current-51d2d17b46e1ce34614465177d1a8793f4558bd9.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--c052b-ation-roles-states-at-780px-webkit/attachments/original-dfe0ea157cb4b2718d776018e60c78491ba7f769.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-e5df26d7858fd8276334",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/ Final section 3 all presentation roles/states at 780px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4413,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:52:38.234Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--66d67-ation-roles-states-at-780px-webkit/attachments/current-7fd6ba9269c0b9c4f5186a95920364e9184a17ab.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--66d67-ation-roles-states-at-780px-webkit/attachments/original-43322443780c41acd9472185f1438b46b03751af.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-3e865677178520ab2443",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/ Final section 4 all presentation roles/states at 780px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6526,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:52:42.653Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--e6f45-ation-roles-states-at-780px-webkit/attachments/current-def3b58898950ef319ab7ecae8265a5c80425a81.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--e6f45-ation-roles-states-at-780px-webkit/attachments/original-49ffd1a4b3035b0b5f7608932ac0493350cc729a.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-29e6882173a20d59d43e",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/ Final section 5 all presentation roles/states at 780px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4668,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:52:49.186Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--dd7ed-ation-roles-states-at-780px-webkit/attachments/current-b7194073e0253bcb776821174abefb66de71cb30.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--dd7ed-ation-roles-states-at-780px-webkit/attachments/original-d95e1bfd7e4132c76d481e753742b8892bd8d590.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-d7c7140b52ab80b080c1",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/ Final section 6 all presentation roles/states at 780px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4726,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:52:53.861Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--609b6-ation-roles-states-at-780px-webkit/attachments/current-35d9da6a746069ed4e497561eee352454d3ad5fb.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--609b6-ation-roles-states-at-780px-webkit/attachments/original-b98fa1d9751fdef2daa777d1e6452da26d810a80.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-86adfcb6ecfa49873d30",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/ Final section 7 all presentation roles/states at 780px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4963,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:52:58.592Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--985dd-ation-roles-states-at-780px-webkit/attachments/current-b0180496f9bc29ec1d360f6eea7a568bcac66b5f.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--985dd-ation-roles-states-at-780px-webkit/attachments/original-52a495c6c1c05bbf3ab73355e091eb6ff9f93c60.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-4d38979fddace703338e",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/ Final section 8 all presentation roles/states at 780px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5238,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:53:03.562Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--09320-ation-roles-states-at-780px-webkit/attachments/current-8143ebf518f1f17e500e99ae7dc4a544071348e0.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--09320-ation-roles-states-at-780px-webkit/attachments/original-d333e9ace32c627358a4f9409ad4c05485a7c52b.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-4b7d1e6ee4dd49607919",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/ Final section 9 all presentation roles/states at 780px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1668,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:53:08.807Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--ef298-ation-roles-states-at-780px-webkit/attachments/current-d8357d6c6b060bea17144f037ae176f92c8c6d54.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--ef298-ation-roles-states-at-780px-webkit/attachments/original-7e619d01518d0b7f18cd447e88bf361ec5294a47.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-b50b538ac574d0ce1180",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/ Final section 0 all presentation roles/states at 390px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4438,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:53:10.481Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--34849-ation-roles-states-at-390px-webkit/attachments/current-e3a4dac019695be011a118dec491ef1cf07639ed.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--34849-ation-roles-states-at-390px-webkit/attachments/original-3e832069701eda631db2817ffd1c51f4cb26b38e.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-fbd6d26683dcfd9364fc",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/ Final section 1 all presentation roles/states at 390px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6491,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:53:14.925Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--efeb3-ation-roles-states-at-390px-webkit/attachments/current-93cf7c91eb261792f53d7f6cb51e455206af5478.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--efeb3-ation-roles-states-at-390px-webkit/attachments/original-cccae8cb66f09c1793edf806199c704354f47f2f.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-c23ad65d1fee35553d7d",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/ Final section 2 all presentation roles/states at 390px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3526,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:53:21.426Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--01243-ation-roles-states-at-390px-webkit/attachments/current-16d601e2e226684517a6ae397921a7e34a87b32d.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--01243-ation-roles-states-at-390px-webkit/attachments/original-307dafebc9446030c0cbb6e2b0aaa1161590ad12.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-ecc62e2d052e3bb45218",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/ Final section 3 all presentation roles/states at 390px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3923,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:53:24.960Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--532aa-ation-roles-states-at-390px-webkit/attachments/current-9fbc64e93136c34bfb4457893702759613c66687.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--532aa-ation-roles-states-at-390px-webkit/attachments/original-a041150ae54eedccea537904d283b54f58a53da5.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-62f7376f2f073885550a",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/ Final section 4 all presentation roles/states at 390px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6066,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:53:28.889Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--f1c6b-ation-roles-states-at-390px-webkit/attachments/current-f7340cea21e11ecaf3fa9d10cceda8d4028e5e91.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--f1c6b-ation-roles-states-at-390px-webkit/attachments/original-7e09c45fc04b59bcb6e5c3e7be3a2f0e57198aa8.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-e59605c2b8f041ca9702",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/ Final section 5 all presentation roles/states at 390px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4068,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:53:34.961Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--fc840-ation-roles-states-at-390px-webkit/attachments/current-0beea61054225e11f36c59a3cff853aab9385e99.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--fc840-ation-roles-states-at-390px-webkit/attachments/original-41eb07d4c92fcd00ff4adfaf1b690fd4e355f738.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-7f0bed56d1f2908c581d",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/ Final section 6 all presentation roles/states at 390px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4169,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:53:39.035Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--b2121-ation-roles-states-at-390px-webkit/attachments/current-3f9abf747a346cb7d6a822f45be23f953611d0fc.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--b2121-ation-roles-states-at-390px-webkit/attachments/original-9210f6bf2435a8fe991b896ecaeed1a22e59dca6.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-f4a5aa5e275bc7099143",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/ Final section 7 all presentation roles/states at 390px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4552,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:53:43.211Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--1d3bc-ation-roles-states-at-390px-webkit/attachments/current-83755eda3b608d86492fe6fa30351373959d9401.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--1d3bc-ation-roles-states-at-390px-webkit/attachments/original-e306caf4f15c0fee41df81ab709e326e460c2bc2.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-e33dfb17e2103a19e972",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/ Final section 8 all presentation roles/states at 390px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4774,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:53:47.769Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--6a3de-ation-roles-states-at-390px-webkit/attachments/current-7ddc78d9d7cec2f681bc13893d32d6412e4116dd.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--6a3de-ation-roles-states-at-390px-webkit/attachments/original-233eac8b43d934339e3492fca810364f010863b7.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-ad0a2ea65c58ae17af78",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/ Final section 9 all presentation roles/states at 390px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1631,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:53:52.550Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--812b3-ation-roles-states-at-390px-webkit/attachments/current-6a1f51de9daa52cee6648a2555d3d09306f646ec.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--Final--812b3-ation-roles-states-at-390px-webkit/attachments/original-eaf379ec9548701a18b75fea603ec39e9f2899f9.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-01273dda3f401782b2f3",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final section 0 all presentation roles/states at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4904,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:53:54.188Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-4966b-tion-roles-states-at-1440px-webkit/attachments/current-5c2dc4ffa1567c02274e22ab63ea47978a818ad5.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-4966b-tion-roles-states-at-1440px-webkit/attachments/original-f8ddc1e1cc078e9b016f6806fd72b56eca9f02ca.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-0d02203ded7c00cf6698",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final section 1 all presentation roles/states at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8428,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:53:59.098Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-0a30e-tion-roles-states-at-1440px-webkit/attachments/current-aacfce3c3ba7691a975fed28e2d3225d564a52c3.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-0a30e-tion-roles-states-at-1440px-webkit/attachments/original-daeab8c02376ade99965771534479f32ef6b175b.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-a74108e7497ecf1b2ce2",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final section 2 all presentation roles/states at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4729,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:54:07.533Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-82b29-tion-roles-states-at-1440px-webkit/attachments/current-31a1ce436f06fecf2236a3c6013851f276866ff9.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-82b29-tion-roles-states-at-1440px-webkit/attachments/original-0496b565a056982695e894fb5a250b6cc04c2f0b.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-bda65147c7ceca678ee7",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final section 3 all presentation roles/states at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5517,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:54:12.270Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-69e38-tion-roles-states-at-1440px-webkit/attachments/current-4ece9e5ec4773d7264586a19e0ab699b5339c44b.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-69e38-tion-roles-states-at-1440px-webkit/attachments/original-50860b5fa2a319b25bfb8edc7866728345c62f55.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-4ec84cb0ab426508c82c",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final section 4 all presentation roles/states at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7738,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:54:17.794Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-9d10b-tion-roles-states-at-1440px-webkit/attachments/current-0aeabae4716c1ec8d34055e925dae30868d2ca72.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-9d10b-tion-roles-states-at-1440px-webkit/attachments/original-f754b67684f208267ec5aefd81e9f8891401d22e.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-5e5aad719c5af59bb0ba",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final section 5 all presentation roles/states at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5767,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:54:25.539Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-9b361-tion-roles-states-at-1440px-webkit/attachments/current-044bd9db3e4f072d749ba8863ad6407fb53d8546.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-9b361-tion-roles-states-at-1440px-webkit/attachments/original-6b0757b8ff43e10eafbd251e87f8d0629a52262c.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-4d4f55868e3994fad77c",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final section 6 all presentation roles/states at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5992,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:54:31.313Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-243d5-tion-roles-states-at-1440px-webkit/attachments/current-3a8e205d83ebbf9aabaab01e45e80152eade7cec.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-243d5-tion-roles-states-at-1440px-webkit/attachments/original-667c045372b2b0cd5e293f4b9912e45b09820dcd.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-16f05ac255bdae7b1bc8",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final section 7 all presentation roles/states at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6254,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:54:37.312Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-7d64e-tion-roles-states-at-1440px-webkit/attachments/current-91112604cab0857d26dfb23810ff661ba2f4d15d.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-7d64e-tion-roles-states-at-1440px-webkit/attachments/original-30c326aaa64b4c17dc3d6ba16dab4212091458c6.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-efa20c38eb94b4d930fc",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final section 8 all presentation roles/states at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6323,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:54:43.572Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-efb78-tion-roles-states-at-1440px-webkit/attachments/current-3286854589e9de58bb1119293f316ecfc2495fd9.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-efb78-tion-roles-states-at-1440px-webkit/attachments/original-baf5cec9221455f7e3335354d78d3ff6350659b3.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-24e6e68ce6c7dede7571",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final section 9 all presentation roles/states at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1935,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:54:49.902Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-59587-tion-roles-states-at-1440px-webkit/attachments/current-83a69f517137f549ea93d9253c33d642f947a5f4.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-59587-tion-roles-states-at-1440px-webkit/attachments/original-7379d2edbb21a21d22b7d07008307530e9fc8315.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-6d90c0f6c0ae1de273f6",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final section 0 all presentation roles/states at 780px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4475,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:54:51.843Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-19257-ation-roles-states-at-780px-webkit/attachments/current-823905d3c88ff08b96c7964e5d4c854756ad6836.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-19257-ation-roles-states-at-780px-webkit/attachments/original-ddfd08d5bdecac48b5a8a998e6bfe827ed7b22e2.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-3386cfe765efb63d59ef",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final section 1 all presentation roles/states at 780px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7127,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:54:56.324Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-137ed-ation-roles-states-at-780px-webkit/attachments/current-7f358a603e7e690820c5362c6ede03b0eb906cc3.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-137ed-ation-roles-states-at-780px-webkit/attachments/original-4084b857bd389efde9c268c6883940ce4e7db79d.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-c7824b2da5933a2d1ce4",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final section 2 all presentation roles/states at 780px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3855,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:55:03.458Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-c81a6-ation-roles-states-at-780px-webkit/attachments/current-a32a6a5b03098ff3c9e027dd66c583c24829af8d.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-c81a6-ation-roles-states-at-780px-webkit/attachments/original-70929fd1cc9c95327cc48b2f5f7253e42ac265a7.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-2aa86868193e17271b27",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final section 3 all presentation roles/states at 780px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4300,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:55:07.320Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-5a1e1-ation-roles-states-at-780px-webkit/attachments/current-e402d7111abf97799d51f361a3b86b930c048edd.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-5a1e1-ation-roles-states-at-780px-webkit/attachments/original-7ff016ecd02c95b8861de4a5dc50220ef9825291.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-b845b92161f21b50332d",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final section 4 all presentation roles/states at 780px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6546,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:55:11.628Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-2ec11-ation-roles-states-at-780px-webkit/attachments/current-cff7ed0c9428d8cf218cf2f590e8018888067852.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-2ec11-ation-roles-states-at-780px-webkit/attachments/original-3a65320388b58af5e2225b6e302560521a38a08d.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-d499d22187704297fc16",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final section 5 all presentation roles/states at 780px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4591,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:55:18.181Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-6e536-ation-roles-states-at-780px-webkit/attachments/current-e94fb03047ddb1e876dad2c6818e7cbc0557b194.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-6e536-ation-roles-states-at-780px-webkit/attachments/original-4abe1490a75d48d56e9ca81cbf146204ddb52837.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-8b672af868163beecc33",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final section 6 all presentation roles/states at 780px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4648,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:55:22.779Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-1c82a-ation-roles-states-at-780px-webkit/attachments/current-45ab45ee36e53c3acbbaa2bc7a45253da4474abf.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-1c82a-ation-roles-states-at-780px-webkit/attachments/original-80eac266c9fd52be3c0a25e6c6a9d713e284342a.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-bf769bf34a8affbfbfa1",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final section 7 all presentation roles/states at 780px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4936,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:55:27.434Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-a56db-ation-roles-states-at-780px-webkit/attachments/current-a232f1b0e0d0a868929c7e87f80c77c8304c02f3.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-a56db-ation-roles-states-at-780px-webkit/attachments/original-7a6638e804cd51c24b3f3ec1425163d7d05c953a.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-beec49f05b4c8778054c",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final section 8 all presentation roles/states at 780px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4944,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:55:32.377Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-a3bc3-ation-roles-states-at-780px-webkit/attachments/current-14bd09688281292578103485c3befb411f1007ce.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-a3bc3-ation-roles-states-at-780px-webkit/attachments/original-9260fd99c7cc6ce50967a8652d7a1e83507c76a7.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-793057fc3bf946be44b8",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final section 9 all presentation roles/states at 780px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1661,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:55:37.327Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-2185c-ation-roles-states-at-780px-webkit/attachments/current-b55d746bb090402ef10ca8497a367efdd75a66b5.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-2185c-ation-roles-states-at-780px-webkit/attachments/original-1e8e17e0644d979e8a9840f9001ef8b584e65ff2.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-a0ef1e06730c1d4cbf7f",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final section 0 all presentation roles/states at 390px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4402,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:55:38.994Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-ead0c-ation-roles-states-at-390px-webkit/attachments/current-0e91b19eaca40e1734f4259952bb5dfb6b246123.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-ead0c-ation-roles-states-at-390px-webkit/attachments/original-f02ec61d16e4ed0897b39d98e91600683d1c7ddb.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-97904efd7355b7edeae3",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final section 1 all presentation roles/states at 390px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6255,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:55:43.403Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-a084e-ation-roles-states-at-390px-webkit/attachments/current-7e9ef387eab8c7729716f41dc1ac3b42b5f2b3a1.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-a084e-ation-roles-states-at-390px-webkit/attachments/original-422c91fe2bc0c4d6eca38ab45f62bcc91fc6f737.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-ddba4117a2fbbbe5a33c",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final section 2 all presentation roles/states at 390px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3464,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:55:49.665Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-0be22-ation-roles-states-at-390px-webkit/attachments/current-fed9f4f1940149660079bad86a218e42a4c3a45c.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-0be22-ation-roles-states-at-390px-webkit/attachments/original-dab6d57644e51e540aee7b9cfa5f2adb49118a85.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-3aebe83dcc046035c23a",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final section 3 all presentation roles/states at 390px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3855,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:55:53.135Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-da0b4-ation-roles-states-at-390px-webkit/attachments/current-6611c28d3d606337c147d2b6c3d289554effcc46.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-da0b4-ation-roles-states-at-390px-webkit/attachments/original-97265628d61174a180ea2c77cb5c2adf5f2ccb93.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-f972f103eee21292cc42",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final section 4 all presentation roles/states at 390px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5893,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:55:56.996Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-5b65c-ation-roles-states-at-390px-webkit/attachments/current-94c622c9ba374bba3dd75e44e4ee85a77d27e03a.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-5b65c-ation-roles-states-at-390px-webkit/attachments/original-75db796705abe1f083ae294c40527f1be7fdff9e.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-5f79a7194e29f85ee8a3",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final section 5 all presentation roles/states at 390px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4182,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:56:02.895Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-9d46b-ation-roles-states-at-390px-webkit/attachments/current-96281b287a0cd8076cc7c511fc9562b468e4f008.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-9d46b-ation-roles-states-at-390px-webkit/attachments/original-b9d63cf5d1e3f1e9c416b81dc7651687050a952d.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-4699ceb96513ade3f3af",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final section 6 all presentation roles/states at 390px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4283,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:56:07.084Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-743bc-ation-roles-states-at-390px-webkit/attachments/current-5b499f207962149bcad19a3faa17edc5bfd0a46f.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-743bc-ation-roles-states-at-390px-webkit/attachments/original-1807aff6e44d205d291358b3bda81541354a4d7d.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-ffdf6e89a8632c3a53e7",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final section 7 all presentation roles/states at 390px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4430,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:56:11.374Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-5fa04-ation-roles-states-at-390px-webkit/attachments/current-513a9c1a7a497ca4e6c9bdf7e662f56110526b99.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-5fa04-ation-roles-states-at-390px-webkit/attachments/original-acb9eb33e0152ccabe92615d08849918653c673e.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-5f56d5ad3a85e042b133",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final section 8 all presentation roles/states at 390px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4834,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:56:15.810Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-6d048-ation-roles-states-at-390px-webkit/attachments/current-33c133f146d0048af22ee1d3f98edff629231327.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-6d048-ation-roles-states-at-390px-webkit/attachments/original-a0857638055a7e44ca7f782ff4b8c9de89159c63.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-5d6e80634871b5190058",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Final section 9 all presentation roles/states at 390px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1641,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T17:56:20.650Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "current",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-1efd1-ation-roles-states-at-390px-webkit/attachments/current-922f12343f2e1b3d908ba1a8fa2086ef3ec60082.png"
+                    },
+                    {
+                      "name": "original",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/milestone-6-webkit/final-presentation--discus-1efd1-ation-roles-states-at-390px-webkit/attachments/original-8b0552495b7fa2198597be9051fcd6877dfe15e2.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "950581c34ce948ab146c-fe89c120d87f78870c61",
+          "file": "final-presentation.spec.mjs",
+          "line": 21,
+          "column": 3
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-27T17:49:54.657Z",
+    "duration": 387966.878,
+    "expected": 78,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

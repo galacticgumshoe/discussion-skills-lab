@@ -32,7 +32,7 @@ export function mountLesson(root, { configUrl, adapter, completionPolicy, reveal
       validateLessonLinks(config, manifest, adapter);
       if (Object.keys(completionPolicy).some(id => !config.sectionOrder.includes(id) || id === config.referenceId)) throw new Error('Completion policy has an unknown/reference section');
       if (destroyed) return;
-      renderer = renderSections(root, { manifest, manifestUrl, allowedRootUrl, registry, revealPolicy, getState: () => store.state,
+      renderer = renderSections(root, { manifest, manifestUrl, allowedRootUrl, registry, revealPolicy, getState: () => store.state, onNavigate: id => navigation.go(id),
         onChange(activity, entry, own) {
           const previous = store.state, next = store.state; entry.write(activity, next, own);
           const guarded = Object.fromEntries(Object.entries(completionPolicy).map(([id, gate]) => [id, state => renderer.isSectionReady(id) && gate(state) === true]));

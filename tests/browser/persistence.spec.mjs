@@ -11,7 +11,7 @@ async function seed(page, id, raw) {
 for (const mount of ['/', '/discussion-skills-lab/', '/__original/', '/__original/discussion-skills-lab/']) {
   for (const id of lessons) {
     test(`${mount}${id} observed restore, durable credit/drafts and non-contiguous navigation`, async ({ page }) => {
-      const migrated = id === 'middle' && !mount.startsWith('/__original/');
+      const migrated = (id === 'middle' || id === 'final') && !mount.startsWith('/__original/');
       for (const name of ['missing', 'fresh', 'partial-first', 'mid-lesson', 'completed', 'correct-ever-then-incorrect', 'empty-zero']) {
         const saved = fixture(id, name);
         const savedRecord = saved.raw === null ? { completed: [], data: {} } : JSON.parse(saved.raw);
@@ -26,7 +26,7 @@ for (const mount of ['/', '/discussion-skills-lab/', '/__original/', '/__origina
           if (id === 'middle') for (const [index, value] of Object.entries(fields)) {
             if (['source', 'finding', 'why', 'assembled', 'application-draft'].includes(maps.middle.fields[index])) expect(await page.locator(migrated ? `[data-field-id="${maps.middle.fieldIds[maps.middle.fields[index]]}"]` : `#${maps.middle.fields[index]}`).inputValue()).toBe(value);
           }
-          else for (const [field, value] of Object.entries(fields)) if (Object.keys(maps.final.fields).includes(field)) expect(await page.locator(`#${field}`).inputValue()).toBe(value);
+          else for (const [field, value] of Object.entries(fields)) if (Object.keys(maps.final.fields).includes(field)) expect(await page.locator(migrated ? `[data-field-id="${maps.final.fields[field]}"]` : `#${field}`).inputValue()).toBe(value);
         }
         if (name === 'completed' || name === 'correct-ever-then-incorrect') {
           await navigate(page, maps[id].countedPages - 1);
@@ -34,12 +34,13 @@ for (const mount of ['/', '/discussion-skills-lab/', '/__original/', '/__origina
           if (name === 'correct-ever-then-incorrect') await expect(page.locator(`.lesson-view:not([hidden]) ${migrated ? '.dsl-selected-incorrect' : '.selected-incorrect'}`).first()).toBeVisible();
         }
         if (name === 'empty-zero') {
-          const selector = id === 'opening' ? '#what-how-options button' : id === 'middle' ? migrated ? '[data-activity-id="classification"] .dsl-choice' : '#classify-options button' : '#quiz-1 .choice';
+          const selector = id === 'opening' ? '#what-how-options button' : id === 'middle' ? migrated ? '[data-activity-id="classification"] .dsl-choice' : '#classify-options button' : migrated ? '[data-activity-id="summary-synthesis-questions"] .dsl-choice' : '#quiz-1 .choice';
           await expect(page.locator(selector).first()).toHaveAttribute('aria-pressed', 'true');
         }
         if (id === 'final' && name === 'mid-lesson') {
           const panelsOpen = savedRecord.data.finalState.panelsOpen;
-          const actualOpen = await page.locator('details.panel').evaluateAll(panels => panels.map(p => p.open));
+          const actualOpen = await page.locator(migrated ? 'details[data-panel-id]' : 'details.panel').evaluateAll(panels => panels.map(p => p.open));
+          expect(actualOpen).toHaveLength(maps.final.panelsOpen.length);
           expect(actualOpen).toEqual(actualOpen.map((_, i) => !!panelsOpen[i]));
         }
         if (name === 'partial-first' && id !== 'opening') {
@@ -56,7 +57,7 @@ for (const mount of ['/', '/discussion-skills-lab/', '/__original/', '/__origina
       }
       await seed(page, id, fixture(id, 'non-contiguous').raw);
       await page.goto(`${mount}${id}.html`); await ready(page);
-      await expect(page.locator(`[data-go="${migrated ? 'evidence' : '2'}"]`)).toBeDisabled();
+      await expect(page.locator(`[data-go="${migrated ? maps[id].sections[2] : '2'}"]`)).toBeDisabled();
       await navigate(page, 3); await navigate(page, 4); await navigate(page, 0);
       await page.reload(); await ready(page);
       expect(JSON.parse(await rawProgress(page, id)).completed).toContain(3);
@@ -99,7 +100,7 @@ for (const id of lessons) {
     await page.goto(`/${id}.html`); await ready(page);
     const target = id === 'opening' ? { page: 4, button: '#copy-question', status: '#copy-question-status', field: '#draft-input' }
       : id === 'middle' ? { page: 2, button: '[data-activity-id="evidence-writing"] .dsl-copy', status: '[data-activity-id="evidence-writing"] .dsl-writing-status', field: '[data-field-id="evidence-output"]' }
-      : { page: 2, button: '#copy-builder', status: '#builder-status', field: '#assembled' };
+      : { page: 2, button: '[data-activity-id="synthesis-writing"] .dsl-copy', status: '[data-activity-id="synthesis-writing"] .dsl-writing-status', field: '[data-field-id="synthesis-output"]' };
     await navigate(page, target.page);
     // Native keyboard activation avoids a moving pointer target while WebKit's
     // real smooth scroll/reveal animation settles; no force-click or app patch.

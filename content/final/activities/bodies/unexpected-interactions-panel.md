@@ -1,0 +1,1 @@
+The judge observes and evaluates rather than joining the discussion. If an unexpected procedural issue occurs, respond politely and consult your coach afterward. Do not confront the judge; your coach can determine appropriate follow-up.

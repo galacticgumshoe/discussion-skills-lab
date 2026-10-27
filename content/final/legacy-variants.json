@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "kind": "legacy-variants",
+  "id": "final",
+  "records": [
+    {
+      "id": "unused-reference-copy-prefix",
+      "status": "non-published",
+      "source": {
+        "revision": "0b5d2297e7cbc19bd59cde750492dd28e3983ca0",
+        "path": "assets/js/final.js",
+        "symbol": "referenceText-prefix"
+      },
+      "value": "FINAL STAGE QUICK REFERENCE\n\n"
+    }
+  ]
+}

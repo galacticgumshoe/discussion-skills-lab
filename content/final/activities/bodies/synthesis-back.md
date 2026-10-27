@@ -1,0 +1,1 @@
+Synthesis connects viewpoints to develop a new insight. Example: “Building on Maya's transportation proposal and Jordan's cost concern, perhaps we could test a limited pilot before recommending a larger program.”

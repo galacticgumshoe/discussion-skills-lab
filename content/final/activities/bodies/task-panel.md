@@ -1,0 +1,1 @@
+Rereading the full task can help when requirements are unclear, but it takes time. Reviewing the central problem and required deliverable may be more efficient. If the group prefers a full rereading, avoid turning a small procedural difference into conflict.

@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "id": "consensus-questions",
+  "type": "question-sequence",
+  "profile": "final-questions",
+  "data": {
+    "heading": "Consensus decision lab",
+    "questions": [
+      {
+        "id": "unanimity-objection",
+        "prompt": "What is the most constructive next step?",
+        "context": "Five support a city-funded transportation pilot; two object over costs. The task asks for unanimity.",
+        "correctOptionId": "explore-concerns",
+        "options": [
+          {
+            "id": "majority",
+            "text": "Declare that five votes are enough.",
+            "feedback": "Not quite. A majority does not resolve objections when seeking unanimity."
+          },
+          {
+            "id": "explore-concerns",
+            "text": "Ask the concerned participants what changes would make the proposal acceptable.",
+            "feedback": "Correct. Understanding concerns opens a path to negotiation."
+          },
+          {
+            "id": "ignore",
+            "text": "Ignore objections and move to the summary.",
+            "feedback": "Not quite. Ignoring concerns prevents meaningful consensus."
+          }
+        ]
+      },
+      {
+        "id": "limited-costs",
+        "prompt": "Which response best advances consensus?",
+        "context": "The two participants could support the pilot if initial costs are limited.",
+        "correctOptionId": "cap-evaluate",
+        "options": [
+          {
+            "id": "cap-evaluate",
+            "text": "Propose a limited pilot with a spending cap and evaluation before expansion.",
+            "feedback": "Correct. This addresses the concern while retaining the proposal."
+          },
+          {
+            "id": "criticize",
+            "text": "Your concerns are holding everyone back.",
+            "feedback": "Not quite. Criticism makes negotiation harder."
+          },
+          {
+            "id": "abandon",
+            "text": "Abandon transportation without discussing alternatives.",
+            "feedback": "Not quite. A workable compromise deserves consideration first."
+          }
+        ]
+      },
+      {
+        "id": "confirm-compromise",
+        "prompt": "What should happen now?",
+        "context": "A possible compromise has emerged, but only two minutes remain.",
+        "correctOptionId": "check-support",
+        "options": [
+          {
+            "id": "unrelated-debate",
+            "text": "Begin an extended debate on unrelated alternatives.",
+            "feedback": "Not quite. This distracts from a timely decision."
+          },
+          {
+            "id": "check-support",
+            "text": "State the revised recommendation and ask whether substantial concerns remain.",
+            "feedback": "Correct. A focused check tests whether the compromise is supported."
+          },
+          {
+            "id": "assume-silence",
+            "text": "Assume silence means everyone agrees.",
+            "feedback": "Not quite. Silence alone does not establish support."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,13 +1,14 @@
 import { expect } from '@playwright/test';
 import { readFileSync } from 'node:fs';
 import { middleJourney } from './middle-journey.mjs';
+import { finalJourney } from './final-journey.mjs';
 export const lessons = ['opening', 'middle', 'final'];
 export const maps = Object.fromEntries(lessons.map(id => [id, JSON.parse(readFileSync(new URL(`../fixtures/legacy-maps/${id}.json`, import.meta.url)))]));
 export const banks = JSON.parse(readFileSync(new URL('../fixtures/content/banks.json', import.meta.url)));
 export const draft = 'Synthetic practice — “cost & access.”\nConnect Maya’s idea; café ✓';
 
 export async function ready(page) {
-  if (await page.locator('body.dsl-middle').count()) {
+  if (await page.locator('body.dsl-middle,body.dsl-final').count()) {
     await expect(page.locator('#lesson-status')).toBeHidden();
     await expect(page.locator('#rail-links [data-go="welcome"]')).toBeEnabled();
   } else await expect(page.locator('#rail-links [data-go="0"]')).toBeEnabled();
@@ -27,6 +28,7 @@ export async function rawProgress(page, id) {
 // hidden-control clicks, or script patching. Checkpoint callbacks only read storage.
 export async function runLesson(page, id, checkpoint = async () => {}) {
   if (id === 'middle' && await page.locator('body.dsl-middle').count()) return middleJourney(page, checkpoint);
+  if (id === 'final' && await page.locator('body.dsl-final').count()) return finalJourney(page, checkpoint);
   const actions = [], questions = [];
   const click = async selector => { actions.push(`click ${selector}`); await page.locator(selector).click(); };
   const fill = async (selector, value) => { actions.push(`fill ${selector} ${JSON.stringify(value)}`); await page.locator(selector).fill(value); };

@@ -1,0 +1,153 @@
+{
+  "reportSha256": "5fae53100a004bed7f921dadb8949e14bdfdfcd506b25be1404aa26c1cc646b8",
+  "stats": {
+    "startTime": "2026-10-27T21:55:32.298Z",
+    "duration": 318558.99199999997,
+    "expected": 56,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "captures": [
+    {
+      "test": "/ Final approved Middle heading profiles on all nine lesson pages; narrow/enlarged wrapping and reference print isolation",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-0-final-numbered-title-320.png",
+      "sha256": "513f49c5a8f8644d95478e7866da8d4ef5200df3af567eb7ec5a4672aac14648"
+    },
+    {
+      "test": "/ Final approved Middle heading profiles on all nine lesson pages; narrow/enlarged wrapping and reference print isolation",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-1-final-heading-change-reference.pdf",
+      "sha256": "a13a856e040ac8af5dd3cbfdeda5f0b88fc2fa84d5abe47fd45f5b1373f9d55d"
+    },
+    {
+      "test": "/ Final approved front-face explored cue on all eight cards; keyboard flip-back, reload and unclipped labels",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-2-final-front-explored-320.png",
+      "sha256": "82389e7d5fc27e0f5513230a53a7df3e3f2d356d709a6fa5aedcb9d2d711c166"
+    },
+    {
+      "test": "/discussion-skills-lab/ Final approved Middle heading profiles on all nine lesson pages; narrow/enlarged wrapping and reference print isolation",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-3-final-numbered-title-320.png",
+      "sha256": "513f49c5a8f8644d95478e7866da8d4ef5200df3af567eb7ec5a4672aac14648"
+    },
+    {
+      "test": "/discussion-skills-lab/ Final approved Middle heading profiles on all nine lesson pages; narrow/enlarged wrapping and reference print isolation",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-4-final-heading-change-reference.pdf",
+      "sha256": "a836a7effb596babd8cecf66b294167f7e2dea1bcb012551dce4b8bf9c704af8"
+    },
+    {
+      "test": "/discussion-skills-lab/ Final approved front-face explored cue on all eight cards; keyboard flip-back, reload and unclipped labels",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-5-final-front-explored-320.png",
+      "sha256": "82389e7d5fc27e0f5513230a53a7df3e3f2d356d709a6fa5aedcb9d2d711c166"
+    },
+    {
+      "test": "/ Final approved Middle heading profiles on all nine lesson pages; narrow/enlarged wrapping and reference print isolation",
+      "project": "firefox",
+      "status": "passed",
+      "path": "firefox-6-final-numbered-title-320.png",
+      "sha256": "8e2901f7e29aee3f7516d36d359f763c9641aef161cbaf1741693f4ffb1df6d0"
+    },
+    {
+      "test": "/ Final approved front-face explored cue on all eight cards; keyboard flip-back, reload and unclipped labels",
+      "project": "firefox",
+      "status": "passed",
+      "path": "firefox-7-final-front-explored-320.png",
+      "sha256": "fe3df4d494903768d0aa07525ccb0d6f19abea380ceedc62129ee0b35644ec96"
+    },
+    {
+      "test": "/discussion-skills-lab/ Final approved Middle heading profiles on all nine lesson pages; narrow/enlarged wrapping and reference print isolation",
+      "project": "firefox",
+      "status": "passed",
+      "path": "firefox-8-final-numbered-title-320.png",
+      "sha256": "8e2901f7e29aee3f7516d36d359f763c9641aef161cbaf1741693f4ffb1df6d0"
+    },
+    {
+      "test": "/discussion-skills-lab/ Final approved front-face explored cue on all eight cards; keyboard flip-back, reload and unclipped labels",
+      "project": "firefox",
+      "status": "passed",
+      "path": "firefox-9-final-front-explored-320.png",
+      "sha256": "fe3df4d494903768d0aa07525ccb0d6f19abea380ceedc62129ee0b35644ec96"
+    },
+    {
+      "test": "/ Final approved Middle heading profiles on all nine lesson pages; narrow/enlarged wrapping and reference print isolation",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-10-final-numbered-title-320.png",
+      "sha256": "80ee4bbe57a5d67d8d98bd6c0c31a3707d05b555dafa7ef2a258296741d60b96"
+    },
+    {
+      "test": "/ Final approved front-face explored cue on all eight cards; keyboard flip-back, reload and unclipped labels",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-11-final-front-explored-320.png",
+      "sha256": "3177eb090944a33a89d05e104fd87598b7080f1c30ceae7a55eebaeb2d021454"
+    },
+    {
+      "test": "/discussion-skills-lab/ Final approved Middle heading profiles on all nine lesson pages; narrow/enlarged wrapping and reference print isolation",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-12-final-numbered-title-320.png",
+      "sha256": "80ee4bbe57a5d67d8d98bd6c0c31a3707d05b555dafa7ef2a258296741d60b96"
+    },
+    {
+      "test": "/discussion-skills-lab/ Final approved front-face explored cue on all eight cards; keyboard flip-back, reload and unclipped labels",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-13-final-front-explored-320.png",
+      "sha256": "3177eb090944a33a89d05e104fd87598b7080f1c30ceae7a55eebaeb2d021454"
+    },
+    {
+      "test": "/ Final approved Middle heading profiles on all nine lesson pages; narrow/enlarged wrapping and reference print isolation",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-14-final-numbered-title-320.png",
+      "sha256": "513f49c5a8f8644d95478e7866da8d4ef5200df3af567eb7ec5a4672aac14648"
+    },
+    {
+      "test": "/ Final approved Middle heading profiles on all nine lesson pages; narrow/enlarged wrapping and reference print isolation",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-15-final-heading-change-reference.pdf",
+      "sha256": "50e36cf92c091e85fbaecf4d1d89ecaefd921bc5ca1341f17904b862db5fa5c2"
+    },
+    {
+      "test": "/ Final approved front-face explored cue on all eight cards; keyboard flip-back, reload and unclipped labels",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-16-final-front-explored-320.png",
+      "sha256": "756a78cc943085efea2bc81a8ff02b1d21f936fbf9557fa704854c8606004bc7"
+    },
+    {
+      "test": "/discussion-skills-lab/ Final approved Middle heading profiles on all nine lesson pages; narrow/enlarged wrapping and reference print isolation",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-17-final-numbered-title-320.png",
+      "sha256": "513f49c5a8f8644d95478e7866da8d4ef5200df3af567eb7ec5a4672aac14648"
+    },
+    {
+      "test": "/discussion-skills-lab/ Final approved Middle heading profiles on all nine lesson pages; narrow/enlarged wrapping and reference print isolation",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-18-final-heading-change-reference.pdf",
+      "sha256": "87dc263cd883a78ab3369c718c32925ceff695ad28117d0ea86dc7133d38a505"
+    },
+    {
+      "test": "/discussion-skills-lab/ Final approved front-face explored cue on all eight cards; keyboard flip-back, reload and unclipped labels",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-19-final-front-explored-320.png",
+      "sha256": "756a78cc943085efea2bc81a8ff02b1d21f936fbf9557fa704854c8606004bc7"
+    }
+  ]
+}

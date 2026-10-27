@@ -193,6 +193,22 @@ source lesson's presentation. Most approved Middle treatments are scoped to
 `.dsl-middle`; neither generic defaults nor importing Middle's theme is a substitute
 for preserving Final's or Opening's own visual identity.
 
+Owner-approved exceptions carried forward from Middle (2026-10-27): counted lesson
+page titles should use the larger responsive primary/display heading treatment,
+not the pinned main's small reset h2; shared flashcards retain `✓ Explored` on the
+front after flip-back as well as the back. Record these intentional differences in
+Final/Opening presentation evidence and test them explicitly instead of reverting
+them for screenshot equality. Reference/subordinate headings retain their own
+hierarchy. Opening has no flashcards; do not add any to satisfy a cue requirement.
+Clarification from direct Middle comparison: match its separate heading levels,
+not a uniform approximate display size. Welcome uses `clamp(2.25rem,5vw,3.6rem)`;
+numbered pages use `clamp(1.85rem,3.4vw,2.6rem)`; both are bold Fraunces with 1.17
+leading and `-.035em` tracking. Final card fronts retain Middle's normal weight.
+These clarified profiles supersede the earlier uniform 48px interpretation.
+The owner also requires impact-scoped follow-up verification: lesson-only CSS
+changes need affected lesson tests, not automatic whole-site reruns. Shared
+behavior changes still require the affected consumers' checks, with scope reported.
+
 1. **Inventory before extraction.** Create a section-by-section presentation map
    under `.opencode/docs/` against the immutable original. Identify paragraph roles,
    heading typography, separate card titles, every activity frame, speaker/context

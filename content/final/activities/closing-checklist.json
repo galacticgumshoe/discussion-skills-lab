@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "closing-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "id": "accurate-proposal",
+        "text": "I accurately described the proposal."
+      },
+      {
+        "id": "credit-two",
+        "text": "I credited at least two participants."
+      },
+      {
+        "id": "connect-not-list",
+        "text": "I connected ideas rather than just listing them."
+      },
+      {
+        "id": "access-communication-affordability",
+        "text": "I addressed access, communication, and affordability."
+      },
+      {
+        "id": "confirmation-or-concern",
+        "text": "I invited confirmation or identified an unresolved concern."
+      },
+      {
+        "id": "concise-professional",
+        "text": "My language was concise, respectful, and professional."
+      }
+    ]
+  }
+}

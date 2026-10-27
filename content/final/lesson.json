@@ -1,0 +1,891 @@
+{
+  "schemaVersion": 1,
+  "id": "final",
+  "title": "Closing with Purpose · The Final Stage",
+  "activities": [
+    {
+      "id": "summary-synthesis-questions",
+      "source": "activities/summary-synthesis-questions.json"
+    },
+    {
+      "id": "connect-viewpoints-questions",
+      "source": "activities/connect-viewpoints-questions.json"
+    },
+    {
+      "id": "organize-findings-questions",
+      "source": "activities/organize-findings-questions.json"
+    },
+    {
+      "id": "consensus-questions",
+      "source": "activities/consensus-questions.json"
+    },
+    {
+      "id": "task-audit-questions",
+      "source": "activities/task-audit-questions.json"
+    },
+    {
+      "id": "professionalism-questions",
+      "source": "activities/professionalism-questions.json"
+    },
+    {
+      "id": "closing-practice-questions",
+      "source": "activities/closing-practice-questions.json"
+    },
+    {
+      "id": "knowledge-check",
+      "source": "activities/knowledge-check.json"
+    },
+    {
+      "id": "note-classification",
+      "source": "activities/note-classification.json"
+    },
+    {
+      "id": "synthesis-writing",
+      "source": "activities/synthesis-writing.json"
+    },
+    {
+      "id": "synthesis-checklist",
+      "source": "activities/synthesis-checklist.json"
+    },
+    {
+      "id": "closing-writing",
+      "source": "activities/closing-writing.json"
+    },
+    {
+      "id": "closing-checklist",
+      "source": "activities/closing-checklist.json"
+    },
+    {
+      "id": "practice-goals",
+      "source": "activities/practice-goals.json"
+    },
+    {
+      "id": "welcome-cards",
+      "source": "activities/welcome-cards.json"
+    },
+    {
+      "id": "summary-synthesis-cards",
+      "source": "activities/summary-synthesis-cards.json"
+    },
+    {
+      "id": "connect-viewpoints-panels",
+      "source": "activities/connect-viewpoints-panels.json"
+    },
+    {
+      "id": "organize-findings-panels",
+      "source": "activities/organize-findings-panels.json"
+    },
+    {
+      "id": "consensus-cards",
+      "source": "activities/consensus-cards.json"
+    },
+    {
+      "id": "task-audit-panels",
+      "source": "activities/task-audit-panels.json"
+    },
+    {
+      "id": "professionalism-panels",
+      "source": "activities/professionalism-panels.json"
+    }
+  ],
+  "sections": [
+    {
+      "id": "welcome",
+      "label": "Welcome — Why the Final Stage Matters",
+      "heading": "Closing with Purpose",
+      "headingId": "title-0",
+      "headingLevel": 1,
+      "eyebrow": "Welcome · Explore",
+      "requirement": "Complete the activities on this page to unlock Next.",
+      "reference": false,
+      "gateActivityIds": [
+        "welcome-cards"
+      ],
+      "blocks": [
+        {
+          "type": "markdown",
+          "source": "sections/fragment-1.md",
+          "textStyle": "lead"
+        },
+        {
+          "type": "group",
+          "layout": "stack",
+          "tone": "callout",
+          "blocks": [
+            {
+              "type": "markdown",
+              "source": "sections/fragment-2.md"
+            },
+            {
+              "type": "markdown",
+              "source": "sections/fragment-3.md"
+            },
+            {
+              "type": "group",
+              "layout": "flow",
+              "tone": "plain",
+              "blocks": [
+                {
+                  "type": "group",
+                  "layout": "stack",
+                  "tone": "plain",
+                  "blocks": [
+                    {
+                      "type": "markdown",
+                      "source": "sections/fragment-4.md"
+                    },
+                    {
+                      "type": "markdown",
+                      "source": "sections/fragment-5.md",
+                      "textStyle": "note"
+                    }
+                  ]
+                },
+                {
+                  "type": "group",
+                  "layout": "stack",
+                  "tone": "plain",
+                  "blocks": [
+                    {
+                      "type": "markdown",
+                      "source": "sections/fragment-6.md"
+                    },
+                    {
+                      "type": "markdown",
+                      "source": "sections/fragment-7.md",
+                      "textStyle": "note"
+                    }
+                  ]
+                },
+                {
+                  "type": "group",
+                  "layout": "stack",
+                  "tone": "plain",
+                  "blocks": [
+                    {
+                      "type": "markdown",
+                      "source": "sections/fragment-8.md"
+                    },
+                    {
+                      "type": "markdown",
+                      "source": "sections/fragment-9.md",
+                      "textStyle": "note"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "markdown",
+          "source": "sections/fragment-10.md"
+        },
+        {
+          "type": "markdown",
+          "source": "sections/fragment-11.md",
+          "textStyle": "lead"
+        },
+        {
+          "type": "activity",
+          "activityId": "welcome-cards"
+        },
+        {
+          "type": "group",
+          "layout": "stack",
+          "tone": "example",
+          "revealId": "welcome-ready",
+          "blocks": [
+            {
+              "type": "markdown",
+              "source": "sections/fragment-12.md"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "summary-synthesis",
+      "label": "01 — Summary or Synthesis?",
+      "heading": "Two Ways to Bring Ideas Together",
+      "headingId": "title-1",
+      "headingLevel": 2,
+      "eyebrow": "01 · Understand and apply · 3 minutes",
+      "requirement": "Complete the activities on this page to unlock Next.",
+      "reference": false,
+      "gateActivityIds": [
+        "summary-synthesis-cards",
+        "summary-synthesis-questions"
+      ],
+      "blocks": [
+        {
+          "type": "markdown",
+          "source": "sections/fragment-13.md",
+          "textStyle": "lead"
+        },
+        {
+          "type": "activity",
+          "activityId": "summary-synthesis-cards"
+        },
+        {
+          "type": "group",
+          "layout": "stack",
+          "tone": "plain",
+          "revealId": "s1-reveal",
+          "blocks": [
+            {
+              "type": "group",
+              "layout": "two-column",
+              "tone": "callout",
+              "blocks": [
+                {
+                  "type": "group",
+                  "layout": "stack",
+                  "tone": "plain",
+                  "blocks": [
+                    {
+                      "type": "markdown",
+                      "source": "sections/fragment-14.md"
+                    },
+                    {
+                      "type": "markdown",
+                      "source": "sections/fragment-15.md"
+                    }
+                  ]
+                },
+                {
+                  "type": "group",
+                  "layout": "stack",
+                  "tone": "plain",
+                  "blocks": [
+                    {
+                      "type": "markdown",
+                      "source": "sections/fragment-16.md"
+                    },
+                    {
+                      "type": "markdown",
+                      "source": "sections/fragment-17.md"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "layout": "stack",
+              "tone": "caution",
+              "blocks": [
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-18.md"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "layout": "stack",
+              "tone": "activity",
+              "blocks": [
+                {
+                  "type": "activity",
+                  "activityId": "summary-synthesis-questions"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "connect-viewpoints",
+      "label": "02 — Connect the Viewpoints",
+      "heading": "From Multiple Ideas to One New Insight",
+      "headingId": "title-2",
+      "headingLevel": 2,
+      "eyebrow": "02 · Explore and apply · 4 minutes",
+      "requirement": "Complete the activities on this page to unlock Next.",
+      "reference": false,
+      "gateActivityIds": [
+        "connect-viewpoints-panels",
+        "connect-viewpoints-questions",
+        "synthesis-writing",
+        "synthesis-checklist"
+      ],
+      "blocks": [
+        {
+          "type": "markdown",
+          "source": "sections/fragment-19.md",
+          "textStyle": "lead"
+        },
+        {
+          "type": "activity",
+          "activityId": "connect-viewpoints-panels"
+        },
+        {
+          "type": "group",
+          "layout": "stack",
+          "tone": "plain",
+          "revealId": "s2-reveal",
+          "blocks": [
+            {
+              "type": "group",
+              "layout": "stack",
+              "tone": "callout",
+              "blocks": [
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-20.md"
+                },
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-21.md"
+                },
+                {
+                  "type": "group",
+                  "layout": "roundtable",
+                  "tone": "plain",
+                  "blocks": [
+                    {
+                      "type": "markdown",
+                      "source": "sections/fragment-22.md"
+                    },
+                    {
+                      "type": "markdown",
+                      "source": "sections/fragment-23.md"
+                    },
+                    {
+                      "type": "markdown",
+                      "source": "sections/fragment-24.md"
+                    },
+                    {
+                      "type": "markdown",
+                      "source": "sections/fragment-25.md"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "layout": "stack",
+              "tone": "activity",
+              "blocks": [
+                {
+                  "type": "activity",
+                  "activityId": "connect-viewpoints-questions"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "layout": "stack",
+              "tone": "callout",
+              "revealId": "builder-area",
+              "blocks": [
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-28.md"
+                },
+                {
+                  "type": "activity",
+                  "activityId": "synthesis-writing"
+                },
+                {
+                  "type": "group",
+                  "layout": "stack",
+                  "tone": "plain",
+                  "revealId": "synthesis-checks",
+                  "blocks": [
+                    {
+                      "type": "markdown",
+                      "source": "sections/fragment-26.md",
+                      "textStyle": "note"
+                    },
+                    {
+                      "type": "markdown",
+                      "source": "sections/fragment-27.md"
+                    },
+                    {
+                      "type": "activity",
+                      "activityId": "synthesis-checklist"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "organize-findings",
+      "label": "03 — Organize the Findings",
+      "heading": "Summarize the Work, Not the Conversation's Timeline",
+      "headingId": "title-3",
+      "headingLevel": 2,
+      "eyebrow": "03 · Organize and apply · 3 minutes",
+      "requirement": "Complete the activities on this page to unlock Next.",
+      "reference": false,
+      "gateActivityIds": [
+        "organize-findings-panels",
+        "note-classification",
+        "organize-findings-questions"
+      ],
+      "blocks": [
+        {
+          "type": "markdown",
+          "source": "sections/fragment-29.md",
+          "textStyle": "lead"
+        },
+        {
+          "type": "activity",
+          "activityId": "organize-findings-panels"
+        },
+        {
+          "type": "group",
+          "layout": "stack",
+          "tone": "caution",
+          "blocks": [
+            {
+              "type": "markdown",
+              "source": "sections/fragment-30.md"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "layout": "stack",
+          "tone": "plain",
+          "revealId": "s3-reveal",
+          "blocks": [
+            {
+              "type": "group",
+              "layout": "stack",
+              "tone": "activity",
+              "blocks": [
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-31.md"
+                },
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-32.md"
+                },
+                {
+                  "type": "activity",
+                  "activityId": "note-classification"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "layout": "stack",
+              "tone": "plain",
+              "revealId": "s3-summary",
+              "blocks": [
+                {
+                  "type": "group",
+                  "layout": "stack",
+                  "tone": "activity",
+                  "blocks": [
+                    {
+                      "type": "activity",
+                      "activityId": "organize-findings-questions"
+                    }
+                  ]
+                },
+                {
+                  "type": "group",
+                  "layout": "stack",
+                  "tone": "example",
+                  "blocks": [
+                    {
+                      "type": "markdown",
+                      "source": "sections/fragment-33.md"
+                    },
+                    {
+                      "type": "markdown",
+                      "source": "sections/fragment-34.md"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "consensus",
+      "label": "04 — Build Genuine Consensus",
+      "heading": "Agreement Is More Than a Vote",
+      "headingId": "title-4",
+      "headingLevel": 2,
+      "eyebrow": "04 · Negotiate and apply · 3–4 minutes",
+      "requirement": "Complete the activities on this page to unlock Next.",
+      "reference": false,
+      "gateActivityIds": [
+        "consensus-cards",
+        "consensus-questions"
+      ],
+      "blocks": [
+        {
+          "type": "markdown",
+          "source": "sections/fragment-35.md",
+          "textStyle": "lead"
+        },
+        {
+          "type": "activity",
+          "activityId": "consensus-cards"
+        },
+        {
+          "type": "group",
+          "layout": "stack",
+          "tone": "plain",
+          "revealId": "s4-reveal",
+          "blocks": [
+            {
+              "type": "group",
+              "layout": "stack",
+              "tone": "activity",
+              "blocks": [
+                {
+                  "type": "activity",
+                  "activityId": "consensus-questions"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "layout": "stack",
+              "tone": "example",
+              "blocks": [
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-36.md"
+                },
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-37.md"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "task-audit",
+      "label": "05 — Check the Task",
+      "heading": "Did We Actually Solve the Task?",
+      "headingId": "title-5",
+      "headingLevel": 2,
+      "eyebrow": "05 · Evaluate and apply · 3 minutes",
+      "requirement": "Complete the activities on this page to unlock Next.",
+      "reference": false,
+      "gateActivityIds": [
+        "task-audit-panels",
+        "task-audit-questions"
+      ],
+      "blocks": [
+        {
+          "type": "markdown",
+          "source": "sections/fragment-38.md",
+          "textStyle": "lead"
+        },
+        {
+          "type": "activity",
+          "activityId": "task-audit-panels"
+        },
+        {
+          "type": "group",
+          "layout": "stack",
+          "tone": "plain",
+          "revealId": "s5-reveal",
+          "blocks": [
+            {
+              "type": "group",
+              "layout": "stack",
+              "tone": "callout",
+              "blocks": [
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-39.md"
+                },
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-40.md"
+                },
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-41.md"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "layout": "stack",
+              "tone": "activity",
+              "blocks": [
+                {
+                  "type": "activity",
+                  "activityId": "task-audit-questions"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "professionalism",
+      "label": "06 — Finish Professionally",
+      "heading": "Your Professionalism Continues After the Round",
+      "headingId": "title-6",
+      "headingLevel": 2,
+      "eyebrow": "06 · Professional conduct · 2–3 minutes",
+      "requirement": "Complete the activities on this page to unlock Next.",
+      "reference": false,
+      "gateActivityIds": [
+        "professionalism-panels",
+        "professionalism-questions"
+      ],
+      "blocks": [
+        {
+          "type": "markdown",
+          "source": "sections/fragment-42.md",
+          "textStyle": "lead"
+        },
+        {
+          "type": "activity",
+          "activityId": "professionalism-panels"
+        },
+        {
+          "type": "group",
+          "layout": "stack",
+          "tone": "plain",
+          "revealId": "s6-reveal",
+          "blocks": [
+            {
+              "type": "group",
+              "layout": "stack",
+              "tone": "activity",
+              "blocks": [{ "type": "activity", "activityId": "professionalism-questions" }]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "closing-practice",
+      "label": "07 — Practice Your Closing",
+      "heading": "A Discussion in Its Final Minutes",
+      "headingId": "title-7",
+      "headingLevel": 2,
+      "eyebrow": "07 · Integrated practice · 4 minutes",
+      "requirement": "Complete the activities on this page to unlock Next.",
+      "reference": false,
+      "gateActivityIds": [
+        "closing-practice-questions",
+        "closing-writing",
+        "closing-checklist"
+      ],
+      "blocks": [
+        {
+          "type": "markdown",
+          "source": "sections/fragment-43.md",
+          "textStyle": "lead"
+        },
+        {
+          "type": "group",
+          "layout": "stack",
+          "tone": "callout",
+          "blocks": [
+            {
+              "type": "markdown",
+              "source": "sections/fragment-44.md"
+            },
+            {
+              "type": "group",
+              "layout": "roundtable",
+              "tone": "plain",
+              "blocks": [
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-45.md"
+                },
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-46.md"
+                },
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-47.md"
+                },
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-48.md"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "layout": "stack",
+          "tone": "activity",
+          "blocks": [
+            {
+              "type": "activity",
+              "activityId": "closing-practice-questions"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "layout": "stack",
+          "tone": "callout",
+          "revealId": "closing-area",
+          "blocks": [
+            {
+              "type": "markdown",
+              "source": "sections/fragment-50.md"
+            },
+            {
+              "type": "markdown",
+              "source": "sections/fragment-51.md"
+            },
+            {
+              "type": "activity",
+              "activityId": "closing-writing"
+            },
+            {
+              "type": "group",
+              "layout": "stack",
+              "tone": "plain",
+              "revealId": "closing-checks",
+              "blocks": [
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-49.md"
+                },
+                {
+                  "type": "activity",
+                  "activityId": "closing-checklist"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "knowledge-check",
+      "label": "08 — Knowledge Check",
+      "heading": "Are You Ready to Close with Purpose?",
+      "headingId": "title-8",
+      "headingLevel": 2,
+      "eyebrow": "08 · Feedback and unlock · 3 minutes",
+      "requirement": "Complete the activities on this page to unlock Next.",
+      "reference": false,
+      "gateActivityIds": [
+        "knowledge-check"
+      ],
+      "blocks": [
+        {
+          "type": "markdown",
+          "source": "sections/fragment-52.md",
+          "textStyle": "lead"
+        },
+        {
+          "type": "group",
+          "layout": "stack",
+          "tone": "activity",
+          "blocks": [
+            {
+              "type": "activity",
+              "activityId": "knowledge-check"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "layout": "stack",
+          "tone": "callout",
+          "revealId": "completion",
+          "blocks": [
+            {
+              "type": "markdown",
+              "source": "sections/fragment-53.md",
+              "textStyle": "note"
+            },
+            {
+              "type": "markdown",
+              "source": "sections/fragment-54.md"
+            },
+            {
+              "type": "markdown",
+              "source": "sections/fragment-55.md"
+            },
+            {
+              "type": "progress",
+              "activityId": "knowledge-check",
+              "questionIds": [
+                "synthesis",
+                "effective-summary",
+                "unanimity",
+                "task-completion",
+                "judge-comments"
+              ],
+              "scorePrefix": "Final score: ",
+              "scoreSeparator": " / ",
+              "progressSuffix": " of 9 lesson pages complete."
+            },
+            {
+              "type": "markdown",
+              "source": "sections/fragment-56.md"
+            },
+            {
+              "type": "markdown",
+              "source": "sections/fragment-57.md"
+            },
+            {
+              "type": "activity",
+              "activityId": "practice-goals"
+            },
+            {
+              "type": "navigation",
+              "actions": [
+                {
+                  "sectionId": "quick-reference",
+                  "label": "Revisit Quick Reference"
+                },
+                {
+                  "sectionId": "welcome",
+                  "label": "Review completed sections"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quick-reference",
+      "label": "Quick Reference",
+      "heading": "Final Stage Quick Reference",
+      "headingId": "reference-title",
+      "headingLevel": 2,
+      "requirement": "Complete the activities on this page to unlock Next.",
+      "reference": true,
+      "gateActivityIds": [],
+      "blocks": [
+        {
+          "type": "reference",
+          "source": "reference/reference.json",
+          "printLabel": "Print quick reference"
+        }
+      ]
+    }
+  ]
+}

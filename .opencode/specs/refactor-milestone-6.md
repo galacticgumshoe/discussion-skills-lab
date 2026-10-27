@@ -44,6 +44,22 @@ Middle palette. Preserve Final's previous/next question composition; do not impo
 Middle's quiz overview/scenario wrappers. Narrow Final CSS additions needed to
 retain these roles are in scope; cross-lesson theme consolidation is not.
 
+Owner-approved presentation exceptions (2026-10-27), clarified by direct Middle
+comparison: **match Middle's respective heading levels**, not a single approximate
+size. Welcome uses `clamp(2.25rem,5vw,3.6rem)`; numbered pages 01–08, including
+Knowledge Check, use `clamp(1.85rem,3.4vw,2.6rem)`. Both use bold Fraunces, 1.17
+leading and `-.035em` tracking. Flashcard fronts use Middle's normal weight, common
+white/navy face treatment and intrinsic sizing, not legacy Final's bold weight.
+Do not enlarge reference, activity, model or completion subheadings. After a
+flashcard is explored and flipped back, its original/front face must show the
+`✓ Explored` icon/label, alongside—not overlapping—the Flip card hint. Retain the
+back-face cue, durable credit on reload, native keyboard/ARIA behavior and intrinsic
+growth. These two intentional differences from pinned main must be asserted as
+approved expectations, not reversed for screenshot parity. Reuse the existing
+shared cue; do not fork its controller. Follow-up testing is impact-scoped: for
+Final-only CSS/presentation changes run affected Final checks, not the entire site
+or Opening/Middle suites. Broaden only if shared behavior actually changes.
+
 ## Exact completion/reveal policies
 
 | Page / section | Required for initial completion |

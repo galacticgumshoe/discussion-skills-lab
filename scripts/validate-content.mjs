@@ -39,7 +39,8 @@ export function validateLegacyVariants(data) {
     const identity = `${record.source.symbol}:${record.source.index ?? ''}`;
     if (ids.has(record.id) || sources.has(identity)) errors.push(`/records: duplicate record or source identity ${record.id}`);
     ids.add(record.id); sources.add(identity);
-    if ((record.source.symbol === 'referenceText') !== (typeof record.value === 'string')) errors.push(`/records/${record.id}/value: wrong source value type`);
+    if (record.source.path !== `assets/js/${data.id}.js`) errors.push(`/records/${record.id}/source: wrong lesson source`);
+    if (['referenceText', 'referenceText-prefix'].includes(record.source.symbol) !== (typeof record.value === 'string')) errors.push(`/records/${record.id}/value: wrong source value type`);
   }
   return errors;
 }

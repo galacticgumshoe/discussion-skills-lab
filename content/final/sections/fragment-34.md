@@ -1,0 +1,1 @@
+If a summary omits an important finding, add it constructively: “That captures our main recommendations. Could we also include Jordan's concern about funding? We haven't resolved that part yet.” Avoid repeating what is already included.
