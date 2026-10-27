@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "research",
+  "type": "multiple-choice",
+  "profile": "standard",
+  "data": {
+    "id": "effective-research",
+    "prompt": "Which contribution uses this research most effectively?",
+    "correctOptionId": "source-finding-connection",
+    "options": [
+      {
+        "id": "personal-story",
+        "text": "“Transportation matters. I have seen that myself.”",
+        "feedback": "Not quite. A personal observation does not use the available research."
+      },
+      {
+        "id": "source-finding-connection",
+        "text": "“According to the fictional Community Access Survey from May 2025, 38% of surveyed students reported missing at least one after-school activity because of transportation difficulties. We should consider whether transportation support could improve participation.”",
+        "feedback": "Good choice. This identifies the source and date, describes the fictional finding, and connects it to a possible solution."
+      },
+      {
+        "id": "derail",
+        "text": "“I found a transportation statistic, but we should discuss a different issue.”",
+        "feedback": "Not quite. Research is less useful when it derails the conversation."
+      },
+      {
+        "id": "only-barrier",
+        "text": "“The survey proves transportation is the only barrier.”",
+        "feedback": "Not quite. The survey does not establish that transportation is the only barrier."
+      }
+    ]
+  }
+}

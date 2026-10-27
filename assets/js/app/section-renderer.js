@@ -1,6 +1,6 @@
 // MIT. Bounded composition only. Components retain their verified own-state APIs.
 import { loadJson, loadMarkdown, resolveContentUrl } from './content-loader.js';
-import { validateActivity, validateLessonManifest, activityTypes } from './lesson-validation.js';
+import { validateActivity, validateLessonManifest, activityTypes, activityBodySources } from './lesson-validation.js';
 import { renderMarkdown } from './markdown.js';
 import { mountReference } from './reference-loader.js';
 import { mountFlashcards } from '../components/flashcards.js';
@@ -47,21 +47,22 @@ export function validateRegistry(registry) {
 }
 
 // Manifest is already validated. The caller owns shell hooks, state, gates and saves.
-export function renderSections(root, { manifest, manifestUrl, allowedRootUrl, registry, getState, onChange }) {
+export function renderSections(root, { manifest, manifestUrl, allowedRootUrl, registry, getState, onChange, revealPolicy = () => ({}) }) {
   validateRegistry(registry);
   validateLessonManifest(manifest, { declaringUrl: manifestUrl, allowedRootUrl });
   const document = root.ownerDocument, container = root.querySelector('#views');
   if (!container) throw new TypeError('Missing section container');
   const node = (tag, text) => { const element = document.createElement(tag); if (text !== undefined) element.textContent = text; return element; };
-  const abort = new AbortController(), references = [], jobs = [], preparations = [], controllers = new Map();
+  const abort = new AbortController(), references = [], jobs = [], preparations = [], controllers = new Map(), reveals = [];
   let releaseHydration;
   const hydrated = new Promise(resolve => { releaseHydration = resolve; });
   const sources = new Map(manifest.activities.map(activity => [activity.id, activity.source]));
   let destroyed = false;
   const sections = manifest.sections.map((section, index) => {
     const view = node('section'), heading = node(`h${section.headingLevel}`, section.heading);
-    view.className = 'lesson-view'; view.id = `view-${index}`; view.dataset.sectionId = section.id;
-    heading.id = `section-${section.id}-heading`; view.setAttribute('aria-labelledby', heading.id);
+    view.className = 'view lesson-view'; view.id = `view-${index}`; view.dataset.sectionId = section.id;
+    heading.id = section.headingId || `section-${section.id}-heading`; view.setAttribute('aria-labelledby', heading.id);
+    heading.className = index === 0 ? 'display' : '';
     view.hidden = true;
     if (section.eyebrow) view.append(node('p', section.eyebrow));
     view.append(heading); container.append(view);
@@ -97,31 +98,50 @@ export function renderSections(root, { manifest, manifestUrl, allowedRootUrl, re
     for (const block of items) {
       if (block.type === 'group') {
         const group = node('div'); group.className = `dsl-block-group dsl-layout-${block.layout} dsl-tone-${block.tone}`; parent.append(group); blocks(group, block.blocks, section);
+        if (block.revealId) { group.dataset.revealId = block.revealId; group.hidden = true; reveals.push({ group, id: block.revealId }); }
       } else if (block.type === 'reference') {
-        const reference = node('div'), content = node('div'), status = node('p'), retry = node('button', 'Retry Quick Reference'), print = node('button', 'Print Quick Reference');
+        const reference = node('div'), content = node('div'), status = node('p'), retry = node('button', 'Retry Quick Reference'), print = node('button', block.printLabel || 'Print Quick Reference');
         content.dataset.referenceContent = ''; status.dataset.referenceStatus = ''; status.setAttribute('role', 'status');
         retry.dataset.referenceRetry = ''; print.dataset.referencePrint = ''; retry.type = print.type = 'button'; retry.hidden = true; print.disabled = true;
         reference.append(print, status, retry, content); parent.append(reference);
-        references.push(mountReference(reference, { source: block.source, declaringUrl: manifestUrl, allowedRootUrl }));
+         references.push(mountReference(reference, { source: block.source, declaringUrl: manifestUrl, allowedRootUrl }));
       } else if (block.type === 'markdown') {
         loadable(parent, section, async content => {
+          if (block.textStyle) content.classList.add(`dsl-prose-${block.textStyle}`);
           const url = resolveContentUrl(block.source, manifestUrl, allowedRootUrl), source = await loadMarkdown(url, { signal: abort.signal });
           if (!destroyed) content.replaceChildren(renderMarkdown(source, { baseUrl: url }));
         });
       } else {
-        loadable(parent, section, async (content, activity) => {
+        loadable(parent, section, async (content, prepared) => {
+          const { activity, bodies } = prepared;
           if (destroyed) return;
           const entry = registry[activity.type];
           if (!entry) throw new Error('Activity type is unavailable in the static registry');
           const host = node('div'); host.dataset.activityId = activity.id;
           const state = entry.read(activity, getState()); content.replaceChildren(host);
           let controller;
-          try { controller = entry.mount(host, { data: activity.data, profile: activity.profile, state, onChange: own => { if (!destroyed) onChange(activity, entry, copy(own)); } }); }
+          try { controller = entry.mount(host, { data: activity.data, profile: activity.profile, bodies, state, onChange: own => { if (!destroyed) onChange(activity, entry, copy(own)); } }); }
           catch (error) { host.remove(); throw error; }
           controllers.set(activity.id, { controller, activity, entry });
-        }, () => {
+        }, async () => {
           const url = resolveContentUrl(sources.get(block.activityId), manifestUrl, allowedRootUrl);
-          return loadJson(url, { signal: abort.signal, validate: data => validateActivity(data, { activityId: block.activityId }) });
+          const activity = await loadJson(url, { signal: abort.signal, validate: data => validateActivity(data, { activityId: block.activityId, declaringUrl: url, allowedRootUrl }) });
+          const bodies = new Map();
+          const bodySources = activityBodySources(activity);
+          await Promise.all(bodySources.map(async source => {
+            const bodyUrl = resolveContentUrl(source, url, allowedRootUrl);
+            const fragment = renderMarkdown(await loadMarkdown(bodyUrl, { signal: abort.signal }), { baseUrl: bodyUrl });
+            // Native card buttons contain phrasing content only. Preserve prose/list
+            // semantics and emphasis without invalid nested block elements.
+            if (activity.type === 'flashcards') for (const element of [...fragment.querySelectorAll('p,ul,ol,li,h1,h2,h3,h4,blockquote')].reverse()) {
+              const span = node('span'); span.className = `dsl-prose-${element.localName}`;
+              if (['ul', 'ol'].includes(element.localName)) span.setAttribute('role', 'list');
+              if (element.localName === 'li') span.setAttribute('role', 'listitem');
+              span.append(...element.childNodes); element.replaceWith(span);
+            }
+            bodies.set(source, fragment);
+          }));
+          return { activity, bodies };
         });
       }
     }
@@ -129,14 +149,18 @@ export function renderSections(root, { manifest, manifestUrl, allowedRootUrl, re
   sections.forEach(section => blocks(section.view, section.blocks, section));
   return Object.freeze({ sections,
     prepared: Promise.allSettled(preparations),
-    hydrate() { releaseHydration(); },
+    hydrate() { updateReveals(getState()); releaseHydration(); },
     ready: Promise.all([...jobs.map(job => job.ready), ...references.map(reference => reference.ready)]),
     isSectionReady: id => jobs.filter(job => job.sectionId === id).every(job => job.loaded),
-    update(state) { if (!destroyed) controllers.forEach(({ controller, activity, entry }) => controller.update(entry.read(activity, state))); },
+    update(state) { if (!destroyed) { updateReveals(state); controllers.forEach(({ controller, activity, entry }) => controller.update(entry.read(activity, state))); } },
     destroy() {
       if (destroyed) return;
       destroyed = true; abort.abort(); releaseHydration(); jobs.forEach(job => job.destroy()); references.forEach(reference => reference.destroy());
       controllers.forEach(({ controller }) => controller.destroy()); sections.forEach(section => section.view.remove());
     }
   });
+  function updateReveals(state) {
+    const visible = revealPolicy(state);
+    reveals.forEach(({ group, id }) => { group.hidden = visible[id] !== true; });
+  }
 }

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "speaking-cards",
+  "type": "flashcards",
+  "data": {
+    "items": [
+      {
+        "id": "prevent-interruption",
+        "frontSource": "bodies/prevent-interruption-front.md",
+        "backSource": "bodies/prevent-interruption-back.md"
+      },
+      {
+        "id": "respond-constructively",
+        "frontSource": "bodies/respond-constructively-front.md",
+        "backSource": "bodies/respond-constructively-back.md"
+      }
+    ]
+  }
+}

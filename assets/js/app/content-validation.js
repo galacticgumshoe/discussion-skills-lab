@@ -34,7 +34,7 @@ export function validateReferenceDocument(data, context = {}) {
   };
   if (fields(data, ['schemaVersion', 'id', 'title', 'layout', 'items'], '')) {
     if (data.schemaVersion !== 1) errors.push('/schemaVersion: expected 1');
-    if (data.layout !== 'stacked-reference') errors.push('/layout: unsupported layout');
+    if (!['stacked-reference', 'middle-reference'].includes(data.layout)) errors.push('/layout: unsupported layout');
     for (const key of ['id', 'title']) if (!nonempty(data[key])) errors.push(`/${key}: nonempty text required`);
     if (!Array.isArray(data.items) || data.items.length < 1) errors.push('/items: nonempty array required');
     else data.items.forEach((item, i) => {

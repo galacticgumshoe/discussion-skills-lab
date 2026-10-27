@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "kind": "legacy-variants",
+  "id": "middle",
+  "records": [
+    {
+      "id": "strategy-continue",
+      "status": "non-published",
+      "source": { "revision": "0b5d2297e7cbc19bd59cde750492dd28e3983ca0", "path": "assets/js/middle.js", "symbol": "strategies", "index": 0 },
+      "value": { "title": "Continue assertively", "meaning": "Continue a brief point when voices overlap.", "advantage": "May preserve a timely point.", "risk": "Repeatedly talking over others can appear domineering.", "example": "“Let me finish this connection briefly, and then I’d like to hear other perspectives.”" }
+    },
+    {
+      "id": "strategy-request-first",
+      "status": "non-published",
+      "source": { "revision": "0b5d2297e7cbc19bd59cde750492dd28e3983ca0", "path": "assets/js/middle.js", "symbol": "strategies", "index": 1 },
+      "value": { "title": "Request to go first", "meaning": "Acknowledge the other speaker and ask to make your point first.", "advantage": "Preserves an opportunity while recognizing another person.", "risk": "Repeated requests can control the floor. Honor the promised next turn.", "example": "“Would you mind if I finish this point first? I’d like to hear you afterward.”" }
+    },
+    {
+      "id": "strategy-yield-next",
+      "status": "non-published",
+      "source": { "revision": "0b5d2297e7cbc19bd59cde750492dd28e3983ca0", "path": "assets/js/middle.js", "symbol": "strategies", "index": 2 },
+      "value": { "title": "Yield and request the next turn", "meaning": "Let the other person go first, then ask to contribute.", "advantage": "Builds trust and balances participation.", "risk": "The discussion may move on before your point fits.", "example": "“Go ahead. I’d like to build on that afterward.”" }
+    },
+    {
+      "id": "strategy-direct-connection",
+      "status": "non-published",
+      "source": { "revision": "0b5d2297e7cbc19bd59cde750492dd28e3983ca0", "path": "assets/js/middle.js", "symbol": "strategies", "index": 3 },
+      "value": { "title": "Claim a direct connection", "meaning": "Explain why your point responds immediately to the previous speaker.", "advantage": "Preserves continuity.", "risk": "Repeated urgency claims can dominate the floor.", "example": "“Could I respond briefly to that concern before we change topics?”" }
+    },
+    {
+      "id": "unused-reference-text",
+      "status": "non-published",
+      "source": { "revision": "0b5d2297e7cbc19bd59cde750492dd28e3983ca0", "path": "assets/js/middle.js", "symbol": "referenceText" },
+      "value": "MIDDLE STAGE QUICK REFERENCE\n1. CONTRIBUTE SUBSTANCE\n• Share relevant research. Cite publication and date.\n• Explain why evidence matters. Use anecdotes to illustrate, not replace, evidence.\n2. SUPPORT THE GROUP\n• Take notes and look up regularly. Track time, invite perspectives, and redirect respectfully.\n3. COMMUNICATE PROFESSIONALLY\n• Address fellow discussants. Speak within your role and finish sentences audibly.\n4. MANAGE SPEAKING CONFLICTS\n• Balance assertiveness with collaboration. Honor promised turns.\n5. YOUR GOAL\nContribute evidence. Build on others. Keep the group moving toward a solution.\nThese coaching strategies do not replace official tournament rules."
+    }
+  ]
+}

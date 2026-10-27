@@ -1,0 +1,4 @@
+- Speak professionally.
+ - Avoid fillers and slang.
+ - Stay in role.
+ - Navigate interruptions.

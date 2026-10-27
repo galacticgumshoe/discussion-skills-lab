@@ -1,0 +1,2 @@
+- Support ideas with research.
+ - Orally cite your sources.

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "classification",
+  "type": "question-sequence",
+  "profile": "middle-scenarios",
+  "data": { "questions": [
+    { "id": "time", "prompt": "1 of 5 · “We have about 15 minutes left. Should we move to evaluating solutions?”", "correctOptionId": "procedural", "explanation": "This manages time and discussion structure.", "options": [{ "id": "procedural", "text": "Procedural" }, { "id": "substantive", "text": "Substantive" }] },
+    { "id": "transportation-report", "prompt": "2 of 5 · “A report on transportation access could help us assess participation barriers.”", "correctOptionId": "substantive", "explanation": "This introduces research relevant to the problem. An actual contribution should cite its publication and date.", "options": [{ "id": "procedural", "text": "Procedural" }, { "id": "substantive", "text": "Substantive" }] },
+    { "id": "invite-perspective", "prompt": "3 of 5 · “Before moving on, does anyone have another perspective?”", "correctOptionId": "procedural", "explanation": "This organizes participation.", "options": [{ "id": "procedural", "text": "Procedural" }, { "id": "substantive", "text": "Substantive" }] },
+    { "id": "combine-proposals", "prompt": "4 of 5 · “Combining transportation and outreach could address two barriers at once.”", "correctOptionId": "substantive", "explanation": "This develops a solution by connecting proposals.", "options": [{ "id": "procedural", "text": "Procedural" }, { "id": "substantive", "text": "Substantive" }] },
+    { "id": "redirect", "prompt": "5 of 5 · “Our conversation is drifting away from the task.”", "correctOptionId": "procedural", "explanation": "This redirects the group.", "options": [{ "id": "procedural", "text": "Procedural" }, { "id": "substantive", "text": "Substantive" }] }
+  ] }
+}

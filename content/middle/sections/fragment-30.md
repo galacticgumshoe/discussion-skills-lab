@@ -1,0 +1,1 @@
+**Fictional practice task:** A city advisory committee is developing a proposal to improve teen participation in community programs. It is evaluating transportation, communication, and scheduling solutions.

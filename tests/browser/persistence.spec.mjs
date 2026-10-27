@@ -11,6 +11,7 @@ async function seed(page, id, raw) {
 for (const mount of ['/', '/discussion-skills-lab/', '/__original/', '/__original/discussion-skills-lab/']) {
   for (const id of lessons) {
     test(`${mount}${id} observed restore, durable credit/drafts and non-contiguous navigation`, async ({ page }) => {
+      const migrated = id === 'middle' && !mount.startsWith('/__original/');
       for (const name of ['missing', 'fresh', 'partial-first', 'mid-lesson', 'completed', 'correct-ever-then-incorrect', 'empty-zero']) {
         const saved = fixture(id, name);
         const savedRecord = saved.raw === null ? { completed: [], data: {} } : JSON.parse(saved.raw);
@@ -23,17 +24,17 @@ for (const mount of ['/', '/discussion-skills-lab/', '/__original/', '/__origina
         } else {
           const fields = savedRecord.data[`${id}State`]?.fields || {};
           if (id === 'middle') for (const [index, value] of Object.entries(fields)) {
-            if (['source', 'finding', 'why', 'assembled', 'application-draft'].includes(maps.middle.fields[index])) expect(await page.locator(`#${maps.middle.fields[index]}`).inputValue()).toBe(value);
+            if (['source', 'finding', 'why', 'assembled', 'application-draft'].includes(maps.middle.fields[index])) expect(await page.locator(migrated ? `[data-field-id="${maps.middle.fieldIds[maps.middle.fields[index]]}"]` : `#${maps.middle.fields[index]}`).inputValue()).toBe(value);
           }
           else for (const [field, value] of Object.entries(fields)) if (Object.keys(maps.final.fields).includes(field)) expect(await page.locator(`#${field}`).inputValue()).toBe(value);
         }
         if (name === 'completed' || name === 'correct-ever-then-incorrect') {
           await navigate(page, maps[id].countedPages - 1);
           await expect(page.locator('#next-section')).toBeEnabled();
-          if (name === 'correct-ever-then-incorrect') await expect(page.locator('.lesson-view:not([hidden]) .selected-incorrect').first()).toBeVisible();
+          if (name === 'correct-ever-then-incorrect') await expect(page.locator(`.lesson-view:not([hidden]) ${migrated ? '.dsl-selected-incorrect' : '.selected-incorrect'}`).first()).toBeVisible();
         }
         if (name === 'empty-zero') {
-          const selector = id === 'opening' ? '#what-how-options button' : id === 'middle' ? '#classify-options button' : '#quiz-1 .choice';
+          const selector = id === 'opening' ? '#what-how-options button' : id === 'middle' ? migrated ? '[data-activity-id="classification"] .dsl-choice' : '#classify-options button' : '#quiz-1 .choice';
           await expect(page.locator(selector).first()).toHaveAttribute('aria-pressed', 'true');
         }
         if (id === 'final' && name === 'mid-lesson') {
@@ -42,19 +43,20 @@ for (const mount of ['/', '/discussion-skills-lab/', '/__original/', '/__origina
           expect(actualOpen).toEqual(actualOpen.map((_, i) => !!panelsOpen[i]));
         }
         if (name === 'partial-first' && id !== 'opening') {
-          const card = page.locator('#view-0 .flip-card,#view-0 .flip').first();
-          await expect(card).toHaveAttribute('aria-pressed', 'true');
-          await card.click(); await expect(card).toHaveAttribute('aria-pressed', 'false');
+          const card = page.locator(migrated ? '#view-0 .dsl-card' : '#view-0 .flip-card,#view-0 .flip').first();
+          await expect(card).toHaveAttribute('aria-pressed', migrated ? 'false' : 'true');
+          await card.click(); await expect(card).toHaveAttribute('aria-pressed', migrated ? 'true' : 'false');
           await page.reload();
           // KI-09: original engine restores explored cards back-side-up, not their last face.
-          await expect(card).toHaveAttribute('aria-pressed', 'true');
+          await expect(card).toHaveAttribute('aria-pressed', migrated ? 'false' : 'true');
+          if (migrated) await expect(card.locator('.dsl-card-explored')).toBeVisible();
           const raw = JSON.parse(await rawProgress(page, id)).data[`${id}State`];
           expect(id === 'middle' ? raw.sets.flipped.welcome : raw.flips[0]).toContain(0);
         }
       }
       await seed(page, id, fixture(id, 'non-contiguous').raw);
       await page.goto(`${mount}${id}.html`); await ready(page);
-      await expect(page.locator('[data-go="2"]')).toBeDisabled();
+      await expect(page.locator(`[data-go="${migrated ? 'evidence' : '2'}"]`)).toBeDisabled();
       await navigate(page, 3); await navigate(page, 4); await navigate(page, 0);
       await page.reload(); await ready(page);
       expect(JSON.parse(await rawProgress(page, id)).completed).toContain(3);
@@ -96,7 +98,7 @@ for (const id of lessons) {
     await seed(page, id, fixture(id, 'completed').raw);
     await page.goto(`/${id}.html`); await ready(page);
     const target = id === 'opening' ? { page: 4, button: '#copy-question', status: '#copy-question-status', field: '#draft-input' }
-      : id === 'middle' ? { page: 2, button: '#assembly-copy-button', status: '#assembly-status', field: '#assembled' }
+      : id === 'middle' ? { page: 2, button: '[data-activity-id="evidence-writing"] .dsl-copy', status: '[data-activity-id="evidence-writing"] .dsl-writing-status', field: '[data-field-id="evidence-output"]' }
       : { page: 2, button: '#copy-builder', status: '#builder-status', field: '#assembled' };
     await navigate(page, target.page);
     // Native keyboard activation avoids a moving pointer target while WebKit's
@@ -107,7 +109,7 @@ for (const id of lessons) {
     await expect(page.locator(target.status)).toContainText(/cop(y|ying)/i);
     await expect(page.locator(target.field)).toBeVisible();
     expect(await page.locator(target.field).inputValue()).not.toBe('');
-    if (id === 'middle') await expect(page.locator('.copy-fallback')).toBeVisible();
+    if (id === 'middle') await expect(page.locator(target.field)).toHaveJSProperty('selectionStart', 0);
   });
 }
 

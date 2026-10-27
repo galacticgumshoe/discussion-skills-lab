@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "welcome-cards",
+  "type": "flashcards",
+  "data": {
+    "items": [
+      {
+        "id": "bring-evidence",
+        "frontSource": "bodies/bring-evidence-front.md",
+        "backSource": "bodies/bring-evidence-back.md"
+      },
+      {
+        "id": "build-collaboration",
+        "frontSource": "bodies/build-collaboration-front.md",
+        "backSource": "bodies/build-collaboration-back.md"
+      },
+      {
+        "id": "manage-floor",
+        "frontSource": "bodies/manage-floor-front.md",
+        "backSource": "bodies/manage-floor-back.md"
+      }
+    ]
+  }
+}

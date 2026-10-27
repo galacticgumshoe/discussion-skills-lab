@@ -1,0 +1,4 @@
+- Listen actively; avoid visible frustration and distracting habits.
+- Address fellow discussants, not the judge.
+- Use concise language suited to your assigned role.
+- Speak clearly and maintain volume through sentence endings.

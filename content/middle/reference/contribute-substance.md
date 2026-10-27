@@ -1,0 +1,4 @@
+- Share relevant research and insights frequently.
+- Verbally cite publication and date; explain why evidence matters.
+- Use anecdotes to illustrate, not replace, evidence.
+- Avoid repetition and unrelated detours.

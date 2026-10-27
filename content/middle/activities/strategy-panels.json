@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "strategy-panels",
+  "type": "expandables",
+  "profile": "standard",
+  "data": {
+    "items": [
+      {
+        "id": "continue",
+        "title": "Continue assertively",
+        "bodySource": "bodies/continue-panel.md"
+      },
+      {
+        "id": "request-first",
+        "title": "Request to go first",
+        "bodySource": "bodies/request-first-panel.md"
+      },
+      {
+        "id": "yield-next",
+        "title": "Yield and request the next turn",
+        "bodySource": "bodies/yield-next-panel.md"
+      },
+      {
+        "id": "direct-connection",
+        "title": "Claim a direct connection",
+        "bodySource": "bodies/direct-connection-panel.md"
+      }
+    ]
+  }
+}

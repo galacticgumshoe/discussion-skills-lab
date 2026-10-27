@@ -1,0 +1,3 @@
+- Listen attentively.
+ - Include others.
+ - Keep the group focused.

@@ -1,0 +1,188 @@
+{
+  "reportSha256": "45cdeabbd8af0ef28ef01596e8d59149d86234aca447893de16bb9c2f1f5ce57",
+  "stats": {
+    "startTime": "2026-10-26T00:01:07.210Z",
+    "duration": 753538.9909999999,
+    "expected": 720,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "projectOutcomes": {
+    "('chromium', 'expected')": 180,
+    "('firefox', 'expected')": 180,
+    "('webkit', 'expected')": 180,
+    "('mobile-chromium', 'expected')": 180
+  },
+  "runnerErrors": [],
+  "captures": [
+    {
+      "source": "test-results/middle-lesson--Middle-fres-19dde-nd-settled-responsive-views-chromium/middle-communication.png",
+      "path": "root-chromium-middle-communication.png",
+      "sha256": "18fb1950f10490c106f144d908c80b0899d3cec94afa19d2ef5c70e144312358",
+      "bytes": 149356
+    },
+    {
+      "source": "test-results/middle-lesson--Middle-fres-19dde-nd-settled-responsive-views-chromium/middle-evidence.png",
+      "path": "root-chromium-middle-evidence.png",
+      "sha256": "8793dbd2ddb35f72c0cc9e23428f7881a57ed642aff6983ffae4ecc4c1cc2f83",
+      "bytes": 343829
+    },
+    {
+      "source": "test-results/middle-lesson--Middle-fres-19dde-nd-settled-responsive-views-chromium/middle-fresh-ordinary.pdf",
+      "path": "root-chromium-middle-fresh-ordinary.pdf",
+      "sha256": "6cefe2532542c1ea1afd0c2096e3572525c42263be00512bd7fd21e67abe65dc",
+      "bytes": 90231
+    },
+    {
+      "source": "test-results/middle-lesson--Middle-fres-19dde-nd-settled-responsive-views-chromium/middle-fresh-reference.pdf",
+      "path": "root-chromium-middle-fresh-reference.pdf",
+      "sha256": "6cefe2532542c1ea1afd0c2096e3572525c42263be00512bd7fd21e67abe65dc",
+      "bytes": 90231
+    },
+    {
+      "source": "test-results/middle-lesson--Middle-fres-19dde-nd-settled-responsive-views-chromium/middle-integrated-practice.png",
+      "path": "root-chromium-middle-integrated-practice.png",
+      "sha256": "6f0cc96faa81c57d80c0171430bfaa5b0f117f37a22866c77f546af456aadb97",
+      "bytes": 263330
+    },
+    {
+      "source": "test-results/middle-lesson--Middle-fres-19dde-nd-settled-responsive-views-chromium/middle-knowledge-check.png",
+      "path": "root-chromium-middle-knowledge-check.png",
+      "sha256": "863fb570994dbddc4f5330df1fe9caefb2632ca4f5954b3eeb2a45c5f0b58b07",
+      "bytes": 151826
+    },
+    {
+      "source": "test-results/middle-lesson--Middle-fres-19dde-nd-settled-responsive-views-chromium/middle-long-card-320-enlarged.png",
+      "path": "root-chromium-middle-long-card-320-enlarged.png",
+      "sha256": "84bf92d745c3643b7db5cb300e658c3b02f1b0eada85cb665f2e272aa1e260f5",
+      "bytes": 315170
+    },
+    {
+      "source": "test-results/middle-lesson--Middle-fres-19dde-nd-settled-responsive-views-chromium/middle-quick-reference.png",
+      "path": "root-chromium-middle-quick-reference.png",
+      "sha256": "602931508b19e235fd82cbe89e7cd8c0478ea641ba969fe85dce96addf339194",
+      "bytes": 222962
+    },
+    {
+      "source": "test-results/middle-lesson--Middle-fres-19dde-nd-settled-responsive-views-chromium/middle-speaking-conflicts.png",
+      "path": "root-chromium-middle-speaking-conflicts.png",
+      "sha256": "1f9f2eb7b7e6a017523ddf85807585992d02c8bf0ed9cc9b66a85fa053e6d0b6",
+      "bytes": 199739
+    },
+    {
+      "source": "test-results/middle-lesson--Middle-fres-19dde-nd-settled-responsive-views-chromium/middle-structure-substance.png",
+      "path": "root-chromium-middle-structure-substance.png",
+      "sha256": "5e122d29b14656a1195107cc0841c1c589767b7df472c7d2d661135f3571591f",
+      "bytes": 170487
+    },
+    {
+      "source": "test-results/middle-lesson--Middle-fres-19dde-nd-settled-responsive-views-chromium/middle-support-group.png",
+      "path": "root-chromium-middle-support-group.png",
+      "sha256": "3f78a1eea5e23ca3635d37c58604c15bbbbd9fa790f38f68257ad30c4bb9ff00",
+      "bytes": 175701
+    },
+    {
+      "source": "test-results/middle-lesson--Middle-fres-19dde-nd-settled-responsive-views-chromium/middle-welcome.png",
+      "path": "root-chromium-middle-welcome.png",
+      "sha256": "82eab67e9e861f9562d4da9d5d545eff8e62f17f2815598146ec69f746bf0cf3",
+      "bytes": 133329
+    },
+    {
+      "source": "test-results/middle-lesson--Middle-fres-19dde-nd-settled-responsive-views-mobile-chromium/middle-communication.png",
+      "path": "root-mobile-chromium-middle-communication.png",
+      "sha256": "cb6bae906ff41b234454828f1d543a22e1ae3c89b47cd238f79af3672eea665c",
+      "bytes": 98004
+    },
+    {
+      "source": "test-results/middle-lesson--Middle-fres-19dde-nd-settled-responsive-views-mobile-chromium/middle-evidence.png",
+      "path": "root-mobile-chromium-middle-evidence.png",
+      "sha256": "428a2b34ff0b3a66fcb077c908213279f080613c7ff43ebc9e1a7ef5f58c1665",
+      "bytes": 284867
+    },
+    {
+      "source": "test-results/middle-lesson--Middle-fres-19dde-nd-settled-responsive-views-mobile-chromium/middle-fresh-ordinary.pdf",
+      "path": "root-mobile-chromium-middle-fresh-ordinary.pdf",
+      "sha256": "b7c4ab5c9837cab2521d3a186d1bed924a63743975496902f3cf326775f872b9",
+      "bytes": 90231
+    },
+    {
+      "source": "test-results/middle-lesson--Middle-fres-19dde-nd-settled-responsive-views-mobile-chromium/middle-fresh-reference.pdf",
+      "path": "root-mobile-chromium-middle-fresh-reference.pdf",
+      "sha256": "fe822f1c4aa7cd2d2f40977497dbe14a9a7f5a14badc8b2a16e10ba58372c183",
+      "bytes": 91017
+    },
+    {
+      "source": "test-results/middle-lesson--Middle-fres-19dde-nd-settled-responsive-views-mobile-chromium/middle-integrated-practice.png",
+      "path": "root-mobile-chromium-middle-integrated-practice.png",
+      "sha256": "819d176365debe36bebcf6f23ae988194c566ed9a05fd056ab00101e84efff8d",
+      "bytes": 205296
+    },
+    {
+      "source": "test-results/middle-lesson--Middle-fres-19dde-nd-settled-responsive-views-mobile-chromium/middle-knowledge-check.png",
+      "path": "root-mobile-chromium-middle-knowledge-check.png",
+      "sha256": "d649c6b938c543309dcf44edc263cbd36830a6328ac7175cc527e857a43e9c62",
+      "bytes": 105497
+    },
+    {
+      "source": "test-results/middle-lesson--Middle-fres-19dde-nd-settled-responsive-views-mobile-chromium/middle-long-card-320-enlarged.png",
+      "path": "root-mobile-chromium-middle-long-card-320-enlarged.png",
+      "sha256": "7f4c37f7647c312fcac5333fe2e8d9e9742c758a0c2be30bf798174213fb68d6",
+      "bytes": 315157
+    },
+    {
+      "source": "test-results/middle-lesson--Middle-fres-19dde-nd-settled-responsive-views-mobile-chromium/middle-quick-reference.png",
+      "path": "root-mobile-chromium-middle-quick-reference.png",
+      "sha256": "6c8756e1978239073ac325acc75f078108389f50c2b7e5684b268f2c1fc847ac",
+      "bytes": 166943
+    },
+    {
+      "source": "test-results/middle-lesson--Middle-fres-19dde-nd-settled-responsive-views-mobile-chromium/middle-speaking-conflicts.png",
+      "path": "root-mobile-chromium-middle-speaking-conflicts.png",
+      "sha256": "bc44025b129eba7eb9e6e9062127561e05eba1474dc8129d6039d2e740821ae3",
+      "bytes": 148896
+    },
+    {
+      "source": "test-results/middle-lesson--Middle-fres-19dde-nd-settled-responsive-views-mobile-chromium/middle-structure-substance.png",
+      "path": "root-mobile-chromium-middle-structure-substance.png",
+      "sha256": "fb05351d8b6473a9a58d3eb972a689d93f97eb186e780d6fc6e8bffc1589460f",
+      "bytes": 121205
+    },
+    {
+      "source": "test-results/middle-lesson--Middle-fres-19dde-nd-settled-responsive-views-mobile-chromium/middle-support-group.png",
+      "path": "root-mobile-chromium-middle-support-group.png",
+      "sha256": "b303ed8436992ebaa86e57b57f934e6b40b24c9ed428bdb0658eace8f6754a3d",
+      "bytes": 119447
+    },
+    {
+      "source": "test-results/middle-lesson--Middle-fres-19dde-nd-settled-responsive-views-mobile-chromium/middle-welcome.png",
+      "path": "root-mobile-chromium-middle-welcome.png",
+      "sha256": "e0b2315eb0c1d6c714ee0bf2db22763b4143aa3c3b472d2d6a344e6c9d8059a9",
+      "bytes": 93416
+    },
+    {
+      "source": "test-results/middle-lesson--discussion--5d780-nd-settled-responsive-views-chromium/middle-fresh-ordinary.pdf",
+      "path": "prefix-chromium-middle-fresh-ordinary.pdf",
+      "sha256": "bd10c765fc00cedcea55a14d2e7096c2b63e981f575dfc714b1cee6b23b3d94d",
+      "bytes": 90231
+    },
+    {
+      "source": "test-results/middle-lesson--discussion--5d780-nd-settled-responsive-views-chromium/middle-fresh-reference.pdf",
+      "path": "prefix-chromium-middle-fresh-reference.pdf",
+      "sha256": "bd10c765fc00cedcea55a14d2e7096c2b63e981f575dfc714b1cee6b23b3d94d",
+      "bytes": 90231
+    },
+    {
+      "source": "test-results/middle-lesson--discussion--5d780-nd-settled-responsive-views-mobile-chromium/middle-fresh-ordinary.pdf",
+      "path": "prefix-mobile-chromium-middle-fresh-ordinary.pdf",
+      "sha256": "45a967ecf5e7a79e9e9c6a6c470651612b7371f29bf550a365bceb5b93d8cdae",
+      "bytes": 90231
+    },
+    {
+      "source": "test-results/middle-lesson--discussion--5d780-nd-settled-responsive-views-mobile-chromium/middle-fresh-reference.pdf",
+      "path": "prefix-mobile-chromium-middle-fresh-reference.pdf",
+      "sha256": "5db5fe3c7f1094164ccbb840aa20c273655b72d87cca0b7ed61afb41b0eb96cc",
+      "bytes": 91017
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+OPENING
+
+→
+
+RESEARCH
+
+→
+
+MIDDLE
+
+→
+
+FINAL

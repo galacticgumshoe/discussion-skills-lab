@@ -20,11 +20,29 @@ Do not migrate Opening here, remove all legacy CSS, add new instruction, or chan
 
 ## Extraction and cutover sequence
 
+Apply the contracts' **Presentation-preservation contract for content migrations**
+and read its three Middle correction evidence records before extraction. Create
+`.opencode/docs/evidence/milestone-6-presentation.md` with the all-section source →
+metadata/profile/scoped-style inventory, comparison coverage and review decisions.
+This is a prerequisite to cutover, not optional final screenshot polish.
+
 Build/test each section in the common harness while the legacy Final entry remains active. Extract all JS question banks, `notes`, `checkLabels`, `goalTexts`, and synthesis assembly template pieces, as well as HTML prose/models/cards/task statements. Every existing question/option has its original feedback, correct association, context, and order.
 
 All eight question banks contain 25 questions in total: page 1 has 5; pages 2 and 3 have 1 each; pages 4, 5, and 6 have 3 each; page 7 has 4; page 8 has 5. Cross-check against the source and inventory, not this count alone. There are 8 flashcards and 13 expandable panels. Preserve all six categorization notes, five synthesis checks, six closing checks, and three goal choices.
 
 Use shared profiles for existing card grids, speaker statements, examples, notices, models, and feedback. Keep `view-N` IDs, reference wrappers/classes, and synchronous shell hooks for now. Switch the whole activity engine/store only once all sections pass; never leave the classic and module entries both initializing.
+
+## Final presentation requirements
+
+Preserve Final's Fraunces heading hierarchy, teal left-accent activity frames,
+card-grid composition, separate card titles, speaker/context statements, example
+and notice groupings, model treatments and distinct right/wrong feedback shading.
+Inventory categorization rows, select labels, immediate status and disabled-correct
+appearance, synthesis/closing fields, checks and goal controls in every state.
+Use shared behavior with Final-scoped presentation, not generic defaults or the
+Middle palette. Preserve Final's previous/next question composition; do not impose
+Middle's quiz overview/scenario wrappers. Narrow Final CSS additions needed to
+retain these roles are in scope; cross-lesson theme consolidation is not.
 
 ## Exact completion/reveal policies
 
@@ -74,6 +92,7 @@ Goal choices do not affect completion. Persist the original numeric goal IDs thr
 ## Required tests and acceptance
 
 - [ ] Full nine-page fresh journey; each gate fails with one required item missing; model views required exactly where specified.
+- [ ] Presentation contract fulfilled: all-section inventory reconciled; original/current harness comparisons cover all activities/callouts/models and relevant states at wide/narrow desktop/mobile, both mounts/all four projects; owner presentation review approved before public cutover, then public-page parity and cross-lesson regression checks pass. Record actual manual checks/gaps and permitted differences in `milestone-6-presentation.md`.
 - [ ] All 25 questions, 6 notes, cards/panels, checks/goals, model text, and reference match canonical inventory including alternative feedback.
 - [ ] Content/answer/gate equivalence is mandatory and tested independently of screenshots; minor documented layout differences follow the contracts' hierarchy, with accessibility and unclipped content ahead of pixel matching.
 - [ ] All valid v1 fixtures restore completion, selections, draft text, open panels, correct notes, checks/models/goals. Numeric-zero options are preserved.

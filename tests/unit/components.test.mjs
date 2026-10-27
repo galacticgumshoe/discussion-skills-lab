@@ -59,8 +59,8 @@ test('profiles cover every required presentation; history union cannot substitut
   assert.equal(hasCurrentCorrectAnswers(questions, selections), false);
 });
 
-test('shared component styling is opt-in; live production entries keep their original engines/styles', () => {
-  for (const lesson of ['opening', 'middle', 'final']) {
+test('shared component styling is opt-in; unmigrated Opening/Final keep their original engines/styles', () => {
+  for (const lesson of ['opening', 'final']) {
     const html = readFileSync(new URL(`../../${lesson}.html`, import.meta.url), 'utf8');
     assert.doesNotMatch(html, /components\.css|components\/(flashcards|expandables|multiple-choice|question-sequence)|app\/lesson-core/);
   }

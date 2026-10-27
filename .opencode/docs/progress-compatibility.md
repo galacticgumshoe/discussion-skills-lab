@@ -639,3 +639,95 @@ for a production lesson is supplied here.
 No live entry adopts the app/renderer, no classic core is replaced, and the Final
 reference pilot continues to use its existing implementation. Last-writer/no-sync,
 save-failure memory retention and all three v1 codec boundaries remain unchanged.
+
+## Milestone 5 — first extraction review unit
+
+**No live writer, adapter, key or storage format changes.** Public Middle still
+uses its original engine. The new direct question/checklist harness imports the
+existing `standardActivityRegistry` entries, `openProgress`, `middleAdapter` and
+`applyCompletion`. It never includes the classic engine; production data validates
+before opening its one isolated writer. Only synthetic test contexts are used.
+
+`lessons/middle/completion.js` exports:
+
+```text
+middleCompletionPolicy: frozen section-ID → pure boolean gate map (all eight)
+middleReveals(normalizedState): record<stableRevealId,boolean> (seven reveals)
+```
+
+Policies require the actual frozen IDs, not counts/DOM positions/rendered text.
+Questions are correct-ever. Research completion requires the historical
+`research-correct-ever`/`evidence-assembled` flags and checklist, **not** currently
+nonempty source/finding/why/output. Application requires a trimmed nonempty draft
+and all five checks. Neither optional model is a gate input. Completion retention
+still belongs to shared `applyCompletion` and the existing adapter/store, not a
+second lesson-specific union. Reveals use independent original prerequisite sets;
+sparse old records are not forced through synthetic clicks or a new prerequisite.
+
+The production-data harness exercises immediate represented sequence/quiz cursor
+saves and the old `positions`/`quizIndex` fields, numeric option zero, latest wrong
+highlight/feedback independent of credit, fixed check indexes despite reordered
+hosts/items, silent old-fixture hydration and original-engine replay. These are
+**harness-only** standards-repair evidence, not claims the live Middle save gaps
+are fixed. No new `dslUi` facts or opaque-version behavior are introduced.
+
+Remaining integration traps before cutover:
+
+- Keep card indexes global 0–8 and writing/check field positions fixed.
+- Existing normalized research correct-ever is a separate flag from question
+  own-state. The standard registry currently writes only own-state for questions;
+  research selection needs an explicit tested bridge to that existing flag.
+- Application A/B share the existing `application` own-state and legacy `a`/`b`
+  suffixes. Present both simultaneously without splitting or overwriting that
+  persisted state, and without adding a parallel question controller.
+- Wire trusted pure reveals into bounded renderer groups; the existing renderer
+  does not yet apply Middle-specific reveal policies.
+- Writing/model visibility must use the already-verified fixed field/flag/model
+  bindings; readonly research output, optional models, opaque UI versions and
+  clipboard fallback isolation remain contractual.
+
+`validateLegacyVariants` is development-only archival validation. Neither the
+runtime activity schema nor the reference renderer accepts an archive as content.
+No archive source identity is interpreted as an executable path/include.
+
+The subsequent displayed-reference review harness uses `mountReference` directly
+with the `middle-reference` presentation profile. It has **no progress store or
+activity engine at all**. Reference preload/failure/retry/print therefore cannot
+create a writer, require progress or clear a lesson. The production public page
+still uses the original engine until the whole-lesson cutover. No codec/key/model
+namespace change is part of this reference extraction.
+# Milestone 5 whole-Middle runtime adoption
+
+Middle now imports `mountLesson` once; its classic `DSL.createLesson` script
+inclusion and engine initialization are removed atomically. Opening and Final
+retain their original writers, and Final's reference pilot is unchanged.
+
+`lessons/middle/runtime.js` exports `middleRegistry`, delegating all interaction to
+the standard registry. Its only special binding derives research earned state from
+`research-correct-ever` and sets that monotonic flag on a correct research choice.
+Application A/B share the existing `application` activity state and serialize the
+original `a`,`b` suffixes, while remaining separately visible shared questions.
+
+`mountLesson`/`renderSections` accept optional statically imported `revealPolicy`;
+Middle supplies `middleReveals`. Reveal groups use explicit stable `revealId`s;
+hydration/update never clicks controls, saves or invents credit. Markdown-backed
+card/panel/model bodies are prepared through the existing safe loader before
+hydration; failure disables only affected activity and keeps reference independent.
+
+All existing fixed global card indexes 0–8 and field indexes 0–13 remain unchanged.
+The Middle adapter/store were not modified. Partially typed research/application
+fields and represented question/quiz cursors save immediately; optional model flags
+use only existing `data.dslUi.models` v1 bindings. Unknown transient selections,
+future data and opaque UI versions retain their existing preservation rules.
+Copy/print/navigation/comparison never write; no hydration/no-op writer is added.
+
+Card exploration survives refresh independently of current face. Since legacy v1
+has no current-face field, migrated cards initially show fronts with explored cues;
+this is intentional separation, not discarded credit. Current panel openness is
+similarly session-only where the frozen format represents exploration only.
+
+`middle-application` is a shared all-at-once sequence profile without quiz scoring
+or retry UI. Speaking's content-supplied comparison affordance retains latest
+choice/highlight, original feedback and earned credit, adds the original comparison
+instruction, and makes no persistence callback. No competing lesson-specific
+question, card, writing, clipboard, checklist, store or navigation engine exists.

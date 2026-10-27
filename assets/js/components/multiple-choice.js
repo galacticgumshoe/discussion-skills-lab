@@ -2,7 +2,7 @@
 import { componentRoot, snapshot, unionIds, setText } from './component-dom.js';
 
 export function mountMultipleChoice(root, { data, state, onChange, profile = 'standard' }) {
-  if (!['standard', 'opening-classification', 'opening-knowledge-check', 'middle-scenarios', 'middle-quiz', 'final-questions'].includes(profile)) {
+  if (!['standard', 'opening-classification', 'opening-knowledge-check', 'middle-scenarios', 'middle-quiz', 'middle-application', 'final-questions'].includes(profile)) {
     throw new TypeError('Unknown question profile.');
   }
   const dom = componentRoot(root, 'dsl-multiple-choice'), buttons = new Map();

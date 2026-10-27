@@ -5,7 +5,7 @@ import { resolve, sep, relative } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { referenceSemanticErrors } from '../assets/js/app/content-validation.js';
 import { resolveContentUrl } from '../assets/js/app/content-loader.js';
-import { validateLessonConfig, validateLessonManifest, validateActivity, validateLessonLinks } from '../assets/js/app/lesson-validation.js';
+import { validateLessonConfig, validateLessonManifest, validateActivity, validateLessonLinks, activityBodySources } from '../assets/js/app/lesson-validation.js';
 
 const project = fileURLToPath(new URL('../', import.meta.url));
 const schema = JSON.parse(await readFile(new URL('../schemas/reference.schema.json', import.meta.url)));
@@ -18,6 +18,8 @@ ajv.addSchema(lessonSchema);
 const configSchema = ajv.compile({ $ref: `${lessonSchema.$id}#/$defs/config` });
 const manifestSchema = ajv.compile({ $ref: `${lessonSchema.$id}#/$defs/manifest` });
 const validateActivitySchema = ajv.compile(activitySchema);
+const archiveSchema = JSON.parse(await readFile(new URL('../schemas/legacy-variants.schema.json', import.meta.url)));
+const validateArchiveSchema = ajv.compile(archiveSchema);
 
 const combined = (schemaCheck, runtimeCheck) => (data, context) => {
   const valid = schemaCheck(data), errors = valid ? [] : schemaCheck.errors.map(error => `${error.instancePath || '/'}: ${error.message}`);
@@ -27,6 +29,20 @@ const combined = (schemaCheck, runtimeCheck) => (data, context) => {
 export const validateConfig = combined(configSchema, validateLessonConfig);
 export const validateManifest = combined(manifestSchema, validateLessonManifest);
 export const validateActivityDocument = combined(validateActivitySchema, validateActivity);
+
+// Archival records are development-validated only. No runtime loader/renderer
+// accepts this kind, so archived wording cannot accidentally become a lesson.
+export function validateLegacyVariants(data) {
+  if (!validateArchiveSchema(data)) return validateArchiveSchema.errors.map(error => `${error.instancePath || '/'}: ${error.message}`);
+  const errors = [], ids = new Set(), sources = new Set();
+  for (const record of data.records) {
+    const identity = `${record.source.symbol}:${record.source.index ?? ''}`;
+    if (ids.has(record.id) || sources.has(identity)) errors.push(`/records: duplicate record or source identity ${record.id}`);
+    ids.add(record.id); sources.add(identity);
+    if ((record.source.symbol === 'referenceText') !== (typeof record.value === 'string')) errors.push(`/records/${record.id}/value: wrong source value type`);
+  }
+  return errors;
+}
 
 export function validateReference(data, context) {
   const valid = validateSchema(data);
@@ -55,10 +71,11 @@ export async function validateContent(directory = resolve(project, 'content')) {
       }
       catch { errors.push(`${label}: invalid JSON or unreadable file`); continue; }
       const context = { declaringUrl, allowedRootUrl };
-      const problems = data?.sections ? validateManifest(data, context) : data?.type ? validateActivityDocument(data, context) : validateReference(data, context);
+      const archive = entry.name === 'legacy-variants.json' || data?.kind === 'legacy-variants';
+      const problems = archive ? validateLegacyVariants(data) : data?.sections ? validateManifest(data, context) : data?.type ? validateActivityDocument(data, context) : validateReference(data, context);
       errors.push(...problems.map(error => `${label}${error}`));
       if (problems.length) continue;
-      const sources = data?.sections ? [...data.activities, ...manifestSources(data)].map(item => ({ source: item.source })) : data?.type ? [] : data.items;
+      const sources = archive ? [] : data?.sections ? [...data.activities, ...manifestSources(data)].map(item => ({ source: item.source })) : data?.type ? activityBodySources(data).map(source => ({ source })) : data.items;
       for (const [index, item] of sources.entries()) {
         try {
           const url = resolveContentUrl(item.source, declaringUrl, allowedRootUrl);
@@ -113,7 +130,11 @@ export async function validateLessonTree(directory) {
       const adapter = { opening: adapters[0].openingAdapter, middle: adapters[1].middleAdapter, final: adapters[2].finalAdapter }[config.id];
       validateLessonLinks(config, manifest, adapter);
       for (const activity of manifest.activities) {
-        try { await json(resolveContentUrl(activity.source, manifestUrl, contentRoot), validateActivityDocument, { activityId: activity.id }); }
+        try {
+          const activityUrl = resolveContentUrl(activity.source, manifestUrl, contentRoot);
+          const data = await json(activityUrl, validateActivityDocument, { activityId: activity.id, declaringUrl: activityUrl, allowedRootUrl: contentRoot });
+          for (const source of activityBodySources(data)) await file(resolveContentUrl(source, activityUrl, contentRoot), 'content');
+        }
         catch (error) { errors.push(`${activity.source}: ${error.message}`); }
       }
       for (const block of manifestSources(manifest)) {

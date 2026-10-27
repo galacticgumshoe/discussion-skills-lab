@@ -19,9 +19,28 @@ Leave legacy `assets/js/lesson-core.js` in place until milestone 8 confirms no r
 
 ## Extraction and cutover
 
+Apply the contracts' **Presentation-preservation contract for content migrations**
+and read its three Middle correction evidence records before extraction. Create
+`.opencode/docs/evidence/milestone-7-presentation.md` with the all-section source →
+metadata/profile/scoped-style inventory, comparison coverage and review decisions.
+This is a prerequisite to cutover, not optional final screenshot polish.
+
 Use the common harness to migrate each section before the public page switches. Move prose/examples/models/reference, all classification data, task-analysis answers, practice/quiz options and explanations, the sequence checkpoint's two feedback messages, placeholders/self-check, and consensus assembly literal wording into content. Preserve the precise example task, all annotation spans, mental-health-stigma scenario, and source distinctions. Do not substitute Middle's procedural/substantive examples.
 
 Keep existing root URL, `view-0`…`view-7`, relevant heading/field IDs, timeline controls, and reference composition. On complete cutover remove the classic Opening activity entry and its `DSL` use, enable the module entry/new store, and ensure only one initializer/writer. Keep shell markup until milestone 8.
+
+## Opening presentation requirements
+
+Preserve Opening's heading/paragraph hierarchy, card/panel surfaces, pills,
+connected numbered timeline and expanded-state cues. Preserve navy selected
+analysis tabs, exact annotated task highlighting, explanation panels, distinctive
+feedback accents/corner shapes and builder/model composition. Cover the initial
+unselected analysis state, every category (including TERMS), and timeline states
+without granting exploration through rendering. Retain all-at-once quiz grouping
+and the distinctive responsive reference sequence/grid. Opening has no flashcards;
+do not introduce them or Middle's sequential quiz layout. Reuse controllers with
+Opening-scoped styling rather than Middle's theme or generic defaults. Narrow
+Opening CSS additions needed for parity are in scope; global consolidation is not.
 
 ## Exact gates and interaction exceptions
 
@@ -75,6 +94,7 @@ Exact key is `dsl:opening-stage:v1`, not `dsl:opening:v1`. Preserve all direct `
 ## Tests and acceptance
 
 - [ ] Seven exact gate predicates unit-tested, including action-order tests for classification and task-analysis current answers, 34/35-character boundary, and checked/nonchecked self-check.
+- [ ] Presentation contract fulfilled: all-section inventory reconciled; original/current harness comparisons cover timeline/tabs/annotations, every activity/callout/model and relevant states at wide/narrow desktop/mobile, both mounts/all four projects; owner presentation review approved before public cutover, then public-page parity and cross-lesson regressions pass. Record actual manual checks/gaps and permitted differences in `milestone-7-presentation.md`.
 - [ ] Full fresh journey, partial/completed/legacy-without-quizEarned fixture restoration; no relocking after earned section completion.
 - [ ] All source wording/options/answer keys/feedback/models/template/annotated segments/reference retained in content with provenance.
 - [ ] Exact content/annotation/gate assertions are independent of visual comparisons; minor documented presentation differences are acceptable under the contracts' hierarchy, not changes to task text or completion requirements.

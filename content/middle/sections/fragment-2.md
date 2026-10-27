@@ -1,0 +1,1 @@
+In the opening stage, your group figures out **WHAT** it needs to solve and **HOW** it will approach the task. In the middle stage, you put that plan into action. Contribute ideas that help the group make progress.

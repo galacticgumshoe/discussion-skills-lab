@@ -3,7 +3,7 @@ import { componentRoot, snapshot, setText } from './component-dom.js';
 import { formatWriting } from '../utilities/writing-formatters.js';
 import { createClipboard } from '../utilities/clipboard.js';
 
-export function mountWritingActivity(root, { data, state, onChange, profile = 'draft' }) {
+export function mountWritingActivity(root, { data, state, onChange, profile = 'draft', bodies = new Map() }) {
   const dom = componentRoot(root, 'dsl-writing'), inputs = new Map();
   let current = snapshot(state);
   const form = dom.node('form', 'dsl-writing-form');
@@ -26,8 +26,9 @@ export function mountWritingActivity(root, { data, state, onChange, profile = 'd
     return input;
   }
   data.fields.forEach(descriptor => addField(descriptor, form));
+  let assemble;
   if (data.assembly) {
-    const assemble = dom.node('button', 'dsl-assemble', data.assembly.label); assemble.type = 'submit'; form.append(assemble);
+    assemble = dom.node('button', 'dsl-assemble', data.assembly.label); assemble.type = 'submit'; form.append(assemble);
   }
   dom.append(form);
   const output = data.output ? addField(data.output, form) : inputs.get(data.copyFieldId);
@@ -51,13 +52,22 @@ export function mountWritingActivity(root, { data, state, onChange, profile = 'd
     modelButton = dom.node('button', 'dsl-model-toggle', data.model.showLabel); modelButton.type = 'button';
     model = dom.node('div', 'dsl-writing-model'); model.id = `${dom.prefix}-model`;
     modelButton.setAttribute('aria-controls', model.id);
-    data.model.blocks.forEach(block => model.append(dom.node(block.kind === 'title' ? 'strong' : 'p', '', block.text)));
+    data.model.blocks.forEach(block => {
+      if (block.source) { const prose = dom.node('div', 'dsl-rich-prose'); prose.append(bodies.get(block.source).cloneNode(true)); model.append(prose); }
+      else model.append(dom.node(block.kind === 'title' ? 'strong' : 'p', '', block.text));
+    });
     actions.append(modelButton); dom.append(model);
     dom.listen(modelButton, 'click', () => {
       const visible = data.model.mode === 'toggle' ? !current.modelVisible : true;
       if (visible === current.modelVisible) return;
       current.modelVisible = visible; render(); publish();
     });
+  }
+  // Middle's original reading and keyboard order groups all actions before the
+  // readonly output. Move the real controls, not only their visual CSS order.
+  if (profile === 'middle-evidence' && data.output) {
+    if (assemble) actions.prepend(assemble);
+    form.insertBefore(actions, output.previousElementSibling);
   }
   function render() {
     inputs.forEach((input, id) => {

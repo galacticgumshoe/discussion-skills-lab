@@ -1,7 +1,7 @@
 // MIT. Current openness is reversible; exploration is independent and monotonic.
 import { componentRoot, snapshot, unionIds } from './component-dom.js';
 
-export function mountExpandables(root, { data, state, onChange, profile = 'standard' }) {
+export function mountExpandables(root, { data, state, onChange, profile = 'standard', bodies = new Map() }) {
   if (!['standard', 'timeline'].includes(profile)) throw new TypeError('Unknown expandable profile.');
   const dom = componentRoot(root, `dsl-expandables-${profile}`), rows = new Map();
   let current = snapshot(state);
@@ -11,6 +11,17 @@ export function mountExpandables(root, { data, state, onChange, profile = 'stand
     if (profile === 'timeline') control.type = 'button';
     const mark = dom.node('span', 'dsl-panel-explored', '✓ Explored');
     const body = dom.node('div', 'dsl-expandable-body', item.body);
+    if (item.bodySource) {
+      body.classList.add('dsl-rich-prose');
+      const prose = bodies.get(item.bodySource).cloneNode(true);
+      if (item.calloutTones) {
+        const callouts = [...prose.querySelectorAll('blockquote')];
+        if (callouts.length !== item.calloutTones.length) throw new TypeError('Callout annotations must match the Markdown examples.');
+        callouts.forEach((callout, i) => callout.classList.add(`dsl-panel-${item.calloutTones[i]}`));
+        if (callouts.length === 2) body.classList.add('dsl-panel-paired-callouts');
+      }
+      body.append(prose);
+    }
     body.id = `${dom.prefix}-${index}-body`;
     if (profile === 'timeline') control.setAttribute('aria-controls', body.id);
     control.append(mark);

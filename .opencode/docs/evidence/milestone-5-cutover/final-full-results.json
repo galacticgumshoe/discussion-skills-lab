@@ -1,0 +1,19 @@
+{
+  "command": "caffeinate -i env CFFIXED_USER_HOME=\"$(mktemp -d)\" npm run test:browser -- --workers=1",
+  "reportSha256": "bc3d76524d8630068a028328117da4e4bfe6e7046a98ef23905d48517a76fb64",
+  "stats": {
+    "startTime": "2026-10-26T00:41:03.169Z",
+    "duration": 1233707.938,
+    "expected": 720,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "projectOutcomes": {
+    "('chromium', 'expected')": 180,
+    "('firefox', 'expected')": 180,
+    "('webkit', 'expected')": 180,
+    "('mobile-chromium', 'expected')": 180
+  },
+  "runnerErrors": []
+}

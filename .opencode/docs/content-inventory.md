@@ -296,3 +296,178 @@ five-group reference-only Letter sheets with no questions/drafts/controls/leadin
 blank. The uniform fixture palette/font differences above are permitted and
 unchanged; production semantics/styles pass their existing independent checks.
 Results/hashes and manual-check limits: `evidence/milestone-4-5-verification.md`.
+
+## Milestone 5 — first extraction review unit (not a cutover)
+
+Production Middle remains byte-identical to the pinned legacy lesson. The new
+`content/middle/` files are the intended editable content source for this migration,
+but are mounted **only** in `tests/fixtures/harness/middle-questions.html` so far.
+Do not remove the original banks until the entire lesson has passed and can switch
+atomically. This is intentionally not a hybrid live state writer.
+
+All source identities below refer to `0b5d2297e7cbc19bd59cde750492dd28e3983ca0`.
+Original instructional content remains © Rhys Jones, CC BY 4.0; policy, schema,
+validation and test implementation are MIT. Frozen baselines/seals are unchanged.
+
+| Original source | New content / coverage |
+| --- | --- |
+| `assets/js/middle.js:5–11`, `classification`; original `renderSequence:113–129` | `content/middle/activities/classification.json`: five prompts, original generated ordinal prefix, ordered Procedural/Substantive labels, exact keys and shared feedback |
+| `assets/js/middle.js:18–22`, `group` | `activities/group-decisions.json`: three titles/scenarios, generated ordinal/title prefix, every option, key and shared feedback |
+| `assets/js/middle.js:23–28`, `communication` | `activities/communication-diagnosis.json`: all four prompts/options/keys/shared feedback, including original generated ordinal prefix |
+| `assets/js/middle.js:35–39`, `speaking` | `activities/speaking-simulator.json`: three titles/scenarios, all nine option-specific feedback messages including exact original Good choice./Not quite. prefixes |
+| `assets/js/middle.js:44–50`, `questions`; `renderQuiz:153–176` | `activities/knowledge-check.json`: all five question/option orders, keys and explanations; existing shared `middle-quiz` profile retains distinct incorrect/previous-credit feedback |
+| `assets/js/middle.js:226–227`, generated checks | `activities/{research,application}-checklist.json`: all four/five exact labels in original order; IDs from frozen initialized map |
+| `assets/js/middle.js:29–34`, unused `strategies` values | `content/middle/legacy-variants.json`, four separately identified non-published records with every original title/meaning/advantage/risk/example preserved; source array indexes retained |
+| `assets/js/middle.js:194–206`, unused `referenceText` | Same archive, `unused-reference-text` record; exact multiline string, not the published sheet and never an additional rendered reference |
+
+`lessons/middle/completion.js` translates the original `updateCompletion:62–75`
+and restore reveal conditions at `93–96` using frozen stable identities. It
+contains no instructional bank or formatter literal. Unit oracles execute the
+actual pinned gate/reveal code and compare all valid frozen fixtures and each
+single missing prerequisite. Answers are compared to frozen numeric/index data,
+not inferred from the learner-facing wording or a screenshot.
+
+### Still unmoved / unverified for milestone 5
+
+All `middle.html` prose/headings/labels/cards/panels/flows/roundtable/models and
+the five-item **displayed** Quick Reference remain in the original HTML. Research
+selection, application A/B choices and writing/template/control wording remain
+in the legacy sources. Complete HTML-versus-JS strategy comparison remains part
+of the speaking-section extraction; retaining the entire JS array separately
+ensures no nonidentical variant is lost meanwhile.
+
+No Markdown/lesson manifest/config, rich-body renderer extension, reveal wiring,
+whole-page migration or new reference profile is claimed in this first unit.
+The direct question/checklist harness uses plain Arial, outlined activity hosts
+and all extracted activities on one review page; this is a test-only composition,
+not an approved Middle redesign or visual regression result. No production layout
+or CSS changed. Speaking's `Try Another Strategy` affordance still needs scoped
+shared-component support before cutover; its absence from this partial harness
+is not a passed complete speaking-section review.
+
+## Milestone 5 — displayed reference extraction review unit
+
+Added after the preceding first unit; the public Middle entry still has not
+switched. `middle.html:428–472` at pinned `0b5d229` remains the authoritative
+**displayed** source, not the archived unused `referenceText`.
+
+| Original reference group | New `content/middle/reference/` source |
+| --- | --- |
+| `middle.html:429–437`, 01 Contribute substance | `contribute-substance.md`, four list items |
+| `middle.html:438–446`, 02 Support the group | `support-group.md`, four list items |
+| `middle.html:447–455`, 03 Communicate professionally | `communicate-professionally.md`, four list items |
+| `middle.html:456–465`, 04 Manage speaking conflicts | `speaking-conflicts.md`, five list items |
+| `middle.html:466–471`, 05 Your goal | `goal.md`, one strong-emphasized list item |
+
+`reference.json` preserves title, five labels/numbers/order and original palette
+identities. A bounded `middle-reference` profile in the **same** shared reference
+renderer keeps the original `section.reference-box.middle-reference-item` tags,
+numbered item classes, heading/number/label classes and lists. It does not add
+another renderer, embedded HTML, content-selected CSS or global style cleanup.
+Final's original `stacked-reference` output is unchanged. Original Middle CSS and
+all numbered print overrides are retained untouched.
+
+The standalone `tests/fixtures/harness/middle-reference.{html,mjs}` uses the shared
+startup loader/renderer and original sheet/item classes, no store/legacy engine.
+Its ordinary probe page is test-only; its duplicate fallback heading/Print label
+is structural harness metadata, not a second editable lesson source. Browser
+semantic inventories compare all 18 list items, emphasis, headings, tag/class
+composition and order independently of screenshots; unit checks independently
+compare Markdown/labels to the pinned HTML. Schema/runtime tests apply the common
+invalid-reference corpus, adapting only its Final-specific literal duplicate ID
+to the actual Middle document ID without modifying the frozen fixture.
+
+Reference unit verification and manual-preview limits:
+`evidence/milestone-5-reference-verification.md`. The remaining whole-lesson
+extraction/cutover list above still applies, except that the reference now has a
+non-live content-driven review path rather than only its original HTML source.
+# Milestone 5 remaining extraction and whole-page cutover
+
+The preservation source remains pinned `0b5d2297e7cbc19bd59cde750492dd28e3983ca0`;
+the original engine and HTML are retained in sealed fixtures/replay, not shipped as
+a second Middle writer. `tests/helpers/extract-middle.mjs` records the mechanical
+extraction and `tests/browser/middle-lesson.spec.mjs` independently compares every
+original nonempty prose/list/heading/label/speaker passage and semantic emphasis.
+
+| Original source identity | Published destination |
+| --- | --- |
+| `middle.html #view-0`, `.flow`, welcome card group, global cards 0–2 | `content/middle/lesson.json` welcome blocks; `sections/fragment-{1,2,3,4}.md`; `activities/welcome-cards.json` and named `activities/bodies/*-{front,back}.md` |
+| `#view-1`, `s1` group, global cards 3–4; classification introduction | structure section manifest/Markdown; `activities/structure-cards.json`; `bodies/{procedural,substantive}-{front,back}.md`; existing `classification.json` |
+| `#evidence-details details` in initialized order | `activities/evidence-panels.json`; `bodies/{relevance,evidence,explanation,connection}-panel.md` |
+| `#evidence-after`, `models` group, global cards 5–6 | evidence reveal blocks/section Markdown; `activities/research-model-cards.json`; `bodies/{weak-example,stronger-example}-{front,back}.md` |
+| `middle.js research`, `#research-activity` fictional-data caution/prompt | `activities/research.json`, evidence section Markdown; all four options and full alternative feedback retained |
+| `#source`, `#finding`, `#why`, `#assembled`, assembly handler, `#research-model` | `activities/evidence-writing.json`, `bodies/evidence-writing-model.md`; content literal template and statuses; existing research checklist |
+| `#collaboration-details`, `#group-activity` round-table agenda | `activities/collaboration-panels.json`; four named `*-panel.md` bodies; section Markdown; existing group questions |
+| `#communication-details`, examples and disclaimer | `activities/communication-panels.json`; three named `*-panel.md` bodies; existing communication questions |
+| `#strategy-details`, all meanings/advantages/risks/examples | `activities/strategy-panels.json`; `bodies/{continue,request-first,yield-next,direct-connection}-panel.md`; archived unused JS strategy records remain separate |
+| `speaking` cards, global indexes 7–8, `#speaking-activity` disclaimer | `activities/speaking-cards.json`; named front/back Markdown; existing speaking questions now include comparison label/message |
+| `#view-6` fictional task and four speaker lines | section Markdown, including `sections/fragment-31.md` separate speaker blockquotes |
+| `middle.js applications[0,1]`, original Task A/B headings | `activities/application.json`, one shared all-at-once sequence with separate visible question articles, fixed application `a`/`b` bindings |
+| `#application-draft`, prompt, `#application-model`, copy/model labels | `activities/integrated-writing.json`; `bodies/integrated-writing-model.md`; existing application checklist |
+| Section/navigation labels, eyebrows, original heading IDs/requirements | `content/middle/lesson.json`; `lessons/middle/config.json` holds only mechanical configuration |
+
+Existing knowledge-check/reference/archive mappings remain authoritative. Original
+unused `referenceText` is still nonpublished and is never loaded as the sheet.
+All content Markdown/JSON remains © Rhys Jones / CC BY 4.0; runtime/config/schema
+code MIT; third-party notices and root licenses unchanged.
+
+`middle.html` retains shell brand/title/duration/progress/navigation/loading text
+as structural metadata/fallbacks. `assets/js/middle.js` contains only imports and
+bootstrap configuration: no instructional banks, bodies, answers or templates.
+Generic shared control labels/statuses remain shared implementation metadata.
+`view-0`…`view-8` and original heading IDs are generated explicitly from the manifest.
+Minor responsive spacing/intrinsic card heights, native control composition and
+front-face-on-refresh presentation are documented in the cutover evidence; content,
+answer order, independent reveals and all eight completion policies are unchanged.
+
+Owner-reported flashcard presentation regressions were subsequently corrected:
+compact list spacing, normal front weight, centered front copy, internal explored
+cue and original ordinary Welcome height. Intrinsic growth remains for long or
+enlarged text; see `evidence/milestone-5-flashcard-style.md` for comparison evidence
+and exact verification limits. Extra list whitespace/bold fronts are not accepted
+migration layout differences.
+
+The subsequent page-wide presentation follow-up restores paragraph role metadata
+(`textStyle` on Markdown blocks), neutralizes nested structural-wrapper spacing,
+restores Middle's pale-blue panels and rounded-square flow badges, and preserves
+three wrapping Welcome cards above the original 850px breakpoint. Rich panel/model
+formatting whitespace no longer becomes extra visual line spacing. These changes
+do not alter instructional Markdown or completion/progress policy; comparison and
+verification limits: `evidence/milestone-5-middle-presentation.md`.
+
+Structure-section follow-up: original front `.pill` text (`PROCEDURAL`,
+`SUBSTANTIVE`) is partitioned into existing `frontTitle` fields in
+`activities/structure-cards.json`, with unchanged descriptions in the corresponding
+Markdown bodies. The classification reveal group now uses bounded `activity` tone
+to restore its original panel and question/feedback/control hierarchy. Owner
+explicitly approves retaining the larger section heading and explored cue on both
+card faces; these must not be reverted for main-style parity. Evidence:
+`evidence/milestone-5-structure-presentation.md`.
+
+Evidence-section follow-up: the four original `.example` callouts are Markdown
+blockquotes in evidence panel bodies, styled only in that activity. Original
+research-model `strong` titles move into existing `frontTitle`/`backTitle`, with
+unchanged descriptions in the four Markdown bodies. Research uses existing
+`activity` tone and a bounded writing stack; the `middle-evidence` writer places
+all original actions before output in DOM order. Original fact-check notice is
+retained with small-note styling, not deleted because absent in a reloaded main
+capture. Owner-approved explored cues/larger headings remain. Evidence:
+`evidence/milestone-5-evidence-presentation.md`.
+
+Remaining-activities follow-up: all nine original Middle activity surfaces now use
+one scoped palette/composition, with original scenario reveal wrappers/Task C
+marked `activity`, distinct application A/B articles and a separate quiz overview/
+question panel. Original collaboration/strategy example grouping and contrasting
+professional-language caution/example callouts are preserved in Markdown, with
+closed `calloutTones` annotations for the pair and explicit note hard breaks.
+No instructional wording, bindings, keys, gates or progress policy changes.
+Larger headings/explored cues remain approved differences. Evidence and actual
+verification limits: `evidence/milestone-5-all-activities.md`.
+
+Owner-approved Activity 5 exception (2026-10-27): remove the optional
+`Try Another Strategy` control and `Choose another strategy to compare its
+consequence.` callout from the published speaking simulator. Its `compareLabel`
+and `compareMessage` metadata are removed; all three questions/options/feedback,
+navigation and earned-credit rules remain unchanged. This explicit owner request
+supersedes the earlier milestone-5 preservation requirement for that affordance
+only. Frozen original records and historical handoffs remain unchanged.

@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "application",
+  "type": "question-sequence",
+  "profile": "middle-application",
+  "data": {
+    "questions": [
+      {
+        "id": "substantive-contribution",
+        "prompt": "Task A · Select the strongest substantive contribution",
+        "correctOptionId": "synthesize-pilot",
+        "explanation": "This synthesizes ideas into a possible solution.",
+        "options": [
+          {
+            "id": "change-topic",
+            "text": "“Let’s talk about something else.”"
+          },
+          {
+            "id": "synthesize-pilot",
+            "text": "“Building on Maya and Jordan, we could evaluate a small transportation pilot before a larger investment, examining cost and access together.”"
+          },
+          {
+            "id": "time-left",
+            "text": "“We are almost out of time.”"
+          }
+        ]
+      },
+      {
+        "id": "collaborative-move",
+        "prompt": "Task B · Select the best collaborative move",
+        "correctOptionId": "evaluate-recommendations",
+        "explanation": "This supports the deliverable without taking control from the group.",
+        "options": [
+          {
+            "id": "stop-others",
+            "text": "“Sam has spoken, so no one else should.”"
+          },
+          {
+            "id": "evaluate-recommendations",
+            "text": "“Could we evaluate transportation and communication proposals, then choose final recommendations with our remaining time?”"
+          },
+          {
+            "id": "take-over",
+            "text": "“I will make the final decision.”"
+          }
+        ]
+      }
+    ]
+  }
+}

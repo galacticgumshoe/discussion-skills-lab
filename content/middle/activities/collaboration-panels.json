@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "collaboration-panels",
+  "type": "expandables",
+  "profile": "standard",
+  "data": {
+    "items": [
+      {
+        "id": "take-notes",
+        "title": "Take notes",
+        "bodySource": "bodies/take-notes-panel.md"
+      },
+      {
+        "id": "manage-time",
+        "title": "Manage time",
+        "bodySource": "bodies/manage-time-panel.md"
+      },
+      {
+        "id": "include-others",
+        "title": "Include others",
+        "bodySource": "bodies/include-others-panel.md"
+      },
+      {
+        "id": "focus-group",
+        "title": "Focus the group",
+        "bodySource": "bodies/focus-group-panel.md"
+      }
+    ]
+  }
+}

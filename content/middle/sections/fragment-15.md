@@ -1,0 +1,1 @@
+**Fictional practice data:** Community Access Survey, May 2025: In a hypothetical survey of 200 students, 38% reported that transportation difficulties prevented them from attending at least one after-school activity.

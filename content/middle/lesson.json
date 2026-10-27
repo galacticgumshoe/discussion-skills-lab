@@ -1,0 +1,742 @@
+{
+  "schemaVersion": 1,
+  "id": "middle",
+  "title": "Making an Impact · The Middle Stage",
+  "activities": [
+    {
+      "id": "welcome-cards",
+      "source": "activities/welcome-cards.json"
+    },
+    {
+      "id": "structure-cards",
+      "source": "activities/structure-cards.json"
+    },
+    {
+      "id": "classification",
+      "source": "activities/classification.json"
+    },
+    {
+      "id": "evidence-panels",
+      "source": "activities/evidence-panels.json"
+    },
+    {
+      "id": "research-model-cards",
+      "source": "activities/research-model-cards.json"
+    },
+    {
+      "id": "research",
+      "source": "activities/research.json"
+    },
+    {
+      "id": "evidence-writing",
+      "source": "activities/evidence-writing.json"
+    },
+    {
+      "id": "research-checklist",
+      "source": "activities/research-checklist.json"
+    },
+    {
+      "id": "collaboration-panels",
+      "source": "activities/collaboration-panels.json"
+    },
+    {
+      "id": "group-decisions",
+      "source": "activities/group-decisions.json"
+    },
+    {
+      "id": "communication-panels",
+      "source": "activities/communication-panels.json"
+    },
+    {
+      "id": "communication-diagnosis",
+      "source": "activities/communication-diagnosis.json"
+    },
+    {
+      "id": "strategy-panels",
+      "source": "activities/strategy-panels.json"
+    },
+    {
+      "id": "speaking-cards",
+      "source": "activities/speaking-cards.json"
+    },
+    {
+      "id": "speaking-simulator",
+      "source": "activities/speaking-simulator.json"
+    },
+    {
+      "id": "application",
+      "source": "activities/application.json"
+    },
+    {
+      "id": "integrated-writing",
+      "source": "activities/integrated-writing.json"
+    },
+    {
+      "id": "application-checklist",
+      "source": "activities/application-checklist.json"
+    },
+    {
+      "id": "knowledge-check",
+      "source": "activities/knowledge-check.json"
+    }
+  ],
+  "sections": [
+    {
+      "id": "welcome",
+      "label": "Welcome",
+      "heading": "Making an Impact",
+      "headingId": "welcome-heading",
+      "headingLevel": 1,
+      "requirement": "Complete the activities on this page to unlock Next.",
+      "reference": false,
+      "gateActivityIds": [
+        "welcome-cards"
+      ],
+      "blocks": [
+        {
+          "type": "group",
+          "layout": "stack",
+          "tone": "plain",
+          "blocks": [
+            {
+              "type": "markdown",
+              "source": "sections/fragment-1.md",
+              "textStyle": "lead"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "layout": "stack",
+          "tone": "callout",
+          "blocks": [
+            {
+              "type": "group",
+              "layout": "stack",
+              "tone": "plain",
+              "blocks": [
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-2.md"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "layout": "flow",
+              "tone": "plain",
+              "blocks": [
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-3.md"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "layout": "stack",
+          "tone": "plain",
+          "blocks": [
+            {
+              "type": "markdown",
+              "source": "sections/fragment-4.md",
+              "textStyle": "instruction"
+            }
+          ]
+        },
+        {
+          "type": "activity",
+          "activityId": "welcome-cards"
+        }
+      ]
+    },
+    {
+      "id": "structure-substance",
+      "label": "01 · Structure to substance",
+      "heading": "Two Ways to Help a Discussion",
+      "headingId": "s1-title",
+      "headingLevel": 2,
+      "eyebrow": "01 / 07 · About 3 minutes",
+      "requirement": "Complete the activities on this page to unlock Next.",
+      "reference": false,
+      "gateActivityIds": [
+        "structure-cards",
+        "classification"
+      ],
+      "blocks": [
+        {
+          "type": "group",
+          "layout": "stack",
+          "tone": "plain",
+          "blocks": [
+            {
+              "type": "markdown",
+              "source": "sections/fragment-5.md",
+              "textStyle": "lead"
+            }
+          ]
+        },
+        {
+          "type": "activity",
+          "activityId": "structure-cards"
+        },
+        {
+          "type": "group",
+          "layout": "stack",
+          "tone": "plain",
+          "blocks": [
+            {
+              "type": "markdown",
+              "source": "sections/fragment-6.md",
+              "textStyle": "note"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "layout": "stack",
+          "tone": "activity",
+          "revealId": "classification",
+          "blocks": [
+            {
+              "type": "group",
+              "layout": "stack",
+              "tone": "plain",
+              "blocks": [
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-7.md"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "layout": "stack",
+              "tone": "plain",
+              "blocks": [
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-8.md"
+                }
+              ]
+            },
+            {
+              "type": "activity",
+              "activityId": "classification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "evidence",
+      "label": "02 · Make contributions count",
+      "heading": "Evidence Is Your Strongest Contribution",
+      "headingId": "s2-title",
+      "headingLevel": 2,
+      "eyebrow": "02 / 07 · About 4 minutes",
+      "requirement": "Complete the activities on this page to unlock Next.",
+      "reference": false,
+      "gateActivityIds": [
+        "evidence-panels",
+        "research-model-cards",
+        "research",
+        "evidence-writing",
+        "research-checklist"
+      ],
+      "blocks": [
+        {
+          "type": "group",
+          "layout": "flow",
+          "tone": "plain",
+          "blocks": [
+            {
+              "type": "markdown",
+              "source": "sections/fragment-9.md"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "layout": "stack",
+          "tone": "plain",
+          "blocks": [
+            {
+              "type": "markdown",
+              "source": "sections/fragment-10.md",
+              "textStyle": "note"
+            }
+          ]
+        },
+        {
+          "type": "activity",
+          "activityId": "evidence-panels"
+        },
+        {
+          "type": "group",
+          "layout": "stack",
+          "tone": "plain",
+          "revealId": "evidence-after",
+          "blocks": [
+            {
+              "type": "group",
+              "layout": "stack",
+              "tone": "plain",
+              "blocks": [
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-11.md"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "layout": "stack",
+              "tone": "callout",
+              "blocks": [
+                {
+                  "type": "group",
+                  "layout": "stack",
+                  "tone": "plain",
+                  "blocks": [
+                    {
+                      "type": "markdown",
+                      "source": "sections/fragment-12.md"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "layout": "stack",
+              "tone": "plain",
+              "blocks": [
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-13.md",
+                  "textStyle": "note"
+                }
+              ]
+            },
+            {
+              "type": "activity",
+              "activityId": "research-model-cards"
+            },
+            {
+              "type": "group",
+              "layout": "stack",
+              "tone": "activity",
+              "revealId": "research-activity",
+              "blocks": [
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-14.md"
+                },
+                {
+                  "type": "group",
+                  "layout": "stack",
+                  "tone": "caution",
+                  "blocks": [
+                    {
+                      "type": "markdown",
+                      "source": "sections/fragment-15.md"
+                    }
+                  ]
+                },
+                {
+                  "type": "activity",
+                  "activityId": "research"
+                },
+                {
+                  "type": "group",
+                  "layout": "stack",
+                  "tone": "plain",
+                  "blocks": [
+                    {
+                      "type": "markdown",
+                      "source": "sections/fragment-16.md"
+                    },
+                    {
+                      "type": "activity",
+                      "activityId": "evidence-writing"
+                    },
+                    {
+                      "type": "markdown",
+                      "source": "sections/fragment-17.md",
+                      "textStyle": "label"
+                    },
+                    {
+                      "type": "activity",
+                      "activityId": "research-checklist"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "support-group",
+      "label": "03 · Support the group",
+      "heading": "Strong Discussants Do More Than Talk",
+      "headingId": "s3-title",
+      "headingLevel": 2,
+      "eyebrow": "03 / 07 · About 4 minutes",
+      "requirement": "Complete the activities on this page to unlock Next.",
+      "reference": false,
+      "gateActivityIds": [
+        "collaboration-panels",
+        "group-decisions"
+      ],
+      "blocks": [
+        {
+          "type": "group",
+          "layout": "stack",
+          "tone": "plain",
+          "blocks": [
+            {
+              "type": "markdown",
+              "source": "sections/fragment-18.md",
+              "textStyle": "lead"
+            }
+          ]
+        },
+        {
+          "type": "activity",
+          "activityId": "collaboration-panels"
+        },
+        {
+          "type": "group",
+          "layout": "stack",
+          "tone": "activity",
+          "revealId": "group-activity",
+          "blocks": [
+            {
+              "type": "group",
+              "layout": "stack",
+              "tone": "plain",
+              "blocks": [
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-19.md"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "layout": "stack",
+              "tone": "callout",
+              "blocks": [
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-20.md"
+                },
+                {
+                  "type": "group",
+                  "layout": "stack",
+                  "tone": "plain",
+                  "blocks": [
+                    {
+                      "type": "markdown",
+                      "source": "sections/fragment-21.md"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "activity",
+              "activityId": "group-decisions"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "communication",
+      "label": "04 · Communicate professionally",
+      "heading": "How You Say It Matters",
+      "headingId": "s4-title",
+      "headingLevel": 2,
+      "eyebrow": "04 / 07 · About 4 minutes",
+      "requirement": "Complete the activities on this page to unlock Next.",
+      "reference": false,
+      "gateActivityIds": [
+        "communication-panels",
+        "communication-diagnosis"
+      ],
+      "blocks": [
+        {
+          "type": "group",
+          "layout": "stack",
+          "tone": "plain",
+          "blocks": [
+            {
+              "type": "markdown",
+              "source": "sections/fragment-23.md",
+              "textStyle": "note"
+            }
+          ]
+        },
+        {
+          "type": "activity",
+          "activityId": "communication-panels"
+        },
+        {
+          "type": "group",
+          "layout": "stack",
+          "tone": "activity",
+          "revealId": "communication-activity",
+          "blocks": [
+            {
+              "type": "group",
+              "layout": "stack",
+              "tone": "plain",
+              "blocks": [
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-24.md"
+                }
+              ]
+            },
+            {
+              "type": "activity",
+              "activityId": "communication-diagnosis"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "speaking-conflicts",
+      "label": "05 · Navigate the conversation",
+      "heading": "When Everyone Wants to Speak",
+      "headingId": "s5-title",
+      "headingLevel": 2,
+      "eyebrow": "05 / 07 · About 5 minutes",
+      "requirement": "Complete the activities on this page to unlock Next.",
+      "reference": false,
+      "gateActivityIds": [
+        "strategy-panels",
+        "speaking-cards",
+        "speaking-simulator"
+      ],
+      "blocks": [
+        {
+          "type": "group",
+          "layout": "stack",
+          "tone": "plain",
+          "blocks": [
+            {
+              "type": "markdown",
+              "source": "sections/fragment-25.md",
+              "textStyle": "lead"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "layout": "stack",
+          "tone": "callout",
+          "blocks": [
+            {
+              "type": "group",
+              "layout": "stack",
+              "tone": "plain",
+              "blocks": [
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-26.md"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "layout": "stack",
+              "tone": "plain",
+              "blocks": [
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-27.md",
+                  "textStyle": "note"
+                }
+              ]
+            },
+            {
+              "type": "activity",
+              "activityId": "strategy-panels"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "layout": "stack",
+          "tone": "plain",
+          "revealId": "speaking-flashcards",
+          "blocks": [
+            {
+              "type": "activity",
+              "activityId": "speaking-cards"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "layout": "stack",
+          "tone": "activity",
+          "revealId": "speaking-activity",
+          "blocks": [
+            {
+              "type": "group",
+              "layout": "stack",
+              "tone": "plain",
+              "blocks": [
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-28.md"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "layout": "stack",
+              "tone": "plain",
+              "blocks": [
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-29.md",
+                  "textStyle": "note"
+                }
+              ]
+            },
+            {
+              "type": "activity",
+              "activityId": "speaking-simulator"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "integrated-practice",
+      "label": "06 · Put it together",
+      "heading": "A Discussion in Motion",
+      "headingId": "s6-title",
+      "headingLevel": 2,
+      "eyebrow": "06 / 07 · About 3 minutes",
+      "requirement": "Complete the activities on this page to unlock Next.",
+      "reference": false,
+      "gateActivityIds": [
+        "application",
+        "integrated-writing",
+        "application-checklist"
+      ],
+      "blocks": [
+        {
+          "type": "group",
+          "layout": "stack",
+          "tone": "plain",
+          "blocks": [
+            {
+              "type": "markdown",
+              "source": "sections/fragment-30.md",
+              "textStyle": "lead"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "layout": "roundtable",
+          "tone": "plain",
+          "blocks": [
+            {
+              "type": "markdown",
+              "source": "sections/fragment-31.md"
+            }
+          ]
+        },
+        {
+          "type": "activity",
+          "activityId": "application"
+        },
+        {
+          "type": "group",
+          "layout": "stack",
+          "tone": "activity",
+          "blocks": [
+            {
+              "type": "markdown",
+              "source": "sections/fragment-32.md"
+            },
+            {
+              "type": "activity",
+              "activityId": "integrated-writing"
+            },
+            {
+              "type": "markdown",
+              "source": "sections/fragment-33.md",
+              "textStyle": "label"
+            },
+            {
+              "type": "activity",
+              "activityId": "application-checklist"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "knowledge-check",
+      "label": "07 · Knowledge check",
+      "heading": "Are You Ready to Make an Impact?",
+      "headingId": "quiz-title",
+      "headingLevel": 2,
+      "eyebrow": "07 / 07 · Knowledge check",
+      "requirement": "Complete the activities on this page to unlock Next.",
+      "reference": false,
+      "gateActivityIds": [
+        "knowledge-check"
+      ],
+      "blocks": [
+        {
+          "type": "group",
+          "layout": "stack",
+          "tone": "plain",
+          "blocks": [
+            {
+              "type": "markdown",
+              "source": "sections/fragment-34.md",
+              "textStyle": "lead"
+            }
+          ]
+        },
+        {
+          "type": "activity",
+          "activityId": "knowledge-check"
+        }
+      ]
+    },
+    {
+      "id": "quick-reference",
+      "label": "↗ · Quick reference",
+      "heading": "Middle Stage Quick Reference",
+      "headingId": "reference-title",
+      "headingLevel": 2,
+      "requirement": "Complete the activities on this page to unlock Next.",
+      "reference": true,
+      "gateActivityIds": [],
+      "blocks": [
+        {
+          "type": "reference",
+          "source": "reference/reference.json",
+          "printLabel": "Print quick reference"
+        }
+      ]
+    }
+  ]
+}

@@ -64,7 +64,7 @@ test('Opening checkpoint missing selection, retry button, task keyboard and imme
 
 test('Repeated exploration is not unique credit, including generated detail reveals', async ({ page }) => {
   await page.goto('/middle.html'); await ready(page);
-  const card = page.locator('#view-0 .flip-card').first();
+  const card = page.locator('#view-0 .dsl-card').first();
   for (let i = 0; i < 5; i++) await card.click();
   await expect(page.locator('#next-section')).toBeDisabled();
   expect(JSON.parse(await rawProgress(page, 'middle')).data.middleState.sets.flipped.welcome).toEqual([0]);
@@ -72,8 +72,8 @@ test('Repeated exploration is not unique credit, including generated detail reve
   await load(page, 'middle', { raw: JSON.stringify({ completed: [0, 1], data: {} }) });
   await navigate(page, 2);
   for (let i = 0; i < 5; i++) {
-    await page.locator('#evidence-details summary').first().click();
-    await expect(page.locator('#evidence-after')).toBeHidden();
+    await page.locator('[data-activity-id="evidence-panels"] summary').first().click();
+    await expect(page.locator('[data-reveal-id="evidence-after"]')).toBeHidden();
   }
   await load(page, 'final', { raw: JSON.stringify({ completed: [0, 1], data: {} }) });
   await navigate(page, 2);
@@ -83,20 +83,19 @@ test('Repeated exploration is not unique credit, including generated detail reve
   }
 });
 
-test('Middle question navigation wrap/direct review and sequence cursor save gap (KI-03)', async ({ page }) => {
+test('Middle question navigation wraps/directly reviews and now saves every cursor immediately (KI-03 repair)', async ({ page }) => {
   await load(page, 'middle', observed('middle', 'completed'));
   await navigate(page, 1);
-  const before = JSON.parse(await rawProgress(page, 'middle')).data.middleState.positions.classify;
-  await page.locator('#classify-next').click();
-  await expect(page.locator('#classify-question')).toContainText('1 of 5');
+  await page.locator('[data-activity-id="classification"] .dsl-question-next').click();
+  await expect(page.locator('[data-activity-id="classification"] .dsl-question-prompt')).toContainText('1 of 5');
   await page.reload(); await ready(page); await navigate(page, 1);
-  expect(JSON.parse(await rawProgress(page, 'middle')).data.middleState.positions.classify).toBe(before);
+  expect(JSON.parse(await rawProgress(page, 'middle')).data.middleState.positions.classify).toBe(0);
   await navigate(page, 7);
-  await page.locator('#quiz-next').click();
-  await expect(page.locator('#quiz-number')).toHaveText('Question 1 of 5');
-  await page.locator('#quiz-status button').nth(2).click();
+  await page.locator('[data-activity-id="knowledge-check"] .dsl-question-next').click();
+  await expect(page.locator('[data-activity-id="knowledge-check"] .dsl-question-counter')).toHaveText('Question 1 of 5');
+  await page.locator('[data-activity-id="knowledge-check"] .dsl-question-jump').nth(2).click();
   await page.reload(); await ready(page); await navigate(page, 7);
-  await expect(page.locator('#quiz-number')).toHaveText('Question 3 of 5');
+  await expect(page.locator('[data-activity-id="knowledge-check"] .dsl-question-counter')).toHaveText('Question 3 of 5');
 });
 
 test('Final previous/next does not wrap, checks/models restore, edits cannot revoke completion', async ({ page }) => {

@@ -183,6 +183,62 @@ Keep screenshot/PDF comparisons useful but do not make zero pixel difference a c
 
 This hierarchy does not authorize extra work in mechanically scoped milestones: milestone 1 changes no production files, and milestone 2 still extracts source verbatim with the original cascade/execution order. Do not introduce layout adjustments in those milestones. Their screenshot checks still need not enforce exact browser/font rasterization.
 
+### Presentation-preservation contract for content migrations
+
+Milestones 6 and 7 must apply this contract before public cutover. Required lessons
+from Middle: `.opencode/docs/evidence/milestone-5-flashcard-style.md`,
+`milestone-5-middle-presentation.md`, and `milestone-5-all-activities.md` in the same
+evidence directory. Reusing a shared interaction controller does not preserve its
+source lesson's presentation. Most approved Middle treatments are scoped to
+`.dsl-middle`; neither generic defaults nor importing Middle's theme is a substitute
+for preserving Final's or Opening's own visual identity.
+
+1. **Inventory before extraction.** Create a section-by-section presentation map
+   under `.opencode/docs/` against the immutable original. Identify paragraph roles,
+   heading typography, separate card titles, every activity frame, speaker/context
+   statement, example/caution/notice, model, feedback state, control treatment and
+   responsive grouping. Map each to existing bounded metadata/component profiles
+   and lesson-scoped CSS, or document a narrowly required extension. Reconcile
+   counts against source; representative activities alone are insufficient.
+2. **Preserve roles and composition.** Use the existing closed `textStyle`, title,
+   group-tone and callout annotation fields where appropriate. Plain Markdown must
+   not erase source hierarchy, emphasis, example boundaries or annotations. Preserve
+   separate overview/question areas, paired examples and writing/model groups where
+   present. Prevent cumulative paragraph margins/grid gaps from nested group and
+   loading wrappers. Keep rich Markdown formatting whitespace collapsed while
+   retaining explicit hard breaks, plain-text newlines and exact task segments.
+   Do not add arbitrary HTML/CSS/classes, duplicate controllers or infer gates from
+   presentation. Any new metadata remains closed, validated and tested.
+3. **Retain lesson identity and state cues.** Activate the correct lesson-scoped
+   theme and verify the actual stylesheet cascade. Preserve visible borders,
+   backgrounds, accents, typography roles and neutral/correct/incorrect/retained-
+   credit states. Middle-specific sequence wrappers are not a universal layout.
+   Do not copy a theme or optional control simply because a shared API supports it.
+4. **Distinguish regressions from permitted differences.** Minor documented spacing
+   and natural reflow remain permitted under the hierarchy above. Missing activity
+   frames/callouts/shading, lost hierarchy/emphasis, inappropriate font roles or
+   premature stacking that breaks recognizable composition are regressions, not
+   incidental layout differences. Keep readable responsive growth; do not recreate
+   clipping, fixed heights or inaccessible markup to match pixels.
+5. **Compare every section before cutover.** In the common harness, compare pinned
+   original and migrated views at wide desktop, narrow desktop near source
+   breakpoints, and mobile widths. Cover every activity and authored callout/model,
+   both card faces where applicable, expanded/collapsed and reveal states,
+   unanswered/correct/incorrect/wrong-after-earned-credit responses, and reloaded
+   drafts/selections. Exercise root/repository mounts across Chromium, Firefox,
+   WebKit and mobile Chromium. Wait for fonts/transitions to settle. Combine targeted
+   painted-style/layout and overflow assertions with original/current screenshot
+   review; exact content/answer/policy assertions remain independent. Preserve
+   original captures; do not update baselines to hide regressions.
+6. **Owner presentation checkpoint.** Before switching the public entry, record the
+   inventory reconciliation, comparison evidence, minor permitted differences,
+   automated outcomes and actual manual accessibility/print checks or their gaps.
+   Obtain owner presentation review/approval; behavioral test success alone does
+   not establish presentation readiness. If review is unavailable, stop at the
+   pre-cutover checkpoint and record the blocker. After cutover verify the public
+   page and run other lessons' regressions to catch shared-style effects. Attribute
+   owner-reported checks explicitly; do not infer unreported AT/device/zoom coverage.
+
 ### Tooling and evidence
 
 Milestone 1 establishes npm development-only tooling: Playwright browser tests and Node's built-in test runner. Later milestones add content-validation tooling. Keep `npm run test:unit`, `npm run test:browser`, and later `npm run validate:content` stable and documented. A package manifest is for development only; site serving must remain `python3 -m http.server 8000` or equivalent with no build/install step for production assets.

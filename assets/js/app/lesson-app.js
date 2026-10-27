@@ -8,7 +8,7 @@ import { renderSections, standardActivityRegistry, validateRegistry } from './se
 
 const mounts = new WeakSet();
 const writers = new Map();
-export function mountLesson(root, { configUrl, adapter, completionPolicy, registry = standardActivityRegistry }) {
+export function mountLesson(root, { configUrl, adapter, completionPolicy, revealPolicy, registry = standardActivityRegistry }) {
   if (mounts.has(root)) throw new TypeError('Lesson is already mounted. Destroy it before remounting.');
   validateRegistry(registry);
   if (!adapter || !completionPolicy || Object.values(completionPolicy).some(policy => typeof policy !== 'function')) throw new TypeError('A statically imported adapter and completion policy are required');
@@ -32,7 +32,7 @@ export function mountLesson(root, { configUrl, adapter, completionPolicy, regist
       validateLessonLinks(config, manifest, adapter);
       if (Object.keys(completionPolicy).some(id => !config.sectionOrder.includes(id) || id === config.referenceId)) throw new Error('Completion policy has an unknown/reference section');
       if (destroyed) return;
-      renderer = renderSections(root, { manifest, manifestUrl, allowedRootUrl, registry, getState: () => store.state,
+      renderer = renderSections(root, { manifest, manifestUrl, allowedRootUrl, registry, revealPolicy, getState: () => store.state,
         onChange(activity, entry, own) {
           const previous = store.state, next = store.state; entry.write(activity, next, own);
           const guarded = Object.fromEntries(Object.entries(completionPolicy).map(([id, gate]) => [id, state => renderer.isSectionReady(id) && gate(state) === true]));

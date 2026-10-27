@@ -4,8 +4,11 @@ import { resolveContentUrl } from './content-loader.js';
 import { formatWriting } from '../utilities/writing-formatters.js';
 
 export const activityTypes = ['flashcards', 'expandables', 'multiple-choice', 'question-sequence', 'writing', 'checklist'];
-export const sequenceProfiles = ['opening-classification', 'opening-knowledge-check', 'middle-scenarios', 'middle-quiz', 'final-questions'];
+export const sequenceProfiles = ['opening-classification', 'opening-knowledge-check', 'middle-scenarios', 'middle-quiz', 'middle-application', 'final-questions'];
 export const maxGroupDepth = 3;
+export function activityBodySources(activity) {
+  return [...new Set((activity.data.items || []).flatMap(item => [item.frontSource, item.backSource, item.bodySource]).concat((activity.data.model?.blocks || []).map(block => block.source)).filter(Boolean))];
+}
 const record = value => value !== null && typeof value === 'object' && !Array.isArray(value);
 const text = value => typeof value === 'string' && /\S/.test(value);
 const identity = value => typeof value === 'string' && /^[a-z][a-z0-9-]*$/.test(value) && !['constructor', 'prototype', '__proto__'].includes(value);
@@ -66,9 +69,10 @@ export function validateLessonManifest(data, context = {}) {
     const blocks = (items, path, depth, sectionActivities) => b.list(items, path, (block, p) => {
       if (!record(block)) { b.check(false, p); return; }
       if (block.type === 'group') {
-        if (!b.object(block, ['type', 'layout', 'tone', 'blocks'], [], p)) return;
-        b.check(['stack', 'two-column'].includes(block.layout), `${p}/layout`);
-        b.check(['plain', 'callout'].includes(block.tone), `${p}/tone`);
+        if (!b.object(block, ['type', 'layout', 'tone', 'blocks'], ['revealId'], p)) return;
+        if (block.revealId !== undefined) b.check(identity(block.revealId), `${p}/revealId`);
+        b.check(['stack', 'two-column', 'flow', 'roundtable'].includes(block.layout), `${p}/layout`);
+        b.check(['plain', 'callout', 'caution', 'example', 'activity'].includes(block.tone), `${p}/tone`);
         b.check(depth < maxGroupDepth, p, 'group depth exceeds 3');
         if (depth < maxGroupDepth) blocks(block.blocks, `${p}/blocks`, depth + 1, sectionActivities);
       } else if (block.type === 'activity') {
@@ -76,11 +80,14 @@ export function validateLessonManifest(data, context = {}) {
         b.check(declared.has(block.activityId), `${p}/activityId`, 'undeclared activity');
         b.check(!used.has(block.activityId), `${p}/activityId`, 'activity mounted more than once'); used.add(block.activityId); sectionActivities.add(block.activityId);
       } else if (['markdown', 'reference'].includes(block.type)) {
-        if (b.object(block, ['type', 'source'], [], p)) b.source(block.source, `${p}/source`, block.type === 'markdown' ? '.md' : '.json', context);
+        if (b.object(block, ['type', 'source'], block.type === 'reference' ? ['printLabel'] : ['textStyle'], p)) b.source(block.source, `${p}/source`, block.type === 'markdown' ? '.md' : '.json', context);
+        if (block.textStyle !== undefined) b.check(['lead', 'note', 'instruction', 'label'].includes(block.textStyle), `${p}/textStyle`);
+        if (block.printLabel !== undefined) b.check(text(block.printLabel), `${p}/printLabel`);
       } else b.check(false, `${p}/type`, 'unknown block type');
     });
     b.list(data.sections, '/sections', (section, path) => {
-      if (!b.object(section, ['id', 'label', 'heading', 'headingLevel', 'requirement', 'reference', 'gateActivityIds', 'blocks'], ['eyebrow'], path)) return;
+      if (!b.object(section, ['id', 'label', 'heading', 'headingLevel', 'requirement', 'reference', 'gateActivityIds', 'blocks'], ['eyebrow', 'headingId'], path)) return;
+      if (section.headingId !== undefined) b.check(identity(section.headingId), `${path}/headingId`);
       b.check(identity(section.id), `${path}/id`);
       ['label', 'heading', 'requirement'].forEach(key => b.check(text(section[key]), `${path}/${key}`));
       if (Object.hasOwn(section, 'eyebrow')) b.check(text(section.eyebrow), `${path}/eyebrow`);
@@ -127,17 +134,26 @@ export function validateActivity(data, context = {}) {
   if (['flashcards', 'expandables', 'checklist'].includes(data.type)) {
     if (b.object(d, ['items'], [], p)) {
       b.list(d.items, `${p}/items`, (item, path) => {
-        const keys = data.type === 'flashcards' ? ['id', 'front', 'back'] : data.type === 'expandables' ? ['id', 'title', 'body'] : ['id', 'text'];
-        const optional = data.type === 'flashcards' ? ['frontTitle', 'backTitle'] : [];
-        if (b.object(item, keys, optional, path)) [...keys, ...optional.filter(key => Object.hasOwn(item, key))].forEach(key => b.check(key === 'id' ? identity(item[key]) : text(item[key]), `${path}/${key}`));
+        const keys = data.type === 'flashcards' ? ['id'] : data.type === 'expandables' ? ['id', 'title'] : ['id', 'text'];
+        const optional = data.type === 'flashcards' ? ['front', 'back', 'frontSource', 'backSource', 'frontTitle', 'backTitle'] : data.type === 'expandables' ? ['body', 'bodySource', 'calloutTones'] : [];
+        if (b.object(item, keys, optional, path)) [...keys, ...optional.filter(key => key !== 'calloutTones' && Object.hasOwn(item, key))].forEach(key => b.check(key === 'id' ? identity(item[key]) : text(item[key]), `${path}/${key}`));
+        if (item.calloutTones !== undefined) {
+          b.check(text(item.bodySource) && Array.isArray(item.calloutTones) && item.calloutTones.length >= 1 && item.calloutTones.length <= 2, `${path}/calloutTones`);
+          b.list(item.calloutTones, `${path}/calloutTones`, (tone, p) => b.check(['example', 'caution'].includes(tone), p));
+        }
+        for (const key of data.type === 'flashcards' ? ['front', 'back'] : data.type === 'expandables' ? ['body'] : []) {
+          b.check(Object.hasOwn(item, key) !== Object.hasOwn(item, `${key}Source`), path, 'exactly one text or Markdown source required');
+          if (item[`${key}Source`] !== undefined) b.source(item[`${key}Source`], `${path}/${key}Source`, '.md', context);
+        }
       });
       if (Array.isArray(d.items)) b.ids(d.items, `${p}/items`);
     }
   } else if (data.type === 'multiple-choice') question(d, p);
   else if (data.type === 'question-sequence') {
-    if (b.object(d, ['questions'], ['retryLabel'], p)) {
+    if (b.object(d, ['questions'], ['retryLabel', 'compareLabel', 'compareMessage'], p)) {
       b.list(d.questions, `${p}/questions`, question); if (Array.isArray(d.questions)) b.ids(d.questions, `${p}/questions`);
       if (Object.hasOwn(d, 'retryLabel')) b.check(text(d.retryLabel), `${p}/retryLabel`);
+      if (d.compareLabel !== undefined || d.compareMessage !== undefined) b.check(text(d.compareLabel) && text(d.compareMessage), `${p}/compareLabel`);
     }
   } else if (data.type === 'writing') {
     if (b.object(d, ['fields', 'copyLabel'], ['output', 'assembly', 'copyFieldId', 'copyMessages', 'model'], p)) {
@@ -168,7 +184,13 @@ export function validateActivity(data, context = {}) {
       if (d.model !== undefined && b.object(d.model, ['mode', 'showLabel', 'blocks'], ['hideLabel'], `${p}/model`)) {
         b.check(['show-only', 'toggle'].includes(d.model.mode) && text(d.model.showLabel), `${p}/model`);
         if (d.model.mode === 'toggle' || d.model.hideLabel !== undefined) b.check(text(d.model.hideLabel), `${p}/model/hideLabel`);
-        b.list(d.model.blocks, `${p}/model/blocks`, (block, path) => { if (b.object(block, ['kind', 'text'], [], path)) b.check(['title', 'paragraph'].includes(block.kind) && text(block.text), path); });
+        b.list(d.model.blocks, `${p}/model/blocks`, (block, path) => {
+          if (b.object(block, ['kind'], ['text', 'source'], path)) {
+            b.check(['title', 'paragraph'].includes(block.kind) && (Object.hasOwn(block, 'text') !== Object.hasOwn(block, 'source')), path);
+            if (block.source !== undefined) b.source(block.source, `${path}/source`, '.md', context);
+            else b.check(text(block.text), `${path}/text`);
+          }
+        });
       }
     }
   }

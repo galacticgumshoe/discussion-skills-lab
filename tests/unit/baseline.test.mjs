@@ -8,6 +8,7 @@ import { extractBanks } from '../helpers/content-baseline.mjs';
 import { startServer } from '../helpers/static-server.mjs';
 import { openingExtraction } from '../helpers/opening-extraction.mjs';
 import { finalReferencePilot } from '../helpers/final-reference.mjs';
+import { middleCutover } from '../helpers/middle-cutover.mjs';
 
 const json = path => JSON.parse(readFileSync(`${root}tests/fixtures/${path}`));
 test('Opening extraction and Final pilot are bounded; other runtime/license bytes remain pinned', () => {
@@ -18,11 +19,19 @@ test('Opening extraction and Final pilot are bounded; other runtime/license byte
   // README developer-testing guidance was separately authorized after extraction.
   // Keep canonical README/replay evidence pinned, but allow current documentation.
   assert.equal(readFileSync(`${root}final.html`, 'utf8'), finalReferencePilot(original('final.html').toString()));
-  for (const path of productionPaths.filter(path => !['opening.html', 'final.html', 'README.md'].includes(path))) {
+  assert.equal(readFileSync(`${root}middle.html`, 'utf8'), middleCutover(original('middle.html').toString()));
+  const middleEntry = readFileSync(`${root}assets/js/middle.js`, 'utf8');
+  assert.match(middleEntry, /mountLesson/);
+  assert.doesNotMatch(middleEntry, /localStorage|DSL\.createLesson|const (classification|research|strategies|applications|questions)|According to/);
+  assert.ok(readFileSync(`${root}assets/css/middle.css`, 'utf8').startsWith(original('assets/css/middle.css').toString()));
+  for (const path of productionPaths.filter(path => !['opening.html', 'middle.html', 'assets/js/middle.js', 'final.html', 'assets/css/middle.css', 'README.md'].includes(path))) {
     assert.deepEqual(readFileSync(`${root}${path}`), original(path), path);
   }
   const source = Object.fromEntries(productionPaths.map(path => [path, readFileSync(`${root}${path}`, 'utf8')]));
   source['assets/js/opening.js'] = extracted.js;
+  // Middle banks now have independent exact content tests. Retain the original
+  // bank extractor here for the unmigrated engines and immutable source seal.
+  source['assets/js/middle.js'] = original('assets/js/middle.js').toString();
   assert.deepEqual(extractBanks(source), json('content/banks.json'));
 });
 test('canonical content/maps/progress/visual evidence has not been silently rewritten', () => {
@@ -127,7 +136,8 @@ test('server mounts, MIME, isolated pinned replay, allowlist, traversal and life
         const expected = current && path === 'opening.html'
           ? Buffer.from(openingExtraction(original(path).toString()).html)
            : current && path === 'final.html' ? Buffer.from(finalReferencePilot(original(path).toString()))
-           : current && path === 'README.md' ? readFileSync(`${root}${path}`) : original(path);
+            : current && path === 'middle.html' ? Buffer.from(middleCutover(original(path).toString()))
+            : current && ['README.md', 'assets/css/middle.css', 'assets/js/middle.js'].includes(path) ? readFileSync(`${root}${path}`) : original(path);
         assert.deepEqual(result.body, expected);
         if (path.endsWith('.js')) assert.match(result.headers['content-type'], /^text\/javascript/);
       }

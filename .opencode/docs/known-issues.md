@@ -228,3 +228,209 @@ No live lesson was converted and no known legacy issue is silently declared fixe
 New-composition manual AT/device/actual-zoom/animation/interactive-print/dialog/
 physical-print follow-ups remain explicitly unperformed and nonblocking for this
 isolated-runtime milestone; no release approval or milestone-5 work is inferred.
+
+### Milestone 5 first review unit — incomplete migration, not a live repair
+
+Pure Middle gates/reveals, five question banks, both checklists and the non-published
+strategy/reference archive are introduced without switching any public entry.
+The source/bank/gate/answer tests and direct shared-component harness are a first
+review unit only. Research/application writing, rich Markdown card/panel content,
+staged-reveal renderer wiring, complete reference migration/printing and full-page
+cutover remain outstanding; see `evidence/milestone-5-questions-verification.md`.
+Do not mark KI save gaps/model visibility or live question focus as repaired yet.
+The partial speaking harness has no `Try Another Strategy` affordance; it must be
+added through the shared component before the complete speaking section passes.
+
+An initial new unit oracle failed on an absent `middleState`: the verified codec
+correctly omitted default-only state when encoding against an empty record, while
+the test stub dereferenced it unconditionally. The test now supplies an empty
+legacy object in that case. No production/codec/policy change or baseline rewrite
+was needed. Final verification results belong in the evidence/new handoff, not an
+inferred milestone-completion claim.
+
+The first cumulative milestone-5 run failed 625 passed/three WebKit Opening
+timeouts; unchanged targeted Opening extraction/persistence retest passed 24/24
+with one worker. Traces show ~111-second navigation waits in the two extraction
+tests and a long readiness wait in the persistence test, not a diagnosed cause.
+Do not call the full suite green or alter Opening based on this observation.
+The next full result remains required.
+
+Reference extraction adds only an explicit Middle tag/class profile to the shared
+renderer/schema, retaining Final's prior output. Its first combined targeted run
+passed all 24 new Middle reference checks but failed eight new question-remount
+assertions (a root class was incorrectly queried as a descendant in the resumed
+test file) and one existing Firefox Final reference navigation check. The new
+test now asserts the root class plus exactly one question prompt and removes an
+unnecessary positional-checkbox fallback. No component behavior/assertion
+timeout/legacy navigation helper was changed. A new unit negative case also
+needed its frozen Final-specific duplicate-document ID applied to Middle's ID;
+the frozen case itself remains unchanged. Subsequent actual results are recorded
+in `evidence/milestone-5-reference-verification.md`, not inferred from diagnostics.
+
+The subsequent full run **failed 646 passed/six mobile-Chromium timeouts**, while
+all three desktop projects passed 163/163 and all new Middle checks passed.
+Timeouts occurred in existing bootstrap/replay/writing harnesses; elapsed times
+clustered near 528 and 888–892 seconds despite 120-second test budgets. No cause
+(including host sleep/resource contention) is established. An unchanged single-
+worker mobile diagnostic passed all 61 tests in those files, including all six
+failed cases, in 40.5 seconds. This is **not** a green full-suite result; complete
+regression acceptance remains outstanding. No runtime/test/timeout change made
+to hide the observations. Full details/report hash: milestone-5 reference evidence.
+
+Separately named settled PDFs now have computed opacity 1 and passed file-based
+text/image review without animation bleaching. Earlier raw PDFs remain preserved;
+interactive preview/actual printing and full lesson cutover remain unverified.
+
+**Checkpoint verification resolution, 2026-10-25:** the owner reports the laptop
+slept during the long run, reran exactly the six mobile timeout identities with
+`caffeinate -i`/one worker and reports **six/six passed in 6.1 seconds**, then
+explicitly requests verification closure. Agent inspected the matching local
+report (six expected, zero failures/skips/flaky/runner errors; SHA-256
+`22eb6cacb0b9217e3f38a48ef38596bd1c4fc7a264e8bb77f0831756c479e7fb`).
+Current checkpoint automated verification is **complete on owner-accepted combined
+coverage**: prior 646 passes plus the six exact rerun passes, not a new single
+652/652 passing command. The preceding outstanding-verification statements are
+historical and no longer block this pre-cutover checkpoint. Earlier failed
+reports remain recorded; sleep is reported context, not an independently proven
+cause. Milestone 5's remaining implementation/cutover and its future full checks
+are still outstanding. No code, assertion, timeout, baseline or permission change.
+# Milestone 5 cutover verification notes
+
+Middle's remaining migration now uses the shared runtime. Its immediate partial
+research/cursor saves and optional model persistence are the authorized KI-03/KI-04
+repairs, not changes to the original replay characterizations. Front-face refresh
+with durable explored cues is intentional; original v1 never stored current face.
+Opening/Final live issues are not declared repaired by this Middle migration.
+
+The first expanded full-lesson harness run failed because a new emphasis oracle
+included the original empty generated quiz-score `strong` placeholder. Only empty
+placeholders were filtered; every nonempty emphasis/content assertion remains.
+A separate initial schema compile error was fixed with explicit branch property
+declarations, keeping strict Ajv enabled. Cutover shell byte checks then caught a
+single trailing LF mismatch in the test transformation; the transformation now
+explicitly documents/adds that LF. These are retained verification history, not
+reasons to weaken source/answer/policy seals. Detailed results and actual manual
+limits: `evidence/milestone-5-cutover-verification.md`.
+# Milestone 5 final full-run follow-up
+
+First whole cutover suite passed 720/720. Final file review then caught/fixed one
+duplicate Communication heading fragment and added an explicit no-duplicates
+assertion; speaking comparison messaging now clears on the next real selection/
+question navigation without clearing any last-choice/credit state. The subsequent
+corrected-source full run had 718 passes/two Firefox failures: unchanged Opening
+prefix builder output stayed empty after a pointer click, and original Final's
+unsafe-state characterization worker exited with SIGBUS. Neither is established
+as a new runtime defect or a resolved environmental cause. Both exact identities
+passed unchanged three times (six tests) with one Firefox worker. The failed full
+run remains recorded; another full result is required, not waived by diagnostics.
+See `evidence/milestone-5-cutover-verification.md` and its archived reviewed report.
+# Milestone 5 third full-run observation
+
+The third unchanged full run passed 719/720; the earlier Opening/Final replay
+failures did not recur, but Firefox's unchanged Final reference-pilot prefix test
+failed during context teardown with Juggler invalid-content-encoding, sandbox-
+extension and progress-listener errors. No Middle check failed. A final all-project
+single-worker run is being used without changing assertions/timeouts/security or
+the runner configuration; its outcome must be recorded, not assumed. This is an
+empirical test-run adjustment, not a claimed root-cause fix. Details/report hash:
+`evidence/milestone-5-cutover-verification.md`.
+# Milestone 5 automated verification closure
+
+The final corrected-source full suite passed **720/720**, all 180 tests in each
+of Chromium/Firefox/WebKit/mobile Chromium, using `--workers=1` with a fresh
+command-scoped Firefox home. No required assertion/project/viewport/timeout or
+security setting changed. Unit tests (152/152), content validation and diff checks
+also passed afterward. This closes the cumulative verification blocker, **not**
+the root-cause investigation of the earlier nonreproducing Firefox pointer,
+SIGBUS and protocol/teardown observations. Retain that history and reassess if it
+recurs; single-worker success is not a universal fix. Manual owner Chrome/Safari,
+actual zoom/device/AT/printing follow-ups remain explicitly unperformed.
+### Middle flashcard presentation follow-up (2026-10-26)
+
+Owner comparison identified genuine migrated-card regressions: expanded Markdown
+list whitespace, bold front text, top alignment, external explored marker and tall
+ordinary cards. Scoped shared-card fixes restore compact lists, normal front
+weight, centered front text, internal active-face status and ordinary Welcome
+height while retaining intrinsic long/enlarged-text growth and accessible
+content-only descriptions. No content, gates or storage mappings changed.
+
+Integrated WebKit flip-then-enlarge checks exposed native flex-button scroll
+overflow despite fitted face rectangles. Block button layout with a full-height
+grid child passes the two exact root/prefix checks without clipping. Earlier
+line-height-only correction was insufficient. Final affected-suite confirmation
+passed **144/144** across all four projects, both mounts; units **152/152** and
+content validation also passed. See `evidence/milestone-5-flashcard-style.md` and
+latest status handoff.
+No actual browser-zoom/AT/device/interactive print verification is claimed.
+### Middle page-wide presentation follow-up (2026-10-26)
+
+Owner's subsequent side-by-side screenshot exposed paragraph-role loss, repeated
+wrapper spacing, a generic mint callout instead of Middle's pale-blue panel,
+pill-shaped flow badges and premature Welcome-card grid wrapping at narrow
+desktop widths. These are corrected within Middle's presentation scope, not
+classified as acceptable migration differences. Rich Markdown panels/models also
+no longer retain formatting newlines as extra visual whitespace. Content, hard
+breaks, plain-text line breaks, gates and progress mappings are preserved.
+
+Initial expanded Chromium comparisons pass 8/8 (root/repository, 940/1440/390px,
+all-section prose roles). Final four-project affected regression **passed 248/248**,
+with units **153/153** and content validation passing. An earlier WebKit model-save
+pointer observation did not recur in six diagnostic repetitions or the unchanged
+final run; its cause remains unestablished, not falsely declared repaired.
+See `evidence/milestone-5-middle-presentation.md` for history and manual limits.
+### Structure to substance presentation (2026-10-26)
+
+Owner explicitly prefers the migrated larger section heading and explored cue on
+both card faces; retain both. Flattened front pill labels and missing classification
+activity composition are corrected separately: existing `frontTitle` labels,
+bounded activity-panel tone, original question/answer/feedback/control palettes
+and responsive layout. Initial Chromium comparison passes 6/6. Final four-project
+affected confirmation **passed 200/200**, with units **154/154** and content
+validation passing. A new-test Firefox edge comparison was corrected with a
+documented sub-layout-unit tolerance; no runtime or content regression was waived. See
+`evidence/milestone-5-structure-presentation.md` for scope and verification limits.
+### Make contributions count presentation (2026-10-26)
+
+Evidence example callouts, research-model front/back title rows and Activity 2's
+panel/caution/answer/feedback/writing/model/checkbox styling are restored within
+that section. Explored row-header/front-face cues and larger headings are retained.
+The original assembly notice is not a new local addition: main sets it after
+assembly and clears it on reload. It remains, with original small-note styling.
+The real assemble/copy/model controls now precede output in DOM/visual order for
+the existing `middle-evidence` profile. No state/storage/gate change.
+
+Corrected initial evidence comparison passes 6/6 and preceding-page comparisons
+14/14 on Chromium; units 155/155/content validation pass. Final four-project
+affected suite **passed 224/224**, with original/current styling, model/clipboard/
+assembly/lifecycle/credit/rollback checks intact. See
+`evidence/milestone-5-evidence-presentation.md` for evidence and manual limits.
+### Consistent treatment of all Middle activities (2026-10-26)
+
+The remaining scenario activities, application Tasks A/B/C and quiz now use the
+same Middle-scoped panel/answer/feedback/control theme as Activities 1/2. All nine
+original activity surfaces are covered, with a separate pale quiz overview and
+white question panel. Remaining expandable example/caution treatments, writing
+model callouts and teal checkboxes are restored too. Approved larger headings and
+header/front explored cues remain. No content or completion/storage policy changes.
+
+Expanded Chromium original/current comparisons pass 6/6 across both mounts and
+760/1440/390px; fresh units 157/157 and content validation pass. The final affected
+four-project suite **passed 304/304**, including previous page comparisons and
+content/progress/keyboard/print regressions. See `evidence/milestone-5-all-activities.md` for
+coverage, closed callout annotations, preflight corrections and manual limits.
+### Activity 5 optional comparison removed by owner request (2026-10-27)
+
+Removed speaking simulator's `compareLabel` / `compareMessage` metadata so the
+`Try Another Strategy` button and its additional instruction callout no longer
+appear. This is an explicit approved exception to the earlier preservation
+requirement, not a baseline rewrite. Normal question feedback/Next/review and
+earned credit remain intact. Units 158/158, content validation and eight focused
+four-project root/repository persistence checks pass; full suite not rerun.
+### Middle milestone 5 accepted and closed (2026-10-27)
+
+Owner accepted the corrected Middle pages and reported accessibility and print
+preview checked in Safari and Chrome; owner-side browser verification is complete.
+Earlier pending manual-check notes are historical. No specific AT, device, browser
+version or actual zoom coverage is inferred. The final closeout handoff records
+the passing cutover/affected checks and their chronology. Milestone 5 is complete;
+Final and Opening migration implementations have not started.

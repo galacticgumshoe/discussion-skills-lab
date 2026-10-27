@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "speaking-simulator",
+  "type": "question-sequence",
+  "profile": "middle-scenarios",
+  "data": { "questions": [
+    { "id": "simultaneous-start", "prompt": "1 of 3 · Simultaneous start — You and Avery start speaking together. You have spoken often; Avery has not.", "correctOptionId": "yield-avery", "options": [
+      { "id": "talk-louder", "text": "Talk louder without acknowledging Avery.", "feedback": "Not quite. This risks dominating someone with fewer turns." },
+      { "id": "yield-avery", "text": "“Go ahead, Avery. I have a related point to share afterward.”", "feedback": "Good choice. This supports participation while preserving your opportunity." },
+      { "id": "more-important", "text": "Say your idea is more important.", "feedback": "Not quite. This creates unnecessary conflict." }
+    ] },
+    { "id": "direct-response", "prompt": "2 of 3 · Direct response — Jordan raises a concern your research addresses, but someone else also wants to speak.", "correctOptionId": "brief-relevant-finding", "options": [
+      { "id": "brief-relevant-finding", "text": "“Could I respond briefly with a relevant finding, then hear the next perspective?”", "feedback": "Good choice. This explains the connection and acknowledges others." },
+      { "id": "speak-at-length", "text": "Ignore them and speak at length.", "feedback": "Not quite. Relevant research still needs collaborative delivery." },
+      { "id": "never-speak", "text": "Never speak if anyone else wants a turn.", "feedback": "Not quite. Withholding useful evidence can hinder the group." }
+    ] },
+    { "id": "cut-off", "prompt": "3 of 3 · Cut off mid-sentence — Your voice fades and another student begins before you finish.", "correctOptionId": "finish-yield", "options": [
+      { "id": "withdraw", "text": "Stop participating.", "feedback": "Not quite. Withdrawing prevents contribution." },
+      { "id": "argue", "text": "Argue over them.", "feedback": "Not quite. Escalation does not resolve the speaking order." },
+      { "id": "finish-yield", "text": "“I’d like to finish this thought, then hear your point.” Finish briefly and yield.", "feedback": "Good choice. This preserves your turn while respecting the other speaker." }
+    ] }
+  ] }
+}

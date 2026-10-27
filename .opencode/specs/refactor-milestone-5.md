@@ -100,12 +100,19 @@ Trim input fields as originally done. Do not change capitalization, claims, punc
 
 ## Acceptance and review boundaries
 
-- [ ] Middle's content is editable in Markdown/JSON; shipped entry JS has no remaining instructional banks/templates.
-- [ ] All eight gates/reveals and reference access match the original policy.
-- [ ] Shared components implement activities; no replacement lesson-specific duplicate engines.
-- [ ] One active writer; existing v1 fixtures and original-engine compatibility pass.
-- [ ] Only listed standards repairs changed behavior; no source content/answer/order changes.
-- [ ] Exact content/answer/gate assertions pass independently of visuals; permitted minor layout differences are documented rather than treated as instructional failures.
-- [ ] Full validation/unit/browser commands pass; manual gaps and evidence recorded in handoff.
+**Status: complete — 2026-10-27.** Owner accepted all Middle pages and reported
+accessibility and print-preview testing in Safari and Chrome complete. See the
+final milestone-5 closeout in `.opencode/docs/refactor-status.md` for automated
+evidence chronology, approved differences and remaining unclaimed checks. The
+owner-requested Activity 5 comparison-button/callout removal supersedes the earlier
+preservation instruction for that affordance only.
+
+- [x] Middle's content is editable in Markdown/JSON; shipped entry JS has no remaining instructional banks/templates.
+- [x] All eight gates/reveals and reference access match the original policy.
+- [x] Shared components implement activities; no replacement lesson-specific duplicate engines.
+- [x] One active writer; existing v1 fixtures and original-engine compatibility pass.
+- [x] Only listed standards repairs and the explicit owner-approved Activity 5 affordance removal changed behavior; other source content/answer/order preserved.
+- [x] Exact content/answer/gate assertions pass independently of visuals; permitted minor layout differences are documented rather than treated as instructional failures.
+- [x] Full validation/unit/browser commands passed at cutover; subsequent affected checks and manual acceptance recorded with their actual scope in handoff.
 
 Suggested units: per-section content extraction/harness tests; pure policies and serialization integration; full-page cutover; narrowly identified standards repairs; reference verification and handoff. Do not commit automatically. Stop before migrating Final or consolidating all shared styles.

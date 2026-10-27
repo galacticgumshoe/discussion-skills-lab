@@ -93,3 +93,45 @@ It uses the same permitted uniform reference styling as 4.4. Bootstrap metadata,
 activity and reference errors each offer retries; persistence warnings stay
 separate. Stored drafts/credit never reset. No legacy engine runs with the new
 writer, and unmount/remount must remove all owned listeners and pending work.
+
+## Middle milestone 5 extraction review
+
+`middle-questions.html` / `middle-questions.mjs` directly mount the **production**
+`content/middle/activities/*.json` question/checklist files through the verified
+`standardActivityRegistry`. There is no copied question bank or new controller.
+It uses the existing Middle adapter/store and real pure Middle policies, but it
+is deliberately not a whole-lesson entry: absent exploration/writing prerequisites
+cannot earn credit. All activities appear on one test-only Arial review page.
+
+Root and repository-prefix fixture routes both work; `?reorder` reverses activity
+hosts/checklist presentation without changing stable state/legacy field bindings.
+The page validates before opening one writer, never includes the classic engine,
+and exposes `window.middleQuestions` for test-only state/event/lifecycle inspection.
+Its model is not persisted to another namespace. The unused legacy-variant archive
+is not fetched, mounted, or substituted for the actual Quick Reference.
+
+Test data remains synthetic/isolated. This direct review harness has no production
+navigation/reference shell and is not evidence of completed eight-section/print/
+visual migration. The public `middle.html` still uses the legacy engine until an
+entire, separately validated graph is ready for atomic cutover within milestone 5.
+
+`middle-reference.html` / `middle-reference.mjs` separately review the real five-
+group Middle reference through `mountReference` and the original Middle stylesheet
+and numbered item classes. There is no progress writer, legacy engine, copied JS
+reference bank or extra Print button. It preloads while a test-only ordinary view
+is visible, so reference-only printing can be exercised at zero progress. It is
+not the public lesson or proof of the still-unimplemented full-page cutover.
+
+Both new Middle harnesses distinguish the actual `tests/fixtures/harness` path
+from its shorter `__fixtures/harness` test-server alias when constructing relative
+content URLs. Browser tests assert actual repository-prefixed content requests,
+not only the fixture page address. Production URL resolution remains unchanged.
+# Whole-Middle pre-cutover harness
+
+The test server's root/prefix `middle-harness.html` alias applies the bounded
+`tests/helpers/middle-cutover.mjs` shell transformation to the pinned source and
+loads `middle-lesson.mjs`. It uses real production config/content URLs without a
+`<base>`, copied content tree, or legacy engine. Each document has one store.
+This harness verified all sections before public cutover; whole-lesson regression
+tests now target `middle.html` itself. Test-only instructional excerpts and source
+extraction remain © Rhys Jones / CC BY 4.0; test implementation MIT.

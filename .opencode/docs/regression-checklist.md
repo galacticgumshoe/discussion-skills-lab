@@ -1,5 +1,15 @@
 # Preservation regression checklist
 
+## Middle milestone-5 owner acceptance (2026-10-27)
+
+The owner reviewed all Middle pages, accepted the final corrections, and reported
+accessibility and print-preview testing in **Safari and Chrome** complete. These
+are owner-reported manual checks, not agent-performed tests; browser versions,
+assistive technology, device and actual zoom coverage were not specified. Middle's
+owner-side browser verification is accepted as complete. Historical evidence's
+pending manual statements describe the earlier sessions, not this final status.
+See the final milestone-5 handoff for automated evidence chronology and limits.
+
 ## Development requirements and commands
 
 Node **22 or newer**, npm and Git with pinned objects for
@@ -283,6 +293,33 @@ not evidence of execution. New bootstrap/shell fixture manual print previews,
 screen readers, actual zoom and device checks remain distinct follow-ups; prior
 owner 4.4 acceptance is retained without inventing new 4.5 manual results.
 
+### Milestone 5 pre-cutover review units
+
+Current non-live question/checklist and displayed-reference review commands:
+
+```sh
+npm run test:unit
+npm run validate:content
+env CFFIXED_USER_HOME="$(mktemp -d)" npm run test:browser -- tests/browser/middle-migration.spec.mjs tests/browser/middle-reference.spec.mjs tests/browser/reference-loading.spec.mjs
+env CFFIXED_USER_HOME="$(mktemp -d)" npm run test:browser
+```
+
+The first two Middle harnesses use production content files but do **not** convert
+public Middle or establish a full-lesson acceptance result. Exact source/gate/
+answer/checklist/archive/reference assertions are independent of screenshots.
+Actual root/prefix content-request paths are asserted, not only harness URLs.
+Keep earlier failed full/focused results and their diagnostics in milestone-5
+evidence; a diagnostic pass cannot replace final cumulative coverage.
+
+The first reference PDF capture caught the inherited reveal animation in a
+reference-view image; retain it and create separately named settled captures
+after waiting for real `getAnimations().finished` promises, not an arbitrary
+delay, pixel mask or CSS rewrite. Screen images do not establish print contrast,
+actual 200% zoom, AT or interactive preview success. Complete the entire lesson
+graph/extraction and all required gates/fixtures/keyboard/failure/visual/print
+checks before the atomic public cutover. See latest handoff and
+`evidence/milestone-5-{questions,reference}-verification.md` for actual results.
+
 ### Existing baseline and reference pipeline
 
 Milestone 3 adds `validate:content` (Ajv 8.20.0, development-only) plus runtime/schema
@@ -435,3 +472,44 @@ animation/permission dialogs/interactive print permutations/physical printing
 remain nonblocking manual follow-ups for later whole-lesson cutovers. Earlier owner
 Chrome/Mac Safari 4.4 acceptance is preserved, not transformed into fabricated 4.5
 manual results. Milestone 5 requires a separate implementation request.
+# Milestone 5 whole-page regression checks
+
+Run `npm run validate:content`, `npm run test:unit`, and the entire browser suite
+after the atomic Middle cutover. On this host use a fresh command-scoped Firefox
+home; `caffeinate -i env CFFIXED_USER_HOME="$(mktemp -d)" npm run test:browser`
+also inhibits idle sleep during the command without changing browser settings.
+
+`tests/browser/middle-lesson.spec.mjs` exercises the public page on root/prefix,
+all eight gates/every alternative feedback, exact original rich prose/emphasis,
+all valid old fixture hydration with zero writes, drafts/check/exploration/selection
+restoration, immediate fields/models/cursors, retained wrong-after-credit,
+comparison without saves, rollback through both original mounts, safe rich-body
+failure/retry, corrupt/denied/quota storage, one Print button and fresh reference
+printing from ordinary/reference views. It captures all section views and the long
+card at 320px/enlarged text; these are not actual browser-zoom/manual evidence.
+
+For owner follow-up: test the new public Middle in Chrome/Mac Safari, including
+keyboard/touch cards, expandables, answers, model/copy/checklist, actual 200% zoom,
+and Print-button/Cmd+P previews from fresh ordinary and reference views. Record
+actual browser/version/actions; do not reattribute older milestone-4 acceptance.
+Screen reader/physical-device/physical-print checks remain unclaimed when unavailable.
+
+Milestone 5 exit: corrected-source entire suite passed **720/720** with
+`caffeinate -i env CFFIXED_USER_HOME="$(mktemp -d)" npm run test:browser -- --workers=1`,
+all four projects and both current/replay mounts, followed by 152/152 units and
+passing content validation. On this host, single-worker execution is a verified
+full-suite option when concurrent Firefox contexts are unstable; it changes no
+assertion or browser security setting and is not a diagnosed universal fix.
+Actual evidence/history: `evidence/milestone-5-cutover-verification.md`.
+### Middle presentation comparisons
+
+`tests/browser/middle-presentation.spec.mjs` compares the immutable original and
+current Middle at 940px (narrow desktop/side-by-side), 1440px and 390px on both
+mounts. It checks prose typography, panel palette, flow badges, relative vertical
+spacing and card widths/heights; above 850px all three Welcome cards share one
+row and their text wraps without overflow. The original mobile stack remains.
+All-section checks compare annotated lead/note/instruction/label typography and
+confirm rich Markdown panels use normal whitespace rather than preserving source
+formatting newlines. This is computed-style/layout regression evidence, not a
+pixel-perfect screenshot requirement or a substitute for content/gate tests.
+See `evidence/milestone-5-middle-presentation.md` for actual results/manual limits.

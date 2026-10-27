@@ -60,7 +60,7 @@ test('writing/checklist/clipboard/reference modules stay isolated from live engi
     const source = readFileSync(new URL(`../../assets/js/${file}.js`, import.meta.url), 'utf8');
     assert.doesNotMatch(source, /localStorage|document\.querySelector|fetch\(|\.complete\(|innerHTML|new Function|eval\(/);
   }
-  for (const lesson of ['opening', 'middle', 'final']) {
+  for (const lesson of ['opening', 'final']) {
     const html = readFileSync(new URL(`../../${lesson}.html`, import.meta.url), 'utf8');
     assert.doesNotMatch(html, /writing-activity|checklist\.js|reference-loader|components\.css/);
   }

@@ -1,17 +1,22 @@
 import { expect } from '@playwright/test';
 import { readFileSync } from 'node:fs';
+import { middleJourney } from './middle-journey.mjs';
 export const lessons = ['opening', 'middle', 'final'];
 export const maps = Object.fromEntries(lessons.map(id => [id, JSON.parse(readFileSync(new URL(`../fixtures/legacy-maps/${id}.json`, import.meta.url)))]));
 export const banks = JSON.parse(readFileSync(new URL('../fixtures/content/banks.json', import.meta.url)));
 export const draft = 'Synthetic practice — “cost & access.”\nConnect Maya’s idea; café ✓';
 
 export async function ready(page) {
-  await expect(page.locator('#rail-links [data-go="0"]')).toBeEnabled();
+  if (await page.locator('body.dsl-middle').count()) {
+    await expect(page.locator('#lesson-status')).toBeHidden();
+    await expect(page.locator('#rail-links [data-go="welcome"]')).toBeEnabled();
+  } else await expect(page.locator('#rail-links [data-go="0"]')).toBeEnabled();
   await expect(page.locator('#view-0')).toBeVisible();
 }
 export async function navigate(page, index) {
-  if (await page.locator('#section-select').isVisible()) await page.locator('#section-select').selectOption(String(index));
-  else await page.locator(`[data-go="${index}"]`).click();
+  const value = await page.locator(`#view-${index}`).getAttribute('data-section-id') || String(index);
+  if (await page.locator('#section-select').isVisible()) await page.locator('#section-select').selectOption(value);
+  else await page.locator(`[data-go="${value}"]`).click();
   await expect(page.locator(`#view-${index}`)).toBeVisible();
 }
 export async function rawProgress(page, id) {
@@ -21,6 +26,7 @@ export async function rawProgress(page, id) {
 // All earned state is produced by actual controls. No lesson.complete, injected state,
 // hidden-control clicks, or script patching. Checkpoint callbacks only read storage.
 export async function runLesson(page, id, checkpoint = async () => {}) {
+  if (id === 'middle' && await page.locator('body.dsl-middle').count()) return middleJourney(page, checkpoint);
   const actions = [], questions = [];
   const click = async selector => { actions.push(`click ${selector}`); await page.locator(selector).click(); };
   const fill = async (selector, value) => { actions.push(`fill ${selector} ${JSON.stringify(value)}`); await page.locator(selector).fill(value); };
