@@ -1,0 +1,1 @@
+Use approximately five minutes to locate evidence. Search with task terms, the season's research outline, and sources tied to the deliverable. Prepare verbal citations: publisher, publication date, and author or title when available.

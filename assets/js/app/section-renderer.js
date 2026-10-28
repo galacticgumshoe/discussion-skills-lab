@@ -10,13 +10,14 @@ import { mountQuestionSequence } from '../components/question-sequence.js';
 import { mountWritingActivity } from '../components/writing-activity.js';
 import { mountChecklist } from '../components/checklist.js';
 import { mountNoteClassification } from '../activities/note-classification.js';
+import { mountTaskAnalysis } from '../activities/task-analysis.js';
 
 const copy = value => JSON.parse(JSON.stringify(value));
 const activityEntry = mount => Object.freeze({ mount,
   read: (activity, state) => {
     const own = state.activities[activity.id];
     if (!own) throw new Error('Activity has no statically imported progress binding');
-    const arrays = { flashcards: ['exploredIds', 'backIds'], expandables: ['exploredIds', 'openIds'], checklist: ['checkedIds'], 'note-classification': ['earnedNoteIds'], 'multiple-choice': ['earnedQuestionIds'], 'question-sequence': ['earnedQuestionIds'] }[activity.type];
+    const arrays = { flashcards: ['exploredIds', 'backIds'], expandables: ['exploredIds', 'openIds'], checklist: ['checkedIds'], 'note-classification': ['earnedNoteIds'], 'task-analysis': ['exploredIds'], 'multiple-choice': ['earnedQuestionIds'], 'question-sequence': ['earnedQuestionIds'] }[activity.type];
     if (arrays.some(key => !Array.isArray(own[key])) || (activity.type.includes('choice') || activity.type === 'question-sequence') && (!own.selections || typeof own.selections !== 'object')) throw new Error('Activity progress binding has the wrong state type');
     return copy(own);
   },
@@ -40,7 +41,7 @@ const writingEntry = Object.freeze({ mount: mountWritingActivity,
 export const standardActivityRegistry = Object.freeze({
   flashcards: activityEntry(mountFlashcards), expandables: activityEntry(mountExpandables),
   'multiple-choice': activityEntry(mountMultipleChoice), 'question-sequence': activityEntry(mountQuestionSequence),
-  writing: writingEntry, checklist: activityEntry(mountChecklist), 'note-classification': activityEntry(mountNoteClassification)
+  writing: writingEntry, checklist: activityEntry(mountChecklist), 'note-classification': activityEntry(mountNoteClassification), 'task-analysis': activityEntry(mountTaskAnalysis)
 });
 export function validateRegistry(registry) {
   if (!registry || Object.keys(registry).some(type => !activityTypes.includes(type)) || Object.values(registry).some(entry =>
@@ -110,6 +111,10 @@ export function renderSections(root, { manifest, manifestUrl, allowedRootUrl, re
           print.id = 'ref-print'; print.className = 'btn secondary final-print-button'; printWrap.append(print);
           header.append(printWrap, section.heading); reference.append(header, status, retry, content);
           content.id = 'ref-content'; content.className = 'final-reference-content'; status.id = 'reference-status'; retry.id = 'reference-retry';
+        } else if (manifest.id === 'opening') {
+          reference.id = 'quick-reference'; reference.className = 'card opening-reference-sheet';
+          print.className = 'secondary'; content.id = 'reference-content';
+          reference.append(print, section.heading, status, retry, content);
         } else reference.append(print, status, retry, content);
         parent.append(reference);
         references.push(mountReference(reference, { source: block.source, declaringUrl: manifestUrl, allowedRootUrl }));
@@ -127,8 +132,17 @@ export function renderSections(root, { manifest, manifestUrl, allowedRootUrl, re
       } else if (block.type === 'markdown') {
         loadable(parent, section, async content => {
           if (block.textStyle) content.classList.add(`dsl-prose-${block.textStyle}`);
+          if (block.textStyle === 'symbol') content.setAttribute('aria-hidden', 'true');
           const url = resolveContentUrl(block.source, manifestUrl, allowedRootUrl), source = await loadMarkdown(url, { signal: abort.signal });
-          if (!destroyed) content.replaceChildren(renderMarkdown(source, { baseUrl: url }));
+          if (!destroyed) {
+            const fragment = renderMarkdown(source, { baseUrl: url });
+            if (block.headingId) {
+              const headings = fragment.querySelectorAll('h3');
+              if (headings.length !== 1) throw new Error('A preserved heading ID requires exactly one subordinate heading');
+              headings[0].id = block.headingId;
+            }
+            content.replaceChildren(fragment);
+          }
         });
       } else {
         loadable(parent, section, async (content, prepared) => {

@@ -1,5 +1,35 @@
 # Canonical content inventory — milestone 1
 
+## Milestone 7 — Opening content-driven real entry
+
+Owner confirms milestone-6 acceptance in Safari and Chrome (navigation, style,
+accessibility and printing). Opening now migrates **only the real `opening.html`**;
+no alternate preview page and no Middle/Final production edits. The historical
+milestone-2 classic-extraction descriptions below are superseded for current code.
+
+| Immutable source | Current destination / reconciliation |
+| --- | --- |
+| `opening.html` all eight sections, exact labels/requirements/headings/eyebrows | `content/opening/lesson.json`; 62 section Markdown fragments; 66 total prose/reference source mappings in `evidence/milestone-7-source-map.json` |
+| `classification` 5 statements/string answers/why | `activities/classification.json`, shared Opening any-answer Next/wrap profile, 10 exact alternative feedback messages |
+| 6 connected timeline titles/bodies and checkpoint 3 options/2 messages | `activities/timeline.json`, `sequence-checkpoint.json`; shared controlled timeline/question controllers, Opening-scoped composition/stage IDs |
+| Entire task including 6 annotation spans; 5 alternative explanations | `activities/task-analysis.json`, exact ordered text segments; IDs who/what/how/where/terms with fixed frozen exploration bindings; TERMS highlights WHO+WHAT |
+| WHAT/HOW, clarification and research decisions | `activities/{what-how,clarification,research}.json`, 8 ordered choices/all feedback; original mental-health scenario retained in section Markdown |
+| Builder fields/placeholders/labels/template/copy messages/model/self-check | `activities/consensus-writing.json`, `question-selfcheck.json`, surrounding Markdown; required inputs, editable output, optional model, 35-character threshold |
+| 5 quiz prompts/15 options/keys/explanations/summary/retry wording | `activities/knowledge-check.json`, all-at-once Opening profile and bounded summary metadata |
+| Full reference, badge, six-step sequence/analysis/contribution/direction groups | `reference/reference.json` + `group-{1..4}.md`; explicit Opening reference layout, bounded list-cell grids |
+
+79 extracted files: 10 activity JSON, 62 section Markdown, 4 reference Markdown,
+reference JSON, manifest and mechanical config. Pure gates and presentation-only
+bindings live in `lessons/opening/{completion,runtime}.js`. Frozen Opening adapter
+is unchanged. New code/schema is MIT; original content © Rhys Jones / CC BY 4.0;
+all original seals/captures/notices retained. Original classic core remains until
+milestone 8. No homepage/shell/global-CSS consolidation or deployment changes.
+
+All-section inventory, approved numbered title profile, no-flashcard constraint,
+comparisons and real manual gaps: `evidence/milestone-7-presentation.md`. Minor
+intrinsic wrapping/wrapper spacing/native focus differences are permitted; exact
+wording/annotations/options/feedback/template/gates are independently asserted.
+
 ## Milestone 6 — Final content-driven public entry
 
 Owner clarification (2026-10-27): match Middle's actual separate title profiles,

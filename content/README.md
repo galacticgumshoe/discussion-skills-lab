@@ -54,7 +54,7 @@ existing section IDs and text labels. Neither is an activity or gate. These use
 the same closed boundaries, not HTML/classes, expressions or executable includes.
 
 Markdown blocks may use the closed `textStyle` values `lead`, `note`,
-`instruction`, or `label` to retain the original paragraph hierarchy without
+`instruction`, `label`, or `symbol` to retain the original paragraph hierarchy without
 embedding styling in prose. Omit it for ordinary text. These are presentation
 roles, not arbitrary CSS classes; runtime and development validation reject
 unknown values. Group/loading wrappers must not add a paragraph gap per nesting
@@ -91,3 +91,33 @@ Card faces are prose inside native buttons: do not add links or interactive cont
 to them. Other prose may use the safe links described above. Current-face/open
 presentation is separate from permanent explored credit; do not infer indexes from
 file order or markup. The frozen adapter owns all legacy progress mappings.
+
+## Opening (milestone 7)
+
+The real `opening.html` loads `opening/lesson.json`, `sections/`, `activities/`
+and `reference/` using the common app. There is no alternate preview HTML or build
+step. All ten activities retain their frozen IDs, direct v1 fields and source
+wording. **Opening has no flashcards.** Static comparison/definition cards remain
+prose, not exploration requirements.
+
+`task-analysis` contains ordered `segments: [{text, categoryId?}]` and five ordered
+categories (`who`, `what`, `how`, `where`, `terms`), each with a fixed exploration
+binding, label/answerLabel/explanation and explicit highlight IDs. Concatenation
+is the exact task. TERMS highlights WHO + WHAT spans, never a string replacement.
+Initial rendering/reload is unselected and silent. `schemas/task-analysis.schema.json`
+and the runtime validator reject arbitrary markup, extra fields and wrong mappings.
+
+Opening alone uses `tone: "soft"` for pale original panels and `textStyle: "symbol"`
+for decorative roadmap/destination symbols (hidden from assistive technology).
+Markdown `headingId` preserves a source subordinate heading ID; its fragment must
+contain exactly one h3. It is not arbitrary HTML or a selector supplied by content.
+The `opening-knowledge-check` profile optionally declares closed `summary` labels:
+title, scorePrefix/scoreSeparator/scoreSuffix, completeMessage, remainingTemplate,
+singular/plural. It shows all five questions together. `opening-reference` has four
+bounded Markdown groups, a text badge, and scoped six-step/definition/contribution/
+terminology grids. No new generic template language or arbitrary CSS/HTML fields.
+
+Opening-scoped styles preserve original panels/pills/timeline/tab colors/feedback,
+with the approved larger numbered headings. Keep 35-character/self-check and
+current-answer gates; do not substitute Middle/Final gates or themes. Models and
+timeline open state stay session-only; exploration and earned credit persist.

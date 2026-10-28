@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "classification",
+  "type": "question-sequence",
+  "profile": "opening-classification",
+  "data": {
+    "questions": [
+      {
+        "id": "clarify-accomplishment",
+        "prompt": "“Could we agree on what the task is asking us to accomplish?”",
+        "correctOptionId": "procedural",
+        "options": [
+          {
+            "id": "procedural",
+            "text": "Procedural",
+            "feedback": "Correct. This clarifies the task so the group shares a starting point."
+          },
+          {
+            "id": "substantive",
+            "text": "Substantive",
+            "feedback": "Not quite. This is procedural. This clarifies the task so the group shares a starting point."
+          }
+        ]
+      },
+      {
+        "id": "counseling-attendance",
+        "prompt": "“A recent study found that students receiving counseling had improved attendance.”",
+        "correctOptionId": "substantive",
+        "options": [
+          {
+            "id": "procedural",
+            "text": "Procedural",
+            "feedback": "Not quite. This is substantive. This introduces evidence relevant to the issue."
+          },
+          {
+            "id": "substantive",
+            "text": "Substantive",
+            "feedback": "Correct. This introduces evidence relevant to the issue."
+          }
+        ]
+      },
+      {
+        "id": "remaining-time",
+        "prompt": "“We have about 15 minutes remaining, so we should begin narrowing our recommendations.”",
+        "correctOptionId": "procedural",
+        "options": [
+          {
+            "id": "procedural",
+            "text": "Procedural",
+            "feedback": "Correct. This manages time and focuses the group."
+          },
+          {
+            "id": "substantive",
+            "text": "Substantive",
+            "feedback": "Not quite. This is procedural. This manages time and focuses the group."
+          }
+        ]
+      },
+      {
+        "id": "combine-proposals",
+        "prompt": "“I think we can combine those two proposals into one stronger recommendation.”",
+        "correctOptionId": "substantive",
+        "options": [
+          {
+            "id": "procedural",
+            "text": "Procedural",
+            "feedback": "Not quite. This is substantive. This synthesizes ideas into a potential solution."
+          },
+          {
+            "id": "substantive",
+            "text": "Substantive",
+            "feedback": "Correct. This synthesizes ideas into a potential solution."
+          }
+        ]
+      },
+      {
+        "id": "redirect-task",
+        "prompt": "“Our discussion seems to be moving away from the problem described in the task.”",
+        "correctOptionId": "procedural",
+        "options": [
+          {
+            "id": "procedural",
+            "text": "Procedural",
+            "feedback": "Correct. This redirects the group toward its assigned task."
+          },
+          {
+            "id": "substantive",
+            "text": "Substantive",
+            "feedback": "Not quite. This is procedural. This redirects the group toward its assigned task."
+          }
+        ]
+      }
+    ]
+  }
+}

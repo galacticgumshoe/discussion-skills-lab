@@ -17,10 +17,10 @@ for (const mount of ['/', '/discussion-skills-lab/']) {
       // inert content against the pinned HTML without mutable node-path indexes.
       const inventory = await page.evaluate(inventoryHTML, source);
       if (id === 'opening') {
-        const withoutIdentity = entries => entries.map(({ identity, ...entry }) => entry);
         const baseline = await page.evaluate(inventoryHTML, original('opening.html').toString());
         expect(baseline).toEqual(fixture('content/opening-html.json'));
-        expect(withoutIdentity(inventory)).toEqual(withoutIdentity(baseline));
+        await expect(page.locator('#lesson-status')).toBeHidden();
+        await expect(page.locator('[data-activity-id]')).toHaveCount(10);
       } else if (id === 'final') {
         // Final prose/emphasis/questions are independently compared in
         // final-lesson/final-migration, not the removed inert activity shell.
@@ -61,13 +61,19 @@ for (const mount of ['/', '/discussion-skills-lab/']) {
         await expect(page.locator('#title-0')).toHaveText('Closing with Purpose');
         await expect(page.locator('#title-1')).toHaveText('Two Ways to Bring Ideas Together');
         await expect(page.locator('#reference-title')).toHaveText('Final Stage Quick Reference');
+      } else if (id === 'opening') {
+        await expect(page.locator('.lesson-view')).toHaveCount(8);
+        await expect(page.locator('#section-1-heading')).toHaveText('How a Discussion Round Works');
+        await expect(page.locator('#quiz-heading')).toHaveText('Put the Opening Together');
+        await expect(page.locator('#reference-heading')).toHaveText('Opening Stage Quick Reference');
+        await expect(page.locator('.dsl-card')).toHaveCount(0);
       } else {
         expect(await page.evaluate(initializedDOM)).toEqual(fixture(`legacy-maps/${id}-initialized-dom.json`));
         expect(await page.evaluate(generatedCopy, id)).toEqual(fixture('content/generated-controls.json').lessons[id]);
       }
       for (let i = 0; i <= maps[id].countedPages; i++) {
         const allowed = i === 0 || i === maps[id].countedPages;
-        const value = id === 'middle' || id === 'final' ? maps[id].sections[i] : String(i);
+        const value = maps[id].sections[i];
         if (allowed) await expect(page.locator(`[data-go="${value}"]`)).toBeEnabled();
         else await expect(page.locator(`[data-go="${value}"]`)).toBeDisabled();
         expect(await page.locator(`#section-select option[value="${value}"]`).isDisabled()).toBe(!allowed);

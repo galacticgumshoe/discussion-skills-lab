@@ -2,8 +2,9 @@
 // open validator. Keep in parity with schemas/{lesson,activities}.schema.json.
 import { resolveContentUrl } from './content-loader.js';
 import { formatWriting } from '../utilities/writing-formatters.js';
+import { validateTaskAnalysisData } from './task-analysis-validation.js';
 
-export const activityTypes = ['flashcards', 'expandables', 'multiple-choice', 'question-sequence', 'writing', 'checklist', 'note-classification'];
+export const activityTypes = ['flashcards', 'expandables', 'multiple-choice', 'question-sequence', 'writing', 'checklist', 'note-classification', 'task-analysis'];
 export const sequenceProfiles = ['opening-classification', 'opening-knowledge-check', 'middle-scenarios', 'middle-quiz', 'middle-application', 'final-questions'];
 export const maxGroupDepth = 3;
 export function activityBodySources(activity) {
@@ -72,7 +73,7 @@ export function validateLessonManifest(data, context = {}) {
         if (!b.object(block, ['type', 'layout', 'tone', 'blocks'], ['revealId'], p)) return;
         if (block.revealId !== undefined) b.check(identity(block.revealId), `${p}/revealId`);
         b.check(['stack', 'two-column', 'flow', 'roundtable'].includes(block.layout), `${p}/layout`);
-        b.check(['plain', 'callout', 'caution', 'example', 'activity'].includes(block.tone), `${p}/tone`);
+        b.check(['plain', 'callout', 'caution', 'example', 'activity', 'soft'].includes(block.tone), `${p}/tone`);
         b.check(depth < maxGroupDepth, p, 'group depth exceeds 3');
         if (depth < maxGroupDepth) blocks(block.blocks, `${p}/blocks`, depth + 1, sectionActivities);
       } else if (block.type === 'activity') {
@@ -94,8 +95,9 @@ export function validateLessonManifest(data, context = {}) {
           }
         });
       } else if (['markdown', 'reference'].includes(block.type)) {
-        if (b.object(block, ['type', 'source'], block.type === 'reference' ? ['printLabel'] : ['textStyle'], p)) b.source(block.source, `${p}/source`, block.type === 'markdown' ? '.md' : '.json', context);
-        if (block.textStyle !== undefined) b.check(['lead', 'note', 'instruction', 'label'].includes(block.textStyle), `${p}/textStyle`);
+        if (b.object(block, ['type', 'source'], block.type === 'reference' ? ['printLabel'] : ['textStyle', 'headingId'], p)) b.source(block.source, `${p}/source`, block.type === 'markdown' ? '.md' : '.json', context);
+        if (block.headingId !== undefined) b.check(block.type === 'markdown' && identity(block.headingId), `${p}/headingId`);
+        if (block.textStyle !== undefined) b.check(['lead', 'note', 'instruction', 'label', 'symbol'].includes(block.textStyle), `${p}/textStyle`);
         if (block.printLabel !== undefined) b.check(text(block.printLabel), `${p}/printLabel`);
       } else b.check(false, `${p}/type`, 'unknown block type');
     });
@@ -163,6 +165,8 @@ export function validateActivity(data, context = {}) {
       });
       if (Array.isArray(d.items)) b.ids(d.items, `${p}/items`);
     }
+  } else if (data.type === 'task-analysis') {
+    try { validateTaskAnalysisData(d); } catch (error) { b.check(false, p, error.message); }
   } else if (data.type === 'note-classification') {
     if (b.object(d, ['categories', 'notes', 'chooseLabel', 'correctPrefix', 'wrongPrefix'], [], p)) {
       ['chooseLabel', 'correctPrefix', 'wrongPrefix'].forEach(key => b.check(text(d[key]), `${p}/${key}`));
@@ -180,7 +184,12 @@ export function validateActivity(data, context = {}) {
     }
   } else if (data.type === 'multiple-choice') question(d, p);
   else if (data.type === 'question-sequence') {
-    if (b.object(d, ['questions'], ['retryLabel', 'compareLabel', 'compareMessage', 'heading', 'counterScoreLabel'], p)) {
+    if (b.object(d, ['questions'], ['retryLabel', 'compareLabel', 'compareMessage', 'heading', 'counterScoreLabel', 'summary'], p)) {
+      if (d.summary !== undefined) {
+        b.check(data.profile === 'opening-knowledge-check', `${p}/summary`);
+        const keys = ['title', 'scorePrefix', 'scoreSeparator', 'scoreSuffix', 'completeMessage', 'remainingTemplate', 'singular', 'plural'];
+        if (b.object(d.summary, keys, [], `${p}/summary`)) keys.forEach(key => b.check(text(d.summary[key]), `${p}/summary/${key}`));
+      }
       ['heading', 'counterScoreLabel'].forEach(key => { if (d[key] !== undefined) b.check(text(d[key]), `${p}/${key}`); });
       b.list(d.questions, `${p}/questions`, question); if (Array.isArray(d.questions)) b.ids(d.questions, `${p}/questions`);
       if (Object.hasOwn(d, 'retryLabel')) b.check(text(d.retryLabel), `${p}/retryLabel`);

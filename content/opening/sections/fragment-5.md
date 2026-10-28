@@ -1,0 +1,4 @@
+- Clarify the task
+ - Set an agenda
+ - Manage time and focus
+ - Organize the discussion

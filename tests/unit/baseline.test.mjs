@@ -7,15 +7,17 @@ import { original, revision, productionPaths, sha256, root } from '../helpers/ba
 import { extractBanks } from '../helpers/content-baseline.mjs';
 import { startServer } from '../helpers/static-server.mjs';
 import { openingExtraction } from '../helpers/opening-extraction.mjs';
+import { openingCutover } from '../helpers/opening-cutover.mjs';
 import { finalCutover } from '../helpers/final-cutover.mjs';
 import { middleCutover } from '../helpers/middle-cutover.mjs';
 
 const json = path => JSON.parse(readFileSync(`${root}tests/fixtures/${path}`));
 test('Opening extraction and lesson cutovers are bounded; other runtime/license bytes remain pinned', () => {
   const extracted = openingExtraction(original('opening.html').toString());
-  assert.equal(readFileSync(`${root}opening.html`, 'utf8'), extracted.html);
-  assert.equal(readFileSync(`${root}assets/css/opening.css`, 'utf8'), extracted.css);
-  assert.equal(readFileSync(`${root}assets/js/opening.js`, 'utf8'), extracted.js);
+  assert.equal(readFileSync(`${root}opening.html`, 'utf8'), openingCutover(original('opening.html').toString()));
+  assert.ok(readFileSync(`${root}assets/css/opening.css`, 'utf8').startsWith(extracted.css.trimEnd()));
+  assert.match(readFileSync(`${root}assets/js/opening.js`, 'utf8'), /mountLesson/);
+  assert.doesNotMatch(readFileSync(`${root}assets/js/opening.js`, 'utf8'), /DSL|localStorage|const (classification|quiz|practice)/);
   // README developer-testing guidance was separately authorized after extraction.
   // Keep canonical README/replay evidence pinned, but allow current documentation.
   assert.equal(readFileSync(`${root}final.html`, 'utf8'), finalCutover(original('final.html').toString()));
@@ -141,7 +143,7 @@ test('server mounts, MIME, isolated pinned replay, allowlist, traversal and life
         assert.equal(result.status, 200, mount + path);
         const current = !mount.startsWith('/__original/');
         const expected = current && path === 'opening.html'
-          ? Buffer.from(openingExtraction(original(path).toString()).html)
+          ? Buffer.from(openingCutover(original(path).toString()))
            : current && path === 'final.html' ? Buffer.from(finalCutover(original(path).toString()))
             : current && path === 'middle.html' ? Buffer.from(middleCutover(original(path).toString()))
               : current && ['README.md', 'assets/css/middle.css', 'assets/css/final.css', 'assets/js/middle.js', 'assets/js/final.js'].includes(path) ? readFileSync(`${root}${path}`) : original(path);
@@ -152,8 +154,8 @@ test('server mounts, MIME, isolated pinned replay, allowlist, traversal and life
     const extracted = openingExtraction(original('opening.html').toString());
     for (const mount of ['/', '/discussion-skills-lab/']) {
       for (const [path, payload, mime] of [
-        ['assets/css/opening.css', extracted.css, 'text/css'],
-        ['assets/js/opening.js', extracted.js, 'text/javascript']
+        ['assets/css/opening.css', readFileSync(`${root}assets/css/opening.css`, 'utf8'), 'text/css'],
+        ['assets/js/opening.js', readFileSync(`${root}assets/js/opening.js`, 'utf8'), 'text/javascript']
       ]) {
         const result = await request(mount + path);
         assert.equal(result.status, 200);

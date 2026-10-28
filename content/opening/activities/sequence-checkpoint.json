@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "sequence-checkpoint",
+  "type": "multiple-choice",
+  "profile": "standard",
+  "data": {
+    "id": "next-step",
+    "prompt": "After exploring all six stages, what should the group do before establishing direction?",
+    "correctOptionId": "clarify-task",
+    "options": [
+      {
+        "id": "propose-solutions",
+        "text": "Begin proposing solutions immediately",
+        "feedback": "Not quite. The group needs shared understanding before setting direction."
+      },
+      {
+        "id": "clarify-task",
+        "text": "Clarify the task and reach shared understanding",
+        "feedback": "Correct. Clarify the task before setting direction."
+      },
+      {
+        "id": "vote-leader",
+        "text": "Vote on a discussion leader",
+        "feedback": "Not quite. The group needs shared understanding before setting direction."
+      }
+    ]
+  }
+}

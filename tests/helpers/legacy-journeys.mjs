@@ -8,9 +8,9 @@ export const banks = JSON.parse(readFileSync(new URL('../fixtures/content/banks.
 export const draft = 'Synthetic practice — “cost & access.”\nConnect Maya’s idea; café ✓';
 
 export async function ready(page) {
-  if (await page.locator('body.dsl-middle,body.dsl-final').count()) {
+  if (await page.locator('body.dsl-middle,body.dsl-final,body.dsl-opening').count()) {
     await expect(page.locator('#lesson-status')).toBeHidden();
-    await expect(page.locator('#rail-links [data-go="welcome"]')).toBeEnabled();
+    await expect(page.locator('#rail-links [data-go="welcome"],#rail-links [data-go="contributions"]')).toBeEnabled();
   } else await expect(page.locator('#rail-links [data-go="0"]')).toBeEnabled();
   await expect(page.locator('#view-0')).toBeVisible();
 }

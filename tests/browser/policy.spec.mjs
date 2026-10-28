@@ -21,10 +21,10 @@ test('Opening classification needs current answers, not historical correctness; 
   await expect(page.locator('#next-section')).toBeEnabled();
   await page.locator('.classify-answer[data-answer="substantive"]').click();
   await expect(page.locator('#next-section')).toBeEnabled();
-  await expect(page.locator('.classify-answer.selected')).not.toHaveClass(/selected-(correct|incorrect)/);
+  await expect(page.locator('.classify-answer.dsl-selected-incorrect')).toHaveAttribute('aria-pressed', 'true');
 });
 
-test('Opening checkpoint missing selection, retry button, task keyboard and immediate draft save', async ({ page }) => {
+test('Opening checkpoint restored last selection, retry button, task keyboard and immediate draft save', async ({ page }) => {
   await load(page, 'opening', observed('opening', 'completed'));
   await navigate(page, 1);
   expect(await page.locator('.sequence-choices button').allTextContents()).toEqual([
@@ -37,9 +37,9 @@ test('Opening checkpoint missing selection, retry button, task keyboard and imme
       : 'Not quite. The group needs shared understanding before setting direction.');
   }
   expect(JSON.parse(await rawProgress(page, 'opening')).data.sequenceCorrect).toBe(true);
-  await expect(page.locator('.sequence-choices [aria-pressed="true"]')).toHaveCount(0);
+  await expect(page.locator('.sequence-choices [aria-pressed="true"]')).toHaveText('Vote on a discussion leader');
   await page.reload(); await ready(page); await navigate(page, 1);
-  await expect(page.locator('#sequence-feedback')).toBeHidden();
+  await expect(page.locator('#sequence-feedback')).toHaveText('Not quite. The group needs shared understanding before setting direction.');
   await navigate(page, 2);
   await page.locator('.analysis-tab[data-kind="who"]').focus();
   await page.locator('.analysis-tab[data-kind="who"]').press('End');

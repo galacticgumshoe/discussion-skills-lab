@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://discussion-skills-lab.invalid/schemas/task-analysis.schema.json",
+  "title": "Opening ordered task analysis data (MIT)",
+  "type": "object", "additionalProperties": false,
+  "required": ["segments", "categories", "initialMessage", "termsNote", "tablistLabel"],
+  "properties": {
+    "initialMessage": {"type":"string","pattern":"\\S"}, "termsNote": {"type":"string","pattern":"\\S"}, "tablistLabel": {"type":"string","pattern":"\\S"},
+    "segments": {"type":"array","minItems":1,"items":{"type":"object","additionalProperties":false,"required":["text"],"properties":{"text":{"type":"string","minLength":1},"categoryId":{"enum":["who","what","how","where"]}}}},
+    "categories": {"type":"array","minItems":5,"maxItems":5,"items":{"type":"object","additionalProperties":false,"required":["id","explorationId","label","answerLabel","explanation","highlights"],"properties":{
+      "id":{"enum":["who","what","how","where","terms"]},"explorationId":{"enum":["role","problem","deliverable","setting","search-terms"]},
+      "label":{"type":"string","pattern":"\\S"},"answerLabel":{"type":"string","pattern":"\\S"},"explanation":{"type":"string","pattern":"\\S"},
+      "highlights":{"type":"array","minItems":1,"maxItems":2,"uniqueItems":true,"items":{"enum":["who","what","how","where"]}}
+    }}}
+  }
+}

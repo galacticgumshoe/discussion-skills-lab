@@ -1,0 +1,181 @@
+{
+  "originalReportSha256": "b35785692d935b7f996f597beb28ddb668c0f052ac8da38e69e4accf5e0e2c7d",
+  "stats": {
+    "startTime": "2026-10-28T07:53:27.356Z",
+    "duration": 68732.82,
+    "expected": 8,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "captures": [
+    {
+      "test": "/ Opening essentials align with compact original row spacing at desktop/mobile/enlarged text",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-0-current-essentials-1440.png",
+      "sha256": "9cda4a52fc8d805c410067dac27f39e45be8931acfb07487c358424a0b109813"
+    },
+    {
+      "test": "/ Opening essentials align with compact original row spacing at desktop/mobile/enlarged text",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-1-current-essentials-390.png",
+      "sha256": "940c7bddc9dbf6e12d852bea49c4ac9acf56b34933ffcc60d590947b63c62fcb"
+    },
+    {
+      "test": "/ Opening essentials align with compact original row spacing at desktop/mobile/enlarged text",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-2-current-essentials-320-enlarged.png",
+      "sha256": "431b5c9c8add326b95e78437c49122e11b9e8cc8fd8b75840b3f4f6ebec530d9"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening essentials align with compact original row spacing at desktop/mobile/enlarged text",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-repository-3-current-essentials-1440.png",
+      "sha256": "9cda4a52fc8d805c410067dac27f39e45be8931acfb07487c358424a0b109813"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening essentials align with compact original row spacing at desktop/mobile/enlarged text",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-repository-4-current-essentials-390.png",
+      "sha256": "940c7bddc9dbf6e12d852bea49c4ac9acf56b34933ffcc60d590947b63c62fcb"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening essentials align with compact original row spacing at desktop/mobile/enlarged text",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-repository-5-current-essentials-320-enlarged.png",
+      "sha256": "53e8d73da348dfce8894e62b2baece208555724aedff985cdc8db9dba599c9f3"
+    },
+    {
+      "test": "/ Opening essentials align with compact original row spacing at desktop/mobile/enlarged text",
+      "project": "firefox",
+      "status": "passed",
+      "path": "firefox-root-6-current-essentials-1440.png",
+      "sha256": "4ff66aa9f5c59e59e02c24f66fa864d9a0a5281b2672b6bf9132aff3a3efad57"
+    },
+    {
+      "test": "/ Opening essentials align with compact original row spacing at desktop/mobile/enlarged text",
+      "project": "firefox",
+      "status": "passed",
+      "path": "firefox-root-7-current-essentials-390.png",
+      "sha256": "42f2a19ce7e2ef412b1831a8d3829b30c7c076f4c25edfc50084cd4946e27a93"
+    },
+    {
+      "test": "/ Opening essentials align with compact original row spacing at desktop/mobile/enlarged text",
+      "project": "firefox",
+      "status": "passed",
+      "path": "firefox-root-8-current-essentials-320-enlarged.png",
+      "sha256": "c5260b8d722d14affa9275374e7df8006e1dbcfab782e9053138eab64178f04e"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening essentials align with compact original row spacing at desktop/mobile/enlarged text",
+      "project": "firefox",
+      "status": "passed",
+      "path": "firefox-repository-9-current-essentials-1440.png",
+      "sha256": "4ff66aa9f5c59e59e02c24f66fa864d9a0a5281b2672b6bf9132aff3a3efad57"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening essentials align with compact original row spacing at desktop/mobile/enlarged text",
+      "project": "firefox",
+      "status": "passed",
+      "path": "firefox-repository-10-current-essentials-390.png",
+      "sha256": "42f2a19ce7e2ef412b1831a8d3829b30c7c076f4c25edfc50084cd4946e27a93"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening essentials align with compact original row spacing at desktop/mobile/enlarged text",
+      "project": "firefox",
+      "status": "passed",
+      "path": "firefox-repository-11-current-essentials-320-enlarged.png",
+      "sha256": "c5260b8d722d14affa9275374e7df8006e1dbcfab782e9053138eab64178f04e"
+    },
+    {
+      "test": "/ Opening essentials align with compact original row spacing at desktop/mobile/enlarged text",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-root-12-current-essentials-1440.png",
+      "sha256": "48aee06dc5c9969e5c2f4fb887d9bbc8a914d0acc05264f85682aab569ef0188"
+    },
+    {
+      "test": "/ Opening essentials align with compact original row spacing at desktop/mobile/enlarged text",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-root-13-current-essentials-390.png",
+      "sha256": "28605c79e4103ba86e07a27aca4421574e740c643a25c03aa68a418761e13c9c"
+    },
+    {
+      "test": "/ Opening essentials align with compact original row spacing at desktop/mobile/enlarged text",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-root-14-current-essentials-320-enlarged.png",
+      "sha256": "a10326b3daf058c8dca9d260795bf6b12e8f181237b22cf80b5c6a7f28b95799"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening essentials align with compact original row spacing at desktop/mobile/enlarged text",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-15-current-essentials-1440.png",
+      "sha256": "48aee06dc5c9969e5c2f4fb887d9bbc8a914d0acc05264f85682aab569ef0188"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening essentials align with compact original row spacing at desktop/mobile/enlarged text",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-16-current-essentials-390.png",
+      "sha256": "28605c79e4103ba86e07a27aca4421574e740c643a25c03aa68a418761e13c9c"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening essentials align with compact original row spacing at desktop/mobile/enlarged text",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-17-current-essentials-320-enlarged.png",
+      "sha256": "a10326b3daf058c8dca9d260795bf6b12e8f181237b22cf80b5c6a7f28b95799"
+    },
+    {
+      "test": "/ Opening essentials align with compact original row spacing at desktop/mobile/enlarged text",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-root-18-current-essentials-1440.png",
+      "sha256": "9cda4a52fc8d805c410067dac27f39e45be8931acfb07487c358424a0b109813"
+    },
+    {
+      "test": "/ Opening essentials align with compact original row spacing at desktop/mobile/enlarged text",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-root-19-current-essentials-390.png",
+      "sha256": "940c7bddc9dbf6e12d852bea49c4ac9acf56b34933ffcc60d590947b63c62fcb"
+    },
+    {
+      "test": "/ Opening essentials align with compact original row spacing at desktop/mobile/enlarged text",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-root-20-current-essentials-320-enlarged.png",
+      "sha256": "431b5c9c8add326b95e78437c49122e11b9e8cc8fd8b75840b3f4f6ebec530d9"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening essentials align with compact original row spacing at desktop/mobile/enlarged text",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-repository-21-current-essentials-1440.png",
+      "sha256": "9cda4a52fc8d805c410067dac27f39e45be8931acfb07487c358424a0b109813"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening essentials align with compact original row spacing at desktop/mobile/enlarged text",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-repository-22-current-essentials-390.png",
+      "sha256": "940c7bddc9dbf6e12d852bea49c4ac9acf56b34933ffcc60d590947b63c62fcb"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening essentials align with compact original row spacing at desktop/mobile/enlarged text",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-repository-23-current-essentials-320-enlarged.png",
+      "sha256": "53e8d73da348dfce8894e62b2baece208555724aedff985cdc8db9dba599c9f3"
+    }
+  ]
+}

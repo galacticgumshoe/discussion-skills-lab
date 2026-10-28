@@ -14,6 +14,7 @@ const lessonSchema = JSON.parse(await readFile(new URL('../schemas/lesson.schema
 const activitySchema = JSON.parse(await readFile(new URL('../schemas/activities.schema.json', import.meta.url)));
 const ajv = new Ajv({ allErrors: true, strict: true });
 ajv.addSchema(lessonSchema);
+ajv.addSchema(JSON.parse(await readFile(new URL('../schemas/task-analysis.schema.json', import.meta.url))));
 // The file has no implicit root kind: explicitly select the two definitions.
 const configSchema = ajv.compile({ $ref: `${lessonSchema.$id}#/$defs/config` });
 const manifestSchema = ajv.compile({ $ref: `${lessonSchema.$id}#/$defs/manifest` });

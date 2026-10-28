@@ -2,6 +2,55 @@
 
 Refactor documentation lives in `.opencode/docs/`; repository paths below are root-relative.
 
+## Milestone 7 current checkpoint
+
+**Accepted/complete, 2026-10-28:** owner confirms browser verification fully passes
+after the essentials-panel correction and requests committing milestone 7 locally.
+This supersedes the pending-review statements below without rewriting historical
+results. No named-browser/device/AT/zoom/print details inferred; earlier manual and
+external replay-loading limits remain recorded. No push or next-milestone work.
+
+2026-10-28 owner browser review reports most checks pass, with one Clarifications
+essentials-panel spacing/alignment defect. Scoped correction removes prose sibling
+margins from its grid cells/paragraphs and restores the original 12px gap; no other
+panel/stage/content/policy change. Eight focused real-page tests pass across all
+four projects/both mounts/six widths plus enlarged text. Two attempted paired-replay
+checks encountered missing external Tailwind styling in the original replay; those
+failures remain documented separately from the corrected-panel pass. Evidence and
+final captures: latest section of `evidence/milestone-7-presentation.md` and
+`evidence/milestone-7-presentation/essentials-spacing-panel-confirmed/`. Owner recheck
+of this correction remains pending; no broader manual acceptance is inferred.
+
+Owner has now accepted milestone 6 in **Safari and Chrome**, explicitly covering
+navigation, style, accessibility and printing. Versions/devices/AT/zoom details
+unspecified; do not invent them. This supersedes the pending-review status below.
+
+Opening's real entry now uses extracted content/shared interactions and its frozen
+v1 adapter, not classic DSL or a separate preview. KI-01 is repaired: classification
+latest choices are green/red and sequence latest selection persists separately
+from permanent sequenceCorrect credit. Task tabs now have complete ARIA/roving
+keyboard relationships; initial/reloaded rendering never grants exploration.
+KI-02 remains deliberate, including task-analysis current-choice dependency.
+Safe storage/unknown-data handling uses the already tested shared writer/codec.
+
+Opening preflight found/corrected a research-prompt extraction selector error and
+320px/enlarged-text footer overflow; no content assertion was relaxed. Exact task,
+all original passages/options/feedback/models and policies remain independent of
+paint comparisons. Original extraction-only browser expectations are superseded
+by actual module/silent-restore/content/one-writer assertions, without rewriting
+milestone-2 evidence. Source engine's initialization-save behavior remains pinned
+on replay; the migrated engine intentionally performs no hydration writes.
+
+New Opening owner acceptance/manual browser/print/AT/actual-zoom review is pending.
+Only impact-scoped Opening checks run; no Middle/Final or whole-site test suite.
+Results and failures remain explicit in `evidence/milestone-7-presentation.md`.
+Final results: 156/156 Opening checks, 32/32 heading/latency/retry follow-ups and
+16/16 affected presentation follow-ups, all four projects/both mounts. Artifact
+review caught generic timeline/tab style overrides; Opening-only flex/borders/
+bold-pill corrections and stronger original/current control-paint assertions pass.
+Final timeline/tab captures are in `evidence/milestone-7-presentation/timeline-tabs-confirmed/`;
+earlier crowded-cue captures remain historical, not approved final presentation.
+
 ## Milestone 6 current checkpoint
 
 Latest owner direction (2026-10-27): “I do not want that. I want these changes to

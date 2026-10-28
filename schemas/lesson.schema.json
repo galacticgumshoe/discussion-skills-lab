@@ -43,10 +43,10 @@
           "type": { "const": "navigation" },
           "actions": { "type": "array", "minItems": 1, "items": { "type": "object", "additionalProperties": false, "required": ["sectionId", "label"], "properties": { "sectionId": { "$ref": "#/$defs/id" }, "label": { "$ref": "#/$defs/text" } } } }
         } },
-        { "type": "object", "additionalProperties": false, "required": ["type", "source"], "properties": { "type": { "const": "markdown" }, "textStyle": { "enum": ["lead", "note", "instruction", "label"] }, "source": { "type": "string", "pattern": "^[A-Za-z0-9_.-]+(/[A-Za-z0-9_.-]+)*\\.md$" } } },
+        { "type": "object", "additionalProperties": false, "required": ["type", "source"], "properties": { "type": { "const": "markdown" }, "headingId": { "$ref": "#/$defs/id" }, "textStyle": { "enum": ["lead", "note", "instruction", "label", "symbol"] }, "source": { "type": "string", "pattern": "^[A-Za-z0-9_.-]+(/[A-Za-z0-9_.-]+)*\\.md$" } } },
         { "type": "object", "additionalProperties": false, "required": ["type", "source"], "properties": { "type": { "const": "reference" }, "source": { "$ref": "#/$defs/jsonSource" }, "printLabel": { "$ref": "#/$defs/text" } } },
         { "type": "object", "additionalProperties": false, "required": ["type", "activityId"], "properties": { "type": { "const": "activity" }, "activityId": { "$ref": "#/$defs/id" } } },
-        { "type": "object", "additionalProperties": false, "required": ["type", "layout", "tone", "blocks"], "properties": { "type": { "const": "group" }, "revealId": { "$ref": "#/$defs/id" }, "layout": { "enum": ["stack", "two-column", "flow", "roundtable"] }, "tone": { "enum": ["plain", "callout", "caution", "example", "activity"] }, "blocks": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/block" } } } }
+        { "type": "object", "additionalProperties": false, "required": ["type", "layout", "tone", "blocks"], "properties": { "type": { "const": "group" }, "revealId": { "$ref": "#/$defs/id" }, "layout": { "enum": ["stack", "two-column", "flow", "roundtable"] }, "tone": { "enum": ["plain", "callout", "caution", "example", "activity", "soft"] }, "blocks": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/block" } } } }
       ]
     }
   }

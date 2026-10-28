@@ -26,15 +26,17 @@ export function referenceSemanticErrors(data, { declaringUrl, allowedRootUrl } =
 
 export function validateReferenceDocument(data, context = {}) {
   const errors = [];
-  const fields = (value, keys, path) => {
+  const fields = (value, keys, path, optional = []) => {
     if (!object(value)) { errors.push(`${path}: expected object`); return false; }
     for (const key of keys) if (!Object.hasOwn(value, key)) errors.push(`${path}/${key}: required`);
-    for (const key of Object.keys(value)) if (!keys.includes(key)) errors.push(`${path}: unknown property`);
+    for (const key of Object.keys(value)) if (![...keys, ...optional].includes(key)) errors.push(`${path}: unknown property`);
     return true;
   };
-  if (fields(data, ['schemaVersion', 'id', 'title', 'layout', 'items'], '')) {
+  if (fields(data, ['schemaVersion', 'id', 'title', 'layout', 'items'], '', ['badge'])) {
     if (data.schemaVersion !== 1) errors.push('/schemaVersion: expected 1');
-    if (!['stacked-reference', 'middle-reference'].includes(data.layout)) errors.push('/layout: unsupported layout');
+    if (!['stacked-reference', 'middle-reference', 'opening-reference'].includes(data.layout)) errors.push('/layout: unsupported layout');
+    if (data.badge !== undefined && (data.layout !== 'opening-reference' || !nonempty(data.badge))) errors.push('/badge: Opening text required');
+    if (data.layout === 'opening-reference' && data.items?.length !== 4) errors.push('/items: Opening requires four bounded groups');
     for (const key of ['id', 'title']) if (!nonempty(data[key])) errors.push(`/${key}: nonempty text required`);
     if (!Array.isArray(data.items) || data.items.length < 1) errors.push('/items: nonempty array required');
     else data.items.forEach((item, i) => {

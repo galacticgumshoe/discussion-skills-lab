@@ -1,0 +1,460 @@
+{
+  "config": {
+    "argv": [
+      "/Users/rhys/.local/share/fnm/node-versions/v22.23.4/installation/bin/node",
+      "/Users/rhys/git/discussion-skills-lab/node_modules/.bin/playwright",
+      "test",
+      "tests/browser/opening-essentials-spacing.spec.mjs",
+      "--workers=1",
+      "--max-failures=1",
+      "--output=test-results/m7-essentials-confirmed"
+    ],
+    "configFile": "/Users/rhys/git/discussion-skills-lab/playwright.config.mjs",
+    "rootDir": "/Users/rhys/git/discussion-skills-lab/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 1,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/rhys/git/discussion-skills-lab/test-results/m7-essentials-confirmed",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/rhys/git/discussion-skills-lab/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/rhys/git/discussion-skills-lab/test-results/m7-essentials-confirmed",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/Users/rhys/git/discussion-skills-lab/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/rhys/git/discussion-skills-lab/test-results/m7-essentials-confirmed",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/Users/rhys/git/discussion-skills-lab/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/rhys/git/discussion-skills-lab/test-results/m7-essentials-confirmed",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "mobile-chromium",
+        "name": "mobile-chromium",
+        "testDir": "/Users/rhys/git/discussion-skills-lab/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.61.1",
+    "workers": 1,
+    "webServer": {
+      "command": "node tests/helpers/static-server.mjs",
+      "env": {
+        "PORT": "64787"
+      },
+      "url": "http://127.0.0.1:64787",
+      "reuseExistingServer": false
+    }
+  },
+  "suites": [
+    {
+      "title": "opening-essentials-spacing.spec.mjs",
+      "file": "opening-essentials-spacing.spec.mjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "/ Opening essentials align with compact original row spacing at desktop/mobile/enlarged text",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2151,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T07:46:03.817Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "original-essentials-1440",
+                      "contentType": "image/png",
+                      "sha256": "34ebef2badcb84565235ef36c6076e628c2b2e5133d93fa446678a020635aec0"
+                    },
+                    {
+                      "name": "original-essentials-390",
+                      "contentType": "image/png",
+                      "sha256": "f9c540dc90f251b92cc94abcd21886013e9c58aa30277657d0cc1a9b5e3c4f2d"
+                    },
+                    {
+                      "name": "current-essentials-1440",
+                      "contentType": "image/png",
+                      "sha256": "9cda4a52fc8d805c410067dac27f39e45be8931acfb07487c358424a0b109813"
+                    },
+                    {
+                      "name": "current-essentials-390",
+                      "contentType": "image/png",
+                      "sha256": "940c7bddc9dbf6e12d852bea49c4ac9acf56b34933ffcc60d590947b63c62fcb"
+                    },
+                    {
+                      "name": "current-essentials-320-enlarged",
+                      "contentType": "image/png",
+                      "sha256": "53e8d73da348dfce8894e62b2baece208555724aedff985cdc8db9dba599c9f3"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0889fd5d2337650d1ba4-fb951ba6fa2d70f58764",
+          "file": "opening-essentials-spacing.spec.mjs",
+          "line": 13,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Opening essentials align with compact original row spacing at desktop/mobile/enlarged text",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1741,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T07:46:06.276Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "original-essentials-1440",
+                      "contentType": "image/png",
+                      "sha256": "34ebef2badcb84565235ef36c6076e628c2b2e5133d93fa446678a020635aec0"
+                    },
+                    {
+                      "name": "original-essentials-390",
+                      "contentType": "image/png",
+                      "sha256": "f9c540dc90f251b92cc94abcd21886013e9c58aa30277657d0cc1a9b5e3c4f2d"
+                    },
+                    {
+                      "name": "current-essentials-1440",
+                      "contentType": "image/png",
+                      "sha256": "9cda4a52fc8d805c410067dac27f39e45be8931acfb07487c358424a0b109813"
+                    },
+                    {
+                      "name": "current-essentials-390",
+                      "contentType": "image/png",
+                      "sha256": "940c7bddc9dbf6e12d852bea49c4ac9acf56b34933ffcc60d590947b63c62fcb"
+                    },
+                    {
+                      "name": "current-essentials-320-enlarged",
+                      "contentType": "image/png",
+                      "sha256": "53e8d73da348dfce8894e62b2baece208555724aedff985cdc8db9dba599c9f3"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0889fd5d2337650d1ba4-33f726d6e4e5d057f7ad",
+          "file": "opening-essentials-spacing.spec.mjs",
+          "line": 13,
+          "column": 3
+        },
+        {
+          "title": "/ Opening essentials align with compact original row spacing at desktop/mobile/enlarged text",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 75321,
+                  "error": {
+                    "message": "Error: 1440px checkmark 2 vertical alignment\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeCloseTo\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m, \u001b[22mprecision\u001b[2m)\u001b[22m\n\nExpected: \u001b[32m37\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n\nExpected precision:    3\nExpected difference: < \u001b[32m0.0005\u001b[39m\nReceived difference:   \u001b[31m37\u001b[39m",
+                    "stack": "Error: 1440px checkmark 2 vertical alignment\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeCloseTo\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m, \u001b[22mprecision\u001b[2m)\u001b[22m\n\nExpected: \u001b[32m37\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n\nExpected precision:    3\nExpected difference: < \u001b[32m0.0005\u001b[39m\nReceived difference:   \u001b[31m37\u001b[39m\n    at forEach (/Users/rhys/git/discussion-skills-lab/tests/browser/opening-essentials-spacing.spec.mjs:38:82)\n    at /Users/rhys/git/discussion-skills-lab/tests/browser/opening-essentials-spacing.spec.mjs:37:26",
+                    "location": {
+                      "file": "/Users/rhys/git/discussion-skills-lab/tests/browser/opening-essentials-spacing.spec.mjs",
+                      "column": 82,
+                      "line": 38
+                    },
+                    "snippet": "  36 |           expect(geometry.columns).toBe(width >= 640 ? 2 : 1);\n  37 |           geometry.items.forEach((item, i) => {\n> 38 |             expect(item.top, `${width}px checkmark ${i + 1} vertical alignment`).toBeCloseTo(originals.get(width).items[i].top, 3);\n     |                                                                                  ^\n  39 |             expect(item.left, `${width}px checkmark ${i + 1} column alignment`).toBeCloseTo(originals.get(width).items[i].left, 3);\n  40 |           });\n  41 |         }"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/rhys/git/discussion-skills-lab/tests/browser/opening-essentials-spacing.spec.mjs",
+                        "column": 82,
+                        "line": 38
+                      },
+                      "message": "Error: 1440px checkmark 2 vertical alignment\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeCloseTo\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m, \u001b[22mprecision\u001b[2m)\u001b[22m\n\nExpected: \u001b[32m37\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n\nExpected precision:    3\nExpected difference: < \u001b[32m0.0005\u001b[39m\nReceived difference:   \u001b[31m37\u001b[39m\n\n  36 |           expect(geometry.columns).toBe(width >= 640 ? 2 : 1);\n  37 |           geometry.items.forEach((item, i) => {\n> 38 |             expect(item.top, `${width}px checkmark ${i + 1} vertical alignment`).toBeCloseTo(originals.get(width).items[i].top, 3);\n     |                                                                                  ^\n  39 |             expect(item.left, `${width}px checkmark ${i + 1} column alignment`).toBeCloseTo(originals.get(width).items[i].left, 3);\n  40 |           });\n  41 |         }\n    at forEach (/Users/rhys/git/discussion-skills-lab/tests/browser/opening-essentials-spacing.spec.mjs:38:82)\n    at /Users/rhys/git/discussion-skills-lab/tests/browser/opening-essentials-spacing.spec.mjs:37:26"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T07:46:08.276Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "original-essentials-1440",
+                      "contentType": "image/png",
+                      "sha256": "47e5f879b88153047420ec6884f45544d73df9125bd46534fb106170a63689be"
+                    },
+                    {
+                      "name": "original-essentials-390",
+                      "contentType": "image/png",
+                      "sha256": "34dbc1fc8d6f1773f243583f16e7cbadb6dc00cef5f9cd9d18715c4b0578c845"
+                    },
+                    {
+                      "name": "current-essentials-1440",
+                      "contentType": "image/png",
+                      "sha256": "4ff66aa9f5c59e59e02c24f66fa864d9a0a5281b2672b6bf9132aff3a3efad57"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/m7-essentials-confirmed/opening-essentials-spacing-da2b1-esktop-mobile-enlarged-text-firefox/test-failed-1.png",
+                      "sha256": "384746b31083d2be4583b6058d6cb0b05ec8a47bf12a640376f0ee6395b09205"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/m7-essentials-confirmed/opening-essentials-spacing-da2b1-esktop-mobile-enlarged-text-firefox/error-context.md",
+                      "sha256": "195fc8fe812be74496aa25d3666429f4ed47bee472471712c0d4291dfd20fea3"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/rhys/git/discussion-skills-lab/test-results/m7-essentials-confirmed/opening-essentials-spacing-da2b1-esktop-mobile-enlarged-text-firefox/trace.zip",
+                      "sha256": "f2fe7648d03a2acd3a67d01256bf5d3193b7c2fb3413722ca65333efeab0d781"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/rhys/git/discussion-skills-lab/tests/browser/opening-essentials-spacing.spec.mjs",
+                    "column": 82,
+                    "line": 38
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "0889fd5d2337650d1ba4-dfc00999784c65797448",
+          "file": "opening-essentials-spacing.spec.mjs",
+          "line": 13,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Opening essentials align with compact original row spacing at desktop/mobile/enlarged text",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "0889fd5d2337650d1ba4-ada052fa35c42fe454d3",
+          "file": "opening-essentials-spacing.spec.mjs",
+          "line": 13,
+          "column": 3
+        },
+        {
+          "title": "/ Opening essentials align with compact original row spacing at desktop/mobile/enlarged text",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "0889fd5d2337650d1ba4-96470d1eacbc7f9e42b0",
+          "file": "opening-essentials-spacing.spec.mjs",
+          "line": 13,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Opening essentials align with compact original row spacing at desktop/mobile/enlarged text",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "0889fd5d2337650d1ba4-fe7f008769d200cd25a9",
+          "file": "opening-essentials-spacing.spec.mjs",
+          "line": 13,
+          "column": 3
+        },
+        {
+          "title": "/ Opening essentials align with compact original row spacing at desktop/mobile/enlarged text",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "0889fd5d2337650d1ba4-93d75e788fe0b6733da7",
+          "file": "opening-essentials-spacing.spec.mjs",
+          "line": 13,
+          "column": 3
+        },
+        {
+          "title": "/discussion-skills-lab/ Opening essentials align with compact original row spacing at desktop/mobile/enlarged text",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "0889fd5d2337650d1ba4-f5a95a1f89227005df47",
+          "file": "opening-essentials-spacing.spec.mjs",
+          "line": 13,
+          "column": 3
+        }
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "message": "\u001b[31mTesting stopped early after 1 maximum allowed failures.\u001b[39m"
+    }
+  ],
+  "stats": {
+    "startTime": "2026-10-28T07:46:03.188Z",
+    "duration": 82988.257,
+    "expected": 2,
+    "skipped": 5,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

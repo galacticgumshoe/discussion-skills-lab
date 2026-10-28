@@ -1,0 +1,41 @@
+{
+  "originalReportSha256": "66583895041389f41984080582525b1a28989e642e52966dd4af5f3687bae9eb",
+  "stats": {
+    "startTime": "2026-10-28T07:44:58.887Z",
+    "duration": 3003.822,
+    "expected": 0,
+    "skipped": 1,
+    "unexpected": 1,
+    "flaky": 0
+  },
+  "captures": [
+    {
+      "test": "/ Opening essentials align with compact original row spacing at desktop/mobile/enlarged text",
+      "project": "chromium",
+      "status": "failed",
+      "path": "chromium-root-0-original-essentials-1440.png",
+      "sha256": "34ebef2badcb84565235ef36c6076e628c2b2e5133d93fa446678a020635aec0"
+    },
+    {
+      "test": "/ Opening essentials align with compact original row spacing at desktop/mobile/enlarged text",
+      "project": "chromium",
+      "status": "failed",
+      "path": "chromium-root-1-original-essentials-390.png",
+      "sha256": "f9c540dc90f251b92cc94abcd21886013e9c58aa30277657d0cc1a9b5e3c4f2d"
+    },
+    {
+      "test": "/ Opening essentials align with compact original row spacing at desktop/mobile/enlarged text",
+      "project": "chromium",
+      "status": "failed",
+      "path": "chromium-root-2-current-essentials-1440.png",
+      "sha256": "6b0b8a19ca1b682c42fa1e8a5fee04f18ddc02ba97bf87ec706b967d8ec2fa61"
+    },
+    {
+      "test": "/ Opening essentials align with compact original row spacing at desktop/mobile/enlarged text",
+      "project": "chromium",
+      "status": "failed",
+      "path": "chromium-root-3-screenshot.png",
+      "sha256": "92971e81f7cb1a0c38278d283b20ac0a3302b0fdd0ad7d1b12a2f2ad9aba88af"
+    }
+  ]
+}

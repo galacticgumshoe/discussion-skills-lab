@@ -1,5 +1,41 @@
 # Legacy progress baseline
 
+## Milestone 7 Opening public-entry ownership
+
+The real `opening.html` uses the common app/store/navigation and static Opening
+config/policy/registry; classic `DSL` is not loaded. One writer, one shared reference
+loader/Print handler, no alternate HTML or new storage key. The existing frozen
+`lessons/opening/progress-adapter.js` remains unchanged. Exact key:
+**`dsl:opening-stage:v1`**, direct `data` fields, no `openingState` wrapper.
+
+- Classification persists original string/null array and numeric seen indexes;
+  Next is available after any choice and wraps; initial completion uses **current**
+  answers, not earned-ever question evidence.
+- Timeline persists unique legacy stage IDs; expansion is session-only and never
+  restored by fake clicks. Categories persist original who/what/how/where/terms
+  values through fixed normalized bindings. Rendering/hydration selects no tab and
+  grants no exploration. WHAT/HOW's **current** selection controls its initial gate.
+- Sequence `sequenceCorrect` is permanent. Its last option independently uses
+  additive v1 `data.dslUi.selections["sequence-checkpoint"]["next-step"]` with stable
+  option IDs. Old records with credit but no extension retain unknown last choice;
+  do not infer a selected correct option. Opaque extension versions stay untouched.
+- Decisions 3/5 complete immediately on correct answers; later alternatives never
+  revoke section credit. Fields retain problem-input/accomplishment-input/draft-input
+  and questionSelfcheck keys; output saves immediately, model is optional/session-only.
+- Quiz retains numeric zero, correct-ever earned indexes, original absent-earned
+  fallback, all-at-once grouping and retry (first unearned only, null selection,
+  other choices/credit retained). Restoring fallback evidence is silent; the next
+  meaningful activity change evaluates completion, never an initialization save.
+- Existing completion union/accessibility remains authoritative with sparse detail.
+  Unknown properties survive; invalid raw records are never overwritten; denied/
+  quota storage keeps in-memory activity usable and warns nonblockingly.
+
+`tests/unit/opening-migration.test.mjs` independently tests all seven gates,
+34/35/self-check boundaries, current-choice action order, permanent completion,
+exact content/schema/segment/formatter/extension contracts. Opening browser specs
+exercise both mounts and pinned replay without personal/student progress.
+Executed outcomes and manual limits: `evidence/milestone-7-presentation.md`.
+
 ## Milestone 6 Final public-entry ownership
 
 The existing Final adapter/frozen maps are unchanged. At the owner's explicit

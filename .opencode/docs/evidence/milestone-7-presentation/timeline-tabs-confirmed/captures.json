@@ -1,0 +1,573 @@
+{
+  "originalReportSha256": "ad182441937330b5f3847ff4858fcc445351a72fd409e71ecef8bf2d635cda6d",
+  "stats": {
+    "startTime": "2026-10-27T22:58:22.375Z",
+    "duration": 91037.465,
+    "expected": 16,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "captures": [
+    {
+      "test": "/ Opening every section/state original-current presentation at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-0-original-780-section-0-initial.png",
+      "sha256": "fa1490fcdbe7a1f5d64bc57c07caf6b2be913418fd84e3d1f7c44869449df5e7"
+    },
+    {
+      "test": "/ Opening every section/state original-current presentation at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-1-original-780-section-1-initial.png",
+      "sha256": "1b525252e2af66a68f58ad827e56225ec1090b81ded95f555992f2aa3b104622"
+    },
+    {
+      "test": "/ Opening every section/state original-current presentation at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-2-original-780-timeline-expanded.png",
+      "sha256": "4e3e6c8181a91b6fdd6a2b64acaab02fcd34fb869337d8217d119f1537e7565d"
+    },
+    {
+      "test": "/ Opening every section/state original-current presentation at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-3-original-780-section-2-initial.png",
+      "sha256": "e4a6e49de2386c57c08bcaa92faeffffb0a3adc62b1d16739ea6e91f4091af99"
+    },
+    {
+      "test": "/ Opening every section/state original-current presentation at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-4-original-780-analysis-who.png",
+      "sha256": "8ef93b4447c50bea2b23f7978bf44528120b28b5d52836817903e980d3438a29"
+    },
+    {
+      "test": "/ Opening every section/state original-current presentation at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-5-original-780-analysis-what.png",
+      "sha256": "8e6cf562b1e3210fb4eb6151007695b88eeabaeb0c77f7f1fa886357de6337f8"
+    },
+    {
+      "test": "/ Opening every section/state original-current presentation at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-6-original-780-analysis-how.png",
+      "sha256": "9eb6ded5e3651efffe7e94956a38353f9ba751a83782553b93a88b6a9d000dea"
+    },
+    {
+      "test": "/ Opening every section/state original-current presentation at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-7-original-780-analysis-where.png",
+      "sha256": "c82a03659ae3514b080f0d92faa0526956c317e16fe812a24dbd274cff26fa31"
+    },
+    {
+      "test": "/ Opening every section/state original-current presentation at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-8-original-780-analysis-terms.png",
+      "sha256": "f1f1ece8a02bea6cb0924058cbda2e2c3f6ec5293b22f5fdd8fd30d889c4a209"
+    },
+    {
+      "test": "/ Opening every section/state original-current presentation at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-9-original-780-decision-2-wrong-after-credit.png",
+      "sha256": "554ed0ff4260a4594967c036e4c6a4f30d783245d02dfb91475d983c3b4b1585"
+    },
+    {
+      "test": "/ Opening every section/state original-current presentation at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-10-original-780-section-3-initial.png",
+      "sha256": "ed08e73dac5d8570bfde26ff1c6a100b71088d6d60ccae0db002ee852bd78aa9"
+    },
+    {
+      "test": "/ Opening every section/state original-current presentation at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-11-original-780-decision-3-wrong-after-credit.png",
+      "sha256": "ebcdfd08f8de082faee0b9a734de1f3fd2829e414ecb89a1bfbbdea7d0bd280f"
+    },
+    {
+      "test": "/ Opening every section/state original-current presentation at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-12-original-780-section-4-initial.png",
+      "sha256": "aff671f27ac674d5dcbecb0fc33a4926ed34342f35a6d1fe39ffc63e0c6e8d1b"
+    },
+    {
+      "test": "/ Opening every section/state original-current presentation at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-13-original-780-builder-model.png",
+      "sha256": "800148daa516b9bfa69075cfb2c5cf6716c8d13dcf80e6c4aebadd47d37e3cec"
+    },
+    {
+      "test": "/ Opening every section/state original-current presentation at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-14-original-780-section-5-initial.png",
+      "sha256": "8a77ae6a685d8ecd501553865909e3b3a7c948cfd7dba6dd4dfbb83cd3197196"
+    },
+    {
+      "test": "/ Opening every section/state original-current presentation at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-15-original-780-decision-5-wrong-after-credit.png",
+      "sha256": "0c6ae1f6437bc095da8ca1dcd89f0d2ef861bcefbbe2ac2856716531ef8e1305"
+    },
+    {
+      "test": "/ Opening every section/state original-current presentation at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-16-original-780-section-6-initial.png",
+      "sha256": "33694004351a1591d3d641257514692c290e3e24c0f39b3112e45f90718d8815"
+    },
+    {
+      "test": "/ Opening every section/state original-current presentation at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-17-original-780-quiz-wrong-after-credit.png",
+      "sha256": "1bdfa96c978365debc2a278e85bd132008e404dff943663d4e140cb36d178894"
+    },
+    {
+      "test": "/ Opening every section/state original-current presentation at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-18-original-780-section-7-initial.png",
+      "sha256": "24b78cc6d46f9303ff75b9b53a4f8393bbeee2d63f9ca02c98c2a2243412988c"
+    },
+    {
+      "test": "/ Opening every section/state original-current presentation at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-19-current-780-section-0-initial.png",
+      "sha256": "4771b6658e13a91916ce912bf235a3edbd11f80717af3513ff29b1fa33d2ff90"
+    },
+    {
+      "test": "/ Opening every section/state original-current presentation at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-20-current-780-section-1-initial.png",
+      "sha256": "3ce88c3d508a1edaed0792051ae7673832720d32a2d57f9e44a1be2099fc1db3"
+    },
+    {
+      "test": "/ Opening every section/state original-current presentation at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-21-current-780-timeline-expanded.png",
+      "sha256": "5d1e07b604ac7be390c6f868f8c493313222a25f1a6b85fe07ba7c5494efb6dc"
+    },
+    {
+      "test": "/ Opening every section/state original-current presentation at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-22-current-780-section-2-initial.png",
+      "sha256": "ceb54ff0db074db88c604ffb625f4670c26c781bc51b54d295d2e96c13c870ff"
+    },
+    {
+      "test": "/ Opening every section/state original-current presentation at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-23-current-780-analysis-who.png",
+      "sha256": "df358f9a5c470b16fa290c6041f0a5daf824cdd11fbf011587501fe22e628174"
+    },
+    {
+      "test": "/ Opening every section/state original-current presentation at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-24-current-780-analysis-what.png",
+      "sha256": "6ed04fb7b6d9c93a52703a1833420812d1fc11bfb32cdd5cf0d8d21f71389cb0"
+    },
+    {
+      "test": "/ Opening every section/state original-current presentation at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-25-current-780-analysis-how.png",
+      "sha256": "3ed0345268c427040d35e17567b9e4d3027a50defcd3eb6f7ee09998e3033fee"
+    },
+    {
+      "test": "/ Opening every section/state original-current presentation at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-26-current-780-analysis-where.png",
+      "sha256": "92c6d18068be70211d16af0d42d9748383b7ef364fce4e5654208cfd6b1de51d"
+    },
+    {
+      "test": "/ Opening every section/state original-current presentation at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-27-current-780-analysis-terms.png",
+      "sha256": "7e1c08018c5564364f01231566333e6cd74d525e008fd74786fa6062a65c81fa"
+    },
+    {
+      "test": "/ Opening every section/state original-current presentation at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-28-current-780-decision-2-wrong-after-credit.png",
+      "sha256": "16a9d82da56f4359feacbdb485905b42e3b1e35b9f0d15a6fe8af2554068cc0f"
+    },
+    {
+      "test": "/ Opening every section/state original-current presentation at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-29-current-780-section-3-initial.png",
+      "sha256": "2aa06543b1f0f0ea4e913449a8a2c7fdffade85d35aa634c41dea82bb6d25779"
+    },
+    {
+      "test": "/ Opening every section/state original-current presentation at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-30-current-780-decision-3-wrong-after-credit.png",
+      "sha256": "afca01af45e2d83e5a420d28c523ee1bcf610dec53412492c214f3075abc7f8a"
+    },
+    {
+      "test": "/ Opening every section/state original-current presentation at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-31-current-780-section-4-initial.png",
+      "sha256": "40522de2addeb8371b21dc6e29c46cdb0b9010d56ee23036f669d0f8626c5471"
+    },
+    {
+      "test": "/ Opening every section/state original-current presentation at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-32-current-780-builder-model.png",
+      "sha256": "0feb710c565f9db5fa7f4f0bed962ea893050a815c7e14c45a35e938a1c19be8"
+    },
+    {
+      "test": "/ Opening every section/state original-current presentation at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-33-current-780-section-5-initial.png",
+      "sha256": "7b2b6ae41aeab06e374175987fed1734dc2c73dab57e228e4601acc7151fa84c"
+    },
+    {
+      "test": "/ Opening every section/state original-current presentation at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-34-current-780-decision-5-wrong-after-credit.png",
+      "sha256": "002bed4ea5b62633bd889f486389072f4e10a549e8c9c6da5558635049c375e9"
+    },
+    {
+      "test": "/ Opening every section/state original-current presentation at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-35-current-780-section-6-initial.png",
+      "sha256": "b9f9e9c843f268aba3c748d6567f0e8c55c71b524acb429bac65eb76e8277841"
+    },
+    {
+      "test": "/ Opening every section/state original-current presentation at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-36-current-780-quiz-wrong-after-credit.png",
+      "sha256": "0cde4a47b3d7692513d369cd8af672e0997f493aef7a15141e91d78cc696f257"
+    },
+    {
+      "test": "/ Opening every section/state original-current presentation at 780px",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-37-current-780-section-7-initial.png",
+      "sha256": "948f82a5e0a8171443e5df56b69392a98cfd6ebec48554942e195a8ec6e44b19"
+    },
+    {
+      "test": "/ Opening 320px enlarged text/reduced motion all titles, activities and print",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-repository-38-Opening-reference-PDF.pdf",
+      "sha256": "e7b23b27ee79d65868828574513f2ecddb06be661b7c2c79e3ed56c2267e414c"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening 320px enlarged text/reduced motion all titles, activities and print",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-repository-39-Opening-reference-PDF.pdf",
+      "sha256": "3a0835f8a9658164f2c4191a9062cd1e5df88ac4617196fc4ef66c52623c4282"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening every section/state original-current presentation at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-40-original-780-section-0-initial.png",
+      "sha256": "8c6ef2ee4f662d759f4b3751c2c8b8dd9bdb2d514e4c8792adc2135264b1299d"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening every section/state original-current presentation at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-41-original-780-section-1-initial.png",
+      "sha256": "45c6764063afc9b62b2d4a2dbdc5ab85ca85c5a1ae1b8561f8dd1e0b6aa79c4e"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening every section/state original-current presentation at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-42-original-780-timeline-expanded.png",
+      "sha256": "8fa4f8802e81fb6c8cf67f142a03025d4885a732dbca3404b0df7e78a61d5929"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening every section/state original-current presentation at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-43-original-780-section-2-initial.png",
+      "sha256": "2a6ff386f53d3bfab3090f34895c5c5b2e92248b68bbb05881e82c68afc8b4fe"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening every section/state original-current presentation at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-44-original-780-analysis-who.png",
+      "sha256": "e8916dde8b097d6c18f8f509170642d30d9afcced92e945336adbcb52700d1e5"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening every section/state original-current presentation at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-45-original-780-analysis-what.png",
+      "sha256": "a582a30f1cf05352a3d5c42c83f2c8807f4ea093f0a52f99a2259c9bbfd0be9f"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening every section/state original-current presentation at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-46-original-780-analysis-how.png",
+      "sha256": "9a11471251c9d4d22ce13519f4d855866edc2beb8a2d33f21b37484d5203ebaa"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening every section/state original-current presentation at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-47-original-780-analysis-where.png",
+      "sha256": "5c00b3f3b580e59746b597228c67740e26bbc7b41331cc9dd688b0c7aa40d9ea"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening every section/state original-current presentation at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-48-original-780-analysis-terms.png",
+      "sha256": "eb57afbe9a965a41f21dc999b4dd854d6baaa821a4370e38a45d7ba1295fdf8a"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening every section/state original-current presentation at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-49-original-780-decision-2-wrong-after-credit.png",
+      "sha256": "fa333d408ca3194fa5a98e43e5194e1b7474e3c66c91b116720be6b5884176f8"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening every section/state original-current presentation at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-50-original-780-section-3-initial.png",
+      "sha256": "56e4188279f136e4008c7211691a8943af8aff48e734b022e85419fffaa0706f"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening every section/state original-current presentation at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-51-original-780-decision-3-wrong-after-credit.png",
+      "sha256": "9bd6aa69fc133ad19a373419b0e6ff9218f16b782532802f97828ce70bf140c4"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening every section/state original-current presentation at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-52-original-780-section-4-initial.png",
+      "sha256": "aabac025125c890491d513ccc5b562e7f96a55f60249a98147ef1bfabb8a6631"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening every section/state original-current presentation at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-53-original-780-builder-model.png",
+      "sha256": "5ef84b26b01b074caf6d2cf3fa921fc71f26b859d43cb94f55cfa0be66d09da3"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening every section/state original-current presentation at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-54-original-780-section-5-initial.png",
+      "sha256": "28c5399bc724d532e4b0acbd5151c28ebce5eaa3005ad903e2c8a18360420fef"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening every section/state original-current presentation at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-55-original-780-decision-5-wrong-after-credit.png",
+      "sha256": "f8cc86e5a160621c8aa016cebafa323c666bfd529e70f39480a182d18dbbe961"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening every section/state original-current presentation at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-56-original-780-section-6-initial.png",
+      "sha256": "21238fd75f1d6a46b85331f74095a0e0612de05305068b7022d1eee2d74a9eac"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening every section/state original-current presentation at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-57-original-780-quiz-wrong-after-credit.png",
+      "sha256": "5866cce3894daaaa4c4636e9ce371d085302eae56dcebb12194f1951874467b3"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening every section/state original-current presentation at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-58-original-780-section-7-initial.png",
+      "sha256": "fc516f3f82eaa4bb6a7a406de1a34e13a4fc9e04492f3bbbc934fdb349e0bd9f"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening every section/state original-current presentation at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-59-current-780-section-0-initial.png",
+      "sha256": "742c2ce0149cbaf4381ea475e82f5d13cad1a77a151e32dc161977920aadf2c3"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening every section/state original-current presentation at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-60-current-780-section-1-initial.png",
+      "sha256": "7e88789d64090636e75f0b491c4553883eaf3e3efcc7f2ad4244a8510b3ca2a3"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening every section/state original-current presentation at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-61-current-780-timeline-expanded.png",
+      "sha256": "c5d3c7661c594d8e631b96f88a1c63dfbde177a44d7727bfa464f93547c60b1c"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening every section/state original-current presentation at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-62-current-780-section-2-initial.png",
+      "sha256": "7920fcc144b79d20c9b879179bce45da5c747ff43978ed255945fe7739b00e79"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening every section/state original-current presentation at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-63-current-780-analysis-who.png",
+      "sha256": "9d137a998089f787c235d1037415387b0d2b37593fe6750c98ac233f41545cca"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening every section/state original-current presentation at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-64-current-780-analysis-what.png",
+      "sha256": "29f633e76719f047a0da173ede1eac2fd7c9e2139887fb268a1d9477aa27aafb"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening every section/state original-current presentation at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-65-current-780-analysis-how.png",
+      "sha256": "cdb95c2c2339d7dc1a7dd6d4594f6d54419becf80ce31e68f5c1b6a0622ac137"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening every section/state original-current presentation at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-66-current-780-analysis-where.png",
+      "sha256": "3fba381a4274a8bbcc8655075a97aaa6641c63f0bdd18b8a98ae1517b1d5594f"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening every section/state original-current presentation at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-67-current-780-analysis-terms.png",
+      "sha256": "7ca425d47926e6c51c412c52e4a7fe3cac7e6a1aa3d4a5a3f19b0c84852ec2ae"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening every section/state original-current presentation at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-68-current-780-decision-2-wrong-after-credit.png",
+      "sha256": "1e081fd9a27ae6601375ec8332c68b1184b7ac289c26bb4fde498757fdfd06a0"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening every section/state original-current presentation at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-69-current-780-section-3-initial.png",
+      "sha256": "97f47e784c8971e676cb39e31bb36369baafb67ace79a2cfbf18244c7da95fd9"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening every section/state original-current presentation at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-70-current-780-decision-3-wrong-after-credit.png",
+      "sha256": "36651279c9528712f51f2a563a74ed38d466eabf2b1a2b5166bcb7eeeb268d34"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening every section/state original-current presentation at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-71-current-780-section-4-initial.png",
+      "sha256": "13ef23c355b844e61b59cac7354b274e590c9bc1a2e3c7e9c8c31690bdb9ab8f"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening every section/state original-current presentation at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-72-current-780-builder-model.png",
+      "sha256": "6907253ed5af231f7570a4120086234fc88d09f352c073fd7eb05c209a52f97e"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening every section/state original-current presentation at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-73-current-780-section-5-initial.png",
+      "sha256": "c7d85913bfbcd6c5112a2ec5a43273bf660fc0b9911e9c361d8179d5221e73b0"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening every section/state original-current presentation at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-74-current-780-decision-5-wrong-after-credit.png",
+      "sha256": "65638348b7b15580a8b6e46956a6ab4427d065a9150a7759449bc192c5c4f70e"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening every section/state original-current presentation at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-75-current-780-section-6-initial.png",
+      "sha256": "501e0addb635552e9c7f5357f6a659f88b79456dbf13cb4edb85b8ca1fc460db"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening every section/state original-current presentation at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-76-current-780-quiz-wrong-after-credit.png",
+      "sha256": "35adf79d3240b8c635d57e24080e43e11c36f41f17fd2fdda88664a81dcf25fe"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening every section/state original-current presentation at 780px",
+      "project": "webkit",
+      "status": "passed",
+      "path": "webkit-repository-77-current-780-section-7-initial.png",
+      "sha256": "6878f31cf4b7adf602011408d262823dd0c084cb704d5c44300889d074d2e902"
+    },
+    {
+      "test": "/ Opening 320px enlarged text/reduced motion all titles, activities and print",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-repository-78-Opening-reference-PDF.pdf",
+      "sha256": "483f7dfacd90543c2cc39317050e739485d919ca2c2e6eb5e5a47926d931a2c3"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening 320px enlarged text/reduced motion all titles, activities and print",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "path": "mobile-chromium-repository-79-Opening-reference-PDF.pdf",
+      "sha256": "3f76186f152fdf1335181346e77c293036fdc5f71395e2f930df2fa9228f7a39"
+    }
+  ]
+}

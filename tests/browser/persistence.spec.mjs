@@ -11,7 +11,7 @@ async function seed(page, id, raw) {
 for (const mount of ['/', '/discussion-skills-lab/', '/__original/', '/__original/discussion-skills-lab/']) {
   for (const id of lessons) {
     test(`${mount}${id} observed restore, durable credit/drafts and non-contiguous navigation`, async ({ page }) => {
-      const migrated = (id === 'middle' || id === 'final') && !mount.startsWith('/__original/');
+      const migrated = !mount.startsWith('/__original/');
       for (const name of ['missing', 'fresh', 'partial-first', 'mid-lesson', 'completed', 'correct-ever-then-incorrect', 'empty-zero']) {
         const saved = fixture(id, name);
         const savedRecord = saved.raw === null ? { completed: [], data: {} } : JSON.parse(saved.raw);
@@ -64,6 +64,12 @@ for (const mount of ['/', '/discussion-skills-lab/', '/__original/', '/__origina
       if (id === 'opening') {
         await seed(page, id, fixture(id, 'quiz-earned-fallback').raw);
         await page.goto(`${mount}${id}.html`); await ready(page);
+        if (migrated) {
+          // New lifecycle must not synthesize completion writes on hydration.
+          // A real change evaluates the unchanged legacy absent-earned fallback.
+          expect(await rawProgress(page, id)).toBe(fixture(id, 'quiz-earned-fallback').raw);
+          await page.locator('.classify-answer').first().click();
+        }
         expect(JSON.parse(await rawProgress(page, id)).completed).toContain(6);
       }
     });

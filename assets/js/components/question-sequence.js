@@ -24,6 +24,7 @@ export function mountQuestionSequence(root, { data, state, onChange, profile }) 
   const previous = dom.node('button', 'dsl-question-previous', '← Previous question'); previous.type = 'button';
   const next = dom.node('button', 'dsl-question-next'); next.type = 'button';
   const score = dom.node('p', 'dsl-question-score');
+  const summary = profile === 'opening-knowledge-check' && data.summary ? dom.node('div', 'dsl-quiz-summary') : null;
   const hint = dom.node('p', 'dsl-retry-hint');
   const retry = dom.node('button', 'dsl-question-retry', data.retryLabel || 'Retry missed questions'); retry.type = 'button';
   const compare = dom.node('button', 'dsl-question-compare', data.compareLabel); compare.type = 'button';
@@ -34,6 +35,9 @@ export function mountQuestionSequence(root, { data, state, onChange, profile }) 
     const overview = dom.node('div', 'dsl-question-overview'), panel = dom.node('div', 'dsl-question-panel');
     overview.append(score, jumpHost); panel.append(counter, host, controls, comparison);
     dom.append(overview, panel, hint);
+  } else if (summary) {
+    summary.append(dom.node('h3', 'dsl-quiz-summary-title', data.summary.title), score, hint, retry);
+    dom.append(counter, host, controls, summary, jumpHost, comparison);
   } else dom.append(counter, host, controls, score, hint, jumpHost, comparison);
   function emit(nextState) { current = snapshot(nextState); setText(comparison, ''); render(); onChange(snapshot(current)); }
   function mountQuestion(question) {
@@ -63,6 +67,7 @@ export function mountQuestionSequence(root, { data, state, onChange, profile }) 
     previous.hidden = !settings.previous || index === 0;
     next.hidden = Boolean(settings.all || (!settings.wrap && index === data.questions.length - 1));
     next.disabled = settings.any ? !Object.hasOwn(current.selections, question.id) : !current.earnedQuestionIds.includes(question.id);
+    if (profile === 'opening-classification') next.hidden = next.disabled;
     setText(next, profile === 'opening-classification'
       ? (index === data.questions.length - 1 ? 'Review from the start ↻' : 'Next statement →')
       : index === data.questions.length - 1 && settings.wrap ? 'Review first →' : profile === 'middle-scenarios' ? 'Next →' : 'Next question →');
@@ -76,6 +81,13 @@ export function mountQuestionSequence(root, { data, state, onChange, profile }) 
     setText(hint, complete ? 'Excellent work. You can still explore other answers without losing completion credit.'
       : `Review the feedback and select the correct option for ${data.questions.length - earned} remaining ${data.questions.length - earned === 1 ? 'question' : 'questions'}.`);
     if (settings.separate) { score.hidden = hint.hidden = retry.hidden = true; }
+    if (profile === 'opening-classification') score.hidden = true;
+    if (summary) {
+      summary.hidden = !done;
+      setText(score, `${data.summary.scorePrefix}${earned}${data.summary.scoreSeparator}${data.questions.length}${data.summary.scoreSuffix}`);
+      const remaining = data.questions.length - earned;
+      setText(hint, complete ? data.summary.completeMessage : data.summary.remainingTemplate.replace('{count}', String(remaining)).replace('{questions}', remaining === 1 ? data.summary.singular : data.summary.plural));
+    }
     if (profile === 'final-questions') score.hidden = true;
     if (settings.jump) for (const [id, button] of jumps) {
       setText(button, `${current.earnedQuestionIds.includes(id) ? '✓ Correct' : '○ Not yet correct'} · Q${data.questions.findIndex(question => question.id === id) + 1}`);

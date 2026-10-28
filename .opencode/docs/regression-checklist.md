@@ -1,5 +1,49 @@
 # Preservation regression checklist
 
+## Opening milestone-7 owner checkpoint / restricted test scope
+
+**Owner acceptance complete, 2026-10-28:** browser verification fully passes,
+including the corrected essentials-panel alignment/spacing. Local commit requested;
+do not push or begin milestone 8. Specific browser/version/device/AT/zoom/printing
+details were not supplied with this confirmation and are not fabricated. The
+following detailed checklist remains a record of coverage/limitations, not an
+outstanding owner-acceptance gate; latest evidence/handoff supersede pending text.
+
+Owner confirms milestone 6 tested/accepted in Safari and Chrome for navigation,
+style, accessibility and printing; that clears its pending owner checkpoint below.
+Specific versions/devices/AT/zoom actions were not supplied.
+
+Review the **real `opening.html`**, served normally (home-page link works); no
+alternate HTML/harness route was created. New Opening acceptance is still pending.
+
+- Every counted title, including Knowledge Check, uses the exact approved larger
+  numbered profile. Reference/subordinate titles remain distinct. No flashcards.
+- Classify correct/wrong/current choices, Next after any selection, final wrap and
+  retained credit; six unique timeline rows with plus/minus/keyboard/explored cues.
+- Checkpoint wrong → right → wrong → refresh: last red choice remains, credit stays.
+- Initial unselected analysis; keyboard Home/End/arrows; every category explanation,
+  exact highlight spans and TERMS highlighting WHO+WHAT. Reload adds no exploration.
+- Correct WHAT/HOW → wrong before fifth category must not unlock; correcting it
+  afterward does; completed credit never relocks.
+- Clarification/research decisions; required builder inputs/exact punctuation,
+  freely edited draft/34–35 boundary/self-check, optional toggle model/copy fallback.
+- All five quiz questions visible; summary/earned score/retry first unearned/focus,
+  zero-index restore, alternatives after earned credit and reload.
+- Full four-group reference, responsive six-step/grid layout; one Print button;
+  reference-only Cmd/Ctrl+P from ordinary view and loading/error notices. Record
+  actual Safari/Chrome/Firefox previews, backgrounds/settings and any device/AT gaps.
+
+Only `tests/unit/opening-migration.test.mjs`, the Opening-specific bounded shell
+unit (selected by test name), Opening browser files, and Opening identities from
+baseline/policy/persistence/print specs are selected. No full suite or Middle/Final
+browser run. Additive shared branches are restricted to new/Opening-only profiles;
+existing lessons' files/controllers/styles/codec behavior are unchanged. Exact
+commands/results/comparison scope: `evidence/milestone-7-presentation.md`.
+Completed automated selections: 156/156 main Opening checks, 32/32 heading/retry
+follow-ups, 16/16 final affected timeline/tab/enlarged-text/print checks; each covers
+all four projects and both mounts. Units: 8/8 Opening plus 1/1 selected shell guard.
+No test is still running; next action is owner review, not more automatic reruns.
+
 ## Final milestone-6 owner checkpoint
 
 The owner explicitly requested putting the changes in **`final.html`**, not a

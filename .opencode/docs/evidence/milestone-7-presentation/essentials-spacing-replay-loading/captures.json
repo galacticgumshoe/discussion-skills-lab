@@ -1,0 +1,55 @@
+{
+  "originalReportSha256": "7665d1f31d202336c3dbeaefe40845d35f1082dc2ff033b24d67db1c5875a349",
+  "stats": {
+    "startTime": "2026-10-28T07:49:53.171Z",
+    "duration": 39058.057,
+    "expected": 1,
+    "skipped": 6,
+    "unexpected": 1,
+    "flaky": 0
+  },
+  "captures": [
+    {
+      "test": "/ Opening essentials align with compact original row spacing at desktop/mobile/enlarged text",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-0-original-essentials-1440.png",
+      "sha256": "34ebef2badcb84565235ef36c6076e628c2b2e5133d93fa446678a020635aec0"
+    },
+    {
+      "test": "/ Opening essentials align with compact original row spacing at desktop/mobile/enlarged text",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-1-original-essentials-390.png",
+      "sha256": "f9c540dc90f251b92cc94abcd21886013e9c58aa30277657d0cc1a9b5e3c4f2d"
+    },
+    {
+      "test": "/ Opening essentials align with compact original row spacing at desktop/mobile/enlarged text",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-2-current-essentials-1440.png",
+      "sha256": "9cda4a52fc8d805c410067dac27f39e45be8931acfb07487c358424a0b109813"
+    },
+    {
+      "test": "/ Opening essentials align with compact original row spacing at desktop/mobile/enlarged text",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-3-current-essentials-390.png",
+      "sha256": "940c7bddc9dbf6e12d852bea49c4ac9acf56b34933ffcc60d590947b63c62fcb"
+    },
+    {
+      "test": "/ Opening essentials align with compact original row spacing at desktop/mobile/enlarged text",
+      "project": "chromium",
+      "status": "passed",
+      "path": "chromium-root-4-current-essentials-320-enlarged.png",
+      "sha256": "53e8d73da348dfce8894e62b2baece208555724aedff985cdc8db9dba599c9f3"
+    },
+    {
+      "test": "/discussion-skills-lab/ Opening essentials align with compact original row spacing at desktop/mobile/enlarged text",
+      "project": "chromium",
+      "status": "failed",
+      "path": "chromium-repository-5-screenshot.png",
+      "sha256": "d860b6aa379b80693d1a00ea90738e0e310414a54c56b9687aebd7d7dd1101c9"
+    }
+  ]
+}
