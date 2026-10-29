@@ -29,7 +29,7 @@ From this directory:
 python3 -m http.server 8000
 ```
 
-Open `http://localhost:8000/`. A local web server is preferable to opening HTML files directly from disk because browser storage behavior can vary with `file://` URLs.
+Open `http://localhost:8000/`. HTTP serving is required for native modules and same-origin content loading; do not open the HTML directly using `file://`. Production needs no npm install or build.
 
 ### Test with fresh progress
 
@@ -54,11 +54,13 @@ There is no `/health` endpoint or health polling in this static site. A plain `p
 
 ## Add a lesson
 
-1. Create a new standalone lesson HTML page in the repository root.
-2. Reuse `assets/css/shared.css` and `assets/js/lesson-core.js` as appropriate, plus a lesson-specific stylesheet and script for unique interactions.
-3. Give the lesson a distinct browser-storage key so it does not overwrite existing progress.
-4. Add a lesson card to `index.html` and link it to the new page.
-5. Check desktop/mobile navigation, gated completion, keyboard controls, answer feedback, Quick Reference printing, and persistence.
+See [authoring](.opencode/docs/authoring.md) for concrete schema-valid examples and [architecture](.opencode/docs/architecture.md) for the current implementation/checkpoint.
+
+1. Supply `lessons/<id>/config.json`, a content manifest and Markdown/activity/reference files under `content/<id>/`. Preserve stable IDs, question order and answer/feedback associations.
+2. Use a thin static module importing `assets/js/app/lesson-app.js`, shared components and a small pure completion policy. Do not copy activities or use the retired classic global engine.
+3. Keep all three existing lessons on their v1 codecs/keys. Brand-new modules may use the documented ID adapter and a fresh `dsl:<id>:v1` key; read-only references can disable storage. Worksheets need no pretend final quiz.
+4. Retain a small root HTML entry for each distinct public URL, with an empty `.app-shell` mount, no-JS notice and the shared styles/entry module. The shared shell supplies structural controls; homepage wording comes from `content/home.md` and ordered cards from `content/catalog.json`, not copied markup.
+5. Validate content and test affected journeys, saved progress, keyboard/mobile navigation and reference-only printing on both root and repository-prefix mounts. `tests/fixtures/new-module/` demonstrates extensibility without publishing new instruction.
 
 **Design standards:** navy/teal/light blue/white; DM Sans and Fraunces; expandable rows styled like Middle Stage section 02; flashcards with an edge-to-edge white front, a visible bottom-right flip cue, a 3D transition, a navy reverse, and an Explored indicator; quiz choices visibly highlighted and explorable after completion.
 
@@ -82,4 +84,6 @@ Copyright © 2026 Rhys Jones. The original instructional content was developed b
 
 ## Maintenance
 
-The site can be updated by committing changes to `main`; GitHub Pages will republish automatically. Keep a tagged release or ZIP backup before major changes, and test lesson progress and print styling after edits.
+Develop on a non-`main` branch. Only after testing, browser verification and explicit approval should changes be committed/merged/pushed to `main`; the configured GitHub Pages branch deployment then republishes automatically. Publication, tags and Pages settings are separate approval decisions, not automatic refactor steps. Retain original evidence and test progress/print styling before release.
+
+`npm ci`, `npm run validate:content`, `npm run test:unit` and `npm run test:browser` are development tools, not a production pipeline. Prefer impact-scoped test files/projects during editing; the [regression checklist](.opencode/docs/regression-checklist.md) documents exact commands, Firefox's macOS workaround and pending manual checks. Vendor versions/checksums/update procedure are in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Never rewrite baselines merely to hide a content, policy or accessibility regression.

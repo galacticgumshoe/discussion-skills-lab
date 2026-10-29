@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-28",
+  "scope": "Read-only HTTP route/dependency audit; not browser execution or removal verification",
+  "checks": [
+    {
+      "path": "/middle-harness.html",
+      "status": 200,
+      "sha256": "75c22df79dd91d1cca0789de5cbeffc73b4732091fe1386e449932dce75ee35a"
+    },
+    {
+      "path": "/middle.html",
+      "status": 200,
+      "sha256": "ad66a868db9c76138ca3da5e502652722e0d62f7b3ab10999fde55bf06721d09"
+    },
+    {
+      "path": "/__fixtures/harness/middle-lesson.mjs",
+      "status": 200,
+      "sha256": "88fe306a620874bf4e397e49ca1b4e084c4eb31ec4af316492bc9ed0d951cf44"
+    },
+    {
+      "path": "/discussion-skills-lab/middle-harness.html",
+      "status": 200,
+      "sha256": "75c22df79dd91d1cca0789de5cbeffc73b4732091fe1386e449932dce75ee35a"
+    },
+    {
+      "path": "/discussion-skills-lab/middle.html",
+      "status": 200,
+      "sha256": "ad66a868db9c76138ca3da5e502652722e0d62f7b3ab10999fde55bf06721d09"
+    },
+    {
+      "path": "/discussion-skills-lab/__fixtures/harness/middle-lesson.mjs",
+      "status": 200,
+      "sha256": "88fe306a620874bf4e397e49ca1b4e084c4eb31ec4af316492bc9ed0d951cf44"
+    },
+    {
+      "path": "/__original/middle.html",
+      "status": 200
+    }
+  ]
+}

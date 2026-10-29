@@ -7,6 +7,7 @@ function stackedReference(documentData, loadedBodies) {
   for (const [index, item] of documentData.items.entries()) {
     const article = document.createElement(middle ? 'section' : 'article');
     article.className = middle ? `reference-box middle-reference-item middle-reference-item-${index + 1}` : `final-reference-item accent-${item.accent}`;
+    article.dataset.referenceAccent = item.accent;
     const heading = document.createElement('h3');
     const number = document.createElement('span');
     number.className = middle ? 'middle-reference-number' : 'final-reference-number';

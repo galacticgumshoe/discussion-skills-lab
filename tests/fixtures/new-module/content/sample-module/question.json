@@ -1,0 +1,4 @@
+{
+  "schemaVersion": 1, "id": "test-question", "type": "multiple-choice", "profile": "standard",
+  "data": {"id": "test-choice", "prompt": "Test choice label", "correctOptionId": "option-b", "options": [{"id": "option-a", "text": "Test option A", "feedback": "Test response A."}, {"id": "option-b", "text": "Test option B", "feedback": "Test response B."}]}
+}

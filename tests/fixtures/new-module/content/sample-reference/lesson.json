@@ -1,0 +1,4 @@
+{
+  "schemaVersion": 1, "id": "sample-reference", "title": "Test read-only reference", "duration": "TEST ONLY", "activities": [],
+  "sections": [{"id": "test-reference", "label": "Test reference", "heading": "Test reference", "headingLevel": 1, "requirement": "Always available.", "reference": true, "gateActivityIds": [], "blocks": [{"type": "reference", "source": "../sample-module/reference.json"}]}]
+}

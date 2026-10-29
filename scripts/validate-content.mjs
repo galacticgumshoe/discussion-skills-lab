@@ -6,6 +6,8 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { referenceSemanticErrors } from '../assets/js/app/content-validation.js';
 import { resolveContentUrl } from '../assets/js/app/content-loader.js';
 import { validateLessonConfig, validateLessonManifest, validateActivity, validateLessonLinks, activityBodySources } from '../assets/js/app/lesson-validation.js';
+import { validateCatalog } from '../assets/js/app/catalog-validation.js';
+import { createIdProgressAdapter } from '../assets/js/app/id-progress-adapter.js';
 
 const project = fileURLToPath(new URL('../', import.meta.url));
 const schema = JSON.parse(await readFile(new URL('../schemas/reference.schema.json', import.meta.url)));
@@ -21,6 +23,7 @@ const manifestSchema = ajv.compile({ $ref: `${lessonSchema.$id}#/$defs/manifest`
 const validateActivitySchema = ajv.compile(activitySchema);
 const archiveSchema = JSON.parse(await readFile(new URL('../schemas/legacy-variants.schema.json', import.meta.url)));
 const validateArchiveSchema = ajv.compile(archiveSchema);
+const validateCatalogSchema = ajv.compile(JSON.parse(await readFile(new URL('../schemas/catalog.schema.json', import.meta.url))));
 
 const combined = (schemaCheck, runtimeCheck) => (data, context) => {
   const valid = schemaCheck(data), errors = valid ? [] : schemaCheck.errors.map(error => `${error.instancePath || '/'}: ${error.message}`);
@@ -30,6 +33,28 @@ const combined = (schemaCheck, runtimeCheck) => (data, context) => {
 export const validateConfig = combined(configSchema, validateLessonConfig);
 export const validateManifest = combined(manifestSchema, validateLessonManifest);
 export const validateActivityDocument = combined(validateActivitySchema, validateActivity);
+export const validateCatalogDocument = combined(validateCatalogSchema, validateCatalog);
+
+export async function validateCatalogTree(directory = project) {
+  const errors = [], site = await realpath(directory);
+  try {
+    const home = await realpath(resolve(site, 'content/home.md'));
+    if (!home.startsWith(resolve(site, 'content') + sep) || !(await stat(home)).isFile()) throw new Error('missing/unsafe homepage Markdown');
+    const data = JSON.parse(await readFile(resolve(site, 'content/catalog.json'), 'utf8'));
+    errors.push(...validateCatalogDocument(data));
+    if (errors.length) return errors;
+    for (const lesson of data.lessons) {
+      try {
+        for (const path of [lesson.url, `lessons/${lesson.id}/config.json`, `content/${lesson.id}/lesson.json`]) {
+          const file = await realpath(resolve(site, path));
+          if (!file.startsWith(site + sep) || !(await stat(file)).isFile()) throw new Error('unsafe destination');
+          if (path.endsWith('.json') && JSON.parse(await readFile(file, 'utf8')).id !== lesson.id) throw new Error('identity mismatch');
+        }
+      } catch (error) { errors.push(`catalog/${lesson.id}: missing/invalid destination (${error.message})`); }
+    }
+  } catch (error) { errors.push(`catalog: ${error.message}`); }
+  return errors;
+}
 
 // Archival records are development-validated only. No runtime loader/renderer
 // accepts this kind, so archived wording cannot accidentally become a lesson.
@@ -73,6 +98,7 @@ export async function validateContent(directory = resolve(project, 'content')) {
       }
       catch { errors.push(`${label}: invalid JSON or unreadable file`); continue; }
       const context = { declaringUrl, allowedRootUrl };
+      if (entry.name === 'catalog.json') { errors.push(...validateCatalogDocument(data).map(error => `${label}${error}`)); continue; }
       const archive = entry.name === 'legacy-variants.json' || data?.kind === 'legacy-variants';
       const problems = archive ? validateLegacyVariants(data) : data?.sections ? validateManifest(data, context) : data?.type ? validateActivityDocument(data, context) : validateReference(data, context);
       errors.push(...problems.map(error => `${label}${error}`));
@@ -129,7 +155,8 @@ export async function validateLessonTree(directory) {
       const adapters = await Promise.all([
         import('../lessons/opening/progress-adapter.js'), import('../lessons/middle/progress-adapter.js'), import('../lessons/final/progress-adapter.js')
       ]);
-      const adapter = { opening: adapters[0].openingAdapter, middle: adapters[1].middleAdapter, final: adapters[2].finalAdapter }[config.id];
+      const adapter = { opening: adapters[0].openingAdapter, middle: adapters[1].middleAdapter, final: adapters[2].finalAdapter }[config.id]
+        || createIdProgressAdapter({id: config.id, sections: config.sectionOrder, persistent: config.storageKey !== null});
       validateLessonLinks(config, manifest, adapter);
       for (const activity of manifest.activities) {
         try {
@@ -156,7 +183,7 @@ export async function validateLessonTree(directory) {
 
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
   try {
-    const errors = [...await validateContent(), ...await validateLessonTree(project), ...await validateLessonTree(resolve(project, 'tests/fixtures/harness'))];
+    const errors = [...await validateContent(), ...await validateCatalogTree(), ...await validateLessonTree(project), ...await validateLessonTree(resolve(project, 'tests/fixtures/harness')), ...await validateLessonTree(resolve(project, 'tests/fixtures/new-module'))];
     if (errors.length) { console.error(errors.join('\n')); process.exitCode = 1; }
     else console.log('Content validation passed: reference/config/manifest/activity schemas, cross-file IDs, gates, paths and Markdown files (including the isolated harness).');
   } catch (error) { console.error(`Content validation failed: ${error.message}`); process.exitCode = 1; }

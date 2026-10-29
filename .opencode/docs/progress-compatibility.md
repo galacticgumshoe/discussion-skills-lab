@@ -1,5 +1,50 @@
 # Legacy progress baseline
 
+## Milestone 8 — compatibility boundary (approved local cutover)
+
+No existing lesson changes keys or codecs. The authoritative old→stable mappings
+remain `tests/fixtures/legacy-maps/{opening,middle,final}.json`, matching each
+`lessons/<id>/progress-adapter.js` and adjacent initialized DOM evidence. Opening
+owns direct `data` fields; Middle `data.middleState`; Final `data.finalState`.
+Unknown object properties survive owned-field merges; completion is permanent.
+
+`data.dslUi` schema version 1 stores only Middle model visibility and Opening
+sequence-checkpoint last selection where old formats lacked those facts. Legacy
+fields remain authoritative for facts they already represent. Unknown extension
+versions are opaque/preserved; unsavable new UI facts remain in memory with a
+warning. Missing historical facts are not reconstructed from completion credit.
+Malformed JSON/outer/owned state is not automatically overwritten or reset;
+salvage independent drafts/credit and warn. Denied/quota storage keeps the session
+usable. Hydration/content failure/retry must not serialize default state.
+
+Brand-new modules alone may use `createIdProgressAdapter` through the **same**
+`openProgress` API, with a fresh `dsl:<id>:v1` and `schemas/id-progress.schema.json`:
+`schemaVersion: 1`, `completedSections`, `activities`, `fields`, `flags`, `ui`.
+Normalized stable IDs are stored directly, no index mapping/migration service.
+The adapter declares defaults, validates the record and known activity shapes,
+merges unknown fields on writes and retains completed credit. Unknown versions
+block writes while preserving readable drafts; missing records do not save at
+startup. A reference-only adapter can use `persistent: false` and config
+`storageKey: null`, without touching localStorage at all. Fixtures use
+`dsl:sample-module:v1` and an independent read-only `sample-reference`; neither is
+in the production catalog or shares a legacy identity. No pre-refactor rollback
+promise applies to brand-new modules absent from the old engine.
+
+The original-engine server still pins `0b5d2297e7cbc19bd59cde750492dd28e3983ca0`;
+sealed source copies remain under `tests/fixtures/content/source/`. These are
+required replay/provenance artifacts, not legacy deletion targets. Current
+production-copy removal is distinguished in the removal inventory. The redundant
+`assets/js/lesson-core.js` production file is now removed; baseline VM/server/seal
+checks explicitly use the pinned original, never a missing-file fallback. Real
+public shell journeys test all three completed-v1 fixtures and replay at both
+mounts. This does not imply all historical browser fixtures were rerun.
+
+Limitations remain: progress belongs to an origin/browser/device; there are no
+accounts, synchronization or cross-tab merge (last writer wins). History cannot
+supply previously unrecorded selections/model states. Any future v2 migration
+requires a separate approved design, raw-data backup/unknown-version/rollback
+policy and original-engine/legacy fixture tests; milestone 8 grants no such change.
+
 ## Milestone 7 Opening public-entry ownership
 
 The real `opening.html` uses the common app/store/navigation and static Opening

@@ -6,9 +6,7 @@
 /* Middle Stage page-specific refinements */
 .view[hidden]{display:none!important}.view.active{display:block}.dsl-content .view{max-width:100%}
 #reference-content{background:white}
-@media print{.view#print-view{display:block!important}.reference-shortcut{display:none!important}#reference-content{font-size:10pt;line-height:1.3}#reference-content .reference-box{break-inside:avoid;padding:10px;margin-top:8px}#reference-content p,#reference-content li{line-height:1.3}#print-view h2{font-size:18pt;margin:0 0 7px}}
 
-@media print{.lesson-view{display:none!important}#view-8{display:block!important}#view-8[hidden]{display:block!important}.topbar,.rail,.mobile-nav,.bottom-controls,#nav-status,.reference-shortcut{display:none!important}.dsl-layout{display:block!important;padding:0!important}.dsl-content{max-width:none!important}html,body,#view-8,#view-8 *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}}
 
 /* Middle quick reference: match Opening Stage reference composition. */
 #view-8 .middle-reference-sheet{border:1px solid #d5e5ed;border-radius:22px;background:#fff;padding:28px 30px;box-shadow:0 8px 28px #142b4908;}
@@ -30,34 +28,7 @@
 #view-8 .middle-reference-item ul{margin:0;padding-left:22px;}
 #view-8 .middle-reference-item li{margin:5px 0;line-height:1.55;}
 @media(max-width:600px){#view-8 .middle-reference-sheet{padding:18px 16px;}#view-8 .middle-reference-item{padding:17px 15px;}#view-8 .middle-reference-item h3{font-size:1rem;gap:10px;}}
-@media print{
-  #view-8 .middle-reference-sheet{box-shadow:none!important;border:0!important;padding:0!important;margin:0!important;}
-  #view-8 .middle-reference-print{display:none!important;}
-  #view-8 .middle-reference-header{margin:0 0 10px!important;gap:0!important;}
-  #view-8 .middle-reference-header h2{font-size:17pt!important;}
-  #view-8 #reference-content{display:block!important;}
-  #view-8 .middle-reference-item{padding:9px 12px!important;margin:0 0 7px!important;break-inside:avoid!important;page-break-inside:avoid!important;}
-  #view-8 .middle-reference-item h3{font-size:10pt!important;margin-bottom:5px!important;}
-  #view-8 .middle-reference-number{height:26px!important;min-width:34px!important;font-size:9pt!important;}
-  #view-8 .middle-reference-item li{font-size:9pt!important;line-height:1.24!important;margin:2px 0!important;}
-  html,body,#view-8,#view-8 *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;}
-}
 
-/* Middle Stage print isolation: shared.css prints Opening Stage's #view-7.
-   In Middle Stage #view-7 is the knowledge check, not the reference. */
-@media print {
-  #view-7, #view-7[hidden] { display:none!important; }
-  #view-8, #view-8[hidden] { display:block!important; }
-  #view-8 { break-before:auto!important; page-break-before:auto!important; }
-}
-
-/* Final print override: isolate only the Middle Stage reference page. */
-@media print {
-  .dsl-content > .lesson-view:not(#view-8),
-  #view-7, #view-7[hidden], .view#print-view {display:none!important;}
-  .dsl-content > #view-8, .dsl-content > #view-8[hidden] {display:block!important;}
-  #view-8 .middle-reference-sheet {break-before:auto!important;page-break-before:auto!important;}
-}
 
 /* Standard flashcard shell, aligned with Final Stage. */
 .flip-card{position:relative;display:block;min-height:260px;padding:0!important;border:0!important;border-radius:15px;background:transparent!important;box-shadow:none!important;overflow:visible;perspective:1000px}
@@ -166,9 +137,3 @@
 .dsl-middle #view-8{background:white;border:1px solid #d5e5ed;border-radius:22px;padding:28px 30px}
 .dsl-middle #view-8 [data-reference-print]{margin:0 0 1rem}
 @media(max-width:600px){.dsl-middle #view-8{padding:18px 16px}}
-@media print{
-  .dsl-middle #lesson-status,.dsl-middle #lesson-retry,.dsl-middle #storage-warning,.dsl-middle [data-reference-print],.dsl-middle [data-reference-retry],.dsl-middle [data-reference-status]{display:none!important}
-  .dsl-middle #views>.lesson-view:not(#view-8){display:none!important}
-  .dsl-middle #view-8,.dsl-middle #view-8[hidden]{display:block!important;animation:none!important;opacity:1!important;border:0!important;padding:0!important;break-before:auto!important}
-  .dsl-middle #view-8>h2{font-size:17pt!important;margin:0 0 10px!important}
-}

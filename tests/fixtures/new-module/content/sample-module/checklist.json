@@ -1,0 +1,4 @@
+{
+  "schemaVersion": 1, "id": "test-checks", "type": "checklist",
+  "data": {"items": [{"id": "check-a", "text": "Test check A"}, {"id": "check-b", "text": "Test check B"}]}
+}

@@ -1,5 +1,51 @@
 # Original-engine issues (not repaired in milestone 1)
 
+## Milestone 8 — incomplete approved implementation checkpoint
+
+- **Owner-reported Middle reference Print appearance regression:** the generic
+  reference branch emitted an unclassed button after the title, losing the original
+  prominent control/header. Restored the Middle button-above-title composition
+  and explicit semantic button paint/1rem font/touch-target size. New public
+  desktop/mobile appearance/order/keyboard/no-save/print-hiding assertions supplement
+  the earlier functional checks. Evidence and actual verification outcomes:
+  `evidence/milestone-8/middle-print-button-fix.md`. No instructional/progress change.
+
+- **Scope correction (inventory v2):** the first proposal over-retained executable
+  migration fixtures and cutover helpers by grouping them with meaningful archives/
+  baseline dependencies. The remaining Middle preview has only its own temporary
+  route as a consumer; real lesson regressions already target `middle.html`. It,
+  orphaned extract/archive/pilot tools and the remaining partial/shared sandboxes
+  are now explicit retirement candidates. Active test consumers must be ported or
+  consolidated; they are not permanent-retention exemptions. Exact-content/gate/
+  progress/security assertions, sealed replay artifacts and actual instructional
+  variants remain protected. Reviewed S/H/P/R and T01/T03–T07 removals are now
+  implemented with the owner's 2026-10-28 approval. T02/T08/T09/T10 assertion ports
+  and consolidation remain incomplete, not permanent retention decisions.
+
+- Root HTML/homepage now load the shared shell/home/semantic-print implementations.
+  Tests target actual files, not staged responses. Nothing is committed/published.
+- The reference-only fixture exposed an assumption that navigation always has
+  counted pages; allow one reference and guard the final counted page/percentage.
+  Existing legacy counts/gates remain unchanged; targeted parity/codec tests cover
+  all three existing consumers. A fixture query parameter was rejected correctly
+  by the safe content resolver; separate mechanical HTML entries now select modes
+  without weakening that security boundary.
+- A stale navigation-unit assertion still parsed banks from the now-thin Opening
+  entry. It now compares the harness against pinned original labels **and** the
+  current external manifest, keeping the original-engine assertion rather than
+  removing it. No frozen source or policy fixture changed.
+- Middle's old `:not(#view-8)` print compensation could beat semantic rules. The
+  nine approved P01–P04 blocks are now removed, and public entries load `print.css`
+  last. Chromium direct-file semantic print checks pass at both mounts. Remaining
+  mixed CSS aliases were not deleted or declared globally unused.
+- Broader old alias/minified CSS cleanup is deferred: mixed active rules and the
+  intentional legacy decoy fixture are real consumers. No whole stylesheet or
+  meaningful instructional archive is certified dead. Tailwind/fonts remain external.
+- New owner browser/interactive-print/device/AT/actual-zoom verification and
+  remaining cleanup/port evidence are pending. Full long-running suites
+  are intentionally not run per the owner. See the latest handoff and
+  `evidence/milestone-8-verification.md` for actual results, not inferred completion.
+
 Refactor documentation lives in `.opencode/docs/`; repository paths below are root-relative.
 
 ## Milestone 7 current checkpoint

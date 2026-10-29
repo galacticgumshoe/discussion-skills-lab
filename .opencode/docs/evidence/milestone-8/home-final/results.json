@@ -1,0 +1,93 @@
+{
+  "reportSha256": "46c8087691a5e8aea19a87b2ed2689dca783420f08d2eacfcbddb952963ea56d",
+  "stats": {
+    "startTime": "2026-10-28T09:06:26.809Z",
+    "duration": 3195.857,
+    "expected": 6,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "errors": [],
+  "tests": [
+    {
+      "title": "/ homepage exact copy, card order, links and licenses",
+      "file": "home.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 428,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ homepage failure retains useful links and can retry safely",
+      "file": "home.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 443,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ homepage no-JavaScript lesson navigation",
+      "file": "home.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 363,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ homepage exact copy, card order, links and licenses",
+      "file": "home.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 389,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ homepage failure retains useful links and can retry safely",
+      "file": "home.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 432,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ homepage no-JavaScript lesson navigation",
+      "file": "home.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 382,
+          "errors": []
+        }
+      ]
+    }
+  ],
+  "artifacts": []
+}

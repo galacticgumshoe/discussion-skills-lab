@@ -1,0 +1,4 @@
+{
+  "schemaVersion": 1, "id": "test-handout", "title": "Test reference", "layout": "stacked-reference",
+  "items": [{"id": "test-reference-item", "number": "01", "title": "Test handout group", "accent": "teal", "source": "reference.md"}]
+}

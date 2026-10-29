@@ -1,10 +1,11 @@
-// MIT. The only new lesson writer. No live entry adopts this until a whole-lesson cutover.
+// MIT. Shared bootstrap and the single progress writer for every public lesson.
 import { loadJson, resolveContentUrl } from './content-loader.js';
 import { validateLessonConfig, validateLessonManifest, validateLessonLinks } from './lesson-validation.js';
 import { openProgress } from './progress-store.js';
 import { mountNavigation } from './lesson-core.js';
 import { applyCompletion } from './completion.js';
 import { renderSections, standardActivityRegistry, validateRegistry } from './section-renderer.js';
+import { mountLessonShell } from './lesson-shell.js';
 
 const mounts = new WeakSet();
 const writers = new Map();
@@ -13,6 +14,7 @@ export function mountLesson(root, { configUrl, adapter, completionPolicy, reveal
   validateRegistry(registry);
   if (!adapter || !completionPolicy || Object.values(completionPolicy).some(policy => typeof policy !== 'function')) throw new TypeError('A statically imported adapter and completion policy are required');
   if (writers.has(adapter.key)) throw new TypeError('This lesson already has a mounted writer. Destroy it before remounting.');
+  const shell = root.querySelector('#lesson-status') ? undefined : mountLessonShell(root);
   const status = root.querySelector('#lesson-status'), retry = root.querySelector('#lesson-retry'), warning = root.querySelector('#storage-warning');
   if (!status || !retry || !warning) throw new TypeError('Missing lesson loading/persistence hooks');
   mounts.add(root);
@@ -32,6 +34,7 @@ export function mountLesson(root, { configUrl, adapter, completionPolicy, reveal
       validateLessonLinks(config, manifest, adapter);
       if (Object.keys(completionPolicy).some(id => !config.sectionOrder.includes(id) || id === config.referenceId)) throw new Error('Completion policy has an unknown/reference section');
       if (destroyed) return;
+      shell?.configure(manifest);
       renderer = renderSections(root, { manifest, manifestUrl, allowedRootUrl, registry, revealPolicy, getState: () => store.state, onNavigate: id => navigation.go(id),
         onChange(activity, entry, own) {
           const previous = store.state, next = store.state; entry.write(activity, next, own);
@@ -65,6 +68,7 @@ export function mountLesson(root, { configUrl, adapter, completionPolicy, reveal
     destroy() {
       if (destroyed) return;
       destroyed = true; abort.abort(); retry.removeEventListener('click', bootstrap); navigation?.destroy(); renderer?.destroy(); mounts.delete(root); writers.delete(adapter.key);
+      shell?.destroy();
     }
   });
 }

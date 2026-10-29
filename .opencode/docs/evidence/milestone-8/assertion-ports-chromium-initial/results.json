@@ -1,0 +1,229 @@
+{
+  "reportSha256": "5100a5359119520d7d8ac80c787343d75a43cd8b95464fb8c493a94052352f2d",
+  "stats": {
+    "startTime": "2026-10-28T23:07:44.093Z",
+    "duration": 3733.3220000000006,
+    "expected": 4,
+    "skipped": 17,
+    "unexpected": 1,
+    "flaky": 0
+  },
+  "errors": [
+    {
+      "message": "\u001b[31mTesting stopped early after 1 maximum allowed failures.\u001b[39m"
+    }
+  ],
+  "tests": [
+    {
+      "title": "/ duplicate mounts/writers fail; repeated destroy/remount leaves old nodes inert and one callback/Print",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1270,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ destroy during pending fetch cancels late work and frees the single writer",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 719,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ bounded registry rejects executable content; missing renderer isolates its activity",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 607,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ pending activity cannot block reference or read/save progress before preparation",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 670,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ failed Markdown blocks initial credit; retry is silent until the next real interaction",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "chromium",
+      "status": "unexpected",
+      "results": [
+        {
+          "status": "failed",
+          "duration": 723,
+          "errors": [
+            {
+              "location": {
+                "file": "/Users/rhys/git/discussion-skills-lab/tests/browser/app-lifecycle.spec.mjs",
+                "column": 121,
+                "line": 104
+              },
+              "message": "Error: locator.click: Error: strict mode violation: locator('[data-content-retry]') resolved to 4 elements:\n    1) <button type=\"button\" data-content-retry=\"\">Retry content</button> aka getByRole('button', { name: 'Retry content' })\n    2) <button hidden=\"\" type=\"button\" data-content-retry=\"\">Retry content</button> aka getByText('Retry content').nth(1)\n    3) <button hidden=\"\" type=\"button\" data-content-retry=\"\">Retry content</button> aka getByText('Retry content').nth(2)\n    4) <button hidden=\"\" type=\"button\" data-content-retry=\"\">Retry content</button> aka getByText('Retry content').nth(3)\n\nCall log:\n\u001b[2m  - waiting for locator('[data-content-retry]')\u001b[22m\n\n\n  102 |     await page.evaluate(() => window.fixtureApp.navigation.go('test-reference')); await expect(page.locator('[data-reference-print]')).toBeEnabled();\n  103 |     await page.evaluate(() => window.fixtureApp.navigation.go('test-explanation'));\n> 104 |     const writes = (await counts(page)).writes; await page.unroute(pattern); await page.locator('[data-content-retry]').click();\n      |                                                                                                                         ^\n  105 |     await expect(page.locator('strong').filter({hasText: 'Test Markdown label'})).toBeVisible();\n  106 |     expect((await state(page)).completedSections).toEqual([]); expect((await counts(page)).writes).toBe(writes);\n  107 |     await page.getByRole('button', {name: 'Test option A', exact: true}).click();\n    at /Users/rhys/git/discussion-skills-lab/tests/browser/app-lifecycle.spec.mjs:104:121"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ duplicate mounts/writers fail; repeated destroy/remount leaves old nodes inert and one callback/Print",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "chromium",
+      "status": "skipped",
+      "results": [
+        {
+          "status": "interrupted",
+          "duration": 370,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ destroy during pending fetch cancels late work and frees the single writer",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ bounded registry rejects executable content; missing renderer isolates its activity",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ pending activity cannot block reference or read/save progress before preparation",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ failed Markdown blocks initial credit; retry is silent until the next real interaction",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "title": "root: extracted Middle reference preserves every source item/list/emphasis/class and preloads without progress",
+      "file": "middle-reference.spec.mjs",
+      "project": "chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "title": "root: Middle reference failure/retry stays independent and never writes progress",
+      "file": "middle-reference.spec.mjs",
+      "project": "chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "title": "root: Middle reference alone prints from ordinary/fresh and reference views",
+      "file": "middle-reference.spec.mjs",
+      "project": "chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab: extracted Middle reference preserves every source item/list/emphasis/class and preloads without progress",
+      "file": "middle-reference.spec.mjs",
+      "project": "chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab: Middle reference failure/retry stays independent and never writes progress",
+      "file": "middle-reference.spec.mjs",
+      "project": "chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab: Middle reference alone prints from ordinary/fresh and reference views",
+      "file": "middle-reference.spec.mjs",
+      "project": "chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "title": "/ new module shares activities, gates, immediate drafts and ID-only progress",
+      "file": "new-module.spec.mjs",
+      "project": "chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "title": "/ new reference-only configuration has no quiz or storage access",
+      "file": "new-module.spec.mjs",
+      "project": "chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "title": "/ new module corrupt and unknown-version storage is never overwritten",
+      "file": "new-module.spec.mjs",
+      "project": "chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ new module shares activities, gates, immediate drafts and ID-only progress",
+      "file": "new-module.spec.mjs",
+      "project": "chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ new reference-only configuration has no quiz or storage access",
+      "file": "new-module.spec.mjs",
+      "project": "chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ new module corrupt and unknown-version storage is never overwritten",
+      "file": "new-module.spec.mjs",
+      "project": "chromium",
+      "status": "skipped",
+      "results": []
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "001-test-failed-1.png",
+      "source": "/Users/rhys/git/discussion-skills-lab/test-results/m8-assertion-ports-chromium/app-lifecycle--failed-Mark-ca474-l-the-next-real-interaction-chromium/test-failed-1.png",
+      "sha256": "00e0d0172e900a294ddff43703973ee660e38e6bc99179167099c3c05884e45c"
+    },
+    {
+      "name": "002-test-failed-1.png",
+      "source": "/Users/rhys/git/discussion-skills-lab/test-results/m8-assertion-ports-chromium/app-lifecycle--discussion--30942-nert-and-one-callback-Print-chromium/test-failed-1.png",
+      "sha256": "31bc1f52985f4c05d6b144f1072725a7120b3d1982ad74ba65aa5f57b967d6fe"
+    }
+  ]
+}

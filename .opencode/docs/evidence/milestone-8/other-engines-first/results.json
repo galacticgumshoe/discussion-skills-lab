@@ -1,0 +1,1102 @@
+{
+  "reportSha256": "9fb398fd8ad378a88368645a8dc0258a456a98652912bd70d22a4c5275716467",
+  "stats": {
+    "startTime": "2026-10-28T08:27:54.643Z",
+    "duration": 477546.362,
+    "expected": 68,
+    "skipped": 24,
+    "unexpected": 1,
+    "flaky": 0
+  },
+  "errors": [
+    {
+      "message": "\u001b[31mTesting stopped early after 1 maximum allowed failures.\u001b[39m"
+    }
+  ],
+  "tests": [
+    {
+      "title": "/ homepage exact copy, card order, links and licenses",
+      "file": "home.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1326,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ homepage failure retains useful links and can retry safely",
+      "file": "home.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 613,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ homepage no-JavaScript lesson navigation",
+      "file": "home.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 498,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ homepage exact copy, card order, links and licenses",
+      "file": "home.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 555,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ homepage failure retains useful links and can retry safely",
+      "file": "home.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 634,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ homepage no-JavaScript lesson navigation",
+      "file": "home.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 515,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ homepage exact copy, card order, links and licenses",
+      "file": "home.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1294,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ homepage failure retains useful links and can retry safely",
+      "file": "home.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 482,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ homepage no-JavaScript lesson navigation",
+      "file": "home.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 420,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ homepage exact copy, card order, links and licenses",
+      "file": "home.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 708,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ homepage failure retains useful links and can retry safely",
+      "file": "home.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 461,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ homepage no-JavaScript lesson navigation",
+      "file": "home.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 422,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ homepage exact copy, card order, links and licenses",
+      "file": "home.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 558,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ homepage failure retains useful links and can retry safely",
+      "file": "home.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 441,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ homepage no-JavaScript lesson navigation",
+      "file": "home.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 355,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ homepage exact copy, card order, links and licenses",
+      "file": "home.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 347,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ homepage failure retains useful links and can retry safely",
+      "file": "home.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 413,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ homepage no-JavaScript lesson navigation",
+      "file": "home.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 289,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ new module shares activities, gates, immediate drafts and ID-only progress",
+      "file": "new-module.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1157,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ new reference-only configuration has no quiz or storage access",
+      "file": "new-module.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 346,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ new module corrupt and unknown-version storage is never overwritten",
+      "file": "new-module.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 942,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ new module shares activities, gates, immediate drafts and ID-only progress",
+      "file": "new-module.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1900,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ new reference-only configuration has no quiz or storage access",
+      "file": "new-module.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 824,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ new module corrupt and unknown-version storage is never overwritten",
+      "file": "new-module.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1334,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ new module shares activities, gates, immediate drafts and ID-only progress",
+      "file": "new-module.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1006,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ new reference-only configuration has no quiz or storage access",
+      "file": "new-module.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 338,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ new module corrupt and unknown-version storage is never overwritten",
+      "file": "new-module.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 723,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ new module shares activities, gates, immediate drafts and ID-only progress",
+      "file": "new-module.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1283,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ new reference-only configuration has no quiz or storage access",
+      "file": "new-module.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 487,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ new module corrupt and unknown-version storage is never overwritten",
+      "file": "new-module.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 760,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ new module shares activities, gates, immediate drafts and ID-only progress",
+      "file": "new-module.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "unexpected",
+      "results": [
+        {
+          "status": "timedOut",
+          "duration": 120182,
+          "errors": [
+            {
+              "message": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m"
+            },
+            {
+              "location": {
+                "file": "/Users/rhys/git/discussion-skills-lab/tests/browser/new-module.spec.mjs",
+                "column": 53,
+                "line": 8
+              },
+              "message": "Error: locator.click: Test timeout of 120000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#rail-links button').last()\u001b[22m\n\u001b[2m    - locator resolved to <button type=\"button\" class=\"rail-link\" data-go=\"test-reference\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    226 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not visible\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n\n   6 |     await page.goto(url); await expect(page.locator('#lesson-status')).toBeHidden();\n   7 |     await expect(page.locator('strong').filter({hasText:'Test Markdown label'})).toBeVisible(); await expect(page.locator('#next-section')).toBeDisabled();\n>  8 |     await page.locator('#rail-links button').last().click(); await expect(page.locator('[data-reference-print]')).toBeEnabled();\n     |                                                     ^\n   9 |     await page.locator('#rail-links button').first().click(); await page.getByRole('button',{name:'Test option A',exact:true}).click(); await expect(page.locator('#next-section')).toBeDisabled();\n  10 |     const feedback = await page.locator('.dsl-feedback').elementHandle();\n  11 |     await page.getByRole('button',{name:'Test option B',exact:true}).click(); await expect(page.locator('#next-section')).toBeEnabled();\n    at /Users/rhys/git/discussion-skills-lab/tests/browser/new-module.spec.mjs:8:53"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "/ new reference-only configuration has no quiz or storage access",
+      "file": "new-module.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "title": "/ new module corrupt and unknown-version storage is never overwritten",
+      "file": "new-module.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ new module shares activities, gates, immediate drafts and ID-only progress",
+      "file": "new-module.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ new reference-only configuration has no quiz or storage access",
+      "file": "new-module.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ new module corrupt and unknown-version storage is never overwritten",
+      "file": "new-module.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "title": "/opening semantic print survives view renumbering/reordering from ordinary and reference screens",
+      "file": "print-isolation.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 4276,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/middle semantic print survives view renumbering/reordering from ordinary and reference screens",
+      "file": "print-isolation.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 4807,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/final semantic print survives view renumbering/reordering from ordinary and reference screens",
+      "file": "print-isolation.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 6914,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/opening semantic print survives view renumbering/reordering from ordinary and reference screens",
+      "file": "print-isolation.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 4106,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/middle semantic print survives view renumbering/reordering from ordinary and reference screens",
+      "file": "print-isolation.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 4703,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/final semantic print survives view renumbering/reordering from ordinary and reference screens",
+      "file": "print-isolation.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 6766,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/opening semantic print survives view renumbering/reordering from ordinary and reference screens",
+      "file": "print-isolation.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2626,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/middle semantic print survives view renumbering/reordering from ordinary and reference screens",
+      "file": "print-isolation.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2911,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/final semantic print survives view renumbering/reordering from ordinary and reference screens",
+      "file": "print-isolation.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3353,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/opening semantic print survives view renumbering/reordering from ordinary and reference screens",
+      "file": "print-isolation.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 4579,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/middle semantic print survives view renumbering/reordering from ordinary and reference screens",
+      "file": "print-isolation.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2949,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/final semantic print survives view renumbering/reordering from ordinary and reference screens",
+      "file": "print-isolation.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 5503,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/opening semantic print survives view renumbering/reordering from ordinary and reference screens",
+      "file": "print-isolation.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "title": "/middle semantic print survives view renumbering/reordering from ordinary and reference screens",
+      "file": "print-isolation.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "title": "/final semantic print survives view renumbering/reordering from ordinary and reference screens",
+      "file": "print-isolation.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/opening semantic print survives view renumbering/reordering from ordinary and reference screens",
+      "file": "print-isolation.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/middle semantic print survives view renumbering/reordering from ordinary and reference screens",
+      "file": "print-isolation.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/final semantic print survives view renumbering/reordering from ordinary and reference screens",
+      "file": "print-isolation.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "title": "/opening shared shell: skip, counts, responsive navigation, focus, single mount and silent hydration",
+      "file": "shell.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 957,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/opening candidate journey and completed v1 fixture replay",
+      "file": "shell.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 6494,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/middle shared shell: skip, counts, responsive navigation, focus, single mount and silent hydration",
+      "file": "shell.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1047,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/middle candidate journey and completed v1 fixture replay",
+      "file": "shell.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 9592,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/final shared shell: skip, counts, responsive navigation, focus, single mount and silent hydration",
+      "file": "shell.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 51320,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/final candidate journey and completed v1 fixture replay",
+      "file": "shell.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 14092,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/opening shared shell: skip, counts, responsive navigation, focus, single mount and silent hydration",
+      "file": "shell.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1474,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/opening candidate journey and completed v1 fixture replay",
+      "file": "shell.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 111215,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/middle shared shell: skip, counts, responsive navigation, focus, single mount and silent hydration",
+      "file": "shell.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1637,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/middle candidate journey and completed v1 fixture replay",
+      "file": "shell.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 6550,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/final shared shell: skip, counts, responsive navigation, focus, single mount and silent hydration",
+      "file": "shell.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 988,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/final candidate journey and completed v1 fixture replay",
+      "file": "shell.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 10405,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "shared shell manifest failure has retry, no fabricated lesson and no writes",
+      "file": "shell.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 785,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/opening shared shell: skip, counts, responsive navigation, focus, single mount and silent hydration",
+      "file": "shell.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1028,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/opening candidate journey and completed v1 fixture replay",
+      "file": "shell.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 4987,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/middle shared shell: skip, counts, responsive navigation, focus, single mount and silent hydration",
+      "file": "shell.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3309,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/middle candidate journey and completed v1 fixture replay",
+      "file": "shell.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 8308,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/final shared shell: skip, counts, responsive navigation, focus, single mount and silent hydration",
+      "file": "shell.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3521,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/final candidate journey and completed v1 fixture replay",
+      "file": "shell.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 10069,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/opening shared shell: skip, counts, responsive navigation, focus, single mount and silent hydration",
+      "file": "shell.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1526,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/opening candidate journey and completed v1 fixture replay",
+      "file": "shell.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 5159,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/middle shared shell: skip, counts, responsive navigation, focus, single mount and silent hydration",
+      "file": "shell.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1036,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/middle candidate journey and completed v1 fixture replay",
+      "file": "shell.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 7106,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/final shared shell: skip, counts, responsive navigation, focus, single mount and silent hydration",
+      "file": "shell.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3045,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/final candidate journey and completed v1 fixture replay",
+      "file": "shell.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 9859,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "shared shell manifest failure has retry, no fabricated lesson and no writes",
+      "file": "shell.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 950,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/opening shared shell: skip, counts, responsive navigation, focus, single mount and silent hydration",
+      "file": "shell.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "title": "/opening candidate journey and completed v1 fixture replay",
+      "file": "shell.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "title": "/middle shared shell: skip, counts, responsive navigation, focus, single mount and silent hydration",
+      "file": "shell.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "title": "/middle candidate journey and completed v1 fixture replay",
+      "file": "shell.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "title": "/final shared shell: skip, counts, responsive navigation, focus, single mount and silent hydration",
+      "file": "shell.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "title": "/final candidate journey and completed v1 fixture replay",
+      "file": "shell.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/opening shared shell: skip, counts, responsive navigation, focus, single mount and silent hydration",
+      "file": "shell.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/opening candidate journey and completed v1 fixture replay",
+      "file": "shell.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/middle shared shell: skip, counts, responsive navigation, focus, single mount and silent hydration",
+      "file": "shell.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/middle candidate journey and completed v1 fixture replay",
+      "file": "shell.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/final shared shell: skip, counts, responsive navigation, focus, single mount and silent hydration",
+      "file": "shell.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/final candidate journey and completed v1 fixture replay",
+      "file": "shell.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "title": "shared shell manifest failure has retry, no fabricated lesson and no writes",
+      "file": "shell.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "results": []
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "001-test-failed-1.png",
+      "source": "/Users/rhys/git/discussion-skills-lab/test-results/m8-other-engines/new-module--new-module-sha-ffdad-drafts-and-ID-only-progress-mobile-chromium/test-failed-1.png",
+      "sha256": "b843f92b9bf7a2c0fedc232f1552e3b801337f37fb4f1a1468c4a437a3445fc0"
+    }
+  ]
+}

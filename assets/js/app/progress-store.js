@@ -11,9 +11,10 @@ export function progressRecordErrors(value) {
 const warning = (code, path, message, blocking = false) => ({ code, path, message, blocking });
 export function openProgress({ storage, key, adapter }) {
   if (key !== adapter.key) throw new TypeError('Progress key must match the statically imported adapter.');
-  let raw = null, original = { completed: [], data: {} }, canPersist = true;
+  let raw = null, original = adapter.emptyRecord?.() ?? { completed: [], data: {} }, canPersist = adapter.persistent !== false;
   const diagnostics = [];
   try {
+    if (adapter.persistent === false) storage = { getItem: () => null };
     // Access the global getter inside the guarded boundary (it can itself throw).
     storage = storage === undefined ? globalThis.localStorage : storage;
     raw = storage.getItem(key);
@@ -24,7 +25,7 @@ export function openProgress({ storage, key, adapter }) {
         diagnostics.push(warning('invalid-json', 'record', 'Saved progress cannot be read. It will not be overwritten; changes remain available in this session.', true));
       }
       if (canPersist) {
-        for (const path of progressRecordErrors(original)) diagnostics.push(warning('invalid-record', path, `Saved progress at ${path} is invalid. It will not be overwritten; changes remain available in this session.`, true));
+        for (const path of (adapter.recordErrors || progressRecordErrors)(original)) diagnostics.push(warning('invalid-record', path, `Saved progress at ${path} is invalid. It will not be overwritten; changes remain available in this session.`, true));
         diagnostics.push(...adapter.diagnose(original));
         if (diagnostics.some(item => item.blocking)) canPersist = false;
       }

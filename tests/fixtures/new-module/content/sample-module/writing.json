@@ -1,0 +1,4 @@
+{
+  "schemaVersion": 1, "id": "test-writing", "type": "writing", "profile": "draft",
+  "data": {"fields": [{"id": "test-draft", "label": "Test draft", "multiline": true, "readonly": false}], "copyLabel": "Copy test draft", "copyFieldId": "test-draft"}
+}

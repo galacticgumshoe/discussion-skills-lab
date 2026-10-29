@@ -9,7 +9,6 @@
     "validate:content": "node scripts/validate-content.mjs",
     "test:unit": "node --test tests/unit/*.test.mjs",
     "test:browser": "playwright test",
-    "audit:production": "node tests/helpers/audit-production.mjs",
     "test:serve": "node tests/helpers/static-server.mjs"
   },
   "devDependencies": {

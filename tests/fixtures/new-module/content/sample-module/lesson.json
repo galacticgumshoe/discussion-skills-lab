@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1, "id": "sample-module", "title": "Test module", "duration": "TEST ONLY",
+  "activities": [{"id": "test-question", "source": "question.json"}, {"id": "test-checks", "source": "checklist.json"}, {"id": "test-writing", "source": "writing.json"}],
+  "sections": [
+    {"id": "test-explanation", "label": "Test explanation", "heading": "Test explanation", "headingLevel": 1, "requirement": "Select test option B.", "reference": false, "gateActivityIds": ["test-question"], "blocks": [{"type": "markdown", "source": "explanation.md"}, {"type": "activity", "activityId": "test-question"}]},
+    {"id": "test-worksheet", "label": "Test worksheet", "heading": "Test worksheet", "headingLevel": 2, "requirement": "Enter five test characters and check both test labels.", "reference": false, "gateActivityIds": ["test-checks", "test-writing"], "blocks": [{"type": "activity", "activityId": "test-writing"}, {"type": "activity", "activityId": "test-checks"}]},
+    {"id": "test-reference", "label": "Test reference", "heading": "Test reference", "headingLevel": 2, "requirement": "Always available.", "reference": true, "gateActivityIds": [], "blocks": [{"type": "reference", "source": "reference.json"}]}
+  ]
+}

@@ -1,0 +1,479 @@
+{
+  "reportSha256": "53c2ee06c32db4ad0b654e3fc17e4ebff77128c18286cba67902cd45d5394a0e",
+  "stats": {
+    "startTime": "2026-10-28T22:57:27.001Z",
+    "duration": 143827.26499999998,
+    "expected": 31,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "errors": [],
+  "tests": [
+    {
+      "title": "/ homepage exact copy, card order, links and licenses",
+      "file": "home.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1029,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ homepage failure retains useful links and can retry safely",
+      "file": "home.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1139,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ homepage no-JavaScript lesson navigation",
+      "file": "home.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 523,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ homepage exact copy, card order, links and licenses",
+      "file": "home.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 593,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ homepage failure retains useful links and can retry safely",
+      "file": "home.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 561,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ homepage no-JavaScript lesson navigation",
+      "file": "home.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 469,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/opening semantic print survives view renumbering/reordering from ordinary and reference screens",
+      "file": "print-isolation.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 4282,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/opening semantic print reports incomplete references independently of failed activities",
+      "file": "print-isolation.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 30309,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/middle semantic print survives view renumbering/reordering from ordinary and reference screens",
+      "file": "print-isolation.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 35711,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/middle semantic print reports incomplete references independently of failed activities",
+      "file": "print-isolation.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1055,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/final semantic print survives view renumbering/reordering from ordinary and reference screens",
+      "file": "print-isolation.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 9385,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/final semantic print reports incomplete references independently of failed activities",
+      "file": "print-isolation.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2124,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/opening semantic print survives view renumbering/reordering from ordinary and reference screens",
+      "file": "print-isolation.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 6113,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/opening semantic print reports incomplete references independently of failed activities",
+      "file": "print-isolation.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1814,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/middle semantic print survives view renumbering/reordering from ordinary and reference screens",
+      "file": "print-isolation.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 8061,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/middle semantic print reports incomplete references independently of failed activities",
+      "file": "print-isolation.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2530,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/final semantic print survives view renumbering/reordering from ordinary and reference screens",
+      "file": "print-isolation.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 10033,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/final semantic print reports incomplete references independently of failed activities",
+      "file": "print-isolation.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1938,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/opening shared shell: skip, counts, responsive navigation, focus, single mount and silent hydration",
+      "file": "shell.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2240,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/opening public journey and completed v1 fixture replay",
+      "file": "shell.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 6458,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/middle shared shell: skip, counts, responsive navigation, focus, single mount and silent hydration",
+      "file": "shell.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2199,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/middle public journey and completed v1 fixture replay",
+      "file": "shell.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 37154,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/final shared shell: skip, counts, responsive navigation, focus, single mount and silent hydration",
+      "file": "shell.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 21185,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/final public journey and completed v1 fixture replay",
+      "file": "shell.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 25841,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/opening shared shell: skip, counts, responsive navigation, focus, single mount and silent hydration",
+      "file": "shell.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3178,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/opening public journey and completed v1 fixture replay",
+      "file": "shell.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 9879,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/middle shared shell: skip, counts, responsive navigation, focus, single mount and silent hydration",
+      "file": "shell.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3203,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/middle public journey and completed v1 fixture replay",
+      "file": "shell.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 13739,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/final shared shell: skip, counts, responsive navigation, focus, single mount and silent hydration",
+      "file": "shell.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 23726,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/final public journey and completed v1 fixture replay",
+      "file": "shell.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 13653,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "shared shell manifest failure has retry, no fabricated lesson and no writes",
+      "file": "shell.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1249,
+          "errors": []
+        }
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "001-semantic-reference-PDF-2418202107edd6571cc45a79911064c29d9f7fc7.pdf",
+      "source": "/Users/rhys/git/discussion-skills-lab/test-results/m8-approved-public-chromium/print-isolation--opening-s-f20aa-inary-and-reference-screens-chromium/attachments/semantic-reference-PDF-2418202107edd6571cc45a79911064c29d9f7fc7.pdf",
+      "sha256": "6a78a248312c8ee00a1dacdde431d53a10f6a8580260d58af46c04ab0fe7658a"
+    },
+    {
+      "name": "002-semantic-reference-PDF-9ebf2ad3b4f5e376fcf02b12b5863522dd57e53f.pdf",
+      "source": "/Users/rhys/git/discussion-skills-lab/test-results/m8-approved-public-chromium/print-isolation--opening-s-f20aa-inary-and-reference-screens-chromium/attachments/semantic-reference-PDF-9ebf2ad3b4f5e376fcf02b12b5863522dd57e53f.pdf",
+      "sha256": "37b4114ab421828a2fc3da6d78d5ac4b6ad1abd1c749f0200738147ae4debc22"
+    },
+    {
+      "name": "003-semantic-reference-PDF-7813e2e365fdec76fea662d8b97721cd7eb7f9c6.pdf",
+      "source": "/Users/rhys/git/discussion-skills-lab/test-results/m8-approved-public-chromium/print-isolation--middle-se-1b814-inary-and-reference-screens-chromium/attachments/semantic-reference-PDF-7813e2e365fdec76fea662d8b97721cd7eb7f9c6.pdf",
+      "sha256": "89ef93424fb6f64417bfacc1fd31ca619aa315cdffc7dfe86025ee867bc0da6a"
+    },
+    {
+      "name": "004-semantic-reference-PDF-6934b8187d99b6f65461e54c6845099599d1fa0d.pdf",
+      "source": "/Users/rhys/git/discussion-skills-lab/test-results/m8-approved-public-chromium/print-isolation--middle-se-1b814-inary-and-reference-screens-chromium/attachments/semantic-reference-PDF-6934b8187d99b6f65461e54c6845099599d1fa0d.pdf",
+      "sha256": "b1b680b8273706f0ff38ac86760a041a8018dac4d1afb3d92354f4f922bdbf5b"
+    },
+    {
+      "name": "005-semantic-reference-PDF-bce1474970f16f847957d08b251445e03fd64e2c.pdf",
+      "source": "/Users/rhys/git/discussion-skills-lab/test-results/m8-approved-public-chromium/print-isolation--final-sem-73462-inary-and-reference-screens-chromium/attachments/semantic-reference-PDF-bce1474970f16f847957d08b251445e03fd64e2c.pdf",
+      "sha256": "a109ab51cdc50787dae19a150654ab8c4bda7bf1e64479b508336b1c68791a7f"
+    },
+    {
+      "name": "006-semantic-reference-PDF-1a26e2f1008e68c6e6980a4b961edd040bd86535.pdf",
+      "source": "/Users/rhys/git/discussion-skills-lab/test-results/m8-approved-public-chromium/print-isolation--final-sem-73462-inary-and-reference-screens-chromium/attachments/semantic-reference-PDF-1a26e2f1008e68c6e6980a4b961edd040bd86535.pdf",
+      "sha256": "6332173d8ee1c19e26c32d7e6e54d90d2ea4d3e5db2dfcbd22bfa7e94e242728"
+    },
+    {
+      "name": "007-semantic-reference-PDF-85b98bcc928fd02eaa7be3a50f6c90e830500aaa.pdf",
+      "source": "/Users/rhys/git/discussion-skills-lab/test-results/m8-approved-public-chromium/print-isolation--discussio-f440a-inary-and-reference-screens-chromium/attachments/semantic-reference-PDF-85b98bcc928fd02eaa7be3a50f6c90e830500aaa.pdf",
+      "sha256": "4513835f0e57f0bc398467e033bbb1b49150272945f51aa451e6cc3fcbdd47b5"
+    },
+    {
+      "name": "008-semantic-reference-PDF-19314d081d2f5295e3033d7e37eb2d367828dc4d.pdf",
+      "source": "/Users/rhys/git/discussion-skills-lab/test-results/m8-approved-public-chromium/print-isolation--discussio-f440a-inary-and-reference-screens-chromium/attachments/semantic-reference-PDF-19314d081d2f5295e3033d7e37eb2d367828dc4d.pdf",
+      "sha256": "d07ec543d01e4ce6cd72caa36e6e360b55acbc547108d40789114e7953da1d03"
+    },
+    {
+      "name": "009-semantic-reference-PDF-8c94661a78ee989accda6c9cddd05006947c9592.pdf",
+      "source": "/Users/rhys/git/discussion-skills-lab/test-results/m8-approved-public-chromium/print-isolation--discussio-7bc08-inary-and-reference-screens-chromium/attachments/semantic-reference-PDF-8c94661a78ee989accda6c9cddd05006947c9592.pdf",
+      "sha256": "70e2d7bb2b70a9edd7290e876ffb5a344b8a6409caa979c6a65f918183565828"
+    },
+    {
+      "name": "010-semantic-reference-PDF-7c6fda996cb28997d2dcb720c85e7deb51ae95f1.pdf",
+      "source": "/Users/rhys/git/discussion-skills-lab/test-results/m8-approved-public-chromium/print-isolation--discussio-7bc08-inary-and-reference-screens-chromium/attachments/semantic-reference-PDF-7c6fda996cb28997d2dcb720c85e7deb51ae95f1.pdf",
+      "sha256": "dd963d3d87fa97a84b9969602312ba49cf79e08d3f35942e7cc48e7898cc8da2"
+    },
+    {
+      "name": "011-semantic-reference-PDF-fc2563a84aaed716bb1d643c0017fa76bdf41bbe.pdf",
+      "source": "/Users/rhys/git/discussion-skills-lab/test-results/m8-approved-public-chromium/print-isolation--discussio-3dea9-inary-and-reference-screens-chromium/attachments/semantic-reference-PDF-fc2563a84aaed716bb1d643c0017fa76bdf41bbe.pdf",
+      "sha256": "77cba1e4f24ceccbe67a3ddfc6b7bd7b3c39e171a7e59daf24c067eab2120c6c"
+    },
+    {
+      "name": "012-semantic-reference-PDF-ff22b6ceb769e0e66b52319742dee5f6c19fcec4.pdf",
+      "source": "/Users/rhys/git/discussion-skills-lab/test-results/m8-approved-public-chromium/print-isolation--discussio-3dea9-inary-and-reference-screens-chromium/attachments/semantic-reference-PDF-ff22b6ceb769e0e66b52319742dee5f6c19fcec4.pdf",
+      "sha256": "646459b50591a7717fc7655a840df574f72c0183f8f72a40d11b710d8b1d34cf"
+    }
+  ]
+}

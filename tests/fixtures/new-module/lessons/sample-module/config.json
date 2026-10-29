@@ -1,0 +1,5 @@
+{
+  "schemaVersion": 1, "id": "sample-module", "storageKey": "dsl:sample-module:v1",
+  "content": "../../content/sample-module/lesson.json", "sectionOrder": ["test-explanation", "test-worksheet", "test-reference"],
+  "referenceId": "test-reference", "presentation": "legacy-shell"
+}

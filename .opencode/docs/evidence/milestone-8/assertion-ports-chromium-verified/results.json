@@ -1,0 +1,322 @@
+{
+  "reportSha256": "c81bc8c0f29db98f66c19f40039d1c6546c170cf3971b2740c376708c559fbf8",
+  "stats": {
+    "startTime": "2026-10-28T23:10:46.830Z",
+    "duration": 40687.218,
+    "expected": 22,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "errors": [],
+  "tests": [
+    {
+      "title": "/ duplicate mounts/writers fail; repeated destroy/remount leaves old nodes inert and one callback/Print",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1212,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ destroy during pending fetch cancels late work and frees the single writer",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 790,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ bounded registry rejects executable content; missing renderer isolates its activity",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 505,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ pending activity cannot block reference or read/save progress before preparation",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 589,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ failed Markdown blocks initial credit; retry is silent until the next real interaction",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 705,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ duplicate mounts/writers fail; repeated destroy/remount leaves old nodes inert and one callback/Print",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 860,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ destroy during pending fetch cancels late work and frees the single writer",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 622,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ bounded registry rejects executable content; missing renderer isolates its activity",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 575,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ pending activity cannot block reference or read/save progress before preparation",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 664,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ failed Markdown blocks initial credit; retry is silent until the next real interaction",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 531,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "root: extracted Middle reference preserves every source item/list/emphasis/class and preloads without progress",
+      "file": "middle-reference.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 31093,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "root: Middle reference failure/retry stays independent and never writes progress",
+      "file": "middle-reference.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1284,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "root: Middle reference alone prints from ordinary/fresh and reference views",
+      "file": "middle-reference.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1015,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab: extracted Middle reference preserves every source item/list/emphasis/class and preloads without progress",
+      "file": "middle-reference.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 28224,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab: Middle reference failure/retry stays independent and never writes progress",
+      "file": "middle-reference.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1693,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab: Middle reference alone prints from ordinary/fresh and reference views",
+      "file": "middle-reference.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1660,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ new module shares activities, gates, immediate drafts and ID-only progress",
+      "file": "new-module.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1021,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ new reference-only configuration has no quiz or storage access",
+      "file": "new-module.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 390,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ new module corrupt and unknown-version storage is never overwritten",
+      "file": "new-module.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1134,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ new module shares activities, gates, immediate drafts and ID-only progress",
+      "file": "new-module.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1407,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ new reference-only configuration has no quiz or storage access",
+      "file": "new-module.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 525,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ new module corrupt and unknown-version storage is never overwritten",
+      "file": "new-module.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 927,
+          "errors": []
+        }
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "001-Middle-ordinary-reference-PDF-7c7c6b4e190179532c45a2a3ae1a60bd50358f22.pdf",
+      "source": "/Users/rhys/git/discussion-skills-lab/test-results/m8-assertion-ports-chromium-verified/middle-reference-root-Midd-e1313-y-fresh-and-reference-views-chromium/attachments/Middle-ordinary-reference-PDF-7c7c6b4e190179532c45a2a3ae1a60bd50358f22.pdf",
+      "sha256": "480ee5cd489d4a43f4d1e14fa10b49a4e5d868e83bfdd74f5948bf68e8b67442"
+    },
+    {
+      "name": "002-Middle-reference-reference-PDF-8a021a04f84008906505b720305c1cbc9e63560e.pdf",
+      "source": "/Users/rhys/git/discussion-skills-lab/test-results/m8-assertion-ports-chromium-verified/middle-reference-root-Midd-e1313-y-fresh-and-reference-views-chromium/attachments/Middle-reference-reference-PDF-8a021a04f84008906505b720305c1cbc9e63560e.pdf",
+      "sha256": "59d54a1a6a48a76d7886980f70b587047c03f0fd0a5ea0703f4b6f16be0bac43"
+    },
+    {
+      "name": "003-Middle-ordinary-reference-PDF-6750b1d8d44537a5485341e866ff9017a32bb04b.pdf",
+      "source": "/Users/rhys/git/discussion-skills-lab/test-results/m8-assertion-ports-chromium-verified/middle-reference--discussi-456b7-y-fresh-and-reference-views-chromium/attachments/Middle-ordinary-reference-PDF-6750b1d8d44537a5485341e866ff9017a32bb04b.pdf",
+      "sha256": "d7454a2f578665727947f83a72acb953a5943e3405a8bbf914aaaad4c34f6610"
+    },
+    {
+      "name": "004-Middle-reference-reference-PDF-a851b84503e3707e6736547c66a7d20163fbee9c.pdf",
+      "source": "/Users/rhys/git/discussion-skills-lab/test-results/m8-assertion-ports-chromium-verified/middle-reference--discussi-456b7-y-fresh-and-reference-views-chromium/attachments/Middle-reference-reference-PDF-a851b84503e3707e6736547c66a7d20163fbee9c.pdf",
+      "sha256": "c4f9999851bbd377bfb8bef6878a8c0717ca42e0e5cbc4f929805cb42d59b002"
+    }
+  ]
+}

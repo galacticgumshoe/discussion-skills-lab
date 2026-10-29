@@ -12,9 +12,9 @@ for (const mount of ['/', '/discussion-skills-lab/']) {
     for (const id of ['index', ...lessons]) {
       await page.goto(`${mount}${id}.html`);
       const source = await (await request.get(`${mount}${id}.html`)).text();
-      // Extraction changes head child-node positions, not instructional markup.
-      // The unit test checks the entire transformed HTML byte-for-byte; compare
-      // inert content against the pinned HTML without mutable node-path indexes.
+      // Shared-shell entries no longer own instructional markup. Keep the sealed
+      // original inventory oracle and compare live external content independently;
+      // unit guards check current structure and exact served bytes, not old cutovers.
       const inventory = await page.evaluate(inventoryHTML, source);
       if (id === 'opening') {
         const baseline = await page.evaluate(inventoryHTML, original('opening.html').toString());
@@ -34,7 +34,20 @@ for (const mount of ['/', '/discussion-skills-lab/']) {
         expect(await page.evaluate(inventoryHTML, original('middle.html').toString())).toEqual(fixture('content/middle-html.json'));
         await expect(page.locator('#lesson-status')).toBeHidden();
         await expect(page.locator('[data-activity-id]')).toHaveCount(19);
-      } else expect(inventory).toEqual(fixture(`content/${id}-html.json`));
+       } else {
+         // Preserve the immutable inert inventory, then compare the actual
+         // content-driven homepage semantically rather than old DOM node paths.
+         expect(await page.evaluate(inventoryHTML, original('index.html').toString())).toEqual(fixture('content/index-html.json'));
+         await expect(page.locator('[data-home-status]')).toBeHidden();
+         const expected = await page.evaluate(source => {
+           const doc = new DOMParser().parseFromString(source, 'text/html');
+           return {heading:doc.querySelector('h1').textContent, intro:doc.querySelector('.intro').textContent, note:doc.querySelector('.note').textContent, footer:doc.querySelector('footer').textContent,
+             cards:[...doc.querySelectorAll('.lesson')].map(node=>[node.querySelector('h2').textContent,node.querySelector('p').textContent,node.querySelector('a').getAttribute('href')])};
+         }, original('index.html').toString());
+         await expect(page.locator('h1')).toHaveText(expected.heading); await expect(page.locator('.intro')).toHaveText(expected.intro);
+         await expect(page.locator('.note')).toHaveText(expected.note); await expect(page.locator('footer')).toHaveText(expected.footer);
+         expect(await page.locator('.lesson').evaluateAll(nodes=>nodes.map(node=>[node.querySelector('h2').textContent,node.querySelector('p').textContent,node.querySelector('a').getAttribute('href')]))).toEqual(expected.cards);
+       }
       const urls = await page.locator('[src],a[href],link[href]').evaluateAll(nodes => nodes.map(n => n.src || n.href).filter(Boolean));
       for (const href of new Set(urls)) {
         const url = new URL(href);

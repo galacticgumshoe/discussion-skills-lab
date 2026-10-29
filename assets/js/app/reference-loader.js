@@ -26,6 +26,7 @@ export function mountReference(root, { source, declaringUrl, allowedRootUrl }) {
         return [item.id, { url: bodyUrl, source: await loadMarkdown(bodyUrl, { signal: abort.signal }) }];
       })));
       if (destroyed) return;
+      root.dataset.referenceLayout = data.layout;
       renderReferenceItems(content, data, bodies); status.hidden = true; print.disabled = false;
     } catch (error) {
       if (destroyed) return;

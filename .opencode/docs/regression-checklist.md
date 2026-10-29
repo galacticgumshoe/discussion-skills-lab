@@ -1,5 +1,60 @@
 # Preservation regression checklist
 
+## Milestone 8 — targeted verification after approved local cutover
+
+**Current cleanup scope is inventory v2.** Every helper/browser/unit/unsealed
+harness file was reviewed; temporary consumer chains must be retired/retargeted,
+not used to justify permanent retention. T02/T08/T09/T10/T11 list assertion-port or
+deduplication prerequisites still to finish within milestone 8. Do not delete or
+disable useful assertions before replacements are proven. The old whole-Middle
+preview route/entry is retired (approved T01), since whole-lesson regressions use
+`middle.html`. All 18 approved whole-file removals and nine exact print-block
+removals preserve sealed originals/replay and meaningful variant archives.
+
+The earlier audit-only evidence is historical:
+`evidence/milestone-8-migration-audit-v2.md`. Actual approved implementation
+results are recorded in `evidence/milestone-8-approved-cleanup.md`.
+
+Current owner instruction supersedes the milestone's expensive full-suite runs:
+**run only tests aligned to shared shell/home/catalog/print/new-module/schema/store
+changes; do not commit before owner browser verification.** No complete browser or
+unit suite is claimed. See `evidence/milestone-8-verification.md` for exact commands,
+results and preflight failures. The legacy-removal inventory is the separate
+deletion/cutover approval gate; browser acceptance is not deletion permission.
+
+Root entries now use empty shared-shell mounts, external home content and the new
+semantic styles. Shell/home/print tests no longer import staging transformations.
+Use ordinary static hosting to review the actual pages. This is a local cutover,
+not publication. The three staging/snapshot/archive helpers are retired (T11)
+after direct-file verification and exclusive evidence preservation; old commands
+are historical provenance, not ongoing authoring instructions.
+
+Impact-aligned automated checks:
+
+```bash
+node --test tests/unit/milestone-8.test.mjs tests/unit/progress-adapters.test.mjs tests/unit/baseline.test.mjs tests/unit/lesson-validation.test.mjs tests/unit/completion.test.mjs tests/unit/opening-migration.test.mjs tests/unit/middle-migration.test.mjs tests/unit/final-migration.test.mjs
+npm run validate:content
+env CFFIXED_USER_HOME="$(mktemp -d)" npm run test:browser -- tests/browser/shell.spec.mjs tests/browser/home.spec.mjs tests/browser/new-module.spec.mjs tests/browser/print-isolation.spec.mjs --workers=1 --max-failures=1
+```
+
+The browser command is a **file-scoped selection**, not a whole-suite run. Use
+engine/project or `--grep` subsets for individual follow-ups; avoid rerunning every
+lesson presentation matrix for a local oracle/CSS fix. Firefox always needs the
+fresh command-scoped home on this macOS host. Node/fnm setup below still applies.
+
+After any additional approved removal, recheck source hashes/scope and rerun
+affected guards and public entry tests. Complete user browser verification before
+requesting commit permission. Milestone 8 remains incomplete until that checkpoint
+and remaining cleanup/port outcomes are reconciled. A complete long-running final
+suite remains **not run under the current explicit scope instruction**, not silently
+reported green; discuss any separately requested release verification later.
+
+Pending manual milestone-8 matrix (not performed by agent): Chrome/Firefox/Safari
+Print button and Cmd/Ctrl+P on ordinary/reference pages, backgrounds on/off and
+scaling; actual 200% zoom; iOS Safari/Android usability; screen reader/live feedback;
+physical printing. Headless WebKit/mobile viewport/PDF output is not real-device,
+Safari GUI or AT evidence. New PDF file review is labeled separately in evidence.
+
 ## Opening milestone-7 owner checkpoint / restricted test scope
 
 **Owner acceptance complete, 2026-10-28:** browser verification fully passes,
@@ -94,9 +149,13 @@ npm ci
 npx playwright install chromium firefox webkit
 npm run test:unit
 npm run validate:content
-npm run test:browser
-npm run audit:production
+env CFFIXED_USER_HOME="$(mktemp -d)" npm run test:browser
 ```
+
+These are available suite interfaces, not authorization to run the full suites
+under the current targeted-only instruction. The obsolete `audit:production`
+baseline-creation command was retired with approved T07; original-source seals,
+content/policy and replay regressions remain the preservation checks.
 
 On Linux, browser OS dependencies may require `npx playwright install --with-deps`;
 obtain appropriate system-install permission first. The original capture session used an official,

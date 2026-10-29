@@ -1,46 +1,46 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { readFileSync, readdirSync } from 'node:fs';
+import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import http from 'node:http';
 import vm from 'node:vm';
 import { original, revision, productionPaths, sha256, root } from '../helpers/baseline-source.mjs';
 import { extractBanks } from '../helpers/content-baseline.mjs';
 import { startServer } from '../helpers/static-server.mjs';
-import { openingExtraction } from '../helpers/opening-extraction.mjs';
-import { openingCutover } from '../helpers/opening-cutover.mjs';
-import { finalCutover } from '../helpers/final-cutover.mjs';
-import { middleCutover } from '../helpers/middle-cutover.mjs';
 
 const json = path => JSON.parse(readFileSync(`${root}tests/fixtures/${path}`));
-test('Opening extraction and lesson cutovers are bounded; other runtime/license bytes remain pinned', () => {
-  const extracted = openingExtraction(original('opening.html').toString());
-  assert.equal(readFileSync(`${root}opening.html`, 'utf8'), openingCutover(original('opening.html').toString()));
-  assert.ok(readFileSync(`${root}assets/css/opening.css`, 'utf8').startsWith(extracted.css.trimEnd()));
+test('public entries use one shared shell and semantic print; unchanged licenses/assets and original banks remain pinned', () => {
+  for (const id of ['opening', 'middle', 'final']) {
+    const html = readFileSync(`${root}${id}.html`, 'utf8');
+    assert.equal((html.match(/class="app-shell"/g) || []).length, 1);
+    assert.match(html, /<div class="app-shell"><\/div>/);
+    assert.doesNotMatch(html, /id="(?:layout|rail-links|views|lesson-status)"|onclick=|assets\/js\/lesson-core\.js|__fixtures/);
+    assert.equal((html.match(/<script type="module"/g) || []).length, 1);
+    assert.match(html, new RegExp(`<script type="module" src="assets/js/${id}\\.js"`));
+    const styles = [...html.matchAll(/<link[^>]*href="(assets\/css\/[^\"]+)"/g)].map(match => match[1]);
+    assert.equal(styles[0], 'assets/css/tokens.css');
+    assert.equal(styles.at(-1), 'assets/css/print.css');
+    assert.ok(styles.indexOf('assets/css/reference.css') > styles.indexOf(`assets/css/${id}.css`));
+    assert.match(html, /https:\/\/cdn\.tailwindcss\.com\/3\.4\.17/);
+    assert.match(html, /fonts\.googleapis\.com/);
+  }
+  assert.equal(existsSync(`${root}assets/js/lesson-core.js`), false, 'retired production copy only; pinned replay remains below');
+  assert.doesNotMatch(readFileSync(`${root}assets/css/print.css`, 'utf8'), /#view-[789]/);
   assert.match(readFileSync(`${root}assets/js/opening.js`, 'utf8'), /mountLesson/);
   assert.doesNotMatch(readFileSync(`${root}assets/js/opening.js`, 'utf8'), /DSL|localStorage|const (classification|quiz|practice)/);
   // README developer-testing guidance was separately authorized after extraction.
   // Keep canonical README/replay evidence pinned, but allow current documentation.
-  assert.equal(readFileSync(`${root}final.html`, 'utf8'), finalCutover(original('final.html').toString()));
-  assert.equal(readFileSync(`${root}middle.html`, 'utf8'), middleCutover(original('middle.html').toString()));
   const middleEntry = readFileSync(`${root}assets/js/middle.js`, 'utf8');
   assert.match(middleEntry, /mountLesson/);
   assert.doesNotMatch(middleEntry, /localStorage|DSL\.createLesson|const (classification|research|strategies|applications|questions)|According to/);
   const finalEntry = readFileSync(`${root}assets/js/final.js`, 'utf8');
   assert.match(finalEntry, /mountLesson/);
   assert.doesNotMatch(finalEntry, /localStorage|DSL\.createLesson|const (questions|notes|checkLabels|goalTexts)|__fixtures/);
-  assert.ok(readFileSync(`${root}assets/css/middle.css`, 'utf8').startsWith(original('assets/css/middle.css').toString()));
-  assert.ok(readFileSync(`${root}assets/css/final.css`, 'utf8').startsWith(original('assets/css/final.css').toString()));
-  const finalStyles = readFileSync(`${root}assets/css/final.css`, 'utf8').slice(original('assets/css/final.css').length);
-  assert.match(finalStyles, /Milestone 6: opt-in Final presentation/);
-  for (const path of productionPaths.filter(path => !['opening.html', 'middle.html', 'assets/js/middle.js', 'assets/js/final.js', 'final.html', 'assets/css/middle.css', 'assets/css/final.css', 'README.md'].includes(path))) {
+  for (const path of ['.nojekyll', 'LICENSE', 'CONTENT_LICENSE.md', 'assets/favicon.svg']) {
     assert.deepEqual(readFileSync(`${root}${path}`), original(path), path);
   }
-  const source = Object.fromEntries(productionPaths.map(path => [path, readFileSync(`${root}${path}`, 'utf8')]));
-  source['assets/js/opening.js'] = extracted.js;
-  // Middle banks now have independent exact content tests. Retain the original
-  // bank extractor here for the unmigrated engines and immutable source seal.
-  source['assets/js/middle.js'] = original('assets/js/middle.js').toString();
-  source['assets/js/final.js'] = original('assets/js/final.js').toString();
+  // Read retired original implementation explicitly through the pinned reader,
+  // never a missing-file fallback. It still independently matches sealed banks.
+  const source = Object.fromEntries(productionPaths.map(path => [path, original(path).toString()]));
   assert.deepEqual(extractBanks(source), json('content/banks.json'));
 });
 test('canonical content/maps/progress/visual evidence has not been silently rewritten', () => {
@@ -140,18 +140,16 @@ test('server mounts, MIME, isolated pinned replay, allowlist, traversal and life
     for (const mount of ['/', '/discussion-skills-lab/', '/__original/', '/__original/discussion-skills-lab/']) {
       for (const path of productionPaths) {
         const result = await request(mount + path);
-        assert.equal(result.status, 200, mount + path);
         const current = !mount.startsWith('/__original/');
-        const expected = current && path === 'opening.html'
-          ? Buffer.from(openingCutover(original(path).toString()))
-           : current && path === 'final.html' ? Buffer.from(finalCutover(original(path).toString()))
-            : current && path === 'middle.html' ? Buffer.from(middleCutover(original(path).toString()))
-              : current && ['README.md', 'assets/css/middle.css', 'assets/css/final.css', 'assets/js/middle.js', 'assets/js/final.js'].includes(path) ? readFileSync(`${root}${path}`) : original(path);
+        if (current && path === 'assets/js/lesson-core.js') {
+          assert.equal(result.status, 404, 'retired production copy is not served'); continue;
+        }
+        assert.equal(result.status, 200, mount + path);
+        const expected = current ? readFileSync(`${root}${path}`) : original(path);
         assert.deepEqual(result.body, expected);
         if (path.endsWith('.js')) assert.match(result.headers['content-type'], /^text\/javascript/);
       }
     }
-    const extracted = openingExtraction(original('opening.html').toString());
     for (const mount of ['/', '/discussion-skills-lab/']) {
       for (const [path, payload, mime] of [
         ['assets/css/opening.css', readFileSync(`${root}assets/css/opening.css`, 'utf8'), 'text/css'],
@@ -166,6 +164,8 @@ test('server mounts, MIME, isolated pinned replay, allowlist, traversal and life
     assert.equal((await request('/__fixtures/legacy-maps/opening.json')).status, 200);
     assert.equal((await request('/final-harness.html')).status, 404);
     assert.equal((await request('/discussion-skills-lab/final-harness.html')).status, 404);
+    assert.equal((await request('/middle-harness.html')).status, 404);
+    assert.equal((await request('/discussion-skills-lab/middle-harness.html')).status, 404);
     for (const path of ['/../LICENSE', '/%2e%2e/LICENSE', '/__original/%2e%2e/LICENSE', '/assets%5c..%5cLICENSE', '/%252e%252e/LICENSE', '/%00', '/%zz']) {
       // Supply raw request path; URL parsers otherwise normalize traversal before send.
       const status = await new Promise(resolve => http.get({ hostname: '127.0.0.1', port: new URL(server.url).port, path }, res => { res.resume(); resolve(res.statusCode); }));

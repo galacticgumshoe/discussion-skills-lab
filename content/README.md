@@ -11,6 +11,13 @@ These grants do not include third-party libraries, fonts, marks or other
 third-party materials; see [third-party notices](../THIRD_PARTY_NOTICES.md).
 The existing root license grants remain authoritative.
 
+The homepage loads `home.md` (educational introduction,
+progress notice and disclaimer) and `catalog.json` (exact ordered lesson titles,
+descriptions and root links). These are also original © Rhys Jones / CC BY 4.0
+content. The owner-approved local cutover is implemented; publication remains a
+separate decision. See [authoring](../.opencode/docs/authoring.md) for the actual schemas,
+stable-ID rules and test-only new-module/worksheet/reference examples.
+
 ## Authoring / validation
 
 Node **22+** is needed only for development: `npm ci`, then

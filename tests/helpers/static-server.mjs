@@ -3,7 +3,6 @@ import { readFile, realpath } from 'node:fs/promises';
 import { resolve, sep, extname } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { root, original, productionPaths } from './baseline-source.mjs';
-import { middleCutover } from './middle-cutover.mjs';
 
 const mime = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8',
   '.js': 'text/javascript; charset=utf-8', '.mjs': 'text/javascript; charset=utf-8',
@@ -24,12 +23,6 @@ export async function startServer(port = 0) {
     const isReplay = path.startsWith('/__original/');
     if (isReplay) path = path.slice('/__original'.length);
     if (path.startsWith('/discussion-skills-lab/')) path = path.slice('/discussion-skills-lab'.length);
-    // A root-level isolated harness shares real relative production URLs without
-    // a <base>, copied content tree, or changing the public legacy entry.
-    if (!isReplay && path === '/middle-harness.html') {
-      res.writeHead(200, { 'Content-Type': mime['.html'], 'Cache-Control': 'no-store' });
-      return res.end(req.method === 'HEAD' ? undefined : middleCutover(original('middle.html').toString(), true));
-    }
     const isFixture = !isReplay && path.startsWith('/__fixtures/');
     if (path === '/') path = '/index.html';
     const relative = isFixture ? `tests/fixtures/${path.slice('/__fixtures/'.length)}` : path.slice(1);

@@ -1,0 +1,992 @@
+{
+  "reportSha256": "d673d6e6a3797d63abc53b2289a3a0796b443663b6615bee213c8f61945ac895",
+  "stats": {
+    "startTime": "2026-10-28T23:12:01.433Z",
+    "duration": 214350.08,
+    "expected": 72,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "errors": [],
+  "tests": [
+    {
+      "title": "/ duplicate mounts/writers fail; repeated destroy/remount leaves old nodes inert and one callback/Print",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1504,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ destroy during pending fetch cancels late work and frees the single writer",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1055,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ bounded registry rejects executable content; missing renderer isolates its activity",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 552,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ pending activity cannot block reference or read/save progress before preparation",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 560,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ failed Markdown blocks initial credit; retry is silent until the next real interaction",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 694,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ duplicate mounts/writers fail; repeated destroy/remount leaves old nodes inert and one callback/Print",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 911,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ destroy during pending fetch cancels late work and frees the single writer",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 611,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ bounded registry rejects executable content; missing renderer isolates its activity",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 454,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ pending activity cannot block reference or read/save progress before preparation",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 508,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ failed Markdown blocks initial credit; retry is silent until the next real interaction",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 551,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ duplicate mounts/writers fail; repeated destroy/remount leaves old nodes inert and one callback/Print",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3441,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ destroy during pending fetch cancels late work and frees the single writer",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3132,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ bounded registry rejects executable content; missing renderer isolates its activity",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 932,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ pending activity cannot block reference or read/save progress before preparation",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 835,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ failed Markdown blocks initial credit; retry is silent until the next real interaction",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 999,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ duplicate mounts/writers fail; repeated destroy/remount leaves old nodes inert and one callback/Print",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1285,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ destroy during pending fetch cancels late work and frees the single writer",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 896,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ bounded registry rejects executable content; missing renderer isolates its activity",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 816,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ pending activity cannot block reference or read/save progress before preparation",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 866,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ failed Markdown blocks initial credit; retry is silent until the next real interaction",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 883,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ duplicate mounts/writers fail; repeated destroy/remount leaves old nodes inert and one callback/Print",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 4034,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ destroy during pending fetch cancels late work and frees the single writer",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2746,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ bounded registry rejects executable content; missing renderer isolates its activity",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1668,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ pending activity cannot block reference or read/save progress before preparation",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1781,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ failed Markdown blocks initial credit; retry is silent until the next real interaction",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1970,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ duplicate mounts/writers fail; repeated destroy/remount leaves old nodes inert and one callback/Print",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2262,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ destroy during pending fetch cancels late work and frees the single writer",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1578,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ bounded registry rejects executable content; missing renderer isolates its activity",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 989,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ pending activity cannot block reference or read/save progress before preparation",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1034,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ failed Markdown blocks initial credit; retry is silent until the next real interaction",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1129,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ duplicate mounts/writers fail; repeated destroy/remount leaves old nodes inert and one callback/Print",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 883,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ destroy during pending fetch cancels late work and frees the single writer",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 554,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ bounded registry rejects executable content; missing renderer isolates its activity",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 414,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ pending activity cannot block reference or read/save progress before preparation",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 571,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ failed Markdown blocks initial credit; retry is silent until the next real interaction",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 596,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ duplicate mounts/writers fail; repeated destroy/remount leaves old nodes inert and one callback/Print",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 932,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ destroy during pending fetch cancels late work and frees the single writer",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 762,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ bounded registry rejects executable content; missing renderer isolates its activity",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 462,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ pending activity cannot block reference or read/save progress before preparation",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 599,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ failed Markdown blocks initial credit; retry is silent until the next real interaction",
+      "file": "app-lifecycle.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 595,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ homepage, exact static content and local references",
+      "file": "baseline.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2435,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ homepage, exact static content and local references",
+      "file": "baseline.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 31700,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ homepage, exact static content and local references",
+      "file": "baseline.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 10138,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ homepage, exact static content and local references",
+      "file": "baseline.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 9648,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ homepage, exact static content and local references",
+      "file": "baseline.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 4523,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ homepage, exact static content and local references",
+      "file": "baseline.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 4488,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ homepage, exact static content and local references",
+      "file": "baseline.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 4783,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ homepage, exact static content and local references",
+      "file": "baseline.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 4483,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "root: extracted Middle reference preserves every source item/list/emphasis/class and preloads without progress",
+      "file": "middle-reference.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 30391,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "root: Middle reference failure/retry stays independent and never writes progress",
+      "file": "middle-reference.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1670,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "root: Middle reference alone prints from ordinary/fresh and reference views",
+      "file": "middle-reference.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 19632,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab: extracted Middle reference preserves every source item/list/emphasis/class and preloads without progress",
+      "file": "middle-reference.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 49798,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab: Middle reference failure/retry stays independent and never writes progress",
+      "file": "middle-reference.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1613,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab: Middle reference alone prints from ordinary/fresh and reference views",
+      "file": "middle-reference.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 29963,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "root: extracted Middle reference preserves every source item/list/emphasis/class and preloads without progress",
+      "file": "middle-reference.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1835,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "root: Middle reference failure/retry stays independent and never writes progress",
+      "file": "middle-reference.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 30613,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "root: Middle reference alone prints from ordinary/fresh and reference views",
+      "file": "middle-reference.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 28949,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab: extracted Middle reference preserves every source item/list/emphasis/class and preloads without progress",
+      "file": "middle-reference.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2233,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab: Middle reference failure/retry stays independent and never writes progress",
+      "file": "middle-reference.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2317,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab: Middle reference alone prints from ordinary/fresh and reference views",
+      "file": "middle-reference.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2015,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "root: extracted Middle reference preserves every source item/list/emphasis/class and preloads without progress",
+      "file": "middle-reference.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2002,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "root: Middle reference failure/retry stays independent and never writes progress",
+      "file": "middle-reference.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 5271,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "root: Middle reference alone prints from ordinary/fresh and reference views",
+      "file": "middle-reference.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1634,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab: extracted Middle reference preserves every source item/list/emphasis/class and preloads without progress",
+      "file": "middle-reference.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3385,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab: Middle reference failure/retry stays independent and never writes progress",
+      "file": "middle-reference.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 9085,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab: Middle reference alone prints from ordinary/fresh and reference views",
+      "file": "middle-reference.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3586,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "root: extracted Middle reference preserves every source item/list/emphasis/class and preloads without progress",
+      "file": "middle-reference.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 31966,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "root: Middle reference failure/retry stays independent and never writes progress",
+      "file": "middle-reference.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1551,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "root: Middle reference alone prints from ordinary/fresh and reference views",
+      "file": "middle-reference.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 21447,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab: extracted Middle reference preserves every source item/list/emphasis/class and preloads without progress",
+      "file": "middle-reference.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1423,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab: Middle reference failure/retry stays independent and never writes progress",
+      "file": "middle-reference.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1752,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab: Middle reference alone prints from ordinary/fresh and reference views",
+      "file": "middle-reference.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1678,
+          "errors": []
+        }
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "001-Middle-ordinary-reference-PDF-9b1249450cef8e6e3fffd83812bea669b036e719.pdf",
+      "source": "/Users/rhys/git/discussion-skills-lab/test-results/m8-final-ported-contracts/middle-reference-root-Midd-e1313-y-fresh-and-reference-views-chromium/attachments/Middle-ordinary-reference-PDF-9b1249450cef8e6e3fffd83812bea669b036e719.pdf",
+      "sha256": "0664651e12b631abaf8beef6724a8ae6c1caed3689bf9eadf4ee2cbcbab0ab23"
+    },
+    {
+      "name": "002-Middle-reference-reference-PDF-258e4c24c74b2cf4e21c8c2896e39ce2468b8611.pdf",
+      "source": "/Users/rhys/git/discussion-skills-lab/test-results/m8-final-ported-contracts/middle-reference-root-Midd-e1313-y-fresh-and-reference-views-chromium/attachments/Middle-reference-reference-PDF-258e4c24c74b2cf4e21c8c2896e39ce2468b8611.pdf",
+      "sha256": "0664651e12b631abaf8beef6724a8ae6c1caed3689bf9eadf4ee2cbcbab0ab23"
+    },
+    {
+      "name": "003-Middle-ordinary-reference-PDF-b7a877e5788c84915bcfed77b64c92aeb4154439.pdf",
+      "source": "/Users/rhys/git/discussion-skills-lab/test-results/m8-final-ported-contracts/middle-reference--discussi-456b7-y-fresh-and-reference-views-chromium/attachments/Middle-ordinary-reference-PDF-b7a877e5788c84915bcfed77b64c92aeb4154439.pdf",
+      "sha256": "0750984f13916109c94c8c0349797c2cfa7114bdc5c5f40f9ab72fce24df4872"
+    },
+    {
+      "name": "004-Middle-reference-reference-PDF-de20d1daf41665e9a8a71c36f14a2a47a41a6366.pdf",
+      "source": "/Users/rhys/git/discussion-skills-lab/test-results/m8-final-ported-contracts/middle-reference--discussi-456b7-y-fresh-and-reference-views-chromium/attachments/Middle-reference-reference-PDF-de20d1daf41665e9a8a71c36f14a2a47a41a6366.pdf",
+      "sha256": "6c23a046c6d33004325a3829ff1e84e76657a9003ca98f94f8a3c3917346cb3f"
+    },
+    {
+      "name": "005-Middle-ordinary-reference-PDF-5efcf14734e2730dc58408d1eabe3064285d488c.pdf",
+      "source": "/Users/rhys/git/discussion-skills-lab/test-results/m8-final-ported-contracts/middle-reference-root-Midd-e1313-y-fresh-and-reference-views-mobile-chromium/attachments/Middle-ordinary-reference-PDF-5efcf14734e2730dc58408d1eabe3064285d488c.pdf",
+      "sha256": "dfcf5cda553bcb17a365807f542430dbaf52d407a8c7bbb81e5348e7448ccc93"
+    },
+    {
+      "name": "006-Middle-reference-reference-PDF-2130d3adfdddadf8f2268908be2e5a9bf8f2884b.pdf",
+      "source": "/Users/rhys/git/discussion-skills-lab/test-results/m8-final-ported-contracts/middle-reference-root-Midd-e1313-y-fresh-and-reference-views-mobile-chromium/attachments/Middle-reference-reference-PDF-2130d3adfdddadf8f2268908be2e5a9bf8f2884b.pdf",
+      "sha256": "a2b475eed692e77ce2f86153124614d944c0aeb14585094ca599035ffca7c5d7"
+    },
+    {
+      "name": "007-Middle-ordinary-reference-PDF-29ffba1353193c6a642ac427d921e9f9938b4020.pdf",
+      "source": "/Users/rhys/git/discussion-skills-lab/test-results/m8-final-ported-contracts/middle-reference--discussi-456b7-y-fresh-and-reference-views-mobile-chromium/attachments/Middle-ordinary-reference-PDF-29ffba1353193c6a642ac427d921e9f9938b4020.pdf",
+      "sha256": "39d1e819cc66965d55e55b0ee6ede4a353b668967856ed6c6c29014fa11d9e87"
+    },
+    {
+      "name": "008-Middle-reference-reference-PDF-8c74530adcd2cb63d8dbc02471f1c0b3b251d745.pdf",
+      "source": "/Users/rhys/git/discussion-skills-lab/test-results/m8-final-ported-contracts/middle-reference--discussi-456b7-y-fresh-and-reference-views-mobile-chromium/attachments/Middle-reference-reference-PDF-8c74530adcd2cb63d8dbc02471f1c0b3b251d745.pdf",
+      "sha256": "f71d67aa5caf5d811d84674b7981f362603839b7af337d28870322cceb81017a"
+    }
+  ]
+}

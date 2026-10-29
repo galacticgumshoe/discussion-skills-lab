@@ -1,0 +1,304 @@
+{
+  "version": 1,
+  "date": "2026-10-28",
+  "startingCommit": "fc51bac0e8a790ccf40f83720059feed7c9eb501",
+  "files": [
+    {
+      "path": "index.html",
+      "sha256": "a4b9ddf387ca45111134ae8d4b453c01abe81b2d02bbf0c2090551189eb929dc"
+    },
+    {
+      "path": "opening.html",
+      "sha256": "dcedd3099726c426b4563f5ce513e81fedbcf6edabd1058d9cad0191c2971fec"
+    },
+    {
+      "path": "middle.html",
+      "sha256": "ad66a868db9c76138ca3da5e502652722e0d62f7b3ab10999fde55bf06721d09"
+    },
+    {
+      "path": "final.html",
+      "sha256": "bdd6f1bb107658df14fce25c7beb833d7689653d01ec83654d45025714b37bce"
+    },
+    {
+      "path": "assets/js/lesson-core.js",
+      "sha256": "4b69e02b92067486422628106987caef2798ac5f257d89528fb6557f92c1856e"
+    },
+    {
+      "path": "assets/css/shared.css",
+      "sha256": "ebb1c60ec1a0539b53c937e0c618527236a15f9658ac5d9ad5d0e3c3f7f13c56"
+    },
+    {
+      "path": "assets/css/opening.css",
+      "sha256": "2210c12ed52f512681a8f94bf6d9fc77e149fb0e486441ccf580660b86490877"
+    },
+    {
+      "path": "assets/css/middle.css",
+      "sha256": "27ded11cd4db267077e331680e80c981d49677e1cca4a2bd5e99b05031a4d617"
+    },
+    {
+      "path": "assets/css/final.css",
+      "sha256": "355690f16382d99edce99955c5f535c99d2c4ab4f723d9ca8bb22f2006351599"
+    },
+    {
+      "path": "assets/css/components.css",
+      "sha256": "b660a8c622343f97eb020b87fb92f439df8f996e2c2743554d56633d35d2a3e8"
+    },
+    {
+      "path": "assets/css/tokens.css",
+      "sha256": "5cad41825281f964cf2e3827405000ada029bb607e02cdc273b8ee3cd54199d5"
+    },
+    {
+      "path": "assets/css/reference.css",
+      "sha256": "9fa3cdd304167fd8a33bba2eef8edaf47a5299f466f7e8de24c33271facac98e"
+    },
+    {
+      "path": "assets/css/print.css",
+      "sha256": "79599f91766ff65d5f5700b332a6400ed525ef5dd93508b4457446d06f42a725"
+    },
+    {
+      "path": "assets/css/home.css",
+      "sha256": "c14b8b113dbd171a3d0b1db2beca4b26da3fe2e4696f73663542441ac020fba6"
+    },
+    {
+      "path": "assets/js/opening.js",
+      "sha256": "b3f2ca51c627a42c87c9085703b1ff65f0d4aad0c2dafc6c5a5aaa7e2861908d"
+    },
+    {
+      "path": "assets/js/middle.js",
+      "sha256": "806074f465fe57134b1fb305b34d4085690326eaa9b77ad353067dc087c83c8c"
+    },
+    {
+      "path": "assets/js/final.js",
+      "sha256": "72c45a5e352e6c100e799f5cc13cee7209cd99c200776891760a644610ef226f"
+    },
+    {
+      "path": "assets/js/home.js",
+      "sha256": "bf17aaf87f9962d273d79ce6d10b65d3bf28787fc908f47cdda405d33631f6bc"
+    },
+    {
+      "path": "assets/js/app/lesson-shell.js",
+      "sha256": "a5c92bb29ba0a824ad60f38b620af53b418bc7e3bb73f9e95293fca03cb15b21"
+    },
+    {
+      "path": "assets/js/app/lesson-app.js",
+      "sha256": "9b581b21ea6718e58550905a13371faaaac62d0146d602683f8133fb658d4c6c"
+    },
+    {
+      "path": "assets/js/app/lesson-core.js",
+      "sha256": "e45f68f09bd7e66a0b3624fbd3b6aebd60e3be06c40bc6915aea196b6b794732"
+    },
+    {
+      "path": "assets/js/app/section-renderer.js",
+      "sha256": "34661bd3a46ccb5e281e209e05c6868ac1a76dd247f6f47c5fb6a568a9e23021"
+    },
+    {
+      "path": "assets/js/app/reference-loader.js",
+      "sha256": "c9f400d4a6136c731cfd11127e4d56c5ab26432b70d80b89cb00205809f2c3f5"
+    },
+    {
+      "path": "assets/js/components/quick-reference.js",
+      "sha256": "d50d434f8202a942d281e76c74ceea63e0bb11f18f78a4ea7d3d909093ed214b"
+    },
+    {
+      "path": "assets/js/app/progress-store.js",
+      "sha256": "e712b19f80a6f6bb2e6416ebf09c0705e84fa2e09f5cb6523b57a5e6ca68f319"
+    },
+    {
+      "path": "assets/js/app/id-progress-adapter.js",
+      "sha256": "b00d1e8d6a0ec39a3b15c592ebc96c4986480c9bb23c4a42518f2b5e0d21b9ce"
+    },
+    {
+      "path": "assets/js/app/catalog-validation.js",
+      "sha256": "327cb1f9aab88ef38152c15fd28d5c3cd14f1c69ab135d6bcbd91616cf47c2a5"
+    },
+    {
+      "path": "assets/js/app/lesson-validation.js",
+      "sha256": "f93781a47855f81af1cb2781bfe528c38935a6850d446280edd344aa4e558cff"
+    },
+    {
+      "path": "content/home.md",
+      "sha256": "6d5152e380dd370f501ca56f218c1184267d8bbc8476a46223644f8f627f53e4"
+    },
+    {
+      "path": "content/catalog.json",
+      "sha256": "16d95e4fbc9f60a1eb90b585428fe0a2bd2e4dc7fcb8b11bf70d26bb4cc7346a"
+    },
+    {
+      "path": "content/opening/lesson.json",
+      "sha256": "a2659689546025fad9255524b23c28582b29d31a4ecfbe5b20a19e6d6fe04800"
+    },
+    {
+      "path": "content/middle/lesson.json",
+      "sha256": "bd1b179972d081e2a1eeb8261759ecc10f859e46c5ae87e8d35845689ebe2349"
+    },
+    {
+      "path": "content/final/lesson.json",
+      "sha256": "908519b680587f3e43d0198288e640177eeb8b4882ff04b057a638a93f95594f"
+    },
+    {
+      "path": "content/middle/legacy-variants.json",
+      "sha256": "11046252b690c80e416578a06435dea47db90dd0cf5c2c6e70d9107af2f39b93"
+    },
+    {
+      "path": "content/final/legacy-variants.json",
+      "sha256": "828d755a233b7b7b590e887fed2c078ad53004212621d20b9f8802370785fdb8"
+    },
+    {
+      "path": "schemas/catalog.schema.json",
+      "sha256": "d6823a547e41a72faaaf488bfa643ba0e0b4c211a1ea05d8c7bb57d1a929b110"
+    },
+    {
+      "path": "schemas/lesson.schema.json",
+      "sha256": "da3d9818c06d92736b4f19a02d1f796f279b5927cc88fac5e24823315916ec6b"
+    },
+    {
+      "path": "schemas/id-progress.schema.json",
+      "sha256": "3bbad99254339bfb4aac6184a43326e1d44c65b260d6b36ff4c19d6f6bf1afe6"
+    },
+    {
+      "path": "scripts/validate-content.mjs",
+      "sha256": "f2c48808417895f9fb4c9f7f0986acd7d794960db0e5f60f035192adf569ff06"
+    },
+    {
+      "path": "lessons/opening/progress-adapter.js",
+      "sha256": "aa62197d32f8f4aff105a9e594cb974b6722324190101c01c70a7245d5ca171d"
+    },
+    {
+      "path": "lessons/middle/progress-adapter.js",
+      "sha256": "3c4864dfe32729a9f911c0c6ee4963fcd8f13aa13505799d64c250d1292ba4c8"
+    },
+    {
+      "path": "lessons/final/progress-adapter.js",
+      "sha256": "8f42f9cddf3309b3467080be90d09204363dafbb7f22454b2de4cfba239a8b13"
+    },
+    {
+      "path": "tests/helpers/baseline-source.mjs",
+      "sha256": "52002ed9bb366399e32e1b76f1a8a1d8adb6b96284b8edae6419a94c9e462913"
+    },
+    {
+      "path": "tests/helpers/static-server.mjs",
+      "sha256": "9b0b900631fd9fd26963fe28b33a314d9054ad39a50a297e3b6f2d533abb82a7"
+    },
+    {
+      "path": "tests/helpers/milestone-8-candidates.mjs",
+      "sha256": "76b9dec7a58d572bfa5c7db2107759a9d13d0dfa75996936707fe2b3dc835a36"
+    },
+    {
+      "path": "tests/fixtures/content/source/assets/js/lesson-core.js",
+      "sha256": "4b69e02b92067486422628106987caef2798ac5f257d89528fb6557f92c1856e"
+    },
+    {
+      "path": "tests/fixtures/content/source/index.html",
+      "sha256": "a4b9ddf387ca45111134ae8d4b453c01abe81b2d02bbf0c2090551189eb929dc"
+    },
+    {
+      "path": "tests/fixtures/new-module/entry.js",
+      "sha256": "60fcc4b04b1fafa310c34b86190c0923f68a24d5fb8f797d3398dc2c3e094b3f"
+    },
+    {
+      "path": "tests/fixtures/new-module/data.js",
+      "sha256": "f831685a5786ee76fced10731b9881470b5147d1cd9c5b4c62a20fecc6d24aaf"
+    },
+    {
+      "path": "tests/fixtures/new-module/lessons/sample-module/config.json",
+      "sha256": "24383679a7c87b20a2e7a500ae158af90242a707d0273c5aec789438cac1a187"
+    },
+    {
+      "path": "tests/fixtures/new-module/lessons/sample-reference/config.json",
+      "sha256": "18368bdbbc46256d30ea697b8a127e053bcfb8e875e7a4010fcdd73f0823c76d"
+    },
+    {
+      "path": "tests/unit/baseline.test.mjs",
+      "sha256": "fd10f2c5174aa582a102e1614eee917138455c2a1c23583bc30f67c6adb75c3b"
+    },
+    {
+      "path": "tests/unit/completion.test.mjs",
+      "sha256": "0429e5134a616ab6be63384cb3465d681eb5ff8381d3b01cf87f6c0030cfcb54"
+    },
+    {
+      "path": "tests/unit/milestone-8.test.mjs",
+      "sha256": "3c7b188da42adb361cdbd37860f37d5113b45ff7bc1e634447aefcd4b140da2d"
+    },
+    {
+      "path": "tests/browser/shell.spec.mjs",
+      "sha256": "42186a85b14bb60e0dfd42f30e4bda176c1b2f9851857e269b211510f4897195"
+    },
+    {
+      "path": "tests/browser/home.spec.mjs",
+      "sha256": "f7b8f1fe98d8cc41313269b93f18450a4869f5dd3e302ecec272f62d11f49554"
+    },
+    {
+      "path": "tests/browser/new-module.spec.mjs",
+      "sha256": "bb7be02266711f141f360b950ff72310b8b927b88ef7891e23d64e06269c2601"
+    },
+    {
+      "path": "tests/browser/print-isolation.spec.mjs",
+      "sha256": "f4937d0bdd3420c48bfbbac050021f8ca87f9649762c4c4b168d58081daf633f"
+    }
+  ],
+  "printBlocks": [
+    {
+      "path": "assets/css/shared.css",
+      "first": 22,
+      "last": 48,
+      "sha256": "7d03323ffe81c57b1b72810236fdf76fee2de334008e5c3b1db72ec87a12ff64",
+      "excerpt": "/* Print the reference as a compact handout; browser print settings may still override colors. */\n@page { size: letter portrait; margin: .35in; }\n@media print {\n  html,body { margin:0!important; padding:0!important; background:white!important; color:#142B49!important; }\n  html,body,#quick-reference,#quick-reference * { -webkit-print-color-adjust:exact!important; print-color-adjust:exact!important; }\n  .topbar,.rail,.mobile-nav,.bottom-controls,#nav-status,.lesson-view,.print-hide { display:none!important; }\n  .dsl-layout,.dsl-layout.sidebar-collapsed { display:block!important; padding:0!important; margin:0!important; min-height:0!important; }\n  .dsl-content { max-width:none!important; width:100%!important; margin:0!important; padding:0!important; }\n  #view-7 { display:block!important; margin:0!important; padding:0!important; }\n  #quick-reference { box-shadow:none!important; border:0!important; border-radius:0!important; margin:0!important; padding:0!important; font-size:9pt!important; line-height:1.2!important; }\n  #quick-reference h2 { font-size:17pt!important; margin:0!important; }\n  #quick-reference h4 { font-size:10pt!important; }\n  #quick-reference p { margin-top:3px!important; margin-bottom:3px!important; }\n  #quick-reference .mb-6 { margin-bottom:9px!important; }\n  #quick-reference .mb-4 { margin-bottom:6px!important; }\n  #quick-reference .mb-3 { margin-bottom:5px!important; }\n  #quick-reference .mt-4 { margin-top:6px!important; }\n  #quick-reference .gap-4 { gap:7px!important; }\n  #quick-reference .gap-3 { gap:5px!important; }\n  #quick-reference .gap-2 { gap:4px!important; }\n  #quick-reference .p-3,#quick-reference .\\!p-5 { padding:7px!important; }\n  #reference-content { display:grid!important; grid-template-columns:repeat(2,minmax(0,1fr))!important; gap:7px!important; }\n  #reference-content > :first-child,#reference-content > :last-child { grid-column:1/-1!important; }\n  #quick-reference section,#quick-reference .card { break-inside:avoid!important; page-break-inside:avoid!important; }\n  #quick-reference .sm\\:grid-cols-3 { display:grid!important; grid-template-columns:repeat(6,minmax(0,1fr))!important; }\n  #quick-reference .sm\\:grid-cols-2 { display:grid!important; grid-template-columns:repeat(4,minmax(0,1fr))!important; }\n}"
+    },
+    {
+      "path": "assets/css/middle.css",
+      "first": 9,
+      "last": 9,
+      "sha256": "09e0572e8250d76311a3a92b6a7d45bac2218e48aa6709ada26f0885219ee572",
+      "excerpt": "@media print{.view#print-view{display:block!important}.reference-shortcut{display:none!important}#reference-content{font-size:10pt;line-height:1.3}#reference-content .reference-box{break-inside:avoid;padding:10px;margin-top:8px}#reference-content p,#reference-content li{line-height:1.3}#print-view h2{font-size:18pt;margin:0 0 7px}}"
+    },
+    {
+      "path": "assets/css/middle.css",
+      "first": 11,
+      "last": 11,
+      "sha256": "70df4a288f76421283d154523a46494ae3f8442e286f3c01c35fbfc385b0246b",
+      "excerpt": "@media print{.lesson-view{display:none!important}#view-8{display:block!important}#view-8[hidden]{display:block!important}.topbar,.rail,.mobile-nav,.bottom-controls,#nav-status,.reference-shortcut{display:none!important}.dsl-layout{display:block!important;padding:0!important}.dsl-content{max-width:none!important}html,body,#view-8,#view-8 *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}}"
+    },
+    {
+      "path": "assets/css/middle.css",
+      "first": 33,
+      "last": 44,
+      "sha256": "967de609368eca58623905cefc300c41569dc0ccf624df85e76f005927dcf3b7",
+      "excerpt": "@media print{\n  #view-8 .middle-reference-sheet{box-shadow:none!important;border:0!important;padding:0!important;margin:0!important;}\n  #view-8 .middle-reference-print{display:none!important;}\n  #view-8 .middle-reference-header{margin:0 0 10px!important;gap:0!important;}\n  #view-8 .middle-reference-header h2{font-size:17pt!important;}\n  #view-8 #reference-content{display:block!important;}\n  #view-8 .middle-reference-item{padding:9px 12px!important;margin:0 0 7px!important;break-inside:avoid!important;page-break-inside:avoid!important;}\n  #view-8 .middle-reference-item h3{font-size:10pt!important;margin-bottom:5px!important;}\n  #view-8 .middle-reference-number{height:26px!important;min-width:34px!important;font-size:9pt!important;}\n  #view-8 .middle-reference-item li{font-size:9pt!important;line-height:1.24!important;margin:2px 0!important;}\n  html,body,#view-8,#view-8 *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;}\n}"
+    },
+    {
+      "path": "assets/css/middle.css",
+      "first": 46,
+      "last": 60,
+      "sha256": "240fd60b6026e4cbaaf7beb32b796ad8cfe1a92dd7445d39aa78b5d1cee73c3d",
+      "excerpt": "/* Middle Stage print isolation: shared.css prints Opening Stage's #view-7.\n   In Middle Stage #view-7 is the knowledge check, not the reference. */\n@media print {\n  #view-7, #view-7[hidden] { display:none!important; }\n  #view-8, #view-8[hidden] { display:block!important; }\n  #view-8 { break-before:auto!important; page-break-before:auto!important; }\n}\n\n/* Final print override: isolate only the Middle Stage reference page. */\n@media print {\n  .dsl-content > .lesson-view:not(#view-8),\n  #view-7, #view-7[hidden], .view#print-view {display:none!important;}\n  .dsl-content > #view-8, .dsl-content > #view-8[hidden] {display:block!important;}\n  #view-8 .middle-reference-sheet {break-before:auto!important;page-break-before:auto!important;}\n}"
+    },
+    {
+      "path": "assets/css/middle.css",
+      "first": 169,
+      "last": 174,
+      "sha256": "4b7c8a808e304bbf34610c84e868bb878812e6150d24034c1e1a272acc067d04",
+      "excerpt": "@media print{\n  .dsl-middle #lesson-status,.dsl-middle #lesson-retry,.dsl-middle #storage-warning,.dsl-middle [data-reference-print],.dsl-middle [data-reference-retry],.dsl-middle [data-reference-status]{display:none!important}\n  .dsl-middle #views>.lesson-view:not(#view-8){display:none!important}\n  .dsl-middle #view-8,.dsl-middle #view-8[hidden]{display:block!important;animation:none!important;opacity:1!important;border:0!important;padding:0!important;break-before:auto!important}\n  .dsl-middle #view-8>h2{font-size:17pt!important;margin:0 0 10px!important}\n}"
+    },
+    {
+      "path": "assets/css/final.css",
+      "first": 79,
+      "last": 91,
+      "sha256": "ec609979bb9f6f2563aa69e630ddfde70d79104c1159e56218bd85f1c9402907",
+      "excerpt": "/* Print by reference role, never by another lesson's page number. */\n@media print{\n .dsl-content > .lesson-view:not(#view-9),#view-7,#view-8{display:none!important}\n .dsl-content > #view-9,.dsl-content > #view-9[hidden]{display:block!important}\n #view-9 .final-reference-sheet{border:0!important;box-shadow:none!important;padding:0!important;margin:0!important}\n #view-9 .final-reference-header{gap:0!important;margin-bottom:10px!important}\n #view-9 .final-reference-header h2{font-size:17pt!important}\n #view-9 .final-reference-item{padding:9px 12px!important;margin-bottom:7px!important;break-inside:avoid!important;page-break-inside:avoid!important}\n #view-9 .final-reference-item h3{font-size:10pt!important;margin-bottom:5px!important}\n #view-9 .final-reference-item p{font-size:9pt!important;line-height:1.25!important;margin:2px 0!important}\n #view-9 .final-reference-number{height:26px!important;min-width:34px!important;font-size:9pt!important}\n html,body,#view-9,#view-9 *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}\n}"
+    },
+    {
+      "path": "assets/css/final.css",
+      "first": 199,
+      "last": 205,
+      "sha256": "90bf3cd9068e8653fbdb68bd411f4eb19478dfd0f1bb8a6f6a6dd2ca6689ca99",
+      "excerpt": "@media print{\n .dsl-final #views > .lesson-view:not([data-reference-view]){display:none!important}\n .dsl-final #views > [data-reference-view],.dsl-final #views > [data-reference-view][hidden]{display:block!important}\n .dsl-final #views > [data-reference-view] > h2,.dsl-final #lesson-status,.dsl-final [data-reference-retry]{display:none!important}\n /* Native print while loading/failed must explain an incomplete reference. */\n .dsl-final [data-reference-status]:not([hidden]){display:block!important}\n}"
+    },
+    {
+      "path": "assets/css/opening.css",
+      "first": 185,
+      "last": 199,
+      "sha256": "2b6e3664606d8b0a36e765726cb30256b1b241c95140b90e9cd41ce103ece8e0",
+      "excerpt": "@media print {\n  .dsl-opening #lesson-status,.dsl-opening #lesson-retry,.dsl-opening #storage-warning,\n  .dsl-opening [data-reference-print],.dsl-opening [data-reference-retry] { display:none!important; }\n  .dsl-opening #view-7,.dsl-opening #view-7[hidden] { display:block!important; }\n  .dsl-opening #view-7 > p:first-child { display:none!important; }\n  .dsl-opening [data-reference-status]:not([hidden]) { display:block!important; }\n  .dsl-opening #reference-content { gap:7px!important; }\n  .dsl-opening .opening-reference-badge { padding:4px 12px!important; }\n  .dsl-opening .opening-reference-group { padding:7px!important; }\n  .dsl-opening .opening-reference-group h4 { margin-bottom:5px!important; }\n  .dsl-opening .opening-reference-group ul { gap:4px!important; }\n  .dsl-opening .opening-reference-group li { font-size:9pt!important; padding:7px!important; }\n  .dsl-opening .opening-reference-1 ul { grid-template-columns:repeat(6,minmax(0,1fr))!important; }\n  .dsl-opening .opening-reference-4 ul { grid-template-columns:repeat(4,minmax(0,1fr))!important; }\n}"
+    }
+  ]
+}

@@ -5,7 +5,7 @@ const mounts = new WeakSet();
 
 export function mountNavigation(root, { sections, state }) {
   if (mounts.has(root)) throw new TypeError('Navigation is already mounted on this root. Destroy it before remounting.');
-  if (!Array.isArray(sections) || sections.length < 2 || new Set(sections.map(section => section.id)).size !== sections.length
+  if (!Array.isArray(sections) || sections.length < 1 || new Set(sections.map(section => section.id)).size !== sections.length
     || sections.filter(section => section.reference === true).length !== 1 || sections.at(-1).reference !== true) {
     throw new TypeError('Navigation needs unique ordered section IDs and one final reference.');
   }
@@ -46,7 +46,7 @@ export function mountNavigation(root, { sections, state }) {
     track.setAttribute('aria-valuemin', '0');
     track.setAttribute('aria-valuemax', String(counted.length));
     track.setAttribute('aria-valuenow', String(count));
-    fill.style.width = `${count / counted.length * 100}%`;
+    fill.style.width = `${counted.length ? count / counted.length * 100 : 0}%`;
     for (const section of ordered) {
       const { button, mark } = buttons.get(section.id), active = current === section.id, allowed = canVisit(section.id);
       button.disabled = !allowed;
@@ -63,7 +63,7 @@ export function mountNavigation(root, { sections, state }) {
     previous.disabled = index === 0 || isReference;
     // Reference is always reachable by its shortcut/rail/select, but the last
     // counted page's bottom Next still requires that page's completion.
-    const last = current === counted.at(-1).id;
+    const last = current === counted.at(-1)?.id;
     next.disabled = isReference || (last ? !completed.includes(current) : !canVisit(ordered[index + 1].id));
     next.textContent = last ? 'Open quick reference →' : 'Next section →';
     status.textContent = isReference ? 'Quick reference is always available.' : completed.includes(current)

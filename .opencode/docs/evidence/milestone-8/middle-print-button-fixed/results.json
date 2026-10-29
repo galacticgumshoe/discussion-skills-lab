@@ -1,0 +1,480 @@
+{
+  "reportSha256": "08a312d5045a1ab59078fb4898073bc088cdbeead9b83d9fbe4ba9fc106496d1",
+  "stats": {
+    "startTime": "2026-10-29T01:00:19.114Z",
+    "duration": 191701.533,
+    "expected": 32,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "errors": [],
+  "tests": [
+    {
+      "title": "root: Middle Print is a prominent button above the reference title on desktop and mobile",
+      "file": "middle-reference.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1832,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "root: extracted Middle reference preserves every source item/list/emphasis/class and preloads without progress",
+      "file": "middle-reference.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 854,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "root: Middle reference failure/retry stays independent and never writes progress",
+      "file": "middle-reference.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1254,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "root: Middle reference alone prints from ordinary/fresh and reference views",
+      "file": "middle-reference.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1031,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab: Middle Print is a prominent button above the reference title on desktop and mobile",
+      "file": "middle-reference.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 28327,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab: extracted Middle reference preserves every source item/list/emphasis/class and preloads without progress",
+      "file": "middle-reference.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 857,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab: Middle reference failure/retry stays independent and never writes progress",
+      "file": "middle-reference.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1321,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab: Middle reference alone prints from ordinary/fresh and reference views",
+      "file": "middle-reference.spec.mjs",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 996,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "root: Middle Print is a prominent button above the reference title on desktop and mobile",
+      "file": "middle-reference.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 4048,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "root: extracted Middle reference preserves every source item/list/emphasis/class and preloads without progress",
+      "file": "middle-reference.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1070,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "root: Middle reference failure/retry stays independent and never writes progress",
+      "file": "middle-reference.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1444,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "root: Middle reference alone prints from ordinary/fresh and reference views",
+      "file": "middle-reference.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1129,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab: Middle Print is a prominent button above the reference title on desktop and mobile",
+      "file": "middle-reference.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1540,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab: extracted Middle reference preserves every source item/list/emphasis/class and preloads without progress",
+      "file": "middle-reference.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 74577,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab: Middle reference failure/retry stays independent and never writes progress",
+      "file": "middle-reference.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1912,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab: Middle reference alone prints from ordinary/fresh and reference views",
+      "file": "middle-reference.spec.mjs",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1074,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "root: Middle Print is a prominent button above the reference title on desktop and mobile",
+      "file": "middle-reference.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 5091,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "root: extracted Middle reference preserves every source item/list/emphasis/class and preloads without progress",
+      "file": "middle-reference.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1392,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "root: Middle reference failure/retry stays independent and never writes progress",
+      "file": "middle-reference.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1663,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "root: Middle reference alone prints from ordinary/fresh and reference views",
+      "file": "middle-reference.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 5448,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab: Middle Print is a prominent button above the reference title on desktop and mobile",
+      "file": "middle-reference.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1666,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab: extracted Middle reference preserves every source item/list/emphasis/class and preloads without progress",
+      "file": "middle-reference.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3461,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab: Middle reference failure/retry stays independent and never writes progress",
+      "file": "middle-reference.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1591,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab: Middle reference alone prints from ordinary/fresh and reference views",
+      "file": "middle-reference.spec.mjs",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3490,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "root: Middle Print is a prominent button above the reference title on desktop and mobile",
+      "file": "middle-reference.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1234,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "root: extracted Middle reference preserves every source item/list/emphasis/class and preloads without progress",
+      "file": "middle-reference.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 769,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "root: Middle reference failure/retry stays independent and never writes progress",
+      "file": "middle-reference.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1178,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "root: Middle reference alone prints from ordinary/fresh and reference views",
+      "file": "middle-reference.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1109,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab: Middle Print is a prominent button above the reference title on desktop and mobile",
+      "file": "middle-reference.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 923,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab: extracted Middle reference preserves every source item/list/emphasis/class and preloads without progress",
+      "file": "middle-reference.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 724,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab: Middle reference failure/retry stays independent and never writes progress",
+      "file": "middle-reference.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1202,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab: Middle reference alone prints from ordinary/fresh and reference views",
+      "file": "middle-reference.spec.mjs",
+      "project": "mobile-chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 30884,
+          "errors": []
+        }
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "1-Middle-ordinary-reference-PDF-7b64fe8246942b8829a5694b30396574b7611dc5.pdf",
+      "sha256": "933b686818bc4989fb1d9ac3b886cf8ef095f7c93da8a7e17399d64ad07d5911"
+    },
+    {
+      "name": "2-Middle-reference-reference-PDF-61da279e56d396a8c8bd4a13416282011c921904.pdf",
+      "sha256": "2a6eab2f7b3c3ad3291ecc829afc735e2d7327ba113effaa28d38331df2d4cda"
+    },
+    {
+      "name": "3-Middle-ordinary-reference-PDF-f8273e913c07dcb09c331b2209cba66f824fca31.pdf",
+      "sha256": "a03c628eeddebd4068482487950f0efb39a50588ddaa6bc6c7003b5bc23fbaff"
+    },
+    {
+      "name": "4-Middle-reference-reference-PDF-5c6f356d02b402412337b328562012be51739a06.pdf",
+      "sha256": "a03c628eeddebd4068482487950f0efb39a50588ddaa6bc6c7003b5bc23fbaff"
+    },
+    {
+      "name": "5-Middle-ordinary-reference-PDF-9443b95b1ed376265ad8157f9f6a2e67278a527d.pdf",
+      "sha256": "08c6330f5b60d75d8b9446458f0fa9eafee9fe139638e7a70d662954d5290630"
+    },
+    {
+      "name": "6-Middle-reference-reference-PDF-adeaef6168db9939bc0b9f9b66555dcb8d668777.pdf",
+      "sha256": "0cf524836e5994338c8a037e7f11f488afed4f1e9dbce79173abd7cab4476ad9"
+    },
+    {
+      "name": "7-Middle-ordinary-reference-PDF-84e5f00c7ef1b05a9f53f974ebfb7e25312c23a3.pdf",
+      "sha256": "0cad69279917dfd93e9483b561971462d3f22559cea83e9869de95c2f7740f27"
+    },
+    {
+      "name": "8-Middle-reference-reference-PDF-a34a66e215abbbe48cd2a31bdbf7cce2856f3a59.pdf",
+      "sha256": "e052ca19d66f8d27402b8591e429323bd3d8930e32074e981c7e8fcadc45f143"
+    },
+    {
+      "name": "9-Middle-reference-button-1440px.png",
+      "sha256": "94860ddcf847a95d7710a7953af0fff966a926908dccbff2e11978c3b32b7b1b"
+    },
+    {
+      "name": "10-Middle-reference-button-390px.png",
+      "sha256": "1d958d4e02f791409398ba8d476b49ad14672fc121128371cc371cdb82cfd23d"
+    },
+    {
+      "name": "11-Middle-reference-button-1440px.png",
+      "sha256": "0396c90198f750eca54e6a0ef0bc1653dd5de3ecc3befa4fc1a15a15c9db6679"
+    },
+    {
+      "name": "12-Middle-reference-button-390px.png",
+      "sha256": "51912333ff248be90a9f93c26b90c0fc20159d83a1dbe153d3b15ed97d508afa"
+    }
+  ]
+}

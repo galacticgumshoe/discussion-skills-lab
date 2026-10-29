@@ -1,5 +1,57 @@
 # Canonical content inventory — milestone 1
 
+## Milestone 8 — approved local homepage/shell reconciliation
+
+Owner approved inventory v2's S/H/P/R and T01/T03–T07 scopes on 2026-10-28.
+The reviewed old containers/tools are removed locally, not their instruction.
+Public `index.html` now loads exact external replacements from
+`content/home.md` (eyebrow, main heading, introduction, progress notice, educational
+disclaimer) and `content/catalog.json` (three titles/descriptions/order/root links).
+`tests/browser/home.spec.mjs` compares rendered text/order/links/footer against
+`tests/fixtures/content/source/index.html`, not a newly authored expected copy.
+These original words remain © Rhys Jones / CC BY 4.0. Footer rights/license links
+remain structural. Title/favicon/vendor references and generic fallback labels
+are intentional small repetition exceptions, not a second prose source.
+
+All earlier content entries resolve to: published lesson manifests/Markdown/
+activities/reference (milestones 5–7 mappings below), retained nonpublished exact
+Middle/Final `content/<id>/legacy-variants.json` records, or the retained original
+source/initialized/generated evidence under `tests/fixtures/content/`. None has
+an instructional deletion disposition. This checkpoint does not newly publish archived
+variants or rely on similar wording as equivalence proof.
+
+Header titles already equal manifest titles; exact durations are now additive
+validated `duration` fields in all three `content/<id>/lesson.json` manifests.
+Repeated shell titles/durations now come from validated manifests; root document
+titles remain a deliberate metadata exception. The shared shell retains the help's
+Final-specific `Quick Reference` capitalization and Opening `← Previous` versus
+Middle/Final `← Back`. Generic runtime navigation/lock/progress statuses are
+retained by `assets/js/app/lesson-core.js`. No questions/feedback/models/keys/gates
+move or change here. Existing generated CSS cues are retained, including those
+used by the intentional legacy-decoy component fixture; they are not silently
+classified as dead code. Detailed retention/removal decisions:
+`legacy-removal-inventory.md`.
+
+### Expanded migration-container audit (inventory v2)
+
+The executable/unsealed migration harnesses are now explicit retirement candidates,
+not automatically retained with the actual meaningful variant archives. All six
+Final reference copies in `tests/fixtures/harness/content/final/reference/` are
+byte-identical to their canonical `content/final/reference/` counterparts; exact
+paths/hashes are in `evidence/milestone-8/migration-support-v2.json`. That result
+does **not** certify the entire mixed fixture tree safe to delete: activity/model/
+template/feedback coverage and unique test assertions must be reconciled first.
+
+The sealed originals/banks/source-index/maps and Middle/Final `legacy-variants.json`
+remain retained with provenance/licenses. Temporary route/entry code, generator
+code and copied review containers are evaluated separately. Eighteen approved
+whole files and nine exact old print blocks have been removed; sealed source,
+banks/maps/progress/visual evidence and both meaningful variant archives remain.
+`middle-reference.spec.mjs` now compares all five groups/18 list items/emphasis on
+the real `middle.html`. Generic lifecycle ports use noninstructional new-module
+data. Partial mixed-container/assertion reconciliation is still incomplete; no
+T02/T08/T09/T10 container is removed merely because some assertions have moved.
+
 ## Milestone 7 — Opening content-driven real entry
 
 Owner confirms milestone-6 acceptance in Safari and Chrome (navigation, style,

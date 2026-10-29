@@ -47,11 +47,13 @@ export function validateLessonConfig(data, context = {}) {
   const b = boundary();
   if (b.object(data, ['schemaVersion', 'id', 'storageKey', 'content', 'sectionOrder', 'referenceId', 'presentation'])) {
     b.check(data.schemaVersion === 1, '/schemaVersion');
-    b.check(['opening', 'middle', 'final'].includes(data.id), '/id');
-    b.check(data.storageKey === { opening: 'dsl:opening-stage:v1', middle: 'dsl:middle:v1', final: 'dsl:final:v1' }[data.id], '/storageKey');
+    b.check(identity(data.id), '/id');
+    b.check(data.id !== 'opening-stage', '/id', 'reserved legacy storage identity');
+    const legacyKey = { opening: 'dsl:opening-stage:v1', middle: 'dsl:middle:v1', final: 'dsl:final:v1' }[data.id];
+    b.check(legacyKey ? data.storageKey === legacyKey : data.storageKey === null || data.storageKey === `dsl:${data.id}:v1`, '/storageKey');
     b.source(data.content, '/content', '.json', context);
     b.list(data.sectionOrder, '/sectionOrder', (id, path) => b.check(identity(id), path));
-    if (Array.isArray(data.sectionOrder)) { b.ids(data.sectionOrder, '/sectionOrder'); b.check(data.sectionOrder.length >= 2 && data.sectionOrder.at(-1) === data.referenceId, '/referenceId'); }
+    if (Array.isArray(data.sectionOrder)) { b.ids(data.sectionOrder, '/sectionOrder'); b.check(data.sectionOrder.length >= 1 && data.sectionOrder.at(-1) === data.referenceId, '/referenceId'); }
     b.check(identity(data.referenceId), '/referenceId');
     b.check(data.presentation === 'legacy-shell', '/presentation');
   }
@@ -60,8 +62,9 @@ export function validateLessonConfig(data, context = {}) {
 
 export function validateLessonManifest(data, context = {}) {
   const b = boundary(), used = new Set(), declared = new Set();
-  if (b.object(data, ['schemaVersion', 'id', 'title', 'activities', 'sections'])) {
-    b.check(data.schemaVersion === 1, '/schemaVersion'); b.check(['opening', 'middle', 'final'].includes(data.id), '/id'); b.check(text(data.title), '/title');
+  if (b.object(data, ['schemaVersion', 'id', 'title', 'activities', 'sections'], ['duration'])) {
+    if (data.duration !== undefined) b.check(text(data.duration), '/duration');
+    b.check(data.schemaVersion === 1, '/schemaVersion'); b.check(identity(data.id), '/id'); b.check(text(data.title), '/title');
     b.list(data.activities, '/activities', (item, path) => {
       if (!b.object(item, ['id', 'source'], [], path)) return;
       b.check(identity(item.id), `${path}/id`); b.check(!declared.has(item.id), `${path}/id`, 'duplicate ID'); declared.add(item.id);
@@ -119,7 +122,7 @@ export function validateLessonManifest(data, context = {}) {
     });
     if (Array.isArray(data.sections)) {
       b.ids(data.sections, '/sections');
-      b.check(data.sections.length >= 2 && data.sections.filter(section => section?.reference === true).length === 1 && data.sections.at(-1)?.reference === true, '/sections');
+      b.check(data.sections.length >= 1 && data.sections.filter(section => section?.reference === true).length === 1 && data.sections.at(-1)?.reference === true, '/sections');
     }
     declared.forEach(id => b.check(used.has(id), '/activities', 'unused activity source'));
   }

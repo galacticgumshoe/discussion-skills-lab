@@ -10,7 +10,6 @@ import { validateActivityDocument, validateConfig, validateManifest, validateCon
 import { validateReferenceDocument } from '../../assets/js/app/content-validation.js';
 import { formatWriting } from '../../assets/js/utilities/writing-formatters.js';
 import { original } from '../helpers/baseline-source.mjs';
-import { openingCutover } from '../helpers/opening-cutover.mjs';
 
 const read = p => readFileSync(new URL(`../../${p}`, import.meta.url), 'utf8');
 const json = p => JSON.parse(read(p));
@@ -143,7 +142,8 @@ test('Opening v1 last checkpoint choice is separate from durable credit; absent 
   assert.equal(openingAdapter.encode(retry, { completed: [], data: { quizAnswers: [1, 0, 1, 2, 0], quizEarned: [] } }).data.quizAnswers[0], null);
 });
 test('Opening real shell cutover is bounded; no classic initializer, alternate preview or flashcards', () => {
-  assert.equal(read('opening.html'), openingCutover(original('opening.html').toString()));
+  assert.match(read('opening.html'), /<div class="app-shell"><\/div>/);
+  assert.doesNotMatch(read('opening.html'), /id="(?:views|layout)"|onclick=|assets\/js\/lesson-core\.js/);
   assert.doesNotMatch(read('assets/js/opening.js'), /localStorage|DSL|__fixtures/);
   assert.ok(manifest.activities.every(({ id }) => activity(id).type !== 'flashcards'));
   assert.match(read('assets/css/opening.css'), /clamp\(1\.85rem,3\.4vw,2\.6rem\)/);

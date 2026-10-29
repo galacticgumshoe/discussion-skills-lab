@@ -63,6 +63,7 @@ export function renderSections(root, { manifest, manifestUrl, allowedRootUrl, re
   const sections = manifest.sections.map((section, index) => {
     const view = node('section'), heading = node(`h${section.headingLevel}`, section.heading);
     view.className = 'view lesson-view'; view.id = `view-${index}`; view.dataset.sectionId = section.id;
+    view.dataset.viewRole = section.reference ? 'reference' : 'lesson';
     heading.id = section.headingId || `section-${section.id}-heading`; view.setAttribute('aria-labelledby', heading.id);
     heading.className = index === 0 ? 'display' : '';
     view.hidden = true;
@@ -103,6 +104,7 @@ export function renderSections(root, { manifest, manifestUrl, allowedRootUrl, re
         if (block.revealId) { group.dataset.revealId = block.revealId; group.hidden = true; reveals.push({ group, id: block.revealId }); }
       } else if (block.type === 'reference') {
         const reference = node('div'), content = node('div'), status = node('p'), retry = node('button', 'Retry Quick Reference'), print = node('button', block.printLabel || 'Print Quick Reference');
+        reference.dataset.referenceSheet = '';
         content.dataset.referenceContent = ''; status.dataset.referenceStatus = ''; status.setAttribute('role', 'status');
         retry.dataset.referenceRetry = ''; print.dataset.referencePrint = ''; retry.type = print.type = 'button'; retry.hidden = true; print.disabled = true;
         if (manifest.id === 'final') {
@@ -115,6 +117,10 @@ export function renderSections(root, { manifest, manifestUrl, allowedRootUrl, re
           reference.id = 'quick-reference'; reference.className = 'card opening-reference-sheet';
           print.className = 'secondary'; content.id = 'reference-content';
           reference.append(print, section.heading, status, retry, content);
+        } else if (manifest.id === 'middle') {
+          const header = node('div'), printWrap = node('div'); header.className = 'middle-reference-header'; printWrap.className = 'middle-reference-print';
+          print.className = 'btn'; printWrap.append(print);
+          header.append(printWrap, section.heading); reference.append(header, status, retry, content);
         } else reference.append(print, status, retry, content);
         parent.append(reference);
         references.push(mountReference(reference, { source: block.source, declaringUrl: manifestUrl, allowedRootUrl }));

@@ -168,6 +168,9 @@ test('navigation harness excerpts and ordered labels match pinned Opening conten
   }
   const script = readFileSync(new URL('../fixtures/harness/navigation.mjs', import.meta.url), 'utf8');
   const labels = [...script.matchAll(/label: '([^']+)'/g)].map(match => match[1]);
-  const opening = readFileSync(new URL('../../assets/js/opening.js', import.meta.url), 'utf8');
-  assert.deepEqual(labels, Array.from(vm.runInNewContext(opening.match(/labels:(\[[^\n]+\])/)[1])));
+  // The production entry is now thin. Keep this original-engine assertion pinned,
+  // and independently compare the external manifest rather than an absent bank.
+  assert.deepEqual(labels, Array.from(vm.runInNewContext(source.match(/labels:(\[[^\n]+\])/)[1])));
+  const manifest = JSON.parse(readFileSync(new URL('../../content/opening/lesson.json', import.meta.url), 'utf8'));
+  assert.deepEqual(labels, manifest.sections.map(section => section.label));
 });
