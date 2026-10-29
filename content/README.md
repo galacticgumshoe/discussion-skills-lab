@@ -15,10 +15,15 @@ The homepage loads `home.md` (educational introduction,
 progress notice and disclaimer) and `catalog.json` (exact ordered lesson titles,
 descriptions and root links). These are also original © Rhys Jones / CC BY 4.0
 content. The owner-approved local cutover is implemented; publication remains a
-separate decision. See [authoring](../.opencode/docs/authoring.md) for the actual schemas,
-stable-ID rules and test-only new-module/worksheet/reference examples.
+separate decision. See [adding modules](../docs/adding-modules.md) for the actual
+schemas, stable-ID rules and new-module/worksheet/reference examples.
 
 ## Authoring / validation
+
+For everyday changes, start with the [maintenance handbook](../docs/maintenance.md)
+and [content-editing recipes](../docs/editing-content.md). For a new
+resource, use the [complete module starter](../docs/adding-modules.md);
+for gates/buttons/navigation, use [controls and flow](../docs/controls-and-flow.md).
 
 Node **22+** is needed only for development: `npm ci`, then
 `npm run validate:content`. Static hosting needs no install or build.

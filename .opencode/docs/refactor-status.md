@@ -1627,3 +1627,162 @@ Working branch: `refactor/shared-components`.
 - Prerequisites satisfied: Owner verification/permission now permit committing the current checkpoint locally on the existing non-main branch. Next implementation task remains milestone 8's pending T02/T08/T09/T10 assertion ports/consolidation, not release.
 - Outstanding blockers: Remaining milestone-8 ports/final removal dispositions and documented manual-coverage limitations. No automatic extra implementation or testing is authorized by this commit request.
 - Decisions requiring approval: Local commit authorized by the quoted 2026-10-29 message. **Do not push.** No permission to merge, publish, tag, change Pages or expand cleanup; future removal scopes remain governed by the inventory. Stop after the local commit and report its hash.
+
+## Milestone handoff
+
+Milestone: Post-refactor maintenance documentation — **complete as a documentation task**, 2026-10-29. Owner reports satisfaction with the local look and feel and requests full ongoing content/control/flow/new-module instructions. This does not implement remaining milestone-8 cleanup or overwrite its historical incomplete dispositions.
+Starting commit: `c951efc566794b8cc32ae8f4799a1302f18935db` (actual HEAD before edits).
+Working branch: `refactor/shared-components` (clean at entry; all new changes in this task are documentation).
+
+### Implementation
+- Files created: `.opencode/docs/{maintenance,editing-content,controls-and-flow,adding-modules,checking-changes}.md`; `.opencode/docs/evidence/maintenance-documentation.md`. Includes content ownership/recipes, state/policy/control responsibilities, safe structural changes, an eleven-file worksheet starter, reference-only alternative, defaults, catalog/test-server integration, scoped checks and release safeguards.
+- Files modified: `README.md`, `content/README.md`, `.opencode/docs/{authoring,architecture,refactor-status}.md` link the handbook, distinguish ongoing authoring from historical milestones and record owner-reported local design acceptance. No inherited unrelated work, production edit, cleanup deletion, test-source/fixture/vendor/dependency/hosting change or visual adjustment.
+- Interfaces introduced: None in production. Documentation describes existing APIs; sample code is fenced documentation only and was extracted into a disposable temporary site for verification, not added as a public resource.
+- Content moved: None. Existing instructional prose/questions/keys/feedback/models/checklists/reference and preserved variants remain untouched; examples use noninstructional MIT labels. Original instructional licensing/attribution and third-party exclusions are documented.
+- Storage changes: None. All three existing v1 keys/codecs/maps and permanent credit/drafts remain unchanged. Documentation explicitly separates new-module ID defaults from legacy mappings; temporary samples use a fresh sample key or disabled storage. No student/personal storage accessed or reset.
+
+### Verification
+- Unit tests: **Passed 52/52**, `node --test tests/unit/lesson-validation.test.mjs tests/unit/milestone-8.test.mjs`, zero failures/skips, Node v22.23.4. Ad hoc `node --input-type=module` example extraction additionally passed two full sample graphs/catalog destinations, four JS syntax checks, six policy boundary cases and the separate question's schema/runtime validation; method/results in `evidence/maintenance-documentation.md`.
+- Browser tests: **Passed 4/4 ad hoc temporary-example journeys**, headless Chromium via `node --input-type=module` and Playwright: worksheet and nonpersistent reference on root/repository-prefix mounts, isolated contexts. Actual sample draft/check completion/restoration, permanent credit after clearing, write-free hydration, reference zero storage access and semantic print-media isolation pass. Not a production Playwright suite or other-engine/manual acceptance claim; temporary server/browser closed.
+- Content validation: **Passed**, `npm run validate:content`. Initial documentation link audit passed 73 local file links; final audit including evidence passed 79 local links/eight heading anchors across ten documents. `git diff --check` and explicit production/runtime/test/config diff exclusion passed. Production/content/policy/source files and frozen fixtures unchanged; detailed scope in `evidence/maintenance-documentation.md`.
+- Manual tests: No new interactive browser/device/AT/print-preview test. User accepts local look and feel; specific browser/version/device/zoom/AT/print coverage was not supplied. Agent reviewed documentation against actual source, not screenshots or fabricated manual results.
+- Tests not performed: Full unit/browser suites, public three-lesson journeys, Firefox/WebKit/mobile sample journeys, new original-engine replay, GUI print previews, physical printing, actual zoom, real-device/AT checks — documentation-only impact scope; no production behavior changed. Existing release/cleanup/manual limitations remain documented, not newly resolved or reinstated as blockers to this documentation task.
+
+### Compatibility
+- Legacy progress verified: No new legacy compatibility run; legacy keys/codecs/runtime are unchanged. Scoped identity-store units and temporary sample restoration/permanent-credit tests pass, without claiming these are the legacy fixture matrix.
+- Original-engine replay verified: Not rerun — documentation/examples only; immutable pin `0b5d2297e7cbc19bd59cde750492dd28e3983ca0` and original fixtures/replay machinery untouched. Guide warns against expanding the fixed replay allowlist when adding future public URLs.
+- Known regressions: None observed in listed documentation/example checks. No website behavior/look changes. Previously recorded T02/T08/T09/T10 cleanup/consolidation dispositions and unperformed manual coverage are unchanged.
+
+### Next milestone
+- Prerequisites satisfied: Requested ongoing maintenance handbook is complete, linked from README and backed by schema/unit/link checks and executed temporary sample recipes. Next task is whichever scoped content/behavior/new-module work the owner requests; this documentation task does not automatically resume cleanup or release.
+- Outstanding blockers: None for the requested documentation. Earlier milestone-8 cleanup/removal conditions remain separate historical work; no new runtime implementation or publication performed.
+- Decisions requiring approval: None to deliver these instructions. Commit, further cleanup, merge, push, release, tags or Pages changes require separate authorization; none inferred from local design satisfaction or this documentation request.
+
+## Milestone handoff
+
+Milestone: Human/agent documentation separation — **complete as a documentation follow-up**, 2026-10-29. Owner clarifies that lasting human-facing instructions must not live with disposable agent/refactor records. No additional refactor implementation or cleanup.
+Starting commit: `c951efc566794b8cc32ae8f4799a1302f18935db` (unchanged HEAD; inherited uncommitted maintenance-documentation work from the preceding entry).
+Working branch: `refactor/shared-components`.
+
+### Implementation
+- Files created: No additional guide content files; moved this session's five uncommitted guides from `.opencode/docs/` to `docs/{maintenance,editing-content,controls-and-flow,adding-modules,checking-changes}.md`.
+- Files modified: `AGENTS.md` records human `docs/` versus agent `.opencode/` ownership and disambiguates historical refactor paths; README and content README link only to durable human guides. The moved guides have corrected relative links and no dependency on agent documents; saved-progress compatibility and the Firefox command explanation are self-contained. `.opencode/docs/{authoring,architecture}.md` point to the new locations; uncommitted `evidence/maintenance-documentation.md` updates navigational targets and appends relocation results. This log is appended, not rewritten. All inherited work preserved; no old refactor record, fixture or implementation removed.
+- Interfaces introduced: None — documentation ownership/links only.
+- Content moved: Only human-facing maintenance guidance; no website instructional content or executable sample files moved/changed. No new module published; guide examples remain fenced documentation.
+- Storage changes: None — keys/codecs/defaults and student records untouched.
+
+### Verification
+- Unit tests: Not rerun — relocation and documentation prose/link changes only; previous 52/52 result remains historical.
+- Browser tests: Not rerun — no production or executable example change; previous temporary Chromium example checks retain their original scope.
+- Content validation: No standalone content validation rerun. Ad hoc `node --input-type=module` link/dependency audit **passed**: 76 local links/nine heading anchors, with all seven human-facing documents independent of `.opencode/`. `git diff --check` and explicit production/runtime/test/config exclusion diff **passed**. Details: `evidence/maintenance-documentation.md`, relocation section.
+- Manual tests: No browser/device/AT/print checks performed — documentation-only correction.
+- Tests not performed: Full or targeted unit/browser/content suites, replay, GUI printing/zoom/device/AT checks not repeated; no runtime changes justify them for this relocation. Documentation independence is verified by the link/dependency audit, not by deleting any historical files.
+
+### Compatibility
+- Legacy progress verified: Not newly exercised — runtime, three legacy keys/codecs and fixtures unchanged.
+- Original-engine replay verified: Not rerun — pinned source/tests unchanged. Historical refactor paths/seals remain protected and distinct from new human `docs/` paths.
+- Known regressions: None observed in documentation link/dependency checks. Website unchanged; no new release or refactor-cleanup claim.
+
+### Next milestone
+- Prerequisites satisfied: Human instructions now reside independently under root `docs/` and remain usable without agent/refactor documentation. Start at `docs/maintenance.md`; future content/control/module tasks remain separately scoped.
+- Outstanding blockers: None for this separation. Existing unfinished refactor-cleanup dispositions remain unchanged; removing that history is a future task, not performed now.
+- Decisions requiring approval: None for the requested documentation correction. No commit, merge, push, publication, tag, Pages change or historical-record removal authorized or performed.
+
+## Milestone handoff
+
+Milestone: Maintenance documentation scope correction — **complete**, 2026-10-29. Owner approves dropping the optional edits to the existing agent architecture/authoring documents while retaining agent handoff bookkeeping.
+Starting commit: `c951efc566794b8cc32ae8f4799a1302f18935db` (unchanged HEAD; preceding uncommitted human documentation work preserved).
+Working branch: `refactor/shared-components`.
+
+### Implementation
+- Files created: None.
+- Files modified: Removed only this task's edits to `.opencode/docs/{architecture,authoring}.md`; both now match HEAD. Appended this handoff; existing handoffs/evidence, root `docs/` guides, README links and documentation-ownership instructions remain intact.
+- Interfaces introduced: None.
+- Content moved: None; website instruction and human guides unchanged.
+- Storage changes: None.
+
+### Verification
+- Unit tests: Not performed — restoring two documentation files only.
+- Browser tests: Not performed — no website change.
+- Content validation: Not rerun — no instructional/schema changes. `git diff --exit-code -- .opencode/docs/architecture.md .opencode/docs/authoring.md` and `git diff --check` passed.
+- Manual tests: None — documentation-only scope correction.
+- Tests not performed: Unit/browser/content/replay/manual checks not repeated because runtime, content and executable examples are unchanged.
+
+### Compatibility
+- Legacy progress verified: Not rerun — keys/codecs/records untouched.
+- Original-engine replay verified: Not rerun — original source/fixtures unchanged.
+- Known regressions: None observed in the listed diff checks; no runtime changes.
+
+### Next milestone
+- Prerequisites satisfied: Human guides remain independently under root `docs/`; optional changes to the two existing agent documents are removed.
+- Outstanding blockers: None for this request; previous refactor-cleanup dispositions remain separate.
+- Decisions requiring approval: Owner approved this scoped restoration. No commit, push, publication or additional cleanup authorized or performed.
+
+## Milestone handoff
+
+Milestone: Durable maintenance skill and human usage guide — **complete**, 2026-10-29. Owner requests one skill with optional slash-command shortcuts and a human-facing usage guide. No website or refactor-cleanup implementation.
+Starting commit: `c951efc566794b8cc32ae8f4799a1302f18935db` (unchanged HEAD; inherited uncommitted human guides, README/content README/AGENTS updates, evidence and preceding handoffs preserved).
+Working branch: `refactor/shared-components`.
+
+### Implementation
+- Files created: `.opencode/skills/dsl-maintenance/SKILL.md`; `.opencode/commands/{dsl-maintain,dsl-content,dsl-flow,dsl-module,dsl-check}.md`; `docs/using-maintenance-skill.md`. One skill selects content, flow, module, check or other-maintenance workflows; all five thin wrappers load that exact skill, preserve full request arguments, stay in the current session and contain no shell substitutions. Check-only does not autofix; plan-only stops before implementation/tests unless requested.
+- Files modified: `docs/maintenance.md` and `README.md` link the human usage guide; `AGENTS.md` distinguishes durable skills/commands from disposable refactor records. This log appended for required bookkeeping. Existing `.opencode/docs/{architecture,authoring}.md` remain identical to HEAD as previously requested; no new evidence file or production/test/dependency/config change.
+- Interfaces introduced: Project skill ID `dsl-maintenance`, direct invocation `@dsl-maintenance`, and optional `/dsl-maintain`, `/dsl-content`, `/dsl-flow`, `/dsl-module`, `/dsl-check` commands. Definitions follow official OpenCode V2 skill/command documentation; no model override, delegation, install, plugin or additional OpenCode configuration required.
+- Content moved: None; original instruction/models/answers/reference unchanged. Human usage examples describe possible requests, not executed site changes.
+- Storage changes: None; skill instructions protect all three legacy keys/codecs, unknown data, permanent completion and drafts. No student/personal storage accessed.
+
+### Verification
+- Unit tests: No website unit suite rerun — agent prompt/docs tooling only. Ad hoc `node --input-type=module` assertions **passed** for skill frontmatter/five workflows/safety boundaries, five command frontmatters/routing/no-shell/no-delegation definitions, and 25 representative argument-preservation cases (empty, plan-only, review-only, quoted/metacharacter and multiline requests). These are static/template checks, not model-executed maintenance journeys.
+- Browser tests: Not performed — website unchanged. Native OpenCode `skill` tool with `{"id":"dsl-maintenance"}` **successfully discovered and loaded** the new project skill; no restart/config edit. No interactive slash-command execution or downstream content/flow/module modification was performed for testing.
+- Content validation: Website content validator not rerun — content/schema/runtime unchanged. Ad hoc link/dependency audit **passed** across 14 current human/skill/command files: 76 local links, nine heading anchors and zero links into refactor docs/specs. `git diff --check` and explicit production/runtime/test/config plus architecture/authoring exclusion diff **passed**.
+- Manual tests: No interactive TUI command submission, website/device/AT/zoom/print-preview check. Reviewed command/skill shapes against `https://opencode.ai/v2/docs/skills` and `https://opencode.ai/v2/docs/commands`; native skill loading is tool-observed, not a claim that every maintenance workflow was exercised.
+- Tests not performed: Website full/targeted unit/browser/content suites, original replay, manual printing/zoom/device/AT, interactive slash-command runs and model-driven edits through all routes — outside this prompt/docs-only scope. Native skill discovery/loading and static definitions/links were checked; behavioral skill compliance remains subject to human review and active tool permissions.
+
+### Compatibility
+- Legacy progress verified: Not newly exercised — production codecs/runtime/fixtures unchanged; skill documents protective requirements without claiming that instructions enforce them.
+- Original-engine replay verified: Not rerun — pinned source and fixed replay list untouched.
+- Known regressions: None observed in listed checks. Runtime and earlier human guides remain intact; new skill/commands/usage guide require no refactor-document dependencies or historical-record cleanup.
+
+### Next milestone
+- Prerequisites satisfied: One discoverable/loadable maintenance skill, five optional command wrappers and human guide linked from README/handbook are ready for use. Routine maintenance remains separately scoped by the user's request; no refactor milestone or release automatically resumed.
+- Outstanding blockers: None for requested files. Interactive slash-command use and downstream agent compliance are not verified by static assertions; user should review resulting changes/checks when first using the workflows.
+- Decisions requiring approval: Skill/wrappers/usage guide creation explicitly authorized. No commit, merge, push, publication, tag, Pages change, dependency upgrade or refactor cleanup authorized or performed.
+
+## Milestone handoff
+
+Milestone: Documentation/skill commit and milestone-8 cleanup guardrail — **complete as a documentation checkpoint**, 2026-10-29. Owner explicitly requests the guardrail and a local commit of all this documentation/skill work. Remaining milestone-8 cleanup is reserved for a new session.
+Starting commit: `c951efc566794b8cc32ae8f4799a1302f18935db` (actual HEAD before this commit-packaging task; all preceding uncommitted documentation/skill changes are this conversation's authorized commit scope).
+Working branch: `refactor/shared-components`.
+
+### Implementation
+- Files created: None additionally during packaging. Include the six root `docs/` guides, one `.opencode/skills/dsl-maintenance/SKILL.md`, five `.opencode/commands/dsl-*.md` wrappers and `.opencode/docs/evidence/maintenance-documentation.md` authored in the preceding entries.
+- Files modified: This appended guardrail/handoff, plus the previously reviewed `AGENTS.md`, `README.md` and `content/README.md` documentation ownership/navigation updates. Existing `.opencode/docs/{architecture,authoring}.md` match starting HEAD. No website source/content/config/schema, test/fixture, dependency, vendor/license or deployment edit; no cleanup deletion.
+- Interfaces introduced: None additionally. Commit preserves the previously documented single skill/five command interfaces, human guides and static hosting behavior.
+- Content moved: None additionally; only maintenance instructions/examples, not website instruction, are in this commit.
+- Storage changes: None; all three existing keys/codecs/maps and student records unchanged.
+
+### Verification
+- Unit tests: **Passed 52/52**, `node --test --test-reporter=dot tests/unit/lesson-validation.test.mjs tests/unit/milestone-8.test.mjs`. Ad hoc `node --input-type=module` skill/command checks **passed**: five workflows/five wrappers, required safety boundaries, no shell substitutions or forced subagent, 25 empty/quoted/metacharacter/multiline/limited-mode argument cases.
+- Browser tests: Not rerun for packaging — no production or example-code changes. Earlier four temporary-example Chromium journeys and native `dsl-maintenance` skill loading remain recorded under their actual scope, not newly executed results.
+- Content validation: **Passed**, `npm run validate:content`. Fresh ad hoc documentation/skill/command audit **passed**: 76 local links/nine heading anchors across 14 files, zero dependencies on refactor docs/specs. `git diff --check` and explicit runtime/content/test/config plus architecture/authoring exclusion diff **passed**; staged scope/whitespace reviewed before commit.
+- Manual tests: No new interactive slash-command, website/browser/device/AT/zoom/print-preview tests during packaging.
+- Tests not performed: Full unit/browser suites, original replay, new temporary-browser examples, interactive command execution and manual browser/printing/device/AT checks not repeated for this documentation-only commit. Earlier unperformed workflow-compliance checks remain unverified; no release acceptance inferred.
+
+### Compatibility
+- Legacy progress verified: No new legacy browser-fixture matrix; runtime/keys/codecs/fixtures untouched. Scoped validation/identity-store units passed.
+- Original-engine replay verified: Not rerun — original pin/source/replay list unchanged.
+- Known regressions: None observed in the listed checks. Website behavior/design and instruction remain unchanged; remaining cleanup conditions are not marked resolved.
+
+### Next milestone
+- Prerequisites satisfied: Documentation, maintenance skill/shortcuts, human usage guide and explicit cleanup guardrails are ready for the authorized local commit. The baseline is the resulting commit containing this handoff, with subject `docs: add maintenance guides and agent skill`; its full hash will be provided in the commit report. A new session must resolve and record that exact commit before editing, rather than treating the older migration-inventory revision as the documentation/skill baseline.
+- Outstanding blockers: No blocker to the requested documentation commit. Milestone 8 still has T02/T08/T09/T10 assertion-port/consolidation/removal conditions and the previously documented verification limits. The next implementation task is separately requested cleanup in a new session, not release or more work in this session.
+- Decisions requiring approval: Owner says “Please add the guardrail, and then commit all your changes.” This authorizes this local documentation/skill commit only. No push, merge, tag, publication, Pages change, expanded cleanup or runtime redesign authorized.
+
+#### Cleanup guardrails for the next session
+
+1. **Read before acting.** Read `AGENTS.md`, `.opencode/specs/refactor-milestone-8.md`, `.opencode/specs/refactor-contracts.md`, the latest actual milestone-8 implementation handoffs, `.opencode/docs/legacy-removal-inventory.md` and `.opencode/docs/evidence/milestone-8/assertion-port-checkpoint.md`, together with this guardrail. Resume only the requested remaining T02/T08/T09/T10 work under its exact approval/port/evidence conditions. The inventory predates the human guides and skill; it is not a removal authorization for these newer files. Refresh materially changed scopes/evidence and obtain required approval before removal.
+2. **Protect durable maintenance surfaces.** Root `docs/` (all six guides), `.opencode/skills/dsl-maintenance/SKILL.md`, `.opencode/commands/{dsl-maintain,dsl-content,dsl-flow,dsl-module,dsl-check}.md`, README/content README links and `AGENTS.md`'s documentation-ownership distinction are maintained product/tooling surfaces, not disposable migration scaffolding. Do not delete root `docs/` or broadly prune `.opencode/`. Historical refactor records using old `docs/` literals map to `.opencode/docs/`, not the current human guides. Removing refactor records themselves is a separate owner decision, not assumed part of this cleanup request.
+3. **Preserve documented contracts.** Cleanup must preserve instructional content/answers/models/criteria/reference, public URLs/static hosting/design, completion/access/reveal behavior, permanent credit/drafts/unknown data, all three v1 keys/codecs/maps, independent reference loading and semantic reference-only printing. Preserve original sealed/replay/variant/license artifacts and assertions. Do not change runtime behavior merely to make retiring tests easier or update historical baselines to hide differences.
+4. **Preserve skill/command semantics.** Keep skill ID `dsl-maintenance`, the five command names and their shared-skill routing, full argument handling, current-session/no-model-override behavior, no command-time shell substitutions or automatic delegation, plan-only/check-only boundaries, no automatic fixes in check-only mode and explicit publication/Git permission safeguards. Skill/commands and human guides must remain independent of refactor handoffs/evidence/specifications. Do not turn cleanup into a skill rewrite or introduce dependencies on retired harnesses.
+5. **Port assertions, then maintain references narrowly.** Before retiring tests/helpers/fixtures, prove equivalent assertions on public pages or suitable durable fixtures. Search root `docs/`, README, skill and wrappers for referenced commands, tests, paths and supported behavior. If a test/path is legitimately retired, update only its affected current guidance/reference after its replacement passes; preserve semantic coverage and report the exact reason/diff. No blanket restriction forces keeping obsolete filenames, but any broader instructional, workflow or behavior revision requires separate approval. Do not rewrite sealed historical records to modernize references.
+6. **Verify before declaring cleanup complete.** Compare all protected surfaces against this documentation/skill commit and explain every intentional difference. Rerun link/heading/dependency checks, skill/frontmatter/command-routing/argument checks and native skill loading, plus the impact-scoped content/policy/progress/browser/replay checks required by actual cleanup. If guides' executable starters or CLI instructions change, revalidate them. Report interactive slash-command/manual/device/AT/print checks as unperformed unless actually performed; static prompt checks cannot guarantee model compliance. Append the exact milestone handoff with tests, approvals, removals/retentions and remaining limits; no automatic commit/push/publication permission follows from passing checks.

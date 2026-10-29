@@ -52,9 +52,31 @@ Safari may automatically request `/apple-touch-icon.png` and `/apple-touch-icon-
 
 There is no `/health` endpoint or health polling in this static site. A plain `python3 -m http.server` returns 404 for that path. Repeated requests likely come from a separate monitoring tool, browser extension or development environment; inspect the browser's Network initiator or the requesting tool to identify them. Clearing lesson storage will not fix that polling. Requests for actual lesson HTML, CSS or JavaScript should succeed and warrant investigation if they return 404.
 
-## Add a lesson
+## Maintain and extend the site
 
-See [authoring](.opencode/docs/authoring.md) for concrete schema-valid examples and [architecture](.opencode/docs/architecture.md) for the current implementation/checkpoint.
+Start with the **[Website maintenance handbook](docs/maintenance.md)**:
+
+- [Edit content](docs/editing-content.md): prose, headings, questions,
+  answer keys/feedback, writing models, checklists, Quick References and homepage.
+- [Change controls and flow](docs/controls-and-flow.md): buttons,
+  navigation, reveals, completion rules, styles and saved-progress implications.
+- [Add modules](docs/adding-modules.md): complete copyable worksheet
+  starter, interactive lesson extensions, reference-only resources and catalog links.
+- [Check changes](docs/checking-changes.md): scoped tests, manual review,
+  troubleshooting and separately approved publication.
+- [Use the maintenance skill](docs/using-maintenance-skill.md): guided agent prompts
+  with `@dsl-maintenance` and optional `/dsl-*` shortcuts.
+
+These guides describe the current code. Most wording changes are Markdown/JSON
+edits; behavior changes need JavaScript and compatibility tests. No CMS or build
+step is required. Lasting human-facing documentation lives in `docs/`; agent
+instructions and refactor history/evidence live separately under `.opencode/`.
+
+### Add a lesson
+
+See [adding modules](docs/adding-modules.md) for the complete recipe and
+[controls and flow](docs/controls-and-flow.md) for implementation responsibilities
+and saved-progress compatibility.
 
 1. Supply `lessons/<id>/config.json`, a content manifest and Markdown/activity/reference files under `content/<id>/`. Preserve stable IDs, question order and answer/feedback associations.
 2. Use a thin static module importing `assets/js/app/lesson-app.js`, shared components and a small pure completion policy. Do not copy activities or use the retired classic global engine.
@@ -86,4 +108,4 @@ Copyright © 2026 Rhys Jones. The original instructional content was developed b
 
 Develop on a non-`main` branch. Only after testing, browser verification and explicit approval should changes be committed/merged/pushed to `main`; the configured GitHub Pages branch deployment then republishes automatically. Publication, tags and Pages settings are separate approval decisions, not automatic refactor steps. Retain original evidence and test progress/print styling before release.
 
-`npm ci`, `npm run validate:content`, `npm run test:unit` and `npm run test:browser` are development tools, not a production pipeline. Prefer impact-scoped test files/projects during editing; the [regression checklist](.opencode/docs/regression-checklist.md) documents exact commands, Firefox's macOS workaround and pending manual checks. Vendor versions/checksums/update procedure are in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Never rewrite baselines merely to hide a content, policy or accessibility regression.
+`npm ci`, `npm run validate:content`, `npm run test:unit` and `npm run test:browser` are development tools, not a production pipeline. Prefer impact-scoped test files/projects during editing; [checking changes](docs/checking-changes.md) documents commands, Firefox's macOS workaround and manual review. Vendor versions/checksums/update procedure are in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Never rewrite baselines merely to hide a content, policy or accessibility regression.
