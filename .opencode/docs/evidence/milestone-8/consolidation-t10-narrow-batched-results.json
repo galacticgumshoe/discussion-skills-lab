@@ -1,0 +1,605 @@
+{
+  "rawReport": "test-results/m8-t10-narrow-batched-report.log",
+  "sha256": "7f00bb2df61375a3212878b16941ae10b28c48a41162465e5ef787fcf24aa297",
+  "stats": {
+    "startTime": "2026-10-30T11:25:09.631Z",
+    "duration": 227980.7,
+    "expected": 17,
+    "skipped": 13,
+    "unexpected": 2,
+    "flaky": 0
+  },
+  "errors": [
+    {
+      "message": "\u001b[31mTesting stopped early after 2 maximum allowed failures.\u001b[39m"
+    }
+  ],
+  "cases": [
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/opening narrow controls/card faces, enlarged title/card contracts, reduced motion and restored cues",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 0,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 3177,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:25:11.115Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/middle narrow controls/card faces, enlarged title/card contracts, reduced motion and restored cues",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 0,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 5653,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:25:14.703Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/final narrow controls/card faces, enlarged title/card contracts, reduced motion and restored cues",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 0,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 7821,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:25:20.369Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/opening narrow controls/card faces, enlarged title/card contracts, reduced motion and restored cues",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 0,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 30887,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:25:28.202Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/middle narrow controls/card faces, enlarged title/card contracts, reduced motion and restored cues",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 0,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 5834,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:25:59.101Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/final narrow controls/card faces, enlarged title/card contracts, reduced motion and restored cues",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 0,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 8597,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:26:04.950Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/ Opening essentials retain compact paired rows at the exact mobile breakpoint",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 0,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 1754,
+          "errors": [],
+          "stdout": [],
+          "stderr": [
+            {
+              "buffer": ""
+            }
+          ],
+          "retry": 0,
+          "startTime": "2026-10-30T11:26:13.564Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ Opening essentials retain compact paired rows at the exact mobile breakpoint",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 0,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 31563,
+          "errors": [],
+          "stdout": [],
+          "stderr": [
+            {
+              "buffer": ""
+            }
+          ],
+          "retry": 0,
+          "startTime": "2026-10-30T11:26:15.332Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/opening narrow controls/card faces, enlarged title/card contracts, reduced motion and restored cues",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 1,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 10437,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:26:47.963Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/middle narrow controls/card faces, enlarged title/card contracts, reduced motion and restored cues",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 1,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 9096,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:27:01.001Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/final narrow controls/card faces, enlarged title/card contracts, reduced motion and restored cues",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 1,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 12011,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:27:10.117Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/opening narrow controls/card faces, enlarged title/card contracts, reduced motion and restored cues",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 1,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 4084,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:27:22.144Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/middle narrow controls/card faces, enlarged title/card contracts, reduced motion and restored cues",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 1,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 13645,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:27:26.247Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/final narrow controls/card faces, enlarged title/card contracts, reduced motion and restored cues",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 1,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 39046,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:27:39.917Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/ Opening essentials retain compact paired rows at the exact mobile breakpoint",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 1,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 2733,
+          "errors": [],
+          "stdout": [],
+          "stderr": [
+            {
+              "buffer": ""
+            }
+          ],
+          "retry": 0,
+          "startTime": "2026-10-30T11:28:18.988Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ Opening essentials retain compact paired rows at the exact mobile breakpoint",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 1,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 2313,
+          "errors": [],
+          "stdout": [],
+          "stderr": [
+            {
+              "buffer": ""
+            }
+          ],
+          "retry": 0,
+          "startTime": "2026-10-30T11:28:21.738Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/opening narrow controls/card faces, enlarged title/card contracts, reduced motion and restored cues",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 2,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 9768,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:28:25.405Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/middle narrow controls/card faces, enlarged title/card contracts, reduced motion and restored cues",
+      "project": "webkit",
+      "status": "unexpected",
+      "results": [
+        {
+          "workerIndex": 2,
+          "parallelIndex": 0,
+          "status": "failed",
+          "duration": 5809,
+          "error": {
+            "message": "Error: support-group\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+            "stack": "Error: support-group\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at /Users/rhys/git/discussion-skills-lab/tests/browser/presentation-contracts.spec.mjs:42:109",
+            "location": {
+              "file": "/Users/rhys/git/discussion-skills-lab/tests/browser/presentation-contracts.spec.mjs",
+              "column": 109,
+              "line": 42
+            },
+            "snippet": "  40 |       await publicVisit(page, section.id); await settle(page);\n  41 |       const view = page.locator(`[data-section-id=\"${section.id}\"]`);\n> 42 |       expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), section.id).toBe(true);\n     |                                                                                                             ^\n  43 |       if (!section.reference) {\n  44 |         if (id === 'final') {await page.evaluate(() => {document.documentElement.style.fontSize = '200%';}); await layoutReady(page);}\n  45 |         const heading = view.locator('h1,h2').first(); expect(await heading.evaluate((n, id) => {const s = getComputedStyle(n); return (id === 'middle' || n.scrollWidth <= n.clientWidth + 1) && s.overflowY === 'visible' && s.maxHeight === 'none';}, id)).toBe(true);"
+          },
+          "errors": [
+            {
+              "location": {
+                "file": "/Users/rhys/git/discussion-skills-lab/tests/browser/presentation-contracts.spec.mjs",
+                "column": 109,
+                "line": 42
+              },
+              "message": "Error: support-group\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  40 |       await publicVisit(page, section.id); await settle(page);\n  41 |       const view = page.locator(`[data-section-id=\"${section.id}\"]`);\n> 42 |       expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), section.id).toBe(true);\n     |                                                                                                             ^\n  43 |       if (!section.reference) {\n  44 |         if (id === 'final') {await page.evaluate(() => {document.documentElement.style.fontSize = '200%';}); await layoutReady(page);}\n  45 |         const heading = view.locator('h1,h2').first(); expect(await heading.evaluate((n, id) => {const s = getComputedStyle(n); return (id === 'middle' || n.scrollWidth <= n.clientWidth + 1) && s.overflowY === 'visible' && s.maxHeight === 'none';}, id)).toBe(true);\n    at /Users/rhys/git/discussion-skills-lab/tests/browser/presentation-contracts.spec.mjs:42:109"
+            }
+          ],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:28:36.770Z",
+          "annotations": [],
+          "attachments": [
+            {
+              "name": "screenshot",
+              "contentType": "image/png",
+              "path": "/Users/rhys/git/discussion-skills-lab/test-results/m8-t10-narrow-batched-all-projects/presentation-contracts--mi-2914d-ed-motion-and-restored-cues-webkit/test-failed-1.png"
+            },
+            {
+              "name": "error-context",
+              "contentType": "text/markdown",
+              "path": "/Users/rhys/git/discussion-skills-lab/test-results/m8-t10-narrow-batched-all-projects/presentation-contracts--mi-2914d-ed-motion-and-restored-cues-webkit/error-context.md"
+            },
+            {
+              "name": "trace",
+              "contentType": "application/zip",
+              "path": "/Users/rhys/git/discussion-skills-lab/test-results/m8-t10-narrow-batched-all-projects/presentation-contracts--mi-2914d-ed-motion-and-restored-cues-webkit/trace.zip"
+            }
+          ],
+          "errorLocation": {
+            "file": "/Users/rhys/git/discussion-skills-lab/tests/browser/presentation-contracts.spec.mjs",
+            "column": 109,
+            "line": 42
+          }
+        }
+      ]
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/final narrow controls/card faces, enlarged title/card contracts, reduced motion and restored cues",
+      "project": "webkit",
+      "status": "unexpected",
+      "results": [
+        {
+          "workerIndex": 3,
+          "parallelIndex": 0,
+          "status": "failed",
+          "duration": 12323,
+          "error": {
+            "message": "Error: closing-practice\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+            "stack": "Error: closing-practice\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at /Users/rhys/git/discussion-skills-lab/tests/browser/presentation-contracts.spec.mjs:42:109",
+            "location": {
+              "file": "/Users/rhys/git/discussion-skills-lab/tests/browser/presentation-contracts.spec.mjs",
+              "column": 109,
+              "line": 42
+            },
+            "snippet": "  40 |       await publicVisit(page, section.id); await settle(page);\n  41 |       const view = page.locator(`[data-section-id=\"${section.id}\"]`);\n> 42 |       expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), section.id).toBe(true);\n     |                                                                                                             ^\n  43 |       if (!section.reference) {\n  44 |         if (id === 'final') {await page.evaluate(() => {document.documentElement.style.fontSize = '200%';}); await layoutReady(page);}\n  45 |         const heading = view.locator('h1,h2').first(); expect(await heading.evaluate((n, id) => {const s = getComputedStyle(n); return (id === 'middle' || n.scrollWidth <= n.clientWidth + 1) && s.overflowY === 'visible' && s.maxHeight === 'none';}, id)).toBe(true);"
+          },
+          "errors": [
+            {
+              "location": {
+                "file": "/Users/rhys/git/discussion-skills-lab/tests/browser/presentation-contracts.spec.mjs",
+                "column": 109,
+                "line": 42
+              },
+              "message": "Error: closing-practice\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  40 |       await publicVisit(page, section.id); await settle(page);\n  41 |       const view = page.locator(`[data-section-id=\"${section.id}\"]`);\n> 42 |       expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), section.id).toBe(true);\n     |                                                                                                             ^\n  43 |       if (!section.reference) {\n  44 |         if (id === 'final') {await page.evaluate(() => {document.documentElement.style.fontSize = '200%';}); await layoutReady(page);}\n  45 |         const heading = view.locator('h1,h2').first(); expect(await heading.evaluate((n, id) => {const s = getComputedStyle(n); return (id === 'middle' || n.scrollWidth <= n.clientWidth + 1) && s.overflowY === 'visible' && s.maxHeight === 'none';}, id)).toBe(true);\n    at /Users/rhys/git/discussion-skills-lab/tests/browser/presentation-contracts.spec.mjs:42:109"
+            }
+          ],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:28:43.596Z",
+          "annotations": [],
+          "attachments": [
+            {
+              "name": "screenshot",
+              "contentType": "image/png",
+              "path": "/Users/rhys/git/discussion-skills-lab/test-results/m8-t10-narrow-batched-all-projects/presentation-contracts--fi-7c2d1-ed-motion-and-restored-cues-webkit/test-failed-1.png"
+            },
+            {
+              "name": "error-context",
+              "contentType": "text/markdown",
+              "path": "/Users/rhys/git/discussion-skills-lab/test-results/m8-t10-narrow-batched-all-projects/presentation-contracts--fi-7c2d1-ed-motion-and-restored-cues-webkit/error-context.md"
+            },
+            {
+              "name": "trace",
+              "contentType": "application/zip",
+              "path": "/Users/rhys/git/discussion-skills-lab/test-results/m8-t10-narrow-batched-all-projects/presentation-contracts--fi-7c2d1-ed-motion-and-restored-cues-webkit/trace.zip"
+            }
+          ],
+          "errorLocation": {
+            "file": "/Users/rhys/git/discussion-skills-lab/tests/browser/presentation-contracts.spec.mjs",
+            "column": 109,
+            "line": 42
+          }
+        }
+      ]
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/opening narrow controls/card faces, enlarged title/card contracts, reduced motion and restored cues",
+      "project": "webkit",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/middle narrow controls/card faces, enlarged title/card contracts, reduced motion and restored cues",
+      "project": "webkit",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/final narrow controls/card faces, enlarged title/card contracts, reduced motion and restored cues",
+      "project": "webkit",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/ Opening essentials retain compact paired rows at the exact mobile breakpoint",
+      "project": "webkit",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ Opening essentials retain compact paired rows at the exact mobile breakpoint",
+      "project": "webkit",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/opening narrow controls/card faces, enlarged title/card contracts, reduced motion and restored cues",
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/middle narrow controls/card faces, enlarged title/card contracts, reduced motion and restored cues",
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/final narrow controls/card faces, enlarged title/card contracts, reduced motion and restored cues",
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/opening narrow controls/card faces, enlarged title/card contracts, reduced motion and restored cues",
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/middle narrow controls/card faces, enlarged title/card contracts, reduced motion and restored cues",
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/final narrow controls/card faces, enlarged title/card contracts, reduced motion and restored cues",
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/ Opening essentials retain compact paired rows at the exact mobile breakpoint",
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ Opening essentials retain compact paired rows at the exact mobile breakpoint",
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "results": []
+    }
+  ]
+}

@@ -1,8 +1,0 @@
-{
-  "schemaVersion": 1, "id": "welcome-cards", "type": "flashcards",
-  "data": { "items": [
-    { "id": "connect-ideas", "front": "Connect Ideas", "back": "Synthesis brings multiple viewpoints together and uses them to create a new insight or recommendation." },
-    { "id": "capture-findings", "front": "Capture the Findings", "back": "An effective summary organizes important conclusions, recognizes contributors, and identifies final recommendations." },
-    { "id": "confirm-outcome", "front": "Confirm the Outcome", "back": "The group checks whether its final product addresses the assigned task and whether participants can support the result." }
-  ] }
-}

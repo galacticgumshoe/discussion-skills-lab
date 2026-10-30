@@ -1,0 +1,586 @@
+{
+  "date": "2026-10-30",
+  "status": "Superseded by one clean 24/24 all-project role invocation recorded in consolidation-t10-role-clean-results.json; this file retains the earlier combined/failed-attempt history, not the final role result.",
+  "byProject": {
+    "chromium": 6,
+    "webkit": 6,
+    "firefox": 6,
+    "mobile-chromium": 6
+  },
+  "runs": [
+    {
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-t10-role-nonfirefox-results.json",
+      "sha256": "52b6e67fd434401c4042ce914fa34db59371d6a72959ab2f820df49aa6ba34d3",
+      "stats": {
+        "startTime": "2026-10-30T11:12:11.903Z",
+        "duration": 766973.6830000001,
+        "expected": 8,
+        "skipped": 6,
+        "unexpected": 4,
+        "flaky": 0
+      }
+    },
+    {
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-t10-role-firefox-results.json",
+      "sha256": "f8dd006b874317de11bbecbb9c4e93232b2264e656b812952562cec0b81f3c07",
+      "stats": {
+        "startTime": "2026-10-30T11:12:11.903Z",
+        "duration": 1021607.0059999999,
+        "expected": 5,
+        "skipped": 0,
+        "unexpected": 1,
+        "flaky": 0
+      }
+    },
+    {
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-t10-remaining-nonfirefox-results.json",
+      "sha256": "4bce0eed524d9d3bc4b590aa11cbca75867783d9ba3a0ad700f34ef2fcb1ab39",
+      "stats": {
+        "startTime": "2026-10-30T11:36:04.143Z",
+        "duration": 677673.657,
+        "expected": 9,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    },
+    {
+      "output": "/Users/rhys/.local/share/opencode/shell/4fdc240970cf40f216f4ce23490882949e430fb9/sh_18c986f6f001tE3rtLPZe3MnGP.out",
+      "sha256": "522ec028a4e230ce4603d414a0e6d3931ff60820f7a9ff26e5a3c818db76e45c",
+      "summary": "2/2 Firefox mounts passed, exact old Middle cursor scope, six minutes."
+    },
+    {
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-t10-mobile-isolated-results.json",
+      "sha256": "a029b1e22401b49158511d3abdbad5f5e0bcb12504ccb270ab5b5f7f4f0bf645",
+      "stats": {
+        "startTime": "2026-10-30T11:48:51.873Z",
+        "duration": 84444.56199999999,
+        "expected": 3,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    },
+    {
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-t10-role-clean-results.json",
+      "summary": "24/24 passed in one clean invocation, 15.3 minutes, one worker, zero skips/unexpected/flaky.",
+      "sha256": "f470e9eb7ce8e55a93359195d624a75df7a8017bb8f559651ab4ce9692da53ce"
+    }
+  ],
+  "cases": [
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/opening all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 0,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 48663,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:12:13.394Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ],
+      "evidence": "consolidation-t10-role-nonfirefox-results.json"
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/middle all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 0,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 151906,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:36:05.873Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ],
+      "evidence": "consolidation-t10-remaining-nonfirefox-results.json"
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/final all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 2,
+          "parallelIndex": 2,
+          "status": "passed",
+          "duration": 267818,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:12:13.380Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ],
+      "evidence": "consolidation-t10-role-nonfirefox-results.json"
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/opening all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 0,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 50472,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:13:02.751Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ],
+      "evidence": "consolidation-t10-role-nonfirefox-results.json"
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/middle all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 0,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 66984,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:38:38.461Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ],
+      "evidence": "consolidation-t10-remaining-nonfirefox-results.json"
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/opening all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 3,
+          "parallelIndex": 1,
+          "status": "passed",
+          "duration": 67532,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:17:10.442Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ],
+      "evidence": "consolidation-t10-role-nonfirefox-results.json"
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/final all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 5,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 297208,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:18:19.207Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ],
+      "evidence": "consolidation-t10-role-nonfirefox-results.json"
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/opening all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 3,
+          "parallelIndex": 1,
+          "status": "passed",
+          "duration": 53872,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:18:22.886Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ],
+      "evidence": "consolidation-t10-role-nonfirefox-results.json"
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/opening all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 0,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 144002,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:12:13.405Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ],
+      "evidence": "consolidation-t10-role-firefox-results.json"
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/final all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 1,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 216334,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:21:46.512Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ],
+      "evidence": "consolidation-t10-role-firefox-results.json"
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/opening all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 1,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 15164,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:25:29.181Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ],
+      "evidence": "consolidation-t10-role-firefox-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/middle all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "status": "expected",
+      "evidence": "/Users/rhys/.local/share/opencode/shell/4fdc240970cf40f216f4ce23490882949e430fb9/sh_18c986f6f001tE3rtLPZe3MnGP.out"
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/final all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 1,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 90999,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:27:41.638Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ],
+      "evidence": "consolidation-t10-role-firefox-results.json"
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/final all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 0,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 107040,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:39:45.469Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ],
+      "evidence": "consolidation-t10-remaining-nonfirefox-results.json"
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/middle all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 1,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 66139,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:41:34.839Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ],
+      "evidence": "consolidation-t10-remaining-nonfirefox-results.json"
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/middle all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 1,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 56151,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:42:43.253Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ],
+      "evidence": "consolidation-t10-remaining-nonfirefox-results.json"
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/final all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 1,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 95094,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:43:39.421Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ],
+      "evidence": "consolidation-t10-remaining-nonfirefox-results.json"
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/middle all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "mobile-chromium",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 2,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 34276,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:45:15.432Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ],
+      "evidence": "consolidation-t10-remaining-nonfirefox-results.json"
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/middle all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "mobile-chromium",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 2,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 32469,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:45:50.206Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ],
+      "evidence": "consolidation-t10-remaining-nonfirefox-results.json"
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/final all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "mobile-chromium",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 2,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 58800,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:46:22.683Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ],
+      "evidence": "consolidation-t10-remaining-nonfirefox-results.json"
+    },
+    {
+      "project": "firefox",
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/middle all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "status": "expected",
+      "evidence": "/Users/rhys/.local/share/opencode/shell/4fdc240970cf40f216f4ce23490882949e430fb9/sh_18c986f6f001tE3rtLPZe3MnGP.out"
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/opening all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "mobile-chromium",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 0,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 9718,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:48:52.723Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ],
+      "evidence": ".opencode/docs/evidence/milestone-8/consolidation-t10-mobile-isolated-results.json"
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/final all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "mobile-chromium",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 0,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 63124,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:49:02.742Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ],
+      "evidence": ".opencode/docs/evidence/milestone-8/consolidation-t10-mobile-isolated-results.json"
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/opening all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "mobile-chromium",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 0,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 10236,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:50:05.874Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ],
+      "evidence": ".opencode/docs/evidence/milestone-8/consolidation-t10-mobile-isolated-results.json"
+    }
+  ],
+  "finalRoleResult": {
+    "cases": 24,
+    "byProject": {
+      "chromium": 6,
+      "firefox": 6,
+      "webkit": 6,
+      "mobile-chromium": 6
+    },
+    "status": "passed",
+    "cleanInvocation": true,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0,
+    "duration": "15.3m",
+    "evidence": ".opencode/docs/evidence/milestone-8/consolidation-t10-role-clean-results.json"
+  }
+}

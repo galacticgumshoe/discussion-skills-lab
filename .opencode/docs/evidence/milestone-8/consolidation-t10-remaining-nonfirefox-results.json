@@ -1,0 +1,204 @@
+{
+  "rawReport": "test-results/m8-t10-remaining-nonfirefox-report.log",
+  "sha256": "9e79eaa127792d8317fa1de9d2b72e0294fb9de9f947194f1c8ddf42ca16fd55",
+  "stats": {
+    "startTime": "2026-10-30T11:36:04.143Z",
+    "duration": 677673.657,
+    "expected": 9,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "errors": [],
+  "cases": [
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/middle all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 0,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 151906,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:36:05.873Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/middle all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 0,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 66984,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:38:38.461Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/final all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 0,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 107040,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:39:45.469Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/middle all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 1,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 66139,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:41:34.839Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/middle all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 1,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 56151,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:42:43.253Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/final all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 1,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 95094,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:43:39.421Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/middle all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "mobile-chromium",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 2,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 34276,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:45:15.432Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/middle all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "mobile-chromium",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 2,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 32469,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:45:50.206Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/final all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "mobile-chromium",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 2,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 58800,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:46:22.683Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ]
+    }
+  ]
+}

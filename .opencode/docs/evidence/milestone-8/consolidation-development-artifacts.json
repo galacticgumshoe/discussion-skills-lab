@@ -1,0 +1,498 @@
+{
+  "date": "2026-10-30",
+  "note": "Diagnostic contexts/screenshots only; not passing baselines or manual visual acceptance. Test code MIT; displayed original instructional content © Rhys Jones, CC BY 4.0. Original sealed captures unchanged. Large or corrupted Playwright ZIP traces are not archived here.",
+  "artifacts": [
+    {
+      "source": "test-results/m8-t09-api-initial/navigation-contracts--disc-14130-anent-union-without-storage-chromium/error-context.md",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t09-api-initial/navigation-contracts--disc-14130-anent-union-without-storage-chromium/error-context.md",
+      "bytes": 12066,
+      "sha256": "430ba51827b8bd7a2d122de873caab503cd5ba2a2481be09709b02e243ae296b"
+    },
+    {
+      "source": "test-results/m8-t09-api-initial/navigation-contracts--disc-14130-anent-union-without-storage-chromium/test-failed-1.png",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t09-api-initial/navigation-contracts--disc-14130-anent-union-without-storage-chromium/test-failed-1.png",
+      "bytes": 20261,
+      "sha256": "d2f19e7efb731447c1797e6647ec9a3742b17dcdfa897908b3e22c54986cec94"
+    },
+    {
+      "source": "test-results/m8-t09-api-initial/navigation-contracts--last-c48c6-e-totals-remain-independent-chromium/error-context.md",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t09-api-initial/navigation-contracts--last-c48c6-e-totals-remain-independent-chromium/error-context.md",
+      "bytes": 12406,
+      "sha256": "715ebbb9900e752e8d522dfb0445917f1d3edc6177f97b3df4cd743b2d27dd36"
+    },
+    {
+      "source": "test-results/m8-t09-api-initial/navigation-contracts--last-c48c6-e-totals-remain-independent-chromium/test-failed-1.png",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t09-api-initial/navigation-contracts--last-c48c6-e-totals-remain-independent-chromium/test-failed-1.png",
+      "bytes": 20772,
+      "sha256": "4268f12cff7bf88c692ad41fb31efd05d18f53bd99b927d1d4b8e86295e7021f"
+    },
+    {
+      "source": "test-results/m8-t09-api-initial/navigation-contracts--navi-e020b-and-one-handler-per-remount-chromium/error-context.md",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t09-api-initial/navigation-contracts--navi-e020b-and-one-handler-per-remount-chromium/error-context.md",
+      "bytes": 12017,
+      "sha256": "40cc3aab7b84261a603eb5d670b608b196c3136f0b21fd7ac7364cb35dcf49cd"
+    },
+    {
+      "source": "test-results/m8-t09-api-initial/navigation-contracts--navi-e020b-and-one-handler-per-remount-chromium/test-failed-1.png",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t09-api-initial/navigation-contracts--navi-e020b-and-one-handler-per-remount-chromium/test-failed-1.png",
+      "bytes": 21295,
+      "sha256": "d7df281c5303732fe8e4d0be5577f1a8efdc4d17f97bf2c54c1a3e54d2e8fae3"
+    },
+    {
+      "source": "test-results/m8-t09-api-initial/navigation-contracts--navi-f57bd-anent-union-without-storage-chromium/error-context.md",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t09-api-initial/navigation-contracts--navi-f57bd-anent-union-without-storage-chromium/error-context.md",
+      "bytes": 12044,
+      "sha256": "20d0d9641bc173542be8c676039b0afeb3125f144ba801eccd9523cdec081c43"
+    },
+    {
+      "source": "test-results/m8-t09-api-initial/navigation-contracts--navi-f57bd-anent-union-without-storage-chromium/test-failed-1.png",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t09-api-initial/navigation-contracts--navi-f57bd-anent-union-without-storage-chromium/test-failed-1.png",
+      "bytes": 20261,
+      "sha256": "d2f19e7efb731447c1797e6647ec9a3742b17dcdfa897908b3e22c54986cec94"
+    },
+    {
+      "source": "test-results/m8-t09-added-contracts/component-contracts--discu-d5895-e-and-never-touches-storage-chromium/error-context.md",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t09-added-contracts/component-contracts--discu-d5895-e-and-never-touches-storage-chromium/error-context.md",
+      "bytes": 15166,
+      "sha256": "deb0dbf1859104b1bac2adaca2d50bbb7743c9e7fd56241710ccf8788dd14abb"
+    },
+    {
+      "source": "test-results/m8-t09-added-contracts/component-contracts--discu-d5895-e-and-never-touches-storage-chromium/test-failed-1.png",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t09-added-contracts/component-contracts--discu-d5895-e-and-never-touches-storage-chromium/test-failed-1.png",
+      "bytes": 9278,
+      "sha256": "4345c5675df604fed3665cd9a8a9847bbd776358cc5b2b5dc7bf15e465c25652"
+    },
+    {
+      "source": "test-results/m8-t09-added-contracts/component-contracts--refer-dc43b-e-and-never-touches-storage-chromium/error-context.md",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t09-added-contracts/component-contracts--refer-dc43b-e-and-never-touches-storage-chromium/error-context.md",
+      "bytes": 15144,
+      "sha256": "0e23d283e0731c1f3d15e47698b7a05c37645e3225d8a800902b221e88b8b745"
+    },
+    {
+      "source": "test-results/m8-t09-added-contracts/component-contracts--refer-dc43b-e-and-never-touches-storage-chromium/test-failed-1.png",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t09-added-contracts/component-contracts--refer-dc43b-e-and-never-touches-storage-chromium/test-failed-1.png",
+      "bytes": 9278,
+      "sha256": "4345c5675df604fed3665cd9a8a9847bbd776358cc5b2b5dc7bf15e465c25652"
+    },
+    {
+      "source": "test-results/m8-t09-consolidated-all-projects/component-contracts--card--6bbe0-nd-scoped-responsive-styles-webkit/error-context.md",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t09-consolidated-all-projects/component-contracts--card--6bbe0-nd-scoped-responsive-styles-webkit/error-context.md",
+      "bytes": 22957,
+      "sha256": "4b85e5cadfa79345c7a391f64ec0575a6a4363ea388b4b9caecc62578dbebcaa"
+    },
+    {
+      "source": "test-results/m8-t09-consolidated-all-projects/component-contracts--card--6bbe0-nd-scoped-responsive-styles-webkit/test-failed-1.png",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t09-consolidated-all-projects/component-contracts--card--6bbe0-nd-scoped-responsive-styles-webkit/test-failed-1.png",
+      "bytes": 75853,
+      "sha256": "3b5310b632398fcd11cb42953159809a2e40c4665e5ad973594a7f52d2bcfedb"
+    },
+    {
+      "source": "test-results/m8-t09-source-length-webkit/component-contracts--card--6bbe0-nd-scoped-responsive-styles-webkit/error-context.md",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t09-source-length-webkit/component-contracts--card--6bbe0-nd-scoped-responsive-styles-webkit/error-context.md",
+      "bytes": 22686,
+      "sha256": "9512f48ac42e74a74e1b51a1877cd72e0276dd8daf5423e78975653a11c45714"
+    },
+    {
+      "source": "test-results/m8-t09-source-length-webkit/component-contracts--card--6bbe0-nd-scoped-responsive-styles-webkit/test-failed-1.png",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t09-source-length-webkit/component-contracts--card--6bbe0-nd-scoped-responsive-styles-webkit/test-failed-1.png",
+      "bytes": 65995,
+      "sha256": "34ba6b0cee37ce868d794f3f55ad4bccc2081ee1e98c5ef6aad2d68bbc0629de"
+    },
+    {
+      "source": "test-results/m8-t10-middle-observed/presentation-contracts--mi-c087a-t-desktop-breakpoint-mobile-chromium/error-context.md",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-middle-observed/presentation-contracts--mi-c087a-t-desktop-breakpoint-mobile-chromium/error-context.md",
+      "bytes": 16774,
+      "sha256": "cd8df4cf936a596ca919deb79bc4bbbd4a152a21c5783e7dfa45cee3dac9b0c6"
+    },
+    {
+      "source": "test-results/m8-t10-middle-observed/presentation-contracts--mi-c087a-t-desktop-breakpoint-mobile-chromium/test-failed-1.png",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-middle-observed/presentation-contracts--mi-c087a-t-desktop-breakpoint-mobile-chromium/test-failed-1.png",
+      "bytes": 167926,
+      "sha256": "ad6dda54cda01f9d4534e2343622ebd6155d6250e9bc0da6e81f0ce4de2e3433"
+    },
+    {
+      "source": "test-results/m8-t10-middle-roles/presentation-contracts--mi-c087a-t-desktop-breakpoint-mobile-chromium/error-context.md",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-middle-roles/presentation-contracts--mi-c087a-t-desktop-breakpoint-mobile-chromium/error-context.md",
+      "bytes": 16819,
+      "sha256": "74cc8d61461f26b9a12f5baa8d4f9ddacca167d2124c3e12520dbc4bcfb379e0"
+    },
+    {
+      "source": "test-results/m8-t10-middle-roles/presentation-contracts--mi-c087a-t-desktop-breakpoint-mobile-chromium/test-failed-1.png",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-middle-roles/presentation-contracts--mi-c087a-t-desktop-breakpoint-mobile-chromium/test-failed-1.png",
+      "bytes": 167926,
+      "sha256": "ad6dda54cda01f9d4534e2343622ebd6155d6250e9bc0da6e81f0ce4de2e3433"
+    },
+    {
+      "source": "test-results/m8-t10-role-audit/presentation-contracts--fi-f27af-t-desktop-breakpoint-mobile-chromium/error-context.md",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-role-audit/presentation-contracts--fi-f27af-t-desktop-breakpoint-mobile-chromium/error-context.md",
+      "bytes": 75351,
+      "sha256": "dbd411a8c58e2b8cf57b82e7e9a03761228ddf2960ecdd59535116feaae814e2"
+    },
+    {
+      "source": "test-results/m8-t10-role-audit/presentation-contracts--fi-f27af-t-desktop-breakpoint-mobile-chromium/test-failed-1.png",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-role-audit/presentation-contracts--fi-f27af-t-desktop-breakpoint-mobile-chromium/test-failed-1.png",
+      "bytes": 85192,
+      "sha256": "55c4631a316539d424413867a3fe58af61a0c9a9a0b26aeb0752c8b923ac6b4d"
+    },
+    {
+      "source": "test-results/m8-t10-role-audit/presentation-contracts--mi-c087a-t-desktop-breakpoint-mobile-chromium/error-context.md",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-role-audit/presentation-contracts--mi-c087a-t-desktop-breakpoint-mobile-chromium/error-context.md",
+      "bytes": 30278,
+      "sha256": "0b50ca26dd1a83223d827e082b3c32251c248905fe45a3f46ba3c589c7aeaa13"
+    },
+    {
+      "source": "test-results/m8-t10-role-audit/presentation-contracts--mi-c087a-t-desktop-breakpoint-mobile-chromium/test-failed-1.png",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-role-audit/presentation-contracts--mi-c087a-t-desktop-breakpoint-mobile-chromium/test-failed-1.png",
+      "bytes": 70573,
+      "sha256": "96ab529cdd7e5307ef456bbba184f32a519b77e5c0f84c8e46dac5953a5d26f6"
+    },
+    {
+      "source": "test-results/m8-t10-role-audit/presentation-contracts--op-46957-t-desktop-breakpoint-mobile-chromium/error-context.md",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-role-audit/presentation-contracts--op-46957-t-desktop-breakpoint-mobile-chromium/error-context.md",
+      "bytes": 18730,
+      "sha256": "b9eddf477091007356c5ce42024aa33ddb0b9ad2abc9c039a575a25fe3f98058"
+    },
+    {
+      "source": "test-results/m8-t10-role-audit/presentation-contracts--op-46957-t-desktop-breakpoint-mobile-chromium/test-failed-1.png",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-role-audit/presentation-contracts--op-46957-t-desktop-breakpoint-mobile-chromium/test-failed-1.png",
+      "bytes": 60970,
+      "sha256": "f6a62219a872ac9ff43c1cb34eb1a06fb4cca79bad8e3639b249345d806a6c8b"
+    },
+    {
+      "source": "test-results/m8-t10-corrected-roles/presentation-contracts--fi-f27af-t-desktop-breakpoint-mobile-chromium/error-context.md",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-corrected-roles/presentation-contracts--fi-f27af-t-desktop-breakpoint-mobile-chromium/error-context.md",
+      "bytes": 19544,
+      "sha256": "d468f0038121ed2b4fcabd2fe2977bf35954cfbf317674fa37b4d91d3bcc2ed9"
+    },
+    {
+      "source": "test-results/m8-t10-corrected-roles/presentation-contracts--fi-f27af-t-desktop-breakpoint-mobile-chromium/test-failed-1.png",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-corrected-roles/presentation-contracts--fi-f27af-t-desktop-breakpoint-mobile-chromium/test-failed-1.png",
+      "bytes": 186897,
+      "sha256": "b934dcc0183e3b95d5f14da23c3f9a93aaa185684a651481d681dc3bf6103599"
+    },
+    {
+      "source": "test-results/m8-t10-corrected-roles/presentation-contracts--mi-c087a-t-desktop-breakpoint-mobile-chromium/error-context.md",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-corrected-roles/presentation-contracts--mi-c087a-t-desktop-breakpoint-mobile-chromium/error-context.md",
+      "bytes": 5817,
+      "sha256": "002eda5e5d05fba7c6a7c9720d4ccf245c5c6aa1df8da1ac8ff8f64c4b142d18"
+    },
+    {
+      "source": "test-results/m8-t10-corrected-roles/presentation-contracts--mi-c087a-t-desktop-breakpoint-mobile-chromium/test-failed-1.png",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-corrected-roles/presentation-contracts--mi-c087a-t-desktop-breakpoint-mobile-chromium/test-failed-1.png",
+      "bytes": 149793,
+      "sha256": "46320a233ef72497271145d49014889eb612e4cf436a5c5c17acbd2a9a56e281"
+    },
+    {
+      "source": "test-results/m8-t10-corrected-roles/presentation-contracts--op-46957-t-desktop-breakpoint-mobile-chromium/error-context.md",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-corrected-roles/presentation-contracts--op-46957-t-desktop-breakpoint-mobile-chromium/error-context.md",
+      "bytes": 19143,
+      "sha256": "249cc661e3d3f620d4b2b378b1eb793c093a0b7526dec640d678050920b0eb3b"
+    },
+    {
+      "source": "test-results/m8-t10-corrected-roles/presentation-contracts--op-46957-t-desktop-breakpoint-mobile-chromium/test-failed-1.png",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-corrected-roles/presentation-contracts--op-46957-t-desktop-breakpoint-mobile-chromium/test-failed-1.png",
+      "bytes": 184224,
+      "sha256": "c190f8c4c3a06daf168ae9ecea0212deb72a3f2ec68827dc8967a8ad4e2f792b"
+    },
+    {
+      "source": "test-results/m8-t10-composed-diagnostic/presentation-contracts--fi-979a7-row-text-and-reduced-motion-chromium/error-context.md",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-composed-diagnostic/presentation-contracts--fi-979a7-row-text-and-reduced-motion-chromium/error-context.md",
+      "bytes": 18329,
+      "sha256": "9cfc87fecc1f24bdabcf6e6fafe82599de8ba1274405a4a63c61197ae8eed81a"
+    },
+    {
+      "source": "test-results/m8-t10-composed-diagnostic/presentation-contracts--fi-979a7-row-text-and-reduced-motion-chromium/test-failed-1.png",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-composed-diagnostic/presentation-contracts--fi-979a7-row-text-and-reduced-motion-chromium/test-failed-1.png",
+      "bytes": 69967,
+      "sha256": "30819948db438453d7cbfb975aa2d7a26d9d348a7ffa1106e62a1490f963ab58"
+    },
+    {
+      "source": "test-results/m8-t10-composed-diagnostic/presentation-contracts--mi-bd0aa-row-text-and-reduced-motion-chromium/error-context.md",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-composed-diagnostic/presentation-contracts--mi-bd0aa-row-text-and-reduced-motion-chromium/error-context.md",
+      "bytes": 14629,
+      "sha256": "e017ab4fdc458905a454f402697728968ba0e2cf4af5d84eea80ab293e6707f9"
+    },
+    {
+      "source": "test-results/m8-t10-composed-diagnostic/presentation-contracts--mi-bd0aa-row-text-and-reduced-motion-chromium/test-failed-1.png",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-composed-diagnostic/presentation-contracts--mi-bd0aa-row-text-and-reduced-motion-chromium/test-failed-1.png",
+      "bytes": 70572,
+      "sha256": "765caa9216d3715ec70f48407f7b596728e5b62710532940c3055d3c941a46e5"
+    },
+    {
+      "source": "test-results/m8-t10-composed-diagnostic/presentation-contracts--mi-c087a-t-desktop-breakpoint-mobile-chromium/error-context.md",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-composed-diagnostic/presentation-contracts--mi-c087a-t-desktop-breakpoint-mobile-chromium/error-context.md",
+      "bytes": 16209,
+      "sha256": "827b9280efaf0688edbb27e8e69e40f798b395af7ef01ac7d97ab7c8ae73c360"
+    },
+    {
+      "source": "test-results/m8-t10-composed-diagnostic/presentation-contracts--mi-c087a-t-desktop-breakpoint-mobile-chromium/test-failed-1.png",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-composed-diagnostic/presentation-contracts--mi-c087a-t-desktop-breakpoint-mobile-chromium/test-failed-1.png",
+      "bytes": 78615,
+      "sha256": "872bbf5a19c37012de7371a167e9c1cdbb8c7f0d401be7b07d00ff6ec59f88ec"
+    },
+    {
+      "source": "test-results/m8-t10-composed-diagnostic/presentation-contracts--op-46957-t-desktop-breakpoint-mobile-chromium/error-context.md",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-composed-diagnostic/presentation-contracts--op-46957-t-desktop-breakpoint-mobile-chromium/error-context.md",
+      "bytes": 18679,
+      "sha256": "5d09647294d3684f0ca53c85e747b007667794f126b253d1c856318077ed7964"
+    },
+    {
+      "source": "test-results/m8-t10-composed-diagnostic/presentation-contracts--op-46957-t-desktop-breakpoint-mobile-chromium/test-failed-1.png",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-composed-diagnostic/presentation-contracts--op-46957-t-desktop-breakpoint-mobile-chromium/test-failed-1.png",
+      "bytes": 154065,
+      "sha256": "27981dfe25e81dfb8eecff57d838ba8aca2f9147e93934b63871f6970d6c1fe0"
+    },
+    {
+      "source": "test-results/m8-t10-scoped-diagnostic/presentation-contracts--di-f0c7c-ed-motion-and-restored-cues-chromium/error-context.md",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-scoped-diagnostic/presentation-contracts--di-f0c7c-ed-motion-and-restored-cues-chromium/error-context.md",
+      "bytes": 14985,
+      "sha256": "479bd140da382f54567ac5d4146c0466ae0d1302e177695fdb2928d3539d28e8"
+    },
+    {
+      "source": "test-results/m8-t10-scoped-diagnostic/presentation-contracts--di-f0c7c-ed-motion-and-restored-cues-chromium/test-failed-1.png",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-scoped-diagnostic/presentation-contracts--di-f0c7c-ed-motion-and-restored-cues-chromium/test-failed-1.png",
+      "bytes": 70937,
+      "sha256": "b34b3e23cb2114982b824c98419877fa3b32f9c5486759260d5ef735d2d629a8"
+    },
+    {
+      "source": "test-results/m8-t10-scoped-diagnostic/presentation-contracts--fi-7c2d1-ed-motion-and-restored-cues-chromium/error-context.md",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-scoped-diagnostic/presentation-contracts--fi-7c2d1-ed-motion-and-restored-cues-chromium/error-context.md",
+      "bytes": 13757,
+      "sha256": "ccab768ad2293fc54a395d01acaa0e2c4d3ea7cd5fcb411cbc0f7f943d397407"
+    },
+    {
+      "source": "test-results/m8-t10-scoped-diagnostic/presentation-contracts--fi-7c2d1-ed-motion-and-restored-cues-chromium/test-failed-1.png",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-scoped-diagnostic/presentation-contracts--fi-7c2d1-ed-motion-and-restored-cues-chromium/test-failed-1.png",
+      "bytes": 70406,
+      "sha256": "7ebb245b894f9fbd2507f0f7115cb882f14205b944a8744ffc4939d7987c7b21"
+    },
+    {
+      "source": "test-results/m8-t10-scoped-diagnostic/presentation-contracts--mi-2914d-ed-motion-and-restored-cues-chromium/error-context.md",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-scoped-diagnostic/presentation-contracts--mi-2914d-ed-motion-and-restored-cues-chromium/error-context.md",
+      "bytes": 14963,
+      "sha256": "b2deb83540e2326dc40199922f755bbb3b8e57a0bd32e949627f0cbc0a51e3f2"
+    },
+    {
+      "source": "test-results/m8-t10-scoped-diagnostic/presentation-contracts--mi-2914d-ed-motion-and-restored-cues-chromium/test-failed-1.png",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-scoped-diagnostic/presentation-contracts--mi-2914d-ed-motion-and-restored-cues-chromium/test-failed-1.png",
+      "bytes": 70937,
+      "sha256": "b34b3e23cb2114982b824c98419877fa3b32f9c5486759260d5ef735d2d629a8"
+    },
+    {
+      "source": "test-results/m8-t10-scoped-diagnostic/presentation-contracts--mi-c087a-t-desktop-breakpoint-mobile-chromium/error-context.md",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-scoped-diagnostic/presentation-contracts--mi-c087a-t-desktop-breakpoint-mobile-chromium/error-context.md",
+      "bytes": 15060,
+      "sha256": "98e305d6593c43a2fa1c866f0f765fea8f7715c0b9d4e5a05e669ea090a9b1c6"
+    },
+    {
+      "source": "test-results/m8-t10-scoped-diagnostic/presentation-contracts--mi-c087a-t-desktop-breakpoint-mobile-chromium/test-failed-1.png",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-scoped-diagnostic/presentation-contracts--mi-c087a-t-desktop-breakpoint-mobile-chromium/test-failed-1.png",
+      "bytes": 78615,
+      "sha256": "872bbf5a19c37012de7371a167e9c1cdbb8c7f0d401be7b07d00ff6ec59f88ec"
+    },
+    {
+      "source": "test-results/m8-t10-narrow-final-diagnostic/presentation-contracts--di-f0c7c-ed-motion-and-restored-cues-chromium/error-context.md",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-narrow-final-diagnostic/presentation-contracts--di-f0c7c-ed-motion-and-restored-cues-chromium/error-context.md",
+      "bytes": 17317,
+      "sha256": "bd751dbed1236d1d3495bb596150cd6565634d66e362de703b454812a1f75a45"
+    },
+    {
+      "source": "test-results/m8-t10-narrow-final-diagnostic/presentation-contracts--di-f0c7c-ed-motion-and-restored-cues-chromium/test-failed-1.png",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-narrow-final-diagnostic/presentation-contracts--di-f0c7c-ed-motion-and-restored-cues-chromium/test-failed-1.png",
+      "bytes": 68567,
+      "sha256": "47351470b946ba06b2e9f6313dc507225c2c94b086cb46e544b10b7503055051"
+    },
+    {
+      "source": "test-results/m8-t10-narrow-final-diagnostic/presentation-contracts--fi-7c2d1-ed-motion-and-restored-cues-chromium/error-context.md",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-narrow-final-diagnostic/presentation-contracts--fi-7c2d1-ed-motion-and-restored-cues-chromium/error-context.md",
+      "bytes": 5470,
+      "sha256": "5a7ff0ac9a65f00525473b7ca78d83822bbabd92158d356122c4c1b88ade2e1b"
+    },
+    {
+      "source": "test-results/m8-t10-narrow-final-diagnostic/presentation-contracts--fi-7c2d1-ed-motion-and-restored-cues-chromium/test-failed-1.png",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-narrow-final-diagnostic/presentation-contracts--fi-7c2d1-ed-motion-and-restored-cues-chromium/test-failed-1.png",
+      "bytes": 69967,
+      "sha256": "30819948db438453d7cbfb975aa2d7a26d9d348a7ffa1106e62a1490f963ab58"
+    },
+    {
+      "source": "test-results/m8-t10-role-final-all-projects/presentation-contracts--di-a353c-t-desktop-breakpoint-mobile-chromium/error-context.md",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-role-final-all-projects/presentation-contracts--di-a353c-t-desktop-breakpoint-mobile-chromium/error-context.md",
+      "bytes": 166500,
+      "sha256": "e1230f011138ef20c51f107ea30884ee7d65db5f4d989731637ca996618abbdb"
+    },
+    {
+      "source": "test-results/m8-t10-role-final-all-projects/presentation-contracts--di-a353c-t-desktop-breakpoint-mobile-chromium/test-failed-1.png",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-role-final-all-projects/presentation-contracts--di-a353c-t-desktop-breakpoint-mobile-chromium/test-failed-1.png",
+      "bytes": 78615,
+      "sha256": "872bbf5a19c37012de7371a167e9c1cdbb8c7f0d401be7b07d00ff6ec59f88ec"
+    },
+    {
+      "source": "test-results/m8-t10-role-final-all-projects/presentation-contracts--fi-f27af-t-desktop-breakpoint-mobile-chromium/error-context.md",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-role-final-all-projects/presentation-contracts--fi-f27af-t-desktop-breakpoint-mobile-chromium/error-context.md",
+      "bytes": 20182,
+      "sha256": "9b1e1f482f3ea17dfa173eb9d9ed0e48121b7703c2c9a792b1bd99a95c28dd87"
+    },
+    {
+      "source": "test-results/m8-t10-role-final-all-projects/presentation-contracts--fi-f27af-t-desktop-breakpoint-mobile-chromium/test-failed-1.png",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-role-final-all-projects/presentation-contracts--fi-f27af-t-desktop-breakpoint-mobile-chromium/test-failed-1.png",
+      "bytes": 202150,
+      "sha256": "cd367d6d369e93d1b93e7374dc2414e123086932b604918c831245a262083d4a"
+    },
+    {
+      "source": "test-results/m8-t10-role-final-all-projects/presentation-contracts--mi-c087a-t-desktop-breakpoint-mobile-chromium/error-context.md",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-role-final-all-projects/presentation-contracts--mi-c087a-t-desktop-breakpoint-mobile-chromium/error-context.md",
+      "bytes": 201919,
+      "sha256": "4149f2b70494fcc84aaa9b3a9d49e361259e2c8a71fba2fa5f697d552f2d1ebb"
+    },
+    {
+      "source": "test-results/m8-t10-role-final-all-projects/presentation-contracts--mi-c087a-t-desktop-breakpoint-mobile-chromium/test-failed-1.png",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-role-final-all-projects/presentation-contracts--mi-c087a-t-desktop-breakpoint-mobile-chromium/test-failed-1.png",
+      "bytes": 78615,
+      "sha256": "872bbf5a19c37012de7371a167e9c1cdbb8c7f0d401be7b07d00ff6ec59f88ec"
+    },
+    {
+      "source": "test-results/m8-t10-narrow-all-projects/presentation-contracts--fi-7c2d1-ed-motion-and-restored-cues-firefox/error-context.md",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-narrow-all-projects/presentation-contracts--fi-7c2d1-ed-motion-and-restored-cues-firefox/error-context.md",
+      "bytes": 4056,
+      "sha256": "ad4c3e2f5573eaac83c728797d4cc36ac04c5cd08c2b89be9d59aed2e70372c7"
+    },
+    {
+      "source": "test-results/m8-t10-narrow-all-projects/presentation-contracts--fi-7c2d1-ed-motion-and-restored-cues-firefox/test-failed-1.png",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-narrow-all-projects/presentation-contracts--fi-7c2d1-ed-motion-and-restored-cues-firefox/test-failed-1.png",
+      "bytes": 132003,
+      "sha256": "722607814c7197706df05c2af871c5bf6908c112b96992992083bc6a01a4ebd0"
+    },
+    {
+      "source": "test-results/m8-t10-narrow-batched-all-projects/presentation-contracts--fi-7c2d1-ed-motion-and-restored-cues-webkit/error-context.md",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-narrow-batched-all-projects/presentation-contracts--fi-7c2d1-ed-motion-and-restored-cues-webkit/error-context.md",
+      "bytes": 15675,
+      "sha256": "a4b99fd31f0b9faf9382dcf3a9659e19659b05272baae705ca3d63baeb9971ce"
+    },
+    {
+      "source": "test-results/m8-t10-narrow-batched-all-projects/presentation-contracts--fi-7c2d1-ed-motion-and-restored-cues-webkit/test-failed-1.png",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-narrow-batched-all-projects/presentation-contracts--fi-7c2d1-ed-motion-and-restored-cues-webkit/test-failed-1.png",
+      "bytes": 83666,
+      "sha256": "6ab1e92c8b372f093fb079fb7d5b3b590c4fe2a32782eeac5a57ab46a31898a3"
+    },
+    {
+      "source": "test-results/m8-t10-narrow-batched-all-projects/presentation-contracts--mi-2914d-ed-motion-and-restored-cues-webkit/error-context.md",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-narrow-batched-all-projects/presentation-contracts--mi-2914d-ed-motion-and-restored-cues-webkit/error-context.md",
+      "bytes": 15563,
+      "sha256": "15f03ed864a6da01e766bf7cc1597610016714fcc5244f2fd46ddf521a3e599a"
+    },
+    {
+      "source": "test-results/m8-t10-narrow-batched-all-projects/presentation-contracts--mi-2914d-ed-motion-and-restored-cues-webkit/test-failed-1.png",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-narrow-batched-all-projects/presentation-contracts--mi-2914d-ed-motion-and-restored-cues-webkit/test-failed-1.png",
+      "bytes": 86423,
+      "sha256": "baa41d963b2dcaed708b6e2f5771f3221dd7fe024c06fce0cdf31722dcba47c9"
+    },
+    {
+      "source": "test-results/m8-t10-roles-nonfirefox/presentation-contracts--di-7d4ce-t-desktop-breakpoint-mobile-chromium/error-context.md",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-roles-nonfirefox/presentation-contracts--di-7d4ce-t-desktop-breakpoint-mobile-chromium/error-context.md",
+      "bytes": 20204,
+      "sha256": "50d0546e9e765a5cbe7b0dead362e1655672934055ec5d610f5909c74d8b613c"
+    },
+    {
+      "source": "test-results/m8-t10-roles-nonfirefox/presentation-contracts--di-7d4ce-t-desktop-breakpoint-mobile-chromium/test-failed-1.png",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-roles-nonfirefox/presentation-contracts--di-7d4ce-t-desktop-breakpoint-mobile-chromium/test-failed-1.png",
+      "bytes": 202150,
+      "sha256": "cd367d6d369e93d1b93e7374dc2414e123086932b604918c831245a262083d4a"
+    },
+    {
+      "source": "test-results/m8-t10-roles-nonfirefox/presentation-contracts--di-7d4ce-t-desktop-breakpoint-mobile-webkit/error-context.md",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-roles-nonfirefox/presentation-contracts--di-7d4ce-t-desktop-breakpoint-mobile-webkit/error-context.md",
+      "bytes": 13410,
+      "sha256": "984985920d8656bc652ec435ab99abf61ff67c9851b0b943be9744e755524d26"
+    },
+    {
+      "source": "test-results/m8-t10-roles-nonfirefox/presentation-contracts--di-7d4ce-t-desktop-breakpoint-mobile-webkit/test-failed-1.png",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-roles-nonfirefox/presentation-contracts--di-7d4ce-t-desktop-breakpoint-mobile-webkit/test-failed-1.png",
+      "bytes": 186851,
+      "sha256": "0895c6bac270d7390906d7e84de1d711c67dee9fba05dd74e859374836213b9c"
+    },
+    {
+      "source": "test-results/m8-t10-roles-nonfirefox/presentation-contracts--di-a353c-t-desktop-breakpoint-mobile-webkit/error-context.md",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-roles-nonfirefox/presentation-contracts--di-a353c-t-desktop-breakpoint-mobile-webkit/error-context.md",
+      "bytes": 17147,
+      "sha256": "e26eefbfabb2461e5f7aeb6e9c0635cec3895eaecfda81637a3573e3352b3de2"
+    },
+    {
+      "source": "test-results/m8-t10-roles-nonfirefox/presentation-contracts--di-a353c-t-desktop-breakpoint-mobile-webkit/test-failed-1.png",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-roles-nonfirefox/presentation-contracts--di-a353c-t-desktop-breakpoint-mobile-webkit/test-failed-1.png",
+      "bytes": 87752,
+      "sha256": "b9317dd83ae959e04b5074cca9e6232fc0c568ad51eaf4dd92aa46bc3cc3c4f6"
+    },
+    {
+      "source": "test-results/m8-t10-roles-nonfirefox/presentation-contracts--mi-c087a-t-desktop-breakpoint-mobile-mobile-chromium/error-context.md",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-roles-nonfirefox/presentation-contracts--mi-c087a-t-desktop-breakpoint-mobile-mobile-chromium/error-context.md",
+      "bytes": 13318,
+      "sha256": "b791689b837b3f2a2102999185c544c5fa41557010a0cf9abd6625c999b69a1a"
+    },
+    {
+      "source": "test-results/m8-t10-roles-nonfirefox/presentation-contracts--mi-c087a-t-desktop-breakpoint-mobile-mobile-chromium/test-failed-1.png",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-roles-nonfirefox/presentation-contracts--mi-c087a-t-desktop-breakpoint-mobile-mobile-chromium/test-failed-1.png",
+      "bytes": 139609,
+      "sha256": "46d0a0d11773aaed1f80a3cbe77f472524645c5611574d9cbed6145330fca7ea"
+    },
+    {
+      "source": "test-results/m8-t10-roles-nonfirefox/presentation-contracts--mi-c087a-t-desktop-breakpoint-mobile-webkit/error-context.md",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-roles-nonfirefox/presentation-contracts--mi-c087a-t-desktop-breakpoint-mobile-webkit/error-context.md",
+      "bytes": 16725,
+      "sha256": "da26310c0696051fac6722b541eb72bb6fd4cf072b97dff49bb7ad32d84b6fe7"
+    },
+    {
+      "source": "test-results/m8-t10-roles-nonfirefox/presentation-contracts--mi-c087a-t-desktop-breakpoint-mobile-webkit/test-failed-1.png",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-roles-nonfirefox/presentation-contracts--mi-c087a-t-desktop-breakpoint-mobile-webkit/test-failed-1.png",
+      "bytes": 92349,
+      "sha256": "a64bf8fbf56c6ebf97bd30dcede7bd3a6662b69d12ddc5d5da21cb7ea5f16657"
+    },
+    {
+      "source": "test-results/m8-t10-roles-nonfirefox/presentation-contracts--op-46957-t-desktop-breakpoint-mobile-mobile-chromium/error-context.md",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-roles-nonfirefox/presentation-contracts--op-46957-t-desktop-breakpoint-mobile-mobile-chromium/error-context.md",
+      "bytes": 18758,
+      "sha256": "fe58b9d48211e93f68fa6735f3a03f932d9ffc4cfe8e91295a3ce803ae9d0ea9"
+    },
+    {
+      "source": "test-results/m8-t10-roles-nonfirefox/presentation-contracts--op-46957-t-desktop-breakpoint-mobile-mobile-chromium/test-failed-1.png",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-roles-nonfirefox/presentation-contracts--op-46957-t-desktop-breakpoint-mobile-mobile-chromium/test-failed-1.png",
+      "bytes": 154065,
+      "sha256": "27981dfe25e81dfb8eecff57d838ba8aca2f9147e93934b63871f6970d6c1fe0"
+    },
+    {
+      "source": "test-results/m8-t10-roles-firefox/presentation-contracts--mi-c087a-t-desktop-breakpoint-mobile-firefox/error-context.md",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-roles-firefox/presentation-contracts--mi-c087a-t-desktop-breakpoint-mobile-firefox/error-context.md",
+      "bytes": 20915,
+      "sha256": "7062fd8def83ca881207bbbc5dff41f1af1250a5e46a4dbc5f21d5277ff3f9bf"
+    },
+    {
+      "source": "test-results/m8-t10-roles-firefox/presentation-contracts--mi-c087a-t-desktop-breakpoint-mobile-firefox/test-failed-1.png",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-roles-firefox/presentation-contracts--mi-c087a-t-desktop-breakpoint-mobile-firefox/test-failed-1.png",
+      "bytes": 131581,
+      "sha256": "9114a136816fa246fb1eea03aa90d2addd0c940d23431addecf4eeb8210e2e5e"
+    },
+    {
+      "source": "test-results/m8-t10-webkit-layout-settled/presentation-contracts--fi-7c2d1-ed-motion-and-restored-cues-webkit/error-context.md",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-webkit-layout-settled/presentation-contracts--fi-7c2d1-ed-motion-and-restored-cues-webkit/error-context.md",
+      "bytes": 14629,
+      "sha256": "15878555c12cd99abf6e1d3c49037eaf534b799256d41564d4c6bb5f95aed843"
+    },
+    {
+      "source": "test-results/m8-t10-webkit-layout-settled/presentation-contracts--fi-7c2d1-ed-motion-and-restored-cues-webkit/test-failed-1.png",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-t10-webkit-layout-settled/presentation-contracts--fi-7c2d1-ed-motion-and-restored-cues-webkit/test-failed-1.png",
+      "bytes": 68905,
+      "sha256": "733b497b989e2951bfe4407135cbc8971b086eb085ea5ab27618bcca9f3c3bb1"
+    },
+    {
+      "source": "test-results/m8-model-mode-destinations/writing-controls--final-pu-b8476-ut-changing-retained-drafts-chromium/error-context.md",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-model-mode-destinations/writing-controls--final-pu-b8476-ut-changing-retained-drafts-chromium/error-context.md",
+      "bytes": 13128,
+      "sha256": "f4308887f5a8f8d1fe2ee845cb1ef427fafaa4ffeb1055cbf50165d9cb4031e9"
+    },
+    {
+      "source": "test-results/m8-model-mode-destinations/writing-controls--final-pu-b8476-ut-changing-retained-drafts-chromium/test-failed-1.png",
+      "path": ".opencode/docs/evidence/milestone-8/consolidation-development-failures/m8-model-mode-destinations/writing-controls--final-pu-b8476-ut-changing-retained-drafts-chromium/test-failed-1.png",
+      "bytes": 137004,
+      "sha256": "ee89b5e7038e937cdb436a560c946faff4bdd7bf0fa70d1bf391eff3703b8145"
+    }
+  ]
+}

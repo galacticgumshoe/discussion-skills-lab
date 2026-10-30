@@ -1,0 +1,2313 @@
+{
+  "date": "2026-10-30",
+  "scope": "Combined passing coverage for 448 distinct cases (424 core plus 24 explicit public model-mode cases), not one clean invocation or whole-site suite. Failed attempts remain explicitly recorded.",
+  "byProject": {
+    "chromium": 112,
+    "firefox": 112,
+    "webkit": 112,
+    "mobile-chromium": 112
+  },
+  "runs": [
+    {
+      "output": "/Users/rhys/.local/share/opencode/shell/4fdc240970cf40f216f4ce23490882949e430fb9/sh_18a1cc965001RvZt0vJYCdM3uV.out",
+      "sha256": "0851c8e9c0f87541283f60c6610630dfc688881e0ada7310f8b4f51b6998076e",
+      "command": "> playwright test tests/browser/component-contracts.spec.mjs tests/browser/navigation-contracts.spec.mjs tests/browser/progress-contracts.spec.mjs tests/browser/writing-controls.spec.mjs tests/browser/middle-questions.spec.mjs tests/browser/lesson-boundaries.spec.mjs tests/browser/controller-lifecycle.spec.mjs --workers=1 --max-failures=1 --reporter=line --output=test-results/m8-t09-consolidated-all-projects",
+      "summary": [
+        "  Slow test file: [firefox] › tests/browser/writing-controls.spec.mjs (5.2m)",
+        "  1 failed",
+        "  204 did not run",
+        "  219 passed (22.4m)"
+      ],
+      "failedCases": [
+        [
+          "webkit",
+          "tests/browser/component-contracts.spec.mjs",
+          "/ card/panel APIs retain independent exploration, silent native hydration, ARIA and scoped responsive styles"
+        ]
+      ],
+      "started": 220
+    },
+    {
+      "output": "/Users/rhys/.local/share/opencode/shell/4fdc240970cf40f216f4ce23490882949e430fb9/sh_18c6c0b3a001FJlwU3la9F8tD5.out",
+      "sha256": "aca2ecf482e09d3980f60e1e72f048318ef2eccd9b6b434a1f471c5229a2da72",
+      "command": "> playwright test tests/browser/component-contracts.spec.mjs tests/browser/navigation-contracts.spec.mjs tests/browser/progress-contracts.spec.mjs tests/browser/writing-controls.spec.mjs tests/browser/middle-questions.spec.mjs tests/browser/lesson-boundaries.spec.mjs tests/browser/controller-lifecycle.spec.mjs --project=webkit --project=mobile-chromium --workers=2 --max-failures=1 --reporter=line --output=test-results/m8-t09-webkit-mobile-verified",
+      "summary": [
+        "  212 passed (9.7m)"
+      ],
+      "failedCases": [],
+      "started": 212
+    },
+    {
+      "output": "/Users/rhys/.local/share/opencode/shell/4fdc240970cf40f216f4ce23490882949e430fb9/sh_18c70e43f001FXtm6AvDBonORe.out",
+      "sha256": "fa0c36a4fcc28639af51d0f067dcf5e0e481b6ebd0c4e30099c20ae6101def48",
+      "command": "> playwright test tests/browser/component-contracts.spec.mjs --grep card/panel APIs --workers=1 --max-failures=1 --reporter=line --output=test-results/m8-t09-card-final-all-projects",
+      "summary": [
+        "  8 passed (59.3s)"
+      ],
+      "failedCases": [],
+      "started": 8
+    },
+    {
+      "output": "/Users/rhys/.local/share/opencode/shell/4fdc240970cf40f216f4ce23490882949e430fb9/sh_18c7842f3001joYHC7AlTGt30F.out",
+      "sha256": "58018705454febe64c4ed82b0c3742641d4996cfc5f91802acc20c9516919966",
+      "command": "> playwright test tests/browser/component-contracts.spec.mjs --grep writing/checklist API --workers=1 --max-failures=1 --reporter=line --output=test-results/m8-t09-writing-enlargement-all-projects",
+      "summary": [
+        "  8 passed (19.8s)"
+      ],
+      "failedCases": [],
+      "started": 8
+    },
+    {
+      "output": "/Users/rhys/.local/share/opencode/shell/4fdc240970cf40f216f4ce23490882949e430fb9/sh_18c986f54001YqhaN2WHy5QBwq.out",
+      "sha256": "3cd03f2fe1e8bffd499d218e9751394aae043de01d197b19d0332dcecd3c90b1",
+      "command": "> playwright test tests/browser/writing-controls.spec.mjs --grep public model modes --workers=1 --max-failures=1 --reporter=line --output=test-results/m8-model-mode-destinations-corrected",
+      "summary": [
+        "  24 passed (5.6m)"
+      ],
+      "failedCases": [],
+      "started": 24
+    }
+  ],
+  "cases": [
+    {
+      "project": "chromium",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/ question API opening-classification: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/ question API opening-knowledge-check: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/ question API middle-scenarios: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/ question API middle-quiz: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/ question API middle-application: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/ question API final-questions: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/ all-at-once retry clears only first unearned choice and focuses its first option"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/ card/panel APIs retain independent exploration, silent native hydration, ARIA and scoped responsive styles"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/ writing/checklist API preserves caret, callbacks and late clipboard denial across destroy/remount"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/ clipboard utility fallback has no storage identity, returns focus, deduplicates and cleans up"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/ reference API preloads/retries independently, prints semantically, remounts once and never touches storage"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ question API opening-classification: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ question API opening-knowledge-check: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ question API middle-scenarios: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ question API middle-quiz: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ question API middle-application: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ question API final-questions: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ all-at-once retry clears only first unearned choice and focuses its first option"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ card/panel APIs retain independent exploration, silent native hydration, ARIA and scoped responsive styles"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ writing/checklist API preserves caret, callbacks and late clipboard denial across destroy/remount"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ clipboard utility fallback has no storage identity, returns focus, deduplicates and cleans up"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ reference API preloads/retries independently, prints semantically, remounts once and never touches storage"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/controller-lifecycle.spec.mjs",
+      "title": "/ direct question/checklist updates and repeated remounts are silent; old nodes inert, one stable live region/callback"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/controller-lifecycle.spec.mjs",
+      "title": "/discussion-skills-lab/ direct question/checklist updates and repeated remounts are silent; old nodes inert, one stable live region/callback"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/ public Final actual prerequisites/unlock, fixed fields, decoys, permanent credit and refresh"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/ all 43 shared invalid cases are rejected by real browser boundaries without saves"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/ public metadata/IDs/paths/missing/broken responses fail before storage reads; retry recovers"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/ public missing/invalid activities isolate failure, retain drafts/reference and hydrate silently on retry"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/ failed reference body does not disable ordinary credit; retry and Print never save"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/ public Final panel open-state restores silently without invented exploration and saves fixed global indexes"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/ public composed data/heading hooks retain independent sealed extraction and all writing profiles validate"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/ public corrupt storage preserves session unlock, exact bytes and separate warning"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/ public denied storage preserves session unlock, exact bytes and separate warning"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/ public quota storage preserves session unlock, exact bytes and separate warning"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/discussion-skills-lab/ public Final actual prerequisites/unlock, fixed fields, decoys, permanent credit and refresh"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/discussion-skills-lab/ all 43 shared invalid cases are rejected by real browser boundaries without saves"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/discussion-skills-lab/ public metadata/IDs/paths/missing/broken responses fail before storage reads; retry recovers"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/discussion-skills-lab/ public missing/invalid activities isolate failure, retain drafts/reference and hydrate silently on retry"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/discussion-skills-lab/ failed reference body does not disable ordinary credit; retry and Print never save"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/discussion-skills-lab/ public Final panel open-state restores silently without invented exploration and saves fixed global indexes"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/discussion-skills-lab/ public composed data/heading hooks retain independent sealed extraction and all writing profiles validate"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/discussion-skills-lab/ public corrupt storage preserves session unlock, exact bytes and separate warning"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/discussion-skills-lab/ public denied storage preserves session unlock, exact bytes and separate warning"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/discussion-skills-lab/ public quota storage preserves session unlock, exact bytes and separate warning"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/ Middle public production requests are mount-relative; fresh hydration grants no credit and never saves"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/ Middle public sequences preserve every option/feedback, earned history, wraparound and immediate cursors"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/ Middle public quiz direct jumps/zero option/score/review-first survive wrong-after-credit and reload"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/ Middle public reordered model cards/options retain fixed global index 6 and quiz index zero bindings"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/ Middle public safe v1 fixtures silently hydrate all current questions and reordered checklist bindings"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/ Middle public reordered checklist saves fixed index 4, preserves extensions and replays in the original engine"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/discussion-skills-lab/ Middle public production requests are mount-relative; fresh hydration grants no credit and never saves"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/discussion-skills-lab/ Middle public sequences preserve every option/feedback, earned history, wraparound and immediate cursors"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/discussion-skills-lab/ Middle public quiz direct jumps/zero option/score/review-first survive wrong-after-credit and reload"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/discussion-skills-lab/ Middle public reordered model cards/options retain fixed global index 6 and quiz index zero bindings"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/discussion-skills-lab/ Middle public safe v1 fixtures silently hydrate all current questions and reordered checklist bindings"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/discussion-skills-lab/ Middle public reordered checklist saves fixed index 4, preserves extensions and replays in the original engine"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/navigation-contracts.spec.mjs",
+      "title": "/ public Opening retains all fifteen source heading/intro passages and original navigation labels"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/navigation-contracts.spec.mjs",
+      "title": "/ navigation API honors explicit reordered elements, zero/sparse credit, locked rejection and permanent union without storage"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/navigation-contracts.spec.mjs",
+      "title": "/ navigation lifecycle restores original tabindex, focus/scroll and one handler per remount"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/navigation-contracts.spec.mjs",
+      "title": "/ last counted page still needs credit for Next; reference and defensive totals remain independent"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/navigation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ public Opening retains all fifteen source heading/intro passages and original navigation labels"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/navigation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ navigation API honors explicit reordered elements, zero/sparse credit, locked rejection and permanent union without storage"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/navigation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ navigation lifecycle restores original tabindex, focus/scroll and one handler per remount"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/navigation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ last counted page still needs credit for Next; reference and defensive totals remain independent"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/opening real store reads once, deduplicates unchanged saves and restores exact draft/credit independent of DOM"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/opening every unsafe saved fixture remains byte-for-byte intact while memory fields/credit remain usable"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/opening denied/quota browser storage warns and retains memory without fallback writes"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/opening extended adapter-written payload still runs in the independently pinned original engine"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/middle real store reads once, deduplicates unchanged saves and restores exact draft/credit independent of DOM"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/middle every unsafe saved fixture remains byte-for-byte intact while memory fields/credit remain usable"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/middle denied/quota browser storage warns and retains memory without fallback writes"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/middle extended adapter-written payload still runs in the independently pinned original engine"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/final real store reads once, deduplicates unchanged saves and restores exact draft/credit independent of DOM"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/final every unsafe saved fixture remains byte-for-byte intact while memory fields/credit remain usable"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/final denied/quota browser storage warns and retains memory without fallback writes"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/final extended adapter-written payload still runs in the independently pinned original engine"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/opening real store reads once, deduplicates unchanged saves and restores exact draft/credit independent of DOM"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/opening every unsafe saved fixture remains byte-for-byte intact while memory fields/credit remain usable"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/opening denied/quota browser storage warns and retains memory without fallback writes"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/opening extended adapter-written payload still runs in the independently pinned original engine"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/middle real store reads once, deduplicates unchanged saves and restores exact draft/credit independent of DOM"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/middle every unsafe saved fixture remains byte-for-byte intact while memory fields/credit remain usable"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/middle denied/quota browser storage warns and retains memory without fallback writes"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/middle extended adapter-written payload still runs in the independently pinned original engine"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/final real store reads once, deduplicates unchanged saves and restores exact draft/credit independent of DOM"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/final every unsafe saved fixture remains byte-for-byte intact while memory fields/credit remain usable"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/final denied/quota browser storage warns and retains memory without fallback writes"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/final extended adapter-written payload still runs in the independently pinned original engine"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/opening public writing fields/models/checklists preserve independent original labels/modes and silent saved hydration"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/opening public writing saves every input immediately, excludes decoys and never overwrites edited output without assembly"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/middle public writing fields/models/checklists preserve independent original labels/modes and silent saved hydration"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/middle public writing saves every input immediately, excludes decoys and never overwrites edited output without assembly"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/final public writing fields/models/checklists preserve independent original labels/modes and silent saved hydration"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/final public writing saves every input immediately, excludes decoys and never overwrites edited output without assembly"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/ public clipboard success copies/selects exact text without progress changes"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/ public clipboard denied copies/selects exact text without progress changes"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/ public clipboard unavailable copies/selects exact text without progress changes"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/opening public writing fields/models/checklists preserve independent original labels/modes and silent saved hydration"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/opening public writing saves every input immediately, excludes decoys and never overwrites edited output without assembly"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/middle public writing fields/models/checklists preserve independent original labels/modes and silent saved hydration"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/middle public writing saves every input immediately, excludes decoys and never overwrites edited output without assembly"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/final public writing fields/models/checklists preserve independent original labels/modes and silent saved hydration"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/final public writing saves every input immediately, excludes decoys and never overwrites edited output without assembly"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/ public clipboard success copies/selects exact text without progress changes"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/ public clipboard denied copies/selects exact text without progress changes"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/ public clipboard unavailable copies/selects exact text without progress changes"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/ question API opening-classification: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/ question API opening-knowledge-check: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/ question API middle-scenarios: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/ question API middle-quiz: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/ question API middle-application: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/ question API final-questions: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/ all-at-once retry clears only first unearned choice and focuses its first option"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/ card/panel APIs retain independent exploration, silent native hydration, ARIA and scoped responsive styles"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/ writing/checklist API preserves caret, callbacks and late clipboard denial across destroy/remount"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/ clipboard utility fallback has no storage identity, returns focus, deduplicates and cleans up"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/ reference API preloads/retries independently, prints semantically, remounts once and never touches storage"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ question API opening-classification: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ question API opening-knowledge-check: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ question API middle-scenarios: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ question API middle-quiz: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ question API middle-application: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ question API final-questions: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ all-at-once retry clears only first unearned choice and focuses its first option"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ card/panel APIs retain independent exploration, silent native hydration, ARIA and scoped responsive styles"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ writing/checklist API preserves caret, callbacks and late clipboard denial across destroy/remount"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ clipboard utility fallback has no storage identity, returns focus, deduplicates and cleans up"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ reference API preloads/retries independently, prints semantically, remounts once and never touches storage"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/controller-lifecycle.spec.mjs",
+      "title": "/ direct question/checklist updates and repeated remounts are silent; old nodes inert, one stable live region/callback"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/controller-lifecycle.spec.mjs",
+      "title": "/discussion-skills-lab/ direct question/checklist updates and repeated remounts are silent; old nodes inert, one stable live region/callback"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/ public Final actual prerequisites/unlock, fixed fields, decoys, permanent credit and refresh"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/ all 43 shared invalid cases are rejected by real browser boundaries without saves"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/ public metadata/IDs/paths/missing/broken responses fail before storage reads; retry recovers"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/ public missing/invalid activities isolate failure, retain drafts/reference and hydrate silently on retry"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/ failed reference body does not disable ordinary credit; retry and Print never save"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/ public Final panel open-state restores silently without invented exploration and saves fixed global indexes"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/ public composed data/heading hooks retain independent sealed extraction and all writing profiles validate"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/ public corrupt storage preserves session unlock, exact bytes and separate warning"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/ public denied storage preserves session unlock, exact bytes and separate warning"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/ public quota storage preserves session unlock, exact bytes and separate warning"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/discussion-skills-lab/ public Final actual prerequisites/unlock, fixed fields, decoys, permanent credit and refresh"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/discussion-skills-lab/ all 43 shared invalid cases are rejected by real browser boundaries without saves"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/discussion-skills-lab/ public metadata/IDs/paths/missing/broken responses fail before storage reads; retry recovers"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/discussion-skills-lab/ public missing/invalid activities isolate failure, retain drafts/reference and hydrate silently on retry"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/discussion-skills-lab/ failed reference body does not disable ordinary credit; retry and Print never save"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/discussion-skills-lab/ public Final panel open-state restores silently without invented exploration and saves fixed global indexes"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/discussion-skills-lab/ public composed data/heading hooks retain independent sealed extraction and all writing profiles validate"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/discussion-skills-lab/ public corrupt storage preserves session unlock, exact bytes and separate warning"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/discussion-skills-lab/ public denied storage preserves session unlock, exact bytes and separate warning"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/discussion-skills-lab/ public quota storage preserves session unlock, exact bytes and separate warning"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/ Middle public production requests are mount-relative; fresh hydration grants no credit and never saves"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/ Middle public sequences preserve every option/feedback, earned history, wraparound and immediate cursors"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/ Middle public quiz direct jumps/zero option/score/review-first survive wrong-after-credit and reload"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/ Middle public reordered model cards/options retain fixed global index 6 and quiz index zero bindings"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/ Middle public safe v1 fixtures silently hydrate all current questions and reordered checklist bindings"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/ Middle public reordered checklist saves fixed index 4, preserves extensions and replays in the original engine"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/discussion-skills-lab/ Middle public production requests are mount-relative; fresh hydration grants no credit and never saves"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/discussion-skills-lab/ Middle public sequences preserve every option/feedback, earned history, wraparound and immediate cursors"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/discussion-skills-lab/ Middle public quiz direct jumps/zero option/score/review-first survive wrong-after-credit and reload"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/discussion-skills-lab/ Middle public reordered model cards/options retain fixed global index 6 and quiz index zero bindings"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/discussion-skills-lab/ Middle public safe v1 fixtures silently hydrate all current questions and reordered checklist bindings"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/discussion-skills-lab/ Middle public reordered checklist saves fixed index 4, preserves extensions and replays in the original engine"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/navigation-contracts.spec.mjs",
+      "title": "/ public Opening retains all fifteen source heading/intro passages and original navigation labels"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/navigation-contracts.spec.mjs",
+      "title": "/ navigation API honors explicit reordered elements, zero/sparse credit, locked rejection and permanent union without storage"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/navigation-contracts.spec.mjs",
+      "title": "/ navigation lifecycle restores original tabindex, focus/scroll and one handler per remount"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/navigation-contracts.spec.mjs",
+      "title": "/ last counted page still needs credit for Next; reference and defensive totals remain independent"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/navigation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ public Opening retains all fifteen source heading/intro passages and original navigation labels"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/navigation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ navigation API honors explicit reordered elements, zero/sparse credit, locked rejection and permanent union without storage"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/navigation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ navigation lifecycle restores original tabindex, focus/scroll and one handler per remount"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/navigation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ last counted page still needs credit for Next; reference and defensive totals remain independent"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/opening real store reads once, deduplicates unchanged saves and restores exact draft/credit independent of DOM"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/opening every unsafe saved fixture remains byte-for-byte intact while memory fields/credit remain usable"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/opening denied/quota browser storage warns and retains memory without fallback writes"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/opening extended adapter-written payload still runs in the independently pinned original engine"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/middle real store reads once, deduplicates unchanged saves and restores exact draft/credit independent of DOM"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/middle every unsafe saved fixture remains byte-for-byte intact while memory fields/credit remain usable"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/middle denied/quota browser storage warns and retains memory without fallback writes"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/middle extended adapter-written payload still runs in the independently pinned original engine"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/final real store reads once, deduplicates unchanged saves and restores exact draft/credit independent of DOM"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/final every unsafe saved fixture remains byte-for-byte intact while memory fields/credit remain usable"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/final denied/quota browser storage warns and retains memory without fallback writes"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/final extended adapter-written payload still runs in the independently pinned original engine"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/opening real store reads once, deduplicates unchanged saves and restores exact draft/credit independent of DOM"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/opening every unsafe saved fixture remains byte-for-byte intact while memory fields/credit remain usable"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/opening denied/quota browser storage warns and retains memory without fallback writes"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/opening extended adapter-written payload still runs in the independently pinned original engine"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/middle real store reads once, deduplicates unchanged saves and restores exact draft/credit independent of DOM"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/middle every unsafe saved fixture remains byte-for-byte intact while memory fields/credit remain usable"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/middle denied/quota browser storage warns and retains memory without fallback writes"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/middle extended adapter-written payload still runs in the independently pinned original engine"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/final real store reads once, deduplicates unchanged saves and restores exact draft/credit independent of DOM"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/final every unsafe saved fixture remains byte-for-byte intact while memory fields/credit remain usable"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/final denied/quota browser storage warns and retains memory without fallback writes"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/final extended adapter-written payload still runs in the independently pinned original engine"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/opening public writing fields/models/checklists preserve independent original labels/modes and silent saved hydration"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/opening public writing saves every input immediately, excludes decoys and never overwrites edited output without assembly"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/middle public writing fields/models/checklists preserve independent original labels/modes and silent saved hydration"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/middle public writing saves every input immediately, excludes decoys and never overwrites edited output without assembly"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/final public writing fields/models/checklists preserve independent original labels/modes and silent saved hydration"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/final public writing saves every input immediately, excludes decoys and never overwrites edited output without assembly"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/ public clipboard success copies/selects exact text without progress changes"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/ public clipboard denied copies/selects exact text without progress changes"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/ public clipboard unavailable copies/selects exact text without progress changes"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/opening public writing fields/models/checklists preserve independent original labels/modes and silent saved hydration"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/opening public writing saves every input immediately, excludes decoys and never overwrites edited output without assembly"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/middle public writing fields/models/checklists preserve independent original labels/modes and silent saved hydration"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/middle public writing saves every input immediately, excludes decoys and never overwrites edited output without assembly"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/final public writing fields/models/checklists preserve independent original labels/modes and silent saved hydration"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/final public writing saves every input immediately, excludes decoys and never overwrites edited output without assembly"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/ public clipboard success copies/selects exact text without progress changes"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/ public clipboard denied copies/selects exact text without progress changes"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/ public clipboard unavailable copies/selects exact text without progress changes"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/ question API opening-classification: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/ question API opening-knowledge-check: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/ question API middle-scenarios: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/ question API middle-quiz: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/ question API middle-application: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/ question API final-questions: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/ all-at-once retry clears only first unearned choice and focuses its first option"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/ card/panel APIs retain independent exploration, silent native hydration, ARIA and scoped responsive styles"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/ writing/checklist API preserves caret, callbacks and late clipboard denial across destroy/remount"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/ clipboard utility fallback has no storage identity, returns focus, deduplicates and cleans up"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/ reference API preloads/retries independently, prints semantically, remounts once and never touches storage"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ question API opening-classification: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ question API opening-knowledge-check: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ question API middle-scenarios: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ question API middle-quiz: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ question API middle-application: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ question API final-questions: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ all-at-once retry clears only first unearned choice and focuses its first option"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ card/panel APIs retain independent exploration, silent native hydration, ARIA and scoped responsive styles"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ writing/checklist API preserves caret, callbacks and late clipboard denial across destroy/remount"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ clipboard utility fallback has no storage identity, returns focus, deduplicates and cleans up"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ reference API preloads/retries independently, prints semantically, remounts once and never touches storage"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/controller-lifecycle.spec.mjs",
+      "title": "/ direct question/checklist updates and repeated remounts are silent; old nodes inert, one stable live region/callback"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/controller-lifecycle.spec.mjs",
+      "title": "/discussion-skills-lab/ direct question/checklist updates and repeated remounts are silent; old nodes inert, one stable live region/callback"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/ public Final actual prerequisites/unlock, fixed fields, decoys, permanent credit and refresh"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/ all 43 shared invalid cases are rejected by real browser boundaries without saves"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/ public metadata/IDs/paths/missing/broken responses fail before storage reads; retry recovers"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/ public missing/invalid activities isolate failure, retain drafts/reference and hydrate silently on retry"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/ failed reference body does not disable ordinary credit; retry and Print never save"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/ public Final panel open-state restores silently without invented exploration and saves fixed global indexes"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/ public composed data/heading hooks retain independent sealed extraction and all writing profiles validate"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/ public corrupt storage preserves session unlock, exact bytes and separate warning"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/ public denied storage preserves session unlock, exact bytes and separate warning"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/ public quota storage preserves session unlock, exact bytes and separate warning"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/discussion-skills-lab/ public Final actual prerequisites/unlock, fixed fields, decoys, permanent credit and refresh"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/discussion-skills-lab/ all 43 shared invalid cases are rejected by real browser boundaries without saves"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/discussion-skills-lab/ public metadata/IDs/paths/missing/broken responses fail before storage reads; retry recovers"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/discussion-skills-lab/ public missing/invalid activities isolate failure, retain drafts/reference and hydrate silently on retry"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/discussion-skills-lab/ failed reference body does not disable ordinary credit; retry and Print never save"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/discussion-skills-lab/ public Final panel open-state restores silently without invented exploration and saves fixed global indexes"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/discussion-skills-lab/ public composed data/heading hooks retain independent sealed extraction and all writing profiles validate"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/discussion-skills-lab/ public corrupt storage preserves session unlock, exact bytes and separate warning"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/discussion-skills-lab/ public denied storage preserves session unlock, exact bytes and separate warning"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/discussion-skills-lab/ public quota storage preserves session unlock, exact bytes and separate warning"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/ Middle public production requests are mount-relative; fresh hydration grants no credit and never saves"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/ Middle public sequences preserve every option/feedback, earned history, wraparound and immediate cursors"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/ Middle public quiz direct jumps/zero option/score/review-first survive wrong-after-credit and reload"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/ Middle public reordered model cards/options retain fixed global index 6 and quiz index zero bindings"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/ Middle public safe v1 fixtures silently hydrate all current questions and reordered checklist bindings"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/ Middle public reordered checklist saves fixed index 4, preserves extensions and replays in the original engine"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/discussion-skills-lab/ Middle public production requests are mount-relative; fresh hydration grants no credit and never saves"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/discussion-skills-lab/ Middle public sequences preserve every option/feedback, earned history, wraparound and immediate cursors"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/discussion-skills-lab/ Middle public quiz direct jumps/zero option/score/review-first survive wrong-after-credit and reload"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/discussion-skills-lab/ Middle public reordered model cards/options retain fixed global index 6 and quiz index zero bindings"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/discussion-skills-lab/ Middle public safe v1 fixtures silently hydrate all current questions and reordered checklist bindings"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/discussion-skills-lab/ Middle public reordered checklist saves fixed index 4, preserves extensions and replays in the original engine"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/navigation-contracts.spec.mjs",
+      "title": "/ public Opening retains all fifteen source heading/intro passages and original navigation labels"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/navigation-contracts.spec.mjs",
+      "title": "/ navigation API honors explicit reordered elements, zero/sparse credit, locked rejection and permanent union without storage"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/navigation-contracts.spec.mjs",
+      "title": "/ navigation lifecycle restores original tabindex, focus/scroll and one handler per remount"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/navigation-contracts.spec.mjs",
+      "title": "/ last counted page still needs credit for Next; reference and defensive totals remain independent"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/navigation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ public Opening retains all fifteen source heading/intro passages and original navigation labels"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/navigation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ navigation API honors explicit reordered elements, zero/sparse credit, locked rejection and permanent union without storage"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/navigation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ navigation lifecycle restores original tabindex, focus/scroll and one handler per remount"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/navigation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ last counted page still needs credit for Next; reference and defensive totals remain independent"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/opening real store reads once, deduplicates unchanged saves and restores exact draft/credit independent of DOM"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/opening every unsafe saved fixture remains byte-for-byte intact while memory fields/credit remain usable"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/opening denied/quota browser storage warns and retains memory without fallback writes"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/opening extended adapter-written payload still runs in the independently pinned original engine"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/middle real store reads once, deduplicates unchanged saves and restores exact draft/credit independent of DOM"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/middle every unsafe saved fixture remains byte-for-byte intact while memory fields/credit remain usable"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/middle denied/quota browser storage warns and retains memory without fallback writes"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/middle extended adapter-written payload still runs in the independently pinned original engine"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/final real store reads once, deduplicates unchanged saves and restores exact draft/credit independent of DOM"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/final every unsafe saved fixture remains byte-for-byte intact while memory fields/credit remain usable"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/final denied/quota browser storage warns and retains memory without fallback writes"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/final extended adapter-written payload still runs in the independently pinned original engine"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/opening real store reads once, deduplicates unchanged saves and restores exact draft/credit independent of DOM"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/opening every unsafe saved fixture remains byte-for-byte intact while memory fields/credit remain usable"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/opening denied/quota browser storage warns and retains memory without fallback writes"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/opening extended adapter-written payload still runs in the independently pinned original engine"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/middle real store reads once, deduplicates unchanged saves and restores exact draft/credit independent of DOM"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/middle every unsafe saved fixture remains byte-for-byte intact while memory fields/credit remain usable"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/middle denied/quota browser storage warns and retains memory without fallback writes"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/middle extended adapter-written payload still runs in the independently pinned original engine"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/final real store reads once, deduplicates unchanged saves and restores exact draft/credit independent of DOM"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/final every unsafe saved fixture remains byte-for-byte intact while memory fields/credit remain usable"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/final denied/quota browser storage warns and retains memory without fallback writes"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/final extended adapter-written payload still runs in the independently pinned original engine"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/opening public writing fields/models/checklists preserve independent original labels/modes and silent saved hydration"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/opening public writing saves every input immediately, excludes decoys and never overwrites edited output without assembly"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/middle public writing fields/models/checklists preserve independent original labels/modes and silent saved hydration"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/middle public writing saves every input immediately, excludes decoys and never overwrites edited output without assembly"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/final public writing fields/models/checklists preserve independent original labels/modes and silent saved hydration"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/final public writing saves every input immediately, excludes decoys and never overwrites edited output without assembly"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/ public clipboard success copies/selects exact text without progress changes"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/ public clipboard denied copies/selects exact text without progress changes"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/ public clipboard unavailable copies/selects exact text without progress changes"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/opening public writing fields/models/checklists preserve independent original labels/modes and silent saved hydration"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/opening public writing saves every input immediately, excludes decoys and never overwrites edited output without assembly"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/middle public writing fields/models/checklists preserve independent original labels/modes and silent saved hydration"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/middle public writing saves every input immediately, excludes decoys and never overwrites edited output without assembly"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/final public writing fields/models/checklists preserve independent original labels/modes and silent saved hydration"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/final public writing saves every input immediately, excludes decoys and never overwrites edited output without assembly"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/ public clipboard success copies/selects exact text without progress changes"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/ public clipboard denied copies/selects exact text without progress changes"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/ public clipboard unavailable copies/selects exact text without progress changes"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/ question API opening-classification: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/ question API opening-knowledge-check: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/ question API middle-scenarios: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/ question API middle-quiz: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/ question API middle-application: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/ question API final-questions: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/ all-at-once retry clears only first unearned choice and focuses its first option"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/ card/panel APIs retain independent exploration, silent native hydration, ARIA and scoped responsive styles"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/ writing/checklist API preserves caret, callbacks and late clipboard denial across destroy/remount"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/ clipboard utility fallback has no storage identity, returns focus, deduplicates and cleans up"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/ reference API preloads/retries independently, prints semantically, remounts once and never touches storage"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ question API opening-classification: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ question API opening-knowledge-check: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ question API middle-scenarios: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ question API middle-quiz: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ question API middle-application: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ question API final-questions: latest choice, earned history, navigation, feedback/focus and silent updates"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ all-at-once retry clears only first unearned choice and focuses its first option"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ card/panel APIs retain independent exploration, silent native hydration, ARIA and scoped responsive styles"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ writing/checklist API preserves caret, callbacks and late clipboard denial across destroy/remount"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ clipboard utility fallback has no storage identity, returns focus, deduplicates and cleans up"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/component-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ reference API preloads/retries independently, prints semantically, remounts once and never touches storage"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/controller-lifecycle.spec.mjs",
+      "title": "/ direct question/checklist updates and repeated remounts are silent; old nodes inert, one stable live region/callback"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/controller-lifecycle.spec.mjs",
+      "title": "/discussion-skills-lab/ direct question/checklist updates and repeated remounts are silent; old nodes inert, one stable live region/callback"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/ public Final actual prerequisites/unlock, fixed fields, decoys, permanent credit and refresh"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/ all 43 shared invalid cases are rejected by real browser boundaries without saves"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/ public metadata/IDs/paths/missing/broken responses fail before storage reads; retry recovers"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/ public missing/invalid activities isolate failure, retain drafts/reference and hydrate silently on retry"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/ failed reference body does not disable ordinary credit; retry and Print never save"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/ public Final panel open-state restores silently without invented exploration and saves fixed global indexes"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/ public composed data/heading hooks retain independent sealed extraction and all writing profiles validate"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/ public corrupt storage preserves session unlock, exact bytes and separate warning"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/ public denied storage preserves session unlock, exact bytes and separate warning"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/ public quota storage preserves session unlock, exact bytes and separate warning"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/discussion-skills-lab/ public Final actual prerequisites/unlock, fixed fields, decoys, permanent credit and refresh"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/discussion-skills-lab/ all 43 shared invalid cases are rejected by real browser boundaries without saves"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/discussion-skills-lab/ public metadata/IDs/paths/missing/broken responses fail before storage reads; retry recovers"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/discussion-skills-lab/ public missing/invalid activities isolate failure, retain drafts/reference and hydrate silently on retry"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/discussion-skills-lab/ failed reference body does not disable ordinary credit; retry and Print never save"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/discussion-skills-lab/ public Final panel open-state restores silently without invented exploration and saves fixed global indexes"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/discussion-skills-lab/ public composed data/heading hooks retain independent sealed extraction and all writing profiles validate"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/discussion-skills-lab/ public corrupt storage preserves session unlock, exact bytes and separate warning"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/discussion-skills-lab/ public denied storage preserves session unlock, exact bytes and separate warning"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/lesson-boundaries.spec.mjs",
+      "title": "/discussion-skills-lab/ public quota storage preserves session unlock, exact bytes and separate warning"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/ Middle public production requests are mount-relative; fresh hydration grants no credit and never saves"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/ Middle public sequences preserve every option/feedback, earned history, wraparound and immediate cursors"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/ Middle public quiz direct jumps/zero option/score/review-first survive wrong-after-credit and reload"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/ Middle public reordered model cards/options retain fixed global index 6 and quiz index zero bindings"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/ Middle public safe v1 fixtures silently hydrate all current questions and reordered checklist bindings"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/ Middle public reordered checklist saves fixed index 4, preserves extensions and replays in the original engine"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/discussion-skills-lab/ Middle public production requests are mount-relative; fresh hydration grants no credit and never saves"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/discussion-skills-lab/ Middle public sequences preserve every option/feedback, earned history, wraparound and immediate cursors"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/discussion-skills-lab/ Middle public quiz direct jumps/zero option/score/review-first survive wrong-after-credit and reload"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/discussion-skills-lab/ Middle public reordered model cards/options retain fixed global index 6 and quiz index zero bindings"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/discussion-skills-lab/ Middle public safe v1 fixtures silently hydrate all current questions and reordered checklist bindings"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/middle-questions.spec.mjs",
+      "title": "/discussion-skills-lab/ Middle public reordered checklist saves fixed index 4, preserves extensions and replays in the original engine"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/navigation-contracts.spec.mjs",
+      "title": "/ public Opening retains all fifteen source heading/intro passages and original navigation labels"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/navigation-contracts.spec.mjs",
+      "title": "/ navigation API honors explicit reordered elements, zero/sparse credit, locked rejection and permanent union without storage"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/navigation-contracts.spec.mjs",
+      "title": "/ navigation lifecycle restores original tabindex, focus/scroll and one handler per remount"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/navigation-contracts.spec.mjs",
+      "title": "/ last counted page still needs credit for Next; reference and defensive totals remain independent"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/navigation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ public Opening retains all fifteen source heading/intro passages and original navigation labels"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/navigation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ navigation API honors explicit reordered elements, zero/sparse credit, locked rejection and permanent union without storage"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/navigation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ navigation lifecycle restores original tabindex, focus/scroll and one handler per remount"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/navigation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/ last counted page still needs credit for Next; reference and defensive totals remain independent"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/opening real store reads once, deduplicates unchanged saves and restores exact draft/credit independent of DOM"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/opening every unsafe saved fixture remains byte-for-byte intact while memory fields/credit remain usable"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/opening denied/quota browser storage warns and retains memory without fallback writes"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/opening extended adapter-written payload still runs in the independently pinned original engine"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/middle real store reads once, deduplicates unchanged saves and restores exact draft/credit independent of DOM"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/middle every unsafe saved fixture remains byte-for-byte intact while memory fields/credit remain usable"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/middle denied/quota browser storage warns and retains memory without fallback writes"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/middle extended adapter-written payload still runs in the independently pinned original engine"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/final real store reads once, deduplicates unchanged saves and restores exact draft/credit independent of DOM"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/final every unsafe saved fixture remains byte-for-byte intact while memory fields/credit remain usable"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/final denied/quota browser storage warns and retains memory without fallback writes"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/final extended adapter-written payload still runs in the independently pinned original engine"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/opening real store reads once, deduplicates unchanged saves and restores exact draft/credit independent of DOM"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/opening every unsafe saved fixture remains byte-for-byte intact while memory fields/credit remain usable"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/opening denied/quota browser storage warns and retains memory without fallback writes"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/opening extended adapter-written payload still runs in the independently pinned original engine"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/middle real store reads once, deduplicates unchanged saves and restores exact draft/credit independent of DOM"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/middle every unsafe saved fixture remains byte-for-byte intact while memory fields/credit remain usable"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/middle denied/quota browser storage warns and retains memory without fallback writes"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/middle extended adapter-written payload still runs in the independently pinned original engine"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/final real store reads once, deduplicates unchanged saves and restores exact draft/credit independent of DOM"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/final every unsafe saved fixture remains byte-for-byte intact while memory fields/credit remain usable"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/final denied/quota browser storage warns and retains memory without fallback writes"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/progress-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/final extended adapter-written payload still runs in the independently pinned original engine"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/opening public writing fields/models/checklists preserve independent original labels/modes and silent saved hydration"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/opening public writing saves every input immediately, excludes decoys and never overwrites edited output without assembly"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/middle public writing fields/models/checklists preserve independent original labels/modes and silent saved hydration"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/middle public writing saves every input immediately, excludes decoys and never overwrites edited output without assembly"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/final public writing fields/models/checklists preserve independent original labels/modes and silent saved hydration"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/final public writing saves every input immediately, excludes decoys and never overwrites edited output without assembly"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/ public clipboard success copies/selects exact text without progress changes"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/ public clipboard denied copies/selects exact text without progress changes"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/ public clipboard unavailable copies/selects exact text without progress changes"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/opening public writing fields/models/checklists preserve independent original labels/modes and silent saved hydration"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/opening public writing saves every input immediately, excludes decoys and never overwrites edited output without assembly"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/middle public writing fields/models/checklists preserve independent original labels/modes and silent saved hydration"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/middle public writing saves every input immediately, excludes decoys and never overwrites edited output without assembly"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/final public writing fields/models/checklists preserve independent original labels/modes and silent saved hydration"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/final public writing saves every input immediately, excludes decoys and never overwrites edited output without assembly"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/ public clipboard success copies/selects exact text without progress changes"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/ public clipboard denied copies/selects exact text without progress changes"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/ public clipboard unavailable copies/selects exact text without progress changes"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/opening public model modes restore independently without changing retained drafts"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/middle public model modes restore independently without changing retained drafts"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/final public model modes restore independently without changing retained drafts"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/opening public model modes restore independently without changing retained drafts"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/middle public model modes restore independently without changing retained drafts"
+    },
+    {
+      "project": "chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/final public model modes restore independently without changing retained drafts"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/opening public model modes restore independently without changing retained drafts"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/middle public model modes restore independently without changing retained drafts"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/final public model modes restore independently without changing retained drafts"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/opening public model modes restore independently without changing retained drafts"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/middle public model modes restore independently without changing retained drafts"
+    },
+    {
+      "project": "firefox",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/final public model modes restore independently without changing retained drafts"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/opening public model modes restore independently without changing retained drafts"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/middle public model modes restore independently without changing retained drafts"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/final public model modes restore independently without changing retained drafts"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/opening public model modes restore independently without changing retained drafts"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/middle public model modes restore independently without changing retained drafts"
+    },
+    {
+      "project": "webkit",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/final public model modes restore independently without changing retained drafts"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/opening public model modes restore independently without changing retained drafts"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/middle public model modes restore independently without changing retained drafts"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/final public model modes restore independently without changing retained drafts"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/opening public model modes restore independently without changing retained drafts"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/middle public model modes restore independently without changing retained drafts"
+    },
+    {
+      "project": "mobile-chromium",
+      "file": "tests/browser/writing-controls.spec.mjs",
+      "title": "/discussion-skills-lab/final public model modes restore independently without changing retained drafts"
+    }
+  ]
+}

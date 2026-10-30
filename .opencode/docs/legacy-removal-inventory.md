@@ -1,5 +1,87 @@
 # Milestone 8 — reviewed-removal inventory v2 and implementation outcomes
 
+## Owner decision on v3 — 2026-10-29
+
+Owner: “I approve of removal of all the T02/T08 related files. I do not wish to
+retain the T09/T10 regression fixtures, so continue those consolidations and do
+not keep.” T02-v3/T08-v3's exact 25 whole files and bounded CLI graph/message edits
+are approved and implemented after verifying the reviewed sources, replacements
+and content evidence against `remaining-sources-v3.json`.
+
+The proposed T09/T10 retention is **rejected**. Their meaningful assertions must
+be consolidated into tested public-page or small shared API checks before their
+old containers can be retired. This decision does not authorize losing assertions,
+new production behavior, broad CSS pruning or deleting sealed original/replay/
+variant artifacts. The earlier v3 proposal/handoff remain historical records;
+current implementation/evidence will be appended below. T09 guard/guide replacement
+and materially changed removal evidence remain subject to the reviewed-scope gate.
+
+Owner also requests plain-language, human-facing `docs/checking-changes.md`;
+agent execution/review detail belongs under `.opencode/docs/`, not in that guide.
+No commit, push, merge, publication or release is authorized.
+
+### Consolidation follow-up — 2026-10-30, owner approved and removal implemented
+
+T02/T08 post-removal verification passes: 25 reviewed absences, zero executable
+consumers, 44 retired fixture 404s and eight public-entry 200s at both mounts.
+T09 replacements have passing coverage for all 424 distinct selected cases across
+four projects/both mounts through explicitly documented combined runs; final card
+and enlarged-writing API follow-ups each pass eight cases. The 127-test affected
+unit selection and content validation pass. Human `docs/checking-changes.md` now
+explains the checks plainly and names the verified replacements; it contains no
+new agent handoff/removal protocol.
+
+Additional public model-mode/restore assertions pass 24/24 across all projects
+and both mounts, bringing T09's combined passing scope to **448 distinct cases**.
+T10's complete role matrix passed **24/24 in one clean invocation** (six per
+project/both mounts, zero skips/failures), and narrow/spacing/final source passed
+**32/32**. The bounded Tailwind setup retry still requires the real generated
+stylesheet on every attempt; a real `net::ERR_TIMED_OUT` is retried as setup, not
+accepted as an unstyled oracle. These results do not turn the draft below into
+deletion approval.
+
+The proposed remaining consolidation scope was **27 whole files plus one bounded
+completion-unit test/unused import**, not a broad fixture-directory deletion. See
+[`consolidation-dispositions-v4.md`](evidence/milestone-8/consolidation-dispositions-v4.md),
+[`consolidation-sources-v4.json`](evidence/milestone-8/consolidation-sources-v4.json),
+[`consolidation-coverage.md`](evidence/milestone-8/consolidation-coverage.md) and
+[`consolidation-verification.md`](evidence/milestone-8/consolidation-verification.md).
+**The owner approved this exact v4 scope on 2026-10-30**, and it has been removed
+after a fresh hash/consumer check. Post-removal: 27/27 files absent, 24 removed
+fixture URLs return ordinary 404s at both mounts, eight public entries return 200,
+the completion file matches its reviewed expected SHA-256, 126/126 affected units
+and content validation pass. The five remaining replacement specs passed
+**368/368** in one clean all-project browser invocation (37.3 minutes, zero
+skipped/unexpected/flaky). No broader cleanup, production edit, commit, push,
+merge, tag, publication or Pages change followed.
+
+## Current resumption proposal — v3 (2026-10-29, approval pending)
+
+The v2 decisions/outcomes below remain historical and unchanged. Newly prepared
+public-page/schema/controller ports and refreshed exact removal/retention scopes
+are reviewed in
+[`evidence/milestone-8/remaining-dispositions-v3.md`](evidence/milestone-8/remaining-dispositions-v3.md),
+with source/replacement identities in
+[`evidence/milestone-8/remaining-sources-v3.json`](evidence/milestone-8/remaining-sources-v3.json)
+and executed checks/limitations in
+[`evidence/milestone-8/remaining-verification-v3.md`](evidence/milestone-8/remaining-verification-v3.md).
+
+**Pending decision:** T02-v3/T08-v3 propose exactly 25 whole-file removals plus
+two CLI-expression/message edits; T09-DOC-v3 proposes replacing the obsolete fixture
+README; T09-GUARDS-v3 proposes correcting two inherited pre-cutover unit guards.
+T09-v3/T10-v3 propose explicit retention of identified direct-API fixtures,
+independent sealed-source oracles and public presentation/replay assertions, not a
+claim of completing their earlier consolidation plans. The detailed proposal
+states the alternative: if that retention disposition is not accepted, their
+assertion-level replacement remains milestone-8 work. No v3 item is approved by
+the general request to finish the milestone; no new deletion has occurred.
+
+Milestone 8 remains **incomplete** at this mandatory reviewed-decision checkpoint.
+Existing canonical instruction, all three legacy codecs/keys, sealed source/replay,
+variant archives, historical evidence and production implementation are unchanged.
+
+## Version 2 decisions and implementation record
+
 **Date:** 2026-10-28. **Source commit:**
 `fc51bac0e8a790ccf40f83720059feed7c9eb501`.
 **Branch:** `refactor/shared-components`. **Approval:** owner message
@@ -82,7 +164,7 @@ Materially changed source/replacement/consumer evidence needs renewed approval.
 | T07 | Approved/implemented: obsolete audit CLI/npm command/function and unused imports removed; pinned reader/hash/allowlist retained. No active executable test consumer of any T03–T07 retired symbol/path remains. |
 | T02 | Deferred/partial port: `middle-reference.spec.mjs` now targets actual `middle.html`, preserving five groups/18 list items/token-emphasis/failure-retry/print assertions. Question/remount/reordered-checklist port remains pending; all four containers retained. |
 | T08 | Deferred/partial port: generic duplicate mount/writer, repeated destroy/remount/old-node, cancellation, registry, independent pending-reference and Markdown-readiness checks added to `app-lifecycle.spec.mjs` using new-module test labels. Existing partial Final suite/data remain until full assertion and content reconciliation. |
-| T09–T10 | Deferred: no container/spec deleted or disabled; assertion-level ports/consolidation remain pending. |
+| T09–T10 | Removed under the owner's 2026-10-30 approval: 18 T09 whole files, nine T10 whole files and one bounded completion test/unused import. Post-removal 24 fixture 404s/eight public 200s at both mounts, 126/126 affected units, completion file at expected hash and content validation pass. |
 | T11 | Approved/implemented after conditional prerequisite satisfied: shell/home/print specs use actual public files; 106 direct-file checks pass. All three exact reviewed helpers removed after unchanged-hash/closed-consumer checks and exclusive final report preservation. No generated historical report/snapshot is removed. |
 | B01/V01/D03 | Retained: sealed original/replay artifacts, meaningful Middle/Final variant archives, vendors/notices and genuine palette variants. |
 | D01–D02 | Deferred: no selector pruning performed; no blanket dead-CSS claim. |

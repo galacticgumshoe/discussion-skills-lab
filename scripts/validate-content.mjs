@@ -183,8 +183,8 @@ export async function validateLessonTree(directory) {
 
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
   try {
-    const errors = [...await validateContent(), ...await validateCatalogTree(), ...await validateLessonTree(project), ...await validateLessonTree(resolve(project, 'tests/fixtures/harness')), ...await validateLessonTree(resolve(project, 'tests/fixtures/new-module'))];
+    const errors = [...await validateContent(), ...await validateCatalogTree(), ...await validateLessonTree(project), ...await validateLessonTree(resolve(project, 'tests/fixtures/new-module'))];
     if (errors.length) { console.error(errors.join('\n')); process.exitCode = 1; }
-    else console.log('Content validation passed: reference/config/manifest/activity schemas, cross-file IDs, gates, paths and Markdown files (including the isolated harness).');
+    else console.log('Content validation passed: reference/config/manifest/activity schemas, cross-file IDs, gates, paths and Markdown files (including the extensibility fixtures).');
   } catch (error) { console.error(`Content validation failed: ${error.message}`); process.exitCode = 1; }
 }

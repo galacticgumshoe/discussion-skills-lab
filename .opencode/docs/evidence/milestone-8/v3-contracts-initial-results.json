@@ -1,0 +1,1260 @@
+{
+  "sourceReportSha256": "44398a243a5ddc37e8bd55a621467010879cb73ca3895698e73638a561aea449",
+  "stats": {
+    "startTime": "2026-10-29T13:40:12.381Z",
+    "duration": 322626.653,
+    "expected": 24,
+    "skipped": 95,
+    "unexpected": 1,
+    "flaky": 0
+  },
+  "errors": [
+    {
+      "message": "\u001b[31mTesting stopped early after 1 maximum allowed failures.\u001b[39m"
+    }
+  ],
+  "tests": [
+    {
+      "title": "/ direct question/checklist updates and repeated remounts are silent; old nodes inert, one stable live region/callback",
+      "file": "controller-lifecycle.spec.mjs",
+      "line": 9,
+      "project": "chromium",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 456,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ direct question/checklist updates and repeated remounts are silent; old nodes inert, one stable live region/callback",
+      "file": "controller-lifecycle.spec.mjs",
+      "line": 9,
+      "project": "chromium",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 218,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ direct question/checklist updates and repeated remounts are silent; old nodes inert, one stable live region/callback",
+      "file": "controller-lifecycle.spec.mjs",
+      "line": 9,
+      "project": "firefox",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ direct question/checklist updates and repeated remounts are silent; old nodes inert, one stable live region/callback",
+      "file": "controller-lifecycle.spec.mjs",
+      "line": 9,
+      "project": "firefox",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/ direct question/checklist updates and repeated remounts are silent; old nodes inert, one stable live region/callback",
+      "file": "controller-lifecycle.spec.mjs",
+      "line": 9,
+      "project": "webkit",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ direct question/checklist updates and repeated remounts are silent; old nodes inert, one stable live region/callback",
+      "file": "controller-lifecycle.spec.mjs",
+      "line": 9,
+      "project": "webkit",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/ direct question/checklist updates and repeated remounts are silent; old nodes inert, one stable live region/callback",
+      "file": "controller-lifecycle.spec.mjs",
+      "line": 9,
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ direct question/checklist updates and repeated remounts are silent; old nodes inert, one stable live region/callback",
+      "file": "controller-lifecycle.spec.mjs",
+      "line": 9,
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/ public Final actual prerequisites/unlock, fixed fields, decoys, permanent credit and refresh",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 52,
+      "project": "chromium",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2518,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ all 43 shared invalid cases are rejected by real browser boundaries without saves",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 87,
+      "project": "chromium",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 725,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ public metadata/IDs/paths/missing/broken responses fail before storage reads; retry recovers",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 106,
+      "project": "chromium",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1930,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ public missing/invalid activities isolate failure, retain drafts/reference and hydrate silently on retry",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 126,
+      "project": "chromium",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2542,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ failed reference body does not disable ordinary credit; retry and Print never save",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 149,
+      "project": "chromium",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 29178,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ public composed data/heading hooks retain independent sealed extraction and all writing profiles validate",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 160,
+      "project": "chromium",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1034,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ public corrupt storage preserves session unlock, exact bytes and separate warning",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 206,
+      "project": "chromium",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 898,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ public denied storage preserves session unlock, exact bytes and separate warning",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 206,
+      "project": "chromium",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 944,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ public quota storage preserves session unlock, exact bytes and separate warning",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 206,
+      "project": "chromium",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 913,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ public Final actual prerequisites/unlock, fixed fields, decoys, permanent credit and refresh",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 52,
+      "project": "chromium",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 28712,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ all 43 shared invalid cases are rejected by real browser boundaries without saves",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 87,
+      "project": "chromium",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 26740,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ public metadata/IDs/paths/missing/broken responses fail before storage reads; retry recovers",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 106,
+      "project": "chromium",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1926,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ public missing/invalid activities isolate failure, retain drafts/reference and hydrate silently on retry",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 126,
+      "project": "chromium",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2528,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ failed reference body does not disable ordinary credit; retry and Print never save",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 149,
+      "project": "chromium",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1015,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ public composed data/heading hooks retain independent sealed extraction and all writing profiles validate",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 160,
+      "project": "chromium",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1027,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ public corrupt storage preserves session unlock, exact bytes and separate warning",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 206,
+      "project": "chromium",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 970,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ public denied storage preserves session unlock, exact bytes and separate warning",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 206,
+      "project": "chromium",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 876,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ public quota storage preserves session unlock, exact bytes and separate warning",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 206,
+      "project": "chromium",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 912,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ public Final actual prerequisites/unlock, fixed fields, decoys, permanent credit and refresh",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 52,
+      "project": "firefox",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/ all 43 shared invalid cases are rejected by real browser boundaries without saves",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 87,
+      "project": "firefox",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/ public metadata/IDs/paths/missing/broken responses fail before storage reads; retry recovers",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 106,
+      "project": "firefox",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/ public missing/invalid activities isolate failure, retain drafts/reference and hydrate silently on retry",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 126,
+      "project": "firefox",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/ failed reference body does not disable ordinary credit; retry and Print never save",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 149,
+      "project": "firefox",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/ public composed data/heading hooks retain independent sealed extraction and all writing profiles validate",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 160,
+      "project": "firefox",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/ public corrupt storage preserves session unlock, exact bytes and separate warning",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 206,
+      "project": "firefox",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/ public denied storage preserves session unlock, exact bytes and separate warning",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 206,
+      "project": "firefox",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/ public quota storage preserves session unlock, exact bytes and separate warning",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 206,
+      "project": "firefox",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ public Final actual prerequisites/unlock, fixed fields, decoys, permanent credit and refresh",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 52,
+      "project": "firefox",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ all 43 shared invalid cases are rejected by real browser boundaries without saves",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 87,
+      "project": "firefox",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ public metadata/IDs/paths/missing/broken responses fail before storage reads; retry recovers",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 106,
+      "project": "firefox",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ public missing/invalid activities isolate failure, retain drafts/reference and hydrate silently on retry",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 126,
+      "project": "firefox",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ failed reference body does not disable ordinary credit; retry and Print never save",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 149,
+      "project": "firefox",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ public composed data/heading hooks retain independent sealed extraction and all writing profiles validate",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 160,
+      "project": "firefox",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ public corrupt storage preserves session unlock, exact bytes and separate warning",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 206,
+      "project": "firefox",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ public denied storage preserves session unlock, exact bytes and separate warning",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 206,
+      "project": "firefox",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ public quota storage preserves session unlock, exact bytes and separate warning",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 206,
+      "project": "firefox",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/ public Final actual prerequisites/unlock, fixed fields, decoys, permanent credit and refresh",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 52,
+      "project": "webkit",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/ all 43 shared invalid cases are rejected by real browser boundaries without saves",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 87,
+      "project": "webkit",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/ public metadata/IDs/paths/missing/broken responses fail before storage reads; retry recovers",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 106,
+      "project": "webkit",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/ public missing/invalid activities isolate failure, retain drafts/reference and hydrate silently on retry",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 126,
+      "project": "webkit",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/ failed reference body does not disable ordinary credit; retry and Print never save",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 149,
+      "project": "webkit",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/ public composed data/heading hooks retain independent sealed extraction and all writing profiles validate",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 160,
+      "project": "webkit",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/ public corrupt storage preserves session unlock, exact bytes and separate warning",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 206,
+      "project": "webkit",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/ public denied storage preserves session unlock, exact bytes and separate warning",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 206,
+      "project": "webkit",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/ public quota storage preserves session unlock, exact bytes and separate warning",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 206,
+      "project": "webkit",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ public Final actual prerequisites/unlock, fixed fields, decoys, permanent credit and refresh",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 52,
+      "project": "webkit",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ all 43 shared invalid cases are rejected by real browser boundaries without saves",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 87,
+      "project": "webkit",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ public metadata/IDs/paths/missing/broken responses fail before storage reads; retry recovers",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 106,
+      "project": "webkit",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ public missing/invalid activities isolate failure, retain drafts/reference and hydrate silently on retry",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 126,
+      "project": "webkit",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ failed reference body does not disable ordinary credit; retry and Print never save",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 149,
+      "project": "webkit",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ public composed data/heading hooks retain independent sealed extraction and all writing profiles validate",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 160,
+      "project": "webkit",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ public corrupt storage preserves session unlock, exact bytes and separate warning",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 206,
+      "project": "webkit",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ public denied storage preserves session unlock, exact bytes and separate warning",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 206,
+      "project": "webkit",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ public quota storage preserves session unlock, exact bytes and separate warning",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 206,
+      "project": "webkit",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/ public Final actual prerequisites/unlock, fixed fields, decoys, permanent credit and refresh",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 52,
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/ all 43 shared invalid cases are rejected by real browser boundaries without saves",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 87,
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/ public metadata/IDs/paths/missing/broken responses fail before storage reads; retry recovers",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 106,
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/ public missing/invalid activities isolate failure, retain drafts/reference and hydrate silently on retry",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 126,
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/ failed reference body does not disable ordinary credit; retry and Print never save",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 149,
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/ public composed data/heading hooks retain independent sealed extraction and all writing profiles validate",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 160,
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/ public corrupt storage preserves session unlock, exact bytes and separate warning",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 206,
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/ public denied storage preserves session unlock, exact bytes and separate warning",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 206,
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/ public quota storage preserves session unlock, exact bytes and separate warning",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 206,
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ public Final actual prerequisites/unlock, fixed fields, decoys, permanent credit and refresh",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 52,
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ all 43 shared invalid cases are rejected by real browser boundaries without saves",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 87,
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ public metadata/IDs/paths/missing/broken responses fail before storage reads; retry recovers",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 106,
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ public missing/invalid activities isolate failure, retain drafts/reference and hydrate silently on retry",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 126,
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ failed reference body does not disable ordinary credit; retry and Print never save",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 149,
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ public composed data/heading hooks retain independent sealed extraction and all writing profiles validate",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 160,
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ public corrupt storage preserves session unlock, exact bytes and separate warning",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 206,
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ public denied storage preserves session unlock, exact bytes and separate warning",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 206,
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ public quota storage preserves session unlock, exact bytes and separate warning",
+      "file": "lesson-boundaries.spec.mjs",
+      "line": 206,
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/ Middle public production requests are mount-relative; fresh hydration grants no credit and never saves",
+      "file": "middle-questions.spec.mjs",
+      "line": 50,
+      "project": "chromium",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 27824,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ Middle public sequences preserve every option/feedback, earned history, wraparound and immediate cursors",
+      "file": "middle-questions.spec.mjs",
+      "line": 65,
+      "project": "chromium",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 34811,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ Middle public quiz direct jumps/zero option/score/review-first survive wrong-after-credit and reload",
+      "file": "middle-questions.spec.mjs",
+      "line": 100,
+      "project": "chromium",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 28308,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ Middle public safe v1 fixtures silently hydrate all current questions and reordered checklist bindings",
+      "file": "middle-questions.spec.mjs",
+      "line": 122,
+      "project": "chromium",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 4045,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "/ Middle public reordered checklist saves fixed index 4, preserves extensions and replays in the original engine",
+      "file": "middle-questions.spec.mjs",
+      "line": 144,
+      "project": "chromium",
+      "status": "unexpected",
+      "expectedStatus": "passed",
+      "results": [
+        {
+          "status": "timedOut",
+          "duration": 120201,
+          "errors": [
+            {
+              "message": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m"
+            },
+            {
+              "location": {
+                "file": "/Users/rhys/git/discussion-skills-lab/tests/browser/middle-questions.spec.mjs",
+                "column": 48,
+                "line": 19
+              },
+              "message": "Error: locator.click: Test timeout of 120000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-go=\"evidence\"]')\u001b[22m\n\u001b[2m    - locator resolved to <button disabled type=\"button\" class=\"rail-link\" data-go=\"evidence\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    227 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is not enabled\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n\n  17 | const visit = async (page, id) => {\n  18 |   if (await page.locator('#section-select').isVisible()) await page.locator('#section-select').selectOption(id);\n> 19 |   else await page.locator(`[data-go=\"${id}\"]`).click();\n     |                                                ^\n  20 |   await expect(page.locator(`[data-section-id=\"${id}\"]`)).toBeVisible();\n  21 | };\n  22 | async function explore(page, id) {\n    at visit (/Users/rhys/git/discussion-skills-lab/tests/browser/middle-questions.spec.mjs:19:48)\n    at /Users/rhys/git/discussion-skills-lab/tests/browser/middle-questions.spec.mjs:146:31"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "/discussion-skills-lab/ Middle public production requests are mount-relative; fresh hydration grants no credit and never saves",
+      "file": "middle-questions.spec.mjs",
+      "line": 50,
+      "project": "chromium",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ Middle public sequences preserve every option/feedback, earned history, wraparound and immediate cursors",
+      "file": "middle-questions.spec.mjs",
+      "line": 65,
+      "project": "chromium",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ Middle public quiz direct jumps/zero option/score/review-first survive wrong-after-credit and reload",
+      "file": "middle-questions.spec.mjs",
+      "line": 100,
+      "project": "chromium",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ Middle public safe v1 fixtures silently hydrate all current questions and reordered checklist bindings",
+      "file": "middle-questions.spec.mjs",
+      "line": 122,
+      "project": "chromium",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ Middle public reordered checklist saves fixed index 4, preserves extensions and replays in the original engine",
+      "file": "middle-questions.spec.mjs",
+      "line": 144,
+      "project": "chromium",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/ Middle public production requests are mount-relative; fresh hydration grants no credit and never saves",
+      "file": "middle-questions.spec.mjs",
+      "line": 50,
+      "project": "firefox",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/ Middle public sequences preserve every option/feedback, earned history, wraparound and immediate cursors",
+      "file": "middle-questions.spec.mjs",
+      "line": 65,
+      "project": "firefox",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/ Middle public quiz direct jumps/zero option/score/review-first survive wrong-after-credit and reload",
+      "file": "middle-questions.spec.mjs",
+      "line": 100,
+      "project": "firefox",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/ Middle public safe v1 fixtures silently hydrate all current questions and reordered checklist bindings",
+      "file": "middle-questions.spec.mjs",
+      "line": 122,
+      "project": "firefox",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/ Middle public reordered checklist saves fixed index 4, preserves extensions and replays in the original engine",
+      "file": "middle-questions.spec.mjs",
+      "line": 144,
+      "project": "firefox",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ Middle public production requests are mount-relative; fresh hydration grants no credit and never saves",
+      "file": "middle-questions.spec.mjs",
+      "line": 50,
+      "project": "firefox",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ Middle public sequences preserve every option/feedback, earned history, wraparound and immediate cursors",
+      "file": "middle-questions.spec.mjs",
+      "line": 65,
+      "project": "firefox",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ Middle public quiz direct jumps/zero option/score/review-first survive wrong-after-credit and reload",
+      "file": "middle-questions.spec.mjs",
+      "line": 100,
+      "project": "firefox",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ Middle public safe v1 fixtures silently hydrate all current questions and reordered checklist bindings",
+      "file": "middle-questions.spec.mjs",
+      "line": 122,
+      "project": "firefox",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ Middle public reordered checklist saves fixed index 4, preserves extensions and replays in the original engine",
+      "file": "middle-questions.spec.mjs",
+      "line": 144,
+      "project": "firefox",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/ Middle public production requests are mount-relative; fresh hydration grants no credit and never saves",
+      "file": "middle-questions.spec.mjs",
+      "line": 50,
+      "project": "webkit",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/ Middle public sequences preserve every option/feedback, earned history, wraparound and immediate cursors",
+      "file": "middle-questions.spec.mjs",
+      "line": 65,
+      "project": "webkit",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/ Middle public quiz direct jumps/zero option/score/review-first survive wrong-after-credit and reload",
+      "file": "middle-questions.spec.mjs",
+      "line": 100,
+      "project": "webkit",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/ Middle public safe v1 fixtures silently hydrate all current questions and reordered checklist bindings",
+      "file": "middle-questions.spec.mjs",
+      "line": 122,
+      "project": "webkit",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/ Middle public reordered checklist saves fixed index 4, preserves extensions and replays in the original engine",
+      "file": "middle-questions.spec.mjs",
+      "line": 144,
+      "project": "webkit",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ Middle public production requests are mount-relative; fresh hydration grants no credit and never saves",
+      "file": "middle-questions.spec.mjs",
+      "line": 50,
+      "project": "webkit",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ Middle public sequences preserve every option/feedback, earned history, wraparound and immediate cursors",
+      "file": "middle-questions.spec.mjs",
+      "line": 65,
+      "project": "webkit",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ Middle public quiz direct jumps/zero option/score/review-first survive wrong-after-credit and reload",
+      "file": "middle-questions.spec.mjs",
+      "line": 100,
+      "project": "webkit",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ Middle public safe v1 fixtures silently hydrate all current questions and reordered checklist bindings",
+      "file": "middle-questions.spec.mjs",
+      "line": 122,
+      "project": "webkit",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ Middle public reordered checklist saves fixed index 4, preserves extensions and replays in the original engine",
+      "file": "middle-questions.spec.mjs",
+      "line": 144,
+      "project": "webkit",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/ Middle public production requests are mount-relative; fresh hydration grants no credit and never saves",
+      "file": "middle-questions.spec.mjs",
+      "line": 50,
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/ Middle public sequences preserve every option/feedback, earned history, wraparound and immediate cursors",
+      "file": "middle-questions.spec.mjs",
+      "line": 65,
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/ Middle public quiz direct jumps/zero option/score/review-first survive wrong-after-credit and reload",
+      "file": "middle-questions.spec.mjs",
+      "line": 100,
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/ Middle public safe v1 fixtures silently hydrate all current questions and reordered checklist bindings",
+      "file": "middle-questions.spec.mjs",
+      "line": 122,
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/ Middle public reordered checklist saves fixed index 4, preserves extensions and replays in the original engine",
+      "file": "middle-questions.spec.mjs",
+      "line": 144,
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ Middle public production requests are mount-relative; fresh hydration grants no credit and never saves",
+      "file": "middle-questions.spec.mjs",
+      "line": 50,
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ Middle public sequences preserve every option/feedback, earned history, wraparound and immediate cursors",
+      "file": "middle-questions.spec.mjs",
+      "line": 65,
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ Middle public quiz direct jumps/zero option/score/review-first survive wrong-after-credit and reload",
+      "file": "middle-questions.spec.mjs",
+      "line": 100,
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ Middle public safe v1 fixtures silently hydrate all current questions and reordered checklist bindings",
+      "file": "middle-questions.spec.mjs",
+      "line": 122,
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    },
+    {
+      "title": "/discussion-skills-lab/ Middle public reordered checklist saves fixed index 4, preserves extensions and replays in the original engine",
+      "file": "middle-questions.spec.mjs",
+      "line": 144,
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "expectedStatus": "passed",
+      "results": []
+    }
+  ]
+}

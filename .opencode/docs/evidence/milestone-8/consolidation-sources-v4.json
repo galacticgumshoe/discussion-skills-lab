@@ -1,0 +1,560 @@
+{
+  "version": 4,
+  "date": "2026-10-30",
+  "sourceCommit": "61ff6898a6675d000d76e76e225d1852e56d9fb9",
+  "branch": "refactor/shared-components",
+  "status": "Approved by the owner on 2026-10-30 and removed: exact 27 whole files plus the bounded completion test/unused import. Post-removal audit passed 24/24 removed-fixture 404s at both mounts, 8/8 public entries 200, the completion file matches the expected SHA-256, 126/126 affected units and content validation pass, and the five remaining replacement specs passed 368/368 across all four projects.",
+  "proposedWholeFiles": [
+    {
+      "path": "tests/fixtures/harness/components.html",
+      "sha256": "8400d784fbe370704058e869e28490b1f814808f16d886bf14cf30d46f8dacaf",
+      "bytes": 2263,
+      "lines": 40
+    },
+    {
+      "path": "tests/fixtures/harness/components.mjs",
+      "sha256": "4fe06bb3fb6685fdbb2731dedfb8f57448d2268d3ab85d05b4641ad35981789a",
+      "bytes": 6443,
+      "lines": 85
+    },
+    {
+      "path": "tests/fixtures/harness/navigation.html",
+      "sha256": "516af6502c0fa9b04f13293463840403bc1c5c6dc4967d2847a56e575e389df5",
+      "bytes": 6334,
+      "lines": 88
+    },
+    {
+      "path": "tests/fixtures/harness/navigation.mjs",
+      "sha256": "8b4568f213014a57ebd7a57c6e0da29501289d9c43ac35424de0f88d51773096",
+      "bytes": 4228,
+      "lines": 58
+    },
+    {
+      "path": "tests/fixtures/harness/storage.html",
+      "sha256": "648318138d2f1bf9911f7604ae5fa176c4be27858a297af7fa7f0613df4b1058",
+      "bytes": 673,
+      "lines": 16
+    },
+    {
+      "path": "tests/fixtures/harness/storage.mjs",
+      "sha256": "7e774c18b6f9c69b5dcf3f0f75b2f0d8a3a2aedd94479bf6596115427a8a9cb3",
+      "bytes": 1675,
+      "lines": 24
+    },
+    {
+      "path": "tests/fixtures/harness/writing-reference.html",
+      "sha256": "4388bd156696c20e727728f4eb432c08a5e75dea4c292e760e226b1118474b67",
+      "bytes": 1853,
+      "lines": 33
+    },
+    {
+      "path": "tests/fixtures/harness/writing-reference.mjs",
+      "sha256": "0a6324bfd23e48fc75fa1865ef30022f46cc13001d207636dfddc4b625577789",
+      "bytes": 8476,
+      "lines": 108
+    },
+    {
+      "path": "tests/fixtures/harness/writing-reference.css",
+      "sha256": "73d334d982702cc6f764cf7f64676ed1b7b1b8a7068e3e38ef424db160832cd0",
+      "bytes": 1760,
+      "lines": 22
+    },
+    {
+      "path": "tests/fixtures/harness/component-data.mjs",
+      "sha256": "9b4444735674ff73b1d4102106a59df64c9018f4a32a6454833b34199cc00c5c",
+      "bytes": 4748,
+      "lines": 63
+    },
+    {
+      "path": "tests/fixtures/harness/writing-data.mjs",
+      "sha256": "b863ae6566f20dd41013fd47c048edb7cde1ba6c7d4a9d3047f961c51fef8a33",
+      "bytes": 5796,
+      "lines": 64
+    },
+    {
+      "path": "tests/fixtures/harness/README.md",
+      "sha256": "e17476fa40a87186feedf0c9f45bc6180b2fab6b42b3aca5d434a1d51ec835d9",
+      "bytes": 9230,
+      "lines": 137
+    },
+    {
+      "path": "tests/browser/components.spec.mjs",
+      "sha256": "3343ea806730875f08bfb5ee8d239dad4499307261ec4b99280345861e6dcf43",
+      "bytes": 25060,
+      "lines": 321
+    },
+    {
+      "path": "tests/browser/navigation.spec.mjs",
+      "sha256": "dcba7db14d213028fd99c525706cb7daedf99d3bd1fb5ede64024d2e8f3bf52c",
+      "bytes": 19329,
+      "lines": 313
+    },
+    {
+      "path": "tests/browser/storage-boundaries.spec.mjs",
+      "sha256": "f023f238edc939337e607e00ed9b6dac445ff04a03a431fde7a751b73949083d",
+      "bytes": 7942,
+      "lines": 121
+    },
+    {
+      "path": "tests/browser/writing-reference.spec.mjs",
+      "sha256": "eab69b75148d09511ffdfe2665b754f9c8f37dd550217891304c47d5e59b8e12",
+      "bytes": 21193,
+      "lines": 243
+    },
+    {
+      "path": "tests/unit/components.test.mjs",
+      "sha256": "a472c0d98fd5700b3d19f036dbb1404a2ba2e3cf49bec9a4ebee59a83b23ba8c",
+      "bytes": 5101,
+      "lines": 71
+    },
+    {
+      "path": "tests/unit/formatters.test.mjs",
+      "sha256": "fe7a2d12b56f1b0f0496beab357243814a1ecb5d22920e421215c6d098a066b1",
+      "bytes": 5110,
+      "lines": 70
+    },
+    {
+      "path": "tests/browser/flashcard-presentation.spec.mjs",
+      "sha256": "af11293b80dce17ac3012082ed43dfa49974bb2ce5b02c813775ff7ceb850961",
+      "bytes": 6389,
+      "lines": 87
+    },
+    {
+      "path": "tests/browser/evidence-presentation.spec.mjs",
+      "sha256": "5ff86b91e612c4ce1b1c78f8c572f0886831de44b7baee9fc535d3ec04d85b0d",
+      "bytes": 9368,
+      "lines": 111
+    },
+    {
+      "path": "tests/browser/structure-presentation.spec.mjs",
+      "sha256": "ae9ae5efa575085323b289eb3cf26dedf3b221a9a4ae2536ac69beafc2d9b56b",
+      "bytes": 7067,
+      "lines": 91
+    },
+    {
+      "path": "tests/browser/middle-presentation.spec.mjs",
+      "sha256": "ab608cc2d5a80be957ed1706b9b2497a11d0546d0f35dc8b12f4dba1e0754100",
+      "bytes": 6378,
+      "lines": 77
+    },
+    {
+      "path": "tests/browser/middle-activities-presentation.spec.mjs",
+      "sha256": "2dbd0c6ad68bc37b7f8ff869cc40b3020872831d5399facd0aabf0f247025b1f",
+      "bytes": 9874,
+      "lines": 125
+    },
+    {
+      "path": "tests/browser/final-presentation.spec.mjs",
+      "sha256": "d48bf1719e26d975ef25b3a3ca04ac5a708bee745c58e38910b0b542d8ed4963",
+      "bytes": 12463,
+      "lines": 127
+    },
+    {
+      "path": "tests/browser/final-heading-cues.spec.mjs",
+      "sha256": "6599f7019d7e29ba23aaf173f39f6524afd7f1e60598c31df1f242f68e4160af",
+      "bytes": 8831,
+      "lines": 117
+    },
+    {
+      "path": "tests/browser/opening-presentation.spec.mjs",
+      "sha256": "51e2206b1011afda3ef349facbe6ef39debe3c50dcc7f8e3c80faed1b593b032",
+      "bytes": 9458,
+      "lines": 109
+    },
+    {
+      "path": "tests/browser/opening-essentials-spacing.spec.mjs",
+      "sha256": "d25a2162c55afe5910e4c29ce54cf59312a75970803230dbcba2320e51606b50",
+      "bytes": 4351,
+      "lines": 62
+    }
+  ],
+  "partialFile": {
+    "path": "tests/unit/completion.test.mjs",
+    "sha256": "0429e5134a616ab6be63384cb3465d681eb5ff8381d3b01cf87f6c0030cfcb54",
+    "bytes": 12102,
+    "lines": 176,
+    "testName": "navigation harness excerpts and ordered labels match pinned Opening content independently of screenshots",
+    "blockStartLine": 160,
+    "blockSha256": "cd5c94fc47b6a1c984f09dfb52a4db9968db852887dc69e1e97bfffd97cc47fd",
+    "unusedImport": "import { readFileSync } from 'node:fs';",
+    "unusedImportLine": 4,
+    "blockEndLine": 176,
+    "expectedFileAfterRemoval": {
+      "sha256": "fbf7f46b1cf3418aec80a7ec5fd792c687c95057a8c3926ea5c490228fb3448e",
+      "bytes": 10793,
+      "lines": 157
+    },
+    "expectedFileAfterRemovalNote": "The review-predicted file retained one trailing blank line; the implemented removal trims it to keep the diff whitespace-clean, producing this actual hash (157 lines)."
+  },
+  "replacements": [
+    {
+      "path": "tests/browser/component-contracts.spec.mjs",
+      "sha256": "53d078903ad20d87252bf313aa2b89069a51427b5d71639e8289c1521869483c",
+      "bytes": 21674,
+      "lines": 210
+    },
+    {
+      "path": "tests/browser/navigation-contracts.spec.mjs",
+      "sha256": "359947e79dbbf7c43db40e22b21fb0dea5bfbd3d5b1178a03ecb7d3fd90d82f7",
+      "bytes": 11687,
+      "lines": 124
+    },
+    {
+      "path": "tests/browser/progress-contracts.spec.mjs",
+      "sha256": "390e9943888bbe324429fbe4425823d5d0855c87ba04d0509e8ddf5c50db53f1",
+      "bytes": 7099,
+      "lines": 78
+    },
+    {
+      "path": "tests/browser/writing-controls.spec.mjs",
+      "sha256": "ca43b4c49b4265d2cc5b16ddf8821503a823d749a6e6f456229c7b970e3a6855",
+      "bytes": 10896,
+      "lines": 138
+    },
+    {
+      "path": "tests/browser/presentation-contracts.spec.mjs",
+      "sha256": "d0bab6c12890d2ffbd2c83ecf68f57cf3fcf212ad9920139508ea07aa3bcf861",
+      "bytes": 12344,
+      "lines": 130
+    },
+    {
+      "path": "tests/browser/middle-questions.spec.mjs",
+      "sha256": "940f02b21c51a78a32d7b0e569657a62c27346be562e8ae5f80d5675fe30abb7",
+      "bytes": 13206,
+      "lines": 180
+    },
+    {
+      "path": "tests/browser/lesson-boundaries.spec.mjs",
+      "sha256": "00efe75e46a747eb5eeda278abb5ac44d207d1f48448251350f797913599dd3f",
+      "bytes": 19502,
+      "lines": 235
+    },
+    {
+      "path": "tests/browser/controller-lifecycle.spec.mjs",
+      "sha256": "bd3c4e7ca0c59791da426fb53644470266d69b640133bcd774f9673d940be7fe",
+      "bytes": 4568,
+      "lines": 61
+    },
+    {
+      "path": "tests/unit/component-contracts.test.mjs",
+      "sha256": "4c4a9abdf3f41b3f10e6f0a9c3b633127499800a594726996a604e2325bee25d",
+      "bytes": 9654,
+      "lines": 87
+    },
+    {
+      "path": "tests/unit/lesson-boundaries.test.mjs",
+      "sha256": "5ffc32539dbc3e02a05e2821f7e52001f38eb42c9f4ef99aac5ffd0d3d082765",
+      "bytes": 5929,
+      "lines": 84
+    },
+    {
+      "path": "tests/helpers/baseline-activities.mjs",
+      "sha256": "83b84e507df819c30f6e17423af36fc6dd0ee2aa3d9e1311d0275e9569907def",
+      "bytes": 10726,
+      "lines": 132
+    },
+    {
+      "path": "tests/helpers/browser-probe.mjs",
+      "sha256": "ed7ba5380fb6743f7b05b9ea44fae8783a2216108b2987bcfd84d041ea70876d",
+      "bytes": 867,
+      "lines": 16
+    },
+    {
+      "path": "tests/helpers/presentation-contracts.mjs",
+      "sha256": "e10ba2c2c202fec6ec690cabee0c25bf2811d623c8a6ee0661ebf77fc3204bac",
+      "bytes": 29052,
+      "lines": 310
+    },
+    {
+      "path": "tests/fixtures/security/lesson-cases.mjs",
+      "sha256": "c565e71032adaf32a8d380ffbe0305f97f675865c333ad4b5b0dda917ce1df43",
+      "bytes": 6041,
+      "lines": 76
+    },
+    {
+      "path": "docs/checking-changes.md",
+      "sha256": "4c38710b3c10beeed8732243ec2d16836dac5dd06b52665c349f5b98833704c8",
+      "bytes": 10295,
+      "lines": 174
+    },
+    {
+      "path": "scripts/validate-content.mjs",
+      "sha256": "9cdd320a04b4f9570c6a39ec409bba442dd6f263d3983cca9e37614634501d20",
+      "bytes": 12092,
+      "lines": 190
+    }
+  ],
+  "approvedRemovedFiles": [
+    {
+      "path": "tests/fixtures/harness/middle-questions.html",
+      "sha256": "99cef45fb86e457ddb3aa72e7cfe592e875e56fd2cc10b11785f4b834844fdb6",
+      "bytes": 1132,
+      "lines": 22,
+      "absent": true
+    },
+    {
+      "path": "tests/fixtures/harness/middle-questions.mjs",
+      "sha256": "2a76601925bba3d103dfec9e9045d7a2f0a1197fd3926e29acae4638bb7dada5",
+      "bytes": 3530,
+      "lines": 58,
+      "absent": true
+    },
+    {
+      "path": "tests/fixtures/harness/middle-reference.html",
+      "sha256": "4f4e56dc3cb689808dd711cebd6ddeb264b3fc2cc627a58de128cfb2f0643a14",
+      "bytes": 1920,
+      "lines": 29,
+      "absent": true
+    },
+    {
+      "path": "tests/fixtures/harness/middle-reference.mjs",
+      "sha256": "9d8074a22b3b20b4b3b79f02f588fe77178c255ca48f737610cb50a76eefed9a",
+      "bytes": 849,
+      "lines": 14,
+      "absent": true
+    },
+    {
+      "path": "tests/browser/middle-migration.spec.mjs",
+      "sha256": "187b6d596c470ee6748af4c91b96815ed21f2f726e3caea4a6453daaf8d49c51",
+      "bytes": 10512,
+      "lines": 148,
+      "absent": true
+    },
+    {
+      "path": "tests/fixtures/harness/lesson.html",
+      "sha256": "083190fef5f2455f8a4a5816d14bf516eb0838cd7486f0eee0267c17ccd8c14d",
+      "bytes": 1949,
+      "lines": 34,
+      "absent": true
+    },
+    {
+      "path": "tests/fixtures/harness/lesson.mjs",
+      "sha256": "a04e3e997eb2e6f736f2541ea8a77cdf88238955163dc83a8821595dae3eb9b5",
+      "bytes": 1747,
+      "lines": 21,
+      "absent": true
+    },
+    {
+      "path": "tests/fixtures/harness/lesson.css",
+      "sha256": "d58704b3b63d79e58208dd1c7adabca09a1024a41ca0e07a07bc476787904db8",
+      "bytes": 1352,
+      "lines": 16,
+      "absent": true
+    },
+    {
+      "path": "tests/fixtures/harness/lesson-invalid.mjs",
+      "sha256": "d0a94604aafe45437a99884025d1df3da8b676cdaa346356cac8960c85585ee5",
+      "bytes": 6133,
+      "lines": 59,
+      "absent": true
+    },
+    {
+      "path": "tests/fixtures/harness/lessons/final/config.json",
+      "sha256": "df333202df5a346d1470f7d5154ec319844c6c86a5f2ed788601f9b5b4df94dc",
+      "bytes": 391,
+      "lines": 9,
+      "absent": true
+    },
+    {
+      "path": "tests/fixtures/harness/content/final/lesson.json",
+      "sha256": "8d57096febfe62a1a823a7ad66299f47cd8be12ac44a69548eb3c132639b0a8c",
+      "bytes": 4399,
+      "lines": 36,
+      "absent": true
+    },
+    {
+      "path": "tests/fixtures/harness/content/final/activities/welcome-cards.json",
+      "sha256": "93e0576db16392b48f21f8d8fde81594afd85309c227eaaa85abc2c78f548012",
+      "bytes": 661,
+      "lines": 8,
+      "absent": true
+    },
+    {
+      "path": "tests/fixtures/harness/content/final/activities/summary-synthesis-questions.json",
+      "sha256": "caea3ac16f7c0320d152049a08ed6373c0f4ab2b961e48310b92817f2c6983c8",
+      "bytes": 3381,
+      "lines": 30,
+      "absent": true
+    },
+    {
+      "path": "tests/fixtures/harness/content/final/activities/connect-viewpoints-panels.json",
+      "sha256": "6bde6dc73974adf46a1e1a18726e01dc071660e0d363836f536a499c2b4cf068",
+      "bytes": 1084,
+      "lines": 9,
+      "absent": true
+    },
+    {
+      "path": "tests/fixtures/harness/content/final/activities/connect-viewpoints-questions.json",
+      "sha256": "d5caed19190b8b6a6cca30110cabadbcfe0a41dcbbe061cf96b451d034bbe103",
+      "bytes": 875,
+      "lines": 8,
+      "absent": true
+    },
+    {
+      "path": "tests/fixtures/harness/content/final/activities/synthesis-writing.json",
+      "sha256": "49aaef9287b21616881d6f1326df5ec830573cdc8a19e8637c47d487ec52b81d",
+      "bytes": 1912,
+      "lines": 19,
+      "absent": true
+    },
+    {
+      "path": "tests/fixtures/harness/content/final/activities/synthesis-checklist.json",
+      "sha256": "4831b7f417babd766f60483121ac01993dedcf0ace3a85494873a201937c26de",
+      "bytes": 515,
+      "lines": 10,
+      "absent": true
+    },
+    {
+      "path": "tests/fixtures/harness/content/final/reference/reference.json",
+      "sha256": "585861b039dc677bc053370b8da735ce73802b7227d944f78836f897f851511a",
+      "bytes": 826,
+      "lines": 13,
+      "absent": true
+    },
+    {
+      "path": "tests/fixtures/harness/content/final/reference/summary-synthesis.md",
+      "sha256": "8f92edbc0186f71d0df8602720df5ef2fe81e3b0f737683ecf679a40bc5c44d6",
+      "bytes": 274,
+      "lines": 5,
+      "absent": true
+    },
+    {
+      "path": "tests/fixtures/harness/content/final/reference/synthesis-framework.md",
+      "sha256": "6315bf398f41ae3c7ba1b79e93ff9db4afe55351429ea71ba6527f5b66557d59",
+      "bytes": 300,
+      "lines": 3,
+      "absent": true
+    },
+    {
+      "path": "tests/fixtures/harness/content/final/reference/effective-summaries.md",
+      "sha256": "9f8afad2cb458df19968e2f746cce3e4d1332195fc57605d06526bf6758e18a2",
+      "bytes": 327,
+      "lines": 3,
+      "absent": true
+    },
+    {
+      "path": "tests/fixtures/harness/content/final/reference/consensus-task.md",
+      "sha256": "0996c9c3df273f9df425ff8962a306278bcf892744017d41e60296bb326ed51b",
+      "bytes": 474,
+      "lines": 5,
+      "absent": true
+    },
+    {
+      "path": "tests/fixtures/harness/content/final/reference/after-round.md",
+      "sha256": "de0775cdd5a2cc0252c605bc7c5399ff1cc99df529f5ab8ad8694a2c0efe4df4",
+      "bytes": 234,
+      "lines": 1,
+      "absent": true
+    },
+    {
+      "path": "tests/browser/lesson-harness.spec.mjs",
+      "sha256": "037a155046606fc41c780b6e88a662ac3f49d9ee8b026b219b480c3f8d23c54c",
+      "bytes": 23796,
+      "lines": 298,
+      "absent": true
+    },
+    {
+      "path": "tests/unit/lesson-validation.test.mjs",
+      "sha256": "1797818b73eff9694cfea50720c0917019090b1671b38feebe618afeb0aaed4a",
+      "bytes": 5937,
+      "lines": 78,
+      "absent": true
+    }
+  ],
+  "preserve": [
+    "Sealed content/source/maps/banks/progress/captures/seals",
+    "Pinned original reader/15-path allowlist",
+    "Canonical content and legacy-variants.json",
+    "Original licenses/notices",
+    "Durable docs, skill and command wrappers except the scoped checking guide update"
+  ],
+  "verification": {
+    "verifiedAt": "2026-10-30",
+    "wholeFileCount": 27,
+    "wholeFileSetSha256": "0f4fc0c4dd20f222165c539bd014bc8f0565ab0fe3ce392e2c4cdbc57b723e7d",
+    "candidateFilesMatchSnapshot": true,
+    "candidateFilesMatchHead": false,
+    "consumerClosure": {
+      "method": "Scanned tracked executable HTML/CSS/JS/MJS/JSON in production, scripts and tests for literal candidate paths/imports; excluded historical documentation and the candidate files themselves.",
+      "wholeFileConsumers": [
+        "tests/browser/components.spec.mjs",
+        "tests/browser/navigation.spec.mjs",
+        "tests/browser/storage-boundaries.spec.mjs",
+        "tests/browser/writing-reference.spec.mjs"
+      ],
+      "retainedFileConsumers": [
+        "tests/unit/completion.test.mjs bounded final test and readFileSync import"
+      ],
+      "otherExecutableConsumers": 0,
+      "fixtureFilesHaveProductionImports": false,
+      "note": "The four browser specs are themselves in the removal scope; the retained completion block is the only consumer outside it. No production entry imports or links the fixture HTML/CSS/modules."
+    },
+    "postRemovalExpectations": {
+      "retiredFixtureFiles": 12,
+      "fixtureUrl404ChecksAtBothMounts": 24,
+      "publicEntry200ChecksAtBothMounts": 8,
+      "publicEntries": [
+        "index.html",
+        "opening.html",
+        "middle.html",
+        "final.html"
+      ],
+      "note": "Removed fixture paths must return ordinary 404s at /__fixtures/... and /discussion-skills-lab/__fixtures/...; no fallback or replay redirect."
+    },
+    "replacementResults": {
+      "t09DistinctCases": 448,
+      "t10RoleCleanCases": 24,
+      "t10RoleCleanInvocation": "caffeinate -i env CFFIXED_USER_HOME=\"$(mktemp -d)\" npm run test:browser -- tests/browser/presentation-contracts.spec.mjs --grep 'all authored' --workers=1 --max-failures=1 --reporter=line",
+      "t10NarrowSpacingFinalSourceCases": 32,
+      "unitSelection": 127
+    },
+    "candidateFilesDifferingFromHead": [
+      "tests/unit/components.test.mjs",
+      "tests/unit/formatters.test.mjs"
+    ],
+    "headDifferenceNote": "The two unit files differ from HEAD only by the already-reviewed stale pre-cutover stylesheet-guard correction; they match the reviewed working-tree snapshot and are removed whole. All other candidates match HEAD exactly."
+  },
+  "approval": {
+    "approvedBy": "Owner",
+    "date": "2026-10-30",
+    "scope": "18 T09 whole files + 9 T10 whole files + bounded completion test/unused import in tests/unit/completion.test.mjs",
+    "authorizesOnly": "Those deletions and post-removal checks; no commit, push, merge, tag, publication, Pages change, broad cleanup or production edit."
+  },
+  "postRemoval": {
+    "wholeFilesAbsent": 27,
+    "fixture404ChecksAtBothMounts": 24,
+    "publicEntry200ChecksAtBothMounts": 8,
+    "completionFileSha256": "fbf7f46b1cf3418aec80a7ec5fd792c687c95057a8c3926ea5c490228fb3448e",
+    "completionFileMatchesExpected": true,
+    "affectedUnits": {
+      "tests": 126,
+      "pass": 126,
+      "fail": 0,
+      "skipped": 0
+    },
+    "contentValidation": "passed",
+    "auditEvidence": ".opencode/docs/evidence/milestone-8/consolidation-v4-post-removal-audit.json",
+    "browserClosure": {
+      "status": "passed",
+      "total": 368,
+      "byProject": {
+        "chromium": 92,
+        "firefox": 92,
+        "webkit": 92,
+        "mobile-chromium": 92
+      },
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0,
+      "duration": "37.3m",
+      "specs": [
+        "component-contracts",
+        "navigation-contracts",
+        "progress-contracts",
+        "writing-controls",
+        "presentation-contracts"
+      ],
+      "evidence": ".opencode/docs/evidence/milestone-8/consolidation-post-removal-browser-summary.json"
+    }
+  }
+}

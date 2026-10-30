@@ -1,0 +1,180 @@
+{
+  "date": "2026-10-30",
+  "status": "Passed in one clean invocation: 24/24 selected role cases, four projects, both mounts, zero skipped/unexpected/flaky.",
+  "command": "caffeinate -i env CFFIXED_USER_HOME=\"$(mktemp -d)\" npm run test:browser -- tests/browser/presentation-contracts.spec.mjs --grep 'all authored' --workers=1 --max-failures=1 --reporter=line",
+  "stats": {
+    "expected": 24,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0,
+    "duration": "15.3m"
+  },
+  "byProject": {
+    "chromium": 6,
+    "firefox": 6,
+    "webkit": 6,
+    "mobile-chromium": 6
+  },
+  "cases": [
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/opening all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "chromium",
+      "status": "expected"
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/middle all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "chromium",
+      "status": "expected"
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/final all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "chromium",
+      "status": "expected"
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/opening all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "chromium",
+      "status": "expected"
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/middle all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "chromium",
+      "status": "expected"
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/final all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "chromium",
+      "status": "expected"
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/opening all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "firefox",
+      "status": "expected"
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/middle all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "firefox",
+      "status": "expected"
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/final all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "firefox",
+      "status": "expected"
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/opening all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "firefox",
+      "status": "expected"
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/middle all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "firefox",
+      "status": "expected"
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/final all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "firefox",
+      "status": "expected"
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/opening all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "webkit",
+      "status": "expected"
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/middle all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "webkit",
+      "status": "expected"
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/final all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "webkit",
+      "status": "expected"
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/opening all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "webkit",
+      "status": "expected"
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/middle all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "webkit",
+      "status": "expected"
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/final all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "webkit",
+      "status": "expected"
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/opening all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "mobile-chromium",
+      "status": "expected"
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/middle all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "mobile-chromium",
+      "status": "expected"
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/final all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "mobile-chromium",
+      "status": "expected"
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/opening all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "mobile-chromium",
+      "status": "expected"
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/middle all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "mobile-chromium",
+      "status": "expected"
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/final all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "mobile-chromium",
+      "status": "expected"
+    }
+  ],
+  "evidence": {
+    "rawLog": ".opencode/docs/evidence/milestone-8/consolidation-t10-role-clean-run.log",
+    "rawLogSha256": "e0ac08a08f684db2e78ecd1b25823b825d0a48fb4d902b5f8e673f8c82a83ced",
+    "lastRun": ".opencode/docs/evidence/milestone-8/consolidation-t10-role-clean-last-run.json",
+    "lastRunSha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+  },
+  "notes": [
+    "Line reporter was selected explicitly, so Playwright did not write results.json; the 24 pass lines and .last-run.json are the recorded evidence and no per-case durations are claimed.",
+    "The raw shell log also contains a final cp error because the harness expected a results.json that the line reporter intentionally does not create; the test run itself finished with 24 passed.",
+    "Adds a bounded three-load setup retry around Tailwind readiness after a real net::ERR_TIMED_OUT; each attempt still requires the real generated stylesheet and a persistent outage fails explicitly."
+  ],
+  "sourceFiles": {
+    "tests/browser/presentation-contracts.spec.mjs": "d0bab6c12890d2ffbd2c83ecf68f57cf3fcf212ad9920139508ea07aa3bcf861",
+    "tests/helpers/presentation-contracts.mjs": "e10ba2c2c202fec6ec690cabee0c25bf2811d623c8a6ee0661ebf77fc3204bac",
+    "tests/helpers/browser-probe.mjs": "ed7ba5380fb6743f7b05b9ea44fae8783a2216108b2987bcfd84d041ea70876d"
+  }
+}

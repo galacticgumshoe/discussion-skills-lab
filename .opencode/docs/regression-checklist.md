@@ -1,5 +1,64 @@
 # Preservation regression checklist
 
+## Milestone 8 — consolidation follow-up (2026-10-30, removal implemented)
+
+The owner approved T02/T08 removal and rejected T09/T10 retention; both removal
+scopes are implemented. The 25 T02/T08 files and the separately approved 27-file
+T09/T10 v4 scope are removed. Post-removal closure passes 44 retired T02/T08
+fixture 404s and 24 T09/T10 fixture 404s at both mounts, eight public 200s for each
+scope, and no executable consumers. **126/126** affected units and content
+validation pass; the count is one lower because the bounded completion test was
+removed. T09's replacement selection has passing coverage for **448 distinct
+cases**, all four projects/both mounts, assembled from the initial
+Chromium/Firefox passes, final 212-case WebKit/mobile pass, final eight-case
+corrected card/panel rerun and 24 public model-mode cases — not one clean 448-case
+run or a full site suite.
+
+T10's complete role matrix passed **24/24 in one clean invocation**, six cases per
+project/both mounts, zero skips/failures, 15.3 minutes after a bounded Tailwind
+setup retry (every attempt still requires the real generated stylesheet). The
+narrow/spacing/final-source selection passed **32/32**. No assertion, tolerance,
+production behavior or dependency changed for those fixes.
+
+The exact v4 scope was hash-checked and consumer-checked immediately before
+deletion; the completion file now matches its reviewed expected SHA-256. The five
+remaining replacement specs passed **368/368** in one clean all-project browser
+invocation, 37.3 minutes, zero skips/unexpected/flaky.
+See `evidence/milestone-8/consolidation-coverage.md`,
+`evidence/milestone-8/consolidation-verification.md` and
+`evidence/milestone-8/consolidation-dispositions-v4.md` for destinations, commands,
+failed diagnostics and limits. Runtime/content/CSS/storage, sealed original/replay/
+variants, durable skill/wrappers and other human guides remain unchanged. No new
+manual/device/AT/GUI-print/actual-zoom evidence is inferred.
+
+## Milestone 8 — v3 removal/disposition checkpoint (2026-10-29)
+
+The new canonical-boundary/public-question/controller ports pass **120/120**
+selected browser checks, all four projects and both mounts. Another **14/14**
+Chromium dependency checks cover actual Middle fresh journeys/one-missing gates,
+all safe Final v1 UI restores and generic app lifecycle ports. Canonical boundary
+units pass **47/47**; content validation passes; fresh copied-content audit passes
+164 scalars/six reference byte comparisons/all 43 invalid-case identities.
+
+The expanded 128-test unit selection has **126 passes/two inherited stale
+pre-cutover HTML-guard failures**, proposed for exact correction as
+T09-GUARDS-v3. Do not call this an all-green unit suite or skip the failures.
+Commands, unsuccessful development attempts, compact reports and source hashes:
+`evidence/milestone-8/remaining-verification-v3.md`.
+
+Next action is the mandatory **explicit v3 decision** in
+`evidence/milestone-8/remaining-dispositions-v3.md`: proposed T02/T08 removals,
+bounded CLI/fixture-guide/guard edits, and the distinct proposed T09/T10 retained
+API/oracle/public-presentation contracts. The latter is a review choice, not a
+claim their prior consolidation plan was implemented. If retention is declined,
+those ports remain milestone-8 work. No v3 removal/guard correction has occurred.
+
+Owner accepted/committed the prior public implementation on 2026-10-29; this is
+new test-only preparation, not new production presentation or publication. Full
+suites/exhaustive presentation capture matrices remain excluded by the existing
+targeted-only instruction. Real-device/AT/actual-zoom/GUI-print gaps remain below.
+Post-removal verification and separate commit/release authorization are pending.
+
 ## Milestone 8 — targeted verification after approved local cutover
 
 **Current cleanup scope is inventory v2.** Every helper/browser/unit/unsealed

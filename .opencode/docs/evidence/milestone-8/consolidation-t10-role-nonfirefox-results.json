@@ -1,0 +1,525 @@
+{
+  "rawReport": "test-results/m8-t10-roles-nonfirefox-report.log",
+  "sha256": "c872580f45160c139f25c78e40efb8f8f8e22ebf4d91134c0c2c6709c440c31d",
+  "stats": {
+    "startTime": "2026-10-30T11:12:11.903Z",
+    "duration": 766973.6830000001,
+    "expected": 8,
+    "skipped": 6,
+    "unexpected": 4,
+    "flaky": 0
+  },
+  "errors": [
+    {
+      "message": "\u001b[31mTesting stopped early after 4 maximum allowed failures.\u001b[39m"
+    }
+  ],
+  "cases": [
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/opening all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 0,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 48663,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:12:13.394Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/middle all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 1,
+          "parallelIndex": 1,
+          "status": "passed",
+          "duration": 293310,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:12:13.385Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/final all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 2,
+          "parallelIndex": 2,
+          "status": "passed",
+          "duration": 267818,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:12:13.380Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/opening all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 0,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 50472,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:13:02.751Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/middle all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 0,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 262093,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:13:53.283Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/final all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "chromium",
+      "status": "unexpected",
+      "results": [
+        {
+          "workerIndex": 2,
+          "parallelIndex": 2,
+          "status": "failed",
+          "duration": 59581,
+          "error": {
+            "message": "Error: Tailwind stylesheet is ready\n\nTailwind stylesheet is ready\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 30000ms exceeded while waiting on the predicate",
+            "stack": "Error: Tailwind stylesheet is ready\n\nTailwind stylesheet is ready\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 30000ms exceeded while waiting on the predicate\n    at presentationReady (/Users/rhys/git/discussion-skills-lab/tests/helpers/presentation-contracts.mjs:26:260)\n    at /Users/rhys/git/discussion-skills-lab/tests/browser/presentation-contracts.spec.mjs:22:116",
+            "location": {
+              "file": "/Users/rhys/git/discussion-skills-lab/tests/helpers/presentation-contracts.mjs",
+              "column": 260,
+              "line": 26
+            },
+            "snippet": "\u001b[90m   at \u001b[39m../helpers/presentation-contracts.mjs:26\n\n  24 |   // The CDN script can finish navigation before its generated stylesheet exists.\n  25 |   // Fail explicitly on an unavailable dependency, never compare an unstyled oracle.\n> 26 |   await expect.poll(() => page.evaluate(() => [...document.styleSheets].filter(sheet => !sheet.href).some(sheet => [...sheet.cssRules].some(rule => rule.cssText.includes('--tw-border-spacing-x')))), {message: 'Tailwind stylesheet is ready', timeout: 30_000}).toBe(true);\n     |                                                                                                                                                                                                                                                                    ^\n  27 |   await settle(page);\n  28 | }\n  29 |"
+          },
+          "errors": [
+            {
+              "location": {
+                "file": "/Users/rhys/git/discussion-skills-lab/tests/helpers/presentation-contracts.mjs",
+                "column": 260,
+                "line": 26
+              },
+              "message": "Error: Tailwind stylesheet is ready\n\nTailwind stylesheet is ready\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 30000ms exceeded while waiting on the predicate\n\n   at ../helpers/presentation-contracts.mjs:26\n\n  24 |   // The CDN script can finish navigation before its generated stylesheet exists.\n  25 |   // Fail explicitly on an unavailable dependency, never compare an unstyled oracle.\n> 26 |   await expect.poll(() => page.evaluate(() => [...document.styleSheets].filter(sheet => !sheet.href).some(sheet => [...sheet.cssRules].some(rule => rule.cssText.includes('--tw-border-spacing-x')))), {message: 'Tailwind stylesheet is ready', timeout: 30_000}).toBe(true);\n     |                                                                                                                                                                                                                                                                    ^\n  27 |   await settle(page);\n  28 | }\n  29 |\n    at presentationReady (/Users/rhys/git/discussion-skills-lab/tests/helpers/presentation-contracts.mjs:26:260)\n    at /Users/rhys/git/discussion-skills-lab/tests/browser/presentation-contracts.spec.mjs:22:116"
+            }
+          ],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:16:41.891Z",
+          "annotations": [],
+          "attachments": [
+            {
+              "name": "screenshot",
+              "contentType": "image/png",
+              "path": "/Users/rhys/git/discussion-skills-lab/test-results/m8-t10-roles-nonfirefox/presentation-contracts--di-7d4ce-t-desktop-breakpoint-mobile-chromium/test-failed-1.png"
+            },
+            {
+              "name": "error-context",
+              "contentType": "text/markdown",
+              "path": "/Users/rhys/git/discussion-skills-lab/test-results/m8-t10-roles-nonfirefox/presentation-contracts--di-7d4ce-t-desktop-breakpoint-mobile-chromium/error-context.md"
+            },
+            {
+              "name": "trace",
+              "contentType": "application/zip",
+              "path": "/Users/rhys/git/discussion-skills-lab/test-results/m8-t10-roles-nonfirefox/presentation-contracts--di-7d4ce-t-desktop-breakpoint-mobile-chromium/trace.zip"
+            }
+          ],
+          "errorLocation": {
+            "file": "/Users/rhys/git/discussion-skills-lab/tests/helpers/presentation-contracts.mjs",
+            "column": 260,
+            "line": 26
+          }
+        }
+      ]
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/opening all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 3,
+          "parallelIndex": 1,
+          "status": "passed",
+          "duration": 67532,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:17:10.442Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/middle all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "webkit",
+      "status": "unexpected",
+      "results": [
+        {
+          "workerIndex": 4,
+          "parallelIndex": 2,
+          "status": "timedOut",
+          "duration": 320961,
+          "error": {
+            "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m",
+            "stack": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+          },
+          "errors": [
+            {
+              "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+            },
+            {
+              "location": {
+                "file": "/Users/rhys/git/discussion-skills-lab/tests/helpers/presentation-contracts.mjs",
+                "column": 85,
+                "line": 16
+              },
+              "message": "Error: locator.evaluateAll: Test timeout of 300000ms exceeded.\n\n   at ../helpers/presentation-contracts.mjs:16\n\n  14 | const keys = ['fontFamily', 'fontSize', 'fontWeight', 'lineHeight', 'color', 'backgroundColor', 'borderTopWidth', 'borderLeftWidth', 'borderRadius', 'padding', 'boxShadow', 'letterSpacing', 'textTransform'];\n  15 | const openingPaint = ['display', 'backgroundColor', 'borderTopWidth', 'borderRadius', 'paddingTop', 'paddingLeft', 'fontFamily', 'fontSize', 'fontWeight'];\n> 16 | export const paint = (locator, properties = keys, omitTitleOnly = false) => locator.evaluateAll((nodes, {properties, omitTitleOnly}) => nodes.filter(n => !omitTitleOnly || !(n.children.length === 1 && n.firstElementChild.matches('strong,h3,.dsl-prose-h3') && n.textContent.trim() === n.firstElementChild.textContent.trim())).map(n => {\n     |                                                                                     ^\n  17 |   const s = getComputedStyle(n), result = Object.fromEntries(properties.map(key => [key, s[key]]));\n  18 |   for (const side of ['Top', 'Left']) if (properties.includes(`border${side}Width`) && parseFloat(s[`border${side}Width`])) result[`border${side}Color`] = s[`border${side}Color`];\n  19 |   return result;\n    at paint (/Users/rhys/git/discussion-skills-lab/tests/helpers/presentation-contracts.mjs:16:85)\n    at middleChoice (/Users/rhys/git/discussion-skills-lab/tests/helpers/presentation-contracts.mjs:229:108)\n    at middleQuestions (/Users/rhys/git/discussion-skills-lab/tests/helpers/presentation-contracts.mjs:207:5)\n    at observe (/Users/rhys/git/discussion-skills-lab/tests/helpers/presentation-contracts.mjs:159:26)\n    at /Users/rhys/git/discussion-skills-lab/tests/browser/presentation-contracts.spec.mjs:25:46"
+            }
+          ],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:17:45.840Z",
+          "annotations": [],
+          "attachments": [
+            {
+              "name": "screenshot",
+              "contentType": "image/png",
+              "path": "/Users/rhys/git/discussion-skills-lab/test-results/m8-t10-roles-nonfirefox/presentation-contracts--mi-c087a-t-desktop-breakpoint-mobile-webkit/test-failed-1.png"
+            },
+            {
+              "name": "error-context",
+              "contentType": "text/markdown",
+              "path": "/Users/rhys/git/discussion-skills-lab/test-results/m8-t10-roles-nonfirefox/presentation-contracts--mi-c087a-t-desktop-breakpoint-mobile-webkit/error-context.md"
+            },
+            {
+              "name": "trace",
+              "contentType": "application/zip",
+              "path": "/Users/rhys/git/discussion-skills-lab/test-results/m8-t10-roles-nonfirefox/presentation-contracts--mi-c087a-t-desktop-breakpoint-mobile-webkit/trace.zip"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/final all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 5,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 297208,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:18:19.207Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/opening all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        {
+          "workerIndex": 3,
+          "parallelIndex": 1,
+          "status": "passed",
+          "duration": 53872,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:18:22.886Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/middle all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "webkit",
+      "status": "unexpected",
+      "results": [
+        {
+          "workerIndex": 3,
+          "parallelIndex": 1,
+          "status": "failed",
+          "duration": 313368,
+          "error": {
+            "message": "Error: Tailwind stylesheet is ready\n\nTest timeout of 300000ms exceeded",
+            "stack": "Error: Tailwind stylesheet is ready\n\nTest timeout of 300000ms exceeded\n    at presentationReady (/Users/rhys/git/discussion-skills-lab/tests/helpers/presentation-contracts.mjs:26:260)\n    at /Users/rhys/git/discussion-skills-lab/tests/browser/presentation-contracts.spec.mjs:25:13",
+            "location": {
+              "file": "/Users/rhys/git/discussion-skills-lab/tests/helpers/presentation-contracts.mjs",
+              "column": 260,
+              "line": 26
+            },
+            "snippet": "\u001b[90m   at \u001b[39m../helpers/presentation-contracts.mjs:26\n\n  24 |   // The CDN script can finish navigation before its generated stylesheet exists.\n  25 |   // Fail explicitly on an unavailable dependency, never compare an unstyled oracle.\n> 26 |   await expect.poll(() => page.evaluate(() => [...document.styleSheets].filter(sheet => !sheet.href).some(sheet => [...sheet.cssRules].some(rule => rule.cssText.includes('--tw-border-spacing-x')))), {message: 'Tailwind stylesheet is ready', timeout: 30_000}).toBe(true);\n     |                                                                                                                                                                                                                                                                    ^\n  27 |   await settle(page);\n  28 | }\n  29 |"
+          },
+          "errors": [
+            {
+              "location": {
+                "file": "/Users/rhys/git/discussion-skills-lab/tests/helpers/presentation-contracts.mjs",
+                "column": 260,
+                "line": 26
+              },
+              "message": "Error: Tailwind stylesheet is ready\n\nTest timeout of 300000ms exceeded\n\n   at ../helpers/presentation-contracts.mjs:26\n\n  24 |   // The CDN script can finish navigation before its generated stylesheet exists.\n  25 |   // Fail explicitly on an unavailable dependency, never compare an unstyled oracle.\n> 26 |   await expect.poll(() => page.evaluate(() => [...document.styleSheets].filter(sheet => !sheet.href).some(sheet => [...sheet.cssRules].some(rule => rule.cssText.includes('--tw-border-spacing-x')))), {message: 'Tailwind stylesheet is ready', timeout: 30_000}).toBe(true);\n     |                                                                                                                                                                                                                                                                    ^\n  27 |   await settle(page);\n  28 | }\n  29 |\n    at presentationReady (/Users/rhys/git/discussion-skills-lab/tests/helpers/presentation-contracts.mjs:26:260)\n    at /Users/rhys/git/discussion-skills-lab/tests/browser/presentation-contracts.spec.mjs:25:13"
+            }
+          ],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:19:17.071Z",
+          "annotations": [],
+          "attachments": [
+            {
+              "name": "screenshot",
+              "contentType": "image/png",
+              "path": "/Users/rhys/git/discussion-skills-lab/test-results/m8-t10-roles-nonfirefox/presentation-contracts--di-a353c-t-desktop-breakpoint-mobile-webkit/test-failed-1.png"
+            },
+            {
+              "name": "error-context",
+              "contentType": "text/markdown",
+              "path": "/Users/rhys/git/discussion-skills-lab/test-results/m8-t10-roles-nonfirefox/presentation-contracts--di-a353c-t-desktop-breakpoint-mobile-webkit/error-context.md"
+            },
+            {
+              "name": "trace",
+              "contentType": "application/zip",
+              "path": "/Users/rhys/git/discussion-skills-lab/test-results/m8-t10-roles-nonfirefox/presentation-contracts--di-a353c-t-desktop-breakpoint-mobile-webkit/trace.zip"
+            }
+          ],
+          "errorLocation": {
+            "file": "/Users/rhys/git/discussion-skills-lab/tests/helpers/presentation-contracts.mjs",
+            "column": 260,
+            "line": 26
+          }
+        }
+      ]
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/final all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "webkit",
+      "status": "skipped",
+      "results": [
+        {
+          "workerIndex": 5,
+          "parallelIndex": 0,
+          "status": "interrupted",
+          "duration": 94102,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:23:20.912Z",
+          "annotations": [],
+          "attachments": [
+            {
+              "name": "screenshot",
+              "contentType": "image/png",
+              "path": "/Users/rhys/git/discussion-skills-lab/test-results/m8-t10-roles-nonfirefox/presentation-contracts--di-7d4ce-t-desktop-breakpoint-mobile-webkit/test-failed-1.png"
+            },
+            {
+              "name": "error-context",
+              "contentType": "text/markdown",
+              "path": "/Users/rhys/git/discussion-skills-lab/test-results/m8-t10-roles-nonfirefox/presentation-contracts--di-7d4ce-t-desktop-breakpoint-mobile-webkit/error-context.md"
+            },
+            {
+              "name": "trace",
+              "contentType": "application/zip",
+              "path": "/Users/rhys/git/discussion-skills-lab/test-results/m8-t10-roles-nonfirefox/presentation-contracts--di-7d4ce-t-desktop-breakpoint-mobile-webkit/trace.zip"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/opening all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "mobile-chromium",
+      "status": "unexpected",
+      "results": [
+        {
+          "workerIndex": 6,
+          "parallelIndex": 2,
+          "status": "failed",
+          "duration": 61301,
+          "error": {
+            "message": "Error: Tailwind stylesheet is ready\n\nTailwind stylesheet is ready\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 30000ms exceeded while waiting on the predicate",
+            "stack": "Error: Tailwind stylesheet is ready\n\nTailwind stylesheet is ready\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 30000ms exceeded while waiting on the predicate\n    at presentationReady (/Users/rhys/git/discussion-skills-lab/tests/helpers/presentation-contracts.mjs:26:260)\n    at /Users/rhys/git/discussion-skills-lab/tests/browser/presentation-contracts.spec.mjs:22:116",
+            "location": {
+              "file": "/Users/rhys/git/discussion-skills-lab/tests/helpers/presentation-contracts.mjs",
+              "column": 260,
+              "line": 26
+            },
+            "snippet": "\u001b[90m   at \u001b[39m../helpers/presentation-contracts.mjs:26\n\n  24 |   // The CDN script can finish navigation before its generated stylesheet exists.\n  25 |   // Fail explicitly on an unavailable dependency, never compare an unstyled oracle.\n> 26 |   await expect.poll(() => page.evaluate(() => [...document.styleSheets].filter(sheet => !sheet.href).some(sheet => [...sheet.cssRules].some(rule => rule.cssText.includes('--tw-border-spacing-x')))), {message: 'Tailwind stylesheet is ready', timeout: 30_000}).toBe(true);\n     |                                                                                                                                                                                                                                                                    ^\n  27 |   await settle(page);\n  28 | }\n  29 |"
+          },
+          "errors": [
+            {
+              "location": {
+                "file": "/Users/rhys/git/discussion-skills-lab/tests/helpers/presentation-contracts.mjs",
+                "column": 260,
+                "line": 26
+              },
+              "message": "Error: Tailwind stylesheet is ready\n\nTailwind stylesheet is ready\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 30000ms exceeded while waiting on the predicate\n\n   at ../helpers/presentation-contracts.mjs:26\n\n  24 |   // The CDN script can finish navigation before its generated stylesheet exists.\n  25 |   // Fail explicitly on an unavailable dependency, never compare an unstyled oracle.\n> 26 |   await expect.poll(() => page.evaluate(() => [...document.styleSheets].filter(sheet => !sheet.href).some(sheet => [...sheet.cssRules].some(rule => rule.cssText.includes('--tw-border-spacing-x')))), {message: 'Tailwind stylesheet is ready', timeout: 30_000}).toBe(true);\n     |                                                                                                                                                                                                                                                                    ^\n  27 |   await settle(page);\n  28 | }\n  29 |\n    at presentationReady (/Users/rhys/git/discussion-skills-lab/tests/helpers/presentation-contracts.mjs:26:260)\n    at /Users/rhys/git/discussion-skills-lab/tests/browser/presentation-contracts.spec.mjs:22:116"
+            }
+          ],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:23:33.770Z",
+          "annotations": [],
+          "attachments": [
+            {
+              "name": "screenshot",
+              "contentType": "image/png",
+              "path": "/Users/rhys/git/discussion-skills-lab/test-results/m8-t10-roles-nonfirefox/presentation-contracts--op-46957-t-desktop-breakpoint-mobile-mobile-chromium/test-failed-1.png"
+            },
+            {
+              "name": "error-context",
+              "contentType": "text/markdown",
+              "path": "/Users/rhys/git/discussion-skills-lab/test-results/m8-t10-roles-nonfirefox/presentation-contracts--op-46957-t-desktop-breakpoint-mobile-mobile-chromium/error-context.md"
+            },
+            {
+              "name": "trace",
+              "contentType": "application/zip",
+              "path": "/Users/rhys/git/discussion-skills-lab/test-results/m8-t10-roles-nonfirefox/presentation-contracts--op-46957-t-desktop-breakpoint-mobile-mobile-chromium/trace.zip"
+            }
+          ],
+          "errorLocation": {
+            "file": "/Users/rhys/git/discussion-skills-lab/tests/helpers/presentation-contracts.mjs",
+            "column": 260,
+            "line": 26
+          }
+        }
+      ]
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/middle all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "results": [
+        {
+          "workerIndex": 7,
+          "parallelIndex": 2,
+          "status": "interrupted",
+          "duration": 7725,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-30T11:24:38.365Z",
+          "annotations": [],
+          "attachments": [
+            {
+              "name": "screenshot",
+              "contentType": "image/png",
+              "path": "/Users/rhys/git/discussion-skills-lab/test-results/m8-t10-roles-nonfirefox/presentation-contracts--mi-c087a-t-desktop-breakpoint-mobile-mobile-chromium/test-failed-1.png"
+            },
+            {
+              "name": "error-context",
+              "contentType": "text/markdown",
+              "path": "/Users/rhys/git/discussion-skills-lab/test-results/m8-t10-roles-nonfirefox/presentation-contracts--mi-c087a-t-desktop-breakpoint-mobile-mobile-chromium/error-context.md"
+            },
+            {
+              "name": "trace",
+              "contentType": "application/zip",
+              "path": "/Users/rhys/git/discussion-skills-lab/test-results/m8-t10-roles-nonfirefox/presentation-contracts--mi-c087a-t-desktop-breakpoint-mobile-mobile-chromium/trace.zip"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/final all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/opening all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/middle all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "results": []
+    },
+    {
+      "file": "presentation-contracts.spec.mjs",
+      "title": "/discussion-skills-lab/final all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile",
+      "project": "mobile-chromium",
+      "status": "skipped",
+      "results": []
+    }
+  ]
+}

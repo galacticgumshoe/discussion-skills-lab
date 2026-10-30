@@ -1,9 +1,0 @@
-{
-  "schemaVersion": 1, "id": "connect-viewpoints-panels", "type": "expandables", "profile": "standard",
-  "data": { "items": [
-    { "id": "listen", "title": "1 · Listen", "body": "Listen for proposals, concerns, evidence, and agreement. Middle-stage notes make closing easier: record a participant's name, main idea, reasoning, connections, and unresolved concerns." },
-    { "id": "connect", "title": "2 · Connect", "body": "Look for complementary ideas, a proposal that addresses another's weakness, concerns that suggest a shared solution, or recommendations that could form a coordinated strategy." },
-    { "id": "credit", "title": "3 · Credit", "body": "Identify whose contributions you use: “Building on Maya's suggestion and Jordan's concern…” Credit demonstrates listening. Never claim another participant's idea as your own." },
-    { "id": "advance", "title": "4 · Advance", "body": "Add something new: a combined proposal, resolved tension, implementation condition, priority, compromise, or next decision. Merely naming two speakers is not enough." }
-  ] }
-}

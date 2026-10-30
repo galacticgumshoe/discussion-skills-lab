@@ -1,0 +1,35 @@
+
+> test:browser
+> playwright test tests/browser/presentation-contracts.spec.mjs --grep all authored --workers=1 --max-failures=1 --reporter=line
+
+
+Running 24 tests using 1 worker
+
+[1/24] [chromium] › tests/browser/presentation-contracts.spec.mjs:32:3 › /opening all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile
+[2/24] [chromium] › tests/browser/presentation-contracts.spec.mjs:32:3 › /middle all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile
+[3/24] [chromium] › tests/browser/presentation-contracts.spec.mjs:32:3 › /final all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile
+[4/24] [chromium] › tests/browser/presentation-contracts.spec.mjs:32:3 › /discussion-skills-lab/opening all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile
+[5/24] [chromium] › tests/browser/presentation-contracts.spec.mjs:32:3 › /discussion-skills-lab/middle all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile
+[6/24] [chromium] › tests/browser/presentation-contracts.spec.mjs:32:3 › /discussion-skills-lab/final all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile
+[7/24] [firefox] › tests/browser/presentation-contracts.spec.mjs:32:3 › /opening all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile
+[8/24] [firefox] › tests/browser/presentation-contracts.spec.mjs:32:3 › /middle all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile
+[9/24] [firefox] › tests/browser/presentation-contracts.spec.mjs:32:3 › /final all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile
+[10/24] [firefox] › tests/browser/presentation-contracts.spec.mjs:32:3 › /discussion-skills-lab/opening all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile
+[11/24] [firefox] › tests/browser/presentation-contracts.spec.mjs:32:3 › /discussion-skills-lab/middle all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile
+[12/24] [firefox] › tests/browser/presentation-contracts.spec.mjs:32:3 › /discussion-skills-lab/final all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile
+[13/24] [webkit] › tests/browser/presentation-contracts.spec.mjs:32:3 › /opening all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile
+[14/24] [webkit] › tests/browser/presentation-contracts.spec.mjs:32:3 › /middle all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile
+[15/24] [webkit] › tests/browser/presentation-contracts.spec.mjs:32:3 › /final all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile
+[16/24] [webkit] › tests/browser/presentation-contracts.spec.mjs:32:3 › /discussion-skills-lab/opening all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile
+[17/24] [webkit] › tests/browser/presentation-contracts.spec.mjs:32:3 › /discussion-skills-lab/middle all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile
+[18/24] [webkit] › tests/browser/presentation-contracts.spec.mjs:32:3 › /discussion-skills-lab/final all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile
+[19/24] [mobile-chromium] › tests/browser/presentation-contracts.spec.mjs:32:3 › /opening all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile
+[20/24] [mobile-chromium] › tests/browser/presentation-contracts.spec.mjs:32:3 › /middle all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile
+[21/24] [mobile-chromium] › tests/browser/presentation-contracts.spec.mjs:32:3 › /final all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile
+[22/24] [mobile-chromium] › tests/browser/presentation-contracts.spec.mjs:32:3 › /discussion-skills-lab/opening all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile
+[23/24] [mobile-chromium] › tests/browser/presentation-contracts.spec.mjs:32:3 › /discussion-skills-lab/middle all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile
+[24/24] [mobile-chromium] › tests/browser/presentation-contracts.spec.mjs:32:3 › /discussion-skills-lab/final all authored presentation roles/states survive consolidation at desktop/breakpoint/mobile
+  Slow test file: [firefox] › tests/browser/presentation-contracts.spec.mjs (5.1m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  24 passed (15.3m)
+cp: test-results/results.json: No such file or directory

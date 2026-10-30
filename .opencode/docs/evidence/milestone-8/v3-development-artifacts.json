@@ -1,0 +1,131 @@
+{
+  "date": "2026-10-29",
+  "artifacts": [
+    {
+      "path": ".opencode/docs/evidence/milestone-8/v3-development-failures/m8-remaining-initial/lesson-boundaries--public--83b49-ermanent-credit-and-refresh-chromium/error-context.md",
+      "sha256": "1936faf0978738950fbf00d9da19f566d14630c2a02bc7b3e41240065eb5e871",
+      "bytes": 9509,
+      "lines": 153
+    },
+    {
+      "path": ".opencode/docs/evidence/milestone-8/v3-development-failures/m8-remaining-initial/lesson-boundaries--public--83b49-ermanent-credit-and-refresh-chromium/test-failed-1.png",
+      "sha256": "eb3f2b55f7575d58b8cfa78fa0c19fad7ca4f3b21d32d026d0d5845a7798e5ab",
+      "bytes": 120449,
+      "lines": 392
+    },
+    {
+      "path": ".opencode/docs/evidence/milestone-8/v3-development-failures/m8-remaining-corrected/lesson-boundaries--public--8e03d-d-hydrate-silently-on-retry-chromium/error-context.md",
+      "sha256": "c09303f6cad9fd92071a502745a120137332343becd41a4488c936298e9d6f59",
+      "bytes": 16118,
+      "lines": 218
+    },
+    {
+      "path": ".opencode/docs/evidence/milestone-8/v3-development-failures/m8-remaining-corrected/lesson-boundaries--public--8e03d-d-hydrate-silently-on-retry-chromium/test-failed-1.png",
+      "sha256": "bd587385112096ce9a695704b0847beb877607fcf72bf31b3d22879f06e33dd1",
+      "bytes": 193745,
+      "lines": 812
+    },
+    {
+      "path": ".opencode/docs/evidence/milestone-8/v3-development-failures/m8-remaining-public/controller-lifecycle--dire-23faa-stable-live-region-callback-chromium/error-context.md",
+      "sha256": "dff52237aa644f7734c38a9224c78f7fd0bcc0a36fc91e7b5c2eaa224e29907f",
+      "bytes": 6919,
+      "lines": 116
+    },
+    {
+      "path": ".opencode/docs/evidence/milestone-8/v3-development-failures/m8-remaining-public/controller-lifecycle--dire-23faa-stable-live-region-callback-chromium/test-failed-1.png",
+      "sha256": "1c67232e6e374ae13bfdd15f7faf79d8400ac53880a8dbb8ad0c197149dc21e1",
+      "bytes": 29171,
+      "lines": 64
+    },
+    {
+      "path": ".opencode/docs/evidence/milestone-8/v3-development-failures/m8-remaining-public-verified/lesson-boundaries--discuss-3a450--bytes-and-separate-warning-chromium/error-context.md",
+      "sha256": "a95b569936cfaf7c829fae77a839208f5f5889e01e818197a92ccfd9ef13fb64",
+      "bytes": 12356,
+      "lines": 156
+    },
+    {
+      "path": ".opencode/docs/evidence/milestone-8/v3-development-failures/m8-remaining-public-verified/lesson-boundaries--discuss-4f5e9-l-writing-profiles-validate-chromium/error-context.md",
+      "sha256": "20a7677da7bc6e66368983422e7685c27e62535a679a86172aed8827dbda38e8",
+      "bytes": 16045,
+      "lines": 211
+    },
+    {
+      "path": ".opencode/docs/evidence/milestone-8/v3-development-failures/m8-remaining-public-verified/lesson-boundaries--discuss-4f5e9-l-writing-profiles-validate-chromium/test-failed-1.png",
+      "sha256": "a6c25ecd2799f8681d024f6779a78d41f47092312fc8913bdd364124fa6faf4d",
+      "bytes": 186150,
+      "lines": 724
+    },
+    {
+      "path": ".opencode/docs/evidence/milestone-8/v3-development-failures/m8-remaining-public-verified/lesson-boundaries--public--53971-l-writing-profiles-validate-chromium/error-context.md",
+      "sha256": "67f991d06db372e58e88d4f007dc8c40c6d32d2aa75191b395d62228233a1bcd",
+      "bytes": 16023,
+      "lines": 211
+    },
+    {
+      "path": ".opencode/docs/evidence/milestone-8/v3-development-failures/m8-remaining-public-verified/lesson-boundaries--public--53971-l-writing-profiles-validate-chromium/test-failed-1.png",
+      "sha256": "9bc0f0c38d15041f23b0d1c8b0d1d802be256f6b1bdb22e5ba25d6484d9ed966",
+      "bytes": 176739,
+      "lines": 614
+    },
+    {
+      "path": ".opencode/docs/evidence/milestone-8/v3-development-failures/m8-remaining-public-final/middle-questions--Middle-p-31e2e-round-and-immediate-cursors-chromium/error-context.md",
+      "sha256": "003a393e7f8b6cdc8ea1f236c007663b82ca3b8b65cc55a2e9b4b45ae6a63ad4",
+      "bytes": 15376,
+      "lines": 229
+    },
+    {
+      "path": ".opencode/docs/evidence/milestone-8/v3-development-failures/m8-remaining-public-final/middle-questions--Middle-p-31e2e-round-and-immediate-cursors-chromium/test-failed-1.png",
+      "sha256": "989094d4e09f1360d260dbe747d685b55fe7a3d3c5fcf8a1736d9b42a382dfe4",
+      "bytes": 131273,
+      "lines": 449
+    },
+    {
+      "path": ".opencode/docs/evidence/milestone-8/v3-development-failures/m8-remaining-public-final/middle-questions--Middle-p-86d05-lays-in-the-original-engine-chromium/error-context.md",
+      "sha256": "013dd12749095289daa6b184c3bb04bbe875e39d65dd58177dbe54130b00edf8",
+      "bytes": 14168,
+      "lines": 242
+    },
+    {
+      "path": ".opencode/docs/evidence/milestone-8/v3-development-failures/m8-remaining-public-final/middle-questions--Middle-p-86d05-lays-in-the-original-engine-chromium/test-failed-1.png",
+      "sha256": "1e89a7052bb0ce12dc52bdb6afb122a16b5d4c96bdcc883a24b6d819060e335c",
+      "bytes": 132043,
+      "lines": 460
+    },
+    {
+      "path": ".opencode/docs/evidence/milestone-8/v3-development-failures/m8-remaining-public-final/middle-questions--discussi-67814-round-and-immediate-cursors-chromium/error-context.md",
+      "sha256": "addc01f0fc2e298ac1a631e638869de0a6fb1b390999bf7529fd05ddefa947e2",
+      "bytes": 15398,
+      "lines": 229
+    },
+    {
+      "path": ".opencode/docs/evidence/milestone-8/v3-development-failures/m8-remaining-public-final/middle-questions--discussi-67814-round-and-immediate-cursors-chromium/test-failed-1.png",
+      "sha256": "989094d4e09f1360d260dbe747d685b55fe7a3d3c5fcf8a1736d9b42a382dfe4",
+      "bytes": 131273,
+      "lines": 449
+    },
+    {
+      "path": ".opencode/docs/evidence/milestone-8/v3-development-failures/m8-remaining-public-final/middle-questions--discussi-76e93-lays-in-the-original-engine-chromium/error-context.md",
+      "sha256": "860e983d3404ff508a29e9052bd69bb441f69a4b35c41b1a6adb50970f0d94db",
+      "bytes": 14190,
+      "lines": 242
+    },
+    {
+      "path": ".opencode/docs/evidence/milestone-8/v3-development-failures/m8-remaining-public-final/middle-questions--discussi-76e93-lays-in-the-original-engine-chromium/test-failed-1.png",
+      "sha256": "1e89a7052bb0ce12dc52bdb6afb122a16b5d4c96bdcc883a24b6d819060e335c",
+      "bytes": 132043,
+      "lines": 460
+    },
+    {
+      "path": ".opencode/docs/evidence/milestone-8/v3-development-failures/m8-v3-final-contracts/middle-questions--Middle-p-86d05-lays-in-the-original-engine-chromium/error-context.md",
+      "sha256": "c62eefb7b105528ce548826f4d58f6c0c29954cbcb5a3878d4cff65b19f6bb35",
+      "bytes": 14168,
+      "lines": 242
+    },
+    {
+      "path": ".opencode/docs/evidence/milestone-8/v3-development-failures/m8-v3-final-contracts/middle-questions--Middle-p-86d05-lays-in-the-original-engine-chromium/test-failed-1.png",
+      "sha256": "1e89a7052bb0ce12dc52bdb6afb122a16b5d4c96bdcc883a24b6d819060e335c",
+      "bytes": 132043,
+      "lines": 460
+    }
+  ]
+}

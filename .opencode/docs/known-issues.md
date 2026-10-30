@@ -1,5 +1,69 @@
 # Original-engine issues (not repaired in milestone 1)
 
+## Milestone 8 — consolidation follow-up (2026-10-30, T09/T10 removal implemented)
+
+- Owner approved T02/T08 removal and rejected T09/T10 retention; both removal
+  scopes are now implemented. The exact 25 T02/T08 files are removed, and the
+  separately approved v4 scope (18 T09 whole files, nine T10 whole files and one
+  bounded completion test/unused import) is also removed. Post-removal checks for
+  both scopes find no executable consumers, ordinary 404s for retired fixture
+  paths and 200s for all four public entries at both mounts. The five remaining
+  replacement specs passed **368/368** in one clean all-project browser invocation
+  (37.3 minutes, zero skips/failures). See
+  `evidence/milestone-8/consolidation-coverage.md` for the assertion map and
+  `consolidation-v4-post-removal-audit.json` for the v4 results.
+- Replacement coverage now passes: T09 has 448 distinct cases with combined
+  passing coverage; T10's complete role selection passed 24/24 in one clean
+  invocation (15.3 minutes, all four projects/both mounts, zero skips/failures),
+  and narrow/spacing/final source passed 32/32. Earlier failures remain recorded.
+- Early replacement diagnostics over-applied exact style comparisons (Opening
+  paragraph roles, Final container inheritance, Middle active quiz jump) and
+  assumed Final's Welcome minimum also applied to Middle's 2.35rem mobile
+  override. Those are test-oracle/setup issues, not authorization to alter the
+  approved CSS. Tailwind readiness fails explicitly if its external stylesheet is
+  unavailable rather than comparing an unstyled original. After real
+  `net::ERR_TIMED_OUT` requests, `visitWithStylesheet()` retries the same public
+  page up to three times; every attempt still requires the generated stylesheet,
+  and a persistent outage fails explicitly. No fake stylesheet or skipped check.
+- A new generic card stress probe initially used invented long text and enlarged
+  it before shrinking the viewport. WebKit overflowed in that setup; the old
+  source-length/narrow-then-enlarged test passes. The replacement now uses the
+  actual pinned source's longest face and the old enlargement order; both WebKit
+  mounts pass. This is not a general claim that arbitrary content/resizing works.
+- Additional exploratory **whole-root** 200% checks exposed a Middle long title
+  extending into visible section padding (303px content in a 288px box, no page
+  overflow) and a Final inline-text overflow (328px page at 320px viewport) in
+  Connect Viewpoints. These exceed the retired tests' enlargement scopes; no
+  production CSS fix is bundled into cleanup. Preserve the existing exact
+  heading/card/control tests and triage any broader zoom/layout work separately.
+- The two inherited pre-cutover unit guards below were removed with the approved
+  v4 scope. Equivalent current-entry, formatter, source-bank and isolation
+  assertions remain in `tests/unit/component-contracts.test.mjs`; the affected
+  126-test unit selection and content validation pass. No stale guard remains.
+
+## Milestone 8 — v3 current checkpoint (2026-10-29)
+
+- **Two inherited stale unit guards:** `tests/unit/components.test.mjs:62–66`
+  and `tests/unit/formatters.test.mjs:63–66` still prohibit the approved shared
+  component stylesheet on Opening/Final. An expanded targeted unit run exposes
+  both failures (126/128 pass); this is an obsolete intermediate-state oracle,
+  not a product regression. Exact replacements preserving the meaningful
+  isolation/formatter/bank/VM assertions are proposed as **T09-GUARDS-v3** in
+  `evidence/milestone-8/remaining-dispositions-v3.md`. No test is disabled or
+  silently relaxed while awaiting approval.
+- New public/boundary/controller contracts pass 120/120 across all four projects
+  and both mounts, plus 14/14 Chromium dependency checks. Earlier new-test
+  assumptions about hidden activities, accessibility-tree names and sparse
+  navigation were corrected without changing production. Exact failures/results:
+  `evidence/milestone-8/remaining-verification-v3.md`.
+- T02/T08 removal replacements are prepared; exact cleanup and T09/T10 retention
+  **proposals** await an explicit decision. Retention would preserve the documented
+  direct-API and real-public-page assertions, not pretend that every former
+  consolidation plan was implemented. If declined, their ports remain work.
+  Existing owner acceptance resolves the prior Middle Print presentation review;
+  no new device/AT/zoom/GUI-print evidence is inferred. Runtime, content, progress
+  and all candidates remain unchanged in this test-only session.
+
 ## Milestone 8 — incomplete approved implementation checkpoint
 
 - **Owner-reported Middle reference Print appearance regression:** the generic

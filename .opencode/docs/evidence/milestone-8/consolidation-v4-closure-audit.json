@@ -1,0 +1,315 @@
+{
+  "date": "2026-10-30",
+  "sourceCommit": "61ff6898a6675d000d76e76e225d1852e56d9fb9",
+  "preconditions": {
+    "allWholeFilesMatchSnapshot": true,
+    "completionBlockMatchesSnapshot": true,
+    "completionImportLine": "import { readFileSync } from 'node:fs';",
+    "completionBlockLines": "160-176",
+    "completionExpectedPostRemovalSha256": "fbf7f46b1cf3418aec80a7ec5fd792c687c95057a8c3926ea5c490228fb3448e",
+    "fixturePathsServedNow": [
+      {
+        "path": "/__fixtures/harness/components.html",
+        "preRemovalStatus": 200
+      },
+      {
+        "path": "/discussion-skills-lab/__fixtures/harness/components.html",
+        "preRemovalStatus": 200
+      },
+      {
+        "path": "/__fixtures/harness/components.mjs",
+        "preRemovalStatus": 200
+      },
+      {
+        "path": "/discussion-skills-lab/__fixtures/harness/components.mjs",
+        "preRemovalStatus": 200
+      },
+      {
+        "path": "/__fixtures/harness/navigation.html",
+        "preRemovalStatus": 200
+      },
+      {
+        "path": "/discussion-skills-lab/__fixtures/harness/navigation.html",
+        "preRemovalStatus": 200
+      },
+      {
+        "path": "/__fixtures/harness/navigation.mjs",
+        "preRemovalStatus": 200
+      },
+      {
+        "path": "/discussion-skills-lab/__fixtures/harness/navigation.mjs",
+        "preRemovalStatus": 200
+      },
+      {
+        "path": "/__fixtures/harness/storage.html",
+        "preRemovalStatus": 200
+      },
+      {
+        "path": "/discussion-skills-lab/__fixtures/harness/storage.html",
+        "preRemovalStatus": 200
+      },
+      {
+        "path": "/__fixtures/harness/storage.mjs",
+        "preRemovalStatus": 200
+      },
+      {
+        "path": "/discussion-skills-lab/__fixtures/harness/storage.mjs",
+        "preRemovalStatus": 200
+      },
+      {
+        "path": "/__fixtures/harness/writing-reference.html",
+        "preRemovalStatus": 200
+      },
+      {
+        "path": "/discussion-skills-lab/__fixtures/harness/writing-reference.html",
+        "preRemovalStatus": 200
+      },
+      {
+        "path": "/__fixtures/harness/writing-reference.mjs",
+        "preRemovalStatus": 200
+      },
+      {
+        "path": "/discussion-skills-lab/__fixtures/harness/writing-reference.mjs",
+        "preRemovalStatus": 200
+      },
+      {
+        "path": "/__fixtures/harness/writing-reference.css",
+        "preRemovalStatus": 200
+      },
+      {
+        "path": "/discussion-skills-lab/__fixtures/harness/writing-reference.css",
+        "preRemovalStatus": 200
+      },
+      {
+        "path": "/__fixtures/harness/component-data.mjs",
+        "preRemovalStatus": 200
+      },
+      {
+        "path": "/discussion-skills-lab/__fixtures/harness/component-data.mjs",
+        "preRemovalStatus": 200
+      },
+      {
+        "path": "/__fixtures/harness/writing-data.mjs",
+        "preRemovalStatus": 200
+      },
+      {
+        "path": "/discussion-skills-lab/__fixtures/harness/writing-data.mjs",
+        "preRemovalStatus": 200
+      },
+      {
+        "path": "/__fixtures/harness/README.md",
+        "preRemovalStatus": 200
+      },
+      {
+        "path": "/discussion-skills-lab/__fixtures/harness/README.md",
+        "preRemovalStatus": 200
+      }
+    ],
+    "publicEntries": [
+      {
+        "path": "/index.html",
+        "status": 200
+      },
+      {
+        "path": "/discussion-skills-lab/index.html",
+        "status": 200
+      },
+      {
+        "path": "/opening.html",
+        "status": 200
+      },
+      {
+        "path": "/discussion-skills-lab/opening.html",
+        "status": 200
+      },
+      {
+        "path": "/middle.html",
+        "status": 200
+      },
+      {
+        "path": "/discussion-skills-lab/middle.html",
+        "status": 200
+      },
+      {
+        "path": "/final.html",
+        "status": 200
+      },
+      {
+        "path": "/discussion-skills-lab/final.html",
+        "status": 200
+      }
+    ],
+    "completionExpectedPostRemovalNote": "Actual implemented file trims one review-predicted trailing blank line to keep git diff --check clean."
+  },
+  "postRemovalExpectation": {
+    "fixturePaths": [
+      {
+        "path": "/__fixtures/harness/components.html",
+        "expectedStatus": 404
+      },
+      {
+        "path": "/discussion-skills-lab/__fixtures/harness/components.html",
+        "expectedStatus": 404
+      },
+      {
+        "path": "/__fixtures/harness/components.mjs",
+        "expectedStatus": 404
+      },
+      {
+        "path": "/discussion-skills-lab/__fixtures/harness/components.mjs",
+        "expectedStatus": 404
+      },
+      {
+        "path": "/__fixtures/harness/navigation.html",
+        "expectedStatus": 404
+      },
+      {
+        "path": "/discussion-skills-lab/__fixtures/harness/navigation.html",
+        "expectedStatus": 404
+      },
+      {
+        "path": "/__fixtures/harness/navigation.mjs",
+        "expectedStatus": 404
+      },
+      {
+        "path": "/discussion-skills-lab/__fixtures/harness/navigation.mjs",
+        "expectedStatus": 404
+      },
+      {
+        "path": "/__fixtures/harness/storage.html",
+        "expectedStatus": 404
+      },
+      {
+        "path": "/discussion-skills-lab/__fixtures/harness/storage.html",
+        "expectedStatus": 404
+      },
+      {
+        "path": "/__fixtures/harness/storage.mjs",
+        "expectedStatus": 404
+      },
+      {
+        "path": "/discussion-skills-lab/__fixtures/harness/storage.mjs",
+        "expectedStatus": 404
+      },
+      {
+        "path": "/__fixtures/harness/writing-reference.html",
+        "expectedStatus": 404
+      },
+      {
+        "path": "/discussion-skills-lab/__fixtures/harness/writing-reference.html",
+        "expectedStatus": 404
+      },
+      {
+        "path": "/__fixtures/harness/writing-reference.mjs",
+        "expectedStatus": 404
+      },
+      {
+        "path": "/discussion-skills-lab/__fixtures/harness/writing-reference.mjs",
+        "expectedStatus": 404
+      },
+      {
+        "path": "/__fixtures/harness/writing-reference.css",
+        "expectedStatus": 404
+      },
+      {
+        "path": "/discussion-skills-lab/__fixtures/harness/writing-reference.css",
+        "expectedStatus": 404
+      },
+      {
+        "path": "/__fixtures/harness/component-data.mjs",
+        "expectedStatus": 404
+      },
+      {
+        "path": "/discussion-skills-lab/__fixtures/harness/component-data.mjs",
+        "expectedStatus": 404
+      },
+      {
+        "path": "/__fixtures/harness/writing-data.mjs",
+        "expectedStatus": 404
+      },
+      {
+        "path": "/discussion-skills-lab/__fixtures/harness/writing-data.mjs",
+        "expectedStatus": 404
+      },
+      {
+        "path": "/__fixtures/harness/README.md",
+        "expectedStatus": 404
+      },
+      {
+        "path": "/discussion-skills-lab/__fixtures/harness/README.md",
+        "expectedStatus": 404
+      }
+    ],
+    "publicEntries": [
+      {
+        "path": "/index.html",
+        "expectedStatus": 200
+      },
+      {
+        "path": "/discussion-skills-lab/index.html",
+        "expectedStatus": 200
+      },
+      {
+        "path": "/opening.html",
+        "expectedStatus": 200
+      },
+      {
+        "path": "/discussion-skills-lab/opening.html",
+        "expectedStatus": 200
+      },
+      {
+        "path": "/middle.html",
+        "expectedStatus": 200
+      },
+      {
+        "path": "/discussion-skills-lab/middle.html",
+        "expectedStatus": 200
+      },
+      {
+        "path": "/final.html",
+        "expectedStatus": 200
+      },
+      {
+        "path": "/discussion-skills-lab/final.html",
+        "expectedStatus": 200
+      }
+    ]
+  },
+  "summary": {
+    "wholeFiles": 27,
+    "fixtureFiles": 12,
+    "fixture404ChecksAtBothMounts": 24,
+    "publicEntry200ChecksAtBothMounts": 8,
+    "otherExecutableConsumers": 0
+  },
+  "consumerScan": {
+    "method": "Basename search for each unique candidate filename across tracked executable HTML/CSS/JS/MJS/JSON, excluding candidate files themselves and historical evidence JSON; README.md excluded as too generic.",
+    "hits": {
+      "tests/fixtures/harness/navigation.html": [
+        "tests/unit/completion.test.mjs"
+      ],
+      "tests/fixtures/harness/navigation.mjs": [
+        "tests/unit/completion.test.mjs"
+      ]
+    },
+    "otherExecutableConsumers": 0,
+    "fixtureProductionImports": [],
+    "note": "Every hit is either a candidate browser spec itself, a candidate fixture module loaded only by its candidate page, or the retained completion test block/import in the removal scope. No production entry imports or links fixture HTML/CSS/modules."
+  },
+  "timing": "Pre-deletion precondition audit; retained as the reviewed 200/hash baseline.",
+  "approval": {
+    "approvedBy": "Owner",
+    "date": "2026-10-30",
+    "scope": "Exact 27 whole files plus bounded completion test/unused import"
+  },
+  "postRemovalAudit": {
+    "path": ".opencode/docs/evidence/milestone-8/consolidation-v4-post-removal-audit.json",
+    "summary": {
+      "wholeFilesAbsent": 27,
+      "fixture404ChecksAtBothMounts": 24,
+      "publicEntry200ChecksAtBothMounts": 8,
+      "completionFileMatchesExpected": true,
+      "allPassed": true
+    }
+  }
+}

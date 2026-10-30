@@ -1,7 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import vm from 'node:vm';
-import { readFileSync } from 'node:fs';
 import { original } from '../helpers/baseline-source.mjs';
 import { applyCompletion, canVisitSection, hasAllIds, hasCurrentCorrectAnswers, unionCompletedSections } from '../../assets/js/app/completion.js';
 import { openProgress } from '../../assets/js/app/progress-store.js';
@@ -155,22 +154,4 @@ test('completion/store connection retains non-contiguous credit and serializes s
     store.save(applyCompletion(store.state, revised, { sections: ordered, completionPolicy }));
     assert.deepEqual(JSON.parse(raw).completed, [3, 0]);
   }
-});
-
-test('navigation harness excerpts and ordered labels match pinned Opening content independently of screenshots', () => {
-  const html = readFileSync(new URL('../fixtures/harness/navigation.html', import.meta.url), 'utf8');
-  const source = original('opening.html').toString();
-  const excerpts = [...html.matchAll(/<(h[123]|p)[^>]*data-baseline="([^"]+)"[^>]*>([^<]+)<\/\1>/g)];
-  assert.equal(excerpts.length, 15);
-  for (const [, , id, text] of excerpts) {
-    const canonical = source.match(new RegExp(`data-template-id="${id}"[^>]*>([^<]+)<`));
-    assert.ok(canonical, id); assert.equal(text, canonical[1], id);
-  }
-  const script = readFileSync(new URL('../fixtures/harness/navigation.mjs', import.meta.url), 'utf8');
-  const labels = [...script.matchAll(/label: '([^']+)'/g)].map(match => match[1]);
-  // The production entry is now thin. Keep this original-engine assertion pinned,
-  // and independently compare the external manifest rather than an absent bank.
-  assert.deepEqual(labels, Array.from(vm.runInNewContext(source.match(/labels:(\[[^\n]+\])/)[1])));
-  const manifest = JSON.parse(readFileSync(new URL('../../content/opening/lesson.json', import.meta.url), 'utf8'));
-  assert.deepEqual(labels, manifest.sections.map(section => section.label));
 });

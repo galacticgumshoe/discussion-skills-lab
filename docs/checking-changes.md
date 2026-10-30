@@ -28,27 +28,47 @@ none of these tools is required by production Pages hosting.
 
 ## Choose checks by impact
 
-During editing, use affected files/projects rather than automatically running every
-historical migration matrix. These are starting selections, not exhaustive proof:
+You usually do not need to run every test after a small edit. Start with the tests
+for the part you changed, then check that part in your browser.
+
+There are three kinds of automated check:
+
+- **Content validation** finds problems such as invalid JSON, missing files or
+  broken references between lesson files.
+- **Unit tests** check individual calculations and rules, such as answer keys,
+  completion requirements and saved-progress handling.
+- **Browser tests** open the website and use its controls, much like a visitor.
+
+The table below lists test files you can use with the example commands that follow.
+It is a starting point; a change used by several lessons needs checks in each one.
 
 | Change | Focused automated checks |
 | --- | --- |
-| Any content JSON/source path | `npm run validate:content`; `tests/unit/lesson-validation.test.mjs` |
+| Any content JSON/source path | `npm run validate:content`; `tests/unit/lesson-boundaries.test.mjs` |
 | Existing lesson prose/questions/models | That lesson's `tests/unit/<id>-migration.test.mjs` and `tests/browser/<id>-lesson.spec.mjs` |
-| Middle full graph/reference | Also `tests/unit/middle-lesson.test.mjs`, `middle-reference.test.mjs`; `tests/browser/middle-reference.spec.mjs` |
-| Pure gates or shared access rule | `tests/unit/completion.test.mjs`; `tests/browser/policy.spec.mjs`, `navigation.spec.mjs`, affected lesson journeys |
-| Store/codec/default changes | `tests/unit/progress-adapters.test.mjs`; `tests/browser/persistence.spec.mjs`, `storage-boundaries.spec.mjs`, affected public restores |
-| Shared components/writing | `tests/unit/components.test.mjs`, `formatters.test.mjs`; `tests/browser/components.spec.mjs`, `writing-reference.spec.mjs`, affected public journeys |
+| Middle full graph/questions/reference | Also `tests/unit/middle-lesson.test.mjs`, `middle-reference.test.mjs`; `tests/browser/middle-questions.spec.mjs`, `middle-reference.spec.mjs` |
+| Pure gates or shared access rule | `tests/unit/completion.test.mjs`; `tests/browser/policy.spec.mjs`, `navigation-contracts.spec.mjs`, affected lesson journeys |
+| Store/codec/default changes | `tests/unit/progress-adapters.test.mjs`; `tests/browser/persistence.spec.mjs`, `progress-contracts.spec.mjs`, affected public restores |
+| Shared components/writing | `tests/unit/component-contracts.test.mjs`; `tests/browser/component-contracts.spec.mjs`, `writing-controls.spec.mjs`, affected public journeys |
 | Homepage/catalog/shared shell | `tests/unit/milestone-8.test.mjs`; `tests/browser/home.spec.mjs`, `shell.spec.mjs` |
 | Reference/print | `tests/unit/content-validation.test.mjs`; `tests/browser/print-isolation.spec.mjs`, `print.spec.mjs`, `reference-loading.spec.mjs`, affected lesson reference |
-| Content safety/schema extension | `tests/unit/lesson-validation.test.mjs`, `content-validation.test.mjs`, `content-urls.test.mjs`; `tests/browser/content-security.spec.mjs`, `app-lifecycle.spec.mjs` |
+| Content safety/schema extension | `tests/unit/lesson-boundaries.test.mjs`, `content-validation.test.mjs`, `content-urls.test.mjs`; `tests/browser/lesson-boundaries.spec.mjs`, `content-security.spec.mjs`, `app-lifecycle.spec.mjs` |
 | New public module | New dedicated policy/entry/journey/restore tests; `new-module.spec.mjs` tests the shared fixture, **not your new public page** |
 | Lesson CSS only | Affected lesson presentation specs and long/revealed states; all consumers if shared CSS changed |
+
+For example, after editing Middle's questions, run `middle-questions.spec.mjs` to
+check answer choices, feedback and saved answers. If you change how lessons load
+their files, use `lesson-boundaries` to check that missing or invalid content shows
+a useful error and can be retried without losing saved work.
+
+Automated checks cannot replace reading your revised lesson. Open the actual page,
+try the affected activities and check their feedback, hidden models and reference
+sheet as described under **Manual review** below.
 
 Run unit files directly, for example:
 
 ```sh
-node --test tests/unit/lesson-validation.test.mjs tests/unit/opening-migration.test.mjs
+node --test tests/unit/lesson-boundaries.test.mjs tests/unit/opening-migration.test.mjs
 ```
 
 Run a fast Chromium browser selection while iterating:
