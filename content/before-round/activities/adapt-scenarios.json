@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "adapt-scenarios",
+  "type": "question-sequence",
+  "profile": "middle-scenarios",
+  "data": {
+    "questions": [
+      {
+        "id": "dominant-peer",
+        "prompt": "Before the round, one student speaks over others and starts proposing an agenda. What is the most constructive takeaway?",
+        "correctOptionId": "adapt",
+        "options": [
+          {"id": "label", "text": "Decide they will be an opponent for the whole round"},
+          {"id": "adapt", "text": "Anticipate competition for procedural roles and prepare to contribute substantive ideas if those roles are crowded"},
+          {"id": "compete", "text": "Plan to interrupt them first."}
+        ],
+        "explanation": "Aggressive pre-round behavior can suggest that a student will try to lead procedural elements such as agendas and timekeeping. If several students want those roles, be ready to focus more on substantive contributions. Use the early impression to plan, then adjust as the round develops."
+      },
+      {
+        "id": "inclusive-peer",
+        "prompt": "Another student listens attentively and invites quieter people into a casual conversation. How should you respond?",
+        "correctOptionId": "support",
+        "options": [
+          {"id": "support", "text": "Build on that inclusive tone and prepare to contribute collaboratively"},
+          {"id": "withdraw", "text": "Assume they will handle all group leadership"},
+          {"id": "ally", "text": "Treat them as a permanent ally regardless of the task."}
+        ],
+        "explanation": "Inclusive behavior is worth reinforcing, but every participant still needs to contribute thoughtfully to the shared task."
+      }
+    ]
+  }
+}

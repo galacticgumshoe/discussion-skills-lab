@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "readiness-quiz",
+  "type": "question-sequence",
+  "profile": "opening-knowledge-check",
+  "data": {
+    "questions": [
+      {
+        "id": "equipment",
+        "prompt": "Which item is described as useful but not required?",
+        "correctOptionId": "hotspot",
+        "options": [
+          {"id": "notes", "text": "Something to take notes with"},
+          {"id": "name", "text": "A readable name tent"},
+          {"id": "hotspot", "text": "A phone hotspot."}
+        ],
+        "explanation": "A hotspot can help when Wi-Fi is unreliable, but it is optional."
+      },
+      {
+        "id": "advance-task",
+        "prompt": "An electronic task is available ahead of time. What should you do?",
+        "correctOptionId": "analyze",
+        "options": [
+          {"id": "analyze", "text": "Analyze it and prepare relevant research"},
+          {"id": "ignore", "text": "Ignore it until the round starts"},
+          {"id": "speech", "text": "Memorize a fixed speech."}
+        ],
+        "explanation": "Advance access is an opportunity to prepare without preempting the group's decisions."
+      },
+      {
+        "id": "seating",
+        "prompt": "The tournament specifies an assigned seating order. What takes priority?",
+        "correctOptionId": "rules",
+        "options": [
+          {"id": "strategy", "text": "Your preferred seat near the judge"},
+          {"id": "rules", "text": "The current round's seating directions"},
+          {"id": "friends", "text": "Sitting beside a friend."}
+        ],
+        "explanation": "Follow the directions for the specific tournament and round."
+      },
+      {
+        "id": "icebreaker",
+        "prompt": "What is the main purpose of pre-round small talk?",
+        "correctOptionId": "rapport",
+        "options": [
+          {"id": "rapport", "text": "Build rapport and a cooperative tone"},
+          {"id": "rank", "text": "Rank classmates as allies or opponents"},
+          {"id": "control", "text": "Take control before the timer starts."}
+        ],
+        "explanation": "Icebreakers prepare people to work together; they are not an extra competition."
+      },
+      {
+        "id": "observe",
+        "prompt": "Someone dominates the pre-round conversation. What is the best response?",
+        "correctOptionId": "adapt",
+        "options": [
+          {"id": "assume", "text": "Assume they will always be difficult"},
+          {"id": "adapt", "text": "Use that early impression to plan a role that fits the group's procedural and substantive needs"},
+          {"id": "mirror", "text": "Dominate the next conversation yourself."}
+        ],
+        "explanation": "Pre-round behavior can help you anticipate group dynamics. If procedural roles are crowded, focus more on substantive contributions; if the group is more passive, be ready to set agendas, keep time, and encourage participation. Adjust as the round develops."
+      }
+    ]
+  }
+}

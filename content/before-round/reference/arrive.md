@@ -1,0 +1,4 @@
+- Find the room/table early.
+- Follow seating directions.
+- Place materials.
+- Test Wi-Fi and backup.

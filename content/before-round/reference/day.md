@@ -1,0 +1,2 @@
+- Snacks/lunch and warm layers for between rounds.
+- Check the tournament schedule.

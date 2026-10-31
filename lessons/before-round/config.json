@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "id": "before-round",
+  "storageKey": "dsl:before-round:v1",
+  "content": "../../content/before-round/lesson.json",
+  "sectionOrder": ["pack", "task-access", "arrive", "connect", "adapt", "knowledge-check", "quick-reference"],
+  "referenceId": "quick-reference",
+  "presentation": "legacy-shell"
+}

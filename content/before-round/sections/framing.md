@@ -1,0 +1,1 @@
+You’ve learned how to open a Discussion round, contribute during the middle, and help your group reach a strong conclusion. Now focus on what happens before the round begins. Small decisions about preparation, task access, seating, and connecting with other participants can help you enter the discussion ready to collaborate.

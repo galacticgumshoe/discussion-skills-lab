@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "task-scenarios",
+  "type": "question-sequence",
+  "profile": "middle-scenarios",
+  "data": {
+    "questions": [
+      {
+        "id": "early-release",
+        "prompt": "Your coach shares an electronic task before the round. What is the best use of the available time?",
+        "correctOptionId": "prepare",
+        "options": [
+          {"id": "ignore", "text": "Wait until the round to open it"},
+          {"id": "prepare", "text": "Read the task, identify its deliverable, and organize relevant research"},
+          {"id": "script", "text": "Write a speech to deliver regardless of the group’s ideas."}
+        ],
+        "explanation": "An early task gives you a chance to understand the group's problem and prepare useful evidence. Stay flexible: the final product belongs to the group."
+      },
+      {
+        "id": "paper-release",
+        "prompt": "The tournament will distribute a paper task when the round begins. What should you do beforehand?",
+        "correctOptionId": "ready",
+        "options": [
+          {"id": "guess", "text": "Assume the task and prepare a fixed proposal"},
+          {"id": "ready", "text": "Have your materials ready and be prepared to analyze the task when it is distributed"},
+          {"id": "demand", "text": "Insist on receiving the task early."}
+        ],
+        "explanation": "You cannot rely on advance access. Arriving prepared lets you focus on understanding the task when it becomes available."
+      }
+    ]
+  }
+}

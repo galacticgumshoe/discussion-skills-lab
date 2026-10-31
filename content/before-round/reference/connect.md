@@ -1,0 +1,6 @@
+- Start friendly, optional small talk.
+- Include others.
+- Avoid divisive/personal topics.
+- Use early impressions to plan your role: focus on substantive contributions when procedural roles are crowded.
+- Be ready to set agendas, keep time, and encourage participation in a more passive group.
+- Adjust as the round develops.

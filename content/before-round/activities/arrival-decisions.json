@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "arrival-decisions",
+  "type": "question-sequence",
+  "profile": "middle-scenarios",
+  "data": {
+    "questions": [
+      {
+        "id": "seat-order",
+        "prompt": "You arrive early and see that the round instructions specify a seating order. What should guide your seat choice?",
+        "correctOptionId": "instructions",
+        "options": [
+          {"id": "judge", "text": "Sit nearest the judge regardless"},
+          {"id": "instructions", "text": "Follow the seating instructions for this round"},
+          {"id": "friend", "text": "Sit beside someone you know even if that changes the order."}
+        ],
+        "explanation": "Tournament directions take priority over seating strategy. When seating is flexible, choose a place where you can participate effectively."
+      },
+      {
+        "id": "wifi",
+        "prompt": "Your research device cannot connect to the room's Wi-Fi. What is the best response?",
+        "correctOptionId": "backup",
+        "options": [
+          {"id": "backup", "text": "Troubleshoot promptly and use an available, permitted hotspot or other backup"},
+          {"id": "wait", "text": "Ignore it until you need to cite research"},
+          {"id": "interrupt", "text": "Ask the group to stop later while you fix it."}
+        ],
+        "explanation": "Checking connectivity before the round reduces interruptions. A hotspot is a useful backup, not a required piece of equipment."
+      }
+    ]
+  }
+}

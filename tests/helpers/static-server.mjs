@@ -9,6 +9,9 @@ const mime = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=u
   '.json': 'application/json; charset=utf-8', '.svg': 'image/svg+xml',
   '.md': 'text/plain; charset=utf-8', '.png': 'image/png', '.pdf': 'application/pdf' };
 
+// New public entries belong only to the current site, never original-engine replay.
+const currentRootEntries = ['before-round.html'];
+
 export async function startServer(port = 0) {
   // Read once at startup. Missing Git objects are a hard error, not a checkout fallback.
   const replay = new Map(productionPaths.map(path => [path, original(path)]));
@@ -35,7 +38,7 @@ export async function startServer(port = 0) {
         // Current checkout may gain static assets/content in later milestones;
         // only replay is permanently limited to the original file allowlist.
         const staticSubtree = /^(assets|content|lessons)\//.test(relative) && !relative.split('/').some(s => s.startsWith('.'));
-        if (!isFixture && !productionPaths.includes(relative) && !staticSubtree) return finish(404);
+        if (!isFixture && !productionPaths.includes(relative) && !currentRootEntries.includes(relative) && !staticSubtree) return finish(404);
         const file = await realpath(resolve(root, relative));
         const allowedRoot = isFixture ? resolve(root, 'tests/fixtures') : staticSubtree ? resolve(root, relative.split('/')[0]) : resolve(root);
         if (!file.startsWith(allowedRoot + sep)) return finish(403);
