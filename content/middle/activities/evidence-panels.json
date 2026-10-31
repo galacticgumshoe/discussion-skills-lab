@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "evidence-panels",
+  "type": "expandables",
+  "profile": "standard",
+  "data": {
+    "items": [
+      {
+        "id": "relevance",
+        "title": "Relevance",
+        "bodySource": "bodies/relevance-panel.md"
+      },
+      {
+        "id": "evidence",
+        "title": "Evidence",
+        "bodySource": "bodies/evidence-panel.md"
+      },
+      {
+        "id": "explanation",
+        "title": "Explanation",
+        "bodySource": "bodies/explanation-panel.md"
+      },
+      {
+        "id": "connection",
+        "title": "Connection",
+        "bodySource": "bodies/connection-panel.md"
+      }
+    ]
+  }
+}

@@ -1,0 +1,71 @@
+/* MIT. Opt-in component classes only; never loaded by legacy lesson entries. */
+.dsl-component { --dsl-navy:#142b49; --dsl-teal:#087f83; color:var(--dsl-navy); min-width:0; }
+.dsl-component [hidden] { display:none !important; }
+.dsl-component button { font:inherit; cursor:pointer; overflow-wrap:anywhere; }
+.dsl-component button:focus-visible, .dsl-component summary:focus-visible { outline:3px solid var(--dsl-teal); outline-offset:4px; }
+.dsl-component button:disabled { cursor:not-allowed; opacity:.55; }
+.dsl-flashcards { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr)); gap:16px; }
+/* Faces own their line height. Block layout avoids WebKit's native flex-button
+   overflow after flipping and then enlarging text; no content clipping needed. */
+.dsl-component .dsl-card { display:block; appearance:none; padding:0; border:0; border-radius:16px; background:transparent; text-align:left; perspective:1200px; min-width:0; color:var(--dsl-navy); line-height:0; }
+.dsl-component .dsl-card-inner { display:grid; width:100%; height:100%; transform-style:preserve-3d; transition:transform .5s ease; }
+.dsl-component .dsl-is-back .dsl-card-inner { transform:rotateY(180deg); }
+.dsl-component .dsl-card-face { position:relative; grid-area:1/1; display:flex; flex-direction:column; gap:0; justify-content:center; box-sizing:border-box; min-width:0; min-height:260px; padding:20px; border-radius:15px; line-height:1.55; backface-visibility:hidden; -webkit-backface-visibility:hidden; overflow-wrap:anywhere; white-space:pre-line; }
+/* WebKit can paint a mirrored back despite backface-visibility on grid faces.
+   Hide the outgoing face at the midpoint; keep both in intrinsic layout. */
+.dsl-component .dsl-card-face[aria-hidden="true"] { visibility:hidden; transition:visibility 0s linear .25s; }
+.dsl-component .dsl-card-face[aria-hidden="false"] { visibility:visible; }
+.dsl-component .dsl-card-front { background:white; font-weight:400; border:1px solid #dce7ec; box-shadow:0 5px 17px #142b4908; padding-block:calc(2.6em + 24px); }
+.dsl-component .dsl-card-back { background:var(--dsl-navy); color:white; border:1px solid var(--dsl-navy); box-shadow:0 5px 17px #142b4908; transform:rotateY(180deg); }
+.dsl-component .dsl-card-hint { position:absolute; bottom:14px; right:17px; max-width:calc(50% - 26px); color:var(--dsl-teal); font-size:.82em; font-weight:700; letter-spacing:.01em; text-align:right; white-space:normal; }
+.dsl-component .dsl-card-explored-slot { display:block; min-height:calc(1.209em + 12px); }
+.dsl-component .dsl-card-explored { display:block; margin-top:12px; color:#bce9e8; font-size:.78em; font-weight:700; line-height:1.55; white-space:nowrap; }
+.dsl-component .dsl-card-front > .dsl-card-explored { position:absolute; bottom:14px; left:20px; max-width:calc(50% - 26px); margin:0; color:var(--dsl-teal); white-space:normal; }
+.dsl-component .dsl-card-rich-copy { white-space:normal; }
+.dsl-component .dsl-card-content,.dsl-card-content > .dsl-card-title,.dsl-card-content > .dsl-card-copy { display:block; min-width:0; }
+.dsl-component .dsl-expandable { background:white; border:1px solid #d5dde4; border-radius:14px; margin:12px 0; padding:16px; }
+.dsl-component .dsl-expandable-control { font-weight:700; color:var(--dsl-navy); cursor:pointer; }
+.dsl-component .dsl-expandable-body { padding-top:16px; white-space:pre-line; overflow-wrap:anywhere; }
+.dsl-component .dsl-panel-explored { display:inline-block; color:var(--dsl-teal); font-size:.85em; margin-top:8px; }
+.dsl-expandables-timeline .dsl-expandable { border-left:4px solid var(--dsl-teal); }
+.dsl-expandables-timeline .dsl-expandable-control { display:block; width:100%; text-align:left; border:0; padding:0; background:transparent; }
+.dsl-component .dsl-question { margin:16px 0; }
+.dsl-component .dsl-question-prompt { font-size:1.1em; line-height:1.5; margin:12px 0; }
+.dsl-component .dsl-question-context { background:#eef4f6; padding:16px; border-radius:12px; }
+.dsl-component .dsl-choices { display:grid; gap:10px; }
+.dsl-component .dsl-choice { display:block; width:100%; box-sizing:border-box; text-align:left; border:2px solid #d5dde4; border-radius:12px; padding:14px; background:white; color:var(--dsl-navy); line-height:1.5; }
+.dsl-component .dsl-selected-correct { border-color:#167246; background:#e3f5e9; color:#145c37; }
+.dsl-component .dsl-selected-incorrect { border-color:#ae3038; background:#fdecee; color:#84242b; }
+.dsl-component .dsl-feedback { color:#145c37; line-height:1.6; }
+.dsl-component .dsl-feedback:empty, .dsl-component .dsl-credit-note:empty { margin:0; }
+.dsl-component .dsl-feedback-error { color:#84242b; }
+.dsl-component .dsl-question-controls, .dsl-component .dsl-question-jumps { display:flex; flex-wrap:wrap; gap:10px; margin-top:16px; }
+.dsl-component .dsl-question-controls button, .dsl-component .dsl-question-jump { border:1px solid var(--dsl-teal); background:white; color:var(--dsl-navy); border-radius:10px; padding:10px 14px; }
+.dsl-component .dsl-question-jump[aria-current] { background:#e4f3f2; font-weight:700; }
+.dsl-component .dsl-field-label { display:block; font-weight:700; margin:16px 0 6px; }
+.dsl-component .dsl-writing-field { display:block; box-sizing:border-box; width:100%; min-width:0; max-width:100%; padding:12px; border:1px solid #9aabbc; border-radius:10px; font:inherit; color:var(--dsl-navy); background:white; }
+.dsl-component textarea.dsl-writing-field { resize:vertical; }
+.dsl-component .dsl-writing-field:focus-visible, .dsl-component input[type="checkbox"]:focus-visible { outline:3px solid var(--dsl-teal); outline-offset:3px; }
+.dsl-component .dsl-writing-actions { display:flex; flex-wrap:wrap; gap:10px; }
+.dsl-component .dsl-writing-actions button, .dsl-component .dsl-assemble { border:1px solid var(--dsl-teal); border-radius:10px; padding:10px 14px; background:white; color:var(--dsl-navy); }
+.dsl-component .dsl-assemble { margin-top:16px; background:var(--dsl-navy); color:white; }
+.dsl-component .dsl-writing-model { background:#eaf5fb; border-radius:12px; padding:16px; margin-top:16px; white-space:pre-line; overflow-wrap:anywhere; }
+.dsl-component .dsl-rich-prose { white-space:normal; }
+.dsl-component .dsl-check { display:flex; align-items:flex-start; gap:10px; margin:12px 0; cursor:pointer; }
+.dsl-component .dsl-check input { flex:none; margin-top:.4em; }
+@media (prefers-reduced-motion:reduce) { .dsl-component .dsl-card-inner, .dsl-component .dsl-card-face { transition:none !important; } }
+/* Section compositions are opt-in; no legacy shell/card/row selectors. */
+.dsl-block-group.dsl-layout-stack { display:grid; gap:1rem; }
+.dsl-block-group.dsl-layout-two-column { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; }
+.dsl-block-group.dsl-tone-callout { padding:1rem; border:1px solid #cbd5e1; border-radius:1rem; background:#f0fdfa; }
+.dsl-content-block { min-width:0; margin-block:1rem; }
+@media (max-width:640px) { .dsl-block-group.dsl-layout-two-column { grid-template-columns:minmax(0,1fr); } }
+/* Rich prose keeps native card buttons valid while preserving list semantics. */
+.dsl-card-copy .dsl-prose-p,.dsl-card-copy .dsl-prose-ul,.dsl-card-copy .dsl-prose-ol,.dsl-card-copy .dsl-prose-h3,.dsl-card-copy .dsl-prose-li{display:block}
+.dsl-card-copy .dsl-prose-p{margin:.65em 0}
+.dsl-card-copy .dsl-prose-ul,.dsl-card-copy .dsl-prose-ol{margin:0;padding-left:20px;text-align:left}
+.dsl-card-copy .dsl-prose-li{display:list-item;margin:0;line-height:1.65}
+.dsl-layout-flow{display:flex;flex-wrap:wrap;gap:.75rem}
+.dsl-layout-roundtable blockquote{border-left:4px solid #087f83;background:#fff;padding:1rem;margin:.5rem 0}
+.dsl-tone-caution{background:#fff2e1;border-radius:14px;padding:1rem}
+.dsl-tone-example{background:#eaf5fb;border-left:4px solid #087f83;padding:1rem}

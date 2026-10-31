@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "integrated-writing",
+  "type": "writing",
+  "profile": "draft",
+  "binding": {
+    "modelFlag": "application-model-visible"
+  },
+  "data": {
+    "fields": [
+      {
+        "id": "integrated-draft",
+        "label": "Write two or three sentences that build on at least two participants' ideas, add an insight or solution, and use a professional tone.",
+        "multiline": true,
+        "readonly": false,
+        "rows": 5
+      }
+    ],
+    "copyFieldId": "integrated-draft",
+    "copyLabel": "Copy My Response",
+    "copyMessages": {
+      "empty": "Nothing to copy yet. Write a response first."
+    },
+    "model": {
+      "mode": "show-only",
+      "showLabel": "Show Model Response",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "source": "bodies/integrated-writing-model.md"
+        }
+      ]
+    }
+  }
+}

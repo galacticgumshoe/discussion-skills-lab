@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "id": "task-analysis",
+  "type": "task-analysis",
+  "data": {
+    "segments": [
+      {
+        "text": "Mental health issues have long been stigmatized in the United States and most of the world. While this problem has decreased over time, it is still far too prevalent for many who suffer from these illnesses. You are "
+      },
+      {
+        "text": "members of the American School Counselor Association",
+        "categoryId": "who"
+      },
+      {
+        "text": ", meeting at their "
+      },
+      {
+        "text": "national convention",
+        "categoryId": "where"
+      },
+      {
+        "text": " to discuss more active methods to combat mental illness. Your goal is to "
+      },
+      {
+        "text": "examine what effects",
+        "categoryId": "how"
+      },
+      {
+        "text": " the "
+      },
+      {
+        "text": "stigmatization of mental illness still has on K-12 students",
+        "categoryId": "what"
+      },
+      {
+        "text": " and "
+      },
+      {
+        "text": "craft a plan which can be implemented by counselors",
+        "categoryId": "how"
+      },
+      {
+        "text": " at "
+      },
+      {
+        "text": "their schools",
+        "categoryId": "where"
+      },
+      {
+        "text": " to support these children."
+      }
+    ],
+    "categories": [
+      {
+        "id": "who",
+        "explorationId": "role",
+        "label": "WHO",
+        "answerLabel": "WHO",
+        "explanation": "Members of the American School Counselor Association, developing a plan counselors could implement.",
+        "highlights": [
+          "who"
+        ]
+      },
+      {
+        "id": "what",
+        "explorationId": "problem",
+        "label": "WHAT",
+        "answerLabel": "WHAT",
+        "explanation": "The negative effects of mental health stigma on K-12 students.",
+        "highlights": [
+          "what"
+        ]
+      },
+      {
+        "id": "how",
+        "explorationId": "deliverable",
+        "label": "HOW",
+        "answerLabel": "HOW",
+        "explanation": "Examine the effects of stigma and craft a plan for counselors to implement.",
+        "highlights": [
+          "how"
+        ]
+      },
+      {
+        "id": "where",
+        "explorationId": "setting",
+        "label": "WHERE",
+        "answerLabel": "WHERE",
+        "explanation": "National convention setting; solutions implemented in K-12 schools.",
+        "highlights": [
+          "where"
+        ]
+      },
+      {
+        "id": "terms",
+        "explorationId": "search-terms",
+        "label": "TERMS",
+        "answerLabel": "SEARCH TERMS",
+        "explanation": "American School Counselor Association; mental health stigma; K-12 students; effects of stigmatization.",
+        "highlights": [
+          "who",
+          "what"
+        ]
+      }
+    ],
+    "initialMessage": "Choose a category to reveal an answer.",
+    "termsNote": "Search terms are drawn from concepts throughout the task, rather than one continuous phrase.",
+    "tablistLabel": "Task-analysis categories"
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "provenance": "UI-observed",
+  "revision": "0b5d2297e7cbc19bd59cde750492dd28e3983ca0",
+  "origin": "http://127.0.0.1:60547",
+  "mount": "/",
+  "browser": "149.0.7827.55",
+  "raw": "{\"completed\":[0,1,2],\"data\":{\"finalState\":{\"flips\":{\"0\":[0,1,2],\"1\":[0,1]},\"panels\":{\"2\":[0,1,2,3]},\"answers\":{\"1\":[0,1,2,3,4],\"2\":[0]},\"checks\":{\"2\":[0,1,2,3,4]},\"notes\":{},\"goals\":[],\"selections\":{\"1:0\":0,\"1:1\":1,\"1:2\":2,\"1:3\":0,\"1:4\":1,\"2:0\":1},\"quizIndex\":{\"1\":4},\"assembled\":true,\"builderModel\":true,\"closingModel\":false,\"fields\":{\"build-1\":\"Maya and Jordan.\",\"build-2\":\"Costs affect access!\",\"build-3\":\"We propose a pilot.\",\"assembled\":\"Building on Maya and Jordan, costs affect access. Therefore, we propose a pilot.\",\"closing-text\":\"\"},\"panelsOpen\":{\"0\":true,\"1\":true,\"2\":true,\"3\":true,\"4\":false,\"5\":false,\"6\":false,\"7\":false,\"8\":false,\"9\":false,\"10\":false,\"11\":false,\"12\":false}}}}",
+  "actions": [
+    "activate #view-0 .flip index 0",
+    "activate #view-0 .flip index 1",
+    "activate #view-0 .flip index 2",
+    "click #next-section",
+    "activate #view-1 .flip index 0",
+    "activate #view-1 .flip index 1",
+    "answer 1:0 option 1",
+    "answer 1:0 option 2",
+    "answer 1:0 option 0",
+    "click #quiz-1 button.btn.primary",
+    "answer 1:1 option 0",
+    "answer 1:1 option 2",
+    "answer 1:1 option 1",
+    "click #quiz-1 button.btn.primary",
+    "answer 1:2 option 0",
+    "answer 1:2 option 1",
+    "answer 1:2 option 2",
+    "click #quiz-1 button.btn.primary",
+    "answer 1:3 option 1",
+    "answer 1:3 option 2",
+    "answer 1:3 option 0",
+    "click #quiz-1 button.btn.primary",
+    "answer 1:4 option 0",
+    "answer 1:4 option 2",
+    "answer 1:4 option 1",
+    "click #next-section",
+    "open #view-2 details index 0",
+    "open #view-2 details index 1",
+    "open #view-2 details index 2",
+    "open #view-2 details index 3",
+    "answer 2:0 option 0",
+    "answer 2:0 option 2",
+    "answer 2:0 option 1",
+    "fill #build-1 \"Maya and Jordan.\"",
+    "fill #build-2 \"Costs affect access!\"",
+    "fill #build-3 \"We propose a pilot.\"",
+    "click #assemble",
+    "click #model-builder-button",
+    "check synthesis 0",
+    "check synthesis 1",
+    "check synthesis 2",
+    "check synthesis 3",
+    "check synthesis 4"
+  ],
+  "questions": [
+    {
+      "identity": "1:0",
+      "options": [
+        "A. Summary",
+        "B. Synthesis",
+        "C. Neither / primarily procedural"
+      ],
+      "answer": 0,
+      "feedback": [
+        {
+          "option": 1,
+          "text": "Not quite. This lists existing ideas but does not connect them into a new direction. Try another option."
+        },
+        {
+          "option": 2,
+          "text": "Not quite. This is substantive: it restates proposals, rather than managing the process. Try another option."
+        },
+        {
+          "option": 0,
+          "text": "Correct. This summarizes proposals already discussed without developing a new recommendation."
+        }
+      ]
+    },
+    {
+      "identity": "1:1",
+      "options": [
+        "A. Summary",
+        "B. Synthesis",
+        "C. Neither / primarily procedural"
+      ],
+      "answer": 1,
+      "feedback": [
+        {
+          "option": 0,
+          "text": "Not quite. It goes beyond restating ideas by proposing a combined test. Try another option."
+        },
+        {
+          "option": 2,
+          "text": "Not quite. This develops the group's thinking, rather than managing procedure. Try another option."
+        },
+        {
+          "option": 1,
+          "text": "Correct. This credits two ideas and develops a combined approach."
+        }
+      ]
+    },
+    {
+      "identity": "1:2",
+      "options": [
+        "A. Summary",
+        "B. Synthesis",
+        "C. Neither / primarily procedural"
+      ],
+      "answer": 2,
+      "feedback": [
+        {
+          "option": 0,
+          "text": "Not quite. It doesn't recap any findings. Try another option."
+        },
+        {
+          "option": 1,
+          "text": "Not quite. It doesn't develop a new substantive insight. Try another option."
+        },
+        {
+          "option": 2,
+          "text": "Correct. This manages the group's process and time."
+        }
+      ]
+    },
+    {
+      "identity": "1:3",
+      "options": [
+        "A. Summary",
+        "B. Synthesis",
+        "C. Neither / primarily procedural"
+      ],
+      "answer": 0,
+      "feedback": [
+        {
+          "option": 1,
+          "text": "Not quite. It reports a decision rather than forming a new connection. Try another option."
+        },
+        {
+          "option": 2,
+          "text": "Not quite. It describes substantive findings rather than procedure. Try another option."
+        },
+        {
+          "option": 0,
+          "text": "Correct. This restates the group's concern and agreed recommendation."
+        }
+      ]
+    },
+    {
+      "identity": "1:4",
+      "options": [
+        "A. Summary",
+        "B. Synthesis",
+        "C. Neither / primarily procedural"
+      ],
+      "answer": 1,
+      "feedback": [
+        {
+          "option": 0,
+          "text": "Not quite. The speaker adds a new requirement, not just a recap. Try another option."
+        },
+        {
+          "option": 2,
+          "text": "Not quite. This is substantive reasoning, not process management. Try another option."
+        },
+        {
+          "option": 1,
+          "text": "Correct. It credits existing ideas and combines them into a developed recommendation."
+        }
+      ]
+    },
+    {
+      "identity": "2:0",
+      "options": [
+        "A. Repeat Maya's transportation idea without addressing the others.",
+        "B. Combine transportation access, cost controls, communication, and a pilot into a coordinated recommendation.",
+        "C. Select whichever idea was mentioned most often."
+      ],
+      "answer": 1,
+      "feedback": [
+        {
+          "option": 0,
+          "text": "Not quite. Repeating one idea overlooks the other viewpoints. Try another option."
+        },
+        {
+          "option": 2,
+          "text": "Not quite. Frequency alone does not establish the best solution. Try another option."
+        },
+        {
+          "option": 1,
+          "text": "Correct. This combines proposals and concerns into a possible implementation strategy."
+        }
+      ]
+    }
+  ],
+  "url": "http://127.0.0.1:60547/final.html"
+}

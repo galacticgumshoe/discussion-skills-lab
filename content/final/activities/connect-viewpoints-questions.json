@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "connect-viewpoints-questions",
+  "type": "question-sequence",
+  "profile": "final-questions",
+  "data": {
+    "heading": "Practice activity",
+    "questions": [
+      {
+        "id": "clearest-direction",
+        "prompt": "Which combination creates the clearest new direction?",
+        "correctOptionId": "coordinate",
+        "options": [
+          {
+            "id": "repeat",
+            "text": "Repeat Maya's transportation idea without addressing the others.",
+            "feedback": "Not quite. Repeating one idea overlooks the other viewpoints."
+          },
+          {
+            "id": "coordinate",
+            "text": "Combine transportation access, cost controls, communication, and a pilot into a coordinated recommendation.",
+            "feedback": "Correct. This combines proposals and concerns into a possible implementation strategy."
+          },
+          {
+            "id": "most-frequent",
+            "text": "Select whichever idea was mentioned most often.",
+            "feedback": "Not quite. Frequency alone does not establish the best solution."
+          }
+        ]
+      }
+    ]
+  }
+}

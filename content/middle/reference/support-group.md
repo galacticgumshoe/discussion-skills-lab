@@ -1,0 +1,4 @@
+- Take notes on ideas, evidence, and their contributors; look up regularly.
+- Help track the round and agreed agenda periods.
+- Invite perspectives without repeatedly singling people out.
+- Redirect respectfully toward the WHAT and HOW of the task.

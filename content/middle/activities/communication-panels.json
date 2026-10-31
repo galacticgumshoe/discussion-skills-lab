@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "communication-panels",
+  "type": "expandables",
+  "profile": "standard",
+  "data": {
+    "items": [
+      {
+        "id": "body-language",
+        "title": "Body language",
+        "bodySource": "bodies/body-language-panel.md"
+      },
+      {
+        "id": "professional-language",
+        "title": "Professional language",
+        "calloutTones": ["caution", "example"],
+        "bodySource": "bodies/professional-language-panel.md"
+      },
+      {
+        "id": "voice-volume",
+        "title": "Voice and volume",
+        "bodySource": "bodies/voice-volume-panel.md"
+      }
+    ]
+  }
+}

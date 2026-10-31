@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "lessons": [
+    {
+      "id": "opening",
+      "url": "opening.html",
+      "title": "Opening Stage",
+      "description": "Start with a clear structure, establish the task, ask productive questions, and help the group get underway."
+    },
+    {
+      "id": "middle",
+      "url": "middle.html",
+      "title": "Middle Stage",
+      "description": "Make substantive contributions using relevant ideas, evidence, explanation, and connections."
+    },
+    {
+      "id": "final",
+      "url": "final.html",
+      "title": "Final Stage",
+      "description": "Summarize and synthesize viewpoints, check the task, build consensus, and close professionally."
+    }
+  ]
+}

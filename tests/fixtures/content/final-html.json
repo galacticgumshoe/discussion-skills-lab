@@ -1,0 +1,1695 @@
+[
+  {
+    "identity": "html/0/2/0",
+    "type": "text",
+    "value": "Closing with Purpose · The Final Stage",
+    "markup": "Closing with Purpose · The Final Stage",
+    "status": "initial-markup",
+    "section": "shell"
+  },
+  {
+    "identity": "html/1/0/0/0/0/0/0",
+    "type": "text",
+    "value": "DISCUSSION SKILLS LAB · MSHSL SPEECH",
+    "markup": "DISCUSSION SKILLS LAB · MSHSL SPEECH",
+    "status": "initial-markup",
+    "section": "shell"
+  },
+  {
+    "identity": "html/1/0/0/0/0/1/0",
+    "type": "text",
+    "value": "Closing with Purpose · The Final Stage",
+    "markup": "Closing with Purpose · The Final Stage",
+    "status": "initial-markup",
+    "section": "shell"
+  },
+  {
+    "identity": "html/1/0/0/0/1/0",
+    "type": "text",
+    "value": "SELF-PACED · ABOUT 25–30 MINUTES",
+    "markup": "SELF-PACED · ABOUT 25–30 MINUTES",
+    "status": "initial-markup",
+    "section": "shell"
+  },
+  {
+    "identity": "html/1/0/1/0@aria-label",
+    "type": "aria-label",
+    "value": "Lesson sections",
+    "status": "attribute",
+    "section": "shell"
+  },
+  {
+    "identity": "html/1/0/1/0/0@aria-label",
+    "type": "aria-label",
+    "value": "Collapse navigation",
+    "status": "attribute",
+    "section": "shell"
+  },
+  {
+    "identity": "html/1/0/1/0/0/0",
+    "type": "text",
+    "value": "⇤",
+    "markup": "⇤",
+    "status": "initial-markup",
+    "section": "shell"
+  },
+  {
+    "identity": "html/1/0/1/0/1/0/0",
+    "type": "text",
+    "value": "YOUR PROGRESS",
+    "markup": "YOUR PROGRESS",
+    "status": "initial-markup",
+    "section": "shell"
+  },
+  {
+    "identity": "html/1/0/1/0/1/1/0",
+    "type": "text",
+    "value": "0 of 9 pages completed",
+    "markup": "0 of 9 pages completed",
+    "status": "initial-markup",
+    "section": "shell"
+  },
+  {
+    "identity": "html/1/0/1/0/1/2@aria-label",
+    "type": "aria-label",
+    "value": "Completed lesson pages",
+    "status": "attribute",
+    "section": "shell"
+  },
+  {
+    "identity": "html/1/0/1/0/1/3/0",
+    "type": "text",
+    "value": "Finish each activity to unlock the next page. Quick Reference is always available.",
+    "markup": "Finish each activity to unlock the next page. Quick Reference is always available.",
+    "status": "initial-markup",
+    "section": "shell"
+  },
+  {
+    "identity": "html/1/0/1/1/0/0/0",
+    "type": "text",
+    "value": "Go to a section",
+    "markup": "Go to a section",
+    "status": "initial-markup",
+    "section": "shell"
+  },
+  {
+    "identity": "html/1/0/1/1/2/1/0",
+    "type": "text",
+    "value": "Welcome · Explore",
+    "markup": "Welcome · Explore",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/3/0",
+    "type": "text",
+    "value": "Closing with Purpose",
+    "markup": "Closing with Purpose",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/5/0",
+    "type": "text",
+    "value": "The strongest endings turn a collection of ideas into a clear, shared outcome.",
+    "markup": "The strongest endings turn a collection of ideas into a clear, shared outcome.",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/7/1/0",
+    "type": "text",
+    "value": "During a Discussion round, participants make two broad kinds of contributions. Procedural contributions organize the group's work, such as setting an agenda, monitoring time, and maintaining focus. Substantive contributions develop the group's thinking through ideas, research, analysis, and synthesis.",
+    "markup": "During a Discussion round, participants make two broad kinds of contributions. Procedural contributions organize the group's work, such as setting an agenda, monitoring time, and maintaining focus. Substantive contributions develop the group's thinking through ideas, research, analysis, and synthesis.",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/7/3/0",
+    "type": "text",
+    "value": "The final stage is primarily substantive. The group brings its ideas together, completes its final product, and checks whether it has adequately answered the task. A strong ending is not simply a recap: it connects perspectives and identifies what the group has accomplished.",
+    "markup": "The final stage is primarily substantive. The group brings its ideas together, completes its final product, and checks whether it has adequately answered the task. A strong ending is not simply a recap: it connects perspectives and identifies what the group has accomplished.",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/7/5/1/1/0",
+    "type": "text",
+    "value": "OPENING",
+    "markup": "OPENING",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/7/5/1/3/0",
+    "type": "text",
+    "value": "Define the problem and organize the work.",
+    "markup": "Define the problem and organize the work.",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/7/5/3/1/0",
+    "type": "text",
+    "value": "MIDDLE",
+    "markup": "MIDDLE",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/7/5/3/3/0",
+    "type": "text",
+    "value": "Develop ideas, evidence, and possible solutions.",
+    "markup": "Develop ideas, evidence, and possible solutions.",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/7/5/5/1/0",
+    "type": "text",
+    "value": "FINAL",
+    "markup": "FINAL",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/7/5/5/3/0",
+    "type": "text",
+    "value": "Synthesize, summarize, evaluate, and conclude.",
+    "markup": "Synthesize, summarize, evaluate, and conclude.",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/9/0",
+    "type": "text",
+    "value": "Discover the final-stage moves",
+    "markup": "Discover the final-stage moves",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/11/0",
+    "type": "text",
+    "value": "Select each card to reveal its meaning.",
+    "markup": "Select each card to reveal its meaning.",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/13/0/0/0/0",
+    "type": "text",
+    "value": "Connect Ideas",
+    "markup": "Connect Ideas<span aria-hidden=\"true\" class=\"dsl-flip-hint\">↻ Flip card</span>",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/13/0/0/0/1/0",
+    "type": "text",
+    "value": "↻ Flip card",
+    "markup": "↻ Flip card",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/13/0/0/1/0",
+    "type": "text",
+    "value": "Synthesis brings multiple viewpoints together and uses them to create a new insight or recommendation.",
+    "markup": "Synthesis brings multiple viewpoints together and uses them to create a new insight or recommendation.<span class=\"visited\"></span>",
+    "status": "hidden-or-alternative",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/13/2/0/0/0",
+    "type": "text",
+    "value": "Capture the Findings",
+    "markup": "Capture the Findings<span aria-hidden=\"true\" class=\"dsl-flip-hint\">↻ Flip card</span>",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/13/2/0/0/1/0",
+    "type": "text",
+    "value": "↻ Flip card",
+    "markup": "↻ Flip card",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/13/2/0/1/0",
+    "type": "text",
+    "value": "An effective summary organizes important conclusions, recognizes contributors, and identifies final recommendations.",
+    "markup": "An effective summary organizes important conclusions, recognizes contributors, and identifies final recommendations.<span class=\"visited\"></span>",
+    "status": "hidden-or-alternative",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/13/4/0/0/0",
+    "type": "text",
+    "value": "Confirm the Outcome",
+    "markup": "Confirm the Outcome<span aria-hidden=\"true\" class=\"dsl-flip-hint\">↻ Flip card</span>",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/13/4/0/0/1/0",
+    "type": "text",
+    "value": "↻ Flip card",
+    "markup": "↻ Flip card",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/13/4/0/1/0",
+    "type": "text",
+    "value": "The group checks whether its final product addresses the assigned task and whether participants can support the result.",
+    "markup": "The group checks whether its final product addresses the assigned task and whether participants can support the result.<span class=\"visited\"></span>",
+    "status": "hidden-or-alternative",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/2/15/0",
+    "type": "text",
+    "value": "You're ready to practice turning discussion into a conclusion.",
+    "markup": "You're ready to practice turning discussion into a conclusion.",
+    "status": "hidden-or-alternative",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/1/0/1/1/4/1/0",
+    "type": "text",
+    "value": "01 · Understand and apply · 3 minutes",
+    "markup": "01 · Understand and apply · 3 minutes",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/1/0/1/1/4/3/0",
+    "type": "text",
+    "value": "Two Ways to Bring Ideas Together",
+    "markup": "Two Ways to Bring Ideas Together",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/1/0/1/1/4/5/0",
+    "type": "text",
+    "value": "Summarizing and synthesizing are related, but they accomplish different things.",
+    "markup": "Summarizing and synthesizing are related, but they accomplish different things.",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/1/0/1/1/4/7/0/0/0/0",
+    "type": "text",
+    "value": "What does it mean to summarize?",
+    "markup": "What does it mean to summarize?<span aria-hidden=\"true\" class=\"dsl-flip-hint\">↻ Flip card</span>",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/1/0/1/1/4/7/0/0/0/1/0",
+    "type": "text",
+    "value": "↻ Flip card",
+    "markup": "↻ Flip card",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/1/0/1/1/4/7/0/0/1/0",
+    "type": "text",
+    "value": "A summary organizes and accurately restates important ideas, evidence, decisions, and unresolved questions. Example: “We identified transportation, scheduling, and communication as three barriers. Our recommendations address each.”",
+    "markup": "A summary organizes and accurately restates important ideas, evidence, decisions, and unresolved questions. Example: “We identified transportation, scheduling, and communication as three barriers. Our recommendations address each.”<span class=\"visited\"></span>",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/1/0/1/1/4/7/2/0/0/0",
+    "type": "text",
+    "value": "What does it mean to synthesize?",
+    "markup": "What does it mean to synthesize?<span aria-hidden=\"true\" class=\"dsl-flip-hint\">↻ Flip card</span>",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/1/0/1/1/4/7/2/0/0/1/0",
+    "type": "text",
+    "value": "↻ Flip card",
+    "markup": "↻ Flip card",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/1/0/1/1/4/7/2/0/1/0",
+    "type": "text",
+    "value": "Synthesis connects viewpoints to develop a new insight. Example: “Building on Maya's transportation proposal and Jordan's cost concern, perhaps we could test a limited pilot before recommending a larger program.”",
+    "markup": "Synthesis connects viewpoints to develop a new insight. Example: “Building on Maya's transportation proposal and Jordan's cost concern, perhaps we could test a limited pilot before recommending a larger program.”<span class=\"visited\"></span>",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/1/0/1/1/4/9/1/1/1/0",
+    "type": "text",
+    "value": "SUMMARY",
+    "markup": "SUMMARY",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/1/0/1/1/4/9/1/1/3/0",
+    "type": "text",
+    "value": "What did we learn or decide?",
+    "markup": "What did we learn or decide?",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/1/0/1/1/4/9/1/3/1/0",
+    "type": "text",
+    "value": "SYNTHESIS",
+    "markup": "SYNTHESIS",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/1/0/1/1/4/9/1/3/3/0",
+    "type": "text",
+    "value": "What new understanding can we create by connecting ideas?",
+    "markup": "What new understanding can we create by connecting ideas?",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/1/0/1/1/4/9/3/0",
+    "type": "text",
+    "value": "\n                                A summary may follow themes rather than speaking order. A synthesis should credit the viewpoints it builds on and explain the new connection.\n                            ",
+    "markup": "\n                                A summary may follow themes rather than speaking order. A synthesis should credit the viewpoints it builds on and explain the new connection.\n                            ",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/1/0/1/1/6/1/0",
+    "type": "text",
+    "value": "02 · Explore and apply · 4 minutes",
+    "markup": "02 · Explore and apply · 4 minutes",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/3/0",
+    "type": "text",
+    "value": "From Multiple Ideas to One New Insight",
+    "markup": "From Multiple Ideas to One New Insight",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/5/0",
+    "type": "text",
+    "value": "Synthesis requires listening, remembering, connecting, and thinking beyond what has already been said.",
+    "markup": "Synthesis requires listening, remembering, connecting, and thinking beyond what has already been said.",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/7/1/0",
+    "type": "text",
+    "value": "1 · Listen",
+    "markup": "1 · Listen",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/7/3/0",
+    "type": "text",
+    "value": "\n                                Listen for proposals, concerns, evidence, and agreement. Middle-stage notes make closing easier: record a participant's name, main idea, reasoning, connections, and unresolved concerns.\n                            ",
+    "markup": "\n                                Listen for proposals, concerns, evidence, and agreement. Middle-stage notes make closing easier: record a participant's name, main idea, reasoning, connections, and unresolved concerns.\n                            ",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/9/1/0",
+    "type": "text",
+    "value": "2 · Connect",
+    "markup": "2 · Connect",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/9/3/0",
+    "type": "text",
+    "value": "\n                                Look for complementary ideas, a proposal that addresses another's weakness, concerns that suggest a shared solution, or recommendations that could form a coordinated strategy.\n                            ",
+    "markup": "\n                                Look for complementary ideas, a proposal that addresses another's weakness, concerns that suggest a shared solution, or recommendations that could form a coordinated strategy.\n                            ",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/11/1/0",
+    "type": "text",
+    "value": "3 · Credit",
+    "markup": "3 · Credit",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/11/3/0",
+    "type": "text",
+    "value": "\n                                Identify whose contributions you use: “Building on Maya's suggestion and Jordan's concern…” Credit demonstrates listening. Never claim another participant's idea as your own.\n                            ",
+    "markup": "\n                                Identify whose contributions you use: “Building on Maya's suggestion and Jordan's concern…” Credit demonstrates listening. Never claim another participant's idea as your own.\n                            ",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/13/1/0",
+    "type": "text",
+    "value": "4 · Advance",
+    "markup": "4 · Advance",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/13/3/0",
+    "type": "text",
+    "value": "\n                                Add something new: a combined proposal, resolved tension, implementation condition, priority, compromise, or next decision. Merely naming two speakers is not enough.\n                            ",
+    "markup": "\n                                Add something new: a combined proposal, resolved tension, implementation condition, priority, compromise, or next decision. Merely naming two speakers is not enough.\n                            ",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/15/1/1/0",
+    "type": "text",
+    "value": "The Synthesis Builder",
+    "markup": "The Synthesis Builder",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/15/1/3/0",
+    "type": "text",
+    "value": "A community advisory committee must propose how to increase teen participation in after-school programs.",
+    "markup": "A community advisory committee must propose how to increase teen participation in after-school programs.",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/15/1/5/1/0/0",
+    "type": "text",
+    "value": "Maya:",
+    "markup": "Maya:",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/15/1/5/1/1",
+    "type": "text",
+    "value": " “Transportation is a major concern. We could partner with local transit providers.”",
+    "markup": "<strong>Maya:</strong> “Transportation is a major concern. We could partner with local transit providers.”",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/15/1/5/3/0/0",
+    "type": "text",
+    "value": "Jordan:",
+    "markup": "Jordan:",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/15/1/5/3/1",
+    "type": "text",
+    "value": " “That could be expensive. We need a way to control costs.”",
+    "markup": "<strong>Jordan:</strong> “That could be expensive. We need a way to control costs.”",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/15/1/5/5/0/0",
+    "type": "text",
+    "value": "Avery:",
+    "markup": "Avery:",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/15/1/5/5/1",
+    "type": "text",
+    "value": " “Students may not know which programs are available. Communication needs attention too.”",
+    "markup": "<strong>Avery:</strong> “Students may not know which programs are available. Communication needs attention too.”",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/15/1/5/7/0/0",
+    "type": "text",
+    "value": "Sam:",
+    "markup": "Sam:",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/15/1/5/7/1",
+    "type": "text",
+    "value": " “We should test our recommendations before expanding them across the city.”",
+    "markup": "<strong>Sam:</strong> “We should test our recommendations before expanding them across the city.”",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/15/5/1/0",
+    "type": "text",
+    "value": "Construct your synthesis",
+    "markup": "Construct your synthesis",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/15/5/2/0",
+    "type": "text",
+    "value": "Which participants' ideas are you connecting?",
+    "markup": "Which participants' ideas are you connecting?",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/15/5/5/0",
+    "type": "text",
+    "value": "What relationship do you see between their ideas?",
+    "markup": "What relationship do you see between their ideas?",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/15/5/8/0",
+    "type": "text",
+    "value": "What new recommendation follows?",
+    "markup": "What new recommendation follows?",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/15/5/11/0",
+    "type": "text",
+    "value": "Assemble My Synthesis",
+    "markup": "Assemble My Synthesis",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/15/5/15/0/0",
+    "type": "text",
+    "value": "My synthesis · editable",
+    "markup": "My synthesis · editable",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/15/5/15/3/0/0",
+    "type": "text",
+    "value": "Edit Response",
+    "markup": "Edit Response",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/15/5/15/3/2/0",
+    "type": "text",
+    "value": "Copy My Synthesis",
+    "markup": "Copy My Synthesis",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/15/5/15/3/4/0",
+    "type": "text",
+    "value": "Compare with Model",
+    "markup": "Compare with Model",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/15/5/17/0/0",
+    "type": "text",
+    "value": "Model synthesis",
+    "markup": "Model synthesis",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/15/5/17/2/0",
+    "type": "text",
+    "value": "“Building on Maya's transportation proposal and Jordan's concern about costs, we could recommend a limited transportation pilot before committing to a larger program. Sam's suggestion to test solutions would help us evaluate the pilot, while Avery's communication idea could ensure students know the service is available.”",
+    "markup": "“Building on Maya's transportation proposal and Jordan's concern about costs, we could recommend a limited transportation pilot before committing to a larger program. Sam's suggestion to test solutions would help us evaluate the pilot, while Avery's communication idea could ensure students know the service is available.”",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/15/5/17/4/0",
+    "type": "text",
+    "value": "This credits contributors, connects perspectives, addresses costs, develops a coordinated recommendation, and advances the task.",
+    "markup": "This credits contributors, connects perspectives, addresses costs, develops a coordinated recommendation, and advances the task.",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/6/15/5/19/1/0",
+    "type": "text",
+    "value": "Your writing is not automatically graded. Reflect honestly:",
+    "markup": "Your writing is not automatically graded. Reflect honestly:",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/1/0/1/1/8/1/0",
+    "type": "text",
+    "value": "03 · Organize and apply · 3 minutes",
+    "markup": "03 · Organize and apply · 3 minutes",
+    "status": "hidden-or-alternative",
+    "section": "view-3"
+  },
+  {
+    "identity": "html/1/0/1/1/8/3/0",
+    "type": "text",
+    "value": "Summarize the Work, Not the Conversation's Timeline",
+    "markup": "Summarize the Work, Not the Conversation's Timeline",
+    "status": "hidden-or-alternative",
+    "section": "view-3"
+  },
+  {
+    "identity": "html/1/0/1/1/8/5/0",
+    "type": "text",
+    "value": "A strong summary is concise, organized, accurate, and collaborative. Detailed notes help, but the best summary does not replay every contribution chronologically.",
+    "markup": "A strong summary is concise, organized, accurate, and collaborative. Detailed notes help, but the best summary does not replay every contribution chronologically.",
+    "status": "hidden-or-alternative",
+    "section": "view-3"
+  },
+  {
+    "identity": "html/1/0/1/1/8/7/1/0",
+    "type": "text",
+    "value": "Example A · Chronological recap",
+    "markup": "Example A · Chronological recap",
+    "status": "hidden-or-alternative",
+    "section": "view-3"
+  },
+  {
+    "identity": "html/1/0/1/1/8/7/3/1/0",
+    "type": "text",
+    "value": "“First Maya discussed transportation. Then Jordan discussed cost. Avery mentioned communication. Later Sam suggested testing the proposals.”",
+    "markup": "“First Maya discussed transportation. Then Jordan discussed cost. Avery mentioned communication. Later Sam suggested testing the proposals.”",
+    "status": "hidden-or-alternative",
+    "section": "view-3"
+  },
+  {
+    "identity": "html/1/0/1/1/8/7/3/3/0",
+    "type": "text",
+    "value": "This recalls speaking order, not findings or decisions.",
+    "markup": "This recalls speaking order, not findings or decisions.",
+    "status": "hidden-or-alternative",
+    "section": "view-3"
+  },
+  {
+    "identity": "html/1/0/1/1/8/9/1/0",
+    "type": "text",
+    "value": "Example B · Thematic summary",
+    "markup": "Example B · Thematic summary",
+    "status": "hidden-or-alternative",
+    "section": "view-3"
+  },
+  {
+    "identity": "html/1/0/1/1/8/9/3/1/0",
+    "type": "text",
+    "value": "“Our group identified three main considerations: access, affordability, and communication. We developed a pilot proposal to improve transportation and outreach while evaluating costs before expansion.”",
+    "markup": "“Our group identified three main considerations: access, affordability, and communication. We developed a pilot proposal to improve transportation and outreach while evaluating costs before expansion.”",
+    "status": "hidden-or-alternative",
+    "section": "view-3"
+  },
+  {
+    "identity": "html/1/0/1/1/8/9/3/3/0",
+    "type": "text",
+    "value": "This groups ideas by theme and identifies the proposed outcome.",
+    "markup": "This groups ideas by theme and identifies the proposed outcome.",
+    "status": "hidden-or-alternative",
+    "section": "view-3"
+  },
+  {
+    "identity": "html/1/0/1/1/8/11/0",
+    "type": "text",
+    "value": "\n                            Distinguish proposals, agreements, and unresolved concerns. Never label a proposal an agreement unless the group actually agreed.\n                        ",
+    "markup": "\n                            Distinguish proposals, agreements, and unresolved concerns. Never label a proposal an agreement unless the group actually agreed.\n                        ",
+    "status": "hidden-or-alternative",
+    "section": "view-3"
+  },
+  {
+    "identity": "html/1/0/1/1/8/13/1/1/0",
+    "type": "text",
+    "value": "Organize the group's notes",
+    "markup": "Organize the group's notes",
+    "status": "hidden-or-alternative",
+    "section": "view-3"
+  },
+  {
+    "identity": "html/1/0/1/1/8/13/1/3/0",
+    "type": "text",
+    "value": "Select a category for each note. Feedback appears immediately.",
+    "markup": "Select a category for each note. Feedback appears immediately.",
+    "status": "hidden-or-alternative",
+    "section": "view-3"
+  },
+  {
+    "identity": "html/1/0/1/1/8/13/3/3/1/0",
+    "type": "text",
+    "value": "Coaching insight",
+    "markup": "Coaching insight",
+    "status": "hidden-or-alternative",
+    "section": "view-3"
+  },
+  {
+    "identity": "html/1/0/1/1/8/13/3/3/3/0",
+    "type": "text",
+    "value": "If a summary omits an important finding, add it constructively: “That captures our main recommendations. Could we also include Jordan's concern about funding? We haven't resolved that part yet.” Avoid repeating what is already included.",
+    "markup": "If a summary omits an important finding, add it constructively: “That captures our main recommendations. Could we also include Jordan's concern about funding? We haven't resolved that part yet.” Avoid repeating what is already included.",
+    "status": "hidden-or-alternative",
+    "section": "view-3"
+  },
+  {
+    "identity": "html/1/0/1/1/10/1/0",
+    "type": "text",
+    "value": "04 · Negotiate and apply · 3–4 minutes",
+    "markup": "04 · Negotiate and apply · 3–4 minutes",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/1/0/1/1/10/3/0",
+    "type": "text",
+    "value": "Agreement Is More Than a Vote",
+    "markup": "Agreement Is More Than a Vote",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/1/0/1/1/10/5/0",
+    "type": "text",
+    "value": "When a task calls for a shared or unanimous recommendation, address meaningful disagreements rather than simply count supporters.",
+    "markup": "When a task calls for a shared or unanimous recommendation, address meaningful disagreements rather than simply count supporters.",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/1/0/1/1/10/7/0/0/0/0",
+    "type": "text",
+    "value": "What is a round robin?",
+    "markup": "What is a round robin?<span aria-hidden=\"true\" class=\"dsl-flip-hint\">↻ Flip card</span>",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/1/0/1/1/10/7/0/0/0/1/0",
+    "type": "text",
+    "value": "↻ Flip card",
+    "markup": "↻ Flip card",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/1/0/1/1/10/7/0/0/1/0",
+    "type": "text",
+    "value": "A round robin gives participants turns to express positions. It can reveal concerns, but a yes/no round robin does not resolve disagreement by itself.",
+    "markup": "A round robin gives participants turns to express positions. It can reveal concerns, but a yes/no round robin does not resolve disagreement by itself.<span class=\"visited\"></span>",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/1/0/1/1/10/7/2/0/0/0",
+    "type": "text",
+    "value": "Does a majority vote create consensus?",
+    "markup": "Does a majority vote create consensus?<span aria-hidden=\"true\" class=\"dsl-flip-hint\">↻ Flip card</span>",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/1/0/1/1/10/7/2/0/0/1/0",
+    "type": "text",
+    "value": "↻ Flip card",
+    "markup": "↻ Flip card",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/1/0/1/1/10/7/2/0/1/0",
+    "type": "text",
+    "value": "Not necessarily. Others may still have unresolved objections. A majority alone does not meet a task requiring consensus or unanimity.",
+    "markup": "Not necessarily. Others may still have unresolved objections. A majority alone does not meet a task requiring consensus or unanimity.<span class=\"visited\"></span>",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/1/0/1/1/10/7/4/0/0/0",
+    "type": "text",
+    "value": "What helps a divided group move forward?",
+    "markup": "What helps a divided group move forward?<span aria-hidden=\"true\" class=\"dsl-flip-hint\">↻ Flip card</span>",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/1/0/1/1/10/7/4/0/0/1/0",
+    "type": "text",
+    "value": "↻ Flip card",
+    "markup": "↻ Flip card",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/1/0/1/1/10/7/4/0/1/0",
+    "type": "text",
+    "value": "Identify concerns, revise the proposal, explore compromises, then check whether participants can support the revised outcome.",
+    "markup": "Identify concerns, revise the proposal, explore compromises, then check whether participants can support the revised outcome.<span class=\"visited\"></span>",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/1/0/1/1/10/9/3/1/0",
+    "type": "text",
+    "value": "Keep the terms distinct.",
+    "markup": "Keep the terms distinct.",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/1/0/1/1/10/9/3/3/0",
+    "type": "text",
+    "value": "Unanimity means every participant supports the decision. Majority support means more than half do. Consensus is a shared outcome participants can support after concerns have been considered. A round robin can surface disagreement; it cannot replace negotiation.",
+    "markup": "Unanimity means every participant supports the decision. Majority support means more than half do. Consensus is a shared outcome participants can support after concerns have been considered. A round robin can surface disagreement; it cannot replace negotiation.",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/1/0/1/1/12/1/0",
+    "type": "text",
+    "value": "05 · Evaluate and apply · 3 minutes",
+    "markup": "05 · Evaluate and apply · 3 minutes",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/3/0",
+    "type": "text",
+    "value": "Did We Actually Solve the Task?",
+    "markup": "Did We Actually Solve the Task?",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/5/0",
+    "type": "text",
+    "value": "The final stage checks whether the deliverable addresses what the task asked the group to accomplish.",
+    "markup": "The final stage checks whether the deliverable addresses what the task asked the group to accomplish.",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/7/1/0",
+    "type": "text",
+    "value": "Revisit the consensus question",
+    "markup": "Revisit the consensus question",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/7/3/0",
+    "type": "text",
+    "value": "\n                                An opening-stage question can define success. For example: “Can we recommend an affordable, realistic strategy that improves teen access to community programs?” Checking the recommendation against a focused question is often more useful than vaguely asking for agreement.\n                            ",
+    "markup": "\n                                An opening-stage question can define success. For example: “Can we recommend an affordable, realistic strategy that improves teen access to community programs?” Checking the recommendation against a focused question is often more useful than vaguely asking for agreement.\n                            ",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/9/1/0",
+    "type": "text",
+    "value": "Revisit the task",
+    "markup": "Revisit the task",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/9/3/0",
+    "type": "text",
+    "value": "\n                                Rereading the full task can help when requirements are unclear, but it takes time. Reviewing the central problem and required deliverable may be more efficient. If the group prefers a full rereading, avoid turning a small procedural difference into conflict.\n                            ",
+    "markup": "\n                                Rereading the full task can help when requirements are unclear, but it takes time. Reviewing the central problem and required deliverable may be more efficient. If the group prefers a full rereading, avoid turning a small procedural difference into conflict.\n                            ",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/11/1/0",
+    "type": "text",
+    "value": "Check the WHAT and HOW",
+    "markup": "Check the WHAT and HOW",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/11/3/1/0",
+    "type": "text",
+    "value": "WHAT:",
+    "markup": "WHAT:",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/11/3/2",
+    "type": "text",
+    "value": " What central problem must the group address? ",
+    "markup": "\n<strong>WHAT:</strong> What central problem must the group address? <strong>HOW:</strong> What actions or components must the final product include? Identify missing elements instead of declaring success. This is a coaching tool; always follow the actual tournament task wording.\n                            ",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/11/3/3/0",
+    "type": "text",
+    "value": "HOW:",
+    "markup": "HOW:",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/11/3/4",
+    "type": "text",
+    "value": " What actions or components must the final product include? Identify missing elements instead of declaring success. This is a coaching tool; always follow the actual tournament task wording.\n                            ",
+    "markup": "\n<strong>WHAT:</strong> What central problem must the group address? <strong>HOW:</strong> What actions or components must the final product include? Identify missing elements instead of declaring success. This is a coaching tool; always follow the actual tournament task wording.\n                            ",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/13/1/1/0",
+    "type": "text",
+    "value": "The final task audit",
+    "markup": "The final task audit",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/13/1/3/0/0",
+    "type": "text",
+    "value": "Practice task:",
+    "markup": "Practice task:",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/13/1/3/1",
+    "type": "text",
+    "value": " A city committee must identify teen participation barriers and recommend practical steps to improve access, communication, and affordability.",
+    "markup": "<strong>Practice task:</strong> A city committee must identify teen participation barriers and recommend practical steps to improve access, communication, and affordability.",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/13/1/5/0/0",
+    "type": "text",
+    "value": "Current proposal:",
+    "markup": "Current proposal:",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/12/13/1/5/1",
+    "type": "text",
+    "value": " “We recommend a transportation pilot and a social media campaign to help students learn about programs.”",
+    "markup": "<strong>Current proposal:</strong> “We recommend a transportation pilot and a social media campaign to help students learn about programs.”",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/1/0/1/1/14/1/0",
+    "type": "text",
+    "value": "06 · Professional conduct · 2–3 minutes",
+    "markup": "06 · Professional conduct · 2–3 minutes",
+    "status": "hidden-or-alternative",
+    "section": "view-6"
+  },
+  {
+    "identity": "html/1/0/1/1/14/3/0",
+    "type": "text",
+    "value": "Your Professionalism Continues After the Round",
+    "markup": "Your Professionalism Continues After the Round",
+    "status": "hidden-or-alternative",
+    "section": "view-6"
+  },
+  {
+    "identity": "html/1/0/1/1/14/5/0",
+    "type": "text",
+    "value": "How you leave the competition area and interact with others matters.",
+    "markup": "How you leave the competition area and interact with others matters.",
+    "status": "hidden-or-alternative",
+    "section": "view-6"
+  },
+  {
+    "identity": "html/1/0/1/1/14/7/1/0",
+    "type": "text",
+    "value": "Exit promptly",
+    "markup": "Exit promptly",
+    "status": "hidden-or-alternative",
+    "section": "view-6"
+  },
+  {
+    "identity": "html/1/0/1/1/14/7/3/0",
+    "type": "text",
+    "value": "\n                                Gather belongings, leave the competition area promptly, give the judge space to complete their responsibilities, and avoid lingering at the table.\n                            ",
+    "markup": "\n                                Gather belongings, leave the competition area promptly, give the judge space to complete their responsibilities, and avoid lingering at the table.\n                            ",
+    "status": "hidden-or-alternative",
+    "section": "view-6"
+  },
+  {
+    "identity": "html/1/0/1/1/14/9/1/0",
+    "type": "text",
+    "value": "Thank the judge briefly",
+    "markup": "Thank the judge briefly",
+    "status": "hidden-or-alternative",
+    "section": "view-6"
+  },
+  {
+    "identity": "html/1/0/1/1/14/9/3/0",
+    "type": "text",
+    "value": "\n                                A brief, courteous thank-you is appropriate. Do not prolong the interaction or initiate unnecessary physical contact.\n                            ",
+    "markup": "\n                                A brief, courteous thank-you is appropriate. Do not prolong the interaction or initiate unnecessary physical contact.\n                            ",
+    "status": "hidden-or-alternative",
+    "section": "view-6"
+  },
+  {
+    "identity": "html/1/0/1/1/14/11/1/0",
+    "type": "text",
+    "value": "Handle unexpected judge interactions",
+    "markup": "Handle unexpected judge interactions",
+    "status": "hidden-or-alternative",
+    "section": "view-6"
+  },
+  {
+    "identity": "html/1/0/1/1/14/11/3/0",
+    "type": "text",
+    "value": "\n                                The judge observes and evaluates rather than joining the discussion. If an unexpected procedural issue occurs, respond politely and consult your coach afterward. Do not confront the judge; your coach can determine appropriate follow-up.\n                            ",
+    "markup": "\n                                The judge observes and evaluates rather than joining the discussion. If an unexpected procedural issue occurs, respond politely and consult your coach afterward. Do not confront the judge; your coach can determine appropriate follow-up.\n                            ",
+    "status": "hidden-or-alternative",
+    "section": "view-6"
+  },
+  {
+    "identity": "html/1/0/1/1/14/13/1/0",
+    "type": "text",
+    "value": "Build positive relationships",
+    "markup": "Build positive relationships",
+    "status": "hidden-or-alternative",
+    "section": "view-6"
+  },
+  {
+    "identity": "html/1/0/1/1/14/13/3/0",
+    "type": "text",
+    "value": "\n                                Away from the judge, speak respectfully with competitors, offer sincere compliments, discuss the task constructively, and avoid criticizing participants or judges.\n                            ",
+    "markup": "\n                                Away from the judge, speak respectfully with competitors, offer sincere compliments, discuss the task constructively, and avoid criticizing participants or judges.\n                            ",
+    "status": "hidden-or-alternative",
+    "section": "view-6"
+  },
+  {
+    "identity": "html/1/0/1/1/16/1/0",
+    "type": "text",
+    "value": "07 · Integrated practice · 4 minutes",
+    "markup": "07 · Integrated practice · 4 minutes",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/1/0/1/1/16/3/0",
+    "type": "text",
+    "value": "A Discussion in Its Final Minutes",
+    "markup": "A Discussion in Its Final Minutes",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/1/0/1/1/16/5/0",
+    "type": "text",
+    "value": "Apply synthesis, summary, consensus, and task evaluation in one fictional simulation.",
+    "markup": "Apply synthesis, summary, consensus, and task evaluation in one fictional simulation.",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/1/0/1/1/16/7/1/0",
+    "type": "text",
+    "value": "A city committee has about five minutes left. Its proposal must address ",
+    "markup": "A city committee has about five minutes left. Its proposal must address <strong>access, communication, and affordability</strong>. The group has discussed a transportation pilot, outreach, cost controls, evaluation, and a possible funding partnership.",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/1/0/1/1/16/7/1/1/0",
+    "type": "text",
+    "value": "access, communication, and affordability",
+    "markup": "access, communication, and affordability",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/1/0/1/1/16/7/1/2",
+    "type": "text",
+    "value": ". The group has discussed a transportation pilot, outreach, cost controls, evaluation, and a possible funding partnership.",
+    "markup": "A city committee has about five minutes left. Its proposal must address <strong>access, communication, and affordability</strong>. The group has discussed a transportation pilot, outreach, cost controls, evaluation, and a possible funding partnership.",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/1/0/1/1/16/7/3/1/0/0",
+    "type": "text",
+    "value": "Maya:",
+    "markup": "Maya:",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/1/0/1/1/16/7/3/1/1",
+    "type": "text",
+    "value": " “Transportation support should be our main recommendation.”",
+    "markup": "<strong>Maya:</strong> “Transportation support should be our main recommendation.”",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/1/0/1/1/16/7/3/3/0/0",
+    "type": "text",
+    "value": "Jordan:",
+    "markup": "Jordan:",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/1/0/1/1/16/7/3/3/1",
+    "type": "text",
+    "value": " “I support that if initial costs stay limited.”",
+    "markup": "<strong>Jordan:</strong> “I support that if initial costs stay limited.”",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/1/0/1/1/16/7/3/5/0/0",
+    "type": "text",
+    "value": "Avery:",
+    "markup": "Avery:",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/1/0/1/1/16/7/3/5/1",
+    "type": "text",
+    "value": " “Communication should be part of the proposal too.”",
+    "markup": "<strong>Avery:</strong> “Communication should be part of the proposal too.”",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/1/0/1/1/16/7/3/7/0/0",
+    "type": "text",
+    "value": "Sam:",
+    "markup": "Sam:",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/1/0/1/1/16/7/3/7/1",
+    "type": "text",
+    "value": " “We need a clear recommendation everyone supports.”",
+    "markup": "<strong>Sam:</strong> “We need a clear recommendation everyone supports.”",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/1/0/1/1/16/11/1/0",
+    "type": "text",
+    "value": "Your final contribution",
+    "markup": "Your final contribution",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/1/0/1/1/16/11/3/0",
+    "type": "text",
+    "value": "Write 3–5 sentences: summarize the proposal, connect at least two participants' ideas, address the task, and invite a consensus check. Your writing is not automatically graded.",
+    "markup": "Write 3–5 sentences: summarize the proposal, connect at least two participants' ideas, address the task, and invite a consensus check. Your writing is not automatically graded.",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/1/0/1/1/16/11/4/0",
+    "type": "text",
+    "value": "My closing contribution",
+    "markup": "My closing contribution",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/1/0/1/1/16/11/7/0/0",
+    "type": "text",
+    "value": "Show Model Closing",
+    "markup": "Show Model Closing",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/1/0/1/1/16/11/7/2/0",
+    "type": "text",
+    "value": "Copy My Closing",
+    "markup": "Copy My Closing",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/1/0/1/1/16/11/7/4/0",
+    "type": "text",
+    "value": "Edit My Closing",
+    "markup": "Edit My Closing",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/1/0/1/1/16/11/11/0/0",
+    "type": "text",
+    "value": "Model closing",
+    "markup": "Model closing",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/1/0/1/1/16/11/11/2/0",
+    "type": "text",
+    "value": "“Building on Maya's transportation proposal, Avery's communication recommendation, and Jordan's concern about affordability, our group has developed a coordinated approach. We propose a limited transportation pilot paired with better outreach so students can learn about available programs. To address costs, the pilot would include a spending cap and an evaluation before expansion. This addresses the task's access, communication, and affordability requirements. Can everyone support this revised proposal, or is there a remaining concern we need to resolve?”",
+    "markup": "“Building on Maya's transportation proposal, Avery's communication recommendation, and Jordan's concern about affordability, our group has developed a coordinated approach. We propose a limited transportation pilot paired with better outreach so students can learn about available programs. To address costs, the pilot would include a spending cap and an evaluation before expansion. This addresses the task's access, communication, and affordability requirements. Can everyone support this revised proposal, or is there a remaining concern we need to resolve?”",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/1/0/1/1/16/11/11/4/0",
+    "type": "text",
+    "value": "It credits others, synthesizes viewpoints, summarizes the outcome, addresses required elements, and invites genuine consensus.",
+    "markup": "It credits others, synthesizes viewpoints, summarizes the outcome, addresses required elements, and invites genuine consensus.",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/1/0/1/1/18/1/0",
+    "type": "text",
+    "value": "08 · Feedback and unlock · 3 minutes",
+    "markup": "08 · Feedback and unlock · 3 minutes",
+    "status": "hidden-or-alternative",
+    "section": "view-8"
+  },
+  {
+    "identity": "html/1/0/1/1/18/3/0",
+    "type": "text",
+    "value": "Are You Ready to Close with Purpose?",
+    "markup": "Are You Ready to Close with Purpose?",
+    "status": "hidden-or-alternative",
+    "section": "view-8"
+  },
+  {
+    "identity": "html/1/0/1/1/18/5/0",
+    "type": "text",
+    "value": "Five questions. One at a time. Apply what you learned.",
+    "markup": "Five questions. One at a time. Apply what you learned.",
+    "status": "hidden-or-alternative",
+    "section": "view-8"
+  },
+  {
+    "identity": "html/1/0/1/1/18/9/0/0",
+    "type": "text",
+    "value": "LESSON COMPLETE",
+    "markup": "LESSON COMPLETE",
+    "status": "hidden-or-alternative",
+    "section": "view-8"
+  },
+  {
+    "identity": "html/1/0/1/1/18/9/2/0",
+    "type": "text",
+    "value": "Closing with Purpose — Lesson Complete",
+    "markup": "Closing with Purpose — Lesson Complete",
+    "status": "hidden-or-alternative",
+    "section": "view-8"
+  },
+  {
+    "identity": "html/1/0/1/1/18/9/4/0",
+    "type": "text",
+    "value": "You practiced organizing findings, synthesizing viewpoints, negotiating consensus, checking a final proposal, and concluding professionally.",
+    "markup": "You practiced organizing findings, synthesizing viewpoints, negotiating consensus, checking a final proposal, and concluding professionally.",
+    "status": "hidden-or-alternative",
+    "section": "view-8"
+  },
+  {
+    "identity": "html/1/0/1/1/18/9/10/0",
+    "type": "text",
+    "value": "Your next practice-round focus",
+    "markup": "Your next practice-round focus",
+    "status": "hidden-or-alternative",
+    "section": "view-8"
+  },
+  {
+    "identity": "html/1/0/1/1/18/9/12/0",
+    "type": "text",
+    "value": "Choose one or more skills to improve.",
+    "markup": "Choose one or more skills to improve.",
+    "status": "hidden-or-alternative",
+    "section": "view-8"
+  },
+  {
+    "identity": "html/1/0/1/1/18/9/16/0",
+    "type": "text",
+    "value": "Select a goal above to make your practice plan.",
+    "markup": "Select a goal above to make your practice plan.",
+    "status": "hidden-or-alternative",
+    "section": "view-8"
+  },
+  {
+    "identity": "html/1/0/1/1/18/9/18/0/0",
+    "type": "text",
+    "value": "Revisit Quick Reference",
+    "markup": "Revisit Quick Reference",
+    "status": "hidden-or-alternative",
+    "section": "view-8"
+  },
+  {
+    "identity": "html/1/0/1/1/18/9/18/2/0",
+    "type": "text",
+    "value": "Review completed sections",
+    "markup": "Review completed sections",
+    "status": "hidden-or-alternative",
+    "section": "view-8"
+  },
+  {
+    "identity": "html/1/0/1/1/19/0/0/0/0/0",
+    "type": "text",
+    "value": "Print quick reference",
+    "markup": "Print quick reference",
+    "status": "hidden-or-alternative",
+    "section": "view-9"
+  },
+  {
+    "identity": "html/1/0/1/1/19/0/0/1/0",
+    "type": "text",
+    "value": "Final Stage Quick Reference",
+    "markup": "Final Stage Quick Reference",
+    "status": "hidden-or-alternative",
+    "section": "view-9"
+  },
+  {
+    "identity": "html/1/0/1/1/19/0/1/0/0/0/0",
+    "type": "text",
+    "value": "01",
+    "markup": "01",
+    "status": "hidden-or-alternative",
+    "section": "view-9"
+  },
+  {
+    "identity": "html/1/0/1/1/19/0/1/0/0/1/0",
+    "type": "text",
+    "value": "Summary vs. synthesis",
+    "markup": "Summary vs. synthesis",
+    "status": "hidden-or-alternative",
+    "section": "view-9"
+  },
+  {
+    "identity": "html/1/0/1/1/19/0/1/0/2/0/0",
+    "type": "text",
+    "value": "Summary:",
+    "markup": "Summary:",
+    "status": "hidden-or-alternative",
+    "section": "view-9"
+  },
+  {
+    "identity": "html/1/0/1/1/19/0/1/0/2/1",
+    "type": "text",
+    "value": " Organize and accurately restate findings, proposals, agreements, and unresolved questions.",
+    "markup": "<strong>Summary:</strong> Organize and accurately restate findings, proposals, agreements, and unresolved questions.",
+    "status": "hidden-or-alternative",
+    "section": "view-9"
+  },
+  {
+    "identity": "html/1/0/1/1/19/0/1/0/4/0/0",
+    "type": "text",
+    "value": "Synthesis:",
+    "markup": "Synthesis:",
+    "status": "hidden-or-alternative",
+    "section": "view-9"
+  },
+  {
+    "identity": "html/1/0/1/1/19/0/1/0/4/1",
+    "type": "text",
+    "value": " Connect viewpoints to develop a new insight or recommendation.",
+    "markup": "<strong>Synthesis:</strong> Connect viewpoints to develop a new insight or recommendation.",
+    "status": "hidden-or-alternative",
+    "section": "view-9"
+  },
+  {
+    "identity": "html/1/0/1/1/19/0/1/0/6/0/0",
+    "type": "text",
+    "value": "Remember:",
+    "markup": "Remember:",
+    "status": "hidden-or-alternative",
+    "section": "view-9"
+  },
+  {
+    "identity": "html/1/0/1/1/19/0/1/0/6/1",
+    "type": "text",
+    "value": " Summary captures what the group developed. Synthesis advances its thinking.",
+    "markup": "<strong>Remember:</strong> Summary captures what the group developed. Synthesis advances its thinking.",
+    "status": "hidden-or-alternative",
+    "section": "view-9"
+  },
+  {
+    "identity": "html/1/0/1/1/19/0/1/1/0/0/0",
+    "type": "text",
+    "value": "02",
+    "markup": "02",
+    "status": "hidden-or-alternative",
+    "section": "view-9"
+  },
+  {
+    "identity": "html/1/0/1/1/19/0/1/1/0/1/0",
+    "type": "text",
+    "value": "The synthesis framework",
+    "markup": "The synthesis framework",
+    "status": "hidden-or-alternative",
+    "section": "view-9"
+  },
+  {
+    "identity": "html/1/0/1/1/19/0/1/1/2/0/0",
+    "type": "text",
+    "value": "LISTEN",
+    "markup": "LISTEN",
+    "status": "hidden-or-alternative",
+    "section": "view-9"
+  },
+  {
+    "identity": "html/1/0/1/1/19/0/1/1/2/1",
+    "type": "text",
+    "value": " for ideas and concerns. ",
+    "markup": "<strong>LISTEN</strong> for ideas and concerns. <strong>CONNECT</strong> viewpoints. <strong>CREDIT</strong> contributors. <strong>ADVANCE</strong> an insight, compromise, or recommendation.",
+    "status": "hidden-or-alternative",
+    "section": "view-9"
+  },
+  {
+    "identity": "html/1/0/1/1/19/0/1/1/2/2/0",
+    "type": "text",
+    "value": "CONNECT",
+    "markup": "CONNECT",
+    "status": "hidden-or-alternative",
+    "section": "view-9"
+  },
+  {
+    "identity": "html/1/0/1/1/19/0/1/1/2/3",
+    "type": "text",
+    "value": " viewpoints. ",
+    "markup": "<strong>LISTEN</strong> for ideas and concerns. <strong>CONNECT</strong> viewpoints. <strong>CREDIT</strong> contributors. <strong>ADVANCE</strong> an insight, compromise, or recommendation.",
+    "status": "hidden-or-alternative",
+    "section": "view-9"
+  },
+  {
+    "identity": "html/1/0/1/1/19/0/1/1/2/4/0",
+    "type": "text",
+    "value": "CREDIT",
+    "markup": "CREDIT",
+    "status": "hidden-or-alternative",
+    "section": "view-9"
+  },
+  {
+    "identity": "html/1/0/1/1/19/0/1/1/2/5",
+    "type": "text",
+    "value": " contributors. ",
+    "markup": "<strong>LISTEN</strong> for ideas and concerns. <strong>CONNECT</strong> viewpoints. <strong>CREDIT</strong> contributors. <strong>ADVANCE</strong> an insight, compromise, or recommendation.",
+    "status": "hidden-or-alternative",
+    "section": "view-9"
+  },
+  {
+    "identity": "html/1/0/1/1/19/0/1/1/2/6/0",
+    "type": "text",
+    "value": "ADVANCE",
+    "markup": "ADVANCE",
+    "status": "hidden-or-alternative",
+    "section": "view-9"
+  },
+  {
+    "identity": "html/1/0/1/1/19/0/1/1/2/7",
+    "type": "text",
+    "value": " an insight, compromise, or recommendation.",
+    "markup": "<strong>LISTEN</strong> for ideas and concerns. <strong>CONNECT</strong> viewpoints. <strong>CREDIT</strong> contributors. <strong>ADVANCE</strong> an insight, compromise, or recommendation.",
+    "status": "hidden-or-alternative",
+    "section": "view-9"
+  },
+  {
+    "identity": "html/1/0/1/1/19/0/1/1/4/0",
+    "type": "text",
+    "value": "Try: “Building on [name]'s idea and [name]'s concern…” · “If we combine those perspectives…” · “One way to address both concerns might be…”",
+    "markup": "Try: “Building on [name]'s idea and [name]'s concern…” · “If we combine those perspectives…” · “One way to address both concerns might be…”",
+    "status": "hidden-or-alternative",
+    "section": "view-9"
+  },
+  {
+    "identity": "html/1/0/1/1/19/0/1/2/0/0/0",
+    "type": "text",
+    "value": "03",
+    "markup": "03",
+    "status": "hidden-or-alternative",
+    "section": "view-9"
+  },
+  {
+    "identity": "html/1/0/1/1/19/0/1/2/0/1/0",
+    "type": "text",
+    "value": "Effective summaries",
+    "markup": "Effective summaries",
+    "status": "hidden-or-alternative",
+    "section": "view-9"
+  },
+  {
+    "identity": "html/1/0/1/1/19/0/1/2/2/0",
+    "type": "text",
+    "value": "Organize by theme, not speaking order. Include barriers, important evidence and proposals, agreed recommendations, unresolved concerns, and credit for substantive contributions.",
+    "markup": "Organize by theme, not speaking order. Include barriers, important evidence and proposals, agreed recommendations, unresolved concerns, and credit for substantive contributions.",
+    "status": "hidden-or-alternative",
+    "section": "view-9"
+  },
+  {
+    "identity": "html/1/0/1/1/19/0/1/2/4/0",
+    "type": "text",
+    "value": "Try: “Our group identified three major considerations…” · “We agreed to recommend…” · “One concern that remains unresolved is…”",
+    "markup": "Try: “Our group identified three major considerations…” · “We agreed to recommend…” · “One concern that remains unresolved is…”",
+    "status": "hidden-or-alternative",
+    "section": "view-9"
+  },
+  {
+    "identity": "html/1/0/1/1/19/0/1/3/0/0/0",
+    "type": "text",
+    "value": "04",
+    "markup": "04",
+    "status": "hidden-or-alternative",
+    "section": "view-9"
+  },
+  {
+    "identity": "html/1/0/1/1/19/0/1/3/0/1/0",
+    "type": "text",
+    "value": "Consensus and task completion",
+    "markup": "Consensus and task completion",
+    "status": "hidden-or-alternative",
+    "section": "view-9"
+  },
+  {
+    "identity": "html/1/0/1/1/19/0/1/3/2/0",
+    "type": "text",
+    "value": "Do not confuse majority support with unanimity. Identify remaining concerns, explore revisions, and confirm whether the revised outcome is supportable.",
+    "markup": "Do not confuse majority support with unanimity. Identify remaining concerns, explore revisions, and confirm whether the revised outcome is supportable.",
+    "status": "hidden-or-alternative",
+    "section": "view-9"
+  },
+  {
+    "identity": "html/1/0/1/1/19/0/1/3/4/0",
+    "type": "text",
+    "value": "Check the ",
+    "markup": "Check the <strong>WHAT</strong> (the problem) and <strong>HOW</strong> (required deliverable components). Does the final product meet the task? Can participants support it?",
+    "status": "hidden-or-alternative",
+    "section": "view-9"
+  },
+  {
+    "identity": "html/1/0/1/1/19/0/1/3/4/1/0",
+    "type": "text",
+    "value": "WHAT",
+    "markup": "WHAT",
+    "status": "hidden-or-alternative",
+    "section": "view-9"
+  },
+  {
+    "identity": "html/1/0/1/1/19/0/1/3/4/2",
+    "type": "text",
+    "value": " (the problem) and ",
+    "markup": "Check the <strong>WHAT</strong> (the problem) and <strong>HOW</strong> (required deliverable components). Does the final product meet the task? Can participants support it?",
+    "status": "hidden-or-alternative",
+    "section": "view-9"
+  },
+  {
+    "identity": "html/1/0/1/1/19/0/1/3/4/3/0",
+    "type": "text",
+    "value": "HOW",
+    "markup": "HOW",
+    "status": "hidden-or-alternative",
+    "section": "view-9"
+  },
+  {
+    "identity": "html/1/0/1/1/19/0/1/3/4/4",
+    "type": "text",
+    "value": " (required deliverable components). Does the final product meet the task? Can participants support it?",
+    "markup": "Check the <strong>WHAT</strong> (the problem) and <strong>HOW</strong> (required deliverable components). Does the final product meet the task? Can participants support it?",
+    "status": "hidden-or-alternative",
+    "section": "view-9"
+  },
+  {
+    "identity": "html/1/0/1/1/19/0/1/3/6/0",
+    "type": "text",
+    "value": "Try: “Does this revised proposal address the concerns raised?” · “Are we missing any required part of the task?” · “Can everyone support this recommendation?”",
+    "markup": "Try: “Does this revised proposal address the concerns raised?” · “Are we missing any required part of the task?” · “Can everyone support this recommendation?”",
+    "status": "hidden-or-alternative",
+    "section": "view-9"
+  },
+  {
+    "identity": "html/1/0/1/1/19/0/1/4/0/0/0",
+    "type": "text",
+    "value": "05",
+    "markup": "05",
+    "status": "hidden-or-alternative",
+    "section": "view-9"
+  },
+  {
+    "identity": "html/1/0/1/1/19/0/1/4/0/1/0",
+    "type": "text",
+    "value": "After the round",
+    "markup": "After the round",
+    "status": "hidden-or-alternative",
+    "section": "view-9"
+  },
+  {
+    "identity": "html/1/0/1/1/19/0/1/4/2/0",
+    "type": "text",
+    "value": "Gather belongings and leave promptly. Thank the judge briefly if appropriate. Do not request rankings or prolonged feedback. Consult your coach about unexpected procedural issues. Speak respectfully with fellow competitors afterward.",
+    "markup": "Gather belongings and leave promptly. Thank the judge briefly if appropriate. Do not request rankings or prolonged feedback. Consult your coach about unexpected procedural issues. Speak respectfully with fellow competitors afterward.",
+    "status": "hidden-or-alternative",
+    "section": "view-9"
+  },
+  {
+    "identity": "html/1/0/1/1/20/0/0",
+    "type": "text",
+    "value": "← Back",
+    "markup": "← Back",
+    "status": "initial-markup",
+    "section": "shell"
+  },
+  {
+    "identity": "html/1/0/1/1/20/1/0",
+    "type": "text",
+    "value": "Next section →",
+    "markup": "Next section →",
+    "status": "initial-markup",
+    "section": "shell"
+  }
+]

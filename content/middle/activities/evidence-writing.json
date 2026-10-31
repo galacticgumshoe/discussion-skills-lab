@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "evidence-writing",
+  "type": "writing",
+  "profile": "middle-evidence",
+  "binding": {
+    "assembledFlag": "evidence-assembled",
+    "modelFlag": "research-model-visible"
+  },
+  "data": {
+    "fields": [
+      {
+        "id": "evidence-source",
+        "formatKey": "source",
+        "label": "Source and date",
+        "multiline": false,
+        "readonly": false,
+        "placeholder": "e.g., fictional Community Access Survey, May 2025"
+      },
+      {
+        "id": "evidence-finding",
+        "formatKey": "finding",
+        "label": "Relevant finding",
+        "multiline": true,
+        "readonly": false,
+        "rows": 2
+      },
+      {
+        "id": "evidence-connection",
+        "formatKey": "why",
+        "label": "Why it matters to the group's task",
+        "multiline": true,
+        "readonly": false,
+        "rows": 2
+      }
+    ],
+    "output": {
+      "id": "evidence-output",
+      "label": "Your assembled contribution",
+      "multiline": true,
+      "readonly": true,
+      "rows": 3
+    },
+    "assembly": {
+      "label": "Assemble My Contribution",
+      "template": "According to {source}, {finding}. This matters to our task because {why}.",
+      "missingMessage": "Fill in all three fields first.",
+      "successMessage": "Assembled from your words; this response has not been fact-checked.",
+      "focusOutput": false
+    },
+    "copyLabel": "Copy My Contribution",
+    "copyMessages": {
+      "empty": "Nothing to copy yet. Write a response first."
+    },
+    "model": {
+      "mode": "show-only",
+      "showLabel": "Compare with Model",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "source": "bodies/evidence-writing-model.md"
+        }
+      ]
+    }
+  }
+}

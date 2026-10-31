@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1, "id": "application-checklist", "type": "checklist",
+  "data": { "items": [
+    { "id": "connect-two-ideas", "text": "I connected at least two existing ideas." },
+    { "id": "add-insight", "text": "I added an insight or solution." },
+    { "id": "task-focus", "text": "I stayed focused on the task." },
+    { "id": "professional-tone", "text": "I used a professional tone." },
+    { "id": "supported-evidence", "text": "I did not claim unsupported evidence." }
+  ] }
+}

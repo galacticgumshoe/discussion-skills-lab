@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "structure-cards",
+  "type": "flashcards",
+  "data": {
+    "items": [
+      {
+        "id": "procedural",
+        "frontTitle": "PROCEDURAL",
+        "frontSource": "bodies/procedural-front.md",
+        "backSource": "bodies/procedural-back.md"
+      },
+      {
+        "id": "substantive",
+        "frontTitle": "SUBSTANTIVE",
+        "frontSource": "bodies/substantive-front.md",
+        "backSource": "bodies/substantive-back.md"
+      }
+    ]
+  }
+}

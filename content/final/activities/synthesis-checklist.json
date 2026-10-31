@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "synthesis-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "id": "connect-two",
+        "text": "I connected at least two viewpoints."
+      },
+      {
+        "id": "credit-contributors",
+        "text": "I credited the people whose ideas I used."
+      },
+      {
+        "id": "new-insight",
+        "text": "I added a new insight or recommendation."
+      },
+      {
+        "id": "task-focus",
+        "text": "My contribution addresses the task."
+      },
+      {
+        "id": "professional",
+        "text": "My language is collaborative and professional."
+      }
+    ]
+  }
+}

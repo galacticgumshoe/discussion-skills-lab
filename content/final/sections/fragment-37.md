@@ -1,0 +1,1 @@
+Unanimity means every participant supports the decision. Majority support means more than half do. Consensus is a shared outcome participants can support after concerns have been considered. A round robin can surface disagreement; it cannot replace negotiation.

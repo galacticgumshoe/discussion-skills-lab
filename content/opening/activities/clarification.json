@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "clarification",
+  "type": "multiple-choice",
+  "profile": "standard",
+  "data": {
+    "id": "before-accepting-agenda",
+    "prompt": "What should the group do before accepting this agenda?",
+    "correctOptionId": "clarify-deliverable",
+    "options": [
+      {
+        "id": "brainstorm",
+        "text": "A. Begin brainstorming programs immediately.",
+        "feedback": "Not quite. The group should agree on what the task requires before deciding how to organize its time."
+      },
+      {
+        "id": "clarify-deliverable",
+        "text": "B. Clarify the problem and the task's required deliverable.",
+        "feedback": "Correct. The group should agree on what the task requires before deciding how to organize its time."
+      },
+      {
+        "id": "vote-leader",
+        "text": "C. Vote on who should lead the discussion.",
+        "feedback": "Not quite. The group should agree on what the task requires before deciding how to organize its time."
+      }
+    ]
+  }
+}

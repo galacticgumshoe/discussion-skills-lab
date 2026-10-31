@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "communication-diagnosis",
+  "type": "question-sequence",
+  "profile": "middle-scenarios",
+  "data": { "questions": [
+    { "id": "disagreement", "prompt": "1 of 4 · You disagree with another participant.", "correctOptionId": "respectful-concern", "explanation": "Body language affects collaboration.", "options": [{ "id": "eye-roll", "text": "Roll your eyes while taking notes." }, { "id": "respectful-concern", "text": "Keep a neutral expression and explain your concern respectfully." }] },
+    { "id": "noisy-gym", "prompt": "2 of 4 · You are making a point in a noisy gym.", "correctOptionId": "audible-ending", "explanation": "An audible ending helps others hear your complete thought.", "options": [{ "id": "audible-ending", "text": "Maintain clear volume through the final words." }, { "id": "fade", "text": "Let your voice fade before finishing." }] },
+    { "id": "committee-role", "prompt": "3 of 4 · You are playing a city advisory committee member.", "correctOptionId": "committee-role", "explanation": "Stay within your assigned role.", "options": [{ "id": "competitor-role", "text": "“As speech competitors, we should...”" }, { "id": "committee-role", "text": "“As an advisory committee, we should consider...”" }] },
+    { "id": "note-taking", "prompt": "4 of 4 · You are noting another speaker’s important point.", "correctOptionId": "look-up", "explanation": "Note-taking and visible listening work together.", "options": [{ "id": "keep-typing", "text": "Keep typing without looking up." }, { "id": "look-up", "text": "Write briefly and look up frequently." }] }
+  ] }
+}

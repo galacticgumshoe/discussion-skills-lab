@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "knowledge-check",
+  "type": "question-sequence",
+  "profile": "middle-quiz",
+  "data": { "questions": [
+    { "id": "substantive", "prompt": "Which is a substantive contribution?", "correctOptionId": "combine-proposals", "explanation": "Connecting ideas develops a possible solution.", "options": [
+      { "id": "next-item", "text": "“Begin the next item.”" }, { "id": "time-left", "text": "“Five minutes remain.”" }, { "id": "combine-proposals", "text": "“Combining the proposals could address cost and accessibility.”" }, { "id": "hear-others", "text": "“Could we hear someone else?”" }
+    ] },
+    { "id": "useful-research", "prompt": "How is research most useful?", "correctOptionId": "cite-explain-connect", "explanation": "Relevant, cited, explained evidence supports problem-solving.", "options": [
+      { "id": "every-statistic", "text": "Share every statistic regardless of topic." }, { "id": "cite-explain-connect", "text": "Cite publication and date, explain the finding, and connect it to the discussion." }, { "id": "stories", "text": "Replace evidence with stories." }, { "id": "repeat", "text": "Repeat a point for the judge." }
+    ] },
+    { "id": "invite-perspective", "prompt": "How can you invite someone who has contributed little?", "correctOptionId": "broad-invitation", "explanation": "A broad invitation avoids putting one person on the spot.", "options": [
+      { "id": "call-by-name", "text": "Repeatedly call on them by name." }, { "id": "ignore", "text": "Ignore participation." }, { "id": "broad-invitation", "text": "At a transition, invite any additional perspectives." }, { "id": "criticize", "text": "Criticize quiet participants." }
+    ] },
+    { "id": "sentence-endings", "prompt": "Why maintain volume through a sentence ending?", "correctOptionId": "complete-thought", "explanation": "Clear endings help turn-taking, particularly in noisy rooms.", "options": [
+      { "id": "no-interruption", "text": "It guarantees no interruption." }, { "id": "complete-thought", "text": "It helps others hear the complete thought and recognize the turn is not over." }, { "id": "leadership", "text": "It establishes leadership." }, { "id": "avoid-listening", "text": "It avoids listening." }
+    ] },
+    { "id": "frequent-speaker", "prompt": "You have spoken frequently while another student has not. You start together. What is generally strongest?", "correctOptionId": "yield-next", "explanation": "Yielding balances participation while keeping a future opportunity.", "options": [
+      { "id": "talk-over", "text": "Talk over them." }, { "id": "more-important", "text": "Declare your idea more important." }, { "id": "yield-next", "text": "Yield and ask to share your point afterward." }, { "id": "withdraw", "text": "Stop participating entirely." }
+    ] }
+  ] }
+}

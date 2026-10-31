@@ -1,0 +1,5 @@
+{
+  "schemaVersion": 1, "id": "sample-reference", "storageKey": null,
+  "content": "../../content/sample-reference/lesson.json", "sectionOrder": ["test-reference"],
+  "referenceId": "test-reference", "presentation": "legacy-shell"
+}

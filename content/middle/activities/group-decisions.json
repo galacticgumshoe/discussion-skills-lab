@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "group-decisions",
+  "type": "question-sequence",
+  "profile": "middle-scenarios",
+  "data": { "questions": [
+    { "id": "quiet-tablemate", "prompt": "1 of 3 · The quiet tablemate — Several students have contributed little. The group is about to move on.", "correctOptionId": "broad-invitation", "explanation": "A broad invitation encourages participation without putting one person on the spot.", "options": [
+      { "id": "call-jordan", "text": "“Jordan, you need to talk more.”" },
+      { "id": "broad-invitation", "text": "“Before we move on, are there any additional perspectives?”" },
+      { "id": "heard-enough", "text": "“We have heard enough.”" }
+    ] },
+    { "id": "detour", "prompt": "2 of 3 · The detour — The transportation discussion has drifted into a long debate about lunch menus.", "correctOptionId": "return-transportation", "explanation": "Respectfully return to the task and offer a way forward.", "options": [
+      { "id": "dismiss", "text": "“That has nothing to do with anything.”" },
+      { "id": "continue-detour", "text": "“Let’s keep discussing lunch.”" },
+      { "id": "return-transportation", "text": "“Could we return to the transportation barriers our plan needs to address?”" }
+    ] },
+    { "id": "clock", "prompt": "3 of 3 · The clock — Limited time remains, and the proposed plan is unfinished.", "correctOptionId": "prioritize-review", "explanation": "Time management helps the group finish without taking over its decisions.", "options": [
+      { "id": "prioritize-review", "text": "“Could we prioritize recommendations and reserve time to review the plan?”" },
+      { "id": "take-over", "text": "“I will decide the plan.”" },
+      { "id": "ignore-time", "text": "“Time does not matter.”" }
+    ] }
+  ] }
+}

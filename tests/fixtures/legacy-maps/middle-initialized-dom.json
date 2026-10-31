@@ -1,0 +1,388 @@
+{
+  "fields": [
+    {
+      "id": "source",
+      "tag": "input",
+      "type": "text",
+      "page": "view-2",
+      "group": null,
+      "flip": null,
+      "label": ""
+    },
+    {
+      "id": "finding",
+      "tag": "textarea",
+      "type": "textarea",
+      "page": "view-2",
+      "group": null,
+      "flip": null,
+      "label": ""
+    },
+    {
+      "id": "why",
+      "tag": "textarea",
+      "type": "textarea",
+      "page": "view-2",
+      "group": null,
+      "flip": null,
+      "label": ""
+    },
+    {
+      "id": "assembled",
+      "tag": "textarea",
+      "type": "textarea",
+      "page": "view-2",
+      "group": null,
+      "flip": null,
+      "label": ""
+    },
+    {
+      "id": "research-check-0",
+      "tag": "input",
+      "type": "checkbox",
+      "page": "view-2",
+      "group": null,
+      "flip": null,
+      "label": ""
+    },
+    {
+      "id": "research-check-1",
+      "tag": "input",
+      "type": "checkbox",
+      "page": "view-2",
+      "group": null,
+      "flip": null,
+      "label": ""
+    },
+    {
+      "id": "research-check-2",
+      "tag": "input",
+      "type": "checkbox",
+      "page": "view-2",
+      "group": null,
+      "flip": null,
+      "label": ""
+    },
+    {
+      "id": "research-check-3",
+      "tag": "input",
+      "type": "checkbox",
+      "page": "view-2",
+      "group": null,
+      "flip": null,
+      "label": ""
+    },
+    {
+      "id": "application-draft",
+      "tag": "textarea",
+      "type": "textarea",
+      "page": "view-6",
+      "group": null,
+      "flip": null,
+      "label": ""
+    },
+    {
+      "id": "application-check-0",
+      "tag": "input",
+      "type": "checkbox",
+      "page": "view-6",
+      "group": null,
+      "flip": null,
+      "label": ""
+    },
+    {
+      "id": "application-check-1",
+      "tag": "input",
+      "type": "checkbox",
+      "page": "view-6",
+      "group": null,
+      "flip": null,
+      "label": ""
+    },
+    {
+      "id": "application-check-2",
+      "tag": "input",
+      "type": "checkbox",
+      "page": "view-6",
+      "group": null,
+      "flip": null,
+      "label": ""
+    },
+    {
+      "id": "application-check-3",
+      "tag": "input",
+      "type": "checkbox",
+      "page": "view-6",
+      "group": null,
+      "flip": null,
+      "label": ""
+    },
+    {
+      "id": "application-check-4",
+      "tag": "input",
+      "type": "checkbox",
+      "page": "view-6",
+      "group": null,
+      "flip": null,
+      "label": ""
+    }
+  ],
+  "cards": [
+    {
+      "id": null,
+      "tag": "article",
+      "type": null,
+      "page": "view-0",
+      "group": "welcome",
+      "flip": null,
+      "label": "Flip Bring evidence card"
+    },
+    {
+      "id": null,
+      "tag": "article",
+      "type": null,
+      "page": "view-0",
+      "group": "welcome",
+      "flip": null,
+      "label": "Flip Build collaboration card"
+    },
+    {
+      "id": null,
+      "tag": "article",
+      "type": null,
+      "page": "view-0",
+      "group": "welcome",
+      "flip": null,
+      "label": "Flip Manage the floor card"
+    },
+    {
+      "id": null,
+      "tag": "article",
+      "type": null,
+      "page": "view-1",
+      "group": "s1",
+      "flip": null,
+      "label": "Flip procedural contributions card"
+    },
+    {
+      "id": null,
+      "tag": "article",
+      "type": null,
+      "page": "view-1",
+      "group": "s1",
+      "flip": null,
+      "label": "Flip substantive contributions card"
+    },
+    {
+      "id": null,
+      "tag": "article",
+      "type": null,
+      "page": "view-2",
+      "group": "models",
+      "flip": null,
+      "label": "Flip weak practice example"
+    },
+    {
+      "id": null,
+      "tag": "article",
+      "type": null,
+      "page": "view-2",
+      "group": "models",
+      "flip": null,
+      "label": "Flip stronger practice example"
+    },
+    {
+      "id": null,
+      "tag": "article",
+      "type": null,
+      "page": "view-5",
+      "group": "speaking",
+      "flip": null,
+      "label": "Flip Prevent an interruption card"
+    },
+    {
+      "id": null,
+      "tag": "article",
+      "type": null,
+      "page": "view-5",
+      "group": "speaking",
+      "flip": null,
+      "label": "Flip Respond constructively card"
+    }
+  ],
+  "panels": [
+    {
+      "id": null,
+      "tag": "details",
+      "type": null,
+      "page": "view-2",
+      "group": null,
+      "flip": null,
+      "label": "Relevance\nFollow the current conversation. Address the group's task rather than repeating or abruptly changing the subject.\n\n                            Save a finding for a later agenda item if it does not fit the present discussion."
+    },
+    {
+      "id": null,
+      "tag": "details",
+      "type": null,
+      "page": "view-2",
+      "group": null,
+      "flip": null,
+      "label": "Evidence\nCite at least the publication or publisher and publication date. Add the author or article title when available.\n\n                            “According to [publication], in [month/year], [finding]. This matters because [connection].” This is a template, not a real citation."
+    },
+    {
+      "id": null,
+      "tag": "details",
+      "type": null,
+      "page": "view-2",
+      "group": null,
+      "flip": null,
+      "label": "Explanation\nGo beyond stating a fact or statistic.\n\n                            Explain why the finding matters and how it could influence the group's decision."
+    },
+    {
+      "id": null,
+      "tag": "details",
+      "type": null,
+      "page": "view-2",
+      "group": null,
+      "flip": null,
+      "label": "Connection\nLink your point to another speaker, the agenda, or a developing solution.\n\n                            Make explicit how your evidence advances the group's task."
+    },
+    {
+      "id": null,
+      "tag": "details",
+      "type": null,
+      "page": "view-3",
+      "group": null,
+      "flip": null,
+      "label": "Take notes\nRecord major topics, evidence, sources, proposals, agreements, and unresolved questions. Credit others' ideas and look up regularly to remain engaged.\n\n                            Topic: Transportation barriers\n                            Maya: bus routes\n                            Jordan: cost concerns\n                            Open question: Which option is realistic?"
+    },
+    {
+      "id": null,
+      "tag": "details",
+      "type": null,
+      "page": "view-3",
+      "group": null,
+      "flip": null,
+      "label": "Manage time\nTrack the round and agreed agenda periods. Timing protects the opportunity to finish the deliverable, but cannot replace substantive participation."
+    },
+    {
+      "id": null,
+      "tag": "details",
+      "type": null,
+      "page": "view-3",
+      "group": null,
+      "flip": null,
+      "label": "Include others\nAt a transition, ask: “Before we move on, are there any other perspectives we should consider?” Broad invitations avoid repeatedly singling out quieter participants."
+    },
+    {
+      "id": null,
+      "tag": "details",
+      "type": null,
+      "page": "view-3",
+      "group": null,
+      "flip": null,
+      "label": "Focus the group\nRespectfully refer to the task or agenda: “Could we return to the barriers our plan needs to address?” Propose a constructive next step."
+    },
+    {
+      "id": null,
+      "tag": "details",
+      "type": null,
+      "page": "view-4",
+      "group": null,
+      "flip": null,
+      "label": "Body language\nMaintain attentive posture, nod naturally, and look up from notes. Avoid eye rolling, exaggerated sighs, or distracting habits. Direct attention to fellow discussants rather than the judge.\nThese are practical coaching suggestions, not individual official rules."
+    },
+    {
+      "id": null,
+      "tag": "details",
+      "type": null,
+      "page": "view-4",
+      "group": null,
+      "flip": null,
+      "label": "Professional language\nSpeak concisely, precisely, and respectfully within your assigned role. Reduce fillers, excessive slang, and unrelated references.\n\nToo casual: “Guys, this idea is kinda bad.”\nProfessional: “I have a concern about whether this proposal is realistic.”"
+    },
+    {
+      "id": null,
+      "tag": "details",
+      "type": null,
+      "page": "view-4",
+      "group": null,
+      "flip": null,
+      "label": "Voice and volume\nSpeak clearly enough for a noisy room and finish sentences audibly. A fading ending can be mistaken for an invitation to take a turn. Steady volume does not mean shouting."
+    },
+    {
+      "id": null,
+      "tag": "details",
+      "type": null,
+      "page": "view-5",
+      "group": null,
+      "flip": null,
+      "label": "Continue assertively\nWhat it means: Continue a brief point when voices overlap.\nPotential advantage: May preserve a timely point.\nMain risk: Repeatedly talking over others can appear domineering.\n\n                                “Let me finish this connection briefly, and then I’d like to hear other perspectives.”"
+    },
+    {
+      "id": null,
+      "tag": "details",
+      "type": null,
+      "page": "view-5",
+      "group": null,
+      "flip": null,
+      "label": "Request to go first\nWhat it means: Acknowledge the other speaker and ask to make your point first.\nPotential advantage: Preserves an opportunity while recognizing another person.\nMain risk: Repeated requests can control the floor. Honor the promised next turn.\n\n                                “Would you mind if I finish this point first? I’d like to hear you afterward.”"
+    },
+    {
+      "id": null,
+      "tag": "details",
+      "type": null,
+      "page": "view-5",
+      "group": null,
+      "flip": null,
+      "label": "Yield and request the next turn\nWhat it means: Let the other person go first, then ask to contribute.\nPotential advantage: Builds trust and balances participation.\nMain risk: The discussion may move on before your point fits.\n\n                                “Go ahead. I’d like to build on that afterward.”"
+    },
+    {
+      "id": null,
+      "tag": "details",
+      "type": null,
+      "page": "view-5",
+      "group": null,
+      "flip": null,
+      "label": "Claim a direct connection\nWhat it means: Explain why your point responds immediately to the previous speaker.\nPotential advantage: Preserves continuity.\nMain risk: Repeated urgency claims can dominate the floor.\n\n                                “Could I respond briefly to that concern before we change topics?”"
+    }
+  ],
+  "navigation": [
+    {
+      "index": 0,
+      "label": "Welcome"
+    },
+    {
+      "index": 1,
+      "label": "01 · Structure to substance"
+    },
+    {
+      "index": 2,
+      "label": "02 · Make contributions count"
+    },
+    {
+      "index": 3,
+      "label": "03 · Support the group"
+    },
+    {
+      "index": 4,
+      "label": "04 · Communicate professionally"
+    },
+    {
+      "index": 5,
+      "label": "05 · Navigate the conversation"
+    },
+    {
+      "index": 6,
+      "label": "06 · Put it together"
+    },
+    {
+      "index": 7,
+      "label": "07 · Knowledge check"
+    },
+    {
+      "index": 8,
+      "label": "↗ · Quick reference"
+    }
+  ]
+}

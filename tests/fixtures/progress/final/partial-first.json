@@ -1,0 +1,13 @@
+{
+  "provenance": "UI-observed",
+  "revision": "0b5d2297e7cbc19bd59cde750492dd28e3983ca0",
+  "origin": "http://127.0.0.1:60547",
+  "mount": "/",
+  "browser": "149.0.7827.55",
+  "raw": "{\"completed\":[],\"data\":{\"finalState\":{\"flips\":{\"0\":[0]},\"panels\":{},\"answers\":{},\"checks\":{},\"notes\":{},\"goals\":[],\"selections\":{},\"quizIndex\":{},\"assembled\":false,\"builderModel\":false,\"closingModel\":false,\"fields\":{\"build-1\":\"\",\"build-2\":\"\",\"build-3\":\"\",\"assembled\":\"\",\"closing-text\":\"\"},\"panelsOpen\":{\"0\":false,\"1\":false,\"2\":false,\"3\":false,\"4\":false,\"5\":false,\"6\":false,\"7\":false,\"8\":false,\"9\":false,\"10\":false,\"11\":false,\"12\":false}}}}",
+  "actions": [
+    "activate #view-0 .flip index 0"
+  ],
+  "questions": [],
+  "url": "http://127.0.0.1:60547/final.html"
+}

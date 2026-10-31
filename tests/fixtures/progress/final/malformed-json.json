@@ -1,0 +1,7 @@
+{
+  "provenance": "synthetic",
+  "revision": "0b5d2297e7cbc19bd59cde750492dd28e3983ca0",
+  "raw": "{\"completed\":[0], broken",
+  "safety": "unsafe",
+  "purpose": "JSON parse failure; legacy may overwrite on initialization"
+}

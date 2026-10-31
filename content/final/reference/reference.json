@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "quick-reference",
+  "title": "Final Stage Quick Reference",
+  "layout": "stacked-reference",
+  "items": [
+    { "id": "summary-synthesis", "number": "01", "title": "Summary vs. synthesis", "accent": "teal", "source": "summary-synthesis.md" },
+    { "id": "synthesis-framework", "number": "02", "title": "The synthesis framework", "accent": "green", "source": "synthesis-framework.md" },
+    { "id": "effective-summaries", "number": "03", "title": "Effective summaries", "accent": "orange", "source": "effective-summaries.md" },
+    { "id": "consensus-task", "number": "04", "title": "Consensus and task completion", "accent": "purple", "source": "consensus-task.md" },
+    { "id": "after-round", "number": "05", "title": "After the round", "accent": "blue", "source": "after-round.md" }
+  ]
+}

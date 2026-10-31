@@ -1,0 +1,1 @@
+“According to the fictional Community Access Survey published in May 2025, 38% of surveyed students reported missing at least one after-school activity because of transportation difficulties. This suggests we should evaluate transportation assistance as one possible part of our plan.”

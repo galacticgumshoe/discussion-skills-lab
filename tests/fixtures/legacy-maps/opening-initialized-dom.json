@@ -1,0 +1,76 @@
+{
+  "fields": [
+    {
+      "id": "problem-input",
+      "tag": "input",
+      "type": "text",
+      "page": "view-4",
+      "group": null,
+      "flip": null,
+      "label": ""
+    },
+    {
+      "id": "accomplishment-input",
+      "tag": "input",
+      "type": "text",
+      "page": "view-4",
+      "group": null,
+      "flip": null,
+      "label": ""
+    },
+    {
+      "id": "draft-input",
+      "tag": "textarea",
+      "type": "textarea",
+      "page": "view-4",
+      "group": null,
+      "flip": null,
+      "label": ""
+    },
+    {
+      "id": "question-selfcheck",
+      "tag": "input",
+      "type": "checkbox",
+      "page": "view-4",
+      "group": null,
+      "flip": null,
+      "label": ""
+    }
+  ],
+  "cards": [],
+  "panels": [],
+  "navigation": [
+    {
+      "index": 0,
+      "label": "01 · Contributions"
+    },
+    {
+      "index": 1,
+      "label": "02 · Opening sequence"
+    },
+    {
+      "index": 2,
+      "label": "03 · Analyze the task"
+    },
+    {
+      "index": 3,
+      "label": "04 · Clarifications"
+    },
+    {
+      "index": 4,
+      "label": "05 · Give direction"
+    },
+    {
+      "index": 5,
+      "label": "06 · Research & transition"
+    },
+    {
+      "index": 6,
+      "label": "✓ · Knowledge check"
+    },
+    {
+      "index": 7,
+      "label": "↗ · Quick reference"
+    }
+  ]
+}

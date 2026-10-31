@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "connect-viewpoints-panels",
+  "type": "expandables",
+  "profile": "standard",
+  "data": {
+    "items": [
+      {
+        "id": "listen",
+        "title": "1 · Listen",
+        "bodySource": "bodies/listen-panel.md"
+      },
+      {
+        "id": "connect",
+        "title": "2 · Connect",
+        "bodySource": "bodies/connect-panel.md"
+      },
+      {
+        "id": "credit",
+        "title": "3 · Credit",
+        "bodySource": "bodies/credit-panel.md"
+      },
+      {
+        "id": "advance",
+        "title": "4 · Advance",
+        "bodySource": "bodies/advance-panel.md"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1619 @@
+[
+  {
+    "identity": "html/0/5/0",
+    "type": "text",
+    "value": "Starting Strong · Discussion Opening Mechanics",
+    "markup": "Starting Strong · Discussion Opening Mechanics",
+    "status": "initial-markup",
+    "section": "shell"
+  },
+  {
+    "identity": "html/2/1/0/0/0/0/0",
+    "type": "text",
+    "value": "DISCUSSION SKILLS LAB · MSHSL SPEECH",
+    "markup": "DISCUSSION SKILLS LAB · MSHSL SPEECH",
+    "status": "initial-markup",
+    "section": "shell"
+  },
+  {
+    "identity": "html/2/1/0/0/0/1/0",
+    "type": "text",
+    "value": "Starting Strong · The Opening Stage",
+    "markup": "Starting Strong · The Opening Stage",
+    "status": "initial-markup",
+    "section": "shell"
+  },
+  {
+    "identity": "html/2/1/0/0/1/0",
+    "type": "text",
+    "value": "SELF-PACED · 15–20 MINUTES",
+    "markup": "SELF-PACED · 15–20 MINUTES",
+    "status": "initial-markup",
+    "section": "shell"
+  },
+  {
+    "identity": "html/2/1/2/0@aria-label",
+    "type": "aria-label",
+    "value": "Lesson sections",
+    "status": "attribute",
+    "section": "shell"
+  },
+  {
+    "identity": "html/2/1/2/0/0@aria-label",
+    "type": "aria-label",
+    "value": "Collapse navigation",
+    "status": "attribute",
+    "section": "shell"
+  },
+  {
+    "identity": "html/2/1/2/0/0/0",
+    "type": "text",
+    "value": "⇤",
+    "markup": "⇤",
+    "status": "initial-markup",
+    "section": "shell"
+  },
+  {
+    "identity": "html/2/1/2/0/1/0/0",
+    "type": "text",
+    "value": "YOUR PROGRESS",
+    "markup": "YOUR PROGRESS",
+    "status": "initial-markup",
+    "section": "shell"
+  },
+  {
+    "identity": "html/2/1/2/0/1/1/0",
+    "type": "text",
+    "value": "0 of 7 pages completed",
+    "markup": "0 of 7 pages completed",
+    "status": "initial-markup",
+    "section": "shell"
+  },
+  {
+    "identity": "html/2/1/2/0/1/2@aria-label",
+    "type": "aria-label",
+    "value": "Completed lesson pages",
+    "status": "attribute",
+    "section": "shell"
+  },
+  {
+    "identity": "html/2/1/2/0/1/3/0",
+    "type": "text",
+    "value": "Finish each activity to unlock the next page. Quick reference is always available.",
+    "markup": "Finish each activity to unlock the next page. Quick reference is always available.",
+    "status": "initial-markup",
+    "section": "shell"
+  },
+  {
+    "identity": "html/2/1/2/2/0/0/0",
+    "type": "text",
+    "value": "Go to a section",
+    "markup": "Go to a section",
+    "status": "initial-markup",
+    "section": "shell"
+  },
+  {
+    "identity": "html/2/1/2/2/3/1/1/0",
+    "type": "text",
+    "value": "SECTION 01 / 06",
+    "markup": "SECTION 01 / 06",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/2/1/2/2/3/1/3/0",
+    "type": "text",
+    "value": "How a Discussion Round Works",
+    "markup": "How a Discussion Round Works",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/2/1/2/2/3/1/5/0",
+    "type": "text",
+    "value": "Every 60-minute Discussion round includes two kinds of contributions. Strong participants know when the group needs structure—and when it needs ideas and evidence.",
+    "markup": "Every 60-minute Discussion round includes two kinds of contributions. Strong participants know when the group needs structure—and when it needs ideas and evidence.",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/2/1/2/2/3/1/7/1/0/0",
+    "type": "text",
+    "value": "01 · STRUCTURE",
+    "markup": "01 · STRUCTURE",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/2/1/2/2/3/1/7/1/2/0",
+    "type": "text",
+    "value": "Procedural",
+    "markup": "Procedural",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/2/1/2/2/3/1/7/1/4/0",
+    "type": "text",
+    "value": "Provides structure, organization, and focus. It helps the group work effectively without directly developing solutions.",
+    "markup": "Provides structure, organization, and focus. It helps the group work effectively without directly developing solutions.",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/2/1/2/2/3/1/7/1/6/1/0",
+    "type": "text",
+    "value": "Clarify the task",
+    "markup": "Clarify the task",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/2/1/2/2/3/1/7/1/6/3/0",
+    "type": "text",
+    "value": "Set an agenda",
+    "markup": "Set an agenda",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/2/1/2/2/3/1/7/1/6/5/0",
+    "type": "text",
+    "value": "Manage time and focus",
+    "markup": "Manage time and focus",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/2/1/2/2/3/1/7/1/6/7/0",
+    "type": "text",
+    "value": "Organize the discussion",
+    "markup": "Organize the discussion",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/2/1/2/2/3/1/7/3/0/0",
+    "type": "text",
+    "value": "02 · CONTENT",
+    "markup": "02 · CONTENT",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/2/1/2/2/3/1/7/3/2/0",
+    "type": "text",
+    "value": "Substantive",
+    "markup": "Substantive",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/2/1/2/2/3/1/7/3/4/0",
+    "type": "text",
+    "value": "Develops ideas, introduces evidence, evaluates possibilities, and moves the group toward solving the task.",
+    "markup": "Develops ideas, introduces evidence, evaluates possibilities, and moves the group toward solving the task.",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/2/1/2/2/3/1/7/3/6/1/0",
+    "type": "text",
+    "value": "Share research and evidence",
+    "markup": "Share research and evidence",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/2/1/2/2/3/1/7/3/6/3/0",
+    "type": "text",
+    "value": "Explain causes or effects",
+    "markup": "Explain causes or effects",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/2/1/2/2/3/1/7/3/6/5/0",
+    "type": "text",
+    "value": "Evaluate solutions",
+    "markup": "Evaluate solutions",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/2/1/2/2/3/1/7/3/6/7/0",
+    "type": "text",
+    "value": "Synthesize viewpoints",
+    "markup": "Synthesize viewpoints",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/2/1/2/2/3/1/9/1/0",
+    "type": "text",
+    "value": "Classify the Contribution",
+    "markup": "Classify the Contribution",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/2/1/2/2/3/1/9/3/0",
+    "type": "text",
+    "value": "Read one statement at a time. Choose the contribution type to see why it fits.",
+    "markup": "Read one statement at a time. Choose the contribution type to see why it fits.",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/2/1/2/2/3/1/9/9/0/0",
+    "type": "text",
+    "value": "Procedural",
+    "markup": "Procedural",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/2/1/2/2/3/1/9/9/2/0",
+    "type": "text",
+    "value": "Substantive",
+    "markup": "Substantive",
+    "status": "initial-markup",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/2/1/2/2/3/1/9/12/0",
+    "type": "text",
+    "value": "Next statement →",
+    "markup": "Next statement →",
+    "status": "hidden-or-alternative",
+    "section": "view-0"
+  },
+  {
+    "identity": "html/2/1/2/2/3/3/1/0",
+    "type": "text",
+    "value": "SECTION 02 / 06",
+    "markup": "SECTION 02 / 06",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/2/1/2/2/3/3/3/0",
+    "type": "text",
+    "value": "What Happens at the Start of a Round?",
+    "markup": "What Happens at the Start of a Round?",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/2/1/2/2/3/3/5/0",
+    "type": "text",
+    "value": "A Discussion round lasts 60 minutes. Its opening gives the group a shared understanding of the task and a direction for working together. Open each step to learn more.",
+    "markup": "A Discussion round lasts 60 minutes. Its opening gives the group a shared understanding of the task and a direction for working together. Open each step to learn more.",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/2/1/2/2/3/3/7/1/0",
+    "type": "text",
+    "value": "The opening sequence",
+    "markup": "The opening sequence",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/2/1/2/2/3/3/7/3/1/0",
+    "type": "text",
+    "value": "1. Receive the Task ",
+    "markup": "1. Receive the Task <span aria-hidden=\"true\">＋</span>",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/2/1/2/2/3/3/7/3/1/1/0",
+    "type": "text",
+    "value": "＋",
+    "markup": "＋",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/2/1/2/2/3/3/7/3/3/0",
+    "type": "text",
+    "value": "The task may arrive on paper or electronically. Wait until the judge and participants are ready before beginning.",
+    "markup": "The task may arrive on paper or electronically. Wait until the judge and participants are ready before beginning.",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/2/1/2/2/3/3/7/5/1/0",
+    "type": "text",
+    "value": "2. Read and Analyze the Task ",
+    "markup": "2. Read and Analyze the Task <span aria-hidden=\"true\">＋</span>",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/2/1/2/2/3/3/7/5/1/1/0",
+    "type": "text",
+    "value": "＋",
+    "markup": "＋",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/2/1/2/2/3/3/7/5/3/0",
+    "type": "text",
+    "value": "Read the task silently. The group usually asks someone to read it once aloud. Use this time to identify WHO, WHAT, HOW, WHERE, and useful SEARCH TERMS.",
+    "markup": "Read the task silently. The group usually asks someone to read it once aloud. Use this time to identify WHO, WHAT, HOW, WHERE, and useful SEARCH TERMS.",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/2/1/2/2/3/3/7/7/1/0",
+    "type": "text",
+    "value": "3. Clarify the Task ",
+    "markup": "3. Clarify the Task <span aria-hidden=\"true\">＋</span>",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/2/1/2/2/3/3/7/7/1/1/0",
+    "type": "text",
+    "value": "＋",
+    "markup": "＋",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/2/1/2/2/3/3/7/7/3/0",
+    "type": "text",
+    "value": "Discuss what the task means. Reach a shared understanding of what the group must accomplish.",
+    "markup": "Discuss what the task means. Reach a shared understanding of what the group must accomplish.",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/2/1/2/2/3/3/7/9/1/0",
+    "type": "text",
+    "value": "4. Establish Direction ",
+    "markup": "4. Establish Direction <span aria-hidden=\"true\">＋</span>",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/2/1/2/2/3/3/7/9/1/1/0",
+    "type": "text",
+    "value": "＋",
+    "markup": "＋",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/2/1/2/2/3/3/7/9/3/0",
+    "type": "text",
+    "value": "After clarification, develop an agenda or propose a consensus question based on the task.",
+    "markup": "After clarification, develop an agenda or propose a consensus question based on the task.",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/2/1/2/2/3/3/7/11/1/0",
+    "type": "text",
+    "value": "5. Research ",
+    "markup": "5. Research <span aria-hidden=\"true\">＋</span>",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/2/1/2/2/3/3/7/11/1/1/0",
+    "type": "text",
+    "value": "＋",
+    "markup": "＋",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/2/1/2/2/3/3/7/11/3/0",
+    "type": "text",
+    "value": "Students typically spend approximately five minutes locating useful evidence in their research materials.",
+    "markup": "Students typically spend approximately five minutes locating useful evidence in their research materials.",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/2/1/2/2/3/3/7/13/1/0",
+    "type": "text",
+    "value": "6. Transition into Background and Discussion ",
+    "markup": "6. Transition into Background and Discussion <span aria-hidden=\"true\">＋</span>",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/2/1/2/2/3/3/7/13/1/1/0",
+    "type": "text",
+    "value": "＋",
+    "markup": "＋",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/2/1/2/2/3/3/7/13/3/0",
+    "type": "text",
+    "value": "Share essential background and move into substantive discussion. Re-clarify only if an important uncertainty remains.",
+    "markup": "Share essential background and move into substantive discussion. Re-clarify only if an important uncertainty remains.",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/2/1/2/2/3/3/9/0",
+    "type": "text",
+    "value": "Order matters: clarify what the task requires before setting an agenda.",
+    "markup": "Order matters: clarify what the task requires before setting an agenda.",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/2/1/2/2/3/3/11/0/0",
+    "type": "text",
+    "value": "Opening sequence checkpoint",
+    "markup": "Opening sequence checkpoint",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/2/1/2/2/3/3/11/1/0",
+    "type": "text",
+    "value": "After exploring all six stages, what should the group do before establishing direction?",
+    "markup": "After exploring all six stages, what should the group do before establishing direction?",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/2/1/2/2/3/3/11/2/0/0",
+    "type": "text",
+    "value": "Begin proposing solutions immediately",
+    "markup": "Begin proposing solutions immediately",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/2/1/2/2/3/3/11/2/1/0",
+    "type": "text",
+    "value": "Clarify the task and reach shared understanding",
+    "markup": "Clarify the task and reach shared understanding",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/2/1/2/2/3/3/11/2/2/0",
+    "type": "text",
+    "value": "Vote on a discussion leader",
+    "markup": "Vote on a discussion leader",
+    "status": "hidden-or-alternative",
+    "section": "view-1"
+  },
+  {
+    "identity": "html/2/1/2/2/3/5/1/0",
+    "type": "text",
+    "value": "SECTION 03 / 06",
+    "markup": "SECTION 03 / 06",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/2/1/2/2/3/5/3/0",
+    "type": "text",
+    "value": "Decoding a Complex Task",
+    "markup": "Decoding a Complex Task",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/2/1/2/2/3/5/5/0",
+    "type": "text",
+    "value": "Five questions turn a dense task into a practical plan.",
+    "markup": "Five questions turn a dense task into a practical plan.",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/2/1/2/2/3/5/7/1/1/0",
+    "type": "text",
+    "value": "WHO",
+    "markup": "WHO",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/2/1/2/2/3/5/7/1/3/0",
+    "type": "text",
+    "value": "What role is the group playing? What authority does it have?",
+    "markup": "What role is the group playing? What authority does it have?",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/2/1/2/2/3/5/7/3/1/0",
+    "type": "text",
+    "value": "WHAT",
+    "markup": "WHAT",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/2/1/2/2/3/5/7/3/3/0",
+    "type": "text",
+    "value": "What central problem is the group trying to solve?",
+    "markup": "What central problem is the group trying to solve?",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/2/1/2/2/3/5/7/5/1/0",
+    "type": "text",
+    "value": "HOW",
+    "markup": "HOW",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/2/1/2/2/3/5/7/5/3/0",
+    "type": "text",
+    "value": "What actions or final deliverables are required?",
+    "markup": "What actions or final deliverables are required?",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/2/1/2/2/3/5/7/7/1/0",
+    "type": "text",
+    "value": "WHERE",
+    "markup": "WHERE",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/2/1/2/2/3/5/7/7/3/0",
+    "type": "text",
+    "value": "Where does the problem occur, and where will solutions be implemented?",
+    "markup": "Where does the problem occur, and where will solutions be implemented?",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/2/1/2/2/3/5/7/9/1/0",
+    "type": "text",
+    "value": "SEARCH TERMS",
+    "markup": "SEARCH TERMS",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/2/1/2/2/3/5/7/9/3/0",
+    "type": "text",
+    "value": "Which keywords, organizations, and concepts will locate useful research?",
+    "markup": "Which keywords, organizations, and concepts will locate useful research?",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/2/1/2/2/3/5/9/0",
+    "type": "text",
+    "value": "Remember: WHAT identifies the problem. HOW identifies what the group must do about it.",
+    "markup": "Remember: WHAT identifies the problem. HOW identifies what the group must do about it.",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/2/1/2/2/3/5/11/1/0",
+    "type": "text",
+    "value": "Analyze the Task",
+    "markup": "Analyze the Task",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/2/1/2/2/3/5/11/3/0",
+    "type": "text",
+    "value": "Select a category to highlight relevant language and reveal its meaning.",
+    "markup": "Select a category to highlight relevant language and reveal its meaning.",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/2/1/2/2/3/5/11/5/0",
+    "type": "text",
+    "value": "\n                            Mental health issues have long been stigmatized in the United States and most of the world. While this problem has decreased over time, it is still far too prevalent for many who suffer from these illnesses. You are ",
+    "markup": "\n                            Mental health issues have long been stigmatized in the United States and most of the world. While this problem has decreased over time, it is still far too prevalent for many who suffer from these illnesses. You are <span class=\"task-mark\" data-kind=\"who\">members of the American School Counselor Association</span>, meeting at their <span class=\"task-mark\" data-kind=\"where\">national convention</span> to discuss more active methods to combat mental illness. Your goal is to <span class=\"task-mark\" data-kind=\"how\">examine what effects</span> the <span class=\"task-mark\" data-kind=\"what\">stigmatization of mental illness still has on K-12 students</span> and <span class=\"task-mark\" data-kind=\"how\">craft a plan which can be implemented by counselors</span> at <span class=\"task-mark\" data-kind=\"where\">their schools</span> to support these children.\n                        ",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/2/1/2/2/3/5/11/5/1/0",
+    "type": "text",
+    "value": "members of the American School Counselor Association",
+    "markup": "members of the American School Counselor Association",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/2/1/2/2/3/5/11/5/2",
+    "type": "text",
+    "value": ", meeting at their ",
+    "markup": "\n                            Mental health issues have long been stigmatized in the United States and most of the world. While this problem has decreased over time, it is still far too prevalent for many who suffer from these illnesses. You are <span class=\"task-mark\" data-kind=\"who\">members of the American School Counselor Association</span>, meeting at their <span class=\"task-mark\" data-kind=\"where\">national convention</span> to discuss more active methods to combat mental illness. Your goal is to <span class=\"task-mark\" data-kind=\"how\">examine what effects</span> the <span class=\"task-mark\" data-kind=\"what\">stigmatization of mental illness still has on K-12 students</span> and <span class=\"task-mark\" data-kind=\"how\">craft a plan which can be implemented by counselors</span> at <span class=\"task-mark\" data-kind=\"where\">their schools</span> to support these children.\n                        ",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/2/1/2/2/3/5/11/5/3/0",
+    "type": "text",
+    "value": "national convention",
+    "markup": "national convention",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/2/1/2/2/3/5/11/5/4",
+    "type": "text",
+    "value": " to discuss more active methods to combat mental illness. Your goal is to ",
+    "markup": "\n                            Mental health issues have long been stigmatized in the United States and most of the world. While this problem has decreased over time, it is still far too prevalent for many who suffer from these illnesses. You are <span class=\"task-mark\" data-kind=\"who\">members of the American School Counselor Association</span>, meeting at their <span class=\"task-mark\" data-kind=\"where\">national convention</span> to discuss more active methods to combat mental illness. Your goal is to <span class=\"task-mark\" data-kind=\"how\">examine what effects</span> the <span class=\"task-mark\" data-kind=\"what\">stigmatization of mental illness still has on K-12 students</span> and <span class=\"task-mark\" data-kind=\"how\">craft a plan which can be implemented by counselors</span> at <span class=\"task-mark\" data-kind=\"where\">their schools</span> to support these children.\n                        ",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/2/1/2/2/3/5/11/5/5/0",
+    "type": "text",
+    "value": "examine what effects",
+    "markup": "examine what effects",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/2/1/2/2/3/5/11/5/6",
+    "type": "text",
+    "value": " the ",
+    "markup": "\n                            Mental health issues have long been stigmatized in the United States and most of the world. While this problem has decreased over time, it is still far too prevalent for many who suffer from these illnesses. You are <span class=\"task-mark\" data-kind=\"who\">members of the American School Counselor Association</span>, meeting at their <span class=\"task-mark\" data-kind=\"where\">national convention</span> to discuss more active methods to combat mental illness. Your goal is to <span class=\"task-mark\" data-kind=\"how\">examine what effects</span> the <span class=\"task-mark\" data-kind=\"what\">stigmatization of mental illness still has on K-12 students</span> and <span class=\"task-mark\" data-kind=\"how\">craft a plan which can be implemented by counselors</span> at <span class=\"task-mark\" data-kind=\"where\">their schools</span> to support these children.\n                        ",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/2/1/2/2/3/5/11/5/7/0",
+    "type": "text",
+    "value": "stigmatization of mental illness still has on K-12 students",
+    "markup": "stigmatization of mental illness still has on K-12 students",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/2/1/2/2/3/5/11/5/8",
+    "type": "text",
+    "value": " and ",
+    "markup": "\n                            Mental health issues have long been stigmatized in the United States and most of the world. While this problem has decreased over time, it is still far too prevalent for many who suffer from these illnesses. You are <span class=\"task-mark\" data-kind=\"who\">members of the American School Counselor Association</span>, meeting at their <span class=\"task-mark\" data-kind=\"where\">national convention</span> to discuss more active methods to combat mental illness. Your goal is to <span class=\"task-mark\" data-kind=\"how\">examine what effects</span> the <span class=\"task-mark\" data-kind=\"what\">stigmatization of mental illness still has on K-12 students</span> and <span class=\"task-mark\" data-kind=\"how\">craft a plan which can be implemented by counselors</span> at <span class=\"task-mark\" data-kind=\"where\">their schools</span> to support these children.\n                        ",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/2/1/2/2/3/5/11/5/9/0",
+    "type": "text",
+    "value": "craft a plan which can be implemented by counselors",
+    "markup": "craft a plan which can be implemented by counselors",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/2/1/2/2/3/5/11/5/10",
+    "type": "text",
+    "value": " at ",
+    "markup": "\n                            Mental health issues have long been stigmatized in the United States and most of the world. While this problem has decreased over time, it is still far too prevalent for many who suffer from these illnesses. You are <span class=\"task-mark\" data-kind=\"who\">members of the American School Counselor Association</span>, meeting at their <span class=\"task-mark\" data-kind=\"where\">national convention</span> to discuss more active methods to combat mental illness. Your goal is to <span class=\"task-mark\" data-kind=\"how\">examine what effects</span> the <span class=\"task-mark\" data-kind=\"what\">stigmatization of mental illness still has on K-12 students</span> and <span class=\"task-mark\" data-kind=\"how\">craft a plan which can be implemented by counselors</span> at <span class=\"task-mark\" data-kind=\"where\">their schools</span> to support these children.\n                        ",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/2/1/2/2/3/5/11/5/11/0",
+    "type": "text",
+    "value": "their schools",
+    "markup": "their schools",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/2/1/2/2/3/5/11/5/12",
+    "type": "text",
+    "value": " to support these children.\n                        ",
+    "markup": "\n                            Mental health issues have long been stigmatized in the United States and most of the world. While this problem has decreased over time, it is still far too prevalent for many who suffer from these illnesses. You are <span class=\"task-mark\" data-kind=\"who\">members of the American School Counselor Association</span>, meeting at their <span class=\"task-mark\" data-kind=\"where\">national convention</span> to discuss more active methods to combat mental illness. Your goal is to <span class=\"task-mark\" data-kind=\"how\">examine what effects</span> the <span class=\"task-mark\" data-kind=\"what\">stigmatization of mental illness still has on K-12 students</span> and <span class=\"task-mark\" data-kind=\"how\">craft a plan which can be implemented by counselors</span> at <span class=\"task-mark\" data-kind=\"where\">their schools</span> to support these children.\n                        ",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/2/1/2/2/3/5/11/7@aria-label",
+    "type": "aria-label",
+    "value": "Task-analysis categories",
+    "status": "attribute",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/2/1/2/2/3/5/11/7/0/0",
+    "type": "text",
+    "value": "WHO",
+    "markup": "WHO",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/2/1/2/2/3/5/11/7/2/0",
+    "type": "text",
+    "value": "WHAT",
+    "markup": "WHAT",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/2/1/2/2/3/5/11/7/4/0",
+    "type": "text",
+    "value": "HOW",
+    "markup": "HOW",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/2/1/2/2/3/5/11/7/6/0",
+    "type": "text",
+    "value": "WHERE",
+    "markup": "WHERE",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/2/1/2/2/3/5/11/7/8/0",
+    "type": "text",
+    "value": "TERMS",
+    "markup": "TERMS",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/2/1/2/2/3/5/11/9/0",
+    "type": "text",
+    "value": "Choose a category to reveal an answer.",
+    "markup": "Choose a category to reveal an answer.",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/2/1/2/2/3/5/11/11/0",
+    "type": "text",
+    "value": "Search terms are drawn from concepts throughout the task, rather than one continuous phrase.",
+    "markup": "Search terms are drawn from concepts throughout the task, rather than one continuous phrase.",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/2/1/2/2/3/5/13/1/0",
+    "type": "text",
+    "value": "Quick check: WHAT or HOW?",
+    "markup": "Quick check: WHAT or HOW?",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/2/1/2/2/3/5/13/3/0",
+    "type": "text",
+    "value": "Which option identifies the task's WHAT?",
+    "markup": "Which option identifies the task's WHAT?",
+    "status": "hidden-or-alternative",
+    "section": "view-2"
+  },
+  {
+    "identity": "html/2/1/2/2/3/7/1/0",
+    "type": "text",
+    "value": "SECTION 04 / 06",
+    "markup": "SECTION 04 / 06",
+    "status": "hidden-or-alternative",
+    "section": "view-3"
+  },
+  {
+    "identity": "html/2/1/2/2/3/7/3/0",
+    "type": "text",
+    "value": "Make Sure Everyone Understands the Task",
+    "markup": "Make Sure Everyone Understands the Task",
+    "status": "hidden-or-alternative",
+    "section": "view-3"
+  },
+  {
+    "identity": "html/2/1/2/2/3/7/5/0",
+    "type": "text",
+    "value": "Clarifications happen after reading the task and before discussing solutions. The goal is shared understanding—not an early argument about which solution wins.",
+    "markup": "Clarifications happen after reading the task and before discussing solutions. The goal is shared understanding—not an early argument about which solution wins.",
+    "status": "hidden-or-alternative",
+    "section": "view-3"
+  },
+  {
+    "identity": "html/2/1/2/2/3/7/7/1/0",
+    "type": "text",
+    "value": "Clarify four essentials",
+    "markup": "Clarify four essentials",
+    "status": "hidden-or-alternative",
+    "section": "view-3"
+  },
+  {
+    "identity": "html/2/1/2/2/3/7/7/3/1/0",
+    "type": "text",
+    "value": "✓ The group's assigned role",
+    "markup": "✓ The group's assigned role",
+    "status": "hidden-or-alternative",
+    "section": "view-3"
+  },
+  {
+    "identity": "html/2/1/2/2/3/7/7/3/3/0",
+    "type": "text",
+    "value": "✓ The central problem",
+    "markup": "✓ The central problem",
+    "status": "hidden-or-alternative",
+    "section": "view-3"
+  },
+  {
+    "identity": "html/2/1/2/2/3/7/7/3/5/0",
+    "type": "text",
+    "value": "✓ The actions required",
+    "markup": "✓ The actions required",
+    "status": "hidden-or-alternative",
+    "section": "view-3"
+  },
+  {
+    "identity": "html/2/1/2/2/3/7/7/3/7/0",
+    "type": "text",
+    "value": "✓ The final product or deliverable",
+    "markup": "✓ The final product or deliverable",
+    "status": "hidden-or-alternative",
+    "section": "view-3"
+  },
+  {
+    "identity": "html/2/1/2/2/3/7/9/0",
+    "type": "text",
+    "value": "Participate constructively: ask useful questions, listen carefully, and help resolve uncertainty before the group chooses its direction.",
+    "markup": "Participate constructively: ask useful questions, listen carefully, and help resolve uncertainty before the group chooses its direction.",
+    "status": "hidden-or-alternative",
+    "section": "view-3"
+  },
+  {
+    "identity": "html/2/1/2/2/3/7/11/1/0",
+    "type": "text",
+    "value": "Decision point",
+    "markup": "Decision point",
+    "status": "hidden-or-alternative",
+    "section": "view-3"
+  },
+  {
+    "identity": "html/2/1/2/2/3/7/11/3/0",
+    "type": "text",
+    "value": "\n                            “Let's spend 20 minutes discussing possible counseling programs.”\n                        ",
+    "markup": "\n                            “Let's spend 20 minutes discussing possible counseling programs.”\n                        ",
+    "status": "hidden-or-alternative",
+    "section": "view-3"
+  },
+  {
+    "identity": "html/2/1/2/2/3/7/11/5/0",
+    "type": "text",
+    "value": "What should the group do before accepting this agenda?",
+    "markup": "What should the group do before accepting this agenda?",
+    "status": "hidden-or-alternative",
+    "section": "view-3"
+  },
+  {
+    "identity": "html/2/1/2/2/3/9/1/0",
+    "type": "text",
+    "value": "SECTION 05 / 06",
+    "markup": "SECTION 05 / 06",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/2/1/2/2/3/9/3/0",
+    "type": "text",
+    "value": "Give the Discussion Direction",
+    "markup": "Give the Discussion Direction",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/2/1/2/2/3/9/5/0",
+    "type": "text",
+    "value": "Once the task is clear, the group can choose a roadmap, a destination, or both.",
+    "markup": "Once the task is clear, the group can choose a roadmap, a destination, or both.",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/2/1/2/2/3/9/7/1/1/0",
+    "type": "text",
+    "value": "\n                                ↗\n                            ",
+    "markup": "\n                                ↗\n                            ",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/2/1/2/2/3/9/7/1/3/0",
+    "type": "text",
+    "value": "Agenda = Roadmap",
+    "markup": "Agenda = Roadmap",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/2/1/2/2/3/9/7/1/5/0",
+    "type": "text",
+    "value": "An agenda organizes stages and may suggest flexible time limits. Build it from the task's requirements, especially HOW—not before clarification.",
+    "markup": "An agenda organizes stages and may suggest flexible time limits. Build it from the task's requirements, especially HOW—not before clarification.",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/2/1/2/2/3/9/7/1/7/1/0",
+    "type": "text",
+    "value": "Share relevant background research.",
+    "markup": "Share relevant background research.",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/2/1/2/2/3/9/7/1/7/3/0",
+    "type": "text",
+    "value": "Examine major effects of stigma on K-12 students.",
+    "markup": "Examine major effects of stigma on K-12 students.",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/2/1/2/2/3/9/7/1/7/5/0",
+    "type": "text",
+    "value": "Develop components of a counselor plan.",
+    "markup": "Develop components of a counselor plan.",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/2/1/2/2/3/9/7/1/7/7/0",
+    "type": "text",
+    "value": "Agree on recommendations.",
+    "markup": "Agree on recommendations.",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/2/1/2/2/3/9/7/1/7/9/0",
+    "type": "text",
+    "value": "Summarize the final plan.",
+    "markup": "Summarize the final plan.",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/2/1/2/2/3/9/7/3/1/0",
+    "type": "text",
+    "value": "\n                                ◎\n                            ",
+    "markup": "\n                                ◎\n                            ",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/2/1/2/2/3/9/7/3/3/0",
+    "type": "text",
+    "value": "Consensus Question = Destination",
+    "markup": "Consensus Question = Destination",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/2/1/2/2/3/9/7/3/5/0",
+    "type": "text",
+    "value": "A consensus question defines what the group should agree it has accomplished by the end. It joins WHAT with HOW and helps maintain focus without a rigid schedule.",
+    "markup": "A consensus question defines what the group should agree it has accomplished by the end. It joins WHAT with HOW and helps maintain focus without a rigid schedule.",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/2/1/2/2/3/9/7/3/7/0",
+    "type": "text",
+    "value": "\n                                “By the end of this discussion, will the group agree that we have crafted a plan counselors could implement in K-12 schools to support students affected by mental health stigma?”\n                            ",
+    "markup": "\n                                “By the end of this discussion, will the group agree that we have crafted a plan counselors could implement in K-12 schools to support students affected by mental health stigma?”\n                            ",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/2/1/2/2/3/9/9/1/0",
+    "type": "text",
+    "value": "Build a Consensus Question",
+    "markup": "Build a Consensus Question",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/2/1/2/2/3/9/9/3/0",
+    "type": "text",
+    "value": "Write the problem and required accomplishment. Your draft is yours to edit; compare it with the model rather than expecting an automatic grade.",
+    "markup": "Write the problem and required accomplishment. Your draft is yours to edit; compare it with the model rather than expecting an automatic grade.",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/2/1/2/2/3/9/9/5/1/1/0",
+    "type": "text",
+    "value": "What is the central problem?",
+    "markup": "What is the central problem?",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/2/1/2/2/3/9/9/5/1/2@placeholder",
+    "type": "placeholder",
+    "value": "e.g., mental health stigma affecting K-12 students",
+    "status": "attribute",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/2/1/2/2/3/9/9/5/3/1/0",
+    "type": "text",
+    "value": "What must the group accomplish?",
+    "markup": "What must the group accomplish?",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/2/1/2/2/3/9/9/5/3/2@placeholder",
+    "type": "placeholder",
+    "value": "e.g., crafted a plan counselors can implement",
+    "status": "attribute",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/2/1/2/2/3/9/9/5/4/0",
+    "type": "text",
+    "value": "Build my question",
+    "markup": "Build my question",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/2/1/2/2/3/9/9/7/0/0",
+    "type": "text",
+    "value": "Your editable question",
+    "markup": "Your editable question",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/2/1/2/2/3/9/9/7/2@placeholder",
+    "type": "placeholder",
+    "value": "Your question will appear here after you build it.",
+    "status": "attribute",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/2/1/2/2/3/9/9/7/4/1/0",
+    "type": "text",
+    "value": "Copy question",
+    "markup": "Copy question",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/2/1/2/2/3/9/9/7/4/2/0",
+    "type": "text",
+    "value": "Show model example",
+    "markup": "Show model example",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/2/1/2/2/3/9/9/7/8/0",
+    "type": "text",
+    "value": "Model: By the end of this discussion, will the group agree that we have crafted a plan counselors could implement in K-12 schools to support students affected by mental health stigma?",
+    "markup": "Model: By the end of this discussion, will the group agree that we have crafted a plan counselors could implement in K-12 schools to support students affected by mental health stigma?",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/2/1/2/2/3/9/11/0/0",
+    "type": "text",
+    "value": "Check your consensus question",
+    "markup": "Check your consensus question",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/2/1/2/2/3/9/11/1/0",
+    "type": "text",
+    "value": "After writing your own question, compare it with the model. Confirm that it identifies the problem and the accomplishment. This is a self-check, not automated grading.",
+    "markup": "After writing your own question, compare it with the model. Confirm that it identifies the problem and the accomplishment. This is a self-check, not automated grading.",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/2/1/2/2/3/9/11/2/1",
+    "type": "text",
+    "value": " My question connects WHAT (the problem) with HOW (the deliverable).",
+    "markup": "<input id=\"question-selfcheck\" type=\"checkbox\"> My question connects WHAT (the problem) with HOW (the deliverable).",
+    "status": "hidden-or-alternative",
+    "section": "view-4"
+  },
+  {
+    "identity": "html/2/1/2/2/3/11/1/0",
+    "type": "text",
+    "value": "SECTION 06 / 06",
+    "markup": "SECTION 06 / 06",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/2/1/2/2/3/11/3/0",
+    "type": "text",
+    "value": "From Structure to Substance",
+    "markup": "From Structure to Substance",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/2/1/2/2/3/11/5/0",
+    "type": "text",
+    "value": "Research and background sharing move the group from organizing its work to developing useful ideas.",
+    "markup": "Research and background sharing move the group from organizing its work to developing useful ideas.",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/2/1/2/2/3/11/7/1/1/0",
+    "type": "text",
+    "value": "01 · Research",
+    "markup": "01 · Research",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/2/1/2/2/3/11/7/1/3/0",
+    "type": "text",
+    "value": "Use approximately five minutes to locate evidence. Search with task terms, the season's research outline, and sources tied to the deliverable. Prepare verbal citations: publisher, publication date, and author or title when available.",
+    "markup": "Use approximately five minutes to locate evidence. Search with task terms, the season's research outline, and sources tied to the deliverable. Prepare verbal citations: publisher, publication date, and author or title when available.",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/2/1/2/2/3/11/7/3/1/0",
+    "type": "text",
+    "value": "02 · Background",
+    "markup": "02 · Background",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/2/1/2/2/3/11/7/3/3/0",
+    "type": "text",
+    "value": "Share useful definitions, essential context, and evidence relevant to the discussion. Help everyone start from a common understanding.",
+    "markup": "Share useful definitions, essential context, and evidence relevant to the discussion. Help everyone start from a common understanding.",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/2/1/2/2/3/11/7/5/1/0",
+    "type": "text",
+    "value": "03 · Re-clarification",
+    "markup": "03 · Re-clarification",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/2/1/2/2/3/11/7/5/3/0",
+    "type": "text",
+    "value": "If research exposes a real misunderstanding, resolve it briefly. Avoid repeating clarifications the group has already settled.",
+    "markup": "If research exposes a real misunderstanding, resolve it briefly. Avoid repeating clarifications the group has already settled.",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/2/1/2/2/3/11/9/1/0",
+    "type": "text",
+    "value": "What Would You Do?",
+    "markup": "What Would You Do?",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/2/1/2/2/3/11/9/3/0",
+    "type": "text",
+    "value": "Your group has finished its research period. Several members have useful sources, but one student wants to restart the entire clarification process even though the task is already understood.",
+    "markup": "Your group has finished its research period. Several members have useful sources, but one student wants to restart the entire clarification process even though the task is already understood.",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/2/1/2/2/3/11/9/5/0",
+    "type": "text",
+    "value": "What is the best response?",
+    "markup": "What is the best response?",
+    "status": "hidden-or-alternative",
+    "section": "view-5"
+  },
+  {
+    "identity": "html/2/1/2/2/3/13/1/0",
+    "type": "text",
+    "value": "FINAL KNOWLEDGE CHECK",
+    "markup": "FINAL KNOWLEDGE CHECK",
+    "status": "hidden-or-alternative",
+    "section": "view-6"
+  },
+  {
+    "identity": "html/2/1/2/2/3/13/3/0",
+    "type": "text",
+    "value": "Put the Opening Together",
+    "markup": "Put the Opening Together",
+    "status": "hidden-or-alternative",
+    "section": "view-6"
+  },
+  {
+    "identity": "html/2/1/2/2/3/13/5/0",
+    "type": "text",
+    "value": "Answer each question for immediate feedback. You can retry missed questions after completing all five.",
+    "markup": "Answer each question for immediate feedback. You can retry missed questions after completing all five.",
+    "status": "hidden-or-alternative",
+    "section": "view-6"
+  },
+  {
+    "identity": "html/2/1/2/2/3/13/9/1/0",
+    "type": "text",
+    "value": "Lesson complete",
+    "markup": "Lesson complete",
+    "status": "hidden-or-alternative",
+    "section": "view-6"
+  },
+  {
+    "identity": "html/2/1/2/2/3/13/9/6/0",
+    "type": "text",
+    "value": "Retry missed questions",
+    "markup": "Retry missed questions",
+    "status": "hidden-or-alternative",
+    "section": "view-6"
+  },
+  {
+    "identity": "html/2/1/2/2/3/15/1/0",
+    "type": "text",
+    "value": "QUICK REFERENCE",
+    "markup": "QUICK REFERENCE",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/2/1/2/2/3/15/3/1/0/0",
+    "type": "text",
+    "value": "Print quick reference",
+    "markup": "Print quick reference",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/2/1/2/2/3/15/3/2/1/1/0",
+    "type": "text",
+    "value": "Opening Stage Quick Reference",
+    "markup": "Opening Stage Quick Reference",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/2/1/2/2/3/15/3/2/2/0",
+    "type": "text",
+    "value": "60-MINUTE ROUND",
+    "markup": "60-MINUTE ROUND",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/2/1/2/2/3/15/3/4/1/1/1/0",
+    "type": "text",
+    "value": "01",
+    "markup": "01",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/2/1/2/2/3/15/3/4/1/1/3/0",
+    "type": "text",
+    "value": "Opening sequence",
+    "markup": "Opening sequence",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/2/1/2/2/3/15/3/4/1/3/1/0",
+    "type": "text",
+    "value": "\n                                        Receive\n                                    ",
+    "markup": "\n                                        Receive\n                                    ",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/2/1/2/2/3/15/3/4/1/3/3/0",
+    "type": "text",
+    "value": "\n                                        Read and Analyze\n                                    ",
+    "markup": "\n                                        Read and Analyze\n                                    ",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/2/1/2/2/3/15/3/4/1/3/5/0",
+    "type": "text",
+    "value": "\n                                        Clarify\n                                    ",
+    "markup": "\n                                        Clarify\n                                    ",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/2/1/2/2/3/15/3/4/1/3/7/0",
+    "type": "text",
+    "value": "\n                                        Set direction\n                                    ",
+    "markup": "\n                                        Set direction\n                                    ",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/2/1/2/2/3/15/3/4/1/3/9/0",
+    "type": "text",
+    "value": "\n                                        Research\n                                    ",
+    "markup": "\n                                        Research\n                                    ",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/2/1/2/2/3/15/3/4/1/3/11/0",
+    "type": "text",
+    "value": "\n                                        Transition\n                                    ",
+    "markup": "\n                                        Transition\n                                    ",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/2/1/2/2/3/15/3/4/1/5/0",
+    "type": "text",
+    "value": "IMPORTANT: Read, analyze, and clarify the task before setting an agenda!",
+    "markup": "IMPORTANT: Read, analyze, and clarify the task before setting an agenda!",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/2/1/2/2/3/15/3/4/3/1/1/0",
+    "type": "text",
+    "value": "02",
+    "markup": "02",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/2/1/2/2/3/15/3/4/3/1/3/0",
+    "type": "text",
+    "value": "Task analysis",
+    "markup": "Task analysis",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/2/1/2/2/3/15/3/4/3/3/1/0/0",
+    "type": "text",
+    "value": "WHO",
+    "markup": "WHO",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/2/1/2/2/3/15/3/4/3/3/1/2",
+    "type": "text",
+    "value": "\n             role + authority",
+    "markup": "<b class=\"text-[#17619e]\">WHO</b><br>\n             role + authority",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/2/1/2/2/3/15/3/4/3/3/2/0/0",
+    "type": "text",
+    "value": "WHAT",
+    "markup": "WHAT",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/2/1/2/2/3/15/3/4/3/3/2/2",
+    "type": "text",
+    "value": "\n             central problem",
+    "markup": "<b class=\"text-[#a64f0b]\">WHAT</b><br>\n             central problem",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/2/1/2/2/3/15/3/4/3/3/3/0/0",
+    "type": "text",
+    "value": "HOW",
+    "markup": "HOW",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/2/1/2/2/3/15/3/4/3/3/3/2",
+    "type": "text",
+    "value": "\n             action + deliverable",
+    "markup": "<b class=\"text-[#176741]\">HOW</b><br>\n             action + deliverable",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/2/1/2/2/3/15/3/4/3/3/4/0/0",
+    "type": "text",
+    "value": "WHERE",
+    "markup": "WHERE",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/2/1/2/2/3/15/3/4/3/3/4/2",
+    "type": "text",
+    "value": "\n             setting + implementation",
+    "markup": "<b class=\"text-[#70419e]\">WHERE</b><br>\n             setting + implementation",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/2/1/2/2/3/15/3/4/3/5/0/0",
+    "type": "text",
+    "value": "TERMS",
+    "markup": "TERMS",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/2/1/2/2/3/15/3/4/3/5/1",
+    "type": "text",
+    "value": " are the keywords that guide research.\n                                ",
+    "markup": "<b>TERMS</b> are the keywords that guide research.\n                                ",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/2/1/2/2/3/15/3/4/5/1/1/0",
+    "type": "text",
+    "value": "03",
+    "markup": "03",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/2/1/2/2/3/15/3/4/5/1/3/0",
+    "type": "text",
+    "value": "Types of contributions",
+    "markup": "Types of contributions",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/2/1/2/2/3/15/3/4/5/3/1/1/0",
+    "type": "text",
+    "value": "Procedural",
+    "markup": "Procedural",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/2/1/2/2/3/15/3/4/5/3/1/3/0",
+    "type": "text",
+    "value": "structure, organization, focus",
+    "markup": "structure, organization, focus",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/2/1/2/2/3/15/3/4/5/3/3/1/0",
+    "type": "text",
+    "value": "Substantive",
+    "markup": "Substantive",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/2/1/2/2/3/15/3/4/5/3/3/3/0",
+    "type": "text",
+    "value": "ideas, evidence, evaluation, synthesis",
+    "markup": "ideas, evidence, evaluation, synthesis",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/2/1/2/2/3/15/3/4/7/1/1/0",
+    "type": "text",
+    "value": "04",
+    "markup": "04",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/2/1/2/2/3/15/3/4/7/1/3/0",
+    "type": "text",
+    "value": "Direction and terminology",
+    "markup": "Direction and terminology",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/2/1/2/2/3/15/3/4/7/3/1/1/0",
+    "type": "text",
+    "value": "Agenda",
+    "markup": "Agenda",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/2/1/2/2/3/15/3/4/7/3/1/3/0",
+    "type": "text",
+    "value": "Flexible roadmap",
+    "markup": "Flexible roadmap",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/2/1/2/2/3/15/3/4/7/3/3/1/0",
+    "type": "text",
+    "value": "Consensus question",
+    "markup": "Consensus question",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/2/1/2/2/3/15/3/4/7/3/3/3/0",
+    "type": "text",
+    "value": "Destination combining WHAT + HOW",
+    "markup": "Destination combining WHAT + HOW",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/2/1/2/2/3/15/3/4/7/3/5/1/0",
+    "type": "text",
+    "value": "Clarification",
+    "markup": "Clarification",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/2/1/2/2/3/15/3/4/7/3/5/3/0",
+    "type": "text",
+    "value": "Shared understanding",
+    "markup": "Shared understanding",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/2/1/2/2/3/15/3/4/7/3/7/1/0",
+    "type": "text",
+    "value": "Verbal citation",
+    "markup": "Verbal citation",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/2/1/2/2/3/15/3/4/7/3/7/3/0",
+    "type": "text",
+    "value": "Publisher, date, author or title",
+    "markup": "Publisher, date, author or title",
+    "status": "hidden-or-alternative",
+    "section": "view-7"
+  },
+  {
+    "identity": "html/2/1/2/2/3/17/0/0",
+    "type": "text",
+    "value": "← Previous",
+    "markup": "← Previous",
+    "status": "initial-markup",
+    "section": "shell"
+  },
+  {
+    "identity": "html/2/1/2/2/3/17/2/0",
+    "type": "text",
+    "value": "Next section →",
+    "markup": "Next section →",
+    "status": "initial-markup",
+    "section": "shell"
+  }
+]

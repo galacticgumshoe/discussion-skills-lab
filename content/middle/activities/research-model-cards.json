@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "research-model-cards",
+  "type": "flashcards",
+  "data": {
+    "items": [
+      {
+        "id": "weak-example",
+        "frontTitle": "WEAK · FICTIONAL EXAMPLE",
+        "backTitle": "WHY IT IS WEAK",
+        "frontSource": "bodies/weak-example-front.md",
+        "backSource": "bodies/weak-example-back.md"
+      },
+      {
+        "id": "stronger-example",
+        "frontTitle": "STRONGER",
+        "backTitle": "WHY IT IS STRONGER",
+        "frontSource": "bodies/stronger-example-front.md",
+        "backSource": "bodies/stronger-example-back.md"
+      }
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "note-classification",
+  "type": "note-classification",
+  "data": {
+    "chooseLabel": "Choose category",
+    "correctPrefix": "✓ Correct. ",
+    "wrongPrefix": "Try again. ",
+    "categories": [
+      {
+        "id": "problem-barriers",
+        "label": "A · Problem / barriers"
+      },
+      {
+        "id": "proposed-approach",
+        "label": "B · Proposed approach"
+      },
+      {
+        "id": "group-agreement",
+        "label": "C · Group agreement"
+      },
+      {
+        "id": "unresolved-issue",
+        "label": "D · Unresolved issue"
+      }
+    ],
+    "notes": [
+      {
+        "id": "maya-access",
+        "text": "Maya: Transportation barriers prevent some students from attending.",
+        "correctCategoryId": "problem-barriers",
+        "feedback": "Transportation is an access barrier."
+      },
+      {
+        "id": "jordan-cost",
+        "text": "Jordan: The group should consider program costs.",
+        "correctCategoryId": "problem-barriers",
+        "feedback": "Cost is an affordability concern."
+      },
+      {
+        "id": "avery-communication",
+        "text": "Avery: Students need clearer information about opportunities.",
+        "correctCategoryId": "problem-barriers",
+        "feedback": "Lack of awareness is a communication barrier."
+      },
+      {
+        "id": "sam-pilot",
+        "text": "Sam: A pilot could test the proposal before expansion.",
+        "correctCategoryId": "proposed-approach",
+        "feedback": "A pilot is a proposed implementation approach."
+      },
+      {
+        "id": "group-agreement",
+        "text": "All: Recommend a limited pilot combining transportation assistance and outreach.",
+        "correctCategoryId": "group-agreement",
+        "feedback": "This explicitly identifies the agreed recommendation."
+      },
+      {
+        "id": "funding-unresolved",
+        "text": "All: What funding source would support the pilot?",
+        "correctCategoryId": "unresolved-issue",
+        "feedback": "Funding remains unresolved; do not present it as settled."
+      }
+    ]
+  }
+}

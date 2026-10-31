@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "id": "knowledge-check",
+  "type": "question-sequence",
+  "profile": "opening-knowledge-check",
+  "data": {
+    "questions": [
+      {
+        "id": "substantive",
+        "prompt": "Which contribution is substantive?",
+        "correctOptionId": "research",
+        "options": [
+          {
+            "id": "clarify",
+            "text": "Asking the group to clarify the task",
+            "feedback": "Not quite. Research introduces evidence and develops the discussion's content."
+          },
+          {
+            "id": "research",
+            "text": "Introducing research about an issue's effects",
+            "feedback": "Correct. Research introduces evidence and develops the discussion's content."
+          },
+          {
+            "id": "time-limit",
+            "text": "Suggesting a time limit",
+            "feedback": "Not quite. Research introduces evidence and develops the discussion's content."
+          }
+        ]
+      },
+      {
+        "id": "opening-order",
+        "prompt": "Which opening sequence is in the right order?",
+        "correctOptionId": "clarify-before-direction",
+        "options": [
+          {
+            "id": "clarify-before-direction",
+            "text": "Read → Analyze → Clarify → Establish direction → Research",
+            "feedback": "Correct. Understand and clarify the task before setting direction; research follows."
+          },
+          {
+            "id": "agenda-before-clarify",
+            "text": "Read → Set agenda → Clarify → Research",
+            "feedback": "Not quite. Understand and clarify the task before setting direction; research follows."
+          },
+          {
+            "id": "research-first",
+            "text": "Research → Establish direction → Read → Clarify",
+            "feedback": "Not quite. Understand and clarify the task before setting direction; research follows."
+          }
+        ]
+      },
+      {
+        "id": "what-versus-how",
+        "prompt": "In task analysis, what is the difference between WHAT and HOW?",
+        "correctOptionId": "problem-deliverable",
+        "options": [
+          {
+            "id": "source-citation",
+            "text": "WHAT is a source; HOW is a citation.",
+            "feedback": "Not quite. WHAT names the problem. HOW names what the group needs to do about it."
+          },
+          {
+            "id": "problem-deliverable",
+            "text": "WHAT is the central problem; HOW is the required action or deliverable.",
+            "feedback": "Correct. WHAT names the problem. HOW names what the group needs to do about it."
+          },
+          {
+            "id": "setting-role",
+            "text": "WHAT is the setting; HOW is the assigned role.",
+            "feedback": "Not quite. WHAT names the problem. HOW names what the group needs to do about it."
+          }
+        ]
+      },
+      {
+        "id": "clarification-purpose",
+        "prompt": "What is the purpose of clarifications?",
+        "correctOptionId": "shared-understanding",
+        "options": [
+          {
+            "id": "debate-before-reading",
+            "text": "To debate solutions before reading",
+            "feedback": "Not quite. Clarification builds shared understanding before the group debates solutions."
+          },
+          {
+            "id": "permanent-leader",
+            "text": "To choose a permanent leader",
+            "feedback": "Not quite. Clarification builds shared understanding before the group debates solutions."
+          },
+          {
+            "id": "shared-understanding",
+            "text": "To agree on the role, problem, required actions, and deliverable",
+            "feedback": "Correct. Clarification builds shared understanding before the group debates solutions."
+          }
+        ]
+      },
+      {
+        "id": "roadmap-destination",
+        "prompt": "How do an agenda and a consensus question differ?",
+        "correctOptionId": "roadmap-destination",
+        "options": [
+          {
+            "id": "roadmap-destination",
+            "text": "An agenda is a roadmap; a consensus question defines the destination.",
+            "feedback": "Correct. An agenda organizes stages; a consensus question identifies what the group should accomplish."
+          },
+          {
+            "id": "problem-speaking-order",
+            "text": "An agenda states the problem; a consensus question sets speaking order.",
+            "feedback": "Not quite. An agenda organizes stages; a consensus question identifies what the group should accomplish."
+          },
+          {
+            "id": "identical",
+            "text": "They are identical and both require fixed time limits.",
+            "feedback": "Not quite. An agenda organizes stages; a consensus question identifies what the group should accomplish."
+          }
+        ]
+      }
+    ],
+    "retryLabel": "Retry missed questions",
+    "summary": {
+      "title": "Lesson complete",
+      "scorePrefix": "Knowledge check: ",
+      "scoreSeparator": " of ",
+      "scoreSuffix": " correct.",
+      "completeMessage": "Excellent work. You can still explore other answers without losing completion credit.",
+      "remainingTemplate": "Review the feedback and select the correct option for {count} remaining {questions}.",
+      "singular": "question",
+      "plural": "questions"
+    }
+  }
+}

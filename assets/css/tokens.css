@@ -1,0 +1,11 @@
+/* MIT. Shared identity; lesson-specific legacy aliases stay until reviewed. */
+:root {
+  color-scheme:light;
+  --dsl-navy:#142b49;
+  --dsl-teal:#087f83;
+  --dsl-pale:#eaf5fb;
+  --dsl-line:#dce6eb;
+  --dsl-body-font:'DM Sans',sans-serif;
+  --dsl-heading-font:Fraunces,serif;
+  --dsl-space:8px;
+}

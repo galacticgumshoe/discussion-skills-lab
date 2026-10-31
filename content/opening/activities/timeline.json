@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "timeline",
+  "type": "expandables",
+  "profile": "timeline",
+  "data": {
+    "items": [
+      {
+        "id": "receive",
+        "title": "1. Receive the Task",
+        "body": "The task may arrive on paper or electronically. Wait until the judge and participants are ready before beginning."
+      },
+      {
+        "id": "read-analyze",
+        "title": "2. Read and Analyze the Task",
+        "body": "Read the task silently. The group usually asks someone to read it once aloud. Use this time to identify WHO, WHAT, HOW, WHERE, and useful SEARCH TERMS."
+      },
+      {
+        "id": "clarify",
+        "title": "3. Clarify the Task",
+        "body": "Discuss what the task means. Reach a shared understanding of what the group must accomplish."
+      },
+      {
+        "id": "establish-direction",
+        "title": "4. Establish Direction",
+        "body": "After clarification, develop an agenda or propose a consensus question based on the task."
+      },
+      {
+        "id": "research",
+        "title": "5. Research",
+        "body": "Students typically spend approximately five minutes locating useful evidence in their research materials."
+      },
+      {
+        "id": "transition",
+        "title": "6. Transition into Background and Discussion",
+        "body": "Share essential background and move into substantive discussion. Re-clarify only if an important uncertainty remains."
+      }
+    ]
+  }
+}

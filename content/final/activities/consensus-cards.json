@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "consensus-cards",
+  "type": "flashcards",
+  "data": {
+    "items": [
+      {
+        "id": "round-robin",
+        "frontSource": "bodies/round-robin-front.md",
+        "backSource": "bodies/round-robin-back.md"
+      },
+      {
+        "id": "majority",
+        "frontSource": "bodies/majority-front.md",
+        "backSource": "bodies/majority-back.md"
+      },
+      {
+        "id": "negotiate",
+        "frontSource": "bodies/negotiate-front.md",
+        "backSource": "bodies/negotiate-back.md"
+      }
+    ]
+  }
+}

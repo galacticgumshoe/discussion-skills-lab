@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "question-selfcheck",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "id": "connects-what-how",
+        "text": "My question connects WHAT (the problem) with HOW (the deliverable)."
+      }
+    ]
+  }
+}

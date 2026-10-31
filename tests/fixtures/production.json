@@ -1,0 +1,66 @@
+{
+  "revision": "0b5d2297e7cbc19bd59cde750492dd28e3983ca0",
+  "algorithm": "sha256",
+  "files": [
+    {
+      "path": ".nojekyll",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "CONTENT_LICENSE.md",
+      "sha256": "d1136bfd632ed6d0a41609fb82934a9b720c5ef19a5662a6aa75c53e1f5af673"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "d905a0490a5287bf6b48e60817b607174db10c4e2b05a0324261d559c7ad861a"
+    },
+    {
+      "path": "README.md",
+      "sha256": "ec7951150fa000c242ddf7b0400f8c8061b5e13f67d411611346b0d57b4ae95b"
+    },
+    {
+      "path": "assets/css/final.css",
+      "sha256": "8ab886473bc779d5432be8ad4815b2bf8cda470f4cd7b8858faaafccdc4788a7"
+    },
+    {
+      "path": "assets/css/middle.css",
+      "sha256": "59fa4e39de3f3c081615704737412befd39f2d97f2845b3db4cd87125bd0a4e5"
+    },
+    {
+      "path": "assets/css/shared.css",
+      "sha256": "9e996fa721b04da24c7823a43263b7ec3e7dea054387ca88c21872bdab8a8dda"
+    },
+    {
+      "path": "assets/favicon.svg",
+      "sha256": "5484e5bb7faee44859872fa3f411f376dc80ed0dc6a60ac49e9e8a38069ad687"
+    },
+    {
+      "path": "assets/js/final.js",
+      "sha256": "4ba1828ccc0878b5e21f9f9b1cd47fa620aefa87302664512876325979ad8a56"
+    },
+    {
+      "path": "assets/js/lesson-core.js",
+      "sha256": "4b69e02b92067486422628106987caef2798ac5f257d89528fb6557f92c1856e"
+    },
+    {
+      "path": "assets/js/middle.js",
+      "sha256": "f77131a517671fdb5ad9bc17b811cd19971b186f65b133114b8ed71be61b7a0d"
+    },
+    {
+      "path": "final.html",
+      "sha256": "f0a058f13fbe0cf755e668cf5c297a2a5a76fe4034c982a9281168b3694f0a62"
+    },
+    {
+      "path": "index.html",
+      "sha256": "a4b9ddf387ca45111134ae8d4b453c01abe81b2d02bbf0c2090551189eb929dc"
+    },
+    {
+      "path": "middle.html",
+      "sha256": "9fb81b8958f2eedf37284ff9069c514bc29fdd81a11812d8b617df1a1aa06506"
+    },
+    {
+      "path": "opening.html",
+      "sha256": "9de69a494267fb2d3ca6ad5a8ce855e67f1f9d3cf619530ac7a94fc42746da10"
+    }
+  ]
+}

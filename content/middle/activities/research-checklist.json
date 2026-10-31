@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1, "id": "research-checklist", "type": "checklist",
+  "data": { "items": [
+    { "id": "source-date", "text": "I identified a source and date." },
+    { "id": "accurate-finding", "text": "I explained the finding accurately." },
+    { "id": "task-connection", "text": "I connected the finding to the task." },
+    { "id": "avoid-overstatement", "text": "I avoided overstating what it proves." }
+  ] }
+}

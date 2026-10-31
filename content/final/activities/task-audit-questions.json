@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "id": "task-audit-questions",
+  "type": "question-sequence",
+  "profile": "final-questions",
+  "data": {
+    "heading": "Practice activity",
+    "questions": [
+      {
+        "id": "missing-element",
+        "prompt": "Which required element is least developed?",
+        "correctOptionId": "affordability",
+        "options": [
+          {
+            "id": "access",
+            "text": "Transportation access.",
+            "feedback": "Not quite. The transportation pilot addresses access."
+          },
+          {
+            "id": "communication",
+            "text": "Communication.",
+            "feedback": "Not quite. The social media campaign addresses communication."
+          },
+          {
+            "id": "affordability",
+            "text": "Affordability.",
+            "feedback": "Correct. The proposal does not explain how it remains affordable."
+          }
+        ]
+      },
+      {
+        "id": "repair-gap",
+        "prompt": "Which revision most directly addresses the gap?",
+        "correctOptionId": "funding-cap-review",
+        "options": [
+          {
+            "id": "funding-cap-review",
+            "text": "Add a spending cap, identify potential funding, and evaluate costs before expansion.",
+            "feedback": "Correct. These add concrete affordability considerations."
+          },
+          {
+            "id": "confidence",
+            "text": "Repeat the proposal more confidently.",
+            "feedback": "Not quite. Confidence does not fill a missing requirement."
+          },
+          {
+            "id": "vague-success",
+            "text": "Ask whether everyone thinks the task is solved.",
+            "feedback": "Not quite. A vague question does not repair the proposal."
+          }
+        ]
+      },
+      {
+        "id": "closing-audit",
+        "prompt": "Which closing question is most useful?",
+        "correctOptionId": "requirements-support",
+        "options": [
+          {
+            "id": "impression",
+            "text": "Does everyone think we did a good job?",
+            "feedback": "Not quite. This asks for an impression, not a task audit."
+          },
+          {
+            "id": "requirements-support",
+            "text": "Does our revised proposal address access, communication, and affordability realistically, and can we all support it?",
+            "feedback": "Correct. This checks requirements and invites meaningful confirmation."
+          },
+          {
+            "id": "finish-now",
+            "text": "Can we finish now?",
+            "feedback": "Not quite. This asks about timing rather than the deliverable."
+          }
+        ]
+      }
+    ]
+  }
+}

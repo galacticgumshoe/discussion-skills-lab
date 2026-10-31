@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "closing-writing",
+  "type": "writing",
+  "profile": "draft",
+  "binding": {
+    "modelFlag": "closing-model-viewed"
+  },
+  "data": {
+    "fields": [
+      {
+        "id": "closing-draft",
+        "label": "My closing contribution",
+        "multiline": true,
+        "readonly": false,
+        "rows": 7
+      }
+    ],
+    "copyFieldId": "closing-draft",
+    "copyLabel": "Copy My Closing",
+    "model": {
+      "mode": "show-only",
+      "showLabel": "Show Model Closing",
+      "blocks": [
+        {
+          "kind": "title",
+          "text": "Model closing"
+        },
+        {
+          "kind": "paragraph",
+          "text": "“Building on Maya's transportation proposal, Avery's communication recommendation, and Jordan's concern about affordability, our group has developed a coordinated approach. We propose a limited transportation pilot paired with better outreach so students can learn about available programs. To address costs, the pilot would include a spending cap and an evaluation before expansion. This addresses the task's access, communication, and affordability requirements. Can everyone support this revised proposal, or is there a remaining concern we need to resolve?”"
+        },
+        {
+          "kind": "paragraph",
+          "text": "It credits others, synthesizes viewpoints, summarizes the outcome, addresses required elements, and invites genuine consensus."
+        }
+      ]
+    },
+    "copyMessages": {
+      "empty": "Write a response before copying."
+    },
+    "edit": {
+      "label": "Edit My Closing"
+    },
+    "actionOrder": "model-copy-edit"
+  }
+}

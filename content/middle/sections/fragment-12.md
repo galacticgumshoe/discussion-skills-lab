@@ -1,0 +1,1 @@
+Research supplies externally supported evidence. Personal stories can make an issue concrete, but one anecdote does not prove a universal experience. Use relevant, credible evidence to support factual claims.

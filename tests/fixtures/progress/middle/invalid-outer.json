@@ -1,0 +1,7 @@
+{
+  "provenance": "synthetic",
+  "revision": "0b5d2297e7cbc19bd59cde750492dd28e3983ca0",
+  "safety": "unsafe",
+  "purpose": "Invalid completion/data envelope",
+  "raw": "{\"completed\":\"not-an-array\",\"data\":null}"
+}

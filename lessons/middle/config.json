@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "middle",
+  "storageKey": "dsl:middle:v1",
+  "content": "../../content/middle/lesson.json",
+  "sectionOrder": [
+    "welcome",
+    "structure-substance",
+    "evidence",
+    "support-group",
+    "communication",
+    "speaking-conflicts",
+    "integrated-practice",
+    "knowledge-check",
+    "quick-reference"
+  ],
+  "referenceId": "quick-reference",
+  "presentation": "legacy-shell"
+}

@@ -1,0 +1,170 @@
+{
+  "provenance": "UI-observed",
+  "revision": "0b5d2297e7cbc19bd59cde750492dd28e3983ca0",
+  "origin": "http://127.0.0.1:60547",
+  "mount": "/",
+  "browser": "149.0.7827.55",
+  "raw": "{\"completed\":[0,1,2],\"data\":{\"middleState\":{\"sets\":{\"flipped\":{\"welcome\":[0,1,2],\"s1\":[3,4],\"models\":[5,6],\"speaking\":[]},\"evidenceOpened\":[0,1,2,3],\"communicationOpened\":[],\"strategyOpened\":[],\"openedDetails\":[],\"solved\":{\"classify\":[0,1,2,3,4],\"group\":[],\"communication\":[],\"speaking\":[],\"application\":[]},\"correctQuiz\":[]},\"fields\":{\"0\":\"fictional Survey, May 2025\",\"1\":\"A finding...\",\"2\":\"access..\",\"3\":\"According to fictional Survey, May 2025, A finding. This matters to our task because access.\",\"4\":true,\"5\":true,\"6\":true,\"7\":true,\"8\":\"\",\"9\":false,\"10\":false,\"11\":false,\"12\":false,\"13\":false},\"positions\":{\"classify\":4,\"group\":0,\"communication\":0,\"speaking\":0},\"researchCorrect\":true,\"assembled\":true,\"quizIndex\":0,\"selections\":{\"classify-options\":0,\"classify-options-0\":0,\"classify-options-1\":1,\"classify-options-2\":0,\"classify-options-3\":1,\"classify-options-4\":0,\"research-options\":1}}}}",
+  "actions": [
+    "activate #view-0 .flip-card index 0",
+    "activate #view-0 .flip-card index 1",
+    "activate #view-0 .flip-card index 2",
+    "click #next-section",
+    "activate #view-1 .flip-card index 0",
+    "activate #view-1 .flip-card index 1",
+    "answer classify-0 option 1",
+    "answer classify-0 option 0",
+    "click #classify-next",
+    "answer classify-1 option 0",
+    "answer classify-1 option 1",
+    "click #classify-next",
+    "answer classify-2 option 1",
+    "answer classify-2 option 0",
+    "click #classify-next",
+    "answer classify-3 option 0",
+    "answer classify-3 option 1",
+    "click #classify-next",
+    "answer classify-4 option 1",
+    "answer classify-4 option 0",
+    "click #next-section",
+    "open #evidence-details details index 0",
+    "open #evidence-details details index 1",
+    "open #evidence-details details index 2",
+    "open #evidence-details details index 3",
+    "activate #view-2 .flip-card index 0",
+    "activate #view-2 .flip-card index 1",
+    "answer research option 0",
+    "answer research option 2",
+    "answer research option 3",
+    "answer research option 1",
+    "fill #source \"fictional Survey, May 2025\"",
+    "fill #finding \"A finding...\"",
+    "fill #why \"access..\"",
+    "click #assemble-button",
+    "check #research-check-0",
+    "check #research-check-1",
+    "check #research-check-2",
+    "check #research-check-3"
+  ],
+  "questions": [
+    {
+      "identity": "classify-0",
+      "options": [
+        "Procedural",
+        "Substantive"
+      ],
+      "answer": 0,
+      "feedback": [
+        {
+          "option": 1,
+          "text": "Not quite. This manages time and discussion structure."
+        },
+        {
+          "option": 0,
+          "text": "Good choice. This manages time and discussion structure."
+        }
+      ]
+    },
+    {
+      "identity": "classify-1",
+      "options": [
+        "Procedural",
+        "Substantive"
+      ],
+      "answer": 1,
+      "feedback": [
+        {
+          "option": 0,
+          "text": "Not quite. This introduces research relevant to the problem. An actual contribution should cite its publication and date."
+        },
+        {
+          "option": 1,
+          "text": "Good choice. This introduces research relevant to the problem. An actual contribution should cite its publication and date."
+        }
+      ]
+    },
+    {
+      "identity": "classify-2",
+      "options": [
+        "Procedural",
+        "Substantive"
+      ],
+      "answer": 0,
+      "feedback": [
+        {
+          "option": 1,
+          "text": "Not quite. This organizes participation."
+        },
+        {
+          "option": 0,
+          "text": "Good choice. This organizes participation."
+        }
+      ]
+    },
+    {
+      "identity": "classify-3",
+      "options": [
+        "Procedural",
+        "Substantive"
+      ],
+      "answer": 1,
+      "feedback": [
+        {
+          "option": 0,
+          "text": "Not quite. This develops a solution by connecting proposals."
+        },
+        {
+          "option": 1,
+          "text": "Good choice. This develops a solution by connecting proposals."
+        }
+      ]
+    },
+    {
+      "identity": "classify-4",
+      "options": [
+        "Procedural",
+        "Substantive"
+      ],
+      "answer": 0,
+      "feedback": [
+        {
+          "option": 1,
+          "text": "Not quite. This redirects the group."
+        },
+        {
+          "option": 0,
+          "text": "Good choice. This redirects the group."
+        }
+      ]
+    },
+    {
+      "identity": "research",
+      "options": [
+        "“Transportation matters. I have seen that myself.”",
+        "“According to the fictional Community Access Survey from May 2025, 38% of surveyed students reported missing at least one after-school activity because of transportation difficulties. We should consider whether transportation support could improve participation.”",
+        "“I found a transportation statistic, but we should discuss a different issue.”",
+        "“The survey proves transportation is the only barrier.”"
+      ],
+      "answer": 1,
+      "feedback": [
+        {
+          "option": 0,
+          "text": "Not quite. A personal observation does not use the available research."
+        },
+        {
+          "option": 2,
+          "text": "Not quite. Research is less useful when it derails the conversation."
+        },
+        {
+          "option": 3,
+          "text": "Not quite. The survey does not establish that transportation is the only barrier."
+        },
+        {
+          "option": 1,
+          "text": "Good choice. This identifies the source and date, describes the fictional finding, and connects it to a possible solution."
+        }
+      ]
+    }
+  ],
+  "url": "http://127.0.0.1:60547/middle.html"
+}

@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "professionalism-panels",
+  "type": "expandables",
+  "profile": "standard",
+  "data": {
+    "items": [
+      {
+        "id": "exit",
+        "title": "Exit promptly",
+        "bodySource": "bodies/exit-panel.md"
+      },
+      {
+        "id": "thank-judge",
+        "title": "Thank the judge briefly",
+        "bodySource": "bodies/thank-judge-panel.md"
+      },
+      {
+        "id": "unexpected-interactions",
+        "title": "Handle unexpected judge interactions",
+        "bodySource": "bodies/unexpected-interactions-panel.md"
+      },
+      {
+        "id": "relationships",
+        "title": "Build positive relationships",
+        "bodySource": "bodies/relationships-panel.md"
+      }
+    ]
+  }
+}

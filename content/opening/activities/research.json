@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "research",
+  "type": "multiple-choice",
+  "profile": "standard",
+  "data": {
+    "id": "after-research-period",
+    "prompt": "What is the best response?",
+    "correctOptionId": "specific-misunderstanding",
+    "options": [
+      {
+        "id": "restart",
+        "text": "A. Restart all clarifications.",
+        "feedback": "Not quite. Check for a specific new misunderstanding; if there is none, move into useful background and evidence."
+      },
+      {
+        "id": "ignore",
+        "text": "B. Ignore the student's concern without discussion.",
+        "feedback": "Not quite. Check for a specific new misunderstanding; if there is none, move into useful background and evidence."
+      },
+      {
+        "id": "specific-misunderstanding",
+        "text": "C. Ask whether a specific misunderstanding needs resolving, then share relevant research.",
+        "feedback": "Correct. Check for a specific new misunderstanding; if there is none, move into useful background and evidence."
+      }
+    ]
+  }
+}

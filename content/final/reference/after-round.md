@@ -1,0 +1,1 @@
+Gather belongings and leave promptly. Thank the judge briefly if appropriate. Do not request rankings or prolonged feedback. Consult your coach about unexpected procedural issues. Speak respectfully with fellow competitors afterward.

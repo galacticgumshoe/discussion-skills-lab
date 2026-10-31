@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "consensus-writing",
+  "type": "writing",
+  "profile": "opening-consensus",
+  "binding": { "modelUi": "consensus-model-visible" },
+  "data": {
+    "fields": [
+      {
+        "id": "consensus-problem",
+        "formatKey": "problem",
+        "label": "What is the central problem?",
+        "multiline": false,
+        "readonly": false,
+        "placeholder": "e.g., mental health stigma affecting K-12 students"
+      },
+      {
+        "id": "consensus-accomplishment",
+        "formatKey": "accomplishment",
+        "label": "What must the group accomplish?",
+        "multiline": false,
+        "readonly": false,
+        "placeholder": "e.g., crafted a plan counselors can implement"
+      }
+    ],
+    "output": {
+      "id": "consensus-draft",
+      "label": "Your editable question",
+      "multiline": true,
+      "readonly": false,
+      "placeholder": "Your question will appear here after you build it."
+    },
+    "assembly": {
+      "label": "Build my question",
+      "template": "By the end of this discussion, will the group agree that we have {accomplishment} to address {problem}?",
+      "missingMessage": "",
+      "successMessage": "",
+      "focusOutput": true
+    },
+    "copyLabel": "Copy question",
+    "copyMessages": {
+      "empty": "There is nothing to copy yet.",
+      "copied": "Copied to clipboard.",
+      "selected": "Copy is unavailable here. Select the text and copy it manually.",
+      "fallback": "Copy is unavailable here. Select the text and copy it manually."
+    },
+    "model": {
+      "mode": "toggle",
+      "showLabel": "Show model example",
+      "hideLabel": "Hide model example",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Model: By the end of this discussion, will the group agree that we have crafted a plan counselors could implement in K-12 schools to support students affected by mental health stigma?"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "organize-findings-questions",
+  "type": "question-sequence",
+  "profile": "final-questions",
+  "data": {
+    "heading": "Practice activity",
+    "questions": [
+      {
+        "id": "strongest-summary",
+        "prompt": "Which is the strongest final summary?",
+        "correctOptionId": "organized-findings",
+        "options": [
+          {
+            "id": "vague-success",
+            "text": "Everyone contributed good ideas, and I think we solved the task.",
+            "feedback": "Not quite. This is too vague and claims success without identifying findings."
+          },
+          {
+            "id": "organized-findings",
+            "text": "Our group identified transportation, affordability, and communication barriers. We agreed to recommend a limited pilot combining transportation assistance and outreach, with evaluation before expansion. We still need to clarify the funding source.",
+            "feedback": "Correct. This states major issues, the agreed recommendation, and an unresolved question."
+          },
+          {
+            "id": "speaking-order",
+            "text": "Maya said one thing, Jordan said another, Avery added something, and Sam had another idea.",
+            "feedback": "Not quite. This repeats the speaking order without organizing findings."
+          }
+        ]
+      }
+    ]
+  }
+}

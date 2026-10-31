@@ -1,0 +1,7 @@
+{
+  "provenance": "synthetic",
+  "revision": "0b5d2297e7cbc19bd59cde750492dd28e3983ca0",
+  "safety": "safe",
+  "purpose": "Future adapter preservation requirement; original engine drops outer and owned nested unknowns (KI-08)",
+  "raw": "{\"completed\":[],\"futureOuter\":{\"keep\":\"Synthetic only — “quotes”, café & <not markup>.\\nSecond line: ✓\"},\"data\":{\"futureData\":[0,\"keep\"],\"futureNested\":{\"value\":\"Synthetic only — “quotes”, café & <not markup>.\\nSecond line: ✓\"}}}"
+}

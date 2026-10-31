@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "opening-reference",
+  "title": "Opening Stage Quick Reference",
+  "badge": "60-MINUTE ROUND",
+  "layout": "opening-reference",
+  "items": [
+    {
+      "id": "opening-sequence",
+      "number": "01",
+      "title": "Opening sequence",
+      "accent": "teal",
+      "source": "group-1.md"
+    },
+    {
+      "id": "task-analysis",
+      "number": "02",
+      "title": "Task analysis",
+      "accent": "blue",
+      "source": "group-2.md"
+    },
+    {
+      "id": "contributions",
+      "number": "03",
+      "title": "Types of contributions",
+      "accent": "orange",
+      "source": "group-3.md"
+    },
+    {
+      "id": "direction",
+      "number": "04",
+      "title": "Direction and terminology",
+      "accent": "purple",
+      "source": "group-4.md"
+    }
+  ]
+}

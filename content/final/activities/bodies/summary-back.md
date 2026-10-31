@@ -1,0 +1,1 @@
+A summary organizes and accurately restates important ideas, evidence, decisions, and unresolved questions. Example: “We identified transportation, scheduling, and communication as three barriers. Our recommendations address each.”

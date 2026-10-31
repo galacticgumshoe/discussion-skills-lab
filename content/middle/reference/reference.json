@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "middle-quick-reference",
+  "title": "Middle Stage Quick Reference",
+  "layout": "middle-reference",
+  "items": [
+    { "id": "contribute-substance", "number": "01", "title": "Contribute substance", "accent": "teal", "source": "contribute-substance.md" },
+    { "id": "support-group", "number": "02", "title": "Support the group", "accent": "green", "source": "support-group.md" },
+    { "id": "communicate-professionally", "number": "03", "title": "Communicate professionally", "accent": "orange", "source": "communicate-professionally.md" },
+    { "id": "speaking-conflicts", "number": "04", "title": "Manage speaking conflicts", "accent": "purple", "source": "speaking-conflicts.md" },
+    { "id": "goal", "number": "05", "title": "Your goal", "accent": "blue", "source": "goal.md" }
+  ]
+}

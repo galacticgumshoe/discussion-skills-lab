@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "summary-synthesis-cards",
+  "type": "flashcards",
+  "data": {
+    "items": [
+      {
+        "id": "summary",
+        "frontSource": "bodies/summary-front.md",
+        "backSource": "bodies/summary-back.md"
+      },
+      {
+        "id": "synthesis",
+        "frontSource": "bodies/synthesis-front.md",
+        "backSource": "bodies/synthesis-back.md"
+      }
+    ]
+  }
+}

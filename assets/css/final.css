@@ -76,19 +76,6 @@
 #view-9 .accent-green .final-reference-number{background:#20724e}#view-9 .accent-orange .final-reference-number{background:#b75c10}#view-9 .accent-purple .final-reference-number{background:#7853a0}#view-9 .accent-blue .final-reference-number{background:#2c6fa9}
 #view-9 .final-reference-item p{margin:5px 0 8px}
 @media(max-width:600px){#view-9 .final-reference-sheet{padding:18px 16px}#view-9 .final-reference-item{padding:17px 15px}#view-9 .final-reference-item h3{font-size:1rem;gap:10px}}
-/* Print by reference role, never by another lesson's page number. */
-@media print{
- .dsl-content > .lesson-view:not(#view-9),#view-7,#view-8{display:none!important}
- .dsl-content > #view-9,.dsl-content > #view-9[hidden]{display:block!important}
- #view-9 .final-reference-sheet{border:0!important;box-shadow:none!important;padding:0!important;margin:0!important}
- #view-9 .final-reference-header{gap:0!important;margin-bottom:10px!important}
- #view-9 .final-reference-header h2{font-size:17pt!important}
- #view-9 .final-reference-item{padding:9px 12px!important;margin-bottom:7px!important;break-inside:avoid!important;page-break-inside:avoid!important}
- #view-9 .final-reference-item h3{font-size:10pt!important;margin-bottom:5px!important}
- #view-9 .final-reference-item p{font-size:9pt!important;line-height:1.25!important;margin:2px 0!important}
- #view-9 .final-reference-number{height:26px!important;min-width:34px!important;font-size:9pt!important}
- html,body,#view-9,#view-9 *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
-}
 
 /* Persistent answer selection: allow exploring feedback without losing credit. */
 .choice.selected-answer{border-width:2px;font-weight:700;box-shadow:inset 4px 0 0 currentColor}
@@ -119,3 +106,80 @@
 
 /* Shared flashcard front cue, matching Middle Stage. */
 .flip .flip-front .dsl-flip-hint{position:absolute;right:17px;bottom:14px;color:#087f83;font-family:"DM Sans",sans-serif;font-size:.82rem;font-weight:700;letter-spacing:.01em;line-height:1.4}
+
+/* Milestone 6: opt-in Final presentation for the content-driven public entry.
+   Legacy source/numbered print rules above remain intact until approved cleanup. */
+.dsl-final #views{min-width:0}
+.dsl-final .dsl-block-group[hidden]{display:none!important}
+.dsl-final .dsl-content-block{margin:0;min-width:0}
+.dsl-final .dsl-layout-stack{display:block}
+.dsl-final .dsl-content-block > [role="status"][hidden]{display:none}
+/* Match Middle's actual display and numbered-page scales, not one approximate
+   size for both. Reference/activity/model/completion headings stay independent. */
+.dsl-final .lesson-view:not([data-reference-view]) > :is(h1,h2){font-family:Fraunces,serif;font-weight:700;line-height:1.17;letter-spacing:-.035em;overflow-wrap:anywhere}
+.dsl-final .lesson-view > h1{margin-top:8px;font-size:clamp(2.25rem,5vw,3.6rem)}
+.dsl-final .lesson-view:not([data-reference-view]) > h2{font-size:clamp(1.85rem,3.4vw,2.6rem)}
+.dsl-final .lesson-view > p:first-child,.dsl-final .dsl-question-counter{color:#087f83;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.dsl-final .dsl-prose-lead{color:#506176}
+.dsl-final .dsl-prose-note{font-size:13px;color:inherit}
+.dsl-final [data-reveal-id="synthesis-checks"] .dsl-prose-note{color:#506176}
+.dsl-final .dsl-prose-label{font-weight:700}
+.dsl-final .dsl-prose-instruction{font-weight:600}
+.dsl-final .dsl-content-block h2{margin-top:32px}
+.dsl-final [data-reveal-id="completion"] h2{margin-top:16px}
+.dsl-final .dsl-content-block h3,.dsl-final .dsl-sequence-heading{font-family:Fraunces,serif;font-size:1rem;line-height:1.2}
+.dsl-final .dsl-tone-callout,.dsl-final .dsl-tone-activity{background:white;border:1px solid #dce7ee;border-radius:17px;padding:23px;box-shadow:0 7px 22px #142b4908;margin:18px 0}
+.dsl-final .dsl-tone-activity{border-left:4px solid #087f83}
+.dsl-final .dsl-tone-caution{background:#fff6df;border-left:4px solid #b57717;padding:15px;border-radius:8px;margin:16px 0 0}
+.dsl-final .dsl-tone-example,.dsl-final .dsl-writing-model,.dsl-final .dsl-checklist-caption{padding:13px 16px;border-radius:10px;background:#eaf5fb;border-left:4px solid #087f83;margin:13px 0}
+.dsl-final [data-reveal-id="welcome-ready"]{background:#e8f7ee;border-color:#17804e}
+.dsl-final .dsl-layout-flow,.dsl-final .dsl-layout-two-column,.dsl-final .dsl-layout-roundtable,.dsl-final .dsl-flashcards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,205px),1fr));gap:14px}
+.dsl-final .dsl-layout-flow{margin-top:20px;text-align:center}
+.dsl-final .dsl-layout-flow > .dsl-block-group{padding:16px;border-radius:12px;background:#eaf5fb}
+.dsl-final .dsl-layout-flow p{font-size:13px}
+.dsl-final .dsl-layout-flow p:has(>strong:only-child){font-size:1rem;line-height:normal}
+.dsl-final .dsl-layout-roundtable p{border-left:3px solid #087f83;padding:10px 14px;background:#f5fafb;border-radius:8px}
+.dsl-final .dsl-layout-roundtable > .dsl-content-block,.dsl-final .dsl-layout-roundtable > .dsl-content-block > div{display:flex;min-width:0}
+.dsl-final .dsl-layout-roundtable > .dsl-content-block > div{flex:1}
+.dsl-final .dsl-layout-roundtable > .dsl-content-block > div > p{width:100%}
+.dsl-final .dsl-flashcards{margin:24px 0}
+/* The common white/navy faces, normal front weight and explored cues are the
+   same implementation/treatment as Middle; do not restore legacy bold fronts. */
+.dsl-final .dsl-card-copy .dsl-prose-p{margin:0}
+.dsl-final .dsl-expandable{border:1px solid #dce7ec;border-radius:14px;padding:16px 20px;margin:10px 0 0;color:#142b49;line-height:1.65}
+.dsl-final .dsl-expandable-control{font-size:1.08rem;font-weight:700;line-height:1.45;color:#142b49;letter-spacing:normal}
+.dsl-final .dsl-expandable-control::marker{color:#087f83}
+.dsl-final .dsl-expandable-body{padding-top:12px;line-height:1.65}
+.dsl-final .dsl-expandable-body p+p{color:#506176}
+.dsl-final .dsl-panel-explored{display:inline;margin:0 0 0 .3em;font-weight:600;font-size:.85rem;line-height:inherit}
+.dsl-final .dsl-question{margin:0}
+.dsl-final .dsl-question-prompt{font-family:"DM Sans",sans-serif;font-size:1rem;font-weight:700;line-height:1.65;margin:16px 0 0}
+.dsl-final .dsl-question-context{background:#fff6df;border-left:4px solid #b57717;padding:15px;border-radius:8px;margin-top:16px}
+.dsl-final .dsl-choices{display:block}
+.dsl-final .dsl-choice{border:1px solid #dce7ee;border-radius:10px;padding:12px;margin:9px 0;background:white;color:#142b49;font-weight:400;line-height:normal}
+.dsl-final .dsl-choice:hover{border-color:#087f83}
+.dsl-final .dsl-selected-correct,.dsl-final .dsl-selected-incorrect{border-width:2px;font-weight:700;box-shadow:inset 4px 0 0 currentColor}
+.dsl-final .dsl-choice.dsl-selected-correct{background:#e8f7ee;border-color:#17804e;color:#135e3c}
+.dsl-final .dsl-choice.dsl-selected-incorrect{background:#fff0ed;border-color:#b13f39;color:#84312d}
+.dsl-final .dsl-feedback:not(:empty){padding:13px 16px;border-radius:10px;background:#e8f7ee;border-left:4px solid #17804e;margin:13px 0;color:#142b49;line-height:1.65}
+.dsl-final .dsl-feedback-error:not(:empty){background:#fff0ed;border-color:#b13f39}
+.dsl-final .dsl-credit-note{font-size:13px;color:#506176}
+.dsl-final .dsl-question-controls,.dsl-final .dsl-writing-actions,.dsl-final .dsl-summary-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.dsl-final .dsl-question-controls button,.dsl-final .dsl-writing-actions button,.dsl-final .dsl-assemble,.dsl-final .dsl-summary-actions button{border:0;border-radius:9px;padding:11px 16px;font-weight:700;background:#eaf5fb;color:#142b49}
+.dsl-final .dsl-question-controls .dsl-question-next,.dsl-final .dsl-assemble,.dsl-final .dsl-summary-actions button:first-child{background:#087f83;color:white}
+.dsl-final .dsl-writing-actions .dsl-model-toggle,.dsl-final .dsl-writing-actions .dsl-edit{background:white;border:1px solid #dce7ee}
+.dsl-final [data-activity-id="synthesis-writing"] .dsl-edit{background:#eaf5fb;border:0}
+.dsl-final [data-activity-id="closing-writing"] .dsl-model-toggle{background:#087f83;color:white;border:0}
+.dsl-final .dsl-field-label{margin:17px 0 6px;font-weight:700}
+.dsl-final .dsl-writing-field,.dsl-final .dsl-note-select{width:100%;padding:12px;border:1px solid #aabecb;border-radius:10px;background:white;color:#142b49;font:inherit}
+.dsl-final .dsl-writing-status,.dsl-final .dsl-note-status{font-size:13px}
+.dsl-final .dsl-writing-model{white-space:normal}
+.dsl-final .dsl-check{margin:10px 0;gap:10px}
+.dsl-final .dsl-check input{margin-top:6px;accent-color:#087f83}
+.dsl-final [data-reveal-id$="-checks"] h3,.dsl-final [data-reveal-id="completion"] h3{margin-top:24px}
+.dsl-final .dsl-note-row{padding:16px;border:1px solid #dce7ee;border-radius:12px;margin:10px 0;background:white}
+.dsl-final .dsl-note-label{display:block;font-weight:600}
+.dsl-final .dsl-note-select:disabled{opacity:1}
+.dsl-final .dsl-summary-score{font-weight:700}
+.dsl-final [data-reveal-id="completion"] > .dsl-content-block:first-child{display:inline-block;border-radius:999px;background:#eaf5fb;padding:4px 12px;font-size:13px;font-weight:700}
+@media(max-width:760px){.dsl-final .dsl-layout-flow,.dsl-final .dsl-layout-two-column,.dsl-final .dsl-layout-roundtable,.dsl-final .dsl-flashcards{grid-template-columns:minmax(0,1fr)}}

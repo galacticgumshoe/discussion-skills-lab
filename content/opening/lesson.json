@@ -1,0 +1,702 @@
+{
+  "schemaVersion": 1,
+  "duration": "SELF-PACED · 15–20 MINUTES",
+  "id": "opening",
+  "title": "Starting Strong · The Opening Stage",
+  "activities": [
+    {
+      "id": "classification",
+      "source": "activities/classification.json"
+    },
+    {
+      "id": "timeline",
+      "source": "activities/timeline.json"
+    },
+    {
+      "id": "sequence-checkpoint",
+      "source": "activities/sequence-checkpoint.json"
+    },
+    {
+      "id": "task-analysis",
+      "source": "activities/task-analysis.json"
+    },
+    {
+      "id": "what-how",
+      "source": "activities/what-how.json"
+    },
+    {
+      "id": "clarification",
+      "source": "activities/clarification.json"
+    },
+    {
+      "id": "research",
+      "source": "activities/research.json"
+    },
+    {
+      "id": "consensus-writing",
+      "source": "activities/consensus-writing.json"
+    },
+    {
+      "id": "question-selfcheck",
+      "source": "activities/question-selfcheck.json"
+    },
+    {
+      "id": "knowledge-check",
+      "source": "activities/knowledge-check.json"
+    }
+  ],
+  "sections": [
+    {
+      "id": "contributions",
+      "label": "01 · Contributions",
+      "heading": "How a Discussion Round Works",
+      "headingId": "section-1-heading",
+      "headingLevel": 2,
+      "eyebrow": "SECTION 01 / 06",
+      "requirement": "Classify all five contributions correctly to continue.",
+      "reference": false,
+      "gateActivityIds": [
+        "classification"
+      ],
+      "blocks": [
+        {
+          "type": "markdown",
+          "source": "sections/fragment-1.md",
+          "textStyle": "lead"
+        },
+        {
+          "type": "group",
+          "layout": "two-column",
+          "tone": "plain",
+          "blocks": [
+            {
+              "type": "group",
+              "layout": "stack",
+              "tone": "soft",
+              "blocks": [
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-2.md",
+                  "textStyle": "label"
+                },
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-3.md",
+                  "textStyle": "instruction"
+                },
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-4.md"
+                },
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-5.md"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "layout": "stack",
+              "tone": "activity",
+              "blocks": [
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-6.md",
+                  "textStyle": "label"
+                },
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-7.md",
+                  "textStyle": "instruction"
+                },
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-8.md"
+                },
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-9.md"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "layout": "stack",
+          "tone": "activity",
+          "blocks": [
+            {
+              "type": "markdown",
+              "source": "sections/fragment-10.md",
+              "headingId": "classify-title",
+              "textStyle": "instruction"
+            },
+            {
+              "type": "markdown",
+              "source": "sections/fragment-11.md",
+              "textStyle": "lead"
+            },
+            {
+              "type": "activity",
+              "activityId": "classification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "opening-sequence",
+      "label": "02 · Opening sequence",
+      "heading": "What Happens at the Start of a Round?",
+      "headingId": "section-2-heading",
+      "headingLevel": 2,
+      "eyebrow": "SECTION 02 / 06",
+      "requirement": "Explore all six stages, then answer the sequence checkpoint correctly.",
+      "reference": false,
+      "gateActivityIds": [
+        "timeline",
+        "sequence-checkpoint"
+      ],
+      "blocks": [
+        {
+          "type": "markdown",
+          "source": "sections/fragment-12.md",
+          "textStyle": "lead"
+        },
+        {
+          "type": "group",
+          "layout": "stack",
+          "tone": "activity",
+          "blocks": [
+            {
+              "type": "markdown",
+              "source": "sections/fragment-13.md",
+              "textStyle": "instruction"
+            },
+            {
+              "type": "activity",
+              "activityId": "timeline"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "layout": "stack",
+          "tone": "example",
+          "blocks": [
+            {
+              "type": "markdown",
+              "source": "sections/fragment-14.md",
+              "textStyle": "instruction"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "layout": "stack",
+          "tone": "activity",
+          "blocks": [
+            {
+              "type": "markdown",
+              "source": "sections/fragment-15.md",
+              "textStyle": "instruction"
+            },
+            {
+              "type": "activity",
+              "activityId": "sequence-checkpoint"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "task-analysis",
+      "label": "03 · Analyze the task",
+      "heading": "Decoding a Complex Task",
+      "headingId": "section-3-heading",
+      "headingLevel": 2,
+      "eyebrow": "SECTION 03 / 06",
+      "requirement": "Explore the five task categories and answer the WHAT/HOW question correctly.",
+      "reference": false,
+      "gateActivityIds": [
+        "task-analysis",
+        "what-how"
+      ],
+      "blocks": [
+        {
+          "type": "markdown",
+          "source": "sections/fragment-16.md",
+          "textStyle": "lead"
+        },
+        {
+          "type": "group",
+          "layout": "flow",
+          "tone": "plain",
+          "blocks": [
+            {
+              "type": "group",
+              "layout": "stack",
+              "tone": "activity",
+              "blocks": [
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-17.md"
+                },
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-18.md"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "layout": "stack",
+              "tone": "activity",
+              "blocks": [
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-19.md"
+                },
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-20.md"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "layout": "stack",
+              "tone": "activity",
+              "blocks": [
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-21.md"
+                },
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-22.md"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "layout": "stack",
+              "tone": "activity",
+              "blocks": [
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-23.md"
+                },
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-24.md"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "layout": "stack",
+              "tone": "activity",
+              "blocks": [
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-25.md"
+                },
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-26.md"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "layout": "stack",
+          "tone": "example",
+          "blocks": [
+            {
+              "type": "markdown",
+              "source": "sections/fragment-27.md",
+              "textStyle": "instruction"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "layout": "stack",
+          "tone": "activity",
+          "blocks": [
+            {
+              "type": "markdown",
+              "source": "sections/fragment-28.md",
+              "textStyle": "instruction"
+            },
+            {
+              "type": "markdown",
+              "source": "sections/fragment-29.md",
+              "textStyle": "lead"
+            },
+            {
+              "type": "activity",
+              "activityId": "task-analysis"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "layout": "stack",
+          "tone": "activity",
+          "blocks": [
+            {
+              "type": "markdown",
+              "source": "sections/fragment-30.md",
+              "textStyle": "instruction"
+            },
+            {
+              "type": "activity",
+              "activityId": "what-how"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clarifications",
+      "label": "04 · Clarifications",
+      "heading": "Make Sure Everyone Understands the Task",
+      "headingId": "section-4-heading",
+      "headingLevel": 2,
+      "eyebrow": "SECTION 04 / 06",
+      "requirement": "Answer the clarification decision correctly.",
+      "reference": false,
+      "gateActivityIds": [
+        "clarification"
+      ],
+      "blocks": [
+        {
+          "type": "markdown",
+          "source": "sections/fragment-31.md",
+          "textStyle": "lead"
+        },
+        {
+          "type": "group",
+          "layout": "stack",
+          "tone": "soft",
+          "blocks": [
+            {
+              "type": "markdown",
+              "source": "sections/fragment-32.md",
+              "textStyle": "instruction"
+            },
+            {
+              "type": "group",
+              "layout": "two-column",
+              "tone": "plain",
+              "blocks": [
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-33.md"
+                },
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-34.md"
+                },
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-35.md"
+                },
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-36.md"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "markdown",
+          "source": "sections/fragment-37.md"
+        },
+        {
+          "type": "group",
+          "layout": "stack",
+          "tone": "activity",
+          "blocks": [
+            {
+              "type": "markdown",
+              "source": "sections/fragment-38.md",
+              "textStyle": "instruction"
+            },
+            {
+              "type": "markdown",
+              "source": "sections/fragment-39.md"
+            },
+            {
+              "type": "activity",
+              "activityId": "clarification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "give-direction",
+      "label": "05 · Give direction",
+      "heading": "Give the Discussion Direction",
+      "headingId": "section-5-heading",
+      "headingLevel": 2,
+      "eyebrow": "SECTION 05 / 06",
+      "requirement": "Write a consensus question and complete the self-assessment.",
+      "reference": false,
+      "gateActivityIds": [
+        "consensus-writing",
+        "question-selfcheck"
+      ],
+      "blocks": [
+        {
+          "type": "markdown",
+          "source": "sections/fragment-40.md",
+          "textStyle": "lead"
+        },
+        {
+          "type": "group",
+          "layout": "two-column",
+          "tone": "plain",
+          "blocks": [
+            {
+              "type": "group",
+              "layout": "stack",
+              "tone": "soft",
+              "blocks": [
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-41.md",
+                  "textStyle": "symbol"
+                },
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-42.md",
+                  "textStyle": "instruction"
+                },
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-43.md"
+                },
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-44.md"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "layout": "stack",
+              "tone": "activity",
+              "blocks": [
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-45.md",
+                  "textStyle": "symbol"
+                },
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-46.md",
+                  "textStyle": "instruction"
+                },
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-47.md"
+                },
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-48.md",
+                  "textStyle": "instruction"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "layout": "stack",
+          "tone": "activity",
+          "blocks": [
+            {
+              "type": "markdown",
+              "source": "sections/fragment-49.md",
+              "textStyle": "instruction"
+            },
+            {
+              "type": "markdown",
+              "source": "sections/fragment-50.md",
+              "textStyle": "lead"
+            },
+            {
+              "type": "activity",
+              "activityId": "consensus-writing"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "layout": "stack",
+          "tone": "activity",
+          "blocks": [
+            {
+              "type": "markdown",
+              "source": "sections/fragment-51.md",
+              "textStyle": "instruction"
+            },
+            {
+              "type": "markdown",
+              "source": "sections/fragment-52.md"
+            },
+            {
+              "type": "activity",
+              "activityId": "question-selfcheck"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "research-transition",
+      "label": "06 · Research & transition",
+      "heading": "From Structure to Substance",
+      "headingId": "section-6-heading",
+      "headingLevel": 2,
+      "eyebrow": "SECTION 06 / 06",
+      "requirement": "Answer the research and transition decision correctly.",
+      "reference": false,
+      "gateActivityIds": [
+        "research"
+      ],
+      "blocks": [
+        {
+          "type": "markdown",
+          "source": "sections/fragment-53.md",
+          "textStyle": "lead"
+        },
+        {
+          "type": "group",
+          "layout": "flow",
+          "tone": "plain",
+          "blocks": [
+            {
+              "type": "group",
+              "layout": "stack",
+              "tone": "activity",
+              "blocks": [
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-54.md",
+                  "textStyle": "instruction"
+                },
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-55.md"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "layout": "stack",
+              "tone": "activity",
+              "blocks": [
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-56.md",
+                  "textStyle": "instruction"
+                },
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-57.md"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "layout": "stack",
+              "tone": "activity",
+              "blocks": [
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-58.md",
+                  "textStyle": "instruction"
+                },
+                {
+                  "type": "markdown",
+                  "source": "sections/fragment-59.md"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "layout": "stack",
+          "tone": "activity",
+          "blocks": [
+            {
+              "type": "markdown",
+              "source": "sections/fragment-60.md",
+              "textStyle": "instruction"
+            },
+            {
+              "type": "markdown",
+              "source": "sections/fragment-61.md"
+            },
+            {
+              "type": "activity",
+              "activityId": "research"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "knowledge-check",
+      "label": "✓ · Knowledge check",
+      "heading": "Put the Opening Together",
+      "headingId": "quiz-heading",
+      "headingLevel": 2,
+      "eyebrow": "FINAL KNOWLEDGE CHECK",
+      "requirement": "Answer all five knowledge-check questions correctly.",
+      "reference": false,
+      "gateActivityIds": [
+        "knowledge-check"
+      ],
+      "blocks": [
+        {
+          "type": "markdown",
+          "source": "sections/fragment-62.md",
+          "textStyle": "lead"
+        },
+        {
+          "type": "activity",
+          "activityId": "knowledge-check"
+        }
+      ]
+    },
+    {
+      "id": "quick-reference",
+      "label": "↗ · Quick reference",
+      "heading": "Opening Stage Quick Reference",
+      "headingId": "reference-heading",
+      "headingLevel": 2,
+      "eyebrow": "QUICK REFERENCE",
+      "requirement": "Quick reference is always available.",
+      "reference": true,
+      "gateActivityIds": [],
+      "blocks": [
+        {
+          "type": "reference",
+          "source": "reference/reference.json",
+          "printLabel": "Print quick reference"
+        }
+      ]
+    }
+  ]
+}

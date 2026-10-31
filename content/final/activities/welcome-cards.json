@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "welcome-cards",
+  "type": "flashcards",
+  "data": {
+    "items": [
+      {
+        "id": "connect-ideas",
+        "frontSource": "bodies/connect-ideas-front.md",
+        "backSource": "bodies/connect-ideas-back.md"
+      },
+      {
+        "id": "capture-findings",
+        "frontSource": "bodies/capture-findings-front.md",
+        "backSource": "bodies/capture-findings-back.md"
+      },
+      {
+        "id": "confirm-outcome",
+        "frontSource": "bodies/confirm-outcome-front.md",
+        "backSource": "bodies/confirm-outcome-back.md"
+      }
+    ]
+  }
+}

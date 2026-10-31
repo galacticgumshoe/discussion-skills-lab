@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "id": "summary-synthesis-questions",
+  "type": "question-sequence",
+  "profile": "final-questions",
+  "data": {
+    "heading": "Practice activity",
+    "questions": [
+      {
+        "id": "three-solutions",
+        "prompt": "“We discussed three solutions: extended program hours, transportation support, and better advertising.”",
+        "correctOptionId": "summary",
+        "options": [
+          {
+            "id": "summary",
+            "text": "Summary",
+            "feedback": "Correct. This summarizes proposals already discussed without developing a new recommendation."
+          },
+          {
+            "id": "synthesis",
+            "text": "Synthesis",
+            "feedback": "Not quite. This lists existing ideas but does not connect them into a new direction."
+          },
+          {
+            "id": "procedural",
+            "text": "Neither / primarily procedural",
+            "feedback": "Not quite. This is substantive: it restates proposals, rather than managing the process."
+          }
+        ]
+      },
+      {
+        "id": "combined-test",
+        "prompt": "“If we combine Avery's outreach proposal with Maya's transportation pilot, we could test whether awareness and access need to improve together.”",
+        "correctOptionId": "synthesis",
+        "options": [
+          {
+            "id": "summary",
+            "text": "Summary",
+            "feedback": "Not quite. It goes beyond restating ideas by proposing a combined test."
+          },
+          {
+            "id": "synthesis",
+            "text": "Synthesis",
+            "feedback": "Correct. This credits two ideas and develops a combined approach."
+          },
+          {
+            "id": "procedural",
+            "text": "Neither / primarily procedural",
+            "feedback": "Not quite. This develops the group's thinking, rather than managing procedure."
+          }
+        ]
+      },
+      {
+        "id": "remaining-time",
+        "prompt": "“We have six minutes remaining. Should we move to our final recommendations?”",
+        "correctOptionId": "procedural",
+        "options": [
+          {
+            "id": "summary",
+            "text": "Summary",
+            "feedback": "Not quite. It doesn't recap any findings."
+          },
+          {
+            "id": "synthesis",
+            "text": "Synthesis",
+            "feedback": "Not quite. It doesn't develop a new substantive insight."
+          },
+          {
+            "id": "procedural",
+            "text": "Neither / primarily procedural",
+            "feedback": "Correct. This manages the group's process and time."
+          }
+        ]
+      },
+      {
+        "id": "agreed-pilot",
+        "prompt": "“Our main concern was affordability. We agreed to recommend a small pilot and review its costs before expansion.”",
+        "correctOptionId": "summary",
+        "options": [
+          {
+            "id": "summary",
+            "text": "Summary",
+            "feedback": "Correct. This restates the group's concern and agreed recommendation."
+          },
+          {
+            "id": "synthesis",
+            "text": "Synthesis",
+            "feedback": "Not quite. It reports a decision rather than forming a new connection."
+          },
+          {
+            "id": "procedural",
+            "text": "Neither / primarily procedural",
+            "feedback": "Not quite. It describes substantive findings rather than procedure."
+          }
+        ]
+      },
+      {
+        "id": "phased-cost-review",
+        "prompt": "“Jordan raised the cost issue, and Sam suggested a phased approach. Combining those ideas, we could make cost reviews a requirement before each phase expands.”",
+        "correctOptionId": "synthesis",
+        "options": [
+          {
+            "id": "summary",
+            "text": "Summary",
+            "feedback": "Not quite. The speaker adds a new requirement, not just a recap."
+          },
+          {
+            "id": "synthesis",
+            "text": "Synthesis",
+            "feedback": "Correct. It credits existing ideas and combines them into a developed recommendation."
+          },
+          {
+            "id": "procedural",
+            "text": "Neither / primarily procedural",
+            "feedback": "Not quite. This is substantive reasoning, not process management."
+          }
+        ]
+      }
+    ]
+  }
+}

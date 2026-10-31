@@ -1,0 +1,33 @@
+{
+  "provenance": "UI-observed",
+  "revision": "0b5d2297e7cbc19bd59cde750492dd28e3983ca0",
+  "origin": "http://127.0.0.1:60496",
+  "mount": "/",
+  "browser": "149.0.7827.55",
+  "raw": "{\"completed\":[],\"data\":{\"classificationAnswers\":[\"procedural\",null,null,null,null],\"classificationSeen\":[0]}}",
+  "actions": [
+    "answer classification-0 option 1",
+    "answer classification-0 option 0"
+  ],
+  "questions": [
+    {
+      "identity": "classification-0",
+      "options": [
+        "Procedural",
+        "Substantive"
+      ],
+      "answer": 0,
+      "feedback": [
+        {
+          "option": 1,
+          "text": "Not quite. This is procedural. This clarifies the task so the group shares a starting point."
+        },
+        {
+          "option": 0,
+          "text": "Correct. This clarifies the task so the group shares a starting point."
+        }
+      ]
+    }
+  ],
+  "url": "http://127.0.0.1:60496/opening.html"
+}

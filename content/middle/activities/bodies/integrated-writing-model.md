@@ -1,0 +1,1 @@
+“Building on Maya's transportation idea and Jordan's cost concern, perhaps we could recommend a limited pilot before a larger investment. Avery's point about communication matters too, so the pilot could include outreach.”

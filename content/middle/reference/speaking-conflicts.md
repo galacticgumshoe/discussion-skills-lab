@@ -1,0 +1,5 @@
+- Continue assertively only with care; it risks dominance.
+- Request first turn and honor your promise to yield.
+- Yield and request the next turn when appropriate.
+- Explain a timely, direct connection when requesting a turn.
+- If interrupted, politely finish and give the promised speaker a turn.

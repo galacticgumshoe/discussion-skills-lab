@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "what-how",
+  "type": "multiple-choice",
+  "profile": "standard",
+  "data": {
+    "id": "identify-what",
+    "prompt": "Which option identifies the task's WHAT?",
+    "correctOptionId": "stigma-effects",
+    "options": [
+      {
+        "id": "stigma-effects",
+        "text": "The negative effects of mental health stigma on K-12 students.",
+        "feedback": "Correct. WHAT names the central problem. Crafting a plan is HOW: the action and deliverable."
+      },
+      {
+        "id": "counselor-plan",
+        "text": "Craft a plan counselors can implement in their schools.",
+        "feedback": "Not quite. WHAT names the central problem. Crafting a plan is HOW: the action and deliverable."
+      }
+    ]
+  }
+}

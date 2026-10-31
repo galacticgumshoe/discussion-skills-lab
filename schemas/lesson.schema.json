@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://discussion-skills-lab.invalid/schemas/lesson.schema.json",
+  "$comment": "Select #/$defs/config or #/$defs/manifest explicitly. Semantic checks enforce identities, source containment, section order, unique/mounted IDs, gate references and a maximum of three nested groups.",
+  "$defs": {
+    "id": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$", "not": { "enum": ["constructor", "prototype", "__proto__"] } },
+    "text": { "type": "string", "pattern": "\\S" },
+    "jsonSource": { "type": "string", "pattern": "^[A-Za-z0-9_.-]+(/[A-Za-z0-9_.-]+)*\\.json$" },
+    "config": {
+      "type": "object", "additionalProperties": false,
+      "required": ["schemaVersion", "id", "storageKey", "content", "sectionOrder", "referenceId", "presentation"],
+      "properties": {
+        "schemaVersion": { "const": 1 }, "id": { "allOf": [{"$ref": "#/$defs/id"}, {"not": {"const": "opening-stage"}}] },
+        "storageKey": { "anyOf": [{"type": "null"}, {"type": "string", "pattern": "^dsl:[a-z][a-z0-9-]*:v1$"}] },
+        "content": { "$ref": "#/$defs/jsonSource" }, "sectionOrder": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+        "referenceId": { "$ref": "#/$defs/id" }, "presentation": { "const": "legacy-shell" }
+      }
+    },
+    "manifest": {
+      "type": "object", "additionalProperties": false, "required": ["schemaVersion", "id", "title", "activities", "sections"],
+      "properties": {
+        "schemaVersion": { "const": 1 }, "id": { "$ref": "#/$defs/id" }, "title": { "$ref": "#/$defs/text" }, "duration": { "$ref": "#/$defs/text" },
+        "activities": { "type": "array", "items": { "type": "object", "additionalProperties": false, "required": ["id", "source"], "properties": { "id": { "$ref": "#/$defs/id" }, "source": { "$ref": "#/$defs/jsonSource" } } } },
+        "sections": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/section" } }
+      }
+    },
+    "section": {
+      "type": "object", "additionalProperties": false, "required": ["id", "label", "heading", "headingLevel", "requirement", "reference", "gateActivityIds", "blocks"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" }, "label": { "$ref": "#/$defs/text" }, "heading": { "$ref": "#/$defs/text" }, "eyebrow": { "$ref": "#/$defs/text" },
+        "headingLevel": { "enum": [1, 2, 3] }, "headingId": { "$ref": "#/$defs/id" }, "requirement": { "$ref": "#/$defs/text" }, "reference": { "type": "boolean" },
+        "gateActivityIds": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+        "blocks": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/block" } }
+      }
+    },
+    "block": {
+      "oneOf": [
+        { "type": "object", "additionalProperties": false, "required": ["type", "activityId", "questionIds", "scorePrefix", "scoreSeparator", "progressSuffix"], "properties": {
+          "type": { "const": "progress" }, "activityId": { "$ref": "#/$defs/id" }, "questionIds": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+          "scorePrefix": { "$ref": "#/$defs/text" }, "scoreSeparator": { "$ref": "#/$defs/text" }, "progressSuffix": { "$ref": "#/$defs/text" }
+        } },
+        { "type": "object", "additionalProperties": false, "required": ["type", "actions"], "properties": {
+          "type": { "const": "navigation" },
+          "actions": { "type": "array", "minItems": 1, "items": { "type": "object", "additionalProperties": false, "required": ["sectionId", "label"], "properties": { "sectionId": { "$ref": "#/$defs/id" }, "label": { "$ref": "#/$defs/text" } } } }
+        } },
+        { "type": "object", "additionalProperties": false, "required": ["type", "source"], "properties": { "type": { "const": "markdown" }, "headingId": { "$ref": "#/$defs/id" }, "textStyle": { "enum": ["lead", "note", "instruction", "label", "symbol"] }, "source": { "type": "string", "pattern": "^[A-Za-z0-9_.-]+(/[A-Za-z0-9_.-]+)*\\.md$" } } },
+        { "type": "object", "additionalProperties": false, "required": ["type", "source"], "properties": { "type": { "const": "reference" }, "source": { "$ref": "#/$defs/jsonSource" }, "printLabel": { "$ref": "#/$defs/text" } } },
+        { "type": "object", "additionalProperties": false, "required": ["type", "activityId"], "properties": { "type": { "const": "activity" }, "activityId": { "$ref": "#/$defs/id" } } },
+        { "type": "object", "additionalProperties": false, "required": ["type", "layout", "tone", "blocks"], "properties": { "type": { "const": "group" }, "revealId": { "$ref": "#/$defs/id" }, "layout": { "enum": ["stack", "two-column", "flow", "roundtable"] }, "tone": { "enum": ["plain", "callout", "caution", "example", "activity", "soft"] }, "blocks": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/block" } } } }
+      ]
+    }
+  }
+}

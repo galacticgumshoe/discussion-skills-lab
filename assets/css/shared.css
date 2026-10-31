@@ -19,33 +19,6 @@ button:disabled{cursor:not-allowed;opacity:.56}
 @media(max-width:850px){.dsl-layout,.dsl-layout.sidebar-collapsed{display:block;padding:20px 16px 60px}.rail{display:none}.mobile-nav{display:block}.dsl-content{max-width:760px}}
 @media(max-width:600px){.bottom-controls button{flex:1}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
-/* Print the reference as a compact handout; browser print settings may still override colors. */
-@page { size: letter portrait; margin: .35in; }
-@media print {
-  html,body { margin:0!important; padding:0!important; background:white!important; color:#142B49!important; }
-  html,body,#quick-reference,#quick-reference * { -webkit-print-color-adjust:exact!important; print-color-adjust:exact!important; }
-  .topbar,.rail,.mobile-nav,.bottom-controls,#nav-status,.lesson-view,.print-hide { display:none!important; }
-  .dsl-layout,.dsl-layout.sidebar-collapsed { display:block!important; padding:0!important; margin:0!important; min-height:0!important; }
-  .dsl-content { max-width:none!important; width:100%!important; margin:0!important; padding:0!important; }
-  #view-7 { display:block!important; margin:0!important; padding:0!important; }
-  #quick-reference { box-shadow:none!important; border:0!important; border-radius:0!important; margin:0!important; padding:0!important; font-size:9pt!important; line-height:1.2!important; }
-  #quick-reference h2 { font-size:17pt!important; margin:0!important; }
-  #quick-reference h4 { font-size:10pt!important; }
-  #quick-reference p { margin-top:3px!important; margin-bottom:3px!important; }
-  #quick-reference .mb-6 { margin-bottom:9px!important; }
-  #quick-reference .mb-4 { margin-bottom:6px!important; }
-  #quick-reference .mb-3 { margin-bottom:5px!important; }
-  #quick-reference .mt-4 { margin-top:6px!important; }
-  #quick-reference .gap-4 { gap:7px!important; }
-  #quick-reference .gap-3 { gap:5px!important; }
-  #quick-reference .gap-2 { gap:4px!important; }
-  #quick-reference .p-3,#quick-reference .\!p-5 { padding:7px!important; }
-  #reference-content { display:grid!important; grid-template-columns:repeat(2,minmax(0,1fr))!important; gap:7px!important; }
-  #reference-content > :first-child,#reference-content > :last-child { grid-column:1/-1!important; }
-  #quick-reference section,#quick-reference .card { break-inside:avoid!important; page-break-inside:avoid!important; }
-  #quick-reference .sm\:grid-cols-3 { display:grid!important; grid-template-columns:repeat(6,minmax(0,1fr))!important; }
-  #quick-reference .sm\:grid-cols-2 { display:grid!important; grid-template-columns:repeat(4,minmax(0,1fr))!important; }
-}
 
 /* Quick reference is an always-accessible resource, independent of lesson gating. */
 .reference-shortcut{margin-bottom:16px}.reference-button{display:block;width:100%;padding:11px 14px;text-align:left;border:1px solid #a6d7d7;border-radius:10px;background:#eaf5fb;color:#142b49;font-weight:700}.reference-button:hover{background:#d8efef}.reference-button span{font-weight:400;font-size:.84em;color:#425b69}.reference-button:focus-visible{outline:3px solid #e9a43c;outline-offset:3px}
@@ -118,3 +91,11 @@ button:disabled{cursor:not-allowed;opacity:.56}
   .dsl-content details.dsl-expandable { padding:16px 18px; }
   .dsl-content details.dsl-expandable > summary { font-size:1.08rem; }
 }
+
+/* Milestone 8 replacement shell hooks (old blocks retained pending approval). */
+.dsl-skip{position:absolute;top:-100px;left:15px;padding:10px;background:white;color:#142b49;z-index:10}.dsl-skip:focus{top:12px}
+.dsl-header-inner{max-width:1320px;margin:auto;padding:20px 28px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px}
+.dsl-header-title{font-weight:600;margin-top:4px}.dsl-duration{font-size:.875rem;border:1px solid #ffffff4d;border-radius:999px;padding:8px 16px}
+.rail-progress>.eyebrow{color:var(--dsl-teal)}#progress-text{font-weight:700;margin-top:8px}#progress-track{margin-top:12px;border-radius:999px;overflow:hidden}
+.dsl-rail-help{font-size:.875rem;margin-top:16px;color:#506176}
+.app-shell [hidden]{display:none!important}

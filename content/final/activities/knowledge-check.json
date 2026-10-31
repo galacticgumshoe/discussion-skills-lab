@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "id": "knowledge-check",
+  "type": "question-sequence",
+  "profile": "final-questions",
+  "data": {
+    "heading": "Knowledge check",
+    "counterScoreLabel": " · Score ",
+    "questions": [
+      {
+        "id": "synthesis",
+        "prompt": "Which statement best describes synthesis?",
+        "correctOptionId": "connect-new",
+        "options": [
+          {
+            "id": "chronological",
+            "text": "Repeat comments in speaking order.",
+            "feedback": "Not quite. That is a chronological recap."
+          },
+          {
+            "id": "connect-new",
+            "text": "Combine viewpoints into a new insight or recommendation.",
+            "feedback": "Correct. Synthesis uses connections to advance thinking."
+          },
+          {
+            "id": "time",
+            "text": "Ask how much time remains.",
+            "feedback": "Not quite. That is procedural."
+          },
+          {
+            "id": "popularity",
+            "text": "Select the most popular proposal.",
+            "feedback": "Not quite. Popularity alone is not synthesis."
+          }
+        ]
+      },
+      {
+        "id": "effective-summary",
+        "prompt": "What makes a final summary effective?",
+        "correctOptionId": "organized-credit",
+        "options": [
+          {
+            "id": "every-sentence",
+            "text": "Include every sentence spoken.",
+            "feedback": "Not quite. A summary should be concise."
+          },
+          {
+            "id": "own-ideas",
+            "text": "Focus only on your own ideas.",
+            "feedback": "Not quite. It represents the group's work."
+          },
+          {
+            "id": "organized-credit",
+            "text": "Organize findings, accurately identify agreements, and credit contributors.",
+            "feedback": "Correct. It also distinguishes agreements from unresolved concerns."
+          },
+          {
+            "id": "declare-success",
+            "text": "Declare success without review.",
+            "feedback": "Not quite. Review is needed before claiming completion."
+          }
+        ]
+      },
+      {
+        "id": "unanimity",
+        "prompt": "A unanimous recommendation is needed, but two participants object. What next?",
+        "correctOptionId": "negotiate",
+        "options": [
+          {
+            "id": "majority",
+            "text": "Declare victory by majority.",
+            "feedback": "Not quite. A majority is not unanimity."
+          },
+          {
+            "id": "negotiate",
+            "text": "Explore concerns and negotiate revisions.",
+            "feedback": "Correct. Consensus requires addressing concerns."
+          },
+          {
+            "id": "ignore",
+            "text": "Ignore objections.",
+            "feedback": "Not quite. Their objections still matter."
+          },
+          {
+            "id": "end",
+            "text": "End immediately.",
+            "feedback": "Not quite. This leaves the disagreement unresolved."
+          }
+        ]
+      },
+      {
+        "id": "task-completion",
+        "prompt": "How should the group check task completion?",
+        "correctOptionId": "required-components",
+        "options": [
+          {
+            "id": "enjoyment",
+            "text": "Ask if everyone enjoyed it.",
+            "feedback": "Not quite. Enjoyment is not a task criterion."
+          },
+          {
+            "id": "elapsed-time",
+            "text": "Assume the final minutes mean success.",
+            "feedback": "Not quite. Time elapsed does not establish completion."
+          },
+          {
+            "id": "required-components",
+            "text": "Compare the proposal against the required problem and deliverable components.",
+            "feedback": "Correct. A task-focused review reveals missing requirements."
+          },
+          {
+            "id": "chronological",
+            "text": "Recap every comment chronologically.",
+            "feedback": "Not quite. Speaking order does not evaluate the deliverable."
+          }
+        ]
+      },
+      {
+        "id": "judge-comments",
+        "prompt": "The judge offers unsolicited performance comments. What should you do?",
+        "correctOptionId": "polite-coach",
+        "options": [
+          {
+            "id": "challenge",
+            "text": "Challenge the judge publicly.",
+            "feedback": "Not quite. Do not confront judges."
+          },
+          {
+            "id": "ranking",
+            "text": "Ask for your ranking.",
+            "feedback": "Not quite. Do not solicit rankings."
+          },
+          {
+            "id": "polite-coach",
+            "text": "Respond politely, leave, and consult your coach.",
+            "feedback": "Correct. A coach can determine appropriate follow-up."
+          },
+          {
+            "id": "critique",
+            "text": "Encourage a lengthy critique.",
+            "feedback": "Not quite. Avoid extending the interaction at the table."
+          }
+        ]
+      }
+    ]
+  }
+}
