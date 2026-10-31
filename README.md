@@ -1,6 +1,6 @@
 # Discussion Skills Lab
 
-A series of interactive, self-paced lessons for high school students preparing for the MSHSL Discussion category. The lessons teach skills for the opening, middle, and final stages of a Discussion round. They are educational coaching resources, not official MSHSL rules or judging standards.
+A series of interactive, self-paced lessons for high school students preparing for the MSHSL Discussion category. The lessons teach skills for the opening, middle, and final stages of a Discussion round, followed by pre-round readiness and refinement. They are educational coaching resources, not official MSHSL rules or judging standards.
 
 ## Start here
 
@@ -8,8 +8,9 @@ A series of interactive, self-paced lessons for high school students preparing f
 - **Opening Stage:** `opening.html`
 - **Middle Stage:** `middle.html`
 - **Final Stage:** `final.html`
+- **Before the Round (Lesson 4):** `before-round.html`
 
-Each lesson has gated activities, navigation and a Quick Reference. All three lessons share the Discussion Skills Lab visual identity. No build step or Canva account is required to host them.
+Each lesson has gated activities, navigation and a Quick Reference. All lessons share the Discussion Skills Lab visual identity. Before the Round assumes the first three lessons' instruction but does not require saved completion in them.
 
 ## Publish with GitHub Pages
 
@@ -42,7 +43,7 @@ localStorage.removeItem('dsl:opening-stage:v1');
 location.reload();
 ```
 
-For Middle or Final, use `dsl:middle:v1` or `dsl:final:v1` instead. To reset all three local lessons, remove each of those three keys before reloading. Avoid `localStorage.clear()`: it also deletes unrelated data on the same origin. The lessons do not use `sessionStorage`, so clearing it is unnecessary.
+For Middle, Final, or Before the Round, use `dsl:middle:v1`, `dsl:final:v1`, or `dsl:before-round:v1` instead. Reset only the key for the lesson being tested. Avoid `localStorage.clear()`: it also deletes unrelated data on the same origin. The lessons do not use `sessionStorage`, so clearing it is unnecessary.
 
 Storage belongs to the origin (scheme, hostname and port), not the page path. Run the reset on the same origin you are testing; `localhost` and `127.0.0.1`, or different ports, have separate storage. Test both fresh progress and saved-progress restoration—do not reset between the save and reload steps of a persistence test. Clearing progress is separate from clearing the browser's HTTP cache.
 
@@ -80,7 +81,7 @@ and saved-progress compatibility.
 
 1. Supply `lessons/<id>/config.json`, a content manifest and Markdown/activity/reference files under `content/<id>/`. Preserve stable IDs, question order and answer/feedback associations.
 2. Use a thin static module importing `assets/js/app/lesson-app.js`, shared components and a small pure completion policy. Do not copy activities or use the retired classic global engine.
-3. Keep all three existing lessons on their v1 codecs/keys. Brand-new modules may use the documented ID adapter and a fresh `dsl:<id>:v1` key; read-only references can disable storage. Worksheets need no pretend final quiz.
+3. Keep the three foundational lessons on their legacy v1 codecs/keys. Before the Round uses the ID adapter and its own `dsl:before-round:v1` key. Brand-new modules use the documented ID adapter and a fresh `dsl:<id>:v1` key; read-only references can disable storage. Worksheets need no pretend final quiz.
 4. Retain a small root HTML entry for each distinct public URL, with an empty `.app-shell` mount, no-JS notice and the shared styles/entry module. The shared shell supplies structural controls; homepage wording comes from `content/home.md` and ordered cards from `content/catalog.json`, not copied markup.
 5. Validate content and test affected journeys, saved progress, keyboard/mobile navigation and reference-only printing on both root and repository-prefix mounts. `tests/fixtures/new-module/` demonstrates extensibility without publishing new instruction.
 

@@ -1,0 +1,6 @@
+- Charged research device.
+- Charger.
+- Readable name tent.
+- Note-taking tools.
+- Water.
+- Optional hotspot/phone charger.

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "icebreaker-choice",
+  "type": "question-sequence",
+  "profile": "middle-scenarios",
+  "data": {
+    "questions": [
+      {
+        "id": "inclusive-start",
+        "prompt": "A few students are quietly setting up. Which opener best supports a comfortable, collaborative atmosphere?",
+        "correctOptionId": "light",
+        "options": [
+          {"id": "politics", "text": "Ask everyone to debate a controversial political issue"},
+          {"id": "light", "text": "Offer an optional, light question and leave room for people to finish setting up"},
+          {"id": "identity", "text": "Ask each person to identify their school and hometown."}
+        ],
+        "explanation": "Low-pressure invitations build rapport while respecting other students' privacy and preparation time."
+      }
+    ]
+  }
+}

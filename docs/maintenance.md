@@ -26,6 +26,10 @@ specifications are in `.opencode/specs/`. These guides do not depend on
 that reference. See [using the maintenance skill](using-maintenance-skill.md) for
 guided prompts and slash-command shortcuts.
 
+Keep `docs/` focused on durable maintenance guidance. Task-specific change histories,
+test-run logs and temporary handoffs belong in session, issue or pull-request
+records, not in these guides.
+
 ## How the site fits together
 
 ```text
@@ -44,7 +48,9 @@ index.html → assets/js/home.js
                         └─ reference/reference.json → reference Markdown
 ```
 
-The existing lesson IDs are `opening`, `middle`, `final`. A **module** is a public
+The lesson IDs, in curriculum order, are `opening`, `middle`, `final`, and
+`before-round`. Before the Round is a fourth-session refinement lesson, not an
+enforced prerequisite or cross-module gate. A **module** is a public
 learning resource; a **section** is one screen inside it; an **activity** is a card
 set, question set, writing exercise, etc. Root HTML contains metadata and the mount,
 not the editable lesson prose. There is no visual administration interface:

@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "pack-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {"id": "device", "text": "I have a charged research device and backup charger"},
+      {"id": "name-tent", "text": "I can display a readable name tent"},
+      {"id": "notes", "text": "I have something to take notes with"},
+      {"id": "water", "text": "I have water"},
+      {"id": "hotspot-plan", "text": "I have checked whether I need a hotspot backup"}
+    ]
+  }
+}

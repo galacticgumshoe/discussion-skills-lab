@@ -18,6 +18,12 @@
       "url": "final.html",
       "title": "Final Stage",
       "description": "Summarize and synthesize viewpoints, check the task, build consensus, and close professionally."
+    },
+    {
+      "id": "before-round",
+      "url": "before-round.html",
+      "title": "Before the Round",
+      "description": "Prepare equipment, access tasks, get settled, and connect respectfully before a Discussion round."
     }
   ]
 }

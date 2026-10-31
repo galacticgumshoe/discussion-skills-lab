@@ -11,7 +11,7 @@ const schema = new Ajv({strict:true}).compile(read('schemas/id-progress.schema.j
 const adapter = () => createIdProgressAdapter({id:'sample-module',sections:['test-explanation','test-worksheet','test-reference'],defaults});
 const memory = raw => ({raw,writes:0,getItem(){return this.raw;},setItem(key,value){this.raw=value;this.writes++;}});
 test('catalog validates exact root destinations, original ordering, and both schema/runtime rejects unsafe data', async () => {
-  const catalog = read('content/catalog.json'); assert.deepEqual(catalog.lessons.map(item=>item.url),['opening.html','middle.html','final.html']);
+  const catalog = read('content/catalog.json'); assert.deepEqual(catalog.lessons.map(item=>item.url),['opening.html','middle.html','final.html','before-round.html']);
   assert.deepEqual(await validateCatalogTree(),[]); assert.deepEqual(validateCatalogDocument(catalog),[]);
   for(const change of [d=>d.schemaVersion=2,d=>d.lessons.push(d.lessons[0]),d=>d.lessons[0].url='https://evil.invalid/opening.html',d=>d.lessons[0].url='../opening.html',d=>d.lessons[0].url='middle.html',d=>d.lessons[0].module='evil.js',d=>d.lessons[0].title='']){
     const invalid=structuredClone(catalog);change(invalid);assert.ok(validateCatalogDocument(invalid).length);

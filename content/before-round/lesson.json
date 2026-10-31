@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "id": "before-round",
+  "title": "Before the Round",
+  "duration": "15–20 minutes",
+  "activities": [
+    {"id": "pack-checklist", "source": "activities/pack-checklist.json"},
+    {"id": "task-scenarios", "source": "activities/task-scenarios.json"},
+    {"id": "arrival-decisions", "source": "activities/arrival-decisions.json"},
+    {"id": "icebreaker-examples", "source": "activities/icebreaker-examples.json"},
+    {"id": "icebreaker-choice", "source": "activities/icebreaker-choice.json"},
+    {"id": "adapt-scenarios", "source": "activities/adapt-scenarios.json"},
+    {"id": "readiness-quiz", "source": "activities/readiness-quiz.json"}
+  ],
+  "sections": [
+    {
+      "id": "pack", "label": "Ready to go", "heading": "Ready to go", "headingLevel": 1,
+      "eyebrow": "Section 1 · ~3 minutes",
+      "requirement": "Confirm all five checks in your personal preparation plan.",
+      "reference": false, "gateActivityIds": ["pack-checklist"],
+      "blocks": [
+        {"type": "markdown", "source": "sections/framing.md", "textStyle": "lead"},
+        {"type": "markdown", "source": "sections/pack-intro.md", "textStyle": "lead"},
+        {"type": "markdown", "source": "sections/pack.md"},
+        {"type": "activity", "activityId": "pack-checklist"}
+      ]
+    },
+    {
+      "id": "task-access", "label": "How the task arrives", "heading": "How the task arrives", "headingLevel": 2,
+      "eyebrow": "Section 2 · ~3 minutes",
+      "requirement": "Answer both task-access questions correctly. Earned credit is retained while you explore other answers.",
+      "reference": false, "gateActivityIds": ["task-scenarios"],
+      "blocks": [{"type": "markdown", "source": "sections/task-access.md"}, {"type": "activity", "activityId": "task-scenarios"}]
+    },
+    {
+      "id": "arrive", "label": "Arrive, orient, connect", "heading": "Arrive, orient, connect", "headingLevel": 2,
+      "eyebrow": "Section 3 · ~3 minutes",
+      "requirement": "Answer both arrival questions correctly. Earned credit is retained while you explore other answers.",
+      "reference": false, "gateActivityIds": ["arrival-decisions"],
+      "blocks": [{"type": "markdown", "source": "sections/arrive.md"}, {"type": "activity", "activityId": "arrival-decisions"}]
+    },
+    {
+      "id": "connect", "label": "Build a cooperative start", "heading": "Build a cooperative start", "headingLevel": 2,
+      "eyebrow": "Section 4 · ~4 minutes",
+      "requirement": "Expand all five icebreakers to unlock the question, then answer it correctly.",
+      "reference": false, "gateActivityIds": ["icebreaker-examples", "icebreaker-choice"],
+      "blocks": [
+        {"type": "markdown", "source": "sections/connect.md"},
+        {"type": "activity", "activityId": "icebreaker-examples"},
+        {"type": "markdown", "source": "sections/connect-precautions.md"},
+        {"type": "group", "layout": "stack", "tone": "plain", "revealId": "icebreaker-question", "blocks": [
+          {"type": "activity", "activityId": "icebreaker-choice"}
+        ]}
+      ]
+    },
+    {
+      "id": "adapt", "label": "Observe and adapt", "heading": "Observe and adapt", "headingLevel": 2,
+      "eyebrow": "Section 5 · ~3 minutes",
+      "requirement": "Answer both observation questions correctly. Earned credit is retained while you explore other answers.",
+      "reference": false, "gateActivityIds": ["adapt-scenarios"],
+      "blocks": [{"type": "markdown", "source": "sections/adapt.md"}, {"type": "activity", "activityId": "adapt-scenarios"}]
+    },
+    {
+      "id": "knowledge-check", "label": "Readiness check", "heading": "Readiness check", "headingLevel": 2,
+      "eyebrow": "Section 6 · ~3 minutes",
+      "requirement": "Answer all five readiness questions correctly. You can explore other answers without losing earned credit.",
+      "reference": false, "gateActivityIds": ["readiness-quiz"],
+      "blocks": [{"type": "markdown", "source": "sections/knowledge-check.md", "textStyle": "lead"}, {"type": "activity", "activityId": "readiness-quiz"}]
+    },
+    {
+      "id": "quick-reference", "label": "Quick Reference", "heading": "Pre-Round Readiness Checklist", "headingLevel": 2,
+      "requirement": "Always available. Print the readiness checklist on its own.",
+      "reference": true, "gateActivityIds": [],
+      "blocks": [{"type": "reference", "source": "reference/reference.json"}]
+    }
+  ]
+}

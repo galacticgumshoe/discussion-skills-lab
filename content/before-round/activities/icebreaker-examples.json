@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "icebreaker-examples",
+  "type": "expandables",
+  "profile": "standard",
+  "data": {
+    "items": [
+      {"id": "two-truths", "title": "Two Truths and a Lie", "body": "Each person offers two truths and one lie about themselves, and others guess the lie."},
+      {"id": "have-you-ever", "title": "Have You Ever?", "body": "Invite light questions, such as “Have you ever flown in an airplane?” Have a few possibilities ready."},
+      {"id": "would-you-rather", "title": "Would You Rather?", "body": "Offer a low-stakes pair, such as cake or pie."},
+      {"id": "things-in-common", "title": "Find 10 Things in Common", "body": "Look for shared interests or experiences, such as liking the color red. This may take more time than other options."},
+      {"id": "small-talk", "title": "Ordinary small talk", "body": "A friendly question about the day, a game, or the weather can get a conversation rolling. Not every group needs a formal game."}
+    ]
+  }
+}

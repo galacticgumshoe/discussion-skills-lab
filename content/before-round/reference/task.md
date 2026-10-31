@@ -1,0 +1,3 @@
+- Confirm electronic versus paper distribution.
+- If early electronic access is available, read the task and prepare research.
+- Otherwise be ready to analyze it promptly when issued.

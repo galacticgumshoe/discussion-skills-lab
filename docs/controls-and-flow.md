@@ -58,7 +58,8 @@ accessibility relationships, CSS and tests. The active core is
 - Refresh starts at the first section. Current question cursors/drafts can restore;
   there is no current-section URL/history restoration.
 - Reference is always accessible with zero credit, excluded from progress totals,
-  and hides bottom Back/Next controls. Existing totals are 7/8/9.
+  and hides bottom Back/Next controls. Totals are Opening 7, Middle 8, Final 9,
+  Before the Round 6.
 - Completion is permanent: wrong-after-right, cleared drafts, closed panels and
   unchecked boxes cannot revoke an already completed section.
 - Exploration differs from current presentation: flip-back/closed state must not
@@ -71,8 +72,15 @@ accessibility relationships, CSS and tests. The active core is
   gate also requires nonempty current inputs, assembly, required model and checks.
 - Opening/Middle model viewing is optional in their current gates; specified
   Final models are required. Writing is never automatically graded.
+- Before the Round requires all five planning checks, both task-access answers,
+  both arrival answers, all five expandable icebreakers plus the inclusive-start answer,
+  both observation answers, and all five readiness answers in its six sections.
+  Questions use correct-ever credit; unchecked plans and closed examples never
+  revoke earned section credit. It uses `dsl:before-round:v1` and the ID adapter.
+  All five examples reveal the icebreaker question; previously completed `connect`
+  sections keep access without fabricated exploration credit for the new activity.
 
-The complete precise rules are in `lessons/{opening,middle,final}/completion.js`,
+The complete precise rules are in `lessons/<id>/completion.js`,
 not inferred from this summary or requirement wording.
 
 ## Recipe: revise a completion requirement
@@ -241,6 +249,8 @@ new activity type requires an explicit code extension, not just a JSON `type`.
 - `shared.css`: shell/layout/base/responsive/focus; `components.css`: interactions.
 - `opening.css`, `middle.css`, `final.css`: deliberate lesson treatments. Scope
   lesson-only changes; do not import another lesson's theme as a shortcut.
+- `before-round.css`: scoped typography and controls for the fourth lesson;
+  interactions and reference printing still use the shared components/styles.
 - `reference.css`: screen reference layouts; `print.css`: reference-only print;
   `home.css`: homepage. **Print loads last.**
 

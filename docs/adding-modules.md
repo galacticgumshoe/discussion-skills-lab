@@ -391,11 +391,12 @@ fallback navigation if the new resource should also be listed there; do not copy
 full card/prose markup. Preserve the three existing public entry URLs.
 
 **Important test-server limitation:** `python3 -m http.server` serves a new root
-HTML immediately, but `tests/helpers/static-server.mjs` currently allows only the
-historical root HTML names via `productionPaths`. It already allows new files
+HTML immediately, but `tests/helpers/static-server.mjs` allows root HTML only via
+the historical `productionPaths` and current-site `currentRootEntries`. It allows new files
 inside `assets/`, `content/`, `lessons/`. Adding a new root page therefore also
 requires a narrowly scoped **current-site** root-entry allowlist/rule in that test
-server and tests for the new root/prefix route. Do not add the new page to
+server and tests for the new root/prefix route. The current-site-only
+`currentRootEntries` list now includes `before-round.html`. Do not add a new page to
 `productionPaths` in `tests/helpers/baseline-source.mjs`: that is the fixed
 original-engine replay list, and the new page did not exist at the pinned revision.
 Do not loosen traversal, hidden-file or fixture protections. Catalog validation

@@ -43,6 +43,7 @@ by `id`, then follow `blocks` and activity declarations.
 | Opening | `contributions`, `opening-sequence`, `task-analysis`, `clarifications`, `give-direction`, `research-transition`, `knowledge-check`, `quick-reference` |
 | Middle | `welcome`, `structure-substance`, `evidence`, `support-group`, `communication`, `speaking-conflicts`, `integrated-practice`, `knowledge-check`, `quick-reference` |
 | Final | `welcome`, `summary-synthesis`, `connect-viewpoints`, `organize-findings`, `consensus`, `task-audit`, `professionalism`, `closing-practice`, `knowledge-check`, `quick-reference` |
+| Before the Round | `pack`, `task-access`, `arrive`, `connect`, `adapt`, `knowledge-check`, `quick-reference` |
 
 ## Text-only revision: step by step
 
@@ -233,6 +234,7 @@ an existing draft to make it match revised instructional text.
 3. Keep the existing layout: Opening `opening-reference` (exactly four groups and
    its badge); Middle `middle-reference`; Final `stacked-reference`.
 4. A new group also needs a unique item ID and an existing Markdown source.
+   Before the Round also uses `stacked-reference`, with five readiness groups.
    Opening's four-group composition cannot accept a fifth without a reviewed
    schema/renderer change. Other layouts permit more groups but need print review.
 5. Review both screen layout and reference-only print from **an ordinary screen**

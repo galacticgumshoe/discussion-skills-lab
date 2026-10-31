@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "before-round-readiness",
+  "title": "Pre-Round Readiness Checklist",
+  "layout": "stacked-reference",
+  "items": [
+    {"id": "pack", "number": "01", "title": "Pack for the round", "accent": "teal", "source": "pack.md"},
+    {"id": "day", "number": "02", "title": "Plan for the day", "accent": "green", "source": "day.md"},
+    {"id": "task", "number": "03", "title": "Find the task", "accent": "orange", "source": "task.md"},
+    {"id": "arrive", "number": "04", "title": "Arrive and set up", "accent": "purple", "source": "arrive.md"},
+    {"id": "connect", "number": "05", "title": "Connect respectfully", "accent": "blue", "source": "connect.md"}
+  ]
+}
