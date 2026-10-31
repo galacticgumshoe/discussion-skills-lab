@@ -1,26 +1,9 @@
 # Static architecture
 
-## Current checkpoint (milestone 8, 2026-10-28)
-
-All three public lessons use the common app, generated shell, external content
-and semantic print stylesheet. The homepage loads its Markdown and catalog through
-the shared safe loader. The owner approved inventory v2's reviewed S/H/P/R and
-T01/T03–T07 scopes on 2026-10-28; those cutovers/removals are implemented locally.
-Public-entry tests no longer intercept replacement HTML/CSS; the three temporary
-staging/review/archive helpers are retired. Remaining temporary harnesses have
-conditional assertion-port/consolidation work; see the
-[removal inventory](legacy-removal-inventory.md). Milestone 8 is incomplete pending
-that work and owner browser verification. Nothing is committed, published or
-approved for release.
-
-Owner scope clarification: inventory **v2** reviews all migration scaffolding,
-including the remaining whole-Middle preview route, partial lesson harnesses,
-intermediate cutover helpers, one-off extraction/capture tools and this milestone's
-own staging helpers. A dependency from temporary tests is not a reason to keep a
-temporary application permanently. Preserve unique regression assertions by
-retargeting them to public pages or suitable generic fixtures before deleting their
-old containers. Sealed original-engine/content/progress evidence remains distinct
-from disposable migration code; see the inventory's per-file audit and port plans.
+All three public lessons and the homepage use one shared runtime: a generated
+shell, external content, a semantic print stylesheet and the safe loader. The
+lesson profiles and legacy bindings that remain are the ones the current pages
+still use.
 
 ## Tree and ownership
 
@@ -39,21 +22,20 @@ assets/js/home.js                                safe homepage renderer
 assets/css/tokens.css                            shared identity
 assets/css/shared.css, components.css            shell/base and interaction presentation
 assets/css/reference.css, print.css, home.css     semantic layouts/print/home
-assets/css/{opening,middle,final}.css              retained genuine lesson profiles + reviewed legacy
+assets/css/{opening,middle,final}.css              lesson profiles
 assets/vendor/                                   pinned browser modules and licenses
 lessons/<id>/{config.json,completion.js,progress-adapter.js,runtime.js} mechanical configuration/policies/bindings
 content/<id>/lesson.json, sections/, activities/, reference/  CC BY instructional sources
 content/home.md, catalog.json                    authoritative homepage copy/order
 content/{middle,final}/legacy-variants.json        retained nonpublished exact variants
 schemas/, scripts/, tests/                        development validation/evidence only
-.opencode/docs/                                  architecture, inventories, handoffs/evidence
+.opencode/docs/                                  agent-facing architecture, known issues, handoff template
 ```
 
 `runtime.js` is needed only for a lesson's static presentation/legacy bindings;
 Final uses the standard registry. New modules must not copy activity controllers.
-The retired classic **`assets/js/lesson-core.js`** is distinct from the active module
-under `app/`. Its production copy is removed; independent sealed original source
-and pinned replay consumers remain. No fallback reads a missing production file.
+`assets/js/app/lesson-core.js` is the only production core; no fallback reads a
+missing file.
 
 ## Bootstrap → state → render
 
@@ -79,7 +61,7 @@ and pinned replay consumers remain. No fallback reads a missing production file.
 Existing records keep their three v1 keys/codecs. New IDs may use the small
 identity adapter and `schemas/id-progress.schema.json`; read-only references
 disable storage, without a final quiz or completion policy. See
-[progress compatibility](progress-compatibility.md).
+[saved-progress compatibility](../../docs/controls-and-flow.md#saved-progress-compatibility).
 
 ## Supported composition
 
@@ -102,11 +84,11 @@ References use `opening-reference` (four grid groups), `middle-reference` and
 `data-reference-sheet`, `data-reference-layout`, `data-reference-accent` and the
 reference status/content/retry/print hooks. `print.css` hides ordinary
 views and UI and shows the reference even with `[hidden]`, independent of view IDs
-or screen position. It is loaded **last**, after lesson profiles. Exactly nine
-reviewed old print blocks are removed. Mixed legacy screen aliases and Middle's
-embedded old print rule remain deferred, not certified unused. Direct public-page
-tests prove semantic isolation with renamed/reordered/renumbered views; publication
-and interactive browser/print-preview sign-off remain separate.
+or screen position. It is loaded **last**, after lesson profiles. Some legacy
+screen aliases remain in the lesson profiles as deferred cleanup and are not
+certified unused. Direct public-page tests prove semantic isolation with
+renamed/reordered/renumbered views; interactive browser/print-preview sign-off is
+a separate manual check.
 
 ## Loading/security/dependencies
 
@@ -133,7 +115,7 @@ content and affected interaction/print tests. No automatic vendor update/build.
 
 Production needs static HTTP files, no npm, framework, database or build. Pages
 continues **Deploy from a branch → main → /(root)**; a tested, explicitly approved
-merge/push is a separate task, never part of milestone implementation.
+merge/push is a separate task, never incidental to a maintenance change.
 
 Root HTML retains viewport/title/favicon/vendor links, small document-title and
 fallback labels. The homepage keeps three generic fallback links until
@@ -145,5 +127,5 @@ disclaimer paragraph), not a new card/Markdown engine.
 
 Code/config/test labels: MIT. Original instruction, homepage copy, extracted
 fixtures and archived variants: © Rhys Jones, CC BY 4.0. Vendor grants/notices
-remain separate. Frozen source/captures/maps and historical handoffs remain
-immutable; old root `docs/` evidence paths map to `.opencode/docs/`.
+remain separate. Frozen source, captures, maps and the seal in
+`tests/fixtures/manifest.json` remain immutable.

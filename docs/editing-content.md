@@ -258,7 +258,7 @@ duplicating educational descriptions.
 
 ## Intentional instructional revisions and preservation tests
 
-The refactor tests deliberately compare current instruction to the original.
+The preservation tests deliberately compare current instruction to the original.
 A genuine owner-requested revision can therefore pass schemas and still fail an
 exact-content/policy test. This is a review signal, not permission to reseal evidence.
 

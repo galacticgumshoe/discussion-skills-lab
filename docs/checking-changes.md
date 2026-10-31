@@ -24,7 +24,17 @@ node --version
 ```
 
 Do not upgrade dependencies just to edit instruction. `npm ci` follows the lockfile;
-none of these tools is required by production Pages hosting.
+none of these tools is required by production Pages hosting. On Linux, browser OS
+dependencies may need `npx playwright install --with-deps`; obtain system-install
+permission first.
+
+`npm run test:serve` starts a local server on a random port and prints its URL. It
+serves the real checkout at `/` and `/discussion-skills-lab/` without copies or
+redirects, fixed allowlisted Git bytes under `/__original/`, and isolated fixture
+files under `/__fixtures/`. Traversal, encoded traversal, backslashes, NULs,
+double-encoding, non-allowlisted production paths and non-GET/HEAD methods are
+rejected. Use it for manual checks that need the same routes as the tests; plain
+`python3 -m http.server 8000` is enough for ordinary preview.
 
 ## Choose checks by impact
 
@@ -45,12 +55,12 @@ It is a starting point; a change used by several lessons needs checks in each on
 | Change | Focused automated checks |
 | --- | --- |
 | Any content JSON/source path | `npm run validate:content`; `tests/unit/lesson-boundaries.test.mjs` |
-| Existing lesson prose/questions/models | That lesson's `tests/unit/<id>-migration.test.mjs` and `tests/browser/<id>-lesson.spec.mjs` |
+| Existing lesson prose/questions/models | That lesson's `tests/unit/<id>-preservation.test.mjs` and `tests/browser/<id>-lesson.spec.mjs` |
 | Middle full graph/questions/reference | Also `tests/unit/middle-lesson.test.mjs`, `middle-reference.test.mjs`; `tests/browser/middle-questions.spec.mjs`, `middle-reference.spec.mjs` |
 | Pure gates or shared access rule | `tests/unit/completion.test.mjs`; `tests/browser/policy.spec.mjs`, `navigation-contracts.spec.mjs`, affected lesson journeys |
 | Store/codec/default changes | `tests/unit/progress-adapters.test.mjs`; `tests/browser/persistence.spec.mjs`, `progress-contracts.spec.mjs`, affected public restores |
 | Shared components/writing | `tests/unit/component-contracts.test.mjs`; `tests/browser/component-contracts.spec.mjs`, `writing-controls.spec.mjs`, affected public journeys |
-| Homepage/catalog/shared shell | `tests/unit/milestone-8.test.mjs`; `tests/browser/home.spec.mjs`, `shell.spec.mjs` |
+| Homepage/catalog/shared shell | `tests/unit/catalog-new-module.test.mjs`; `tests/browser/home.spec.mjs`, `shell.spec.mjs` |
 | Reference/print | `tests/unit/content-validation.test.mjs`; `tests/browser/print-isolation.spec.mjs`, `print.spec.mjs`, `reference-loading.spec.mjs`, affected lesson reference |
 | Content safety/schema extension | `tests/unit/lesson-boundaries.test.mjs`, `content-validation.test.mjs`, `content-urls.test.mjs`; `tests/browser/lesson-boundaries.spec.mjs`, `content-security.spec.mjs`, `app-lifecycle.spec.mjs` |
 | New public module | New dedicated policy/entry/journey/restore tests; `new-module.spec.mjs` tests the shared fixture, **not your new public page** |
@@ -68,7 +78,7 @@ sheet as described under **Manual review** below.
 Run unit files directly, for example:
 
 ```sh
-node --test tests/unit/lesson-boundaries.test.mjs tests/unit/opening-migration.test.mjs
+node --test tests/unit/lesson-boundaries.test.mjs tests/unit/opening-preservation.test.mjs
 ```
 
 Run a fast Chromium browser selection while iterating:
@@ -148,6 +158,9 @@ For each affected page:
 Record the exact command, error and state before making changes. Do not suppress
 a useful assertion, mask instruction or refresh frozen baselines to obtain green.
 
+Known current issues and verification gaps are tracked in
+[agent known issues](../.opencode/docs/known-issues.md).
+
 ## Before publication
 
 Publication is a separate explicitly authorized task, not the default end of an
@@ -160,8 +173,8 @@ npm run test:unit
 env CFFIXED_USER_HOME="$(mktemp -d)" npm run test:browser -- --workers=1 --max-failures=1
 ```
 
-These are **planned commands, not a statement that they ran**. Current editing
-instructions favor targeted checks; a full release run is a separate scope decision.
+These are **planned commands, not a statement that they ran**. Prefer targeted
+checks while editing; a full release run is a separate scope decision.
 Retain the actual results and manual gaps, original evidence, `.nojekyll`, relative
 paths, existing URLs and license/notices. Review the Git diff and all new public
 destinations. Do not change branch deployment, Pages settings, vendors or hosting

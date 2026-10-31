@@ -7,7 +7,7 @@ description: Maintain Discussion Skills Lab. Use for editing lesson or homepage 
 
 Use one workflow or combine the relevant workflows below. A slash command's
 workflow hint is a starting point, not permission to expand the user's request.
-This is an ongoing maintenance skill, not a refactor-milestone or release workflow.
+This is an ongoing maintenance skill, not a one-off migration or release workflow.
 
 ## Start here
 
@@ -145,12 +145,13 @@ and [checking changes](../../../docs/checking-changes.md) for diagnosis/verifica
   Firefox home documented in checking changes; do not disable security.
 - Preserve original instruction attribution, MIT/CC BY boundaries and third-party
   notices. No unrelated rewrites, dependency upgrades, historical-fixture changes,
-  refactor cleanup, commits, merges, pushes, tags, publication or Pages changes
-  without explicit authorization. A command invocation grants none of those rights.
-- Keep human guidance in root `docs/`; this skill and command wrappers are durable
-  agent tooling. Do not require refactor handoffs/evidence/specifications for routine
-  maintenance or recreate deleted refactor records. Follow current repository
-  instructions if they separately require a handoff for the actual task.
+  cleanup outside the request, commits, merges, pushes, tags, publication or Pages
+  changes without explicit authorization. A command invocation grants none of those
+  rights.
+- Keep human guidance in root `docs/`; this skill and command wrappers are the
+  durable agent tooling. Do not require the agent-facing reference under
+  `.opencode/docs/` for routine maintenance. Follow current repository instructions
+  if they require a handoff for the actual task.
 - Skills are instructions, not a permission sandbox or a guarantee of correctness.
   Preserve the active agent/model/permission choices; do not delegate automatically.
 

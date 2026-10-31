@@ -88,10 +88,10 @@ To update (a deliberate reviewed development change, never automatically):
 3. Run `npm run validate:content`, `npm run test:unit` (also verifies this checksum
    list), and the full browser suite with the documented Firefox home prefix on
    this host. Retain security fixtures, exact text/emphasis, progress, root/prefix,
-   failure/retry and print tests. Do not update sealed milestone-1 evidence.
+   failure/retry and print tests. Do not update sealed baseline fixtures.
 4. Review responsive reference screenshots, print PDFs and actual Chrome,
-   Firefox and Safari previews. Document the executed checks and remaining gaps
-   under `.opencode/docs/`; do not equate headless PDF output with manual preview.
+   Firefox and Safari previews. Record the executed checks and remaining gaps in
+   the change review; do not equate headless PDF output with manual preview.
 
 Existing Tailwind CDN and Google Fonts dependencies are unchanged; their original
 terms/notices still apply. Ajv 8.20.0 is pinned development-only (MIT, Evgeny

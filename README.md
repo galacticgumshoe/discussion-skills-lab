@@ -69,8 +69,8 @@ Start with the **[Website maintenance handbook](docs/maintenance.md)**:
 
 These guides describe the current code. Most wording changes are Markdown/JSON
 edits; behavior changes need JavaScript and compatibility tests. No CMS or build
-step is required. Lasting human-facing documentation lives in `docs/`; agent
-instructions and refactor history/evidence live separately under `.opencode/`.
+step is required. Lasting human-facing documentation lives in `docs/`; the
+maintenance skill and its optional shortcuts live under `.opencode/`.
 
 ### Add a lesson
 
@@ -106,6 +106,6 @@ Copyright © 2026 Rhys Jones. The original instructional content was developed b
 
 ## Maintenance
 
-Develop on a non-`main` branch. Only after testing, browser verification and explicit approval should changes be committed/merged/pushed to `main`; the configured GitHub Pages branch deployment then republishes automatically. Publication, tags and Pages settings are separate approval decisions, not automatic refactor steps. Retain original evidence and test progress/print styling before release.
+Develop on a non-`main` branch. Only after testing, browser verification and explicit approval should changes be committed/merged/pushed to `main`; the configured GitHub Pages branch deployment then republishes automatically. Publication, tags and Pages settings are separate approval decisions, not automatic steps of an edit. Retain original evidence and test progress/print styling before release.
 
 `npm ci`, `npm run validate:content`, `npm run test:unit` and `npm run test:browser` are development tools, not a production pipeline. Prefer impact-scoped test files/projects during editing; [checking changes](docs/checking-changes.md) documents commands, Firefox's macOS workaround and manual review. Vendor versions/checksums/update procedure are in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Never rewrite baselines merely to hide a content, policy or accessibility regression.

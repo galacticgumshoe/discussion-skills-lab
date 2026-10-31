@@ -421,5 +421,6 @@ checks file destinations but does not automatically configure server routes.
   affected existing consumers checked if shared code/styles changed.
 - [ ] [Checks/release](checking-changes.md) recorded; publication separately approved.
 
-No rollback to the pre-refactor engine is promised for a module that never existed
-there. Existing modules still require their original-engine compatibility checks.
+A module that never existed in the original site has no earlier behaviour to roll
+back to. Existing modules still keep their original-content and saved-progress
+checks.

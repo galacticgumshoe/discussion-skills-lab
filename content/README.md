@@ -14,8 +14,8 @@ The existing root license grants remain authoritative.
 The homepage loads `home.md` (educational introduction,
 progress notice and disclaimer) and `catalog.json` (exact ordered lesson titles,
 descriptions and root links). These are also original © Rhys Jones / CC BY 4.0
-content. The owner-approved local cutover is implemented; publication remains a
-separate decision. See [adding modules](../docs/adding-modules.md) for the actual
+content. Publication remains a separate decision. See
+[adding modules](../docs/adding-modules.md) for the actual
 schemas, stable-ID rules and new-module/worksheet/reference examples.
 
 ## Authoring / validation
@@ -42,9 +42,8 @@ Mechanical configuration lives separately in `lessons/middle/config.json`;
 completion/reveal policies are trusted code, not expressions in content.
 Unknown properties/types/layouts/accents are rejected.
 
-Final's milestone-6 graph (`final/lesson.json`, `sections/`, `activities/`) now
-loads directly from **`final.html`**, as explicitly requested by the owner.
-The separate `/final-harness.html` route is retired. Root and repository-subdirectory
+Final's graph (`final/lesson.json`, `sections/`, `activities/`) loads directly
+from **`final.html`**. Root and repository-subdirectory
 URLs work on ordinary static hosting. `final/reference/` is the sole reference source;
 `final/legacy-variants.json` preserves the unused reference-copy prefix without
 publishing it. Do not edit sealed fixtures or run both engines together.
@@ -104,7 +103,7 @@ to them. Other prose may use the safe links described above. Current-face/open
 presentation is separate from permanent explored credit; do not infer indexes from
 file order or markup. The frozen adapter owns all legacy progress mappings.
 
-## Opening (milestone 7)
+## Opening
 
 The real `opening.html` loads `opening/lesson.json`, `sections/`, `activities/`
 and `reference/` using the common app. There is no alternate preview HTML or build

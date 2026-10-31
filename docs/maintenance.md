@@ -18,12 +18,13 @@ For implementation responsibilities and saved-state details, see
 [saved-progress compatibility](controls-and-flow.md#saved-progress-compatibility),
 and the closed [schemas](../schemas/).
 
-`docs/` contains the lasting, human-facing maintenance guides. Agent instructions,
-refactor specifications, handoffs and execution evidence are kept separately under
-`.opencode/`; these guides do not depend on that temporary refactor documentation.
-Durable maintenance tooling lives in `.opencode/skills/` and `.opencode/commands/`,
-separate from those refactor records. See [using the maintenance skill](using-maintenance-skill.md)
-for guided prompts and optional slash-command shortcuts.
+`docs/` contains the lasting, human-facing maintenance guides. The agent workflow
+lives in `.opencode/skills/dsl-maintenance/SKILL.md`, with optional `/dsl-*`
+shortcuts in `.opencode/commands/`; agent-facing reference (architecture, known
+issues, handoff template) is in `.opencode/docs/`, and multi-session task
+specifications are in `.opencode/specs/`. These guides do not depend on
+that reference. See [using the maintenance skill](using-maintenance-skill.md) for
+guided prompts and slash-command shortcuts.
 
 ## How the site fits together
 

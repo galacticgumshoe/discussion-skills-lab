@@ -156,7 +156,7 @@ before editing; preserve all reference text and completion behavior.
 The skill instructs the agent to protect drafts/permanent credit, stable IDs,
 existing URLs, the approved design, attribution and frozen original evidence.
 It asks for clarification rather than inventing educational decisions, and it
-does not authorize refactor cleanup, dependency upgrades or publication.
+does not authorize cleanup outside the request, dependency upgrades or publication.
 
 Skills are **instructions, not enforcement or a sandbox**. OpenCode permissions
 and the active agent's capabilities still apply; read the diff and results.
@@ -177,13 +177,13 @@ print-preview, screen-reader or actual browser-zoom results.
 | `.opencode/skills/dsl-maintenance/SKILL.md` | The one durable agent workflow |
 | `.opencode/commands/dsl-*.md` | Optional prompt shortcuts that load that skill |
 | `docs/*.md` | Authoritative human guidance the skill reads selectively |
+| `.opencode/docs/` | Agent-facing reference: architecture, known issues, handoff template |
 | `AGENTS.md` | Repository-wide instructions that also apply to this workflow |
 
-The skill/commands are permanent maintenance tooling, **not disposable refactor
-documentation**. Removing refactor handoffs/evidence/specifications should not
-remove them. Neither their workflow nor this guide requires the refactor records
-under `.opencode/docs/` or `.opencode/specs/`; follow any still-applicable repository
-instructions about an explicitly requested refactor separately.
+The skill and commands are the durable maintenance tooling. The human guides in
+`docs/` are the authoritative instructions they read selectively, and neither
+depends on the agent-facing reference under `.opencode/docs/`, which can change
+independently.
 
 For future edits, keep the skill focused on workflow and the human guides focused
 on implementation recipes. Keep shortcut wrappers thin so they cannot drift into
