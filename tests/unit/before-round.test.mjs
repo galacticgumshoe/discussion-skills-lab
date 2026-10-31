@@ -12,15 +12,8 @@ const text = path => readFileSync(new URL(`../../${path}`, import.meta.url), 'ut
 const read = path => JSON.parse(text(path));
 const manifest = read('content/before-round/lesson.json');
 const activities = manifest.activities.map(item => read(`content/before-round/${item.source}`));
-const source = text('.opencode/specs/before-round-module-spec-revised.md');
-// Owner-reviewed follow-up supersedes only these strings from the initial spec.
-const revisedCopy = {
-  'equipment/explanation': 'A hotspot can help when Wi-Fi is unreliable, but it is optional.',
-  'dominant-peer/adapt': 'Anticipate competition for procedural roles and prepare to contribute substantive ideas if those roles are crowded',
-  'dominant-peer/explanation': 'Aggressive pre-round behavior can suggest that a student will try to lead procedural elements such as agendas and timekeeping. If several students want those roles, be ready to focus more on substantive contributions. Use the early impression to plan, then adjust as the round develops.',
-  'observe/adapt': "Use that early impression to plan a role that fits the group's procedural and substantive needs",
-  'observe/explanation': 'Pre-round behavior can help you anticipate group dynamics. If procedural roles are crowded, focus more on substantive contributions; if the group is more passive, be ready to set agendas, keep time, and encourage participation. Adjust as the round develops.'
-};
+// Independent expectations belong with tests, not in temporary planning documents.
+const expectedActivities = read('tests/fixtures/before-round/activities.json').activities;
 const full = () => {
   const state = structuredClone(defaults);
   for (const activity of activities) {
@@ -46,24 +39,18 @@ test('public identity, thin entry, order, defaults and approved answers match th
     'icebreaker-choice': ['light'], 'adapt-scenarios': ['adapt','support'],
     'readiness-quiz': ['hotspot','analyze','rules','rapport','adapt']
   };
+  assert.deepEqual(activities.map(activity => activity.id), Object.keys(expectedActivities));
   for (const activity of activities) {
+    // Exact comparison protects prompts, option IDs/order, answers, explanations,
+    // checklist labels and expandable bodies without relying on task history.
+    assert.deepEqual(activity.data, expectedActivities[activity.id], activity.id);
     const own = defaults.activities[activity.id]; assert.ok(own);
     if (activity.type === 'question-sequence') {
       assert.equal(activity.profile, activity.id === 'readiness-quiz' ? 'opening-knowledge-check' : 'middle-scenarios');
       assert.equal(own.currentQuestionId, activity.data.questions[0].id);
       assert.deepEqual(activity.data.questions.map(q => q.correctOptionId), keys[activity.id]);
       assert.deepEqual(own.selections, {}); assert.deepEqual(own.earnedQuestionIds, []);
-      for (const q of activity.data.questions) {
-        // The supplied approved specification is independent of the live activity files.
-        assert.ok(source.includes(q.prompt), q.id);
-        const explanation = revisedCopy[`${q.id}/explanation`];
-        if (explanation) assert.equal(q.explanation, explanation); else assert.ok(source.includes(q.explanation), q.id);
-        for (const option of q.options) {
-          const revision = revisedCopy[`${q.id}/${option.id}`];
-          if (revision) assert.equal(option.text, revision); else assert.ok(source.includes(option.text), `${q.id}/${option.id}`);
-        }
-      }
-    } else if (activity.type === 'checklist') for (const item of activity.data.items) assert.ok(source.includes(item.text));
+    } else if (activity.type === 'checklist') assert.deepEqual(own, {checkedIds:[]});
     else {
       assert.equal(activity.type, 'expandables'); assert.equal(activity.profile, 'standard');
       assert.deepEqual(activity.data.items.map(item => [item.id, item.title]), [

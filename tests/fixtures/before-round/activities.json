@@ -1,0 +1,176 @@
+{
+  "description": "Reviewed Before the Round activity expectations. Independent test data, not live lesson content or a task specification.",
+  "license": "Instructional copy © Rhys Jones, CC BY 4.0. Fixture structure: MIT.",
+  "activities": {
+    "pack-checklist": {
+      "items": [
+        {"id": "device", "text": "I have a charged research device and backup charger"},
+        {"id": "name-tent", "text": "I can display a readable name tent"},
+        {"id": "notes", "text": "I have something to take notes with"},
+        {"id": "water", "text": "I have water"},
+        {"id": "hotspot-plan", "text": "I have checked whether I need a hotspot backup"}
+      ]
+    },
+    "task-scenarios": {
+      "questions": [
+        {
+          "id": "early-release",
+          "prompt": "Your coach shares an electronic task before the round. What is the best use of the available time?",
+          "correctOptionId": "prepare",
+          "options": [
+            {"id": "ignore", "text": "Wait until the round to open it"},
+            {"id": "prepare", "text": "Read the task, identify its deliverable, and organize relevant research"},
+            {"id": "script", "text": "Write a speech to deliver regardless of the group’s ideas."}
+          ],
+          "explanation": "An early task gives you a chance to understand the group's problem and prepare useful evidence. Stay flexible: the final product belongs to the group."
+        },
+        {
+          "id": "paper-release",
+          "prompt": "The tournament will distribute a paper task when the round begins. What should you do beforehand?",
+          "correctOptionId": "ready",
+          "options": [
+            {"id": "guess", "text": "Assume the task and prepare a fixed proposal"},
+            {"id": "ready", "text": "Have your materials ready and be prepared to analyze the task when it is distributed"},
+            {"id": "demand", "text": "Insist on receiving the task early."}
+          ],
+          "explanation": "You cannot rely on advance access. Arriving prepared lets you focus on understanding the task when it becomes available."
+        }
+      ]
+    },
+    "arrival-decisions": {
+      "questions": [
+        {
+          "id": "seat-order",
+          "prompt": "You arrive early and see that the round instructions specify a seating order. What should guide your seat choice?",
+          "correctOptionId": "instructions",
+          "options": [
+            {"id": "judge", "text": "Sit nearest the judge regardless"},
+            {"id": "instructions", "text": "Follow the seating instructions for this round"},
+            {"id": "friend", "text": "Sit beside someone you know even if that changes the order."}
+          ],
+          "explanation": "Tournament directions take priority over seating strategy. When seating is flexible, choose a place where you can participate effectively."
+        },
+        {
+          "id": "wifi",
+          "prompt": "Your research device cannot connect to the room's Wi-Fi. What is the best response?",
+          "correctOptionId": "backup",
+          "options": [
+            {"id": "backup", "text": "Troubleshoot promptly and use an available, permitted hotspot or other backup"},
+            {"id": "wait", "text": "Ignore it until you need to cite research"},
+            {"id": "interrupt", "text": "Ask the group to stop later while you fix it."}
+          ],
+          "explanation": "Checking connectivity before the round reduces interruptions. A hotspot is a useful backup, not a required piece of equipment."
+        }
+      ]
+    },
+    "icebreaker-examples": {
+      "items": [
+        {"id": "two-truths", "title": "Two Truths and a Lie", "body": "Each person offers two truths and one lie about themselves, and others guess the lie."},
+        {"id": "have-you-ever", "title": "Have You Ever?", "body": "Invite light questions, such as “Have you ever flown in an airplane?” Have a few possibilities ready."},
+        {"id": "would-you-rather", "title": "Would You Rather?", "body": "Offer a low-stakes pair, such as cake or pie."},
+        {"id": "things-in-common", "title": "Find 10 Things in Common", "body": "Look for shared interests or experiences, such as liking the color red. This may take more time than other options."},
+        {"id": "small-talk", "title": "Ordinary small talk", "body": "A friendly question about the day, a game, or the weather can get a conversation rolling. Not every group needs a formal game."}
+      ]
+    },
+    "icebreaker-choice": {
+      "questions": [
+        {
+          "id": "inclusive-start",
+          "prompt": "A few students are quietly setting up. Which opener best supports a comfortable, collaborative atmosphere?",
+          "correctOptionId": "light",
+          "options": [
+            {"id": "politics", "text": "Ask everyone to debate a controversial political issue"},
+            {"id": "light", "text": "Offer an optional, light question and leave room for people to finish setting up"},
+            {"id": "identity", "text": "Ask each person to identify their school and hometown."}
+          ],
+          "explanation": "Low-pressure invitations build rapport while respecting other students' privacy and preparation time."
+        }
+      ]
+    },
+    "adapt-scenarios": {
+      "questions": [
+        {
+          "id": "dominant-peer",
+          "prompt": "Before the round, one student speaks over others and starts proposing an agenda. What is the most constructive takeaway?",
+          "correctOptionId": "adapt",
+          "options": [
+            {"id": "label", "text": "Decide they will be an opponent for the whole round"},
+            {"id": "adapt", "text": "Anticipate competition for procedural roles and prepare to contribute substantive ideas if those roles are crowded"},
+            {"id": "compete", "text": "Plan to interrupt them first."}
+          ],
+          "explanation": "Aggressive pre-round behavior can suggest that a student will try to lead procedural elements such as agendas and timekeeping. If several students want those roles, be ready to focus more on substantive contributions. Use the early impression to plan, then adjust as the round develops."
+        },
+        {
+          "id": "inclusive-peer",
+          "prompt": "Another student listens attentively and invites quieter people into a casual conversation. How should you respond?",
+          "correctOptionId": "support",
+          "options": [
+            {"id": "support", "text": "Build on that inclusive tone and prepare to contribute collaboratively"},
+            {"id": "withdraw", "text": "Assume they will handle all group leadership"},
+            {"id": "ally", "text": "Treat them as a permanent ally regardless of the task."}
+          ],
+          "explanation": "Inclusive behavior is worth reinforcing, but every participant still needs to contribute thoughtfully to the shared task."
+        }
+      ]
+    },
+    "readiness-quiz": {
+      "questions": [
+        {
+          "id": "equipment",
+          "prompt": "Which item is described as useful but not required?",
+          "correctOptionId": "hotspot",
+          "options": [
+            {"id": "notes", "text": "Something to take notes with"},
+            {"id": "name", "text": "A readable name tent"},
+            {"id": "hotspot", "text": "A phone hotspot."}
+          ],
+          "explanation": "A hotspot can help when Wi-Fi is unreliable, but it is optional."
+        },
+        {
+          "id": "advance-task",
+          "prompt": "An electronic task is available ahead of time. What should you do?",
+          "correctOptionId": "analyze",
+          "options": [
+            {"id": "analyze", "text": "Analyze it and prepare relevant research"},
+            {"id": "ignore", "text": "Ignore it until the round starts"},
+            {"id": "speech", "text": "Memorize a fixed speech."}
+          ],
+          "explanation": "Advance access is an opportunity to prepare without preempting the group's decisions."
+        },
+        {
+          "id": "seating",
+          "prompt": "The tournament specifies an assigned seating order. What takes priority?",
+          "correctOptionId": "rules",
+          "options": [
+            {"id": "strategy", "text": "Your preferred seat near the judge"},
+            {"id": "rules", "text": "The current round's seating directions"},
+            {"id": "friends", "text": "Sitting beside a friend."}
+          ],
+          "explanation": "Follow the directions for the specific tournament and round."
+        },
+        {
+          "id": "icebreaker",
+          "prompt": "What is the main purpose of pre-round small talk?",
+          "correctOptionId": "rapport",
+          "options": [
+            {"id": "rapport", "text": "Build rapport and a cooperative tone"},
+            {"id": "rank", "text": "Rank classmates as allies or opponents"},
+            {"id": "control", "text": "Take control before the timer starts."}
+          ],
+          "explanation": "Icebreakers prepare people to work together; they are not an extra competition."
+        },
+        {
+          "id": "observe",
+          "prompt": "Someone dominates the pre-round conversation. What is the best response?",
+          "correctOptionId": "adapt",
+          "options": [
+            {"id": "assume", "text": "Assume they will always be difficult"},
+            {"id": "adapt", "text": "Use that early impression to plan a role that fits the group's procedural and substantive needs"},
+            {"id": "mirror", "text": "Dominate the next conversation yourself."}
+          ],
+          "explanation": "Pre-round behavior can help you anticipate group dynamics. If procedural roles are crowded, focus more on substantive contributions; if the group is more passive, be ready to set agendas, keep time, and encourage participation. Adjust as the round develops."
+        }
+      ]
+    }
+  }
+}
