@@ -61,6 +61,7 @@ It is a starting point; a change used by several lessons needs checks in each on
 | Store/codec/default changes | `tests/unit/progress-adapters.test.mjs`; `tests/browser/persistence.spec.mjs`, `progress-contracts.spec.mjs`, affected public restores |
 | Shared components/writing | `tests/unit/component-contracts.test.mjs`; `tests/browser/component-contracts.spec.mjs`, `writing-controls.spec.mjs`, affected public journeys |
 | Homepage/catalog/shared shell | `tests/unit/catalog-new-module.test.mjs`; `tests/browser/home.spec.mjs`, `shell.spec.mjs` |
+| Common static footer | `tests/browser/footer.spec.mjs`, `home.spec.mjs`; includes every public entry at root/prefix paths, no JavaScript, keyboard focus, narrow layouts and print hiding |
 | Reference/print | `tests/unit/content-validation.test.mjs`; `tests/browser/print-isolation.spec.mjs`, `print.spec.mjs`, `reference-loading.spec.mjs`, affected lesson reference |
 | Content safety/schema extension | `tests/unit/lesson-boundaries.test.mjs`, `content-validation.test.mjs`, `content-urls.test.mjs`; `tests/browser/lesson-boundaries.spec.mjs`, `content-security.spec.mjs`, `app-lifecycle.spec.mjs` |
 | New public module | New dedicated policy/entry/journey/restore tests; `new-module.spec.mjs` tests the shared fixture, **not your new public page** |

@@ -41,6 +41,7 @@ function; a missing/false key leaves it hidden. A reveal does not itself earn cr
 | Reference fetching/retry/print readiness | `assets/js/app/reference-loader.js`, `assets/js/components/quick-reference.js` |
 | Lesson-specific decoration or legacy flag bridge | `lessons/opening/runtime.js`, `lessons/middle/runtime.js` |
 | Homepage rendering/fallback and catalog validation | `assets/js/home.js`, `assets/js/app/catalog-validation.js` |
+| Shared static footer copy/links | All five public root HTML files; keep `.site-footer-links` identical (no JavaScript dependency) |
 | Size/color/spacing/focus/responsive rules | `assets/css/` (ownership below) |
 
 Some button labels are activity content (`copyLabel`, model labels, `retryLabel`,
@@ -246,6 +247,13 @@ new activity type requires an explicit code extension, not just a JSON `type`.
 ## Styles and print
 
 - `tokens.css`: shared palette/type/spacing tokens.
+- `footer.css`: common navy/white DM Sans footer, with wrapping links and visible
+  keyboard focus. Load after page styles and before lesson `print.css`. Its static
+  markup lives after the main content/shell in each public HTML entry; update all
+  five together (covered by `tests/browser/footer.spec.mjs`). It follows content in
+  normal flow, wraps onto extra rows on narrow screens, and is hidden for printing.
+  The homepage also retains its existing educational disclaimer below the common
+  links. The GitHub link points to the repository, not a stamped deployment SHA.
 - `shared.css`: shell/layout/base/responsive/focus; `components.css`: interactions.
 - `opening.css`, `middle.css`, `final.css`: deliberate lesson treatments. Scope
   lesson-only changes; do not import another lesson's theme as a shortcut.
