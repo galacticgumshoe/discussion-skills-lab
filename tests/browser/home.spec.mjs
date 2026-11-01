@@ -12,8 +12,11 @@ for (const mount of ['/', '/discussion-skills-lab/']) {
     expect(await page.locator('[data-home-intro]>*').allTextContents()).toEqual(expected.intro);
     expect(await page.locator('.lesson').evaluateAll(nodes => nodes.map(n => ({title:n.querySelector('h2').textContent, description:n.querySelector('p').textContent, url:n.querySelector('a').getAttribute('href')})))).toEqual([...expected.cards,newCard]);
     await expect(page.locator('.lesson').nth(3).locator('.number')).toHaveText('04');
-    await expect(page.locator('.note')).toHaveText(expected.note); await expect(page.locator('footer')).toHaveText(expected.footer);
-    await expect(page.locator('[data-home-fallback]')).toBeHidden(); await expect(page.locator('footer a')).toHaveCount(2);
+    await expect(page.locator('.note')).toHaveText(expected.note);
+    // Approved common-footer replacement; preserve the original educational disclaimer.
+    await expect(page.locator('[data-home-disclaimer]')).toHaveText(expected.footer.slice(expected.footer.indexOf('Educational coaching')));
+    await expect(page.locator('.site-footer-copyright')).toHaveText('© Rhys Jones. Instructional content and activities: CC BY 4.0. Code: MIT License.');
+    await expect(page.locator('[data-home-fallback]')).toBeHidden(); await expect(page.locator('footer a')).toHaveCount(4);
     await page.setViewportSize({width:320,height:844}); expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
   });
   test(`${mount} homepage failure retains useful links and can retry safely`, async ({page}) => {

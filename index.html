@@ -10,7 +10,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&amp;family=Fraunces:wght@600;700&amp;display=swap" rel="stylesheet">
+  <link href="assets/css/tokens.css" rel="stylesheet">
   <link href="assets/css/home.css" rel="stylesheet">
+  <link href="assets/css/footer.css" rel="stylesheet">
 </head>
 <body>
   <a class="skip" href="#main">Skip to lessons</a>
@@ -23,7 +25,16 @@
     <section class="lessons" aria-label="Available lessons" data-home-catalog hidden></section>
     <aside class="note" data-home-note hidden></aside>
   </main>
-  <footer>© 2026 Rhys Jones · Discussion Skills Lab · <a href="LICENSE">Code: MIT License</a> · <a href="CONTENT_LICENSE.md">Instructional content: CC BY 4.0</a>. <span data-home-disclaimer></span></footer>
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <div class="site-footer-links">
+        <p class="site-footer-copyright">© Rhys Jones. Instructional content and activities: <a href="CONTENT_LICENSE.md">CC BY 4.0</a>. Code: <a href="LICENSE">MIT License</a>.</p>
+        <p><a href="mailto:rhysgalacticgumshoe@gmail.com">Email Rhys for help</a></p>
+        <p><a href="https://github.com/galacticgumshoe/discussion-skills-lab">GitHub repository</a></p>
+      </div>
+      <p class="site-footer-disclaimer" data-home-disclaimer></p>
+    </div>
+  </footer>
   <script type="module" src="assets/js/home.js"></script>
 </body>
 </html>

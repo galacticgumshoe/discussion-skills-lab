@@ -18,8 +18,7 @@ h1,h2{font-family:'Fraunces',Georgia,serif;line-height:1.15}h1{font-size:clamp(2
 .lesson a{display:inline-flex;align-items:center;gap:8px;align-self:flex-start;text-decoration:none;background:var(--teal);color:white;font-weight:800;padding:11px 17px;border-radius:10px}
 .lesson a:hover{background:#076d72}
 .note{margin-top:38px;padding:20px 23px;border:1px solid #cde2eb;border-radius:14px;background:var(--pale);color:#314d60}
-.note strong{color:var(--navy)}footer{max-width:1080px;margin:auto;padding:24px 26px 42px;border-top:1px solid var(--line);color:var(--muted);font-size:.88rem}
-footer a{color:var(--teal)}
+.note strong{color:var(--navy)}
 @media(max-width:760px){main{padding:43px 18px 55px}.topbar-inner{padding:16px 18px}.lessons{grid-template-columns:1fr}.lesson{min-height:0;padding:24px}.intro{font-size:1.04rem}.note{margin-top:25px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 [hidden]{display:none!important}
